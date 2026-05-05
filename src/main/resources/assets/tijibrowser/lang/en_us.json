@@ -1,3 +1,12 @@
 {
+  "slicef.warnings.prefix": "WARNING: ",
 
+  "slicef.warnings.software_fallback": "CEF decided to use software rendering instead of hardware acceleration.",
+  "slicef.warnings.software_fallback.details": "Check if your platform is supported. If it is supported, check CEF logs and report issue on our issue tracker.",
+
+  "slicef.warnings.unsupported_platform": "This platform is unsupported.",
+  "slicef.warnings.unsupported_platform.details": "Although most features will work, some advanced features will not work.",
+
+  "slicef.warnings.development": "This version is under development",
+  "slicef.warnings.development.details": "Bugs and crashes are expected. Make sure to report them when you encounter one."
 }

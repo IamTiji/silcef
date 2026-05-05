@@ -23,6 +23,8 @@ public class SlicefBrowser extends CefBrowserOsr {
     private CefDragData dragData;
     private int buttonMask;
 
+    private SlicefWarning warnings = new SlicefWarning();
+
     public SlicefBrowser(CefClient cefClient, String url, int width, int height) {
         super(cefClient, url, true, CefRequestContext.getGlobalContext());
         int scaleFactor = Minecraft.getInstance().getWindow().getGuiScale();
@@ -32,6 +34,10 @@ public class SlicefBrowser extends CefBrowserOsr {
         this.width = width * scaleFactor;
         this.height = height * scaleFactor;
         texture = new SoftwareTexture(this.width, this.height);
+
+        if (Slicef.INDEV) {
+            warnings.addWarning(SlicefWarning.Warning.WARN_DEVELOPMENT);
+        }
     }
 
     public void resize(int width, int height) {
