@@ -46,6 +46,8 @@ public class Slicef implements ModInitializer {
         settings.browser_subprocess_path = Path.of(NATIVE_PATH, "/jcef_helper.exe").toString();
         settings.resources_dir_path = NATIVE_PATH;
         settings.locales_dir_path = Path.of(NATIVE_PATH, "/locales").toString();
+        settings.cache_path = Path.of("./slicef/browser_cache").toAbsolutePath().toString();
+        settings.user_agent_product = "Slicef/beta";
 
         if (!CefApp.startup(new String[]{})) throw new RuntimeException("Failed to initialize CEF");
 
