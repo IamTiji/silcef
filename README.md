@@ -22,10 +22,10 @@ Note that this is under development, and bugs and lack of features are expected.
 
 | Platform      | Support                      |
 |---------------|------------------------------|
-| Windows       | 🟩 **Working**               |
-| MacOS         | 🟨 **Won't work**; planned   |
-| Linux X11     | 🟥 **Won't work**; unplanned |
-| Linux Wayland | 🟨 **Won't work**; planned   |
+| Windows       | 🟩 **Supported**               |
+| MacOS         | 🟨 **Unsupported**; planned   |
+| Linux X11     | 🟥 **Unsupported**; unplanned |
+| Linux Wayland | 🟨 **Unsupported**; planned   |
 
 ### Building this project
 
@@ -41,3 +41,6 @@ won't work right now.
 
 This project is licensed LGPL. If you haven't received a copy, you can get it from 
 <https://www.gnu.org/licenses/lgpl+gpl-3.0.txt>.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNjA5NjcxMTc4XX0=
+-->
