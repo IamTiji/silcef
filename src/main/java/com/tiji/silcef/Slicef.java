@@ -27,7 +27,7 @@ public class Slicef implements ModInitializer {
                     .toAbsolutePath()
                     .normalize()
                     .toString();
-    public static final boolean INDEV = false;
+    public static final boolean INDEV = true;
 
     public static long DXDevice;
 

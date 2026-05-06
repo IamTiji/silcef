@@ -1,7 +1,9 @@
 package com.tiji.silcef;
 
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
+import org.jetbrains.annotations.NotNull;
 
 public class BrowserScreen extends Screen {
     private final SlicefBrowser browser;
@@ -19,6 +21,18 @@ public class BrowserScreen extends Screen {
 
         widget = new SlicefWidget(browser, 20, 20);
         super.addRenderableWidget(widget);
+    }
+
+    @Override
+    public void render(@NotNull GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
+        super.render(guiGraphics, mouseX, mouseY, partialTick);
+
+        SlicefWarning warnings = browser.getWarnings();
+        int y = 20;
+        for (SlicefWarning.Warning warning : warnings.allWarnings()) {
+            guiGraphics.drawString(font, warning.message(), 340, y, 0xFFFFFF00);
+            y += 20;
+        }
     }
 
     @Override

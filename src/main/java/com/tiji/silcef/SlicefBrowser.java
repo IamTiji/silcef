@@ -40,6 +40,10 @@ public class SlicefBrowser extends CefBrowserOsr {
         }
     }
 
+    public SlicefWarning getWarnings() {
+        return warnings;
+    }
+
     public void resize(int width, int height) {
         this.width = width;
         this.height = height;
