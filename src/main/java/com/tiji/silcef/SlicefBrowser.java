@@ -38,6 +38,9 @@ public class SlicefBrowser extends CefBrowserOsr {
         if (Slicef.INDEV) {
             warnings.addWarning(SlicefWarning.Warning.WARN_DEVELOPMENT);
         }
+        if (Slicef.isFallbackLang) {
+            warnings.addWarning(SlicefWarning.Warning.WARN_FALLBACK_LANGUAGE);
+        }
     }
 
     public SlicefWarning getWarnings() {

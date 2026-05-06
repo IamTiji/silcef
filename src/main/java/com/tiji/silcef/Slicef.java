@@ -29,6 +29,9 @@ public class Slicef implements ModInitializer {
                     .toString();
     public static final boolean INDEV = true;
 
+    public static boolean isFallbackLang = false;
+    public static boolean isLoaded = false;
+
     public static long DXDevice;
 
     private static CefApp app;
@@ -38,6 +41,10 @@ public class Slicef implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ClientLifecycleEvents.CLIENT_STARTED.register((mc) -> mc.execute(() -> this.startup(mc)));
+    }
+
+    public void startup(Minecraft mc) {
         LOGGER.info("Loading natives from {}", NATIVE_PATH);
         System.setProperty("jcef.path", NATIVE_PATH);
 
@@ -48,6 +55,9 @@ public class Slicef implements ModInitializer {
         settings.locales_dir_path = Path.of(NATIVE_PATH, "/locales").toString();
         settings.cache_path = Path.of("./slicef/browser_cache").toAbsolutePath().toString();
         settings.user_agent_product = "Slicef/beta";
+        String locale = mc.options.languageCode;
+        settings.locale = LocaleHelper.getCEFLanguageCode(locale);
+        isFallbackLang = !LocaleHelper.isSupported(locale);
 
         if (!CefApp.startup(new String[]{})) throw new RuntimeException("Failed to initialize CEF");
 
@@ -84,9 +94,12 @@ public class Slicef implements ModInitializer {
             app.dispose();
         });
         HudRenderCallback.EVENT.register((unused1, unused2) -> app.N_DoMessageLoopWork());
+
+        isLoaded = true;
     }
 
     public static SlicefBrowser getBrowser(String url, int width, int height) {
+        if (!isLoaded) throw new IllegalStateException("Slicef is not loaded yet. Wait until Minecraft is fully loaded");
         return new SlicefBrowser(client, url, width, height);
     }
 

@@ -20,6 +20,10 @@ public class SlicefWarning {
                 "slicef_development",
                 Component.translatable("slicef.warnings.development"),
                 Component.translatable("slicef.warnings.development.details"));
+        public static final Warning WARN_FALLBACK_LANGUAGE = new Warning(
+                "slicef_fallback_language",
+                Component.translatable("slicef.warnings.unsupported_language"),
+                Component.translatable("slicef.warnings.unsupported_language.details"));
 
         public static final Component PREFIX = Component.translatable("slicef.warnings.prefix");
 
