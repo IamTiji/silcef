@@ -110,7 +110,7 @@ public class SlicefWidget extends AbstractWidget {
         CefMouseWheelEvent cefEvent = new CefMouseWheelEvent(
                 CefMouseWheelEvent.WHEEL_UNIT_SCROLL,
                 normalizeMouse(mouseX, getX()), normalizeMouse(mouseY, getY()),
-                scrollY, 0
+                scrollY*2, 0
         );
         browser.sendMouseWheelEvent(cefEvent);
 
