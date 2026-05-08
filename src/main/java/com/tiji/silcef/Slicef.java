@@ -77,6 +77,7 @@ public class Slicef implements ModInitializer {
         }
         app = CefApp.getInstance(args.toArray(new String[0]), settings);
         client = app.createClient();
+        client.addDisplayHandler(new LogHandler());
 
         LOGGER.info("Cef is initialized; CEF version {}", app.getVersion().getCefVersion());
 
@@ -116,7 +117,7 @@ public class Slicef implements ModInitializer {
 
     public static SlicefBrowser getBrowser(String url, int width, int height) {
         if (!isLoaded) throw new IllegalStateException("Slicef is not loaded yet. Wait until Minecraft is fully loaded");
-        return new SlicefBrowser(client, url, width, height);
+        return new SlicefBrowser(client, url, width, height, true);
     }
 
     private static void getDXDevice() {
