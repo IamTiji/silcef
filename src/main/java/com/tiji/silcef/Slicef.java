@@ -5,7 +5,6 @@ import com.sun.jna.Pointer;
 import com.sun.jna.ptr.PointerByReference;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
-import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.client.Minecraft;
 import net.minecraft.commands.Commands;
@@ -95,9 +94,12 @@ public class Slicef implements ModInitializer {
             client.dispose();
             app.dispose();
         });
-        HudRenderCallback.EVENT.register((unused1, unused2) -> app.N_DoMessageLoopWork());
 
         isLoaded = true;
+    }
+
+    public static void doLoopwork() {
+        app.N_DoMessageLoopWork();
     }
 
     public static SlicefBrowser getBrowser(String url, int width, int height) {
