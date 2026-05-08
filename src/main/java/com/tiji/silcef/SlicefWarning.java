@@ -47,8 +47,20 @@ public class SlicefWarning {
 
     private final HashSet<Warning> warnings = new HashSet<>();
 
+    public SlicefWarning() {
+        addConditionalWarning(SlicefWarning.Warning.WARN_DEVELOPMENT                   , Slicef.INDEV                       );
+        addConditionalWarning(SlicefWarning.Warning.WARN_FALLBACK_LANGUAGE             , Slicef.isFallbackLang              );
+        addConditionalWarning(SlicefWarning.Warning.WARN_ACCELERATED_PAINT_NO_SUPPORT  , !Slicef.isAcceleratedPaintAllowed  );
+    }
+
     public void addWarning(Warning warning) {
         warnings.add(warning);
+    }
+
+    public void addConditionalWarning(Warning warning, boolean when) {
+        if (when) {
+            addWarning(warning);
+        }
     }
 
     public void removeWarning(Warning warning) {

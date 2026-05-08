@@ -34,16 +34,6 @@ public class SlicefBrowser extends CefBrowserOsr {
         this.width = width * scaleFactor;
         this.height = height * scaleFactor;
         texture = new SoftwareTexture(this.width, this.height);
-
-        if (Slicef.INDEV) {
-            warnings.addWarning(SlicefWarning.Warning.WARN_DEVELOPMENT);
-        }
-        if (Slicef.isFallbackLang) {
-            warnings.addWarning(SlicefWarning.Warning.WARN_FALLBACK_LANGUAGE);
-        }
-        if (!Slicef.isAcceleratedPaintAllowed) {
-            warnings.addWarning(SlicefWarning.Warning.WARN_ACCELERATED_PAINT_NO_SUPPORT);
-        }
     }
 
     public SlicefWarning getWarnings() {
