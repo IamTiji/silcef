@@ -20,6 +20,8 @@ public class SlicefWidget extends AbstractWidget {
     private final SlicefBrowser browser;
     private final SlicefRenderState state;
 
+    private int mouseModifier;
+
     public SlicefWidget(SlicefBrowser browser, int x, int y) {
         super(x, y, browser.getViewRect(browser).width, browser.getViewRect(browser).height, Component.literal("Slicef Browser Widget"));
         this.browser = browser;

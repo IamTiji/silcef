@@ -24,6 +24,10 @@ public class SlicefWarning {
                 "slicef_fallback_language",
                 Component.translatable("slicef.warnings.unsupported_language"),
                 Component.translatable("slicef.warnings.unsupported_language.details"));
+        public static final Warning WARN_ACCELERATED_PAINT_NO_SUPPORT = new Warning(
+                "slicef_accelerated_paint_no_support",
+                Component.translatable("slicef.warnings.accelerated_paint_no_support"),
+                Component.translatable("slicef.warnings.accelerated_paint_no_support.details"));
 
         public static final Component PREFIX = Component.translatable("slicef.warnings.prefix");
 

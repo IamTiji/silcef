@@ -16,6 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.UUID;
 
 import static org.lwjgl.opengl.WGLNVDXInterop.wglDXOpenDeviceNV;
@@ -30,6 +31,7 @@ public class Slicef implements ModInitializer {
 
     public static boolean isFallbackLang = false;
     public static boolean isLoaded = false;
+    public static boolean isAcceleratedPaintAllowed = true;
 
     public static long DXDevice;
 
@@ -44,6 +46,11 @@ public class Slicef implements ModInitializer {
     }
 
     public void startup(Minecraft mc) {
+        if (!System.getProperty("os.name").contains("Windows")) {
+            LOGGER.warn("Slicef doesn't support this platform for accelerated painting. This won't stop you from using this, but note that rendering might stutter.");
+            isAcceleratedPaintAllowed = false;
+        }
+
         LOGGER.info("Loading natives from {}", NATIVE_PATH);
         System.setProperty("jcef.path", NATIVE_PATH);
 
@@ -62,16 +69,21 @@ public class Slicef implements ModInitializer {
 
         if (!CefApp.startup(new String[]{})) throw new RuntimeException("Failed to initialize CEF");
 
-        app = CefApp.getInstance(new String[] {
-                "--off-screen-rendering-enabled",
-                "--shared-texture-enabled"
-        }, settings);
+        ArrayList<String> args = new ArrayList<>();
+        args.add("--off-screen-rendering-enabled");
+        if (isAcceleratedPaintAllowed) {
+            D3D11.initialize();
+            args.add("--accelerated-painting-enabled");
+        }
+        app = CefApp.getInstance(args.toArray(new String[0]), settings);
         client = app.createClient();
 
         LOGGER.info("Cef is initialized; CEF version {}", app.getVersion().getCefVersion());
 
-        getDXDevice();
-        LOGGER.info("DirectX device is linked");
+        if (isAcceleratedPaintAllowed) {
+            getDXDevice();
+            LOGGER.info("DirectX device is linked");
+        }
 
         CommandRegistrationCallback.EVENT.register((dispatcher, context, commandSelection) -> {
             dispatcher.register(
@@ -111,7 +123,7 @@ public class Slicef implements ModInitializer {
         PointerByReference ppDevice = new PointerByReference();
         PointerByReference ppContext = new PointerByReference();
 
-        D3D11.INSTANCE.D3D11CreateDevice(
+        D3D11.get().D3D11CreateDevice(
                 null,
                 D3D11.D3D_DRIVER_TYPE_HARDWARE,
                 null,

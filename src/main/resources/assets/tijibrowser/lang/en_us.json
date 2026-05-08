@@ -11,5 +11,8 @@
   "slicef.warnings.development.details": "Bugs and crashes are expected. Make sure to report them when you encounter one.",
 
   "slicef.warnings.unsupported_language": "Your language isn't supported by CEF. ",
-  "slicef.warnings.unsupported_language.details": "Although this won't stop from this mod from working, this will make browser run in English, not in your language."
+  "slicef.warnings.unsupported_language.details": "Although this won't stop from this mod from working, this will make browser run in English, not in your language.",
+
+  "slicef.warnings.accelerated_paint_no_support": "Slicef does not support accelerated paint on this platform.",
+  "slicef.warnings.accelerated_paint_no_support.details": "This will not stop you from using this mod, but note that rendering will stutter."
 }

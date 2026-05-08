@@ -41,6 +41,9 @@ public class SlicefBrowser extends CefBrowserOsr {
         if (Slicef.isFallbackLang) {
             warnings.addWarning(SlicefWarning.Warning.WARN_FALLBACK_LANGUAGE);
         }
+        if (!Slicef.isAcceleratedPaintAllowed) {
+            warnings.addWarning(SlicefWarning.Warning.WARN_ACCELERATED_PAINT_NO_SUPPORT);
+        }
     }
 
     public SlicefWarning getWarnings() {

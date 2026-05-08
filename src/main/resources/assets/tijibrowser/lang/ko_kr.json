@@ -11,5 +11,8 @@
   "slicef.warnings.development.details": "버그와 크래시가 언제든지 발생할 수 있습니다. 발견한다면 제보를 반드시 해주세요.",
 
   "slicef.warnings.unsupported_language": "당신의 언어는 CEF에게 지원되지 않습니다. ",
-  "slicef.warnings.unsupported_language.details": "이 모드를 사용하는데 문제가 발생하진 않지만, 브라우저가 당신의 언어가 아닌 영어로 돌아갈 것 입니다." // 아니 어차피 CEF 한국어 지원하는데 이거 왜 쓴거지
+  "slicef.warnings.unsupported_language.details": "이 모드를 사용하는데 문제가 발생하진 않지만, 브라우저가 당신의 언어가 아닌 영어로 돌아갈 것 입니다.", // 아니 어차피 CEF 한국어 지원하는데 이거 왜 쓴거지
+
+  "slicef.warnings.accelerated_paint_no_support": "Slicef는 가속화된 렌더링을 이 플렛폼에서 지원하지 않습니다.",
+  "slicef.warnings.accelerated_paint_no_support.details": "이는 이 모드의 사용을 막지 않지만, 렌더링이 끊길 수 있을을 숙지해주세요."
 }
