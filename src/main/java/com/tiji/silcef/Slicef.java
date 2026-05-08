@@ -77,7 +77,7 @@ public class Slicef implements ModInitializer {
         }
         app = CefApp.getInstance(args.toArray(new String[0]), settings);
         client = app.createClient();
-        client.addDisplayHandler(new LogHandler());
+        client.addDisplayHandler(new DisplayHandlerImpl());
 
         LOGGER.info("Cef is initialized; CEF version {}", app.getVersion().getCefVersion());
 

@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.HashSet;
 
-public class LogHandler extends CefDisplayHandlerAdapter {
+public class DisplayHandlerImpl extends CefDisplayHandlerAdapter {
     private static final Logger LOGGER = LoggerFactory.getLogger("Slicef Browser");
     private static final HashSet<SlicefBrowser> loggedBrowsers = new HashSet<>();
 
@@ -45,5 +45,12 @@ public class LogHandler extends CefDisplayHandlerAdapter {
 
     public static void unlogBrowser(SlicefBrowser browser) {
         loggedBrowsers.remove(browser);
+    }
+
+    @Override
+    public void onTitleChange(CefBrowser browser, String title) {
+        if (browser instanceof SlicefBrowser slicefBrowser) {
+            slicefBrowser.currentTitle = title;
+        }
     }
 }

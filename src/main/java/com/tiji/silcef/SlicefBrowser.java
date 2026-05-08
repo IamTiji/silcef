@@ -22,6 +22,7 @@ public class SlicefBrowser extends CefBrowserOsr {
     private boolean popupVisible;
     private CefDragData dragData;
     private int buttonMask;
+    public String currentTitle;
 
     private SlicefWarning warnings = new SlicefWarning();
 
@@ -36,13 +37,13 @@ public class SlicefBrowser extends CefBrowserOsr {
         texture = new SoftwareTexture(this.width, this.height);
 
         if (loggingEnabled) {
-            LogHandler.logBrowser(this);
+            DisplayHandlerImpl.logBrowser(this);
         }
     }
 
     @Override
     public void close(boolean force) {
-        LogHandler.unlogBrowser(this);
+        DisplayHandlerImpl.unlogBrowser(this);
         super.close(force);
     }
 
