@@ -66,6 +66,11 @@ public class SlicefBrowser extends CefBrowserOsr {
     }
 
     @Override
+    public boolean startDragging(CefBrowser browser, CefDragData dragData, int mask, int x, int y) {
+        return false; // true doesn't really work
+    }
+
+    @Override
     public void onPopupSize(CefBrowser cefBrowser, Rectangle rectangle) {
         if (!popupVisible) return;
         popupBounds = rectangle;

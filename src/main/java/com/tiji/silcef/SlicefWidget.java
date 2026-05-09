@@ -12,6 +12,7 @@ import net.minecraft.network.chat.Component;
 import org.cef.event.CefKeyEvent;
 import org.cef.event.CefMouseEvent;
 import org.cef.event.CefMouseWheelEvent;
+import org.cef.misc.EventFlags;
 import org.jetbrains.annotations.NotNull;
 
 import static org.lwjgl.glfw.GLFW.*;
@@ -66,13 +67,35 @@ public class SlicefWidget extends AbstractWidget {
         return key;
     }
 
+    private static int getModifiers() {
+        long window = Minecraft.getInstance().getWindow().handle();
+        int mod = 0;
+        if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT  ) == GLFW_PRESS) mod |= EventFlags.EVENTFLAG_LEFT_MOUSE_BUTTON;
+        if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT ) == GLFW_PRESS) mod |= EventFlags.EVENTFLAG_RIGHT_MOUSE_BUTTON;
+        if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_MIDDLE) == GLFW_PRESS) mod |= EventFlags.EVENTFLAG_MIDDLE_MOUSE_BUTTON;
+
+        //alt
+        if (glfwGetKey        (window, GLFW_KEY_LEFT_ALT)        == GLFW_PRESS) mod |= EventFlags.EVENTFLAG_ALT_DOWN;
+        if (glfwGetKey        (window, GLFW_KEY_RIGHT_ALT)       == GLFW_PRESS) mod |= EventFlags.EVENTFLAG_ALT_DOWN;
+
+        //ctrl
+        if (glfwGetKey        (window, GLFW_KEY_LEFT_CONTROL)     == GLFW_PRESS) mod |= EventFlags.EVENTFLAG_CONTROL_DOWN;
+        if (glfwGetKey        (window, GLFW_KEY_RIGHT_CONTROL)    == GLFW_PRESS) mod |= EventFlags.EVENTFLAG_CONTROL_DOWN;
+
+        //shift
+        if (glfwGetKey        (window, GLFW_KEY_LEFT_SHIFT)      == GLFW_PRESS) mod |= EventFlags.EVENTFLAG_SHIFT_DOWN;
+        if (glfwGetKey        (window, GLFW_KEY_RIGHT_SHIFT)     == GLFW_PRESS) mod |= EventFlags.EVENTFLAG_SHIFT_DOWN;
+
+        return mod;
+    }
+
     @Override
     public void mouseMoved(double mouseX, double mouseY) {
         super.mouseMoved(mouseX, mouseY);
         CefMouseEvent event = new CefMouseEvent(
                 CefMouseEvent.MOUSE_MOVED,
                 normalizeMouse(mouseX, getX()), normalizeMouse(mouseY, getY()),
-                0, 0, 0
+                0, 0, getModifiers()
         );
         browser.sendMouseEvent(event);
     }
@@ -83,7 +106,7 @@ public class SlicefWidget extends AbstractWidget {
         CefMouseEvent cefEvent = new CefMouseEvent(
                 GLFW_PRESS,
                 normalizeMouse(event.x(), getX()), normalizeMouse(event.y(), getY()),
-                isDoubleClick ? 2 : 1, fixMouse(event.button()), event.modifiers()
+                isDoubleClick ? 2 : 1, fixMouse(event.button()), getModifiers()
         );
         browser.sendMouseEvent(cefEvent);
         browser.setFocus(true);
@@ -97,7 +120,7 @@ public class SlicefWidget extends AbstractWidget {
         CefMouseEvent cefEvent = new CefMouseEvent(
                 GLFW_RELEASE,
                 normalizeMouse(event.x(), getX()), normalizeMouse(event.y(), getY()),
-                0, fixMouse(event.button()), event.modifiers()
+                0, fixMouse(event.button()), getModifiers()
         );
         browser.sendMouseEvent(cefEvent);
 
@@ -110,7 +133,7 @@ public class SlicefWidget extends AbstractWidget {
         CefMouseWheelEvent cefEvent = new CefMouseWheelEvent(
                 CefMouseWheelEvent.WHEEL_UNIT_SCROLL,
                 normalizeMouse(mouseX, getX()), normalizeMouse(mouseY, getY()),
-                scrollY*2, 0
+                scrollY*2, getModifiers()
         );
         browser.sendMouseWheelEvent(cefEvent);
 
@@ -125,7 +148,7 @@ public class SlicefWidget extends AbstractWidget {
                 CefKeyEvent.KEY_PRESS,
                 event.key(),
                 (char) event.key(),
-                event.modifiers()
+                getModifiers()
         );
         browser.sendKeyEvent(cefEvent);
 
@@ -140,7 +163,7 @@ public class SlicefWidget extends AbstractWidget {
                 CefKeyEvent.KEY_RELEASE,
                 event.key(),
                 (char) event.key(),
-                event.modifiers()
+                getModifiers()
         );
         browser.sendKeyEvent(cefEvent);
 
@@ -155,7 +178,7 @@ public class SlicefWidget extends AbstractWidget {
                 CefKeyEvent.KEY_TYPE,
                 event.codepoint(),
                 (char) event.codepoint(),
-                event.modifiers()
+                getModifiers()
         );
         browser.sendKeyEvent(cefEvent);
 
