@@ -20,8 +20,6 @@ public class SlicefBrowser extends CefBrowserOsr {
     private final int mcWidth, mcHeight;
     private SoftwareTexture texture;
     private boolean popupVisible;
-    private CefDragData dragData;
-    private int buttonMask;
     public String currentTitle;
 
     private SlicefWarning warnings = new SlicefWarning();
