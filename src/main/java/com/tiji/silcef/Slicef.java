@@ -95,7 +95,7 @@ public class Slicef implements ModInitializer {
                                     .executes((context_) -> {
                                         Minecraft.getInstance().execute(
                                                 () -> Minecraft.getInstance().setScreen(
-                                                        new BrowserScreen(context_.getArgument("url", String.class)))
+                                                        new TestBrowserScreen(context_.getArgument("url", String.class)))
                                                 );
                                         return 0;
                     })

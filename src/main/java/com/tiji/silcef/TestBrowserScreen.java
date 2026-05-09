@@ -5,11 +5,11 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import org.jetbrains.annotations.NotNull;
 
-public class BrowserScreen extends Screen {
+public class TestBrowserScreen extends Screen {
     private final SlicefBrowser browser;
     private SlicefWidget widget;
 
-    public BrowserScreen(String url) {
+    public TestBrowserScreen(String url) {
         super(Component.empty());
 
         browser = Slicef.getBrowser(url, 300, 300);
