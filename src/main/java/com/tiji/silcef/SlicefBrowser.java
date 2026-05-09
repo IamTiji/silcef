@@ -39,6 +39,11 @@ public class SlicefBrowser extends CefBrowserOsr {
         }
     }
 
+    // Do note that warnings that are constant (like unsupported platform) will not be cleared.
+    public void clearWarnings() {
+        warnings = new SlicefWarning();
+    }
+
     @Override
     public void close(boolean force) {
         DisplayHandlerImpl.unlogBrowser(this);
