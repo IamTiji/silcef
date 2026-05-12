@@ -13,13 +13,15 @@ public class TestBrowserScreen extends Screen {
         super(Component.empty());
 
         browser = Slicef.getBrowser(url, 300, 300);
+        widget = new SlicefWidget(browser, 0, 0);
     }
 
     @Override
     protected void init() {
         super.init();
 
-        widget = new SlicefWidget(browser, 20, 20);
+        widget.resize(width, height - 100);
+
         super.addRenderableWidget(widget);
     }
 
@@ -27,13 +29,13 @@ public class TestBrowserScreen extends Screen {
     public void render(@NotNull GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
         super.render(guiGraphics, mouseX, mouseY, partialTick);
 
-        guiGraphics.drawString(font, browser.currentTitle, 340, 20, 0xFFFFFFFF);
+        guiGraphics.drawString(font, browser.currentTitle, 20, height - 90, 0xFFFFFFFF);
 
         SlicefWarning warnings = browser.getWarnings();
-        int y = 60;
+        int y = height - 70;
         for (SlicefWarning.Warning warning : warnings.allWarnings()) {
-            guiGraphics.drawString(font, warning.message(), 340, y, 0xFFFFFF00);
-            y += 20;
+            guiGraphics.drawString(font, warning.message(), 20, y, 0xFFFFFF00);
+            y += font.lineHeight + 2;
         }
     }
 
