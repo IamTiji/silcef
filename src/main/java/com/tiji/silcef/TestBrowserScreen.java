@@ -43,9 +43,4 @@ public class TestBrowserScreen extends Screen {
         browser.setCloseAllowed();
         browser.close(true);
     }
-
-    @Override
-    public void mouseMoved(double mouseX, double mouseY) {
-        widget.mouseMoved(mouseX, mouseY); // Mouse move event isn't handled by default screen class
-    }
 }

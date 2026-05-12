@@ -6,7 +6,8 @@
   "mixins": [
   ],
   "client": [
-    "RedrawCallbackMixin"
+    "RedrawCallbackMixin",
+    "MouseMoveFixMixin"
   ],
   "injectors": {
     "defaultRequire": 1
