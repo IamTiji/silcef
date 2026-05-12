@@ -5,6 +5,7 @@ import net.minecraft.client.Minecraft;
 import org.cef.CefClient;
 import org.cef.browser.CefBrowser;
 import org.cef.browser.CefBrowserOsr;
+import org.cef.browser.CefBrowserSettings;
 import org.cef.browser.CefRequestContext;
 import org.cef.callback.CefDragData;
 
@@ -25,9 +26,14 @@ public class SlicefBrowser extends CefBrowserOsr {
     private SlicefWarning warnings = new SlicefWarning();
 
     public SlicefBrowser(CefClient cefClient, String url, int width, int height, boolean loggingEnabled) {
-        super(cefClient, url, true, CefRequestContext.getGlobalContext());
+        super(cefClient, url, true, CefRequestContext.getGlobalContext(), null);
         int scaleFactor = Minecraft.getInstance().getWindow().getGuiScale();
+
+        CefBrowserSettings settings = new CefBrowserSettings();
+        settings.windowless_frame_rate = 60;
+        super.setSettings(settings);
         super.createImmediately();
+
         this.mcWidth = width;
         this.mcHeight = height;
         this.width = width * scaleFactor;
