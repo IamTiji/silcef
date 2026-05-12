@@ -6,7 +6,7 @@
   "description": "Browser mod by Tiji",
   "authors": [],
   "contact": {},
-  "license": "CC-BY-SA-NC 4.0 International",
+  "license": "LGPLv3.0",
   "accessWidener": "slicef.accesswidener",
   "environment": "client",
   "entrypoints": {
