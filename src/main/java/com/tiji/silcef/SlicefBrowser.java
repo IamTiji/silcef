@@ -18,7 +18,7 @@ import static org.lwjgl.glfw.GLFW.*;
 public class SlicefBrowser extends CefBrowserOsr {
     public Rectangle popupBounds, mcPopupBounds;
     private int width, height;
-    private final int mcWidth, mcHeight;
+    private int mcWidth, mcHeight;
     private SoftwareTexture texture;
     private boolean popupVisible;
     public String currentTitle;
@@ -61,15 +61,23 @@ public class SlicefBrowser extends CefBrowserOsr {
     }
 
     public void resize(int width, int height) {
-        this.width = width;
-        this.height = height;
+        int scaleFactor = Minecraft.getInstance().getWindow().getGuiScale();
+        this.width = width * scaleFactor;
+        this.height = height * scaleFactor;
+
+        this.mcWidth = width;
+        this.mcHeight = height;
+
+        texture.destroy();
         texture = new SoftwareTexture(this.width, this.height);
-        wasResized(width, height);
+        wasResized(this.width, this.height);
     }
 
     @Override
     public void onPaint(CefBrowser cefBrowser, boolean popup, Rectangle[] dirtyRects, ByteBuffer pixels, int w, int h) {
         super.onPaint(cefBrowser, popup, dirtyRects, pixels, w, h);
+
+        if (w != width && h != height) return; // Sometimes when we resize the browser, it sends frame with different size than we requested
         if (dirtyRects.length == 0) return;
         texture.onPaint(dirtyRects, pixels);
     }
