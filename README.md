@@ -37,6 +37,21 @@ After putting appropriate files, run `gradle runClient` to run Minecraft, and
 `gradle build` to build the mod. Note that building as a standalone mod file
 won't work right now.
 
+### Contributions & Filing an issue
+Contributions are welcomed! When making a pull request, make sure that your changes:
+ - Fit overall vive of original code
+ - Contains only necessary changes
+ - Maybe write a small joke on comments so that people reading it will have a better day!
+
+Since this project is under heavy development, make sure that most of the contribution will get
+rejected, unless you somehow read off my brain.
+
+If you don't want to write code, but want to report a problem, you can also file an issue.
+When making writing an issue, make sure that:
+ - You included logs
+ - You explained the problem to your best
+ - You were nice and respectful
+
 ### License
 
 This project is licensed LGPL. If you haven't received a copy, you can get it from 
