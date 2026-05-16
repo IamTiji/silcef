@@ -1,7 +1,0 @@
-include/cef_version.h
-include/capi/cef_app_capi.h
-include/capi/cef_browser_capi.h
-include/capi/client_capi.h
-include/capi/cef_display_handler_capi.h
-include/capi/cef_render_handler_capi.h
-include/internal/cef_string_types.h

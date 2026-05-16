@@ -20,27 +20,20 @@ Note that this is under development, and bugs and lack of features are expected.
 
 ### Platform support
 
-| Platform      | Support                       |
-|---------------|-------------------------------|
-| Windows       | 🟩 **Supported**              |
+| Platform      | Support                      |
+|---------------|------------------------------|
+| Windows       | 🟩 **Supported**               |
 | MacOS         | 🟨 **Unsupported**; planned   |
 | Linux X11     | 🟥 **Unsupported**; unplanned |
 | Linux Wayland | 🟨 **Unsupported**; planned   |
 
 ### Building this project
 
-You will need to get Chromium builds downloaded first. Run `gradle getCEF` to get those.
+You will need to build [JCEF](https://github.com/IamTiji/java-cef) first. Follow
+build instruction there, and put build binaries in `jcef` folder. There must be 
+`jcef.jar` and `jcef.dll` in `jcef` folder.
 
-If you want to regenerate native bindings, you will need `jextract`. You can get it from 
-<https://jdk.java.net/jextract/>. If you have `jextract`, then you may run `gradle genNatives`
-to regenerate native bindings. 
-
-> [!NOTE]  
-> If `jextract` isn't on `PATH`, you won't be able to generate bindings. If `genNatives` 
-> keeps failing, this might be the cause. Make sure that you can run `jextract` by just
-> typing `jextract` on console.
-
-After that you can run `gradle runClient` to run Minecraft, and
+After putting appropriate files, run `gradle runClient` to run Minecraft, and
 `gradle build` to build the mod. Note that building as a standalone mod file
 won't work right now.
 
