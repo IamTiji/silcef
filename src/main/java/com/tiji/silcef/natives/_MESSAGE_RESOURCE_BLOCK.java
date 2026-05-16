@@ -28,9 +28,9 @@ public class _MESSAGE_RESOURCE_BLOCK {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("LowId"),
-        cef_master_h.C_LONG.withName("HighId"),
-        cef_master_h.C_LONG.withName("OffsetToEntries")
+        cef_render_handler_capi_h.C_LONG.withName("LowId"),
+        cef_render_handler_capi_h.C_LONG.withName("HighId"),
+        cef_render_handler_capi_h.C_LONG.withName("OffsetToEntries")
     ).withName("_MESSAGE_RESOURCE_BLOCK");
 
     /**

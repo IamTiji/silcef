@@ -31,9 +31,9 @@ public class tagEMRSETPALETTEENTRIES {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
-        cef_master_h.C_LONG.withName("ihPal"),
-        cef_master_h.C_LONG.withName("iStart"),
-        cef_master_h.C_LONG.withName("cEntries"),
+        cef_render_handler_capi_h.C_LONG.withName("ihPal"),
+        cef_render_handler_capi_h.C_LONG.withName("iStart"),
+        cef_render_handler_capi_h.C_LONG.withName("cEntries"),
         MemoryLayout.sequenceLayout(1, tagPALETTEENTRY.layout()).withName("aPalEntries")
     ).withName("tagEMRSETPALETTEENTRIES");
 

@@ -32,13 +32,13 @@ public class _EXCEPTION_RECORD64 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ExceptionCode"),
-        cef_master_h.C_LONG.withName("ExceptionFlags"),
-        cef_master_h.C_LONG_LONG.withName("ExceptionRecord"),
-        cef_master_h.C_LONG_LONG.withName("ExceptionAddress"),
-        cef_master_h.C_LONG.withName("NumberParameters"),
-        cef_master_h.C_LONG.withName("__unusedAlignment"),
-        MemoryLayout.sequenceLayout(15, cef_master_h.C_LONG_LONG).withName("ExceptionInformation")
+        cef_render_handler_capi_h.C_LONG.withName("ExceptionCode"),
+        cef_render_handler_capi_h.C_LONG.withName("ExceptionFlags"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ExceptionRecord"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ExceptionAddress"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberParameters"),
+        cef_render_handler_capi_h.C_LONG.withName("__unusedAlignment"),
+        MemoryLayout.sequenceLayout(15, cef_render_handler_capi_h.C_LONG_LONG).withName("ExceptionInformation")
     ).withName("_EXCEPTION_RECORD64");
 
     /**

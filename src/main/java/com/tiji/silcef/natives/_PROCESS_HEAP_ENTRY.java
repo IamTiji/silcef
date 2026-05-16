@@ -42,11 +42,11 @@ public class _PROCESS_HEAP_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("lpData"),
-        cef_master_h.C_LONG.withName("cbData"),
-        cef_master_h.C_CHAR.withName("cbOverhead"),
-        cef_master_h.C_CHAR.withName("iRegionIndex"),
-        cef_master_h.C_SHORT.withName("wFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpData"),
+        cef_render_handler_capi_h.C_LONG.withName("cbData"),
+        cef_render_handler_capi_h.C_CHAR.withName("cbOverhead"),
+        cef_render_handler_capi_h.C_CHAR.withName("iRegionIndex"),
+        cef_render_handler_capi_h.C_SHORT.withName("wFlags"),
         MemoryLayout.unionLayout(
             _PROCESS_HEAP_ENTRY.Block.layout().withName("Block"),
             _PROCESS_HEAP_ENTRY.Region.layout().withName("Region")
@@ -295,8 +295,8 @@ public class _PROCESS_HEAP_ENTRY {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_POINTER.withName("hMem"),
-            MemoryLayout.sequenceLayout(3, cef_master_h.C_LONG).withName("dwReserved"),
+            cef_render_handler_capi_h.C_POINTER.withName("hMem"),
+            MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_LONG).withName("dwReserved"),
             MemoryLayout.paddingLayout(4)
         ).withName("$anon$253:9");
 
@@ -546,10 +546,10 @@ public class _PROCESS_HEAP_ENTRY {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_LONG.withName("dwCommittedSize"),
-            cef_master_h.C_LONG.withName("dwUnCommittedSize"),
-            cef_master_h.C_POINTER.withName("lpFirstBlock"),
-            cef_master_h.C_POINTER.withName("lpLastBlock")
+            cef_render_handler_capi_h.C_LONG.withName("dwCommittedSize"),
+            cef_render_handler_capi_h.C_LONG.withName("dwUnCommittedSize"),
+            cef_render_handler_capi_h.C_POINTER.withName("lpFirstBlock"),
+            cef_render_handler_capi_h.C_POINTER.withName("lpLastBlock")
         ).withName("$anon$257:9");
 
         /**

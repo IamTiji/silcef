@@ -29,10 +29,10 @@ public class servent {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("s_name"),
-        cef_master_h.C_POINTER.withName("s_aliases"),
-        cef_master_h.C_POINTER.withName("s_proto"),
-        cef_master_h.C_SHORT.withName("s_port"),
+        cef_render_handler_capi_h.C_POINTER.withName("s_name"),
+        cef_render_handler_capi_h.C_POINTER.withName("s_aliases"),
+        cef_render_handler_capi_h.C_POINTER.withName("s_proto"),
+        cef_render_handler_capi_h.C_SHORT.withName("s_port"),
         MemoryLayout.paddingLayout(6)
     ).withName("servent");
 

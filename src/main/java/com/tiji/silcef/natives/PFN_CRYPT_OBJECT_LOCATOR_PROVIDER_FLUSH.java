@@ -31,10 +31,10 @@ public final class PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FLUSH {
     }
 
     private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-        cef_master_h.C_INT,
-        cef_master_h.C_POINTER,
-        cef_master_h.C_POINTER,
-        cef_master_h.C_LONG
+        cef_render_handler_capi_h.C_INT,
+        cef_render_handler_capi_h.C_POINTER,
+        cef_render_handler_capi_h.C_POINTER,
+        cef_render_handler_capi_h.C_LONG
     );
 
     /**
@@ -44,7 +44,7 @@ public final class PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FLUSH {
         return $DESC;
     }
 
-    private static final MethodHandle UP$MH = cef_master_h.upcallHandle(PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FLUSH.Function.class, "apply", $DESC);
+    private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FLUSH.Function.class, "apply", $DESC);
 
     /**
      * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

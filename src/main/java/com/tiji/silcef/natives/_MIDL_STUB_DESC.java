@@ -49,27 +49,27 @@ public class _MIDL_STUB_DESC {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("RpcInterfaceInformation"),
-        cef_master_h.C_POINTER.withName("pfnAllocate"),
-        cef_master_h.C_POINTER.withName("pfnFree"),
+        cef_render_handler_capi_h.C_POINTER.withName("RpcInterfaceInformation"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnAllocate"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnFree"),
         _MIDL_STUB_DESC.IMPLICIT_HANDLE_INFO.layout().withName("IMPLICIT_HANDLE_INFO"),
-        cef_master_h.C_POINTER.withName("apfnNdrRundownRoutines"),
-        cef_master_h.C_POINTER.withName("aGenericBindingRoutinePairs"),
-        cef_master_h.C_POINTER.withName("apfnExprEval"),
-        cef_master_h.C_POINTER.withName("aXmitQuintuple"),
-        cef_master_h.C_POINTER.withName("pFormatTypes"),
-        cef_master_h.C_INT.withName("fCheckBounds"),
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_POINTER.withName("pMallocFreeStruct"),
-        cef_master_h.C_LONG.withName("MIDLVersion"),
+        cef_render_handler_capi_h.C_POINTER.withName("apfnNdrRundownRoutines"),
+        cef_render_handler_capi_h.C_POINTER.withName("aGenericBindingRoutinePairs"),
+        cef_render_handler_capi_h.C_POINTER.withName("apfnExprEval"),
+        cef_render_handler_capi_h.C_POINTER.withName("aXmitQuintuple"),
+        cef_render_handler_capi_h.C_POINTER.withName("pFormatTypes"),
+        cef_render_handler_capi_h.C_INT.withName("fCheckBounds"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_POINTER.withName("pMallocFreeStruct"),
+        cef_render_handler_capi_h.C_LONG.withName("MIDLVersion"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("CommFaultOffsets"),
-        cef_master_h.C_POINTER.withName("aUserMarshalQuadruple"),
-        cef_master_h.C_POINTER.withName("NotifyRoutineTable"),
-        cef_master_h.C_LONG_LONG.withName("mFlags"),
-        cef_master_h.C_POINTER.withName("CsRoutineTables"),
-        cef_master_h.C_POINTER.withName("ProxyServerInfo"),
-        cef_master_h.C_POINTER.withName("pExprInfo")
+        cef_render_handler_capi_h.C_POINTER.withName("CommFaultOffsets"),
+        cef_render_handler_capi_h.C_POINTER.withName("aUserMarshalQuadruple"),
+        cef_render_handler_capi_h.C_POINTER.withName("NotifyRoutineTable"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("mFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("CsRoutineTables"),
+        cef_render_handler_capi_h.C_POINTER.withName("ProxyServerInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("pExprInfo")
     ).withName("_MIDL_STUB_DESC");
 
     /**
@@ -142,8 +142,8 @@ public class _MIDL_STUB_DESC {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_LONG_LONG
         );
 
         /**
@@ -153,7 +153,7 @@ public class _MIDL_STUB_DESC {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(pfnAllocate.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(pfnAllocate.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -242,7 +242,7 @@ public class _MIDL_STUB_DESC {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -252,7 +252,7 @@ public class _MIDL_STUB_DESC {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(pfnFree.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(pfnFree.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -338,9 +338,9 @@ public class _MIDL_STUB_DESC {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("pAutoHandle"),
-            cef_master_h.C_POINTER.withName("pPrimitiveHandle"),
-            cef_master_h.C_POINTER.withName("pGenericBindingInfo")
+            cef_render_handler_capi_h.C_POINTER.withName("pAutoHandle"),
+            cef_render_handler_capi_h.C_POINTER.withName("pPrimitiveHandle"),
+            cef_render_handler_capi_h.C_POINTER.withName("pGenericBindingInfo")
         ).withName("$anon$1038:5");
 
         /**

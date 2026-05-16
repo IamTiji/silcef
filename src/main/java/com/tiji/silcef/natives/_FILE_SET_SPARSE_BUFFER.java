@@ -26,7 +26,7 @@ public class _FILE_SET_SPARSE_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("SetSparse")
+        cef_render_handler_capi_h.C_CHAR.withName("SetSparse")
     ).withName("_FILE_SET_SPARSE_BUFFER");
 
     /**

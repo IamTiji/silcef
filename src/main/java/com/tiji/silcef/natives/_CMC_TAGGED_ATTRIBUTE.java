@@ -27,7 +27,7 @@ public class _CMC_TAGGED_ATTRIBUTE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwBodyPartID"),
+        cef_render_handler_capi_h.C_LONG.withName("dwBodyPartID"),
         MemoryLayout.paddingLayout(4),
         _CRYPT_ATTRIBUTE.layout().withName("Attribute")
     ).withName("_CMC_TAGGED_ATTRIBUTE");

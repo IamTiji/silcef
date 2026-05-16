@@ -29,8 +29,8 @@ public class _cef_cookie_access_filter_t {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _cef_base_ref_counted_t.layout().withName("base"),
-        cef_master_h.C_POINTER.withName("can_send_cookie"),
-        cef_master_h.C_POINTER.withName("can_save_cookie")
+        cef_app_capi_h.C_POINTER.withName("can_send_cookie"),
+        cef_app_capi_h.C_POINTER.withName("can_save_cookie")
     ).withName("_cef_cookie_access_filter_t");
 
     /**
@@ -103,12 +103,12 @@ public class _cef_cookie_access_filter_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -118,7 +118,7 @@ public class _cef_cookie_access_filter_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(can_send_cookie.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(can_send_cookie.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -207,13 +207,13 @@ public class _cef_cookie_access_filter_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -223,7 +223,7 @@ public class _cef_cookie_access_filter_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(can_save_cookie.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(can_save_cookie.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

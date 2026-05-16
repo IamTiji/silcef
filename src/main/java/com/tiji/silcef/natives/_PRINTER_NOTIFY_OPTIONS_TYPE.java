@@ -31,12 +31,12 @@ public class _PRINTER_NOTIFY_OPTIONS_TYPE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Type"),
-        cef_master_h.C_SHORT.withName("Reserved0"),
-        cef_master_h.C_LONG.withName("Reserved1"),
-        cef_master_h.C_LONG.withName("Reserved2"),
-        cef_master_h.C_LONG.withName("Count"),
-        cef_master_h.C_POINTER.withName("pFields")
+        cef_render_handler_capi_h.C_SHORT.withName("Type"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved0"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved1"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved2"),
+        cef_render_handler_capi_h.C_LONG.withName("Count"),
+        cef_render_handler_capi_h.C_POINTER.withName("pFields")
     ).withName("_PRINTER_NOTIFY_OPTIONS_TYPE");
 
     /**

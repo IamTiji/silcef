@@ -27,8 +27,8 @@ public class _TXFS_LIST_TRANSACTIONS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("NumberOfTransactions"),
-        cef_master_h.C_LONG_LONG.withName("BufferSizeRequired")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NumberOfTransactions"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("BufferSizeRequired")
     ).withName("_TXFS_LIST_TRANSACTIONS");
 
     /**

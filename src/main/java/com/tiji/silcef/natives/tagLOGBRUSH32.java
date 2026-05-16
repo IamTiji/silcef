@@ -28,9 +28,9 @@ public class tagLOGBRUSH32 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("lbStyle"),
-        cef_master_h.C_LONG.withName("lbColor"),
-        cef_master_h.C_LONG.withName("lbHatch")
+        cef_render_handler_capi_h.C_INT.withName("lbStyle"),
+        cef_render_handler_capi_h.C_LONG.withName("lbColor"),
+        cef_render_handler_capi_h.C_LONG.withName("lbHatch")
     ).withName("tagLOGBRUSH32");
 
     /**

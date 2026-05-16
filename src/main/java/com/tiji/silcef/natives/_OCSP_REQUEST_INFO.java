@@ -31,15 +31,15 @@ public class _OCSP_REQUEST_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pRequestorName"),
-        cef_master_h.C_LONG.withName("cRequestEntry"),
+        cef_render_handler_capi_h.C_POINTER.withName("pRequestorName"),
+        cef_render_handler_capi_h.C_LONG.withName("cRequestEntry"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgRequestEntry"),
-        cef_master_h.C_LONG.withName("cExtension"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgRequestEntry"),
+        cef_render_handler_capi_h.C_LONG.withName("cExtension"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgExtension")
+        cef_render_handler_capi_h.C_POINTER.withName("rgExtension")
     ).withName("_OCSP_REQUEST_INFO");
 
     /**

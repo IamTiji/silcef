@@ -37,14 +37,14 @@ public class _SYSTEM_LOGICAL_PROCESSOR_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("ProcessorMask"),
-        cef_master_h.C_INT.withName("Relationship"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ProcessorMask"),
+        cef_render_handler_capi_h.C_INT.withName("Relationship"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
             _SYSTEM_LOGICAL_PROCESSOR_INFORMATION.ProcessorCore.layout().withName("ProcessorCore"),
             _SYSTEM_LOGICAL_PROCESSOR_INFORMATION.NumaNode.layout().withName("NumaNode"),
             _CACHE_DESCRIPTOR.layout().withName("Cache"),
-            MemoryLayout.sequenceLayout(2, cef_master_h.C_LONG_LONG).withName("Reserved")
+            MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_LONG_LONG).withName("Reserved")
         ).withName("$anon$13999:5")
     ).withName("_SYSTEM_LOGICAL_PROCESSOR_INFORMATION");
 
@@ -157,7 +157,7 @@ public class _SYSTEM_LOGICAL_PROCESSOR_INFORMATION {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_CHAR.withName("Flags")
+            cef_render_handler_capi_h.C_CHAR.withName("Flags")
         ).withName("$anon$14000:9");
 
         /**
@@ -322,7 +322,7 @@ public class _SYSTEM_LOGICAL_PROCESSOR_INFORMATION {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_LONG.withName("NodeNumber")
+            cef_render_handler_capi_h.C_LONG.withName("NodeNumber")
         ).withName("$anon$14003:9");
 
         /**

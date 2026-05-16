@@ -27,9 +27,9 @@ public class _CRL_DIST_POINTS_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cDistPoint"),
+        cef_render_handler_capi_h.C_LONG.withName("cDistPoint"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgDistPoint")
+        cef_render_handler_capi_h.C_POINTER.withName("rgDistPoint")
     ).withName("_CRL_DIST_POINTS_INFO");
 
     /**

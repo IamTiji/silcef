@@ -29,8 +29,8 @@ public class _SERVERSILO_DIAGNOSTIC_INFORMATION {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("ReportId"),
-        cef_master_h.C_LONG.withName("ExitStatus"),
-        MemoryLayout.sequenceLayout(15, cef_master_h.C_SHORT).withName("CriticalProcessName"),
+        cef_render_handler_capi_h.C_LONG.withName("ExitStatus"),
+        MemoryLayout.sequenceLayout(15, cef_render_handler_capi_h.C_SHORT).withName("CriticalProcessName"),
         MemoryLayout.paddingLayout(2)
     ).withName("_SERVERSILO_DIAGNOSTIC_INFORMATION");
 

@@ -27,8 +27,8 @@ public class _tagPROTOCOL_ARGUMENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("szMethod"),
-        cef_master_h.C_POINTER.withName("szTargetUrl")
+        cef_render_handler_capi_h.C_POINTER.withName("szMethod"),
+        cef_render_handler_capi_h.C_POINTER.withName("szTargetUrl")
     ).withName("_tagPROTOCOL_ARGUMENT");
 
     /**

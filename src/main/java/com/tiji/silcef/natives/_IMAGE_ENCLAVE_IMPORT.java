@@ -32,13 +32,13 @@ public class _IMAGE_ENCLAVE_IMPORT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("MatchType"),
-        cef_master_h.C_LONG.withName("MinimumSecurityVersion"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("UniqueOrAuthorID"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("FamilyID"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("ImageID"),
-        cef_master_h.C_LONG.withName("ImportName"),
-        cef_master_h.C_LONG.withName("Reserved")
+        cef_render_handler_capi_h.C_LONG.withName("MatchType"),
+        cef_render_handler_capi_h.C_LONG.withName("MinimumSecurityVersion"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("UniqueOrAuthorID"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("FamilyID"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("ImageID"),
+        cef_render_handler_capi_h.C_LONG.withName("ImportName"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved")
     ).withName("_IMAGE_ENCLAVE_IMPORT");
 
     /**

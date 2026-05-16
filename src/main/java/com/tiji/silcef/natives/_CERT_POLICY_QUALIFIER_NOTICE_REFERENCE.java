@@ -28,10 +28,10 @@ public class _CERT_POLICY_QUALIFIER_NOTICE_REFERENCE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszOrganization"),
-        cef_master_h.C_LONG.withName("cNoticeNumbers"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszOrganization"),
+        cef_render_handler_capi_h.C_LONG.withName("cNoticeNumbers"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgNoticeNumbers")
+        cef_render_handler_capi_h.C_POINTER.withName("rgNoticeNumbers")
     ).withName("_CERT_POLICY_QUALIFIER_NOTICE_REFERENCE");
 
     /**

@@ -30,12 +30,12 @@ public class _CMC_ADD_EXTENSIONS_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwCmcDataReference"),
-        cef_master_h.C_LONG.withName("cCertReference"),
-        cef_master_h.C_POINTER.withName("rgdwCertReference"),
-        cef_master_h.C_LONG.withName("cExtension"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCmcDataReference"),
+        cef_render_handler_capi_h.C_LONG.withName("cCertReference"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgdwCertReference"),
+        cef_render_handler_capi_h.C_LONG.withName("cExtension"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgExtension")
+        cef_render_handler_capi_h.C_POINTER.withName("rgExtension")
     ).withName("_CMC_ADD_EXTENSIONS_INFO");
 
     /**

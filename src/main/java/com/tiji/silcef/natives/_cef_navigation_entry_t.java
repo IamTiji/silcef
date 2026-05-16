@@ -37,16 +37,16 @@ public class _cef_navigation_entry_t {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _cef_base_ref_counted_t.layout().withName("base"),
-        cef_master_h.C_POINTER.withName("is_valid"),
-        cef_master_h.C_POINTER.withName("get_url"),
-        cef_master_h.C_POINTER.withName("get_display_url"),
-        cef_master_h.C_POINTER.withName("get_original_url"),
-        cef_master_h.C_POINTER.withName("get_title"),
-        cef_master_h.C_POINTER.withName("get_transition_type"),
-        cef_master_h.C_POINTER.withName("has_post_data"),
-        cef_master_h.C_POINTER.withName("get_completion_time"),
-        cef_master_h.C_POINTER.withName("get_http_status_code"),
-        cef_master_h.C_POINTER.withName("get_sslstatus")
+        cef_render_handler_capi_h.C_POINTER.withName("is_valid"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_url"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_display_url"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_original_url"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_title"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_transition_type"),
+        cef_render_handler_capi_h.C_POINTER.withName("has_post_data"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_completion_time"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_http_status_code"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_sslstatus")
     ).withName("_cef_navigation_entry_t");
 
     /**
@@ -119,8 +119,8 @@ public class _cef_navigation_entry_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -130,7 +130,7 @@ public class _cef_navigation_entry_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_valid.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(is_valid.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -219,8 +219,8 @@ public class _cef_navigation_entry_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -230,7 +230,7 @@ public class _cef_navigation_entry_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_url.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_url.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -319,8 +319,8 @@ public class _cef_navigation_entry_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -330,7 +330,7 @@ public class _cef_navigation_entry_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_display_url.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_display_url.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -419,8 +419,8 @@ public class _cef_navigation_entry_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -430,7 +430,7 @@ public class _cef_navigation_entry_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_original_url.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_original_url.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -519,8 +519,8 @@ public class _cef_navigation_entry_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -530,7 +530,7 @@ public class _cef_navigation_entry_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_title.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_title.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -619,8 +619,8 @@ public class _cef_navigation_entry_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -630,7 +630,7 @@ public class _cef_navigation_entry_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_transition_type.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_transition_type.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -719,8 +719,8 @@ public class _cef_navigation_entry_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -730,7 +730,7 @@ public class _cef_navigation_entry_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(has_post_data.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(has_post_data.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -820,7 +820,7 @@ public class _cef_navigation_entry_t {
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
             _cef_basetime_t.layout(),
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -830,7 +830,7 @@ public class _cef_navigation_entry_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_completion_time.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_completion_time.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -919,8 +919,8 @@ public class _cef_navigation_entry_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -930,7 +930,7 @@ public class _cef_navigation_entry_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_http_status_code.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_http_status_code.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1019,8 +1019,8 @@ public class _cef_navigation_entry_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1030,7 +1030,7 @@ public class _cef_navigation_entry_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_sslstatus.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_sslstatus.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

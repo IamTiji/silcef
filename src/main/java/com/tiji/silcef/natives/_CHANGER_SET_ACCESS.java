@@ -28,7 +28,7 @@ public class _CHANGER_SET_ACCESS {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CHANGER_ELEMENT.layout().withName("Element"),
-        cef_master_h.C_LONG.withName("Control")
+        cef_render_handler_capi_h.C_LONG.withName("Control")
     ).withName("_CHANGER_SET_ACCESS");
 
     /**

@@ -33,15 +33,15 @@ public class _MEMORY_BASIC_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("BaseAddress"),
-        cef_master_h.C_POINTER.withName("AllocationBase"),
-        cef_master_h.C_LONG.withName("AllocationProtect"),
-        cef_master_h.C_SHORT.withName("PartitionId"),
+        cef_render_handler_capi_h.C_POINTER.withName("BaseAddress"),
+        cef_render_handler_capi_h.C_POINTER.withName("AllocationBase"),
+        cef_render_handler_capi_h.C_LONG.withName("AllocationProtect"),
+        cef_render_handler_capi_h.C_SHORT.withName("PartitionId"),
         MemoryLayout.paddingLayout(2),
-        cef_master_h.C_LONG_LONG.withName("RegionSize"),
-        cef_master_h.C_LONG.withName("State"),
-        cef_master_h.C_LONG.withName("Protect"),
-        cef_master_h.C_LONG.withName("Type"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("RegionSize"),
+        cef_render_handler_capi_h.C_LONG.withName("State"),
+        cef_render_handler_capi_h.C_LONG.withName("Protect"),
+        cef_render_handler_capi_h.C_LONG.withName("Type"),
         MemoryLayout.paddingLayout(4)
     ).withName("_MEMORY_BASIC_INFORMATION");
 

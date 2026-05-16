@@ -30,11 +30,11 @@ public class tagGESTURENOTIFYSTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_POINTER.withName("hwndTarget"),
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndTarget"),
         tagPOINTS.layout().withName("ptsLocation"),
-        cef_master_h.C_LONG.withName("dwInstanceID")
+        cef_render_handler_capi_h.C_LONG.withName("dwInstanceID")
     ).withName("tagGESTURENOTIFYSTRUCT");
 
     /**

@@ -36,19 +36,19 @@ public class RPC_INTERFACE_TEMPLATEA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("IfSpec"),
-        cef_master_h.C_POINTER.withName("MgrTypeUuid"),
-        cef_master_h.C_POINTER.withName("MgrEpv"),
-        cef_master_h.C_INT.withName("Flags"),
-        cef_master_h.C_INT.withName("MaxCalls"),
-        cef_master_h.C_INT.withName("MaxRpcSize"),
+        cef_render_handler_capi_h.C_POINTER.withName("IfSpec"),
+        cef_render_handler_capi_h.C_POINTER.withName("MgrTypeUuid"),
+        cef_render_handler_capi_h.C_POINTER.withName("MgrEpv"),
+        cef_render_handler_capi_h.C_INT.withName("Flags"),
+        cef_render_handler_capi_h.C_INT.withName("MaxCalls"),
+        cef_render_handler_capi_h.C_INT.withName("MaxRpcSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("IfCallback"),
-        cef_master_h.C_POINTER.withName("UuidVector"),
-        cef_master_h.C_POINTER.withName("Annotation"),
-        cef_master_h.C_POINTER.withName("SecurityDescriptor")
+        cef_render_handler_capi_h.C_POINTER.withName("IfCallback"),
+        cef_render_handler_capi_h.C_POINTER.withName("UuidVector"),
+        cef_render_handler_capi_h.C_POINTER.withName("Annotation"),
+        cef_render_handler_capi_h.C_POINTER.withName("SecurityDescriptor")
     ).withName("$anon$3194:9");
 
     /**
@@ -385,9 +385,9 @@ public class RPC_INTERFACE_TEMPLATEA {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -397,7 +397,7 @@ public class RPC_INTERFACE_TEMPLATEA {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(IfCallback.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(IfCallback.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

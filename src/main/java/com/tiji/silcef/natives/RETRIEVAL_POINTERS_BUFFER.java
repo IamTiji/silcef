@@ -31,7 +31,7 @@ public class RETRIEVAL_POINTERS_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ExtentCount"),
+        cef_render_handler_capi_h.C_LONG.withName("ExtentCount"),
         MemoryLayout.paddingLayout(4),
         _LARGE_INTEGER.layout().withName("StartingVcn"),
         MemoryLayout.sequenceLayout(1, RETRIEVAL_POINTERS_BUFFER.Extents.layout()).withName("Extents")

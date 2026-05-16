@@ -32,14 +32,14 @@ public class _WIM_PROVIDER_OVERLAY_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NextEntryOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("NextEntryOffset"),
         MemoryLayout.paddingLayout(4),
         _LARGE_INTEGER.layout().withName("DataSourceId"),
         _GUID.layout().withName("WimGuid"),
-        cef_master_h.C_LONG.withName("WimFileNameOffset"),
-        cef_master_h.C_LONG.withName("WimType"),
-        cef_master_h.C_LONG.withName("WimIndex"),
-        cef_master_h.C_LONG.withName("Flags")
+        cef_render_handler_capi_h.C_LONG.withName("WimFileNameOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("WimType"),
+        cef_render_handler_capi_h.C_LONG.withName("WimIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags")
     ).withName("_WIM_PROVIDER_OVERLAY_ENTRY");
 
     /**

@@ -28,8 +28,8 @@ public class _ENUM_SERVICE_STATUSW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("lpServiceName"),
-        cef_master_h.C_POINTER.withName("lpDisplayName"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpServiceName"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpDisplayName"),
         _SERVICE_STATUS.layout().withName("ServiceStatus"),
         MemoryLayout.paddingLayout(4)
     ).withName("_ENUM_SERVICE_STATUSW");

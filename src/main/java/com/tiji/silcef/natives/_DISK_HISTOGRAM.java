@@ -42,11 +42,11 @@ public class _DISK_HISTOGRAM {
         _LARGE_INTEGER.layout().withName("Average"),
         _LARGE_INTEGER.layout().withName("AverageRead"),
         _LARGE_INTEGER.layout().withName("AverageWrite"),
-        cef_master_h.C_LONG.withName("Granularity"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("ReadCount"),
-        cef_master_h.C_LONG.withName("WriteCount"),
-        cef_master_h.C_POINTER.withName("Histogram")
+        cef_render_handler_capi_h.C_LONG.withName("Granularity"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("ReadCount"),
+        cef_render_handler_capi_h.C_LONG.withName("WriteCount"),
+        cef_render_handler_capi_h.C_POINTER.withName("Histogram")
     ).withName("_DISK_HISTOGRAM");
 
     /**

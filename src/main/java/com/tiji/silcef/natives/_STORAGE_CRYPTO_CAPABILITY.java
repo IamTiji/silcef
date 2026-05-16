@@ -31,12 +31,12 @@ public class _STORAGE_CRYPTO_CAPABILITY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("CryptoCapabilityIndex"),
-        cef_master_h.C_INT.withName("AlgorithmId"),
-        cef_master_h.C_INT.withName("KeySize"),
-        cef_master_h.C_LONG.withName("DataUnitSizeBitmask")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("CryptoCapabilityIndex"),
+        cef_render_handler_capi_h.C_INT.withName("AlgorithmId"),
+        cef_render_handler_capi_h.C_INT.withName("KeySize"),
+        cef_render_handler_capi_h.C_LONG.withName("DataUnitSizeBitmask")
     ).withName("_STORAGE_CRYPTO_CAPABILITY");
 
     /**

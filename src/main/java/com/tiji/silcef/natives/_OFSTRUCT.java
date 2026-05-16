@@ -31,12 +31,12 @@ public class _OFSTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("cBytes"),
-        cef_master_h.C_CHAR.withName("fFixedDisk"),
-        cef_master_h.C_SHORT.withName("nErrCode"),
-        cef_master_h.C_SHORT.withName("Reserved1"),
-        cef_master_h.C_SHORT.withName("Reserved2"),
-        MemoryLayout.sequenceLayout(128, cef_master_h.C_CHAR).withName("szPathName")
+        cef_render_handler_capi_h.C_CHAR.withName("cBytes"),
+        cef_render_handler_capi_h.C_CHAR.withName("fFixedDisk"),
+        cef_render_handler_capi_h.C_SHORT.withName("nErrCode"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved1"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved2"),
+        MemoryLayout.sequenceLayout(128, cef_render_handler_capi_h.C_CHAR).withName("szPathName")
     ).withName("_OFSTRUCT");
 
     /**

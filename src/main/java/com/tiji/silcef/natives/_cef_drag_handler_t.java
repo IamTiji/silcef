@@ -29,8 +29,8 @@ public class _cef_drag_handler_t {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _cef_base_ref_counted_t.layout().withName("base"),
-        cef_master_h.C_POINTER.withName("on_drag_enter"),
-        cef_master_h.C_POINTER.withName("on_draggable_regions_changed")
+        cef_app_capi_h.C_POINTER.withName("on_drag_enter"),
+        cef_app_capi_h.C_POINTER.withName("on_draggable_regions_changed")
     ).withName("_cef_drag_handler_t");
 
     /**
@@ -103,11 +103,11 @@ public class _cef_drag_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -117,7 +117,7 @@ public class _cef_drag_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_drag_enter.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(on_drag_enter.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -206,11 +206,11 @@ public class _cef_drag_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -220,7 +220,7 @@ public class _cef_drag_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_draggable_regions_changed.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(on_draggable_regions_changed.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

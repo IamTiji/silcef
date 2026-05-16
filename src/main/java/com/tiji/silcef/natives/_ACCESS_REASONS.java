@@ -26,7 +26,7 @@ public class _ACCESS_REASONS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_LONG).withName("Data")
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_LONG).withName("Data")
     ).withName("_ACCESS_REASONS");
 
     /**

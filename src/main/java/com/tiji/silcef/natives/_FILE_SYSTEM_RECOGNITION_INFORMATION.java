@@ -26,7 +26,7 @@ public class _FILE_SYSTEM_RECOGNITION_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(9, cef_master_h.C_CHAR).withName("FileSystem")
+        MemoryLayout.sequenceLayout(9, cef_render_handler_capi_h.C_CHAR).withName("FileSystem")
     ).withName("_FILE_SYSTEM_RECOGNITION_INFORMATION");
 
     /**

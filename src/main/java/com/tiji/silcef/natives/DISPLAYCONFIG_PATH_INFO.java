@@ -30,7 +30,7 @@ public class DISPLAYCONFIG_PATH_INFO {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         DISPLAYCONFIG_PATH_SOURCE_INFO.layout().withName("sourceInfo"),
         DISPLAYCONFIG_PATH_TARGET_INFO.layout().withName("targetInfo"),
-        cef_master_h.C_INT.withName("flags")
+        cef_render_handler_capi_h.C_INT.withName("flags")
     ).withName("DISPLAYCONFIG_PATH_INFO");
 
     /**

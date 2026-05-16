@@ -80,37 +80,6 @@ tasks.register("getCEF") {
     delete(file)
 }
 
-tasks.register("genMasterHeader") {
-    val lookIn = arrayOf("include/capi")
-    val files = mutableListOf<File>()
-
-    lookIn.forEach { files.addAll(File("cef/$it").listFiles()) }
-    val header = StringBuilder("""
-        // This file is generated! It will get overwritten if you modify it. 
-        // If you insist on editing this, don't cry later...
-        //
-        // If you want to regenerate this file, run: gradlew genMasterHeader
-        
-        
-        #ifndef SLICEF_CEF_MASTER_HEADER_
-        #define SLICEF_CEF_MASTER_HEADER_
-        
-        
-    """.trimIndent())
-
-    files.forEach {
-        if (it.extension != "h") return@forEach
-        header.append("#include <${it.path.substringAfter("cef/")}>\n")
-    }
-    header.append("#include <include/cef_version.h>\n")
-    header.append("\n#endif // SLICEF_CEF_MASTER_HEADER_")
-
-    val file = File("src/main/headers/cef_master.h")
-    if (file.exists()) delete(file)
-    file.createNewFile()
-    file.writeText(header.toString())
-}
-
 tasks.register<Exec>("genNatives") {
     doFirst {
         val folder = File("src/main/java/com/tiji/silcef/natives")
@@ -119,14 +88,32 @@ tasks.register<Exec>("genNatives") {
     }
 
     val isWindows = System.getProperty("os.name").lowercase().contains("windows")
-    commandLine(if (isWindows) "jextract.bat" else "jextract")
-    args(
-        "-l", ":cef/Release/libcef.lib",
-        "--output", "src/main/java/",
-        "-t", "com.tiji.silcef.natives",
-        "-I", "cef",
-        "src/main/headers/cef_master.h"
-    )
+    commandLine(if (isWindows) "powershell" else "bash")
+    if (isWindows) {
+        args(
+            $$"""
+                Get-Content -Path "src/main/headers/toGenerate" | ForEach-Object {
+                    Write-Host "Processing $_"
+                    jextract -l ":cef/Release/libcef.lib" `
+                    --output "src/main/java/" `
+                    -t "com.tiji.silcef.natives" `
+                    -I "cef" `
+                    $_
+                }
+            """.trimIndent()
+        )
+    } else {
+        args("-c", $$"""
+            while IFS= read -r file; do
+                echo "Processing $file"
+                jextract -l ":cef/Release/libcef.so" \
+                --output "src/main/java/" \
+                -t "com.tiji.silcef.natives" \
+                "-I" "cef" \
+                "$file"
+            done < src/main/headers/toGenerate
+        """.trimIndent())
+    }
 }
 
 val targetJavaVersion = 21

@@ -29,10 +29,10 @@ public class _NCRYPT_KEY_BLOB_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwMagic"),
-        cef_master_h.C_LONG.withName("cbAlgName"),
-        cef_master_h.C_LONG.withName("cbKeyData")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMagic"),
+        cef_render_handler_capi_h.C_LONG.withName("cbAlgName"),
+        cef_render_handler_capi_h.C_LONG.withName("cbKeyData")
     ).withName("_NCRYPT_KEY_BLOB_HEADER");
 
     /**

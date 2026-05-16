@@ -26,7 +26,7 @@ public class _ACL_REVISION_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("AclRevision")
+        cef_render_handler_capi_h.C_LONG.withName("AclRevision")
     ).withName("_ACL_REVISION_INFORMATION");
 
     /**

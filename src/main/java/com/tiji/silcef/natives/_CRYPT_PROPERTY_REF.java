@@ -28,10 +28,10 @@ public class _CRYPT_PROPERTY_REF {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszProperty"),
-        cef_master_h.C_LONG.withName("cbValue"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszProperty"),
+        cef_render_handler_capi_h.C_LONG.withName("cbValue"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pbValue")
+        cef_render_handler_capi_h.C_POINTER.withName("pbValue")
     ).withName("_CRYPT_PROPERTY_REF");
 
     /**

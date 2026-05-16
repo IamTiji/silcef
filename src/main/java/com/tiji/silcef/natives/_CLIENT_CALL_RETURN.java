@@ -27,8 +27,8 @@ public class _CLIENT_CALL_RETURN {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-        cef_master_h.C_POINTER.withName("Pointer"),
-        cef_master_h.C_LONG_LONG.withName("Simple")
+        cef_render_handler_capi_h.C_POINTER.withName("Pointer"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Simple")
     ).withName("_CLIENT_CALL_RETURN");
 
     /**

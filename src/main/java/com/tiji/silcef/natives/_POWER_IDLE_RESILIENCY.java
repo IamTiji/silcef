@@ -27,8 +27,8 @@ public class _POWER_IDLE_RESILIENCY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("CoalescingTimeout"),
-        cef_master_h.C_LONG.withName("IdleResiliencyPeriod")
+        cef_render_handler_capi_h.C_LONG.withName("CoalescingTimeout"),
+        cef_render_handler_capi_h.C_LONG.withName("IdleResiliencyPeriod")
     ).withName("_POWER_IDLE_RESILIENCY");
 
     /**

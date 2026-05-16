@@ -40,14 +40,14 @@ public class IMAGE_COR20_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cb"),
-        cef_master_h.C_SHORT.withName("MajorRuntimeVersion"),
-        cef_master_h.C_SHORT.withName("MinorRuntimeVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("cb"),
+        cef_render_handler_capi_h.C_SHORT.withName("MajorRuntimeVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("MinorRuntimeVersion"),
         _IMAGE_DATA_DIRECTORY.layout().withName("MetaData"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("EntryPointToken"),
-            cef_master_h.C_LONG.withName("EntryPointRVA")
+            cef_render_handler_capi_h.C_LONG.withName("EntryPointToken"),
+            cef_render_handler_capi_h.C_LONG.withName("EntryPointRVA")
         ).withName("$anon$22198:5"),
         _IMAGE_DATA_DIRECTORY.layout().withName("Resources"),
         _IMAGE_DATA_DIRECTORY.layout().withName("StrongNameSignature"),

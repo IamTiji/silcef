@@ -44,7 +44,7 @@ public class mmtime_tag {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_INT, 1).withName("wType"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_INT, 1).withName("wType"),
         mmtime_tag.u.layout().withName("u")
     ).withName("mmtime_tag");
 
@@ -128,10 +128,10 @@ public class mmtime_tag {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.align(cef_master_h.C_LONG, 1).withName("ms"),
-            cef_master_h.align(cef_master_h.C_LONG, 1).withName("sample"),
-            cef_master_h.align(cef_master_h.C_LONG, 1).withName("cb"),
-            cef_master_h.align(cef_master_h.C_LONG, 1).withName("ticks"),
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("ms"),
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("sample"),
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cb"),
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("ticks"),
             mmtime_tag.u.smpte.layout().withName("smpte"),
             mmtime_tag.u.midi.layout().withName("midi")
         ).withName("$anon$110:5");
@@ -339,13 +339,13 @@ public class mmtime_tag {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_CHAR.withName("hour"),
-                cef_master_h.C_CHAR.withName("min"),
-                cef_master_h.C_CHAR.withName("sec"),
-                cef_master_h.C_CHAR.withName("frame"),
-                cef_master_h.C_CHAR.withName("fps"),
-                cef_master_h.C_CHAR.withName("dummy"),
-                MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("pad")
+                cef_render_handler_capi_h.C_CHAR.withName("hour"),
+                cef_render_handler_capi_h.C_CHAR.withName("min"),
+                cef_render_handler_capi_h.C_CHAR.withName("sec"),
+                cef_render_handler_capi_h.C_CHAR.withName("frame"),
+                cef_render_handler_capi_h.C_CHAR.withName("fps"),
+                cef_render_handler_capi_h.C_CHAR.withName("dummy"),
+                MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("pad")
             ).withName("$anon$118:9");
 
             /**
@@ -831,7 +831,7 @@ public class mmtime_tag {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.align(cef_master_h.C_LONG, 1).withName("songptrpos")
+                cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("songptrpos")
             ).withName("$anon$132:9");
 
             /**

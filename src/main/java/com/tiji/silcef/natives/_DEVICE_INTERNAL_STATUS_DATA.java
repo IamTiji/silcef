@@ -37,18 +37,18 @@ public class _DEVICE_INTERNAL_STATUS_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG_LONG.withName("T10VendorId"),
-        cef_master_h.C_LONG.withName("DataSet1Length"),
-        cef_master_h.C_LONG.withName("DataSet2Length"),
-        cef_master_h.C_LONG.withName("DataSet3Length"),
-        cef_master_h.C_LONG.withName("DataSet4Length"),
-        cef_master_h.C_CHAR.withName("StatusDataVersion"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_CHAR).withName("Reserved"),
-        MemoryLayout.sequenceLayout(128, cef_master_h.C_CHAR).withName("ReasonIdentifier"),
-        cef_master_h.C_LONG.withName("StatusDataLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("StatusData"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("T10VendorId"),
+        cef_render_handler_capi_h.C_LONG.withName("DataSet1Length"),
+        cef_render_handler_capi_h.C_LONG.withName("DataSet2Length"),
+        cef_render_handler_capi_h.C_LONG.withName("DataSet3Length"),
+        cef_render_handler_capi_h.C_LONG.withName("DataSet4Length"),
+        cef_render_handler_capi_h.C_CHAR.withName("StatusDataVersion"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_CHAR).withName("Reserved"),
+        MemoryLayout.sequenceLayout(128, cef_render_handler_capi_h.C_CHAR).withName("ReasonIdentifier"),
+        cef_render_handler_capi_h.C_LONG.withName("StatusDataLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("StatusData"),
         MemoryLayout.paddingLayout(7)
     ).withName("_DEVICE_INTERNAL_STATUS_DATA");
 

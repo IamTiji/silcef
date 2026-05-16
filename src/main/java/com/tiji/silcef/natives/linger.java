@@ -27,8 +27,8 @@ public class linger {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("l_onoff"),
-        cef_master_h.C_SHORT.withName("l_linger")
+        cef_render_handler_capi_h.C_SHORT.withName("l_onoff"),
+        cef_render_handler_capi_h.C_SHORT.withName("l_linger")
     ).withName("linger");
 
     /**

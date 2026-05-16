@@ -32,13 +32,13 @@ public class _MEMORY_PARTITION_DEDICATED_MEMORY_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NextEntryOffset"),
-        cef_master_h.C_LONG.withName("SizeOfInformation"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("AttributesOffset"),
-        cef_master_h.C_LONG.withName("AttributeCount"),
-        cef_master_h.C_LONG.withName("Reserved"),
-        cef_master_h.C_LONG_LONG.withName("TypeId")
+        cef_render_handler_capi_h.C_LONG.withName("NextEntryOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("SizeOfInformation"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("AttributesOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("AttributeCount"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("TypeId")
     ).withName("_MEMORY_PARTITION_DEDICATED_MEMORY_INFORMATION");
 
     /**

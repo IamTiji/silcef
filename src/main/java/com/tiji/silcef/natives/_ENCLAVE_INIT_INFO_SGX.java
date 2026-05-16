@@ -29,10 +29,10 @@ public class _ENCLAVE_INIT_INFO_SGX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(1808, cef_master_h.C_CHAR).withName("SigStruct"),
-        MemoryLayout.sequenceLayout(240, cef_master_h.C_CHAR).withName("Reserved1"),
-        MemoryLayout.sequenceLayout(304, cef_master_h.C_CHAR).withName("EInitToken"),
-        MemoryLayout.sequenceLayout(1744, cef_master_h.C_CHAR).withName("Reserved2")
+        MemoryLayout.sequenceLayout(1808, cef_render_handler_capi_h.C_CHAR).withName("SigStruct"),
+        MemoryLayout.sequenceLayout(240, cef_render_handler_capi_h.C_CHAR).withName("Reserved1"),
+        MemoryLayout.sequenceLayout(304, cef_render_handler_capi_h.C_CHAR).withName("EInitToken"),
+        MemoryLayout.sequenceLayout(1744, cef_render_handler_capi_h.C_CHAR).withName("Reserved2")
     ).withName("_ENCLAVE_INIT_INFO_SGX");
 
     /**

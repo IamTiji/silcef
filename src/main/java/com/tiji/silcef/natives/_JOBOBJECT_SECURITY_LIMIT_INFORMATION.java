@@ -30,12 +30,12 @@ public class _JOBOBJECT_SECURITY_LIMIT_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("SecurityLimitFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("SecurityLimitFlags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("JobToken"),
-        cef_master_h.C_POINTER.withName("SidsToDisable"),
-        cef_master_h.C_POINTER.withName("PrivilegesToDelete"),
-        cef_master_h.C_POINTER.withName("RestrictedSids")
+        cef_render_handler_capi_h.C_POINTER.withName("JobToken"),
+        cef_render_handler_capi_h.C_POINTER.withName("SidsToDisable"),
+        cef_render_handler_capi_h.C_POINTER.withName("PrivilegesToDelete"),
+        cef_render_handler_capi_h.C_POINTER.withName("RestrictedSids")
     ).withName("_JOBOBJECT_SECURITY_LIMIT_INFORMATION");
 
     /**

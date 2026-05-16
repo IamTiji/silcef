@@ -32,13 +32,13 @@ public class DLGTEMPLATE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 2).withName("style"),
-        cef_master_h.align(cef_master_h.C_LONG, 2).withName("dwExtendedStyle"),
-        cef_master_h.C_SHORT.withName("cdit"),
-        cef_master_h.C_SHORT.withName("x"),
-        cef_master_h.C_SHORT.withName("y"),
-        cef_master_h.C_SHORT.withName("cx"),
-        cef_master_h.C_SHORT.withName("cy")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("style"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("dwExtendedStyle"),
+        cef_render_handler_capi_h.C_SHORT.withName("cdit"),
+        cef_render_handler_capi_h.C_SHORT.withName("x"),
+        cef_render_handler_capi_h.C_SHORT.withName("y"),
+        cef_render_handler_capi_h.C_SHORT.withName("cx"),
+        cef_render_handler_capi_h.C_SHORT.withName("cy")
     ).withName("$anon$4928:9");
 
     /**

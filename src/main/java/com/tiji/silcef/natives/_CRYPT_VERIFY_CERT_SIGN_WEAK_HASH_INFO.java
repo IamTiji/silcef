@@ -28,10 +28,10 @@ public class _CRYPT_VERIFY_CERT_SIGN_WEAK_HASH_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cCNGHashAlgid"),
+        cef_render_handler_capi_h.C_LONG.withName("cCNGHashAlgid"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgpwszCNGHashAlgid"),
-        cef_master_h.C_LONG.withName("dwWeakIndex"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgpwszCNGHashAlgid"),
+        cef_render_handler_capi_h.C_LONG.withName("dwWeakIndex"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CRYPT_VERIFY_CERT_SIGN_WEAK_HASH_INFO");
 

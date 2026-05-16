@@ -28,7 +28,7 @@ public class _cef_draggable_region_t {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _cef_rect_t.layout().withName("bounds"),
-        cef_master_h.C_INT.withName("draggable")
+        cef_render_handler_capi_h.C_INT.withName("draggable")
     ).withName("_cef_draggable_region_t");
 
     /**

@@ -27,7 +27,7 @@ public class tagMONITORINFOEXA {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.paddingLayout(40),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("szDevice")
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("szDevice")
     ).withName("tagMONITORINFOEXA");
 
     /**

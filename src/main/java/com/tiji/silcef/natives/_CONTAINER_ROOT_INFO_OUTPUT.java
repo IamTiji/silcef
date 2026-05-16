@@ -27,8 +27,8 @@ public class _CONTAINER_ROOT_INFO_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("ContainerRootIdLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("ContainerRootId"),
+        cef_render_handler_capi_h.C_SHORT.withName("ContainerRootIdLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("ContainerRootId"),
         MemoryLayout.paddingLayout(1)
     ).withName("_CONTAINER_ROOT_INFO_OUTPUT");
 

@@ -27,8 +27,8 @@ public class _DWORD_BLOB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("clSize"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG).withName("alData")
+        cef_render_handler_capi_h.C_LONG.withName("clSize"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG).withName("alData")
     ).withName("_DWORD_BLOB");
 
     /**

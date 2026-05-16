@@ -31,16 +31,16 @@ public final class LPPROGRESS_ROUTINE {
     }
 
     private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-        cef_master_h.C_LONG,
+        cef_render_handler_capi_h.C_LONG,
         _LARGE_INTEGER.layout(),
         _LARGE_INTEGER.layout(),
         _LARGE_INTEGER.layout(),
         _LARGE_INTEGER.layout(),
-        cef_master_h.C_LONG,
-        cef_master_h.C_LONG,
-        cef_master_h.C_POINTER,
-        cef_master_h.C_POINTER,
-        cef_master_h.C_POINTER
+        cef_render_handler_capi_h.C_LONG,
+        cef_render_handler_capi_h.C_LONG,
+        cef_render_handler_capi_h.C_POINTER,
+        cef_render_handler_capi_h.C_POINTER,
+        cef_render_handler_capi_h.C_POINTER
     );
 
     /**
@@ -50,7 +50,7 @@ public final class LPPROGRESS_ROUTINE {
         return $DESC;
     }
 
-    private static final MethodHandle UP$MH = cef_master_h.upcallHandle(LPPROGRESS_ROUTINE.Function.class, "apply", $DESC);
+    private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(LPPROGRESS_ROUTINE.Function.class, "apply", $DESC);
 
     /**
      * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

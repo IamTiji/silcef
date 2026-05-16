@@ -27,8 +27,8 @@ public class _DRIVE_LAYOUT_INFORMATION_MBR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Signature"),
-        cef_master_h.C_LONG.withName("CheckSum")
+        cef_render_handler_capi_h.C_LONG.withName("Signature"),
+        cef_render_handler_capi_h.C_LONG.withName("CheckSum")
     ).withName("_DRIVE_LAYOUT_INFORMATION_MBR");
 
     /**

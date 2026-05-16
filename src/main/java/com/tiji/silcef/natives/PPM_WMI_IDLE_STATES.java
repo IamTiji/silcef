@@ -31,11 +31,11 @@ public class PPM_WMI_IDLE_STATES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Type"),
-        cef_master_h.C_LONG.withName("Count"),
-        cef_master_h.C_LONG.withName("TargetState"),
-        cef_master_h.C_LONG.withName("OldState"),
-        cef_master_h.C_LONG_LONG.withName("TargetProcessors"),
+        cef_render_handler_capi_h.C_LONG.withName("Type"),
+        cef_render_handler_capi_h.C_LONG.withName("Count"),
+        cef_render_handler_capi_h.C_LONG.withName("TargetState"),
+        cef_render_handler_capi_h.C_LONG.withName("OldState"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("TargetProcessors"),
         MemoryLayout.sequenceLayout(1, PPM_WMI_IDLE_STATE.layout()).withName("State")
     ).withName("$anon$18991:9");
 

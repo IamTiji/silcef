@@ -33,14 +33,14 @@ public class _userBITMAP {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("bmType"),
-        cef_master_h.C_LONG.withName("bmWidth"),
-        cef_master_h.C_LONG.withName("bmHeight"),
-        cef_master_h.C_LONG.withName("bmWidthBytes"),
-        cef_master_h.C_SHORT.withName("bmPlanes"),
-        cef_master_h.C_SHORT.withName("bmBitsPixel"),
-        cef_master_h.C_LONG.withName("cbSize"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("pBuffer"),
+        cef_render_handler_capi_h.C_LONG.withName("bmType"),
+        cef_render_handler_capi_h.C_LONG.withName("bmWidth"),
+        cef_render_handler_capi_h.C_LONG.withName("bmHeight"),
+        cef_render_handler_capi_h.C_LONG.withName("bmWidthBytes"),
+        cef_render_handler_capi_h.C_SHORT.withName("bmPlanes"),
+        cef_render_handler_capi_h.C_SHORT.withName("bmBitsPixel"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("pBuffer"),
         MemoryLayout.paddingLayout(3)
     ).withName("_userBITMAP");
 

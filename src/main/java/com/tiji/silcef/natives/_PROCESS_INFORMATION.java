@@ -29,10 +29,10 @@ public class _PROCESS_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hProcess"),
-        cef_master_h.C_POINTER.withName("hThread"),
-        cef_master_h.C_LONG.withName("dwProcessId"),
-        cef_master_h.C_LONG.withName("dwThreadId")
+        cef_render_handler_capi_h.C_POINTER.withName("hProcess"),
+        cef_render_handler_capi_h.C_POINTER.withName("hThread"),
+        cef_render_handler_capi_h.C_LONG.withName("dwProcessId"),
+        cef_render_handler_capi_h.C_LONG.withName("dwThreadId")
     ).withName("_PROCESS_INFORMATION");
 
     /**

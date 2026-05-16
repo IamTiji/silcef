@@ -27,8 +27,8 @@ public class _NCRYPT_PLATFORM_ATTEST_PADDING_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("magic"),
-        cef_master_h.C_LONG.withName("pcrMask")
+        cef_render_handler_capi_h.C_LONG.withName("magic"),
+        cef_render_handler_capi_h.C_LONG.withName("pcrMask")
     ).withName("_NCRYPT_PLATFORM_ATTEST_PADDING_INFO");
 
     /**

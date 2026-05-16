@@ -39,17 +39,17 @@ public class _SCM_BUS_RUNTIME_FW_ACTIVATION_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_CHAR.withName("RuntimeFwActivationSupported"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_CHAR.withName("RuntimeFwActivationSupported"),
         MemoryLayout.paddingLayout(3),
-        cef_master_h.C_INT.withName("FirmwareActivationState"),
+        cef_render_handler_capi_h.C_INT.withName("FirmwareActivationState"),
         _SCM_BUS_RUNTIME_FW_ACTIVATION_INFO.FirmwareActivationCapability.layout().withName("FirmwareActivationCapability"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("EstimatedFirmwareActivationTimeInUSecs"),
-        cef_master_h.C_LONG_LONG.withName("EstimatedProcessorAccessQuiesceTimeInUSecs"),
-        cef_master_h.C_LONG_LONG.withName("EstimatedIOAccessQuiesceTimeInUSecs"),
-        cef_master_h.C_LONG_LONG.withName("PlatformSupportedMaxIOAccessQuiesceTimeInUSecs")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("EstimatedFirmwareActivationTimeInUSecs"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("EstimatedProcessorAccessQuiesceTimeInUSecs"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("EstimatedIOAccessQuiesceTimeInUSecs"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("PlatformSupportedMaxIOAccessQuiesceTimeInUSecs")
     ).withName("_SCM_BUS_RUNTIME_FW_ACTIVATION_INFO");
 
     /**

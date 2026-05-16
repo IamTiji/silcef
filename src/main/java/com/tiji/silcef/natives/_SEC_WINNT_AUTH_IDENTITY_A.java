@@ -32,15 +32,15 @@ public class _SEC_WINNT_AUTH_IDENTITY_A {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("User"),
-        cef_master_h.C_LONG.withName("UserLength"),
+        cef_render_handler_capi_h.C_POINTER.withName("User"),
+        cef_render_handler_capi_h.C_LONG.withName("UserLength"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("Domain"),
-        cef_master_h.C_LONG.withName("DomainLength"),
+        cef_render_handler_capi_h.C_POINTER.withName("Domain"),
+        cef_render_handler_capi_h.C_LONG.withName("DomainLength"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("Password"),
-        cef_master_h.C_LONG.withName("PasswordLength"),
-        cef_master_h.C_LONG.withName("Flags")
+        cef_render_handler_capi_h.C_POINTER.withName("Password"),
+        cef_render_handler_capi_h.C_LONG.withName("PasswordLength"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags")
     ).withName("_SEC_WINNT_AUTH_IDENTITY_A");
 
     /**

@@ -29,11 +29,11 @@ public class __GENERIC_BINDING_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pObj"),
-        cef_master_h.C_INT.withName("Size"),
+        cef_render_handler_capi_h.C_POINTER.withName("pObj"),
+        cef_render_handler_capi_h.C_INT.withName("Size"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pfnBind"),
-        cef_master_h.C_POINTER.withName("pfnUnbind")
+        cef_render_handler_capi_h.C_POINTER.withName("pfnBind"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnUnbind")
     ).withName("__GENERIC_BINDING_INFO");
 
     /**

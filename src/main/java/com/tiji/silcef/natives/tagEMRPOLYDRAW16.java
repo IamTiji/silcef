@@ -32,9 +32,9 @@ public class tagEMRPOLYDRAW16 {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
         _RECTL.layout().withName("rclBounds"),
-        cef_master_h.C_LONG.withName("cpts"),
+        cef_render_handler_capi_h.C_LONG.withName("cpts"),
         MemoryLayout.sequenceLayout(1, tagPOINTS.layout()).withName("apts"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("abTypes"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("abTypes"),
         MemoryLayout.paddingLayout(3)
     ).withName("tagEMRPOLYDRAW16");
 

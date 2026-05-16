@@ -35,17 +35,17 @@ public class _CMSG_KEY_AGREE_RECIPIENT_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
-        cef_master_h.C_LONG.withName("dwOriginatorChoice"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwOriginatorChoice"),
         MemoryLayout.unionLayout(
             _CERT_ID.layout().withName("OriginatorCertId"),
             _CERT_PUBLIC_KEY_INFO.layout().withName("OriginatorPublicKeyInfo")
         ).withName("$anon$7993:5"),
         _CRYPTOAPI_BLOB.layout().withName("UserKeyingMaterial"),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("KeyEncryptionAlgorithm"),
-        cef_master_h.C_LONG.withName("cRecipientEncryptedKeys"),
+        cef_render_handler_capi_h.C_LONG.withName("cRecipientEncryptedKeys"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgpRecipientEncryptedKeys")
+        cef_render_handler_capi_h.C_POINTER.withName("rgpRecipientEncryptedKeys")
     ).withName("_CMSG_KEY_AGREE_RECIPIENT_INFO");
 
     /**

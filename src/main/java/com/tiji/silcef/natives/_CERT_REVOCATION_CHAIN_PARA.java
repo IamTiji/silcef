@@ -33,15 +33,15 @@ public class _CERT_REVOCATION_CHAIN_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hChainEngine"),
-        cef_master_h.C_POINTER.withName("hAdditionalStore"),
-        cef_master_h.C_LONG.withName("dwChainFlags"),
-        cef_master_h.C_LONG.withName("dwUrlRetrievalTimeout"),
-        cef_master_h.C_POINTER.withName("pftCurrentTime"),
-        cef_master_h.C_POINTER.withName("pftCacheResync"),
-        cef_master_h.C_LONG.withName("cbMaxUrlRetrievalByteCount"),
+        cef_render_handler_capi_h.C_POINTER.withName("hChainEngine"),
+        cef_render_handler_capi_h.C_POINTER.withName("hAdditionalStore"),
+        cef_render_handler_capi_h.C_LONG.withName("dwChainFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwUrlRetrievalTimeout"),
+        cef_render_handler_capi_h.C_POINTER.withName("pftCurrentTime"),
+        cef_render_handler_capi_h.C_POINTER.withName("pftCacheResync"),
+        cef_render_handler_capi_h.C_LONG.withName("cbMaxUrlRetrievalByteCount"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CERT_REVOCATION_CHAIN_PARA");
 

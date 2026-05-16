@@ -37,19 +37,19 @@ public class _WINDOW_ACTION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("kinds"),
-        cef_master_h.C_INT.withName("modifiers"),
-        cef_master_h.C_INT.withName("visible"),
+        cef_render_handler_capi_h.C_INT.withName("kinds"),
+        cef_render_handler_capi_h.C_INT.withName("modifiers"),
+        cef_render_handler_capi_h.C_INT.withName("visible"),
         tagPOINT.layout().withName("position"),
         tagSIZE.layout().withName("size"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("insertAfter"),
-        cef_master_h.C_INT.withName("placementState"),
+        cef_render_handler_capi_h.C_POINTER.withName("insertAfter"),
+        cef_render_handler_capi_h.C_INT.withName("placementState"),
         tagRECT.layout().withName("normalRect"),
         tagRECT.layout().withName("workArea"),
-        cef_master_h.C_INT.withName("dpi"),
+        cef_render_handler_capi_h.C_INT.withName("dpi"),
         tagPOINT.layout().withName("pointOnMonitor"),
-        cef_master_h.C_INT.withName("monitorTopologyId"),
+        cef_render_handler_capi_h.C_INT.withName("monitorTopologyId"),
         MemoryLayout.paddingLayout(4)
     ).withName("_WINDOW_ACTION");
 

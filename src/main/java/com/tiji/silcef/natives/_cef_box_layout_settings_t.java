@@ -35,16 +35,16 @@ public class _cef_box_layout_settings_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("size"),
-        cef_master_h.C_INT.withName("horizontal"),
-        cef_master_h.C_INT.withName("inside_border_horizontal_spacing"),
-        cef_master_h.C_INT.withName("inside_border_vertical_spacing"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("size"),
+        cef_render_handler_capi_h.C_INT.withName("horizontal"),
+        cef_render_handler_capi_h.C_INT.withName("inside_border_horizontal_spacing"),
+        cef_render_handler_capi_h.C_INT.withName("inside_border_vertical_spacing"),
         _cef_insets_t.layout().withName("inside_border_insets"),
-        cef_master_h.C_INT.withName("between_child_spacing"),
-        cef_master_h.C_INT.withName("main_axis_alignment"),
-        cef_master_h.C_INT.withName("cross_axis_alignment"),
-        cef_master_h.C_INT.withName("minimum_cross_axis_size"),
-        cef_master_h.C_INT.withName("default_flex")
+        cef_render_handler_capi_h.C_INT.withName("between_child_spacing"),
+        cef_render_handler_capi_h.C_INT.withName("main_axis_alignment"),
+        cef_render_handler_capi_h.C_INT.withName("cross_axis_alignment"),
+        cef_render_handler_capi_h.C_INT.withName("minimum_cross_axis_size"),
+        cef_render_handler_capi_h.C_INT.withName("default_flex")
     ).withName("_cef_box_layout_settings_t");
 
     /**

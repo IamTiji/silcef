@@ -27,8 +27,8 @@ public class tagPOINTER_DEVICE_CURSOR_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cursorId"),
-        cef_master_h.C_INT.withName("cursor")
+        cef_render_handler_capi_h.C_INT.withName("cursorId"),
+        cef_render_handler_capi_h.C_INT.withName("cursor")
     ).withName("tagPOINTER_DEVICE_CURSOR_INFO");
 
     /**

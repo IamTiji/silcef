@@ -35,16 +35,16 @@ public class tagPANOSE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("bFamilyType"),
-        cef_master_h.C_CHAR.withName("bSerifStyle"),
-        cef_master_h.C_CHAR.withName("bWeight"),
-        cef_master_h.C_CHAR.withName("bProportion"),
-        cef_master_h.C_CHAR.withName("bContrast"),
-        cef_master_h.C_CHAR.withName("bStrokeVariation"),
-        cef_master_h.C_CHAR.withName("bArmStyle"),
-        cef_master_h.C_CHAR.withName("bLetterform"),
-        cef_master_h.C_CHAR.withName("bMidline"),
-        cef_master_h.C_CHAR.withName("bXHeight")
+        cef_render_handler_capi_h.C_CHAR.withName("bFamilyType"),
+        cef_render_handler_capi_h.C_CHAR.withName("bSerifStyle"),
+        cef_render_handler_capi_h.C_CHAR.withName("bWeight"),
+        cef_render_handler_capi_h.C_CHAR.withName("bProportion"),
+        cef_render_handler_capi_h.C_CHAR.withName("bContrast"),
+        cef_render_handler_capi_h.C_CHAR.withName("bStrokeVariation"),
+        cef_render_handler_capi_h.C_CHAR.withName("bArmStyle"),
+        cef_render_handler_capi_h.C_CHAR.withName("bLetterform"),
+        cef_render_handler_capi_h.C_CHAR.withName("bMidline"),
+        cef_render_handler_capi_h.C_CHAR.withName("bXHeight")
     ).withName("tagPANOSE");
 
     /**

@@ -34,15 +34,15 @@ public class _FILE_LAYOUT_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("NextFileOffset"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("FileAttributes"),
-        cef_master_h.C_LONG_LONG.withName("FileReferenceNumber"),
-        cef_master_h.C_LONG.withName("FirstNameOffset"),
-        cef_master_h.C_LONG.withName("FirstStreamOffset"),
-        cef_master_h.C_LONG.withName("ExtraInfoOffset"),
-        cef_master_h.C_LONG.withName("ExtraInfoLength")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("NextFileOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("FileAttributes"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("FileReferenceNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("FirstNameOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("FirstStreamOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("ExtraInfoOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("ExtraInfoLength")
     ).withName("_FILE_LAYOUT_ENTRY");
 
     /**

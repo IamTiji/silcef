@@ -33,15 +33,15 @@ public class _xml_error {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("_nLine"),
+        cef_render_handler_capi_h.C_INT.withName("_nLine"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("_pchBuf"),
-        cef_master_h.C_INT.withName("_cchBuf"),
-        cef_master_h.C_INT.withName("_ich"),
-        cef_master_h.C_POINTER.withName("_pszFound"),
-        cef_master_h.C_POINTER.withName("_pszExpected"),
-        cef_master_h.C_LONG.withName("_reserved1"),
-        cef_master_h.C_LONG.withName("_reserved2")
+        cef_render_handler_capi_h.C_POINTER.withName("_pchBuf"),
+        cef_render_handler_capi_h.C_INT.withName("_cchBuf"),
+        cef_render_handler_capi_h.C_INT.withName("_ich"),
+        cef_render_handler_capi_h.C_POINTER.withName("_pszFound"),
+        cef_render_handler_capi_h.C_POINTER.withName("_pszExpected"),
+        cef_render_handler_capi_h.C_LONG.withName("_reserved1"),
+        cef_render_handler_capi_h.C_LONG.withName("_reserved2")
     ).withName("_xml_error");
 
     /**

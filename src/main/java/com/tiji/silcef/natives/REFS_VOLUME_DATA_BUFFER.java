@@ -45,25 +45,25 @@ public class REFS_VOLUME_DATA_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ByteCount"),
-        cef_master_h.C_LONG.withName("MajorVersion"),
-        cef_master_h.C_LONG.withName("MinorVersion"),
-        cef_master_h.C_LONG.withName("BytesPerPhysicalSector"),
+        cef_render_handler_capi_h.C_LONG.withName("ByteCount"),
+        cef_render_handler_capi_h.C_LONG.withName("MajorVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("MinorVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("BytesPerPhysicalSector"),
         _LARGE_INTEGER.layout().withName("VolumeSerialNumber"),
         _LARGE_INTEGER.layout().withName("NumberSectors"),
         _LARGE_INTEGER.layout().withName("TotalClusters"),
         _LARGE_INTEGER.layout().withName("FreeClusters"),
         _LARGE_INTEGER.layout().withName("TotalReserved"),
-        cef_master_h.C_LONG.withName("BytesPerSector"),
-        cef_master_h.C_LONG.withName("BytesPerCluster"),
+        cef_render_handler_capi_h.C_LONG.withName("BytesPerSector"),
+        cef_render_handler_capi_h.C_LONG.withName("BytesPerCluster"),
         _LARGE_INTEGER.layout().withName("MaximumSizeOfResidentFile"),
-        cef_master_h.C_SHORT.withName("FastTierDataFillRatio"),
-        cef_master_h.C_SHORT.withName("SlowTierDataFillRatio"),
-        cef_master_h.C_LONG.withName("DestagesFastTierToSlowTierRate"),
-        cef_master_h.C_SHORT.withName("MetadataChecksumType"),
-        MemoryLayout.sequenceLayout(6, cef_master_h.C_CHAR).withName("Reserved0"),
-        cef_master_h.C_LONG.withName("DriverMajorVersion"),
-        cef_master_h.C_LONG.withName("DriverMinorVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("FastTierDataFillRatio"),
+        cef_render_handler_capi_h.C_SHORT.withName("SlowTierDataFillRatio"),
+        cef_render_handler_capi_h.C_LONG.withName("DestagesFastTierToSlowTierRate"),
+        cef_render_handler_capi_h.C_SHORT.withName("MetadataChecksumType"),
+        MemoryLayout.sequenceLayout(6, cef_render_handler_capi_h.C_CHAR).withName("Reserved0"),
+        cef_render_handler_capi_h.C_LONG.withName("DriverMajorVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("DriverMinorVersion"),
         MemoryLayout.sequenceLayout(7, _LARGE_INTEGER.layout()).withName("Reserved")
     ).withName("$anon$11680:9");
 

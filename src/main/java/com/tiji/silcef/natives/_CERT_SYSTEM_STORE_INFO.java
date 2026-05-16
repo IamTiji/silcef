@@ -26,7 +26,7 @@ public class _CERT_SYSTEM_STORE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize")
     ).withName("_CERT_SYSTEM_STORE_INFO");
 
     /**

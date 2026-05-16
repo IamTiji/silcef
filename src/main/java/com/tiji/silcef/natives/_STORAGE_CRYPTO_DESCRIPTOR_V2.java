@@ -33,11 +33,11 @@ public class _STORAGE_CRYPTO_DESCRIPTOR_V2 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("NumKeysSupported"),
-        cef_master_h.C_LONG.withName("NumCryptoCapabilities"),
-        cef_master_h.C_INT.withName("IceType"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("NumKeysSupported"),
+        cef_render_handler_capi_h.C_LONG.withName("NumCryptoCapabilities"),
+        cef_render_handler_capi_h.C_INT.withName("IceType"),
         _STORAGE_SECURITY_COMPLIANCE_BITMASK.layout().withName("SecurityComplianceBitmask"),
         _STORAGE_CRYPTO_KEY_TYPE.layout().withName("KeyTypeBitmask"),
         MemoryLayout.paddingLayout(2),

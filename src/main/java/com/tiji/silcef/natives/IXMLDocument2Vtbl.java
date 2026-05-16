@@ -48,29 +48,29 @@ public class IXMLDocument2Vtbl {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("QueryInterface"),
-        cef_master_h.C_POINTER.withName("AddRef"),
-        cef_master_h.C_POINTER.withName("Release"),
-        cef_master_h.C_POINTER.withName("GetTypeInfoCount"),
-        cef_master_h.C_POINTER.withName("GetTypeInfo"),
-        cef_master_h.C_POINTER.withName("GetIDsOfNames"),
-        cef_master_h.C_POINTER.withName("Invoke"),
-        cef_master_h.C_POINTER.withName("get_root"),
-        cef_master_h.C_POINTER.withName("get_fileSize"),
-        cef_master_h.C_POINTER.withName("get_fileModifiedDate"),
-        cef_master_h.C_POINTER.withName("get_fileUpdatedDate"),
-        cef_master_h.C_POINTER.withName("get_URL"),
-        cef_master_h.C_POINTER.withName("put_URL"),
-        cef_master_h.C_POINTER.withName("get_mimeType"),
-        cef_master_h.C_POINTER.withName("get_readyState"),
-        cef_master_h.C_POINTER.withName("get_charset"),
-        cef_master_h.C_POINTER.withName("put_charset"),
-        cef_master_h.C_POINTER.withName("get_version"),
-        cef_master_h.C_POINTER.withName("get_doctype"),
-        cef_master_h.C_POINTER.withName("get_dtdURL"),
-        cef_master_h.C_POINTER.withName("createElement"),
-        cef_master_h.C_POINTER.withName("get_async"),
-        cef_master_h.C_POINTER.withName("put_async")
+        cef_render_handler_capi_h.C_POINTER.withName("QueryInterface"),
+        cef_render_handler_capi_h.C_POINTER.withName("AddRef"),
+        cef_render_handler_capi_h.C_POINTER.withName("Release"),
+        cef_render_handler_capi_h.C_POINTER.withName("GetTypeInfoCount"),
+        cef_render_handler_capi_h.C_POINTER.withName("GetTypeInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("GetIDsOfNames"),
+        cef_render_handler_capi_h.C_POINTER.withName("Invoke"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_root"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_fileSize"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_fileModifiedDate"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_fileUpdatedDate"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_URL"),
+        cef_render_handler_capi_h.C_POINTER.withName("put_URL"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_mimeType"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_readyState"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_charset"),
+        cef_render_handler_capi_h.C_POINTER.withName("put_charset"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_version"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_doctype"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_dtdURL"),
+        cef_render_handler_capi_h.C_POINTER.withName("createElement"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_async"),
+        cef_render_handler_capi_h.C_POINTER.withName("put_async")
     ).withName("IXMLDocument2Vtbl");
 
     /**
@@ -99,10 +99,10 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -112,7 +112,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(QueryInterface.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(QueryInterface.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -201,8 +201,8 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -212,7 +212,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(AddRef.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(AddRef.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -301,8 +301,8 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -312,7 +312,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(Release.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(Release.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -401,9 +401,9 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -413,7 +413,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(GetTypeInfoCount.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(GetTypeInfoCount.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -502,11 +502,11 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -516,7 +516,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(GetTypeInfo.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(GetTypeInfo.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -605,13 +605,13 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -621,7 +621,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(GetIDsOfNames.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(GetIDsOfNames.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -710,16 +710,16 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG,
-            cef_master_h.C_SHORT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_SHORT,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -729,7 +729,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(Invoke.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(Invoke.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -818,9 +818,9 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -830,7 +830,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_root.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_root.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -919,9 +919,9 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -931,7 +931,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_fileSize.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_fileSize.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1020,9 +1020,9 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1032,7 +1032,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_fileModifiedDate.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_fileModifiedDate.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1121,9 +1121,9 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1133,7 +1133,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_fileUpdatedDate.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_fileUpdatedDate.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1222,9 +1222,9 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1234,7 +1234,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_URL.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_URL.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1323,9 +1323,9 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1335,7 +1335,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(put_URL.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(put_URL.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1424,9 +1424,9 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1436,7 +1436,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_mimeType.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_mimeType.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1525,9 +1525,9 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1537,7 +1537,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_readyState.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_readyState.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1626,9 +1626,9 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1638,7 +1638,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_charset.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_charset.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1727,9 +1727,9 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1739,7 +1739,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(put_charset.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(put_charset.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1828,9 +1828,9 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1840,7 +1840,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_version.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_version.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1929,9 +1929,9 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1941,7 +1941,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_doctype.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_doctype.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2030,9 +2030,9 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -2042,7 +2042,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_dtdURL.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_dtdURL.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2131,11 +2131,11 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
             tagVARIANT.layout(),
             tagVARIANT.layout(),
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -2145,7 +2145,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(createElement.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(createElement.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2234,9 +2234,9 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -2246,7 +2246,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_async.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_async.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2335,9 +2335,9 @@ public class IXMLDocument2Vtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_SHORT
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_SHORT
         );
 
         /**
@@ -2347,7 +2347,7 @@ public class IXMLDocument2Vtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(put_async.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(put_async.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

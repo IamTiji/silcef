@@ -29,7 +29,7 @@ public class _STREAM_EXTENT_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         MemoryLayout.paddingLayout(4),
         _STREAM_EXTENT_ENTRY.ExtentInformation.layout().withName("ExtentInformation")
     ).withName("_STREAM_EXTENT_ENTRY");

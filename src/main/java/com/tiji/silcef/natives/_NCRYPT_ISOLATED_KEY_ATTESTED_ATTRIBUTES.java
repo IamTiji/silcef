@@ -28,9 +28,9 @@ public class _NCRYPT_ISOLATED_KEY_ATTESTED_ATTRIBUTES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("cbPublicKeyBlob")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("cbPublicKeyBlob")
     ).withName("_NCRYPT_ISOLATED_KEY_ATTESTED_ATTRIBUTES");
 
     /**

@@ -29,11 +29,11 @@ public class _TRANSACTION_NOTIFICATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("TransactionKey"),
-        cef_master_h.C_LONG.withName("TransactionNotification"),
+        cef_render_handler_capi_h.C_POINTER.withName("TransactionKey"),
+        cef_render_handler_capi_h.C_LONG.withName("TransactionNotification"),
         MemoryLayout.paddingLayout(4),
         _LARGE_INTEGER.layout().withName("TmVirtualClock"),
-        cef_master_h.C_LONG.withName("ArgumentLength"),
+        cef_render_handler_capi_h.C_LONG.withName("ArgumentLength"),
         MemoryLayout.paddingLayout(4)
     ).withName("_TRANSACTION_NOTIFICATION");
 

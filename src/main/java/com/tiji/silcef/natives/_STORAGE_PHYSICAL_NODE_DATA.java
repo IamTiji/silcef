@@ -33,14 +33,14 @@ public class _STORAGE_PHYSICAL_NODE_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NodeId"),
-        cef_master_h.C_LONG.withName("AdapterCount"),
-        cef_master_h.C_LONG.withName("AdapterDataLength"),
-        cef_master_h.C_LONG.withName("AdapterDataOffset"),
-        cef_master_h.C_LONG.withName("DeviceCount"),
-        cef_master_h.C_LONG.withName("DeviceDataLength"),
-        cef_master_h.C_LONG.withName("DeviceDataOffset"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_LONG).withName("Reserved")
+        cef_render_handler_capi_h.C_LONG.withName("NodeId"),
+        cef_render_handler_capi_h.C_LONG.withName("AdapterCount"),
+        cef_render_handler_capi_h.C_LONG.withName("AdapterDataLength"),
+        cef_render_handler_capi_h.C_LONG.withName("AdapterDataOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("DeviceCount"),
+        cef_render_handler_capi_h.C_LONG.withName("DeviceDataLength"),
+        cef_render_handler_capi_h.C_LONG.withName("DeviceDataOffset"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_LONG).withName("Reserved")
     ).withName("_STORAGE_PHYSICAL_NODE_DATA");
 
     /**

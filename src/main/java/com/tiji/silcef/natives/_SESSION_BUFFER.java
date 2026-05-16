@@ -31,12 +31,12 @@ public class _SESSION_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("lsn"),
-        cef_master_h.C_CHAR.withName("state"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("local_name"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("remote_name"),
-        cef_master_h.C_CHAR.withName("rcvs_outstanding"),
-        cef_master_h.C_CHAR.withName("sends_outstanding")
+        cef_render_handler_capi_h.C_CHAR.withName("lsn"),
+        cef_render_handler_capi_h.C_CHAR.withName("state"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("local_name"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("remote_name"),
+        cef_render_handler_capi_h.C_CHAR.withName("rcvs_outstanding"),
+        cef_render_handler_capi_h.C_CHAR.withName("sends_outstanding")
     ).withName("_SESSION_BUFFER");
 
     /**

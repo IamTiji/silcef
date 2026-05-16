@@ -27,8 +27,8 @@ public class _SERVICE_PREFERRED_NODE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("usPreferredNode"),
-        cef_master_h.C_CHAR.withName("fDelete"),
+        cef_render_handler_capi_h.C_SHORT.withName("usPreferredNode"),
+        cef_render_handler_capi_h.C_CHAR.withName("fDelete"),
         MemoryLayout.paddingLayout(1)
     ).withName("_SERVICE_PREFERRED_NODE_INFO");
 

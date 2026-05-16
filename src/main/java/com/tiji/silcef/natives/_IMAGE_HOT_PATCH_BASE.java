@@ -33,14 +33,14 @@ public class _IMAGE_HOT_PATCH_BASE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("SequenceNumber"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("OriginalTimeDateStamp"),
-        cef_master_h.C_LONG.withName("OriginalCheckSum"),
-        cef_master_h.C_LONG.withName("CodeIntegrityInfo"),
-        cef_master_h.C_LONG.withName("CodeIntegritySize"),
-        cef_master_h.C_LONG.withName("PatchTable"),
-        cef_master_h.C_LONG.withName("BufferOffset")
+        cef_render_handler_capi_h.C_LONG.withName("SequenceNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("OriginalTimeDateStamp"),
+        cef_render_handler_capi_h.C_LONG.withName("OriginalCheckSum"),
+        cef_render_handler_capi_h.C_LONG.withName("CodeIntegrityInfo"),
+        cef_render_handler_capi_h.C_LONG.withName("CodeIntegritySize"),
+        cef_render_handler_capi_h.C_LONG.withName("PatchTable"),
+        cef_render_handler_capi_h.C_LONG.withName("BufferOffset")
     ).withName("_IMAGE_HOT_PATCH_BASE");
 
     /**

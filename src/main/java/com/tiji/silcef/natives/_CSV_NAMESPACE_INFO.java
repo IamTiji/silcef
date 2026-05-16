@@ -29,10 +29,10 @@ public class _CSV_NAMESPACE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("DeviceNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("DeviceNumber"),
         _LARGE_INTEGER.layout().withName("StartingOffset"),
-        cef_master_h.C_LONG.withName("SectorSize"),
+        cef_render_handler_capi_h.C_LONG.withName("SectorSize"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CSV_NAMESPACE_INFO");
 

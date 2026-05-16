@@ -31,8 +31,8 @@ public class _CRYPT_RSA_SSA_PSS_PARAMETERS {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("HashAlgorithm"),
         _CRYPT_MASK_GEN_ALGORITHM.layout().withName("MaskGenAlgorithm"),
-        cef_master_h.C_LONG.withName("dwSaltLength"),
-        cef_master_h.C_LONG.withName("dwTrailerField")
+        cef_render_handler_capi_h.C_LONG.withName("dwSaltLength"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTrailerField")
     ).withName("_CRYPT_RSA_SSA_PSS_PARAMETERS");
 
     /**

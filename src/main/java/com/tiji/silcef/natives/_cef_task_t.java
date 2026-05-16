@@ -28,7 +28,7 @@ public class _cef_task_t {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _cef_base_ref_counted_t.layout().withName("base"),
-        cef_master_h.C_POINTER.withName("execute")
+        cef_app_capi_h.C_POINTER.withName("execute")
     ).withName("_cef_task_t");
 
     /**
@@ -101,7 +101,7 @@ public class _cef_task_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -111,7 +111,7 @@ public class _cef_task_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(execute.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(execute.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

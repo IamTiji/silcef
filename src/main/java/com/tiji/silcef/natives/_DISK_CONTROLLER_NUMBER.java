@@ -27,8 +27,8 @@ public class _DISK_CONTROLLER_NUMBER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ControllerNumber"),
-        cef_master_h.C_LONG.withName("DiskNumber")
+        cef_render_handler_capi_h.C_LONG.withName("ControllerNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("DiskNumber")
     ).withName("_DISK_CONTROLLER_NUMBER");
 
     /**

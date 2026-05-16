@@ -31,11 +31,11 @@ public class _TXFS_LIST_TRANSACTIONS_ENTRY {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("TransactionId"),
-        cef_master_h.C_LONG.withName("TransactionState"),
-        cef_master_h.C_LONG.withName("Reserved1"),
-        cef_master_h.C_LONG.withName("Reserved2"),
+        cef_render_handler_capi_h.C_LONG.withName("TransactionState"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved1"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved2"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("Reserved3")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Reserved3")
     ).withName("_TXFS_LIST_TRANSACTIONS_ENTRY");
 
     /**

@@ -28,7 +28,7 @@ public class _RGNDATA {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _RGNDATAHEADER.layout().withName("rdh"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("Buffer"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("Buffer"),
         MemoryLayout.paddingLayout(3)
     ).withName("_RGNDATA");
 

@@ -29,11 +29,11 @@ public class _CRYPT_URL_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwSyncDeltaTime"),
-        cef_master_h.C_LONG.withName("cGroup"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSyncDeltaTime"),
+        cef_render_handler_capi_h.C_LONG.withName("cGroup"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgcGroupEntry")
+        cef_render_handler_capi_h.C_POINTER.withName("rgcGroupEntry")
     ).withName("_CRYPT_URL_INFO");
 
     /**

@@ -26,7 +26,7 @@ public class SERVICE_STATUS_HANDLE__ {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("unused")
+        cef_render_handler_capi_h.C_INT.withName("unused")
     ).withName("SERVICE_STATUS_HANDLE__");
 
     /**

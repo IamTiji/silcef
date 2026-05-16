@@ -28,9 +28,9 @@ public class _cef_string_utf16_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("str"),
-        cef_master_h.C_LONG_LONG.withName("length"),
-        cef_master_h.C_POINTER.withName("dtor")
+        cef_string_types_h.C_POINTER.withName("str"),
+        cef_string_types_h.C_LONG_LONG.withName("length"),
+        cef_string_types_h.C_POINTER.withName("dtor")
     ).withName("_cef_string_utf16_t");
 
     /**
@@ -147,7 +147,7 @@ public class _cef_string_utf16_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER
+            cef_string_types_h.C_POINTER
         );
 
         /**
@@ -157,7 +157,7 @@ public class _cef_string_utf16_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(dtor.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_string_types_h.upcallHandle(dtor.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

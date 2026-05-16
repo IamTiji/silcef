@@ -31,12 +31,12 @@ public class __NCRYPT_PCP_TPM_WEB_AUTHN_ATTESTATION_STATEMENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Magic"),
-        cef_master_h.C_INT.withName("Version"),
-        cef_master_h.C_INT.withName("HeaderSize"),
-        cef_master_h.C_INT.withName("cbCertifyInfo"),
-        cef_master_h.C_INT.withName("cbSignature"),
-        cef_master_h.C_INT.withName("cbTpmPublic")
+        cef_render_handler_capi_h.C_INT.withName("Magic"),
+        cef_render_handler_capi_h.C_INT.withName("Version"),
+        cef_render_handler_capi_h.C_INT.withName("HeaderSize"),
+        cef_render_handler_capi_h.C_INT.withName("cbCertifyInfo"),
+        cef_render_handler_capi_h.C_INT.withName("cbSignature"),
+        cef_render_handler_capi_h.C_INT.withName("cbTpmPublic")
     ).withName("__NCRYPT_PCP_TPM_WEB_AUTHN_ATTESTATION_STATEMENT");
 
     /**

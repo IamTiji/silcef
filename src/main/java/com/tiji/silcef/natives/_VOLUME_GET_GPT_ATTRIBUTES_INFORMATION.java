@@ -26,7 +26,7 @@ public class _VOLUME_GET_GPT_ATTRIBUTES_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("GptAttributes")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("GptAttributes")
     ).withName("_VOLUME_GET_GPT_ATTRIBUTES_INFORMATION");
 
     /**

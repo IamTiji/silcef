@@ -29,10 +29,10 @@ public class _TRANSACTION_NOTIFICATION_PROPAGATE_ARGUMENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("PropagationCookie"),
+        cef_render_handler_capi_h.C_LONG.withName("PropagationCookie"),
         _GUID.layout().withName("UOW"),
         _GUID.layout().withName("TmIdentity"),
-        cef_master_h.C_LONG.withName("BufferLength")
+        cef_render_handler_capi_h.C_LONG.withName("BufferLength")
     ).withName("_TRANSACTION_NOTIFICATION_PROPAGATE_ARGUMENT");
 
     /**

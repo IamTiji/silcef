@@ -34,15 +34,15 @@ public class IPersistMonikerVtbl {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("QueryInterface"),
-        cef_master_h.C_POINTER.withName("AddRef"),
-        cef_master_h.C_POINTER.withName("Release"),
-        cef_master_h.C_POINTER.withName("GetClassID"),
-        cef_master_h.C_POINTER.withName("IsDirty"),
-        cef_master_h.C_POINTER.withName("Load"),
-        cef_master_h.C_POINTER.withName("Save"),
-        cef_master_h.C_POINTER.withName("SaveCompleted"),
-        cef_master_h.C_POINTER.withName("GetCurMoniker")
+        cef_render_handler_capi_h.C_POINTER.withName("QueryInterface"),
+        cef_render_handler_capi_h.C_POINTER.withName("AddRef"),
+        cef_render_handler_capi_h.C_POINTER.withName("Release"),
+        cef_render_handler_capi_h.C_POINTER.withName("GetClassID"),
+        cef_render_handler_capi_h.C_POINTER.withName("IsDirty"),
+        cef_render_handler_capi_h.C_POINTER.withName("Load"),
+        cef_render_handler_capi_h.C_POINTER.withName("Save"),
+        cef_render_handler_capi_h.C_POINTER.withName("SaveCompleted"),
+        cef_render_handler_capi_h.C_POINTER.withName("GetCurMoniker")
     ).withName("IPersistMonikerVtbl");
 
     /**
@@ -71,10 +71,10 @@ public class IPersistMonikerVtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -84,7 +84,7 @@ public class IPersistMonikerVtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(QueryInterface.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(QueryInterface.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -173,8 +173,8 @@ public class IPersistMonikerVtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -184,7 +184,7 @@ public class IPersistMonikerVtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(AddRef.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(AddRef.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -273,8 +273,8 @@ public class IPersistMonikerVtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -284,7 +284,7 @@ public class IPersistMonikerVtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(Release.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(Release.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -373,9 +373,9 @@ public class IPersistMonikerVtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -385,7 +385,7 @@ public class IPersistMonikerVtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(GetClassID.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(GetClassID.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -474,8 +474,8 @@ public class IPersistMonikerVtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -485,7 +485,7 @@ public class IPersistMonikerVtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(IsDirty.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(IsDirty.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -574,12 +574,12 @@ public class IPersistMonikerVtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_LONG
         );
 
         /**
@@ -589,7 +589,7 @@ public class IPersistMonikerVtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(Load.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(Load.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -678,11 +678,11 @@ public class IPersistMonikerVtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_INT
         );
 
         /**
@@ -692,7 +692,7 @@ public class IPersistMonikerVtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(Save.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(Save.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -781,10 +781,10 @@ public class IPersistMonikerVtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -794,7 +794,7 @@ public class IPersistMonikerVtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(SaveCompleted.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(SaveCompleted.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -883,9 +883,9 @@ public class IPersistMonikerVtbl {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -895,7 +895,7 @@ public class IPersistMonikerVtbl {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(GetCurMoniker.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(GetCurMoniker.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

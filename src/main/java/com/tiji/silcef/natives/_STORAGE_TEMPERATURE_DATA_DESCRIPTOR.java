@@ -33,13 +33,13 @@ public class _STORAGE_TEMPERATURE_DATA_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_SHORT.withName("CriticalTemperature"),
-        cef_master_h.C_SHORT.withName("WarningTemperature"),
-        cef_master_h.C_SHORT.withName("InfoCount"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("Reserved0"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_LONG).withName("Reserved1"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_SHORT.withName("CriticalTemperature"),
+        cef_render_handler_capi_h.C_SHORT.withName("WarningTemperature"),
+        cef_render_handler_capi_h.C_SHORT.withName("InfoCount"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("Reserved0"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_LONG).withName("Reserved1"),
         MemoryLayout.sequenceLayout(1, _STORAGE_TEMPERATURE_INFO.layout()).withName("TemperatureInfo")
     ).withName("_STORAGE_TEMPERATURE_DATA_DESCRIPTOR");
 

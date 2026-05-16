@@ -26,7 +26,7 @@ public class RETRIEVAL_POINTER_COUNT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ExtentCount")
+        cef_render_handler_capi_h.C_LONG.withName("ExtentCount")
     ).withName("RETRIEVAL_POINTER_COUNT");
 
     /**

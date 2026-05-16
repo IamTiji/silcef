@@ -33,7 +33,7 @@ public class _CMSG_SIGNER_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
         MemoryLayout.paddingLayout(4),
         _CRYPTOAPI_BLOB.layout().withName("Issuer"),
         _CRYPTOAPI_BLOB.layout().withName("SerialNumber"),

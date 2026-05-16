@@ -30,12 +30,12 @@ public class _CERT_POLICY95_QUALIFIER1 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszPracticesReference"),
-        cef_master_h.C_POINTER.withName("pszNoticeIdentifier"),
-        cef_master_h.C_POINTER.withName("pszNSINoticeIdentifier"),
-        cef_master_h.C_LONG.withName("cCPSURLs"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszPracticesReference"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszNoticeIdentifier"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszNSINoticeIdentifier"),
+        cef_render_handler_capi_h.C_LONG.withName("cCPSURLs"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgCPSURLs")
+        cef_render_handler_capi_h.C_POINTER.withName("rgCPSURLs")
     ).withName("_CERT_POLICY95_QUALIFIER1");
 
     /**

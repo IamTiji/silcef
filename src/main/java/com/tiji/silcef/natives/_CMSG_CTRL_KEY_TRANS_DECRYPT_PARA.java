@@ -33,16 +33,16 @@ public class _CMSG_CTRL_KEY_TRANS_DECRYPT_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG_LONG.withName("hCryptProv"),
-            cef_master_h.C_LONG_LONG.withName("hNCryptKey")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("hCryptProv"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("hNCryptKey")
         ).withName("$anon$8238:5"),
-        cef_master_h.C_LONG.withName("dwKeySpec"),
+        cef_render_handler_capi_h.C_LONG.withName("dwKeySpec"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pKeyTrans"),
-        cef_master_h.C_LONG.withName("dwRecipientIndex"),
+        cef_render_handler_capi_h.C_POINTER.withName("pKeyTrans"),
+        cef_render_handler_capi_h.C_LONG.withName("dwRecipientIndex"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CMSG_CTRL_KEY_TRANS_DECRYPT_PARA");
 

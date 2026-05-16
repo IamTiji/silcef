@@ -28,10 +28,10 @@ public class _IO_IRP_EXT_TRACK_OFFSET_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Validation"),
-        cef_master_h.C_SHORT.withName("Flags"),
+        cef_render_handler_capi_h.C_SHORT.withName("Validation"),
+        cef_render_handler_capi_h.C_SHORT.withName("Flags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("TrackedOffsetCallback")
+        cef_render_handler_capi_h.C_POINTER.withName("TrackedOffsetCallback")
     ).withName("_IO_IRP_EXT_TRACK_OFFSET_HEADER");
 
     /**

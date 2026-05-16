@@ -29,10 +29,10 @@ public class _TAPE_SET_POSITION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Method"),
-        cef_master_h.C_LONG.withName("Partition"),
+        cef_render_handler_capi_h.C_LONG.withName("Method"),
+        cef_render_handler_capi_h.C_LONG.withName("Partition"),
         _LARGE_INTEGER.layout().withName("Offset"),
-        cef_master_h.C_CHAR.withName("Immediate"),
+        cef_render_handler_capi_h.C_CHAR.withName("Immediate"),
         MemoryLayout.paddingLayout(7)
     ).withName("_TAPE_SET_POSITION");
 

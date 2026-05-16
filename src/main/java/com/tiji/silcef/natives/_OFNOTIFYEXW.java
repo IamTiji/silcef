@@ -30,9 +30,9 @@ public class _OFNOTIFYEXW {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagNMHDR.layout().withName("hdr"),
-        cef_master_h.C_POINTER.withName("lpOFN"),
-        cef_master_h.C_POINTER.withName("psf"),
-        cef_master_h.C_POINTER.withName("pidl")
+        cef_render_handler_capi_h.C_POINTER.withName("lpOFN"),
+        cef_render_handler_capi_h.C_POINTER.withName("psf"),
+        cef_render_handler_capi_h.C_POINTER.withName("pidl")
     ).withName("_OFNOTIFYEXW");
 
     /**

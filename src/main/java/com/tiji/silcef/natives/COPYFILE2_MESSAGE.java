@@ -83,8 +83,8 @@ public class COPYFILE2_MESSAGE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Type"),
-        cef_master_h.C_LONG.withName("dwPadding"),
+        cef_render_handler_capi_h.C_INT.withName("Type"),
+        cef_render_handler_capi_h.C_LONG.withName("dwPadding"),
         COPYFILE2_MESSAGE.Info.layout().withName("Info")
     ).withName("COPYFILE2_MESSAGE");
 
@@ -286,10 +286,10 @@ public class COPYFILE2_MESSAGE {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_LONG.withName("dwStreamNumber"),
-                cef_master_h.C_LONG.withName("dwReserved"),
-                cef_master_h.C_POINTER.withName("hSourceFile"),
-                cef_master_h.C_POINTER.withName("hDestinationFile"),
+                cef_render_handler_capi_h.C_LONG.withName("dwStreamNumber"),
+                cef_render_handler_capi_h.C_LONG.withName("dwReserved"),
+                cef_render_handler_capi_h.C_POINTER.withName("hSourceFile"),
+                cef_render_handler_capi_h.C_POINTER.withName("hDestinationFile"),
                 _ULARGE_INTEGER.layout().withName("uliChunkNumber"),
                 _ULARGE_INTEGER.layout().withName("uliChunkSize"),
                 _ULARGE_INTEGER.layout().withName("uliStreamSize"),
@@ -803,10 +803,10 @@ public class COPYFILE2_MESSAGE {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_LONG.withName("dwStreamNumber"),
-                cef_master_h.C_LONG.withName("dwFlags"),
-                cef_master_h.C_POINTER.withName("hSourceFile"),
-                cef_master_h.C_POINTER.withName("hDestinationFile"),
+                cef_render_handler_capi_h.C_LONG.withName("dwStreamNumber"),
+                cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+                cef_render_handler_capi_h.C_POINTER.withName("hSourceFile"),
+                cef_render_handler_capi_h.C_POINTER.withName("hDestinationFile"),
                 _ULARGE_INTEGER.layout().withName("uliChunkNumber"),
                 _ULARGE_INTEGER.layout().withName("uliChunkSize"),
                 _ULARGE_INTEGER.layout().withName("uliStreamSize"),
@@ -1414,10 +1414,10 @@ public class COPYFILE2_MESSAGE {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_LONG.withName("dwStreamNumber"),
-                cef_master_h.C_LONG.withName("dwReserved"),
-                cef_master_h.C_POINTER.withName("hSourceFile"),
-                cef_master_h.C_POINTER.withName("hDestinationFile"),
+                cef_render_handler_capi_h.C_LONG.withName("dwStreamNumber"),
+                cef_render_handler_capi_h.C_LONG.withName("dwReserved"),
+                cef_render_handler_capi_h.C_POINTER.withName("hSourceFile"),
+                cef_render_handler_capi_h.C_POINTER.withName("hDestinationFile"),
                 _ULARGE_INTEGER.layout().withName("uliStreamSize"),
                 _ULARGE_INTEGER.layout().withName("uliTotalFileSize")
             ).withName("$anon$5880:9");
@@ -1831,10 +1831,10 @@ public class COPYFILE2_MESSAGE {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_LONG.withName("dwStreamNumber"),
-                cef_master_h.C_LONG.withName("dwReserved"),
-                cef_master_h.C_POINTER.withName("hSourceFile"),
-                cef_master_h.C_POINTER.withName("hDestinationFile"),
+                cef_render_handler_capi_h.C_LONG.withName("dwStreamNumber"),
+                cef_render_handler_capi_h.C_LONG.withName("dwReserved"),
+                cef_render_handler_capi_h.C_POINTER.withName("hSourceFile"),
+                cef_render_handler_capi_h.C_POINTER.withName("hDestinationFile"),
                 _ULARGE_INTEGER.layout().withName("uliStreamSize"),
                 _ULARGE_INTEGER.layout().withName("uliStreamBytesTransferred"),
                 _ULARGE_INTEGER.layout().withName("uliTotalFileSize"),
@@ -2339,7 +2339,7 @@ public class COPYFILE2_MESSAGE {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_LONG.withName("dwReserved")
+                cef_render_handler_capi_h.C_LONG.withName("dwReserved")
             ).withName("$anon$5900:9");
 
             /**
@@ -2512,10 +2512,10 @@ public class COPYFILE2_MESSAGE {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_INT.withName("CopyPhase"),
-                cef_master_h.C_LONG.withName("dwStreamNumber"),
-                cef_master_h.C_LONG.withName("hrFailure"),
-                cef_master_h.C_LONG.withName("dwReserved"),
+                cef_render_handler_capi_h.C_INT.withName("CopyPhase"),
+                cef_render_handler_capi_h.C_LONG.withName("dwStreamNumber"),
+                cef_render_handler_capi_h.C_LONG.withName("hrFailure"),
+                cef_render_handler_capi_h.C_LONG.withName("dwReserved"),
                 _ULARGE_INTEGER.layout().withName("uliChunkNumber"),
                 _ULARGE_INTEGER.layout().withName("uliStreamSize"),
                 _ULARGE_INTEGER.layout().withName("uliStreamBytesTransferred"),

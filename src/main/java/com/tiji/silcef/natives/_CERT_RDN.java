@@ -27,9 +27,9 @@ public class _CERT_RDN {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cRDNAttr"),
+        cef_render_handler_capi_h.C_LONG.withName("cRDNAttr"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgRDNAttr")
+        cef_render_handler_capi_h.C_POINTER.withName("rgRDNAttr")
     ).withName("_CERT_RDN");
 
     /**

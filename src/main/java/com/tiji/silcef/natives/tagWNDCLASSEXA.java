@@ -37,18 +37,18 @@ public class tagWNDCLASSEXA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_INT.withName("style"),
-        cef_master_h.C_POINTER.withName("lpfnWndProc"),
-        cef_master_h.C_INT.withName("cbClsExtra"),
-        cef_master_h.C_INT.withName("cbWndExtra"),
-        cef_master_h.C_POINTER.withName("hInstance"),
-        cef_master_h.C_POINTER.withName("hIcon"),
-        cef_master_h.C_POINTER.withName("hCursor"),
-        cef_master_h.C_POINTER.withName("hbrBackground"),
-        cef_master_h.C_POINTER.withName("lpszMenuName"),
-        cef_master_h.C_POINTER.withName("lpszClassName"),
-        cef_master_h.C_POINTER.withName("hIconSm")
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("style"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpfnWndProc"),
+        cef_render_handler_capi_h.C_INT.withName("cbClsExtra"),
+        cef_render_handler_capi_h.C_INT.withName("cbWndExtra"),
+        cef_render_handler_capi_h.C_POINTER.withName("hInstance"),
+        cef_render_handler_capi_h.C_POINTER.withName("hIcon"),
+        cef_render_handler_capi_h.C_POINTER.withName("hCursor"),
+        cef_render_handler_capi_h.C_POINTER.withName("hbrBackground"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpszMenuName"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpszClassName"),
+        cef_render_handler_capi_h.C_POINTER.withName("hIconSm")
     ).withName("tagWNDCLASSEXA");
 
     /**

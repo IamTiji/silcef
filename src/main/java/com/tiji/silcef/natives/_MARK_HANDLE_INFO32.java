@@ -32,11 +32,11 @@ public class _MARK_HANDLE_INFO32 {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("UsnSourceInfo"),
-            cef_master_h.C_LONG.withName("CopyNumber")
+            cef_render_handler_capi_h.C_LONG.withName("UsnSourceInfo"),
+            cef_render_handler_capi_h.C_LONG.withName("CopyNumber")
         ).withName("$anon$12255:5"),
-        cef_master_h.C_INT.withName("VolumeHandle"),
-        cef_master_h.C_LONG.withName("HandleInfo")
+        cef_render_handler_capi_h.C_INT.withName("VolumeHandle"),
+        cef_render_handler_capi_h.C_LONG.withName("HandleInfo")
     ).withName("_MARK_HANDLE_INFO32");
 
     /**

@@ -31,11 +31,11 @@ public class _IMAGE_FUNCTION_ENTRY64 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 4).withName("StartingAddress"),
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 4).withName("EndingAddress"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 4).withName("StartingAddress"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 4).withName("EndingAddress"),
         MemoryLayout.unionLayout(
-            cef_master_h.align(cef_master_h.C_LONG_LONG, 4).withName("EndOfPrologue"),
-            cef_master_h.align(cef_master_h.C_LONG_LONG, 4).withName("UnwindInfoAddress")
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 4).withName("EndOfPrologue"),
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 4).withName("UnwindInfoAddress")
         ).withName("$anon$21999:5")
     ).withName("_IMAGE_FUNCTION_ENTRY64");
 

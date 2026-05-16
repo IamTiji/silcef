@@ -40,21 +40,21 @@ public class _FILESYSTEM_STATISTICS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("FileSystemType"),
-        cef_master_h.C_SHORT.withName("Version"),
-        cef_master_h.C_LONG.withName("SizeOfCompleteStructure"),
-        cef_master_h.C_LONG.withName("UserFileReads"),
-        cef_master_h.C_LONG.withName("UserFileReadBytes"),
-        cef_master_h.C_LONG.withName("UserDiskReads"),
-        cef_master_h.C_LONG.withName("UserFileWrites"),
-        cef_master_h.C_LONG.withName("UserFileWriteBytes"),
-        cef_master_h.C_LONG.withName("UserDiskWrites"),
-        cef_master_h.C_LONG.withName("MetaDataReads"),
-        cef_master_h.C_LONG.withName("MetaDataReadBytes"),
-        cef_master_h.C_LONG.withName("MetaDataDiskReads"),
-        cef_master_h.C_LONG.withName("MetaDataWrites"),
-        cef_master_h.C_LONG.withName("MetaDataWriteBytes"),
-        cef_master_h.C_LONG.withName("MetaDataDiskWrites")
+        cef_render_handler_capi_h.C_SHORT.withName("FileSystemType"),
+        cef_render_handler_capi_h.C_SHORT.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("SizeOfCompleteStructure"),
+        cef_render_handler_capi_h.C_LONG.withName("UserFileReads"),
+        cef_render_handler_capi_h.C_LONG.withName("UserFileReadBytes"),
+        cef_render_handler_capi_h.C_LONG.withName("UserDiskReads"),
+        cef_render_handler_capi_h.C_LONG.withName("UserFileWrites"),
+        cef_render_handler_capi_h.C_LONG.withName("UserFileWriteBytes"),
+        cef_render_handler_capi_h.C_LONG.withName("UserDiskWrites"),
+        cef_render_handler_capi_h.C_LONG.withName("MetaDataReads"),
+        cef_render_handler_capi_h.C_LONG.withName("MetaDataReadBytes"),
+        cef_render_handler_capi_h.C_LONG.withName("MetaDataDiskReads"),
+        cef_render_handler_capi_h.C_LONG.withName("MetaDataWrites"),
+        cef_render_handler_capi_h.C_LONG.withName("MetaDataWriteBytes"),
+        cef_render_handler_capi_h.C_LONG.withName("MetaDataDiskWrites")
     ).withName("_FILESYSTEM_STATISTICS");
 
     /**

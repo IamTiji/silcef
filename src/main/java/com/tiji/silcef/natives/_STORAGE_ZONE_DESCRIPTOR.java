@@ -32,13 +32,13 @@ public class _STORAGE_ZONE_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_INT.withName("ZoneType"),
-        cef_master_h.C_INT.withName("ZoneCondition"),
-        cef_master_h.C_CHAR.withName("ResetWritePointerRecommend"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_CHAR).withName("Reserved0"),
-        cef_master_h.C_LONG_LONG.withName("ZoneSize"),
-        cef_master_h.C_LONG_LONG.withName("WritePointerOffset")
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_INT.withName("ZoneType"),
+        cef_render_handler_capi_h.C_INT.withName("ZoneCondition"),
+        cef_render_handler_capi_h.C_CHAR.withName("ResetWritePointerRecommend"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_CHAR).withName("Reserved0"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ZoneSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("WritePointerOffset")
     ).withName("_STORAGE_ZONE_DESCRIPTOR");
 
     /**

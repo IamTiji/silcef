@@ -32,9 +32,9 @@ public class tagEMRANGLEARC {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
         _POINTL.layout().withName("ptlCenter"),
-        cef_master_h.C_LONG.withName("nRadius"),
-        cef_master_h.C_FLOAT.withName("eStartAngle"),
-        cef_master_h.C_FLOAT.withName("eSweepAngle")
+        cef_render_handler_capi_h.C_LONG.withName("nRadius"),
+        cef_render_handler_capi_h.C_FLOAT.withName("eStartAngle"),
+        cef_render_handler_capi_h.C_FLOAT.withName("eSweepAngle")
     ).withName("tagEMRANGLEARC");
 
     /**

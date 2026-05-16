@@ -26,7 +26,7 @@ public class _LDOUBLE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(10, cef_master_h.C_CHAR).withName("ld")
+        MemoryLayout.sequenceLayout(10, cef_render_handler_capi_h.C_CHAR).withName("ld")
     ).withName("$anon$395:13");
 
     /**

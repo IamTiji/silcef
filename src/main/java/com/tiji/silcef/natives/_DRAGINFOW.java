@@ -30,11 +30,11 @@ public class _DRAGINFOW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("uSize"),
+        cef_render_handler_capi_h.C_INT.withName("uSize"),
         tagPOINT.layout().withName("pt"),
-        cef_master_h.C_INT.withName("fNC"),
-        cef_master_h.C_POINTER.withName("lpFileList"),
-        cef_master_h.C_LONG.withName("grfKeyState"),
+        cef_render_handler_capi_h.C_INT.withName("fNC"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpFileList"),
+        cef_render_handler_capi_h.C_LONG.withName("grfKeyState"),
         MemoryLayout.paddingLayout(4)
     ).withName("_DRAGINFOW");
 

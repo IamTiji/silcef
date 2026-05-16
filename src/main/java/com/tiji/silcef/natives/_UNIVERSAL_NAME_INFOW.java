@@ -26,7 +26,7 @@ public class _UNIVERSAL_NAME_INFOW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("lpUniversalName")
+        cef_render_handler_capi_h.C_POINTER.withName("lpUniversalName")
     ).withName("_UNIVERSAL_NAME_INFOW");
 
     /**

@@ -28,9 +28,9 @@ public class tagMULTI_QI {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pIID"),
-        cef_master_h.C_POINTER.withName("pItf"),
-        cef_master_h.C_LONG.withName("hr"),
+        cef_render_handler_capi_h.C_POINTER.withName("pIID"),
+        cef_render_handler_capi_h.C_POINTER.withName("pItf"),
+        cef_render_handler_capi_h.C_LONG.withName("hr"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagMULTI_QI");
 

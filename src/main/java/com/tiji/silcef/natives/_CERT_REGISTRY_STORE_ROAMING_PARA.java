@@ -27,8 +27,8 @@ public class _CERT_REGISTRY_STORE_ROAMING_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hKey"),
-        cef_master_h.C_POINTER.withName("pwszStoreDirectory")
+        cef_render_handler_capi_h.C_POINTER.withName("hKey"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszStoreDirectory")
     ).withName("_CERT_REGISTRY_STORE_ROAMING_PARA");
 
     /**

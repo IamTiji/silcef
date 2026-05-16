@@ -37,19 +37,19 @@ public class _DISPATCHER_CONTEXT_ARM64 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("ControlPc"),
-        cef_master_h.C_LONG_LONG.withName("ImageBase"),
-        cef_master_h.C_POINTER.withName("FunctionEntry"),
-        cef_master_h.C_LONG_LONG.withName("EstablisherFrame"),
-        cef_master_h.C_LONG_LONG.withName("TargetPc"),
-        cef_master_h.C_POINTER.withName("ContextRecord"),
-        cef_master_h.C_POINTER.withName("LanguageHandler"),
-        cef_master_h.C_POINTER.withName("HandlerData"),
-        cef_master_h.C_POINTER.withName("HistoryTable"),
-        cef_master_h.C_LONG.withName("ScopeIndex"),
-        cef_master_h.C_CHAR.withName("ControlPcIsUnwound"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ControlPc"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ImageBase"),
+        cef_render_handler_capi_h.C_POINTER.withName("FunctionEntry"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("EstablisherFrame"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("TargetPc"),
+        cef_render_handler_capi_h.C_POINTER.withName("ContextRecord"),
+        cef_render_handler_capi_h.C_POINTER.withName("LanguageHandler"),
+        cef_render_handler_capi_h.C_POINTER.withName("HandlerData"),
+        cef_render_handler_capi_h.C_POINTER.withName("HistoryTable"),
+        cef_render_handler_capi_h.C_LONG.withName("ScopeIndex"),
+        cef_render_handler_capi_h.C_CHAR.withName("ControlPcIsUnwound"),
         MemoryLayout.paddingLayout(3),
-        cef_master_h.C_POINTER.withName("NonVolatileRegisters")
+        cef_render_handler_capi_h.C_POINTER.withName("NonVolatileRegisters")
     ).withName("_DISPATCHER_CONTEXT_ARM64");
 
     /**

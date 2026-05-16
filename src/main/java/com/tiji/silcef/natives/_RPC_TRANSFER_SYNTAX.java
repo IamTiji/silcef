@@ -29,8 +29,8 @@ public class _RPC_TRANSFER_SYNTAX {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("Uuid"),
-        cef_master_h.C_SHORT.withName("VersMajor"),
-        cef_master_h.C_SHORT.withName("VersMinor")
+        cef_render_handler_capi_h.C_SHORT.withName("VersMajor"),
+        cef_render_handler_capi_h.C_SHORT.withName("VersMinor")
     ).withName("_RPC_TRANSFER_SYNTAX");
 
     /**

@@ -28,7 +28,7 @@ public class _PSHNOTIFY {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagNMHDR.layout().withName("hdr"),
-        cef_master_h.C_LONG_LONG.withName("lParam")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("lParam")
     ).withName("_PSHNOTIFY");
 
     /**

@@ -83,62 +83,62 @@ public class _cef_menu_model_t {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _cef_base_ref_counted_t.layout().withName("base"),
-        cef_master_h.C_POINTER.withName("is_sub_menu"),
-        cef_master_h.C_POINTER.withName("clear"),
-        cef_master_h.C_POINTER.withName("get_count"),
-        cef_master_h.C_POINTER.withName("add_separator"),
-        cef_master_h.C_POINTER.withName("add_item"),
-        cef_master_h.C_POINTER.withName("add_check_item"),
-        cef_master_h.C_POINTER.withName("add_radio_item"),
-        cef_master_h.C_POINTER.withName("add_sub_menu"),
-        cef_master_h.C_POINTER.withName("insert_separator_at"),
-        cef_master_h.C_POINTER.withName("insert_item_at"),
-        cef_master_h.C_POINTER.withName("insert_check_item_at"),
-        cef_master_h.C_POINTER.withName("insert_radio_item_at"),
-        cef_master_h.C_POINTER.withName("insert_sub_menu_at"),
-        cef_master_h.C_POINTER.withName("remove"),
-        cef_master_h.C_POINTER.withName("remove_at"),
-        cef_master_h.C_POINTER.withName("get_index_of"),
-        cef_master_h.C_POINTER.withName("get_command_id_at"),
-        cef_master_h.C_POINTER.withName("set_command_id_at"),
-        cef_master_h.C_POINTER.withName("get_label"),
-        cef_master_h.C_POINTER.withName("get_label_at"),
-        cef_master_h.C_POINTER.withName("set_label"),
-        cef_master_h.C_POINTER.withName("set_label_at"),
-        cef_master_h.C_POINTER.withName("get_type"),
-        cef_master_h.C_POINTER.withName("get_type_at"),
-        cef_master_h.C_POINTER.withName("get_group_id"),
-        cef_master_h.C_POINTER.withName("get_group_id_at"),
-        cef_master_h.C_POINTER.withName("set_group_id"),
-        cef_master_h.C_POINTER.withName("set_group_id_at"),
-        cef_master_h.C_POINTER.withName("get_sub_menu"),
-        cef_master_h.C_POINTER.withName("get_sub_menu_at"),
-        cef_master_h.C_POINTER.withName("is_visible"),
-        cef_master_h.C_POINTER.withName("is_visible_at"),
-        cef_master_h.C_POINTER.withName("set_visible"),
-        cef_master_h.C_POINTER.withName("set_visible_at"),
-        cef_master_h.C_POINTER.withName("is_enabled"),
-        cef_master_h.C_POINTER.withName("is_enabled_at"),
-        cef_master_h.C_POINTER.withName("set_enabled"),
-        cef_master_h.C_POINTER.withName("set_enabled_at"),
-        cef_master_h.C_POINTER.withName("is_checked"),
-        cef_master_h.C_POINTER.withName("is_checked_at"),
-        cef_master_h.C_POINTER.withName("set_checked"),
-        cef_master_h.C_POINTER.withName("set_checked_at"),
-        cef_master_h.C_POINTER.withName("has_accelerator"),
-        cef_master_h.C_POINTER.withName("has_accelerator_at"),
-        cef_master_h.C_POINTER.withName("set_accelerator"),
-        cef_master_h.C_POINTER.withName("set_accelerator_at"),
-        cef_master_h.C_POINTER.withName("remove_accelerator"),
-        cef_master_h.C_POINTER.withName("remove_accelerator_at"),
-        cef_master_h.C_POINTER.withName("get_accelerator"),
-        cef_master_h.C_POINTER.withName("get_accelerator_at"),
-        cef_master_h.C_POINTER.withName("set_color"),
-        cef_master_h.C_POINTER.withName("set_color_at"),
-        cef_master_h.C_POINTER.withName("get_color"),
-        cef_master_h.C_POINTER.withName("get_color_at"),
-        cef_master_h.C_POINTER.withName("set_font_list"),
-        cef_master_h.C_POINTER.withName("set_font_list_at")
+        cef_app_capi_h.C_POINTER.withName("is_sub_menu"),
+        cef_app_capi_h.C_POINTER.withName("clear"),
+        cef_app_capi_h.C_POINTER.withName("get_count"),
+        cef_app_capi_h.C_POINTER.withName("add_separator"),
+        cef_app_capi_h.C_POINTER.withName("add_item"),
+        cef_app_capi_h.C_POINTER.withName("add_check_item"),
+        cef_app_capi_h.C_POINTER.withName("add_radio_item"),
+        cef_app_capi_h.C_POINTER.withName("add_sub_menu"),
+        cef_app_capi_h.C_POINTER.withName("insert_separator_at"),
+        cef_app_capi_h.C_POINTER.withName("insert_item_at"),
+        cef_app_capi_h.C_POINTER.withName("insert_check_item_at"),
+        cef_app_capi_h.C_POINTER.withName("insert_radio_item_at"),
+        cef_app_capi_h.C_POINTER.withName("insert_sub_menu_at"),
+        cef_app_capi_h.C_POINTER.withName("remove"),
+        cef_app_capi_h.C_POINTER.withName("remove_at"),
+        cef_app_capi_h.C_POINTER.withName("get_index_of"),
+        cef_app_capi_h.C_POINTER.withName("get_command_id_at"),
+        cef_app_capi_h.C_POINTER.withName("set_command_id_at"),
+        cef_app_capi_h.C_POINTER.withName("get_label"),
+        cef_app_capi_h.C_POINTER.withName("get_label_at"),
+        cef_app_capi_h.C_POINTER.withName("set_label"),
+        cef_app_capi_h.C_POINTER.withName("set_label_at"),
+        cef_app_capi_h.C_POINTER.withName("get_type"),
+        cef_app_capi_h.C_POINTER.withName("get_type_at"),
+        cef_app_capi_h.C_POINTER.withName("get_group_id"),
+        cef_app_capi_h.C_POINTER.withName("get_group_id_at"),
+        cef_app_capi_h.C_POINTER.withName("set_group_id"),
+        cef_app_capi_h.C_POINTER.withName("set_group_id_at"),
+        cef_app_capi_h.C_POINTER.withName("get_sub_menu"),
+        cef_app_capi_h.C_POINTER.withName("get_sub_menu_at"),
+        cef_app_capi_h.C_POINTER.withName("is_visible"),
+        cef_app_capi_h.C_POINTER.withName("is_visible_at"),
+        cef_app_capi_h.C_POINTER.withName("set_visible"),
+        cef_app_capi_h.C_POINTER.withName("set_visible_at"),
+        cef_app_capi_h.C_POINTER.withName("is_enabled"),
+        cef_app_capi_h.C_POINTER.withName("is_enabled_at"),
+        cef_app_capi_h.C_POINTER.withName("set_enabled"),
+        cef_app_capi_h.C_POINTER.withName("set_enabled_at"),
+        cef_app_capi_h.C_POINTER.withName("is_checked"),
+        cef_app_capi_h.C_POINTER.withName("is_checked_at"),
+        cef_app_capi_h.C_POINTER.withName("set_checked"),
+        cef_app_capi_h.C_POINTER.withName("set_checked_at"),
+        cef_app_capi_h.C_POINTER.withName("has_accelerator"),
+        cef_app_capi_h.C_POINTER.withName("has_accelerator_at"),
+        cef_app_capi_h.C_POINTER.withName("set_accelerator"),
+        cef_app_capi_h.C_POINTER.withName("set_accelerator_at"),
+        cef_app_capi_h.C_POINTER.withName("remove_accelerator"),
+        cef_app_capi_h.C_POINTER.withName("remove_accelerator_at"),
+        cef_app_capi_h.C_POINTER.withName("get_accelerator"),
+        cef_app_capi_h.C_POINTER.withName("get_accelerator_at"),
+        cef_app_capi_h.C_POINTER.withName("set_color"),
+        cef_app_capi_h.C_POINTER.withName("set_color_at"),
+        cef_app_capi_h.C_POINTER.withName("get_color"),
+        cef_app_capi_h.C_POINTER.withName("get_color_at"),
+        cef_app_capi_h.C_POINTER.withName("set_font_list"),
+        cef_app_capi_h.C_POINTER.withName("set_font_list_at")
     ).withName("_cef_menu_model_t");
 
     /**
@@ -211,8 +211,8 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -222,7 +222,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_sub_menu.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_sub_menu.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -311,8 +311,8 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -322,7 +322,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(clear.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(clear.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -411,8 +411,8 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_LONG_LONG,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -422,7 +422,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_count.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_count.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -511,8 +511,8 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -522,7 +522,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(add_separator.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(add_separator.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -611,10 +611,10 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -624,7 +624,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(add_item.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(add_item.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -713,10 +713,10 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -726,7 +726,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(add_check_item.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(add_check_item.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -815,11 +815,11 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -829,7 +829,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(add_radio_item.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(add_radio_item.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -918,10 +918,10 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -931,7 +931,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(add_sub_menu.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(add_sub_menu.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1020,9 +1020,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG
         );
 
         /**
@@ -1032,7 +1032,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(insert_separator_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(insert_separator_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1121,11 +1121,11 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -1135,7 +1135,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(insert_item_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(insert_item_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1224,11 +1224,11 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -1238,7 +1238,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(insert_check_item_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(insert_check_item_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1327,12 +1327,12 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -1342,7 +1342,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(insert_radio_item_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(insert_radio_item_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1431,11 +1431,11 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -1445,7 +1445,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(insert_sub_menu_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(insert_sub_menu_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1534,9 +1534,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -1546,7 +1546,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(remove.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(remove.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1635,9 +1635,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG
         );
 
         /**
@@ -1647,7 +1647,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(remove_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(remove_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1736,9 +1736,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -1748,7 +1748,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_index_of.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_index_of.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1837,9 +1837,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG
         );
 
         /**
@@ -1849,7 +1849,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_command_id_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_command_id_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1938,10 +1938,10 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -1951,7 +1951,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_command_id_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_command_id_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2040,9 +2040,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -2052,7 +2052,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_label.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_label.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2141,9 +2141,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG
         );
 
         /**
@@ -2153,7 +2153,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_label_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_label_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2242,10 +2242,10 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -2255,7 +2255,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_label.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_label.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2344,10 +2344,10 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -2357,7 +2357,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_label_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_label_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2446,9 +2446,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -2458,7 +2458,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_type.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_type.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2547,9 +2547,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG
         );
 
         /**
@@ -2559,7 +2559,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_type_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_type_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2648,9 +2648,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -2660,7 +2660,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_group_id.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_group_id.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2749,9 +2749,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG
         );
 
         /**
@@ -2761,7 +2761,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_group_id_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_group_id_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2850,10 +2850,10 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -2863,7 +2863,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_group_id.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_group_id.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2952,10 +2952,10 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -2965,7 +2965,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_group_id_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_group_id_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3054,9 +3054,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -3066,7 +3066,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_sub_menu.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_sub_menu.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3155,9 +3155,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG
         );
 
         /**
@@ -3167,7 +3167,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_sub_menu_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_sub_menu_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3256,9 +3256,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -3268,7 +3268,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_visible.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_visible.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3357,9 +3357,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG
         );
 
         /**
@@ -3369,7 +3369,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_visible_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_visible_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3458,10 +3458,10 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -3471,7 +3471,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_visible.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_visible.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3560,10 +3560,10 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -3573,7 +3573,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_visible_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_visible_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3662,9 +3662,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -3674,7 +3674,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_enabled.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_enabled.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3763,9 +3763,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG
         );
 
         /**
@@ -3775,7 +3775,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_enabled_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_enabled_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3864,10 +3864,10 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -3877,7 +3877,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_enabled.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_enabled.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3966,10 +3966,10 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -3979,7 +3979,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_enabled_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_enabled_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4068,9 +4068,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -4080,7 +4080,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_checked.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_checked.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4169,9 +4169,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG
         );
 
         /**
@@ -4181,7 +4181,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_checked_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_checked_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4270,10 +4270,10 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -4283,7 +4283,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_checked.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_checked.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4372,10 +4372,10 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -4385,7 +4385,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_checked_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_checked_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4474,9 +4474,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -4486,7 +4486,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(has_accelerator.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(has_accelerator.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4575,9 +4575,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG
         );
 
         /**
@@ -4587,7 +4587,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(has_accelerator_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(has_accelerator_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4676,13 +4676,13 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -4692,7 +4692,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_accelerator.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_accelerator.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4781,13 +4781,13 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -4797,7 +4797,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_accelerator_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_accelerator_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4886,9 +4886,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -4898,7 +4898,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(remove_accelerator.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(remove_accelerator.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4987,9 +4987,9 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG
         );
 
         /**
@@ -4999,7 +4999,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(remove_accelerator_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(remove_accelerator_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -5088,13 +5088,13 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -5104,7 +5104,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_accelerator.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_accelerator.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -5193,13 +5193,13 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -5209,7 +5209,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_accelerator_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_accelerator_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -5298,11 +5298,11 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -5312,7 +5312,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_color.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_color.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -5401,11 +5401,11 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -5415,7 +5415,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_color_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_color_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -5504,11 +5504,11 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -5518,7 +5518,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_color.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_color.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -5607,11 +5607,11 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -5621,7 +5621,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_color_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_color_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -5710,10 +5710,10 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -5723,7 +5723,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_font_list.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_font_list.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -5812,10 +5812,10 @@ public class _cef_menu_model_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -5825,7 +5825,7 @@ public class _cef_menu_model_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_font_list_at.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_font_list_at.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

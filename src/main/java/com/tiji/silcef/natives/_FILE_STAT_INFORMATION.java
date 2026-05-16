@@ -43,10 +43,10 @@ public class _FILE_STAT_INFORMATION {
         _LARGE_INTEGER.layout().withName("ChangeTime"),
         _LARGE_INTEGER.layout().withName("AllocationSize"),
         _LARGE_INTEGER.layout().withName("EndOfFile"),
-        cef_master_h.C_LONG.withName("FileAttributes"),
-        cef_master_h.C_LONG.withName("ReparseTag"),
-        cef_master_h.C_LONG.withName("NumberOfLinks"),
-        cef_master_h.C_LONG.withName("EffectiveAccess")
+        cef_render_handler_capi_h.C_LONG.withName("FileAttributes"),
+        cef_render_handler_capi_h.C_LONG.withName("ReparseTag"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfLinks"),
+        cef_render_handler_capi_h.C_LONG.withName("EffectiveAccess")
     ).withName("_FILE_STAT_INFORMATION");
 
     /**

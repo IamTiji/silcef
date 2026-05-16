@@ -37,16 +37,16 @@ public class _STORAGE_HW_FIRMWARE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
         MemoryLayout.paddingLayout(1),
-        cef_master_h.C_CHAR.withName("SlotCount"),
-        cef_master_h.C_CHAR.withName("ActiveSlot"),
-        cef_master_h.C_CHAR.withName("PendingActivateSlot"),
-        cef_master_h.C_CHAR.withName("FirmwareShared"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_CHAR).withName("Reserved"),
-        cef_master_h.C_LONG.withName("ImagePayloadAlignment"),
-        cef_master_h.C_LONG.withName("ImagePayloadMaxSize"),
+        cef_render_handler_capi_h.C_CHAR.withName("SlotCount"),
+        cef_render_handler_capi_h.C_CHAR.withName("ActiveSlot"),
+        cef_render_handler_capi_h.C_CHAR.withName("PendingActivateSlot"),
+        cef_render_handler_capi_h.C_CHAR.withName("FirmwareShared"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_CHAR).withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("ImagePayloadAlignment"),
+        cef_render_handler_capi_h.C_LONG.withName("ImagePayloadMaxSize"),
         MemoryLayout.sequenceLayout(1, _STORAGE_HW_FIRMWARE_SLOT_INFO.layout()).withName("Slot")
     ).withName("_STORAGE_HW_FIRMWARE_INFO");
 

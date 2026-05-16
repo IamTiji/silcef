@@ -30,11 +30,11 @@ public class _SCARD_T0_COMMAND {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("bCla"),
-        cef_master_h.C_CHAR.withName("bIns"),
-        cef_master_h.C_CHAR.withName("bP1"),
-        cef_master_h.C_CHAR.withName("bP2"),
-        cef_master_h.C_CHAR.withName("bP3")
+        cef_render_handler_capi_h.C_CHAR.withName("bCla"),
+        cef_render_handler_capi_h.C_CHAR.withName("bIns"),
+        cef_render_handler_capi_h.C_CHAR.withName("bP1"),
+        cef_render_handler_capi_h.C_CHAR.withName("bP2"),
+        cef_render_handler_capi_h.C_CHAR.withName("bP3")
     ).withName("_SCARD_T0_COMMAND");
 
     /**

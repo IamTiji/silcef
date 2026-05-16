@@ -27,8 +27,8 @@ public class _CERT_POLICY_QUALIFIER_USER_NOTICE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pNoticeReference"),
-        cef_master_h.C_POINTER.withName("pszDisplayText")
+        cef_render_handler_capi_h.C_POINTER.withName("pNoticeReference"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszDisplayText")
     ).withName("_CERT_POLICY_QUALIFIER_USER_NOTICE");
 
     /**

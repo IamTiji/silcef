@@ -29,10 +29,10 @@ public class _NCRYPT_VBS_IDENTITY_ATTESTATION_PADDING {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("ulPaddingScheme"),
-        cef_master_h.C_LONG.withName("cbHashAlg"),
-        cef_master_h.C_LONG.withName("ulSalt")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("ulPaddingScheme"),
+        cef_render_handler_capi_h.C_LONG.withName("cbHashAlg"),
+        cef_render_handler_capi_h.C_LONG.withName("ulSalt")
     ).withName("_NCRYPT_VBS_IDENTITY_ATTESTATION_PADDING");
 
     /**

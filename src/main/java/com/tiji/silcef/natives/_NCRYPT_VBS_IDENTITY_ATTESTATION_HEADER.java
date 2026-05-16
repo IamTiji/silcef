@@ -33,14 +33,14 @@ public class _NCRYPT_VBS_IDENTITY_ATTESTATION_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Magic"),
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("cbAttributes"),
-        cef_master_h.C_LONG.withName("cbNonce"),
-        cef_master_h.C_LONG.withName("cbHashAlg"),
-        cef_master_h.C_LONG.withName("cbPadding"),
-        cef_master_h.C_LONG.withName("cbSignatureAlg"),
-        cef_master_h.C_LONG.withName("cbSignature")
+        cef_render_handler_capi_h.C_LONG.withName("Magic"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("cbAttributes"),
+        cef_render_handler_capi_h.C_LONG.withName("cbNonce"),
+        cef_render_handler_capi_h.C_LONG.withName("cbHashAlg"),
+        cef_render_handler_capi_h.C_LONG.withName("cbPadding"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSignatureAlg"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSignature")
     ).withName("_NCRYPT_VBS_IDENTITY_ATTESTATION_HEADER");
 
     /**

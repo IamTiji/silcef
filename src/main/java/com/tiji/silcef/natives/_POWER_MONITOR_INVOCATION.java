@@ -27,9 +27,9 @@ public class _POWER_MONITOR_INVOCATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("Console"),
+        cef_render_handler_capi_h.C_CHAR.withName("Console"),
         MemoryLayout.paddingLayout(3),
-        cef_master_h.C_INT.withName("RequestReason")
+        cef_render_handler_capi_h.C_INT.withName("RequestReason")
     ).withName("_POWER_MONITOR_INVOCATION");
 
     /**

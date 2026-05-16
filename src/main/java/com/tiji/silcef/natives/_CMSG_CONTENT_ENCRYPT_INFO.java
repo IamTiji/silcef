@@ -43,27 +43,27 @@ public class _CMSG_CONTENT_ENCRYPT_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("hCryptProv"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("hCryptProv"),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("ContentEncryptionAlgorithm"),
-        cef_master_h.C_POINTER.withName("pvEncryptionAuxInfo"),
-        cef_master_h.C_LONG.withName("cRecipients"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvEncryptionAuxInfo"),
+        cef_render_handler_capi_h.C_LONG.withName("cRecipients"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgCmsRecipients"),
-        cef_master_h.C_POINTER.withName("pfnAlloc"),
-        cef_master_h.C_POINTER.withName("pfnFree"),
-        cef_master_h.C_LONG.withName("dwEncryptFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgCmsRecipients"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnAlloc"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnFree"),
+        cef_render_handler_capi_h.C_LONG.withName("dwEncryptFlags"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG_LONG.withName("hContentEncryptKey"),
-            cef_master_h.C_POINTER.withName("hCNGContentEncryptKey")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("hContentEncryptKey"),
+            cef_render_handler_capi_h.C_POINTER.withName("hCNGContentEncryptKey")
         ).withName("$anon$8636:5"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_INT.withName("fCNG"),
-        cef_master_h.C_POINTER.withName("pbCNGContentEncryptKeyObject"),
-        cef_master_h.C_POINTER.withName("pbContentEncryptKey"),
-        cef_master_h.C_LONG.withName("cbContentEncryptKey"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_INT.withName("fCNG"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbCNGContentEncryptKeyObject"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbContentEncryptKey"),
+        cef_render_handler_capi_h.C_LONG.withName("cbContentEncryptKey"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CMSG_CONTENT_ENCRYPT_INFO");
 

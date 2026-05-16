@@ -39,11 +39,11 @@ public class _IMAGE_SYMBOL_EX {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _IMAGE_SYMBOL_EX.N.layout().withName("N"),
-        cef_master_h.align(cef_master_h.C_LONG, 2).withName("Value"),
-        cef_master_h.align(cef_master_h.C_LONG, 2).withName("SectionNumber"),
-        cef_master_h.C_SHORT.withName("Type"),
-        cef_master_h.C_CHAR.withName("StorageClass"),
-        cef_master_h.C_CHAR.withName("NumberOfAuxSymbols")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("Value"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("SectionNumber"),
+        cef_render_handler_capi_h.C_SHORT.withName("Type"),
+        cef_render_handler_capi_h.C_CHAR.withName("StorageClass"),
+        cef_render_handler_capi_h.C_CHAR.withName("NumberOfAuxSymbols")
     ).withName("_IMAGE_SYMBOL_EX");
 
     /**
@@ -72,9 +72,9 @@ public class _IMAGE_SYMBOL_EX {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            MemoryLayout.sequenceLayout(8, cef_master_h.C_CHAR).withName("ShortName"),
+            MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_CHAR).withName("ShortName"),
             _IMAGE_SYMBOL_EX.N.Name.layout().withName("Name"),
-            MemoryLayout.sequenceLayout(2, cef_master_h.align(cef_master_h.C_LONG, 2)).withName("LongName")
+            MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2)).withName("LongName")
         ).withName("$anon$20206:5");
 
         /**
@@ -176,8 +176,8 @@ public class _IMAGE_SYMBOL_EX {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.align(cef_master_h.C_LONG, 2).withName("Short"),
-                cef_master_h.align(cef_master_h.C_LONG, 2).withName("Long")
+                cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("Short"),
+                cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("Long")
             ).withName("$anon$20208:9");
 
             /**

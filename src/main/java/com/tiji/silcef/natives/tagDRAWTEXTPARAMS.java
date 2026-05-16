@@ -30,11 +30,11 @@ public class tagDRAWTEXTPARAMS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_INT.withName("iTabLength"),
-        cef_master_h.C_INT.withName("iLeftMargin"),
-        cef_master_h.C_INT.withName("iRightMargin"),
-        cef_master_h.C_INT.withName("uiLengthDrawn")
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("iTabLength"),
+        cef_render_handler_capi_h.C_INT.withName("iLeftMargin"),
+        cef_render_handler_capi_h.C_INT.withName("iRightMargin"),
+        cef_render_handler_capi_h.C_INT.withName("uiLengthDrawn")
     ).withName("tagDRAWTEXTPARAMS");
 
     /**

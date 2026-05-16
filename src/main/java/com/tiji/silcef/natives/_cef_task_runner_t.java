@@ -32,11 +32,11 @@ public class _cef_task_runner_t {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _cef_base_ref_counted_t.layout().withName("base"),
-        cef_master_h.C_POINTER.withName("is_same"),
-        cef_master_h.C_POINTER.withName("belongs_to_current_thread"),
-        cef_master_h.C_POINTER.withName("belongs_to_thread"),
-        cef_master_h.C_POINTER.withName("post_task"),
-        cef_master_h.C_POINTER.withName("post_delayed_task")
+        cef_app_capi_h.C_POINTER.withName("is_same"),
+        cef_app_capi_h.C_POINTER.withName("belongs_to_current_thread"),
+        cef_app_capi_h.C_POINTER.withName("belongs_to_thread"),
+        cef_app_capi_h.C_POINTER.withName("post_task"),
+        cef_app_capi_h.C_POINTER.withName("post_delayed_task")
     ).withName("_cef_task_runner_t");
 
     /**
@@ -109,9 +109,9 @@ public class _cef_task_runner_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -121,7 +121,7 @@ public class _cef_task_runner_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_same.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_same.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -210,8 +210,8 @@ public class _cef_task_runner_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -221,7 +221,7 @@ public class _cef_task_runner_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(belongs_to_current_thread.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(belongs_to_current_thread.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -310,9 +310,9 @@ public class _cef_task_runner_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -322,7 +322,7 @@ public class _cef_task_runner_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(belongs_to_thread.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(belongs_to_thread.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -411,9 +411,9 @@ public class _cef_task_runner_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -423,7 +423,7 @@ public class _cef_task_runner_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(post_task.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(post_task.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -512,10 +512,10 @@ public class _cef_task_runner_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG
         );
 
         /**
@@ -525,7 +525,7 @@ public class _cef_task_runner_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(post_delayed_task.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(post_delayed_task.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

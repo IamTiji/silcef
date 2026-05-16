@@ -33,14 +33,14 @@ public class _NETRESOURCEA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwScope"),
-        cef_master_h.C_LONG.withName("dwType"),
-        cef_master_h.C_LONG.withName("dwDisplayType"),
-        cef_master_h.C_LONG.withName("dwUsage"),
-        cef_master_h.C_POINTER.withName("lpLocalName"),
-        cef_master_h.C_POINTER.withName("lpRemoteName"),
-        cef_master_h.C_POINTER.withName("lpComment"),
-        cef_master_h.C_POINTER.withName("lpProvider")
+        cef_render_handler_capi_h.C_LONG.withName("dwScope"),
+        cef_render_handler_capi_h.C_LONG.withName("dwType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwDisplayType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwUsage"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpLocalName"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpRemoteName"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpComment"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpProvider")
     ).withName("_NETRESOURCEA");
 
     /**

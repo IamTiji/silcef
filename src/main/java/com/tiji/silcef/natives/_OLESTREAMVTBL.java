@@ -27,8 +27,8 @@ public class _OLESTREAMVTBL {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("Get"),
-        cef_master_h.C_POINTER.withName("Put")
+        cef_render_handler_capi_h.C_POINTER.withName("Get"),
+        cef_render_handler_capi_h.C_POINTER.withName("Put")
     ).withName("_OLESTREAMVTBL");
 
     /**
@@ -57,10 +57,10 @@ public class _OLESTREAMVTBL {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_LONG
         );
 
         /**
@@ -70,7 +70,7 @@ public class _OLESTREAMVTBL {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(Get.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(Get.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -159,10 +159,10 @@ public class _OLESTREAMVTBL {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_LONG
         );
 
         /**
@@ -172,7 +172,7 @@ public class _OLESTREAMVTBL {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(Put.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(Put.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

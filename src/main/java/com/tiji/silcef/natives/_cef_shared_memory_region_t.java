@@ -30,9 +30,9 @@ public class _cef_shared_memory_region_t {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _cef_base_ref_counted_t.layout().withName("base"),
-        cef_master_h.C_POINTER.withName("is_valid"),
-        cef_master_h.C_POINTER.withName("size"),
-        cef_master_h.C_POINTER.withName("memory")
+        cef_render_handler_capi_h.C_POINTER.withName("is_valid"),
+        cef_render_handler_capi_h.C_POINTER.withName("size"),
+        cef_render_handler_capi_h.C_POINTER.withName("memory")
     ).withName("_cef_shared_memory_region_t");
 
     /**
@@ -105,8 +105,8 @@ public class _cef_shared_memory_region_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -116,7 +116,7 @@ public class _cef_shared_memory_region_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_valid.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(is_valid.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -205,8 +205,8 @@ public class _cef_shared_memory_region_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG_LONG,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -216,7 +216,7 @@ public class _cef_shared_memory_region_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(size.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(size.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -305,8 +305,8 @@ public class _cef_shared_memory_region_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -316,7 +316,7 @@ public class _cef_shared_memory_region_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(memory.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(memory.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

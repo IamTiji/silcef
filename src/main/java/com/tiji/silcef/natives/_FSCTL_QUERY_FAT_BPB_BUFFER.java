@@ -26,7 +26,7 @@ public class _FSCTL_QUERY_FAT_BPB_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(36, cef_master_h.C_CHAR).withName("First0x24BytesOfBootSector")
+        MemoryLayout.sequenceLayout(36, cef_render_handler_capi_h.C_CHAR).withName("First0x24BytesOfBootSector")
     ).withName("_FSCTL_QUERY_FAT_BPB_BUFFER");
 
     /**

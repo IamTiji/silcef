@@ -27,8 +27,8 @@ public class tagREGISTERWORDA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("lpReading"),
-        cef_master_h.C_POINTER.withName("lpWord")
+        cef_render_handler_capi_h.C_POINTER.withName("lpReading"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpWord")
     ).withName("tagREGISTERWORDA");
 
     /**

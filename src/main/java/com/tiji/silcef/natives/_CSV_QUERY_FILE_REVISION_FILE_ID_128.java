@@ -28,7 +28,7 @@ public class _CSV_QUERY_FILE_REVISION_FILE_ID_128 {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _FILE_ID_128.layout().withName("FileId"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_LONG_LONG).withName("FileRevision")
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_LONG_LONG).withName("FileRevision")
     ).withName("_CSV_QUERY_FILE_REVISION_FILE_ID_128");
 
     /**

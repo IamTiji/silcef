@@ -27,7 +27,7 @@ public class _VIRTUAL_STORAGE_TYPE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("DeviceId"),
+        cef_render_handler_capi_h.C_LONG.withName("DeviceId"),
         _GUID.layout().withName("VendorId")
     ).withName("_VIRTUAL_STORAGE_TYPE");
 

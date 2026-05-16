@@ -38,16 +38,16 @@ public class _FILE_QUERY_ON_DISK_VOL_INFO_BUFFER {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LARGE_INTEGER.layout().withName("DirectoryCount"),
         _LARGE_INTEGER.layout().withName("FileCount"),
-        cef_master_h.C_SHORT.withName("FsFormatMajVersion"),
-        cef_master_h.C_SHORT.withName("FsFormatMinVersion"),
-        MemoryLayout.sequenceLayout(12, cef_master_h.C_SHORT).withName("FsFormatName"),
+        cef_render_handler_capi_h.C_SHORT.withName("FsFormatMajVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("FsFormatMinVersion"),
+        MemoryLayout.sequenceLayout(12, cef_render_handler_capi_h.C_SHORT).withName("FsFormatName"),
         MemoryLayout.paddingLayout(4),
         _LARGE_INTEGER.layout().withName("FormatTime"),
         _LARGE_INTEGER.layout().withName("LastUpdateTime"),
-        MemoryLayout.sequenceLayout(34, cef_master_h.C_SHORT).withName("CopyrightInfo"),
-        MemoryLayout.sequenceLayout(34, cef_master_h.C_SHORT).withName("AbstractInfo"),
-        MemoryLayout.sequenceLayout(34, cef_master_h.C_SHORT).withName("FormattingImplementationInfo"),
-        MemoryLayout.sequenceLayout(34, cef_master_h.C_SHORT).withName("LastModifyingImplementationInfo")
+        MemoryLayout.sequenceLayout(34, cef_render_handler_capi_h.C_SHORT).withName("CopyrightInfo"),
+        MemoryLayout.sequenceLayout(34, cef_render_handler_capi_h.C_SHORT).withName("AbstractInfo"),
+        MemoryLayout.sequenceLayout(34, cef_render_handler_capi_h.C_SHORT).withName("FormattingImplementationInfo"),
+        MemoryLayout.sequenceLayout(34, cef_render_handler_capi_h.C_SHORT).withName("LastModifyingImplementationInfo")
     ).withName("_FILE_QUERY_ON_DISK_VOL_INFO_BUFFER");
 
     /**

@@ -28,7 +28,7 @@ public class _KEY_TYPE_SUBTYPE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwKeySpec"),
+        cef_render_handler_capi_h.C_LONG.withName("dwKeySpec"),
         _GUID.layout().withName("Type"),
         _GUID.layout().withName("Subtype")
     ).withName("_KEY_TYPE_SUBTYPE");

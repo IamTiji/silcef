@@ -39,7 +39,7 @@ public class _SE_TOKEN_USER {
         ).withName("$anon$12116:5"),
         MemoryLayout.unionLayout(
             _SID.layout().withName("Sid"),
-            MemoryLayout.sequenceLayout(68, cef_master_h.C_CHAR).withName("Buffer")
+            MemoryLayout.sequenceLayout(68, cef_render_handler_capi_h.C_CHAR).withName("Buffer")
         ).withName("$anon$12121:5"),
         MemoryLayout.paddingLayout(4)
     ).withName("_SE_TOKEN_USER");

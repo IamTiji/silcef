@@ -38,19 +38,19 @@ public class tagVS_FIXEDFILEINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSignature"),
-        cef_master_h.C_LONG.withName("dwStrucVersion"),
-        cef_master_h.C_LONG.withName("dwFileVersionMS"),
-        cef_master_h.C_LONG.withName("dwFileVersionLS"),
-        cef_master_h.C_LONG.withName("dwProductVersionMS"),
-        cef_master_h.C_LONG.withName("dwProductVersionLS"),
-        cef_master_h.C_LONG.withName("dwFileFlagsMask"),
-        cef_master_h.C_LONG.withName("dwFileFlags"),
-        cef_master_h.C_LONG.withName("dwFileOS"),
-        cef_master_h.C_LONG.withName("dwFileType"),
-        cef_master_h.C_LONG.withName("dwFileSubtype"),
-        cef_master_h.C_LONG.withName("dwFileDateMS"),
-        cef_master_h.C_LONG.withName("dwFileDateLS")
+        cef_render_handler_capi_h.C_LONG.withName("dwSignature"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStrucVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFileVersionMS"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFileVersionLS"),
+        cef_render_handler_capi_h.C_LONG.withName("dwProductVersionMS"),
+        cef_render_handler_capi_h.C_LONG.withName("dwProductVersionLS"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFileFlagsMask"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFileFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFileOS"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFileType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFileSubtype"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFileDateMS"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFileDateLS")
     ).withName("tagVS_FIXEDFILEINFO");
 
     /**

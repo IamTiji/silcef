@@ -29,11 +29,11 @@ public class _CTL_FIND_USAGE_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
         _CTL_USAGE.layout().withName("SubjectUsage"),
         _CRYPTOAPI_BLOB.layout().withName("ListIdentifier"),
-        cef_master_h.C_POINTER.withName("pSigner")
+        cef_render_handler_capi_h.C_POINTER.withName("pSigner")
     ).withName("_CTL_FIND_USAGE_PARA");
 
     /**

@@ -29,10 +29,10 @@ public class _SI_COPYFILE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("SourceFileNameLength"),
-        cef_master_h.C_LONG.withName("DestinationFileNameLength"),
-        cef_master_h.C_LONG.withName("Flags"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("FileNameBuffer"),
+        cef_render_handler_capi_h.C_LONG.withName("SourceFileNameLength"),
+        cef_render_handler_capi_h.C_LONG.withName("DestinationFileNameLength"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("FileNameBuffer"),
         MemoryLayout.paddingLayout(2)
     ).withName("_SI_COPYFILE");
 

@@ -31,12 +31,12 @@ public class _WIN32_FILE_ATTRIBUTE_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwFileAttributes"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFileAttributes"),
         _FILETIME.layout().withName("ftCreationTime"),
         _FILETIME.layout().withName("ftLastAccessTime"),
         _FILETIME.layout().withName("ftLastWriteTime"),
-        cef_master_h.C_LONG.withName("nFileSizeHigh"),
-        cef_master_h.C_LONG.withName("nFileSizeLow")
+        cef_render_handler_capi_h.C_LONG.withName("nFileSizeHigh"),
+        cef_render_handler_capi_h.C_LONG.withName("nFileSizeLow")
     ).withName("_WIN32_FILE_ATTRIBUTE_DATA");
 
     /**

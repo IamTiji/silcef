@@ -26,7 +26,7 @@ public class _TOKEN_USER_CLAIMS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("UserClaims")
+        cef_render_handler_capi_h.C_POINTER.withName("UserClaims")
     ).withName("_TOKEN_USER_CLAIMS");
 
     /**

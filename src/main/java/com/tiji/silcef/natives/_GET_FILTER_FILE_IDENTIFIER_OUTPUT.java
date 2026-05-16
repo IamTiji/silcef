@@ -27,8 +27,8 @@ public class _GET_FILTER_FILE_IDENTIFIER_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("FilterFileIdentifierLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("FilterFileIdentifier"),
+        cef_render_handler_capi_h.C_SHORT.withName("FilterFileIdentifierLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("FilterFileIdentifier"),
         MemoryLayout.paddingLayout(1)
     ).withName("_GET_FILTER_FILE_IDENTIFIER_OUTPUT");
 

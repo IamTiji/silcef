@@ -40,21 +40,21 @@ public class tagMCI_WAVE_SET_PARMS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 1).withName("dwCallback"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwTimeFormat"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwAudio"),
-        cef_master_h.align(cef_master_h.C_INT, 1).withName("wInput"),
-        cef_master_h.align(cef_master_h.C_INT, 1).withName("wOutput"),
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("wFormatTag"),
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("wReserved2"),
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("nChannels"),
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("wReserved3"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("nSamplesPerSec"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("nAvgBytesPerSec"),
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("nBlockAlign"),
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("wReserved4"),
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("wBitsPerSample"),
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("wReserved5")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 1).withName("dwCallback"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwTimeFormat"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwAudio"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_INT, 1).withName("wInput"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_INT, 1).withName("wOutput"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("wFormatTag"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("wReserved2"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("nChannels"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("wReserved3"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("nSamplesPerSec"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("nAvgBytesPerSec"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("nBlockAlign"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("wReserved4"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("wBitsPerSample"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("wReserved5")
     ).withName("tagMCI_WAVE_SET_PARMS");
 
     /**

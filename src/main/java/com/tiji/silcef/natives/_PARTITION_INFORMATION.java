@@ -35,12 +35,12 @@ public class _PARTITION_INFORMATION {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LARGE_INTEGER.layout().withName("StartingOffset"),
         _LARGE_INTEGER.layout().withName("PartitionLength"),
-        cef_master_h.C_LONG.withName("HiddenSectors"),
-        cef_master_h.C_LONG.withName("PartitionNumber"),
-        cef_master_h.C_CHAR.withName("PartitionType"),
-        cef_master_h.C_CHAR.withName("BootIndicator"),
-        cef_master_h.C_CHAR.withName("RecognizedPartition"),
-        cef_master_h.C_CHAR.withName("RewritePartition"),
+        cef_render_handler_capi_h.C_LONG.withName("HiddenSectors"),
+        cef_render_handler_capi_h.C_LONG.withName("PartitionNumber"),
+        cef_render_handler_capi_h.C_CHAR.withName("PartitionType"),
+        cef_render_handler_capi_h.C_CHAR.withName("BootIndicator"),
+        cef_render_handler_capi_h.C_CHAR.withName("RecognizedPartition"),
+        cef_render_handler_capi_h.C_CHAR.withName("RewritePartition"),
         MemoryLayout.paddingLayout(4)
     ).withName("_PARTITION_INFORMATION");
 

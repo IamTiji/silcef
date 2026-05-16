@@ -57,7 +57,7 @@ public class _IMAGE_AUX_SYMBOL_EX {
         _IMAGE_AUX_SYMBOL_EX.Section.layout().withName("Section"),
         MemoryLayout.structLayout(
             IMAGE_AUX_SYMBOL_TOKEN_DEF.layout().withName("TokenDef"),
-            MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("rgbReserved")
+            MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("rgbReserved")
         ).withName("$anon$20421:5"),
         _IMAGE_AUX_SYMBOL_EX.CRC.layout().withName("CRC")
     ).withName("_IMAGE_AUX_SYMBOL_EX");
@@ -85,9 +85,9 @@ public class _IMAGE_AUX_SYMBOL_EX {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.align(cef_master_h.C_LONG, 2).withName("WeakDefaultSymIndex"),
-            cef_master_h.align(cef_master_h.C_LONG, 2).withName("WeakSearchType"),
-            MemoryLayout.sequenceLayout(12, cef_master_h.C_CHAR).withName("rgbReserved")
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("WeakDefaultSymIndex"),
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("WeakSearchType"),
+            MemoryLayout.sequenceLayout(12, cef_render_handler_capi_h.C_CHAR).withName("rgbReserved")
         ).withName("$anon$20402:5");
 
         /**
@@ -381,7 +381,7 @@ public class _IMAGE_AUX_SYMBOL_EX {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            MemoryLayout.sequenceLayout(20, cef_master_h.C_CHAR).withName("Name")
+            MemoryLayout.sequenceLayout(20, cef_render_handler_capi_h.C_CHAR).withName("Name")
         ).withName("$anon$20407:5");
 
         /**
@@ -587,15 +587,15 @@ public class _IMAGE_AUX_SYMBOL_EX {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.align(cef_master_h.C_LONG, 2).withName("Length"),
-            cef_master_h.C_SHORT.withName("NumberOfRelocations"),
-            cef_master_h.C_SHORT.withName("NumberOfLinenumbers"),
-            cef_master_h.align(cef_master_h.C_LONG, 2).withName("CheckSum"),
-            cef_master_h.C_SHORT.withName("Number"),
-            cef_master_h.C_CHAR.withName("Selection"),
-            cef_master_h.C_CHAR.withName("bReserved"),
-            cef_master_h.C_SHORT.withName("HighNumber"),
-            MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("rgbReserved")
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("Length"),
+            cef_render_handler_capi_h.C_SHORT.withName("NumberOfRelocations"),
+            cef_render_handler_capi_h.C_SHORT.withName("NumberOfLinenumbers"),
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("CheckSum"),
+            cef_render_handler_capi_h.C_SHORT.withName("Number"),
+            cef_render_handler_capi_h.C_CHAR.withName("Selection"),
+            cef_render_handler_capi_h.C_CHAR.withName("bReserved"),
+            cef_render_handler_capi_h.C_SHORT.withName("HighNumber"),
+            MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("rgbReserved")
         ).withName("$anon$20410:5");
 
         /**
@@ -1299,8 +1299,8 @@ public class _IMAGE_AUX_SYMBOL_EX {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.align(cef_master_h.C_LONG, 2).withName("crc"),
-            MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("rgbReserved")
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("crc"),
+            MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("rgbReserved")
         ).withName("$anon$20425:5");
 
         /**

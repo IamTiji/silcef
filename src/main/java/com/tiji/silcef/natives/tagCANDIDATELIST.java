@@ -32,13 +32,13 @@ public class tagCANDIDATELIST {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSize"),
-        cef_master_h.C_LONG.withName("dwStyle"),
-        cef_master_h.C_LONG.withName("dwCount"),
-        cef_master_h.C_LONG.withName("dwSelection"),
-        cef_master_h.C_LONG.withName("dwPageStart"),
-        cef_master_h.C_LONG.withName("dwPageSize"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG).withName("dwOffset")
+        cef_render_handler_capi_h.C_LONG.withName("dwSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStyle"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCount"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSelection"),
+        cef_render_handler_capi_h.C_LONG.withName("dwPageStart"),
+        cef_render_handler_capi_h.C_LONG.withName("dwPageSize"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG).withName("dwOffset")
     ).withName("tagCANDIDATELIST");
 
     /**

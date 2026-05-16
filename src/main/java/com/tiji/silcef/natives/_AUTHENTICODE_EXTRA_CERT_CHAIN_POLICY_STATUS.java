@@ -27,8 +27,8 @@ public class _AUTHENTICODE_EXTRA_CERT_CHAIN_POLICY_STATUS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_INT.withName("fCommercial")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("fCommercial")
     ).withName("_AUTHENTICODE_EXTRA_CERT_CHAIN_POLICY_STATUS");
 
     /**

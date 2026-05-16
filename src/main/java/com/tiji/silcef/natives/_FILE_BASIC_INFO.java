@@ -34,7 +34,7 @@ public class _FILE_BASIC_INFO {
         _LARGE_INTEGER.layout().withName("LastAccessTime"),
         _LARGE_INTEGER.layout().withName("LastWriteTime"),
         _LARGE_INTEGER.layout().withName("ChangeTime"),
-        cef_master_h.C_LONG.withName("FileAttributes"),
+        cef_render_handler_capi_h.C_LONG.withName("FileAttributes"),
         MemoryLayout.paddingLayout(4)
     ).withName("_FILE_BASIC_INFO");
 

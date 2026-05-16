@@ -32,11 +32,11 @@ public class _FILE_COMPRESSION_INFO {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LARGE_INTEGER.layout().withName("CompressedFileSize"),
-        cef_master_h.C_SHORT.withName("CompressionFormat"),
-        cef_master_h.C_CHAR.withName("CompressionUnitShift"),
-        cef_master_h.C_CHAR.withName("ChunkShift"),
-        cef_master_h.C_CHAR.withName("ClusterShift"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_CHAR).withName("Reserved")
+        cef_render_handler_capi_h.C_SHORT.withName("CompressionFormat"),
+        cef_render_handler_capi_h.C_CHAR.withName("CompressionUnitShift"),
+        cef_render_handler_capi_h.C_CHAR.withName("ChunkShift"),
+        cef_render_handler_capi_h.C_CHAR.withName("ClusterShift"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_CHAR).withName("Reserved")
     ).withName("_FILE_COMPRESSION_INFO");
 
     /**

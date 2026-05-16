@@ -27,8 +27,8 @@ public class _CONSOLE_CURSOR_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSize"),
-        cef_master_h.C_INT.withName("bVisible")
+        cef_render_handler_capi_h.C_LONG.withName("dwSize"),
+        cef_render_handler_capi_h.C_INT.withName("bVisible")
     ).withName("_CONSOLE_CURSOR_INFO");
 
     /**

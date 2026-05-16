@@ -38,7 +38,7 @@ public class DISPLAYCONFIG_TARGET_DEVICE_NAME_FLAGS {
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$3086:9"),
-            cef_master_h.C_INT.withName("value")
+            cef_render_handler_capi_h.C_INT.withName("value")
         ).withName("$anon$3084:5")
     ).withName("DISPLAYCONFIG_TARGET_DEVICE_NAME_FLAGS");
 

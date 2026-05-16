@@ -28,9 +28,9 @@ public class _PROCESS_MACHINE_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("ProcessMachine"),
-        cef_master_h.C_SHORT.withName("Res0"),
-        cef_master_h.C_INT.withName("MachineAttributes")
+        cef_render_handler_capi_h.C_SHORT.withName("ProcessMachine"),
+        cef_render_handler_capi_h.C_SHORT.withName("Res0"),
+        cef_render_handler_capi_h.C_INT.withName("MachineAttributes")
     ).withName("_PROCESS_MACHINE_INFORMATION");
 
     /**

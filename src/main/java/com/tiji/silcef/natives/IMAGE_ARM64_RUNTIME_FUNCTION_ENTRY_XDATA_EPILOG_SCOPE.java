@@ -31,7 +31,7 @@ public class IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA_EPILOG_SCOPE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-        cef_master_h.C_LONG.withName("EpilogScopeData"),
+        cef_render_handler_capi_h.C_LONG.withName("EpilogScopeData"),
         MemoryLayout.structLayout(
             MemoryLayout.paddingLayout(4)
         ).withName("$anon$21758:5")

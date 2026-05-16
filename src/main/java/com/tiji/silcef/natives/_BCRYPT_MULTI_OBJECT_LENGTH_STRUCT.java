@@ -27,8 +27,8 @@ public class _BCRYPT_MULTI_OBJECT_LENGTH_STRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbPerObject"),
-        cef_master_h.C_LONG.withName("cbPerElement")
+        cef_render_handler_capi_h.C_LONG.withName("cbPerObject"),
+        cef_render_handler_capi_h.C_LONG.withName("cbPerElement")
     ).withName("_BCRYPT_MULTI_OBJECT_LENGTH_STRUCT");
 
     /**

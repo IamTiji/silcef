@@ -28,7 +28,7 @@ public class tagVersionedStream {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("guidVersion"),
-        cef_master_h.C_POINTER.withName("pStream")
+        cef_render_handler_capi_h.C_POINTER.withName("pStream")
     ).withName("tagVersionedStream");
 
     /**

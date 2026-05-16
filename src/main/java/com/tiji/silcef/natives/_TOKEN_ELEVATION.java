@@ -26,7 +26,7 @@ public class _TOKEN_ELEVATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("TokenIsElevated")
+        cef_render_handler_capi_h.C_LONG.withName("TokenIsElevated")
     ).withName("_TOKEN_ELEVATION");
 
     /**

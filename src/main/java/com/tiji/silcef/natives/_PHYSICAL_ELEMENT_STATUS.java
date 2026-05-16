@@ -32,12 +32,12 @@ public class _PHYSICAL_ELEMENT_STATUS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("DescriptorCount"),
-        cef_master_h.C_LONG.withName("ReturnedDescriptorCount"),
-        cef_master_h.C_LONG.withName("ElementIdentifierBeingDepoped"),
-        cef_master_h.C_LONG.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("DescriptorCount"),
+        cef_render_handler_capi_h.C_LONG.withName("ReturnedDescriptorCount"),
+        cef_render_handler_capi_h.C_LONG.withName("ElementIdentifierBeingDepoped"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved"),
         MemoryLayout.sequenceLayout(1, _PHYSICAL_ELEMENT_STATUS_DESCRIPTOR.layout()).withName("Descriptors")
     ).withName("_PHYSICAL_ELEMENT_STATUS");
 

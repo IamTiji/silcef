@@ -29,10 +29,10 @@ public class _CRYPTPROTECT_PROMPTSTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwPromptFlags"),
-        cef_master_h.C_POINTER.withName("hwndApp"),
-        cef_master_h.C_POINTER.withName("szPrompt")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwPromptFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndApp"),
+        cef_render_handler_capi_h.C_POINTER.withName("szPrompt")
     ).withName("_CRYPTPROTECT_PROMPTSTRUCT");
 
     /**

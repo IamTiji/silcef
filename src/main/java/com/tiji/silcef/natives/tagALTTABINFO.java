@@ -34,14 +34,14 @@ public class tagALTTABINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_INT.withName("cItems"),
-        cef_master_h.C_INT.withName("cColumns"),
-        cef_master_h.C_INT.withName("cRows"),
-        cef_master_h.C_INT.withName("iColFocus"),
-        cef_master_h.C_INT.withName("iRowFocus"),
-        cef_master_h.C_INT.withName("cxItem"),
-        cef_master_h.C_INT.withName("cyItem"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("cItems"),
+        cef_render_handler_capi_h.C_INT.withName("cColumns"),
+        cef_render_handler_capi_h.C_INT.withName("cRows"),
+        cef_render_handler_capi_h.C_INT.withName("iColFocus"),
+        cef_render_handler_capi_h.C_INT.withName("iRowFocus"),
+        cef_render_handler_capi_h.C_INT.withName("cxItem"),
+        cef_render_handler_capi_h.C_INT.withName("cyItem"),
         tagPOINT.layout().withName("ptStart")
     ).withName("tagALTTABINFO");
 

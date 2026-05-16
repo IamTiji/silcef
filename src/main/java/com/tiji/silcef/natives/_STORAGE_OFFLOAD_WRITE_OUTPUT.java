@@ -28,9 +28,9 @@ public class _STORAGE_OFFLOAD_WRITE_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("OffloadWriteFlags"),
-        cef_master_h.C_LONG.withName("Reserved"),
-        cef_master_h.C_LONG_LONG.withName("LengthCopied")
+        cef_render_handler_capi_h.C_LONG.withName("OffloadWriteFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LengthCopied")
     ).withName("_STORAGE_OFFLOAD_WRITE_OUTPUT");
 
     /**

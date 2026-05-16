@@ -27,7 +27,7 @@ public class _VOLUME_DISK_EXTENTS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NumberOfDiskExtents"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfDiskExtents"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.sequenceLayout(1, _DISK_EXTENT.layout()).withName("Extents")
     ).withName("_VOLUME_DISK_EXTENTS");

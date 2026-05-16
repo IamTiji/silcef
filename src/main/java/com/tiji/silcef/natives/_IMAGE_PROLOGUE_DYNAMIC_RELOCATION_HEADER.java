@@ -26,7 +26,7 @@ public class _IMAGE_PROLOGUE_DYNAMIC_RELOCATION_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("PrologueByteCount")
+        cef_render_handler_capi_h.C_CHAR.withName("PrologueByteCount")
     ).withName("_IMAGE_PROLOGUE_DYNAMIC_RELOCATION_HEADER");
 
     /**

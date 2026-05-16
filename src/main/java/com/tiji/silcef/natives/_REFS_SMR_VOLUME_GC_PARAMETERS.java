@@ -32,13 +32,13 @@ public class _REFS_SMR_VOLUME_GC_PARAMETERS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_INT.withName("Action"),
-        cef_master_h.C_INT.withName("Method"),
-        cef_master_h.C_LONG.withName("IoGranularity"),
-        cef_master_h.C_LONG.withName("CompressionFormat"),
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_LONG_LONG).withName("Unused")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_INT.withName("Action"),
+        cef_render_handler_capi_h.C_INT.withName("Method"),
+        cef_render_handler_capi_h.C_LONG.withName("IoGranularity"),
+        cef_render_handler_capi_h.C_LONG.withName("CompressionFormat"),
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_LONG_LONG).withName("Unused")
     ).withName("_REFS_SMR_VOLUME_GC_PARAMETERS");
 
     /**

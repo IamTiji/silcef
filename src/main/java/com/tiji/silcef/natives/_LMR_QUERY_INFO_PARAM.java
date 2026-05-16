@@ -26,7 +26,7 @@ public class _LMR_QUERY_INFO_PARAM {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Operation")
+        cef_render_handler_capi_h.C_INT.withName("Operation")
     ).withName("_LMR_QUERY_INFO_PARAM");
 
     /**

@@ -29,10 +29,10 @@ public class _PROCESS_DYNAMIC_EH_CONTINUATION_TARGETS_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("NumberOfTargets"),
-        cef_master_h.C_SHORT.withName("Reserved"),
-        cef_master_h.C_LONG.withName("Reserved2"),
-        cef_master_h.C_POINTER.withName("Targets")
+        cef_render_handler_capi_h.C_SHORT.withName("NumberOfTargets"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved2"),
+        cef_render_handler_capi_h.C_POINTER.withName("Targets")
     ).withName("_PROCESS_DYNAMIC_EH_CONTINUATION_TARGETS_INFORMATION");
 
     /**

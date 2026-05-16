@@ -37,14 +37,14 @@ public class _STORAGE_LB_PROVISIONING_MAP_RESOURCES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
         MemoryLayout.paddingLayout(1),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_CHAR).withName("Reserved1"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_CHAR).withName("Reserved1"),
         MemoryLayout.paddingLayout(1),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_CHAR).withName("Reserved3"),
-        cef_master_h.C_LONG_LONG.withName("AvailableMappingResources"),
-        cef_master_h.C_LONG_LONG.withName("UsedMappingResources")
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_CHAR).withName("Reserved3"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("AvailableMappingResources"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("UsedMappingResources")
     ).withName("_STORAGE_LB_PROVISIONING_MAP_RESOURCES");
 
     /**

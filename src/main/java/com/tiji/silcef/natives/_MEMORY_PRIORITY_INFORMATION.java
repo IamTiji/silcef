@@ -26,7 +26,7 @@ public class _MEMORY_PRIORITY_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("MemoryPriority")
+        cef_render_handler_capi_h.C_LONG.withName("MemoryPriority")
     ).withName("_MEMORY_PRIORITY_INFORMATION");
 
     /**

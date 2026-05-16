@@ -35,16 +35,16 @@ public class NTFS_EXTENDED_VOLUME_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ByteCount"),
-        cef_master_h.C_SHORT.withName("MajorVersion"),
-        cef_master_h.C_SHORT.withName("MinorVersion"),
-        cef_master_h.C_LONG.withName("BytesPerPhysicalSector"),
-        cef_master_h.C_SHORT.withName("LfsMajorVersion"),
-        cef_master_h.C_SHORT.withName("LfsMinorVersion"),
-        cef_master_h.C_LONG.withName("MaxDeviceTrimExtentCount"),
-        cef_master_h.C_LONG.withName("MaxDeviceTrimByteCount"),
-        cef_master_h.C_LONG.withName("MaxVolumeTrimExtentCount"),
-        cef_master_h.C_LONG.withName("MaxVolumeTrimByteCount")
+        cef_render_handler_capi_h.C_LONG.withName("ByteCount"),
+        cef_render_handler_capi_h.C_SHORT.withName("MajorVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("MinorVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("BytesPerPhysicalSector"),
+        cef_render_handler_capi_h.C_SHORT.withName("LfsMajorVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("LfsMinorVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("MaxDeviceTrimExtentCount"),
+        cef_render_handler_capi_h.C_LONG.withName("MaxDeviceTrimByteCount"),
+        cef_render_handler_capi_h.C_LONG.withName("MaxVolumeTrimExtentCount"),
+        cef_render_handler_capi_h.C_LONG.withName("MaxVolumeTrimByteCount")
     ).withName("$anon$11649:9");
 
     /**

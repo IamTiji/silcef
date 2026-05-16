@@ -29,10 +29,10 @@ public class _CRYPT_ECC_PRIVATE_KEY_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
         MemoryLayout.paddingLayout(4),
         _CRYPTOAPI_BLOB.layout().withName("PrivateKey"),
-        cef_master_h.C_POINTER.withName("szCurveOid"),
+        cef_render_handler_capi_h.C_POINTER.withName("szCurveOid"),
         _CRYPT_BIT_BLOB.layout().withName("PublicKey")
     ).withName("_CRYPT_ECC_PRIVATE_KEY_INFO");
 

@@ -34,15 +34,15 @@ public class _MEMORYSTATUSEX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwLength"),
-        cef_master_h.C_LONG.withName("dwMemoryLoad"),
-        cef_master_h.C_LONG_LONG.withName("ullTotalPhys"),
-        cef_master_h.C_LONG_LONG.withName("ullAvailPhys"),
-        cef_master_h.C_LONG_LONG.withName("ullTotalPageFile"),
-        cef_master_h.C_LONG_LONG.withName("ullAvailPageFile"),
-        cef_master_h.C_LONG_LONG.withName("ullTotalVirtual"),
-        cef_master_h.C_LONG_LONG.withName("ullAvailVirtual"),
-        cef_master_h.C_LONG_LONG.withName("ullAvailExtendedVirtual")
+        cef_render_handler_capi_h.C_LONG.withName("dwLength"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMemoryLoad"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ullTotalPhys"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ullAvailPhys"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ullTotalPageFile"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ullAvailPageFile"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ullTotalVirtual"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ullAvailVirtual"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ullAvailExtendedVirtual")
     ).withName("_MEMORYSTATUSEX");
 
     /**

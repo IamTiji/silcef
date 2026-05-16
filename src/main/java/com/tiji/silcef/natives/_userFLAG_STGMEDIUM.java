@@ -28,8 +28,8 @@ public class _userFLAG_STGMEDIUM {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ContextFlags"),
-        cef_master_h.C_LONG.withName("fPassOwnership"),
+        cef_render_handler_capi_h.C_LONG.withName("ContextFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("fPassOwnership"),
         _userSTGMEDIUM.layout().withName("Stgmed")
     ).withName("_userFLAG_STGMEDIUM");
 

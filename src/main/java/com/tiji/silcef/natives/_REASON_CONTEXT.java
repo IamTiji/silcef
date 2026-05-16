@@ -36,8 +36,8 @@ public class _REASON_CONTEXT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         _REASON_CONTEXT.Reason.layout().withName("Reason")
     ).withName("_REASON_CONTEXT");
 
@@ -157,7 +157,7 @@ public class _REASON_CONTEXT {
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
             _REASON_CONTEXT.Reason.Detailed.layout().withName("Detailed"),
-            cef_master_h.C_POINTER.withName("SimpleReasonString")
+            cef_render_handler_capi_h.C_POINTER.withName("SimpleReasonString")
         ).withName("$anon$276:5");
 
         /**
@@ -184,10 +184,10 @@ public class _REASON_CONTEXT {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_POINTER.withName("LocalizedReasonModule"),
-                cef_master_h.C_LONG.withName("LocalizedReasonId"),
-                cef_master_h.C_LONG.withName("ReasonStringCount"),
-                cef_master_h.C_POINTER.withName("ReasonStrings")
+                cef_render_handler_capi_h.C_POINTER.withName("LocalizedReasonModule"),
+                cef_render_handler_capi_h.C_LONG.withName("LocalizedReasonId"),
+                cef_render_handler_capi_h.C_LONG.withName("ReasonStringCount"),
+                cef_render_handler_capi_h.C_POINTER.withName("ReasonStrings")
             ).withName("$anon$277:9");
 
             /**

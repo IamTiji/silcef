@@ -28,9 +28,9 @@ public class _cpinfo {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("MaxCharSize"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("DefaultChar"),
-        MemoryLayout.sequenceLayout(12, cef_master_h.C_CHAR).withName("LeadByte"),
+        cef_render_handler_capi_h.C_INT.withName("MaxCharSize"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("DefaultChar"),
+        MemoryLayout.sequenceLayout(12, cef_render_handler_capi_h.C_CHAR).withName("LeadByte"),
         MemoryLayout.paddingLayout(2)
     ).withName("_cpinfo");
 

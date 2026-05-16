@@ -34,10 +34,10 @@ public class tagEMRPOLYTEXTOUTA {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
         _RECTL.layout().withName("rclBounds"),
-        cef_master_h.C_LONG.withName("iGraphicsMode"),
-        cef_master_h.C_FLOAT.withName("exScale"),
-        cef_master_h.C_FLOAT.withName("eyScale"),
-        cef_master_h.C_LONG.withName("cStrings"),
+        cef_render_handler_capi_h.C_LONG.withName("iGraphicsMode"),
+        cef_render_handler_capi_h.C_FLOAT.withName("exScale"),
+        cef_render_handler_capi_h.C_FLOAT.withName("eyScale"),
+        cef_render_handler_capi_h.C_LONG.withName("cStrings"),
         MemoryLayout.sequenceLayout(1, tagEMRTEXT.layout()).withName("aemrtext")
     ).withName("tagEMRPOLYTEXTOUTA");
 

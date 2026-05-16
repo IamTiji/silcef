@@ -34,7 +34,7 @@ public class tagRPC_EE_INFO_PARAM {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("ParameterType"),
+        cef_render_handler_capi_h.C_INT.withName("ParameterType"),
         MemoryLayout.paddingLayout(4),
         tagRPC_EE_INFO_PARAM.u.layout().withName("u")
     ).withName("tagRPC_EE_INFO_PARAM");
@@ -109,11 +109,11 @@ public class tagRPC_EE_INFO_PARAM {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("AnsiString"),
-            cef_master_h.C_POINTER.withName("UnicodeString"),
-            cef_master_h.C_LONG.withName("LVal"),
-            cef_master_h.C_SHORT.withName("SVal"),
-            cef_master_h.C_LONG_LONG.withName("PVal"),
+            cef_render_handler_capi_h.C_POINTER.withName("AnsiString"),
+            cef_render_handler_capi_h.C_POINTER.withName("UnicodeString"),
+            cef_render_handler_capi_h.C_LONG.withName("LVal"),
+            cef_render_handler_capi_h.C_SHORT.withName("SVal"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("PVal"),
             tagBinaryParam.layout().withName("BVal")
         ).withName("$anon$262:5");
 

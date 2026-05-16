@@ -28,7 +28,7 @@ public class _CONSOLE_SELECTION_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
         _COORD.layout().withName("dwSelectionAnchor"),
         _SMALL_RECT.layout().withName("srSelection")
     ).withName("_CONSOLE_SELECTION_INFO");

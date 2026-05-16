@@ -48,24 +48,24 @@ public class tagINPUT_TRANSFORM {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.unionLayout(
             MemoryLayout.structLayout(
-                cef_master_h.C_FLOAT.withName("_11"),
-                cef_master_h.C_FLOAT.withName("_12"),
-                cef_master_h.C_FLOAT.withName("_13"),
-                cef_master_h.C_FLOAT.withName("_14"),
-                cef_master_h.C_FLOAT.withName("_21"),
-                cef_master_h.C_FLOAT.withName("_22"),
-                cef_master_h.C_FLOAT.withName("_23"),
-                cef_master_h.C_FLOAT.withName("_24"),
-                cef_master_h.C_FLOAT.withName("_31"),
-                cef_master_h.C_FLOAT.withName("_32"),
-                cef_master_h.C_FLOAT.withName("_33"),
-                cef_master_h.C_FLOAT.withName("_34"),
-                cef_master_h.C_FLOAT.withName("_41"),
-                cef_master_h.C_FLOAT.withName("_42"),
-                cef_master_h.C_FLOAT.withName("_43"),
-                cef_master_h.C_FLOAT.withName("_44")
+                cef_render_handler_capi_h.C_FLOAT.withName("_11"),
+                cef_render_handler_capi_h.C_FLOAT.withName("_12"),
+                cef_render_handler_capi_h.C_FLOAT.withName("_13"),
+                cef_render_handler_capi_h.C_FLOAT.withName("_14"),
+                cef_render_handler_capi_h.C_FLOAT.withName("_21"),
+                cef_render_handler_capi_h.C_FLOAT.withName("_22"),
+                cef_render_handler_capi_h.C_FLOAT.withName("_23"),
+                cef_render_handler_capi_h.C_FLOAT.withName("_24"),
+                cef_render_handler_capi_h.C_FLOAT.withName("_31"),
+                cef_render_handler_capi_h.C_FLOAT.withName("_32"),
+                cef_render_handler_capi_h.C_FLOAT.withName("_33"),
+                cef_render_handler_capi_h.C_FLOAT.withName("_34"),
+                cef_render_handler_capi_h.C_FLOAT.withName("_41"),
+                cef_render_handler_capi_h.C_FLOAT.withName("_42"),
+                cef_render_handler_capi_h.C_FLOAT.withName("_43"),
+                cef_render_handler_capi_h.C_FLOAT.withName("_44")
             ).withName("$anon$6837:9"),
-            MemoryLayout.sequenceLayout(4, MemoryLayout.sequenceLayout(4, cef_master_h.C_FLOAT)).withName("m")
+            MemoryLayout.sequenceLayout(4, MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_FLOAT)).withName("m")
         ).withName("$anon$6836:5")
     ).withName("tagINPUT_TRANSFORM");
 

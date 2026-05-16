@@ -27,9 +27,9 @@ public class _CERT_POLICY_MAPPINGS_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cPolicyMapping"),
+        cef_render_handler_capi_h.C_LONG.withName("cPolicyMapping"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgPolicyMapping")
+        cef_render_handler_capi_h.C_POINTER.withName("rgPolicyMapping")
     ).withName("_CERT_POLICY_MAPPINGS_INFO");
 
     /**

@@ -30,11 +30,11 @@ public class _CMSG_KEY_TRANS_ENCRYPT_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwRecipientIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwRecipientIndex"),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("KeyEncryptionAlgorithm"),
         _CRYPTOAPI_BLOB.layout().withName("EncryptedKey"),
-        cef_master_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CMSG_KEY_TRANS_ENCRYPT_INFO");
 

@@ -35,17 +35,17 @@ public class _CMSG_CTRL_KEY_AGREE_DECRYPT_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG_LONG.withName("hCryptProv"),
-            cef_master_h.C_LONG_LONG.withName("hNCryptKey")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("hCryptProv"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("hNCryptKey")
         ).withName("$anon$8283:5"),
-        cef_master_h.C_LONG.withName("dwKeySpec"),
+        cef_render_handler_capi_h.C_LONG.withName("dwKeySpec"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pKeyAgree"),
-        cef_master_h.C_LONG.withName("dwRecipientIndex"),
-        cef_master_h.C_LONG.withName("dwRecipientEncryptedKeyIndex"),
+        cef_render_handler_capi_h.C_POINTER.withName("pKeyAgree"),
+        cef_render_handler_capi_h.C_LONG.withName("dwRecipientIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("dwRecipientEncryptedKeyIndex"),
         _CRYPT_BIT_BLOB.layout().withName("OriginatorPublicKey")
     ).withName("_CMSG_CTRL_KEY_AGREE_DECRYPT_PARA");
 

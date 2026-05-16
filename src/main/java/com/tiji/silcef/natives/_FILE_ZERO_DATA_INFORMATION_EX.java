@@ -30,7 +30,7 @@ public class _FILE_ZERO_DATA_INFORMATION_EX {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LARGE_INTEGER.layout().withName("FileOffset"),
         _LARGE_INTEGER.layout().withName("BeyondFinalZero"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         MemoryLayout.paddingLayout(4)
     ).withName("_FILE_ZERO_DATA_INFORMATION_EX");
 

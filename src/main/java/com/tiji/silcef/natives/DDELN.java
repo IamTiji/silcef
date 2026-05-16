@@ -31,7 +31,7 @@ public class DDELN {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.paddingLayout(2),
-        cef_master_h.C_SHORT.withName("cfFormat")
+        cef_render_handler_capi_h.C_SHORT.withName("cfFormat")
     ).withName("$anon$149:9");
 
     /**

@@ -27,9 +27,9 @@ public class _ENCRYPTION_CERTIFICATE_HASH_LIST {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("nCert_Hash"),
+        cef_render_handler_capi_h.C_LONG.withName("nCert_Hash"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pUsers")
+        cef_render_handler_capi_h.C_POINTER.withName("pUsers")
     ).withName("_ENCRYPTION_CERTIFICATE_HASH_LIST");
 
     /**

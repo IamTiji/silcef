@@ -28,9 +28,9 @@ public class _PSINJECTDATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("DataBytes"),
-        cef_master_h.C_SHORT.withName("InjectionPoint"),
-        cef_master_h.C_SHORT.withName("PageNumber")
+        cef_render_handler_capi_h.C_LONG.withName("DataBytes"),
+        cef_render_handler_capi_h.C_SHORT.withName("InjectionPoint"),
+        cef_render_handler_capi_h.C_SHORT.withName("PageNumber")
     ).withName("_PSINJECTDATA");
 
     /**

@@ -30,11 +30,11 @@ public class _MMCKINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("ckid"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("cksize"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("fccType"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwDataOffset"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwFlags")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("ckid"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cksize"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("fccType"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwDataOffset"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwFlags")
     ).withName("_MMCKINFO");
 
     /**

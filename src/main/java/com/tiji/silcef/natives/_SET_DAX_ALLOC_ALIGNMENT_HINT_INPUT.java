@@ -29,10 +29,10 @@ public class _SET_DAX_ALLOC_ALIGNMENT_HINT_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("AlignmentShift"),
-        cef_master_h.C_LONG_LONG.withName("FileOffsetToAlign"),
-        cef_master_h.C_LONG.withName("FallbackAlignmentShift"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("AlignmentShift"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("FileOffsetToAlign"),
+        cef_render_handler_capi_h.C_LONG.withName("FallbackAlignmentShift"),
         MemoryLayout.paddingLayout(4)
     ).withName("_SET_DAX_ALLOC_ALIGNMENT_HINT_INPUT");
 

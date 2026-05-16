@@ -28,8 +28,8 @@ public class tagAXESLISTA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("axlReserved"),
-        cef_master_h.C_LONG.withName("axlNumAxes"),
+        cef_render_handler_capi_h.C_LONG.withName("axlReserved"),
+        cef_render_handler_capi_h.C_LONG.withName("axlNumAxes"),
         MemoryLayout.sequenceLayout(16, tagAXISINFOA.layout()).withName("axlAxisInfo")
     ).withName("tagAXESLISTA");
 

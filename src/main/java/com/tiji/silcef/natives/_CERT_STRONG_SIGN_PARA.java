@@ -32,12 +32,12 @@ public class _CERT_STRONG_SIGN_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwInfoChoice"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwInfoChoice"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("pvInfo"),
-            cef_master_h.C_POINTER.withName("pSerializedInfo"),
-            cef_master_h.C_POINTER.withName("pszOID")
+            cef_render_handler_capi_h.C_POINTER.withName("pvInfo"),
+            cef_render_handler_capi_h.C_POINTER.withName("pSerializedInfo"),
+            cef_render_handler_capi_h.C_POINTER.withName("pszOID")
         ).withName("$anon$6725:5")
     ).withName("_CERT_STRONG_SIGN_PARA");
 

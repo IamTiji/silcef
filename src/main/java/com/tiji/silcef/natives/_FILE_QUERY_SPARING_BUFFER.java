@@ -29,11 +29,11 @@ public class _FILE_QUERY_SPARING_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("SparingUnitBytes"),
-        cef_master_h.C_CHAR.withName("SoftwareSparing"),
+        cef_render_handler_capi_h.C_LONG.withName("SparingUnitBytes"),
+        cef_render_handler_capi_h.C_CHAR.withName("SoftwareSparing"),
         MemoryLayout.paddingLayout(3),
-        cef_master_h.C_LONG.withName("TotalSpareBlocks"),
-        cef_master_h.C_LONG.withName("FreeSpareBlocks")
+        cef_render_handler_capi_h.C_LONG.withName("TotalSpareBlocks"),
+        cef_render_handler_capi_h.C_LONG.withName("FreeSpareBlocks")
     ).withName("_FILE_QUERY_SPARING_BUFFER");
 
     /**

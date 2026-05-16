@@ -27,8 +27,8 @@ public class tagSIZE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cx"),
-        cef_master_h.C_LONG.withName("cy")
+        cef_render_handler_capi_h.C_LONG.withName("cx"),
+        cef_render_handler_capi_h.C_LONG.withName("cy")
     ).withName("tagSIZE");
 
     /**

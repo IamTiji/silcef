@@ -54,33 +54,33 @@ public class _cef_drag_data_t {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _cef_base_ref_counted_t.layout().withName("base"),
-        cef_master_h.C_POINTER.withName("clone"),
-        cef_master_h.C_POINTER.withName("is_read_only"),
-        cef_master_h.C_POINTER.withName("is_link"),
-        cef_master_h.C_POINTER.withName("is_fragment"),
-        cef_master_h.C_POINTER.withName("is_file"),
-        cef_master_h.C_POINTER.withName("get_link_url"),
-        cef_master_h.C_POINTER.withName("get_link_title"),
-        cef_master_h.C_POINTER.withName("get_link_metadata"),
-        cef_master_h.C_POINTER.withName("get_fragment_text"),
-        cef_master_h.C_POINTER.withName("get_fragment_html"),
-        cef_master_h.C_POINTER.withName("get_fragment_base_url"),
-        cef_master_h.C_POINTER.withName("get_file_name"),
-        cef_master_h.C_POINTER.withName("get_file_contents"),
-        cef_master_h.C_POINTER.withName("get_file_names"),
-        cef_master_h.C_POINTER.withName("get_file_paths"),
-        cef_master_h.C_POINTER.withName("set_link_url"),
-        cef_master_h.C_POINTER.withName("set_link_title"),
-        cef_master_h.C_POINTER.withName("set_link_metadata"),
-        cef_master_h.C_POINTER.withName("set_fragment_text"),
-        cef_master_h.C_POINTER.withName("set_fragment_html"),
-        cef_master_h.C_POINTER.withName("set_fragment_base_url"),
-        cef_master_h.C_POINTER.withName("reset_file_contents"),
-        cef_master_h.C_POINTER.withName("add_file"),
-        cef_master_h.C_POINTER.withName("clear_filenames"),
-        cef_master_h.C_POINTER.withName("get_image"),
-        cef_master_h.C_POINTER.withName("get_image_hotspot"),
-        cef_master_h.C_POINTER.withName("has_image")
+        cef_render_handler_capi_h.C_POINTER.withName("clone"),
+        cef_render_handler_capi_h.C_POINTER.withName("is_read_only"),
+        cef_render_handler_capi_h.C_POINTER.withName("is_link"),
+        cef_render_handler_capi_h.C_POINTER.withName("is_fragment"),
+        cef_render_handler_capi_h.C_POINTER.withName("is_file"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_link_url"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_link_title"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_link_metadata"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_fragment_text"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_fragment_html"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_fragment_base_url"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_file_name"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_file_contents"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_file_names"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_file_paths"),
+        cef_render_handler_capi_h.C_POINTER.withName("set_link_url"),
+        cef_render_handler_capi_h.C_POINTER.withName("set_link_title"),
+        cef_render_handler_capi_h.C_POINTER.withName("set_link_metadata"),
+        cef_render_handler_capi_h.C_POINTER.withName("set_fragment_text"),
+        cef_render_handler_capi_h.C_POINTER.withName("set_fragment_html"),
+        cef_render_handler_capi_h.C_POINTER.withName("set_fragment_base_url"),
+        cef_render_handler_capi_h.C_POINTER.withName("reset_file_contents"),
+        cef_render_handler_capi_h.C_POINTER.withName("add_file"),
+        cef_render_handler_capi_h.C_POINTER.withName("clear_filenames"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_image"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_image_hotspot"),
+        cef_render_handler_capi_h.C_POINTER.withName("has_image")
     ).withName("_cef_drag_data_t");
 
     /**
@@ -153,8 +153,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -164,7 +164,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(clone.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(clone.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -253,8 +253,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -264,7 +264,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_read_only.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(is_read_only.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -353,8 +353,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -364,7 +364,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_link.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(is_link.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -453,8 +453,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -464,7 +464,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_fragment.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(is_fragment.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -553,8 +553,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -564,7 +564,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_file.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(is_file.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -653,8 +653,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -664,7 +664,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_link_url.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_link_url.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -753,8 +753,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -764,7 +764,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_link_title.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_link_title.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -853,8 +853,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -864,7 +864,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_link_metadata.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_link_metadata.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -953,8 +953,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -964,7 +964,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_fragment_text.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_fragment_text.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1053,8 +1053,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1064,7 +1064,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_fragment_html.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_fragment_html.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1153,8 +1153,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1164,7 +1164,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_fragment_base_url.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_fragment_base_url.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1253,8 +1253,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1264,7 +1264,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_file_name.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_file_name.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1353,9 +1353,9 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG_LONG,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1365,7 +1365,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_file_contents.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_file_contents.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1454,9 +1454,9 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1466,7 +1466,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_file_names.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_file_names.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1555,9 +1555,9 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1567,7 +1567,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_file_paths.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_file_paths.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1656,8 +1656,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1667,7 +1667,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_link_url.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(set_link_url.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1756,8 +1756,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1767,7 +1767,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_link_title.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(set_link_title.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1856,8 +1856,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1867,7 +1867,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_link_metadata.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(set_link_metadata.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1956,8 +1956,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1967,7 +1967,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_fragment_text.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(set_fragment_text.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2056,8 +2056,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -2067,7 +2067,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_fragment_html.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(set_fragment_html.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2156,8 +2156,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -2167,7 +2167,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_fragment_base_url.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(set_fragment_base_url.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2256,7 +2256,7 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -2266,7 +2266,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(reset_file_contents.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(reset_file_contents.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2355,9 +2355,9 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -2367,7 +2367,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(add_file.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(add_file.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2456,7 +2456,7 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -2466,7 +2466,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(clear_filenames.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(clear_filenames.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2555,8 +2555,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -2566,7 +2566,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_image.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_image.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2656,7 +2656,7 @@ public class _cef_drag_data_t {
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
             _cef_point_t.layout(),
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -2666,7 +2666,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_image_hotspot.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_image_hotspot.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2755,8 +2755,8 @@ public class _cef_drag_data_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -2766,7 +2766,7 @@ public class _cef_drag_data_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(has_image.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(has_image.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

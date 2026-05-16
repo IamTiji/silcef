@@ -33,14 +33,14 @@ public class _TAPE_STATISTICS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         _LARGE_INTEGER.layout().withName("RecoveredWrites"),
         _LARGE_INTEGER.layout().withName("UnrecoveredWrites"),
         _LARGE_INTEGER.layout().withName("RecoveredReads"),
         _LARGE_INTEGER.layout().withName("UnrecoveredReads"),
-        cef_master_h.C_CHAR.withName("CompressionRatioReads"),
-        cef_master_h.C_CHAR.withName("CompressionRatioWrites"),
+        cef_render_handler_capi_h.C_CHAR.withName("CompressionRatioReads"),
+        cef_render_handler_capi_h.C_CHAR.withName("CompressionRatioWrites"),
         MemoryLayout.paddingLayout(6)
     ).withName("_TAPE_STATISTICS");
 

@@ -29,8 +29,8 @@ public class tagEMRRESIZEPALETTE {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
-        cef_master_h.C_LONG.withName("ihPal"),
-        cef_master_h.C_LONG.withName("cEntries")
+        cef_render_handler_capi_h.C_LONG.withName("ihPal"),
+        cef_render_handler_capi_h.C_LONG.withName("cEntries")
     ).withName("tagEMRRESIZEPALETTE");
 
     /**

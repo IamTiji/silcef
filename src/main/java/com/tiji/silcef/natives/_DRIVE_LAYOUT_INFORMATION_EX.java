@@ -32,8 +32,8 @@ public class _DRIVE_LAYOUT_INFORMATION_EX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("PartitionStyle"),
-        cef_master_h.C_LONG.withName("PartitionCount"),
+        cef_render_handler_capi_h.C_LONG.withName("PartitionStyle"),
+        cef_render_handler_capi_h.C_LONG.withName("PartitionCount"),
         MemoryLayout.unionLayout(
             _DRIVE_LAYOUT_INFORMATION_MBR.layout().withName("Mbr"),
             _DRIVE_LAYOUT_INFORMATION_GPT.layout().withName("Gpt")

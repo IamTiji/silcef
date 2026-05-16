@@ -39,21 +39,21 @@ public class _PERF_DATA_BLOCK {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_SHORT).withName("Signature"),
-        cef_master_h.C_LONG.withName("LittleEndian"),
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Revision"),
-        cef_master_h.C_LONG.withName("TotalByteLength"),
-        cef_master_h.C_LONG.withName("HeaderLength"),
-        cef_master_h.C_LONG.withName("NumObjectTypes"),
-        cef_master_h.C_LONG.withName("DefaultObject"),
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_SHORT).withName("Signature"),
+        cef_render_handler_capi_h.C_LONG.withName("LittleEndian"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Revision"),
+        cef_render_handler_capi_h.C_LONG.withName("TotalByteLength"),
+        cef_render_handler_capi_h.C_LONG.withName("HeaderLength"),
+        cef_render_handler_capi_h.C_LONG.withName("NumObjectTypes"),
+        cef_render_handler_capi_h.C_LONG.withName("DefaultObject"),
         _SYSTEMTIME.layout().withName("SystemTime"),
         MemoryLayout.paddingLayout(4),
         _LARGE_INTEGER.layout().withName("PerfTime"),
         _LARGE_INTEGER.layout().withName("PerfFreq"),
         _LARGE_INTEGER.layout().withName("PerfTime100nSec"),
-        cef_master_h.C_LONG.withName("SystemNameLength"),
-        cef_master_h.C_LONG.withName("SystemNameOffset")
+        cef_render_handler_capi_h.C_LONG.withName("SystemNameLength"),
+        cef_render_handler_capi_h.C_LONG.withName("SystemNameOffset")
     ).withName("_PERF_DATA_BLOCK");
 
     /**

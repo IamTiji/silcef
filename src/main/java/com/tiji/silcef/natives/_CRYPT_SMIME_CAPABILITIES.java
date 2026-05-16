@@ -27,9 +27,9 @@ public class _CRYPT_SMIME_CAPABILITIES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cCapability"),
+        cef_render_handler_capi_h.C_LONG.withName("cCapability"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgCapability")
+        cef_render_handler_capi_h.C_POINTER.withName("rgCapability")
     ).withName("_CRYPT_SMIME_CAPABILITIES");
 
     /**

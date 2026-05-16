@@ -39,21 +39,21 @@ public class _STORAGE_ADAPTER_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("MaximumTransferLength"),
-        cef_master_h.C_LONG.withName("MaximumPhysicalPages"),
-        cef_master_h.C_LONG.withName("AlignmentMask"),
-        cef_master_h.C_CHAR.withName("AdapterUsesPio"),
-        cef_master_h.C_CHAR.withName("AdapterScansDown"),
-        cef_master_h.C_CHAR.withName("CommandQueueing"),
-        cef_master_h.C_CHAR.withName("AcceleratedTransfer"),
-        cef_master_h.C_CHAR.withName("BusType"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("MaximumTransferLength"),
+        cef_render_handler_capi_h.C_LONG.withName("MaximumPhysicalPages"),
+        cef_render_handler_capi_h.C_LONG.withName("AlignmentMask"),
+        cef_render_handler_capi_h.C_CHAR.withName("AdapterUsesPio"),
+        cef_render_handler_capi_h.C_CHAR.withName("AdapterScansDown"),
+        cef_render_handler_capi_h.C_CHAR.withName("CommandQueueing"),
+        cef_render_handler_capi_h.C_CHAR.withName("AcceleratedTransfer"),
+        cef_render_handler_capi_h.C_CHAR.withName("BusType"),
         MemoryLayout.paddingLayout(1),
-        cef_master_h.C_SHORT.withName("BusMajorVersion"),
-        cef_master_h.C_SHORT.withName("BusMinorVersion"),
-        cef_master_h.C_CHAR.withName("SrbType"),
-        cef_master_h.C_CHAR.withName("AddressType")
+        cef_render_handler_capi_h.C_SHORT.withName("BusMajorVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("BusMinorVersion"),
+        cef_render_handler_capi_h.C_CHAR.withName("SrbType"),
+        cef_render_handler_capi_h.C_CHAR.withName("AddressType")
     ).withName("_STORAGE_ADAPTER_DESCRIPTOR");
 
     /**

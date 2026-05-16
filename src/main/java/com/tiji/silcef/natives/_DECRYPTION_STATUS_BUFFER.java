@@ -26,7 +26,7 @@ public class _DECRYPTION_STATUS_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("NoEncryptedStreams")
+        cef_render_handler_capi_h.C_CHAR.withName("NoEncryptedStreams")
     ).withName("_DECRYPTION_STATUS_BUFFER");
 
     /**

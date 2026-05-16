@@ -28,9 +28,9 @@ public class _REDIRECTION_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("FunctionCount"),
-        cef_master_h.C_POINTER.withName("Redirections")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("FunctionCount"),
+        cef_render_handler_capi_h.C_POINTER.withName("Redirections")
     ).withName("_REDIRECTION_DESCRIPTOR");
 
     /**

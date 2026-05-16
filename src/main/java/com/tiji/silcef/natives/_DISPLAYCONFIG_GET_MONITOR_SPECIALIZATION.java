@@ -40,7 +40,7 @@ public class _DISPLAYCONFIG_GET_MONITOR_SPECIALIZATION {
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$3292:9"),
-            cef_master_h.C_INT.withName("value")
+            cef_render_handler_capi_h.C_INT.withName("value")
         ).withName("$anon$3290:5")
     ).withName("_DISPLAYCONFIG_GET_MONITOR_SPECIALIZATION");
 

@@ -27,7 +27,7 @@ public class _CMC_TAGGED_CERT_REQUEST {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwBodyPartID"),
+        cef_render_handler_capi_h.C_LONG.withName("dwBodyPartID"),
         MemoryLayout.paddingLayout(4),
         _CRYPTOAPI_BLOB.layout().withName("SignedCertRequest")
     ).withName("_CMC_TAGGED_CERT_REQUEST");

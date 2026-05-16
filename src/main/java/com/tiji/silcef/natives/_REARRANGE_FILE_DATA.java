@@ -30,11 +30,11 @@ public class _REARRANGE_FILE_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("SourceStartingOffset"),
-        cef_master_h.C_LONG_LONG.withName("TargetOffset"),
-        cef_master_h.C_POINTER.withName("SourceFileHandle"),
-        cef_master_h.C_LONG.withName("Length"),
-        cef_master_h.C_LONG.withName("Flags")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("SourceStartingOffset"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("TargetOffset"),
+        cef_render_handler_capi_h.C_POINTER.withName("SourceFileHandle"),
+        cef_render_handler_capi_h.C_LONG.withName("Length"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags")
     ).withName("_REARRANGE_FILE_DATA");
 
     /**

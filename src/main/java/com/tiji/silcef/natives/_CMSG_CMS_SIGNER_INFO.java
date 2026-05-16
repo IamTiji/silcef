@@ -32,7 +32,7 @@ public class _CMSG_CMS_SIGNER_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
         MemoryLayout.paddingLayout(4),
         _CERT_ID.layout().withName("SignerId"),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("HashAlgorithm"),

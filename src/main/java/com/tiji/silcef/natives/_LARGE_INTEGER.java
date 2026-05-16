@@ -35,11 +35,11 @@ public class _LARGE_INTEGER {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
         MemoryLayout.structLayout(
-            cef_master_h.C_LONG.withName("LowPart"),
-            cef_master_h.C_LONG.withName("HighPart")
+            cef_render_handler_capi_h.C_LONG.withName("LowPart"),
+            cef_render_handler_capi_h.C_LONG.withName("HighPart")
         ).withName("$anon$929:5"),
         _LARGE_INTEGER.u.layout().withName("u"),
-        cef_master_h.C_LONG_LONG.withName("QuadPart")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("QuadPart")
     ).withName("_LARGE_INTEGER");
 
     /**
@@ -152,8 +152,8 @@ public class _LARGE_INTEGER {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_LONG.withName("LowPart"),
-            cef_master_h.C_LONG.withName("HighPart")
+            cef_render_handler_capi_h.C_LONG.withName("LowPart"),
+            cef_render_handler_capi_h.C_LONG.withName("HighPart")
         ).withName("$anon$933:5");
 
         /**

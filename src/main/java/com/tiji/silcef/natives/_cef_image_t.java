@@ -40,19 +40,19 @@ public class _cef_image_t {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _cef_base_ref_counted_t.layout().withName("base"),
-        cef_master_h.C_POINTER.withName("is_empty"),
-        cef_master_h.C_POINTER.withName("is_same"),
-        cef_master_h.C_POINTER.withName("add_bitmap"),
-        cef_master_h.C_POINTER.withName("add_png"),
-        cef_master_h.C_POINTER.withName("add_jpeg"),
-        cef_master_h.C_POINTER.withName("get_width"),
-        cef_master_h.C_POINTER.withName("get_height"),
-        cef_master_h.C_POINTER.withName("has_representation"),
-        cef_master_h.C_POINTER.withName("remove_representation"),
-        cef_master_h.C_POINTER.withName("get_representation_info"),
-        cef_master_h.C_POINTER.withName("get_as_bitmap"),
-        cef_master_h.C_POINTER.withName("get_as_png"),
-        cef_master_h.C_POINTER.withName("get_as_jpeg")
+        cef_render_handler_capi_h.C_POINTER.withName("is_empty"),
+        cef_render_handler_capi_h.C_POINTER.withName("is_same"),
+        cef_render_handler_capi_h.C_POINTER.withName("add_bitmap"),
+        cef_render_handler_capi_h.C_POINTER.withName("add_png"),
+        cef_render_handler_capi_h.C_POINTER.withName("add_jpeg"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_width"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_height"),
+        cef_render_handler_capi_h.C_POINTER.withName("has_representation"),
+        cef_render_handler_capi_h.C_POINTER.withName("remove_representation"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_representation_info"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_as_bitmap"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_as_png"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_as_jpeg")
     ).withName("_cef_image_t");
 
     /**
@@ -125,8 +125,8 @@ public class _cef_image_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -136,7 +136,7 @@ public class _cef_image_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_empty.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(is_empty.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -225,9 +225,9 @@ public class _cef_image_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -237,7 +237,7 @@ public class _cef_image_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_same.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(is_same.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -326,15 +326,15 @@ public class _cef_image_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_FLOAT,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_FLOAT,
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_LONG_LONG
         );
 
         /**
@@ -344,7 +344,7 @@ public class _cef_image_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(add_bitmap.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(add_bitmap.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -433,11 +433,11 @@ public class _cef_image_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_FLOAT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_FLOAT,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_LONG_LONG
         );
 
         /**
@@ -447,7 +447,7 @@ public class _cef_image_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(add_png.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(add_png.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -536,11 +536,11 @@ public class _cef_image_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_FLOAT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_FLOAT,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_LONG_LONG
         );
 
         /**
@@ -550,7 +550,7 @@ public class _cef_image_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(add_jpeg.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(add_jpeg.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -639,8 +639,8 @@ public class _cef_image_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG_LONG,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -650,7 +650,7 @@ public class _cef_image_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_width.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_width.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -739,8 +739,8 @@ public class _cef_image_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG_LONG,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -750,7 +750,7 @@ public class _cef_image_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_height.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_height.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -839,9 +839,9 @@ public class _cef_image_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_FLOAT
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_FLOAT
         );
 
         /**
@@ -851,7 +851,7 @@ public class _cef_image_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(has_representation.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(has_representation.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -940,9 +940,9 @@ public class _cef_image_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_FLOAT
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_FLOAT
         );
 
         /**
@@ -952,7 +952,7 @@ public class _cef_image_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(remove_representation.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(remove_representation.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1041,12 +1041,12 @@ public class _cef_image_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_FLOAT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_FLOAT,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1056,7 +1056,7 @@ public class _cef_image_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_representation_info.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_representation_info.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1145,13 +1145,13 @@ public class _cef_image_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_FLOAT,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_FLOAT,
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1161,7 +1161,7 @@ public class _cef_image_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_as_bitmap.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_as_bitmap.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1250,12 +1250,12 @@ public class _cef_image_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_FLOAT,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_FLOAT,
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1265,7 +1265,7 @@ public class _cef_image_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_as_png.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_as_png.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1354,12 +1354,12 @@ public class _cef_image_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_FLOAT,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_FLOAT,
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1369,7 +1369,7 @@ public class _cef_image_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_as_jpeg.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_as_jpeg.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

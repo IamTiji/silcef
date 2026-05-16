@@ -28,9 +28,9 @@ public class midistrmbuffver_tag {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwVersion"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwMid"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwOEMVersion")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwVersion"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwMid"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwOEMVersion")
     ).withName("midistrmbuffver_tag");
 
     /**

@@ -28,9 +28,9 @@ public class _REMSECURITY_ATTRIBUTES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("nLength"),
-        cef_master_h.C_LONG.withName("lpSecurityDescriptor"),
-        cef_master_h.C_INT.withName("bInheritHandle")
+        cef_render_handler_capi_h.C_LONG.withName("nLength"),
+        cef_render_handler_capi_h.C_LONG.withName("lpSecurityDescriptor"),
+        cef_render_handler_capi_h.C_INT.withName("bInheritHandle")
     ).withName("_REMSECURITY_ATTRIBUTES");
 
     /**

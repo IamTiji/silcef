@@ -26,7 +26,7 @@ public class _SERVICE_REQUIRED_PRIVILEGES_INFOW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pmszRequiredPrivileges")
+        cef_render_handler_capi_h.C_POINTER.withName("pmszRequiredPrivileges")
     ).withName("_SERVICE_REQUIRED_PRIVILEGES_INFOW");
 
     /**

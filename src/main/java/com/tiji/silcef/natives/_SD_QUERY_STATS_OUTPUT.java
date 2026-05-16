@@ -33,14 +33,14 @@ public class _SD_QUERY_STATS_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("SdsStreamSize"),
-        cef_master_h.C_LONG_LONG.withName("SdsAllocationSize"),
-        cef_master_h.C_LONG_LONG.withName("SiiStreamSize"),
-        cef_master_h.C_LONG_LONG.withName("SiiAllocationSize"),
-        cef_master_h.C_LONG_LONG.withName("SdhStreamSize"),
-        cef_master_h.C_LONG_LONG.withName("SdhAllocationSize"),
-        cef_master_h.C_LONG_LONG.withName("NumSDTotal"),
-        cef_master_h.C_LONG_LONG.withName("NumSDUnused")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("SdsStreamSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("SdsAllocationSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("SiiStreamSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("SiiAllocationSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("SdhStreamSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("SdhAllocationSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NumSDTotal"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NumSDUnused")
     ).withName("_SD_QUERY_STATS_OUTPUT");
 
     /**

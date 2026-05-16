@@ -27,8 +27,8 @@ public class _ENCLAVE_CREATE_INFO_VBS_BASIC {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("OwnerID")
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("OwnerID")
     ).withName("_ENCLAVE_CREATE_INFO_VBS_BASIC");
 
     /**

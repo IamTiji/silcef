@@ -28,9 +28,9 @@ public class _RPC_SEC_CONTEXT_KEY_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("EncryptAlgorithm"),
-        cef_master_h.C_LONG.withName("KeySize"),
-        cef_master_h.C_LONG.withName("SignatureAlgorithm")
+        cef_render_handler_capi_h.C_LONG.withName("EncryptAlgorithm"),
+        cef_render_handler_capi_h.C_LONG.withName("KeySize"),
+        cef_render_handler_capi_h.C_LONG.withName("SignatureAlgorithm")
     ).withName("_RPC_SEC_CONTEXT_KEY_INFO");
 
     /**

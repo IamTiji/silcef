@@ -27,8 +27,8 @@ public class DELETE_USN_JOURNAL_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("UsnJournalID"),
-        cef_master_h.C_LONG.withName("DeleteFlags"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("UsnJournalID"),
+        cef_render_handler_capi_h.C_LONG.withName("DeleteFlags"),
         MemoryLayout.paddingLayout(4)
     ).withName("$anon$12204:9");
 

@@ -43,25 +43,25 @@ public class _cef_pdf_print_settings_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("size"),
-        cef_master_h.C_INT.withName("landscape"),
-        cef_master_h.C_INT.withName("print_background"),
-        cef_master_h.C_DOUBLE.withName("scale"),
-        cef_master_h.C_DOUBLE.withName("paper_width"),
-        cef_master_h.C_DOUBLE.withName("paper_height"),
-        cef_master_h.C_INT.withName("prefer_css_page_size"),
-        cef_master_h.C_INT.withName("margin_type"),
-        cef_master_h.C_DOUBLE.withName("margin_top"),
-        cef_master_h.C_DOUBLE.withName("margin_right"),
-        cef_master_h.C_DOUBLE.withName("margin_bottom"),
-        cef_master_h.C_DOUBLE.withName("margin_left"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("size"),
+        cef_render_handler_capi_h.C_INT.withName("landscape"),
+        cef_render_handler_capi_h.C_INT.withName("print_background"),
+        cef_render_handler_capi_h.C_DOUBLE.withName("scale"),
+        cef_render_handler_capi_h.C_DOUBLE.withName("paper_width"),
+        cef_render_handler_capi_h.C_DOUBLE.withName("paper_height"),
+        cef_render_handler_capi_h.C_INT.withName("prefer_css_page_size"),
+        cef_render_handler_capi_h.C_INT.withName("margin_type"),
+        cef_render_handler_capi_h.C_DOUBLE.withName("margin_top"),
+        cef_render_handler_capi_h.C_DOUBLE.withName("margin_right"),
+        cef_render_handler_capi_h.C_DOUBLE.withName("margin_bottom"),
+        cef_render_handler_capi_h.C_DOUBLE.withName("margin_left"),
         _cef_string_utf16_t.layout().withName("page_ranges"),
-        cef_master_h.C_INT.withName("display_header_footer"),
+        cef_render_handler_capi_h.C_INT.withName("display_header_footer"),
         MemoryLayout.paddingLayout(4),
         _cef_string_utf16_t.layout().withName("header_template"),
         _cef_string_utf16_t.layout().withName("footer_template"),
-        cef_master_h.C_INT.withName("generate_tagged_pdf"),
-        cef_master_h.C_INT.withName("generate_document_outline")
+        cef_render_handler_capi_h.C_INT.withName("generate_tagged_pdf"),
+        cef_render_handler_capi_h.C_INT.withName("generate_document_outline")
     ).withName("_cef_pdf_print_settings_t");
 
     /**

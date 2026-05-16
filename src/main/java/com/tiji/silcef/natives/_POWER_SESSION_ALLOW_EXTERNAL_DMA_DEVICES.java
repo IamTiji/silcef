@@ -26,7 +26,7 @@ public class _POWER_SESSION_ALLOW_EXTERNAL_DMA_DEVICES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("IsAllowed")
+        cef_render_handler_capi_h.C_CHAR.withName("IsAllowed")
     ).withName("_POWER_SESSION_ALLOW_EXTERNAL_DMA_DEVICES");
 
     /**

@@ -34,13 +34,13 @@ public class _IMAGE_IMPORT_DESCRIPTOR {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("Characteristics"),
-            cef_master_h.C_LONG.withName("OriginalFirstThunk")
+            cef_render_handler_capi_h.C_LONG.withName("Characteristics"),
+            cef_render_handler_capi_h.C_LONG.withName("OriginalFirstThunk")
         ).withName("$anon$21084:5"),
-        cef_master_h.C_LONG.withName("TimeDateStamp"),
-        cef_master_h.C_LONG.withName("ForwarderChain"),
-        cef_master_h.C_LONG.withName("Name"),
-        cef_master_h.C_LONG.withName("FirstThunk")
+        cef_render_handler_capi_h.C_LONG.withName("TimeDateStamp"),
+        cef_render_handler_capi_h.C_LONG.withName("ForwarderChain"),
+        cef_render_handler_capi_h.C_LONG.withName("Name"),
+        cef_render_handler_capi_h.C_LONG.withName("FirstThunk")
     ).withName("_IMAGE_IMPORT_DESCRIPTOR");
 
     /**

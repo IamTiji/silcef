@@ -30,10 +30,10 @@ public class _FILE_REGION_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("TotalRegionEntryCount"),
-        cef_master_h.C_LONG.withName("RegionEntryCount"),
-        cef_master_h.C_LONG.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("TotalRegionEntryCount"),
+        cef_render_handler_capi_h.C_LONG.withName("RegionEntryCount"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved"),
         MemoryLayout.sequenceLayout(1, _FILE_REGION_INFO.layout()).withName("Region")
     ).withName("_FILE_REGION_OUTPUT");
 

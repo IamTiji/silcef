@@ -27,9 +27,9 @@ public class _CERT_ALT_NAME_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cAltEntry"),
+        cef_render_handler_capi_h.C_LONG.withName("cAltEntry"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgAltEntry")
+        cef_render_handler_capi_h.C_POINTER.withName("rgAltEntry")
     ).withName("_CERT_ALT_NAME_INFO");
 
     /**

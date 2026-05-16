@@ -38,7 +38,7 @@ public class DISPLAYCONFIG_SUPPORT_VIRTUAL_RESOLUTION {
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$3148:9"),
-            cef_master_h.C_INT.withName("value")
+            cef_render_handler_capi_h.C_INT.withName("value")
         ).withName("$anon$3146:5")
     ).withName("DISPLAYCONFIG_SUPPORT_VIRTUAL_RESOLUTION");
 

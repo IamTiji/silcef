@@ -33,12 +33,12 @@ public class tagPOINTER_PEN_INFO {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagPOINTER_INFO.layout().withName("pointerInfo"),
-        cef_master_h.C_INT.withName("penFlags"),
-        cef_master_h.C_INT.withName("penMask"),
-        cef_master_h.C_INT.withName("pressure"),
-        cef_master_h.C_INT.withName("rotation"),
-        cef_master_h.C_INT.withName("tiltX"),
-        cef_master_h.C_INT.withName("tiltY")
+        cef_render_handler_capi_h.C_INT.withName("penFlags"),
+        cef_render_handler_capi_h.C_INT.withName("penMask"),
+        cef_render_handler_capi_h.C_INT.withName("pressure"),
+        cef_render_handler_capi_h.C_INT.withName("rotation"),
+        cef_render_handler_capi_h.C_INT.withName("tiltX"),
+        cef_render_handler_capi_h.C_INT.withName("tiltY")
     ).withName("tagPOINTER_PEN_INFO");
 
     /**

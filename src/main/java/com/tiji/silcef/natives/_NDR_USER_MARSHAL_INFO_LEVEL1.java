@@ -31,13 +31,13 @@ public class _NDR_USER_MARSHAL_INFO_LEVEL1 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("Buffer"),
-        cef_master_h.C_LONG.withName("BufferSize"),
+        cef_render_handler_capi_h.C_POINTER.withName("Buffer"),
+        cef_render_handler_capi_h.C_LONG.withName("BufferSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pfnAllocate"),
-        cef_master_h.C_POINTER.withName("pfnFree"),
-        cef_master_h.C_POINTER.withName("pRpcChannelBuffer"),
-        MemoryLayout.sequenceLayout(5, cef_master_h.C_LONG_LONG).withName("Reserved")
+        cef_render_handler_capi_h.C_POINTER.withName("pfnAllocate"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnFree"),
+        cef_render_handler_capi_h.C_POINTER.withName("pRpcChannelBuffer"),
+        MemoryLayout.sequenceLayout(5, cef_render_handler_capi_h.C_LONG_LONG).withName("Reserved")
     ).withName("_NDR_USER_MARSHAL_INFO_LEVEL1");
 
     /**
@@ -154,8 +154,8 @@ public class _NDR_USER_MARSHAL_INFO_LEVEL1 {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_LONG_LONG
         );
 
         /**
@@ -165,7 +165,7 @@ public class _NDR_USER_MARSHAL_INFO_LEVEL1 {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(pfnAllocate.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(pfnAllocate.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -254,7 +254,7 @@ public class _NDR_USER_MARSHAL_INFO_LEVEL1 {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -264,7 +264,7 @@ public class _NDR_USER_MARSHAL_INFO_LEVEL1 {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(pfnFree.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(pfnFree.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

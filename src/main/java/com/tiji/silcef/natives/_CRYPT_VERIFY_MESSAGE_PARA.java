@@ -30,11 +30,11 @@ public class _CRYPT_VERIFY_MESSAGE_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwMsgAndCertEncodingType"),
-        cef_master_h.C_LONG_LONG.withName("hCryptProv"),
-        cef_master_h.C_POINTER.withName("pfnGetSignerCertificate"),
-        cef_master_h.C_POINTER.withName("pvGetArg")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMsgAndCertEncodingType"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("hCryptProv"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnGetSignerCertificate"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvGetArg")
     ).withName("_CRYPT_VERIFY_MESSAGE_PARA");
 
     /**

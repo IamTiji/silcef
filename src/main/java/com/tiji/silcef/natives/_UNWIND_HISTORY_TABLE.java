@@ -33,13 +33,13 @@ public class _UNWIND_HISTORY_TABLE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Count"),
-        cef_master_h.C_CHAR.withName("LocalHint"),
-        cef_master_h.C_CHAR.withName("GlobalHint"),
-        cef_master_h.C_CHAR.withName("Search"),
-        cef_master_h.C_CHAR.withName("Once"),
-        cef_master_h.C_LONG_LONG.withName("LowAddress"),
-        cef_master_h.C_LONG_LONG.withName("HighAddress"),
+        cef_render_handler_capi_h.C_LONG.withName("Count"),
+        cef_render_handler_capi_h.C_CHAR.withName("LocalHint"),
+        cef_render_handler_capi_h.C_CHAR.withName("GlobalHint"),
+        cef_render_handler_capi_h.C_CHAR.withName("Search"),
+        cef_render_handler_capi_h.C_CHAR.withName("Once"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LowAddress"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("HighAddress"),
         MemoryLayout.sequenceLayout(12, _UNWIND_HISTORY_TABLE_ENTRY.layout()).withName("Entry")
     ).withName("_UNWIND_HISTORY_TABLE");
 

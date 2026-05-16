@@ -32,11 +32,11 @@ public class _ACCESS_DENIED_OBJECT_ACE {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _ACE_HEADER.layout().withName("Header"),
-        cef_master_h.C_LONG.withName("Mask"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Mask"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         _GUID.layout().withName("ObjectType"),
         _GUID.layout().withName("InheritedObjectType"),
-        cef_master_h.C_LONG.withName("SidStart")
+        cef_render_handler_capi_h.C_LONG.withName("SidStart")
     ).withName("_ACCESS_DENIED_OBJECT_ACE");
 
     /**

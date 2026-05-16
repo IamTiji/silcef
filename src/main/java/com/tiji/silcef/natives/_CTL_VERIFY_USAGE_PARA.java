@@ -31,15 +31,15 @@ public class _CTL_VERIFY_USAGE_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
         _CRYPTOAPI_BLOB.layout().withName("ListIdentifier"),
-        cef_master_h.C_LONG.withName("cCtlStore"),
+        cef_render_handler_capi_h.C_LONG.withName("cCtlStore"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rghCtlStore"),
-        cef_master_h.C_LONG.withName("cSignerStore"),
+        cef_render_handler_capi_h.C_POINTER.withName("rghCtlStore"),
+        cef_render_handler_capi_h.C_LONG.withName("cSignerStore"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rghSignerStore")
+        cef_render_handler_capi_h.C_POINTER.withName("rghSignerStore")
     ).withName("_CTL_VERIFY_USAGE_PARA");
 
     /**

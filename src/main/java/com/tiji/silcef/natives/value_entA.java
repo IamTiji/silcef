@@ -29,11 +29,11 @@ public class value_entA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("ve_valuename"),
-        cef_master_h.C_LONG.withName("ve_valuelen"),
+        cef_render_handler_capi_h.C_POINTER.withName("ve_valuename"),
+        cef_render_handler_capi_h.C_LONG.withName("ve_valuelen"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("ve_valueptr"),
-        cef_master_h.C_LONG.withName("ve_type"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ve_valueptr"),
+        cef_render_handler_capi_h.C_LONG.withName("ve_type"),
         MemoryLayout.paddingLayout(4)
     ).withName("value_entA");
 

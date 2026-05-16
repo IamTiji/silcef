@@ -37,20 +37,20 @@ public class tagMENUITEMINFOA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_INT.withName("fMask"),
-        cef_master_h.C_INT.withName("fType"),
-        cef_master_h.C_INT.withName("fState"),
-        cef_master_h.C_INT.withName("wID"),
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("fMask"),
+        cef_render_handler_capi_h.C_INT.withName("fType"),
+        cef_render_handler_capi_h.C_INT.withName("fState"),
+        cef_render_handler_capi_h.C_INT.withName("wID"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hSubMenu"),
-        cef_master_h.C_POINTER.withName("hbmpChecked"),
-        cef_master_h.C_POINTER.withName("hbmpUnchecked"),
-        cef_master_h.C_LONG_LONG.withName("dwItemData"),
-        cef_master_h.C_POINTER.withName("dwTypeData"),
-        cef_master_h.C_INT.withName("cch"),
+        cef_render_handler_capi_h.C_POINTER.withName("hSubMenu"),
+        cef_render_handler_capi_h.C_POINTER.withName("hbmpChecked"),
+        cef_render_handler_capi_h.C_POINTER.withName("hbmpUnchecked"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwItemData"),
+        cef_render_handler_capi_h.C_POINTER.withName("dwTypeData"),
+        cef_render_handler_capi_h.C_INT.withName("cch"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hbmpItem")
+        cef_render_handler_capi_h.C_POINTER.withName("hbmpItem")
     ).withName("tagMENUITEMINFOA");
 
     /**

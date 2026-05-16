@@ -30,11 +30,11 @@ public class _STORAGE_RPMB_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("SizeInBytes"),
-        cef_master_h.C_LONG.withName("MaxReliableWriteSizeInBytes"),
-        cef_master_h.C_INT.withName("FrameFormat")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("SizeInBytes"),
+        cef_render_handler_capi_h.C_LONG.withName("MaxReliableWriteSizeInBytes"),
+        cef_render_handler_capi_h.C_INT.withName("FrameFormat")
     ).withName("_STORAGE_RPMB_DESCRIPTOR");
 
     /**

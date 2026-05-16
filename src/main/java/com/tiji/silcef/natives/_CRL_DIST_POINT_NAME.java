@@ -29,7 +29,7 @@ public class _CRL_DIST_POINT_NAME {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwDistPointNameChoice"),
+        cef_render_handler_capi_h.C_LONG.withName("dwDistPointNameChoice"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
             _CERT_ALT_NAME_INFO.layout().withName("FullName")

@@ -34,12 +34,12 @@ public class _STORAGE_HW_ENDURANCE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ValidFields"),
-        cef_master_h.C_LONG.withName("GroupId"),
+        cef_render_handler_capi_h.C_LONG.withName("ValidFields"),
+        cef_render_handler_capi_h.C_LONG.withName("GroupId"),
         _STORAGE_HW_ENDURANCE_INFO.Flags.layout().withName("Flags"),
-        cef_master_h.C_LONG.withName("LifePercentage"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("BytesReadCount"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("ByteWriteCount")
+        cef_render_handler_capi_h.C_LONG.withName("LifePercentage"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("BytesReadCount"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("ByteWriteCount")
     ).withName("_STORAGE_HW_ENDURANCE_INFO");
 
     /**

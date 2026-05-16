@@ -31,7 +31,7 @@ public class tagPOINTER_TYPE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("type"),
+        cef_render_handler_capi_h.C_LONG.withName("type"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
             tagPOINTER_INFO.layout().withName("pointerInfo"),

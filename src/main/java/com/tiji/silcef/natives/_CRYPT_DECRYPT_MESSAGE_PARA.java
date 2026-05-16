@@ -29,11 +29,11 @@ public class _CRYPT_DECRYPT_MESSAGE_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwMsgAndCertEncodingType"),
-        cef_master_h.C_LONG.withName("cCertStore"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMsgAndCertEncodingType"),
+        cef_render_handler_capi_h.C_LONG.withName("cCertStore"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rghCertStore")
+        cef_render_handler_capi_h.C_POINTER.withName("rghCertStore")
     ).withName("_CRYPT_DECRYPT_MESSAGE_PARA");
 
     /**

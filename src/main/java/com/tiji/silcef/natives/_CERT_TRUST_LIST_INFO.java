@@ -28,10 +28,10 @@ public class _CERT_TRUST_LIST_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pCtlEntry"),
-        cef_master_h.C_POINTER.withName("pCtlContext")
+        cef_render_handler_capi_h.C_POINTER.withName("pCtlEntry"),
+        cef_render_handler_capi_h.C_POINTER.withName("pCtlContext")
     ).withName("_CERT_TRUST_LIST_INFO");
 
     /**

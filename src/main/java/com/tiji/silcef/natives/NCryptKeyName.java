@@ -29,10 +29,10 @@ public class NCryptKeyName {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszName"),
-        cef_master_h.C_POINTER.withName("pszAlgid"),
-        cef_master_h.C_LONG.withName("dwLegacyKeySpec"),
-        cef_master_h.C_LONG.withName("dwFlags")
+        cef_render_handler_capi_h.C_POINTER.withName("pszName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszAlgid"),
+        cef_render_handler_capi_h.C_LONG.withName("dwLegacyKeySpec"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags")
     ).withName("NCryptKeyName");
 
     /**

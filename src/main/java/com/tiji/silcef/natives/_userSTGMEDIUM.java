@@ -39,7 +39,7 @@ public class _userSTGMEDIUM {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.paddingLayout(16),
-        cef_master_h.C_POINTER.withName("pUnkForRelease")
+        cef_render_handler_capi_h.C_POINTER.withName("pUnkForRelease")
     ).withName("_userSTGMEDIUM");
 
     /**

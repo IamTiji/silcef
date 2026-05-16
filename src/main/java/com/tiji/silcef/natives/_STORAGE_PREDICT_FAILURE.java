@@ -27,8 +27,8 @@ public class _STORAGE_PREDICT_FAILURE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("PredictFailure"),
-        MemoryLayout.sequenceLayout(512, cef_master_h.C_CHAR).withName("VendorSpecific")
+        cef_render_handler_capi_h.C_LONG.withName("PredictFailure"),
+        MemoryLayout.sequenceLayout(512, cef_render_handler_capi_h.C_CHAR).withName("VendorSpecific")
     ).withName("_STORAGE_PREDICT_FAILURE");
 
     /**

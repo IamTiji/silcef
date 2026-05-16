@@ -33,7 +33,7 @@ public class _BIDI_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwBidiType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwBidiType"),
         MemoryLayout.paddingLayout(4),
         _BIDI_DATA.u.layout().withName("u")
     ).withName("_BIDI_DATA");
@@ -107,10 +107,10 @@ public class _BIDI_DATA {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_INT.withName("bData"),
-            cef_master_h.C_LONG.withName("iData"),
-            cef_master_h.C_POINTER.withName("sData"),
-            cef_master_h.C_FLOAT.withName("fData"),
+            cef_render_handler_capi_h.C_INT.withName("bData"),
+            cef_render_handler_capi_h.C_LONG.withName("iData"),
+            cef_render_handler_capi_h.C_POINTER.withName("sData"),
+            cef_render_handler_capi_h.C_FLOAT.withName("fData"),
             _BINARY_CONTAINER.layout().withName("biData")
         ).withName("$anon$2471:9");
 

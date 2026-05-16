@@ -29,7 +29,7 @@ public class _KTMOBJECT_CURSOR {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("LastQuery"),
-        cef_master_h.C_LONG.withName("ObjectIdCount"),
+        cef_render_handler_capi_h.C_LONG.withName("ObjectIdCount"),
         MemoryLayout.sequenceLayout(1, _GUID.layout()).withName("ObjectIds")
     ).withName("_KTMOBJECT_CURSOR");
 

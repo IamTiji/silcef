@@ -30,13 +30,13 @@ public class _HMAC_Info {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("HashAlgid"),
+        cef_render_handler_capi_h.C_INT.withName("HashAlgid"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pbInnerString"),
-        cef_master_h.C_LONG.withName("cbInnerString"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbInnerString"),
+        cef_render_handler_capi_h.C_LONG.withName("cbInnerString"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pbOuterString"),
-        cef_master_h.C_LONG.withName("cbOuterString"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbOuterString"),
+        cef_render_handler_capi_h.C_LONG.withName("cbOuterString"),
         MemoryLayout.paddingLayout(4)
     ).withName("_HMAC_Info");
 

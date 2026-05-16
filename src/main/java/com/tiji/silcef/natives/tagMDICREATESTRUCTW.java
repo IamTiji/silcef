@@ -34,16 +34,16 @@ public class tagMDICREATESTRUCTW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("szClass"),
-        cef_master_h.C_POINTER.withName("szTitle"),
-        cef_master_h.C_POINTER.withName("hOwner"),
-        cef_master_h.C_INT.withName("x"),
-        cef_master_h.C_INT.withName("y"),
-        cef_master_h.C_INT.withName("cx"),
-        cef_master_h.C_INT.withName("cy"),
-        cef_master_h.C_LONG.withName("style"),
+        cef_render_handler_capi_h.C_POINTER.withName("szClass"),
+        cef_render_handler_capi_h.C_POINTER.withName("szTitle"),
+        cef_render_handler_capi_h.C_POINTER.withName("hOwner"),
+        cef_render_handler_capi_h.C_INT.withName("x"),
+        cef_render_handler_capi_h.C_INT.withName("y"),
+        cef_render_handler_capi_h.C_INT.withName("cx"),
+        cef_render_handler_capi_h.C_INT.withName("cy"),
+        cef_render_handler_capi_h.C_LONG.withName("style"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("lParam")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("lParam")
     ).withName("tagMDICREATESTRUCTW");
 
     /**

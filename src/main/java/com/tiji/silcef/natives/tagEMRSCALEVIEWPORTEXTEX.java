@@ -31,10 +31,10 @@ public class tagEMRSCALEVIEWPORTEXTEX {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
-        cef_master_h.C_LONG.withName("xNum"),
-        cef_master_h.C_LONG.withName("xDenom"),
-        cef_master_h.C_LONG.withName("yNum"),
-        cef_master_h.C_LONG.withName("yDenom")
+        cef_render_handler_capi_h.C_LONG.withName("xNum"),
+        cef_render_handler_capi_h.C_LONG.withName("xDenom"),
+        cef_render_handler_capi_h.C_LONG.withName("yNum"),
+        cef_render_handler_capi_h.C_LONG.withName("yDenom")
     ).withName("tagEMRSCALEVIEWPORTEXTEX");
 
     /**

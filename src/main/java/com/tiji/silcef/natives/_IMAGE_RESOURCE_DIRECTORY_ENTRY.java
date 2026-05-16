@@ -44,11 +44,11 @@ public class _IMAGE_RESOURCE_DIRECTORY_ENTRY {
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$21186:9"),
-            cef_master_h.C_LONG.withName("Name"),
-            cef_master_h.C_SHORT.withName("Id")
+            cef_render_handler_capi_h.C_LONG.withName("Name"),
+            cef_render_handler_capi_h.C_SHORT.withName("Id")
         ).withName("$anon$21185:5"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("OffsetToData"),
+            cef_render_handler_capi_h.C_LONG.withName("OffsetToData"),
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$21195:9")

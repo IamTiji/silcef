@@ -29,10 +29,10 @@ public class _cef_audio_parameters_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("size"),
-        cef_master_h.C_INT.withName("channel_layout"),
-        cef_master_h.C_INT.withName("sample_rate"),
-        cef_master_h.C_INT.withName("frames_per_buffer"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("size"),
+        cef_render_handler_capi_h.C_INT.withName("channel_layout"),
+        cef_render_handler_capi_h.C_INT.withName("sample_rate"),
+        cef_render_handler_capi_h.C_INT.withName("frames_per_buffer"),
         MemoryLayout.paddingLayout(4)
     ).withName("_cef_audio_parameters_t");
 

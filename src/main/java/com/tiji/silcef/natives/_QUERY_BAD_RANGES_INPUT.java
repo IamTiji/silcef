@@ -28,8 +28,8 @@ public class _QUERY_BAD_RANGES_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("NumRanges"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("NumRanges"),
         MemoryLayout.sequenceLayout(1, _QUERY_BAD_RANGES_INPUT_RANGE.layout()).withName("Ranges")
     ).withName("_QUERY_BAD_RANGES_INPUT");
 

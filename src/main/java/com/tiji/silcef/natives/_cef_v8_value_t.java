@@ -79,58 +79,58 @@ public class _cef_v8_value_t {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _cef_base_ref_counted_t.layout().withName("base"),
-        cef_master_h.C_POINTER.withName("is_valid"),
-        cef_master_h.C_POINTER.withName("is_undefined"),
-        cef_master_h.C_POINTER.withName("is_null"),
-        cef_master_h.C_POINTER.withName("is_bool"),
-        cef_master_h.C_POINTER.withName("is_int"),
-        cef_master_h.C_POINTER.withName("is_uint"),
-        cef_master_h.C_POINTER.withName("is_double"),
-        cef_master_h.C_POINTER.withName("is_date"),
-        cef_master_h.C_POINTER.withName("is_string"),
-        cef_master_h.C_POINTER.withName("is_object"),
-        cef_master_h.C_POINTER.withName("is_array"),
-        cef_master_h.C_POINTER.withName("is_array_buffer"),
-        cef_master_h.C_POINTER.withName("is_function"),
-        cef_master_h.C_POINTER.withName("is_promise"),
-        cef_master_h.C_POINTER.withName("is_same"),
-        cef_master_h.C_POINTER.withName("get_bool_value"),
-        cef_master_h.C_POINTER.withName("get_int_value"),
-        cef_master_h.C_POINTER.withName("get_uint_value"),
-        cef_master_h.C_POINTER.withName("get_double_value"),
-        cef_master_h.C_POINTER.withName("get_date_value"),
-        cef_master_h.C_POINTER.withName("get_string_value"),
-        cef_master_h.C_POINTER.withName("is_user_created"),
-        cef_master_h.C_POINTER.withName("has_exception"),
-        cef_master_h.C_POINTER.withName("get_exception"),
-        cef_master_h.C_POINTER.withName("clear_exception"),
-        cef_master_h.C_POINTER.withName("will_rethrow_exceptions"),
-        cef_master_h.C_POINTER.withName("set_rethrow_exceptions"),
-        cef_master_h.C_POINTER.withName("has_value_bykey"),
-        cef_master_h.C_POINTER.withName("has_value_byindex"),
-        cef_master_h.C_POINTER.withName("delete_value_bykey"),
-        cef_master_h.C_POINTER.withName("delete_value_byindex"),
-        cef_master_h.C_POINTER.withName("get_value_bykey"),
-        cef_master_h.C_POINTER.withName("get_value_byindex"),
-        cef_master_h.C_POINTER.withName("set_value_bykey"),
-        cef_master_h.C_POINTER.withName("set_value_byindex"),
-        cef_master_h.C_POINTER.withName("set_value_byaccessor"),
-        cef_master_h.C_POINTER.withName("get_keys"),
-        cef_master_h.C_POINTER.withName("set_user_data"),
-        cef_master_h.C_POINTER.withName("get_user_data"),
-        cef_master_h.C_POINTER.withName("get_externally_allocated_memory"),
-        cef_master_h.C_POINTER.withName("adjust_externally_allocated_memory"),
-        cef_master_h.C_POINTER.withName("get_array_length"),
-        cef_master_h.C_POINTER.withName("get_array_buffer_release_callback"),
-        cef_master_h.C_POINTER.withName("neuter_array_buffer"),
-        cef_master_h.C_POINTER.withName("get_array_buffer_byte_length"),
-        cef_master_h.C_POINTER.withName("get_array_buffer_data"),
-        cef_master_h.C_POINTER.withName("get_function_name"),
-        cef_master_h.C_POINTER.withName("get_function_handler"),
-        cef_master_h.C_POINTER.withName("execute_function"),
-        cef_master_h.C_POINTER.withName("execute_function_with_context"),
-        cef_master_h.C_POINTER.withName("resolve_promise"),
-        cef_master_h.C_POINTER.withName("reject_promise")
+        cef_app_capi_h.C_POINTER.withName("is_valid"),
+        cef_app_capi_h.C_POINTER.withName("is_undefined"),
+        cef_app_capi_h.C_POINTER.withName("is_null"),
+        cef_app_capi_h.C_POINTER.withName("is_bool"),
+        cef_app_capi_h.C_POINTER.withName("is_int"),
+        cef_app_capi_h.C_POINTER.withName("is_uint"),
+        cef_app_capi_h.C_POINTER.withName("is_double"),
+        cef_app_capi_h.C_POINTER.withName("is_date"),
+        cef_app_capi_h.C_POINTER.withName("is_string"),
+        cef_app_capi_h.C_POINTER.withName("is_object"),
+        cef_app_capi_h.C_POINTER.withName("is_array"),
+        cef_app_capi_h.C_POINTER.withName("is_array_buffer"),
+        cef_app_capi_h.C_POINTER.withName("is_function"),
+        cef_app_capi_h.C_POINTER.withName("is_promise"),
+        cef_app_capi_h.C_POINTER.withName("is_same"),
+        cef_app_capi_h.C_POINTER.withName("get_bool_value"),
+        cef_app_capi_h.C_POINTER.withName("get_int_value"),
+        cef_app_capi_h.C_POINTER.withName("get_uint_value"),
+        cef_app_capi_h.C_POINTER.withName("get_double_value"),
+        cef_app_capi_h.C_POINTER.withName("get_date_value"),
+        cef_app_capi_h.C_POINTER.withName("get_string_value"),
+        cef_app_capi_h.C_POINTER.withName("is_user_created"),
+        cef_app_capi_h.C_POINTER.withName("has_exception"),
+        cef_app_capi_h.C_POINTER.withName("get_exception"),
+        cef_app_capi_h.C_POINTER.withName("clear_exception"),
+        cef_app_capi_h.C_POINTER.withName("will_rethrow_exceptions"),
+        cef_app_capi_h.C_POINTER.withName("set_rethrow_exceptions"),
+        cef_app_capi_h.C_POINTER.withName("has_value_bykey"),
+        cef_app_capi_h.C_POINTER.withName("has_value_byindex"),
+        cef_app_capi_h.C_POINTER.withName("delete_value_bykey"),
+        cef_app_capi_h.C_POINTER.withName("delete_value_byindex"),
+        cef_app_capi_h.C_POINTER.withName("get_value_bykey"),
+        cef_app_capi_h.C_POINTER.withName("get_value_byindex"),
+        cef_app_capi_h.C_POINTER.withName("set_value_bykey"),
+        cef_app_capi_h.C_POINTER.withName("set_value_byindex"),
+        cef_app_capi_h.C_POINTER.withName("set_value_byaccessor"),
+        cef_app_capi_h.C_POINTER.withName("get_keys"),
+        cef_app_capi_h.C_POINTER.withName("set_user_data"),
+        cef_app_capi_h.C_POINTER.withName("get_user_data"),
+        cef_app_capi_h.C_POINTER.withName("get_externally_allocated_memory"),
+        cef_app_capi_h.C_POINTER.withName("adjust_externally_allocated_memory"),
+        cef_app_capi_h.C_POINTER.withName("get_array_length"),
+        cef_app_capi_h.C_POINTER.withName("get_array_buffer_release_callback"),
+        cef_app_capi_h.C_POINTER.withName("neuter_array_buffer"),
+        cef_app_capi_h.C_POINTER.withName("get_array_buffer_byte_length"),
+        cef_app_capi_h.C_POINTER.withName("get_array_buffer_data"),
+        cef_app_capi_h.C_POINTER.withName("get_function_name"),
+        cef_app_capi_h.C_POINTER.withName("get_function_handler"),
+        cef_app_capi_h.C_POINTER.withName("execute_function"),
+        cef_app_capi_h.C_POINTER.withName("execute_function_with_context"),
+        cef_app_capi_h.C_POINTER.withName("resolve_promise"),
+        cef_app_capi_h.C_POINTER.withName("reject_promise")
     ).withName("_cef_v8_value_t");
 
     /**
@@ -203,8 +203,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -214,7 +214,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_valid.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_valid.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -303,8 +303,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -314,7 +314,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_undefined.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_undefined.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -403,8 +403,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -414,7 +414,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_null.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_null.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -503,8 +503,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -514,7 +514,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_bool.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_bool.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -603,8 +603,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -614,7 +614,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_int.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_int.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -703,8 +703,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -714,7 +714,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_uint.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_uint.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -803,8 +803,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -814,7 +814,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_double.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_double.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -903,8 +903,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -914,7 +914,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_date.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_date.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1003,8 +1003,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -1014,7 +1014,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_string.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_string.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1103,8 +1103,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -1114,7 +1114,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_object.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_object.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1203,8 +1203,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -1214,7 +1214,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_array.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_array.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1303,8 +1303,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -1314,7 +1314,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_array_buffer.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_array_buffer.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1403,8 +1403,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -1414,7 +1414,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_function.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_function.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1503,8 +1503,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -1514,7 +1514,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_promise.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_promise.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1603,9 +1603,9 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -1615,7 +1615,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_same.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_same.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1704,8 +1704,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -1715,7 +1715,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_bool_value.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_bool_value.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1804,8 +1804,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -1815,7 +1815,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_int_value.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_int_value.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1904,8 +1904,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -1915,7 +1915,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_uint_value.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_uint_value.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2004,8 +2004,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_DOUBLE,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_DOUBLE,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -2015,7 +2015,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_double_value.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_double_value.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2105,7 +2105,7 @@ public class _cef_v8_value_t {
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
             _cef_basetime_t.layout(),
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -2115,7 +2115,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_date_value.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_date_value.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2204,8 +2204,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -2215,7 +2215,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_string_value.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_string_value.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2304,8 +2304,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -2315,7 +2315,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_user_created.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_user_created.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2404,8 +2404,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -2415,7 +2415,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(has_exception.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(has_exception.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2504,8 +2504,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -2515,7 +2515,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_exception.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_exception.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2604,8 +2604,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -2615,7 +2615,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(clear_exception.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(clear_exception.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2704,8 +2704,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -2715,7 +2715,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(will_rethrow_exceptions.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(will_rethrow_exceptions.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2804,9 +2804,9 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -2816,7 +2816,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_rethrow_exceptions.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_rethrow_exceptions.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -2905,9 +2905,9 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -2917,7 +2917,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(has_value_bykey.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(has_value_bykey.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3006,9 +3006,9 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -3018,7 +3018,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(has_value_byindex.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(has_value_byindex.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3107,9 +3107,9 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -3119,7 +3119,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(delete_value_bykey.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(delete_value_bykey.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3208,9 +3208,9 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -3220,7 +3220,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(delete_value_byindex.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(delete_value_byindex.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3309,9 +3309,9 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -3321,7 +3321,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_value_bykey.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_value_bykey.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3410,9 +3410,9 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -3422,7 +3422,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_value_byindex.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_value_byindex.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3511,11 +3511,11 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -3525,7 +3525,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_value_bykey.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_value_bykey.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3614,10 +3614,10 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -3627,7 +3627,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_value_byindex.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_value_byindex.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3716,10 +3716,10 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -3729,7 +3729,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_value_byaccessor.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_value_byaccessor.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3818,9 +3818,9 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -3830,7 +3830,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_keys.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_keys.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -3919,9 +3919,9 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -3931,7 +3931,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(set_user_data.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(set_user_data.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4020,8 +4020,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -4031,7 +4031,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_user_data.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_user_data.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4120,8 +4120,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -4131,7 +4131,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_externally_allocated_memory.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_externally_allocated_memory.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4220,9 +4220,9 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -4232,7 +4232,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(adjust_externally_allocated_memory.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(adjust_externally_allocated_memory.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4321,8 +4321,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -4332,7 +4332,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_array_length.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_array_length.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4421,8 +4421,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -4432,7 +4432,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_array_buffer_release_callback.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_array_buffer_release_callback.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4521,8 +4521,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -4532,7 +4532,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(neuter_array_buffer.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(neuter_array_buffer.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4621,8 +4621,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_LONG_LONG,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -4632,7 +4632,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_array_buffer_byte_length.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_array_buffer_byte_length.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4721,8 +4721,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -4732,7 +4732,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_array_buffer_data.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_array_buffer_data.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4821,8 +4821,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -4832,7 +4832,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_function_name.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_function_name.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -4921,8 +4921,8 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -4932,7 +4932,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_function_handler.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_function_handler.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -5021,11 +5021,11 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -5035,7 +5035,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(execute_function.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(execute_function.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -5124,12 +5124,12 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -5139,7 +5139,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(execute_function_with_context.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(execute_function_with_context.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -5228,9 +5228,9 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -5240,7 +5240,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(resolve_promise.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(resolve_promise.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -5329,9 +5329,9 @@ public class _cef_v8_value_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -5341,7 +5341,7 @@ public class _cef_v8_value_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(reject_promise.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(reject_promise.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

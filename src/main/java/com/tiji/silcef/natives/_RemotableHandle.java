@@ -30,7 +30,7 @@ public class _RemotableHandle {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("fContext"),
+        cef_render_handler_capi_h.C_LONG.withName("fContext"),
         _RemotableHandle.__MIDL_IWinTypes_0009.layout().withName("u")
     ).withName("_RemotableHandle");
 
@@ -100,8 +100,8 @@ public class _RemotableHandle {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("hInproc"),
-            cef_master_h.C_LONG.withName("hRemote")
+            cef_render_handler_capi_h.C_LONG.withName("hInproc"),
+            cef_render_handler_capi_h.C_LONG.withName("hRemote")
         ).withName("__MIDL_IWinTypes_0009");
 
         /**

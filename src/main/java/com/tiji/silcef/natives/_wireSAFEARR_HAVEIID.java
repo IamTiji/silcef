@@ -28,9 +28,9 @@ public class _wireSAFEARR_HAVEIID {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("apUnknown"),
+        cef_render_handler_capi_h.C_POINTER.withName("apUnknown"),
         _GUID.layout().withName("iid")
     ).withName("_wireSAFEARR_HAVEIID");
 

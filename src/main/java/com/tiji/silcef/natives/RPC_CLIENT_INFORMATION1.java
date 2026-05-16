@@ -29,11 +29,11 @@ public class RPC_CLIENT_INFORMATION1 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("UserName"),
-        cef_master_h.C_POINTER.withName("ComputerName"),
-        cef_master_h.C_SHORT.withName("Privilege"),
+        cef_render_handler_capi_h.C_POINTER.withName("UserName"),
+        cef_render_handler_capi_h.C_POINTER.withName("ComputerName"),
+        cef_render_handler_capi_h.C_SHORT.withName("Privilege"),
         MemoryLayout.paddingLayout(2),
-        cef_master_h.C_LONG.withName("AuthFlags")
+        cef_render_handler_capi_h.C_LONG.withName("AuthFlags")
     ).withName("$anon$2639:9");
 
     /**

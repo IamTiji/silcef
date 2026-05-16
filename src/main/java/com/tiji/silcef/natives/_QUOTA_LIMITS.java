@@ -31,11 +31,11 @@ public class _QUOTA_LIMITS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("PagedPoolLimit"),
-        cef_master_h.C_LONG_LONG.withName("NonPagedPoolLimit"),
-        cef_master_h.C_LONG_LONG.withName("MinimumWorkingSetSize"),
-        cef_master_h.C_LONG_LONG.withName("MaximumWorkingSetSize"),
-        cef_master_h.C_LONG_LONG.withName("PagefileLimit"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("PagedPoolLimit"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NonPagedPoolLimit"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MinimumWorkingSetSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaximumWorkingSetSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("PagefileLimit"),
         _LARGE_INTEGER.layout().withName("TimeLimit")
     ).withName("_QUOTA_LIMITS");
 

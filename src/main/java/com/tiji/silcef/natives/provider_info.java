@@ -31,13 +31,13 @@ public class provider_info {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pi_R0_1val"),
-        cef_master_h.C_POINTER.withName("pi_R0_allvals"),
-        cef_master_h.C_POINTER.withName("pi_R3_1val"),
-        cef_master_h.C_POINTER.withName("pi_R3_allvals"),
-        cef_master_h.C_LONG.withName("pi_flags"),
+        cef_render_handler_capi_h.C_POINTER.withName("pi_R0_1val"),
+        cef_render_handler_capi_h.C_POINTER.withName("pi_R0_allvals"),
+        cef_render_handler_capi_h.C_POINTER.withName("pi_R3_1val"),
+        cef_render_handler_capi_h.C_POINTER.withName("pi_R3_allvals"),
+        cef_render_handler_capi_h.C_LONG.withName("pi_flags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pi_key_context")
+        cef_render_handler_capi_h.C_POINTER.withName("pi_key_context")
     ).withName("provider_info");
 
     /**

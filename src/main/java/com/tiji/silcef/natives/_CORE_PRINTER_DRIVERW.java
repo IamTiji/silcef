@@ -31,8 +31,8 @@ public class _CORE_PRINTER_DRIVERW {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("CoreDriverGUID"),
         _FILETIME.layout().withName("ftDriverDate"),
-        cef_master_h.C_LONG_LONG.withName("dwlDriverVersion"),
-        MemoryLayout.sequenceLayout(260, cef_master_h.C_SHORT).withName("szPackageID")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwlDriverVersion"),
+        MemoryLayout.sequenceLayout(260, cef_render_handler_capi_h.C_SHORT).withName("szPackageID")
     ).withName("_CORE_PRINTER_DRIVERW");
 
     /**

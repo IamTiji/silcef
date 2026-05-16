@@ -31,12 +31,12 @@ public class _ADMINISTRATOR_POWER_POLICY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("MinSleep"),
-        cef_master_h.C_INT.withName("MaxSleep"),
-        cef_master_h.C_LONG.withName("MinVideoTimeout"),
-        cef_master_h.C_LONG.withName("MaxVideoTimeout"),
-        cef_master_h.C_LONG.withName("MinSpindownTimeout"),
-        cef_master_h.C_LONG.withName("MaxSpindownTimeout")
+        cef_render_handler_capi_h.C_INT.withName("MinSleep"),
+        cef_render_handler_capi_h.C_INT.withName("MaxSleep"),
+        cef_render_handler_capi_h.C_LONG.withName("MinVideoTimeout"),
+        cef_render_handler_capi_h.C_LONG.withName("MaxVideoTimeout"),
+        cef_render_handler_capi_h.C_LONG.withName("MinSpindownTimeout"),
+        cef_render_handler_capi_h.C_LONG.withName("MaxSpindownTimeout")
     ).withName("_ADMINISTRATOR_POWER_POLICY");
 
     /**

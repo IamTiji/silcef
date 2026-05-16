@@ -28,10 +28,10 @@ public class _RESUME_PERFORMANCE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("PostTimeMs"),
+        cef_render_handler_capi_h.C_LONG.withName("PostTimeMs"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("TotalResumeTimeMs"),
-        cef_master_h.C_LONG_LONG.withName("ResumeCompleteTimestamp")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("TotalResumeTimeMs"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ResumeCompleteTimestamp")
     ).withName("_RESUME_PERFORMANCE");
 
     /**

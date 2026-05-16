@@ -26,7 +26,7 @@ public class _MAXVERSIONTESTED_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("MaxVersionTested")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaxVersionTested")
     ).withName("_MAXVERSIONTESTED_INFO");
 
     /**

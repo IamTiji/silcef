@@ -31,12 +31,12 @@ public final class PCRYPT_DECRYPT_PRIVATE_KEY_FUNC {
     }
 
     private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-        cef_master_h.C_INT,
+        cef_render_handler_capi_h.C_INT,
         _CRYPT_ALGORITHM_IDENTIFIER.layout(),
         _CRYPTOAPI_BLOB.layout(),
-        cef_master_h.C_POINTER,
-        cef_master_h.C_POINTER,
-        cef_master_h.C_POINTER
+        cef_render_handler_capi_h.C_POINTER,
+        cef_render_handler_capi_h.C_POINTER,
+        cef_render_handler_capi_h.C_POINTER
     );
 
     /**
@@ -46,7 +46,7 @@ public final class PCRYPT_DECRYPT_PRIVATE_KEY_FUNC {
         return $DESC;
     }
 
-    private static final MethodHandle UP$MH = cef_master_h.upcallHandle(PCRYPT_DECRYPT_PRIVATE_KEY_FUNC.Function.class, "apply", $DESC);
+    private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(PCRYPT_DECRYPT_PRIVATE_KEY_FUNC.Function.class, "apply", $DESC);
 
     /**
      * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

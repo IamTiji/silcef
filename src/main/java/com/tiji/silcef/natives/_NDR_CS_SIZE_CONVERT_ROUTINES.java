@@ -29,10 +29,10 @@ public class _NDR_CS_SIZE_CONVERT_ROUTINES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pfnNetSize"),
-        cef_master_h.C_POINTER.withName("pfnToNetCs"),
-        cef_master_h.C_POINTER.withName("pfnLocalSize"),
-        cef_master_h.C_POINTER.withName("pfnFromNetCs")
+        cef_render_handler_capi_h.C_POINTER.withName("pfnNetSize"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnToNetCs"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnLocalSize"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnFromNetCs")
     ).withName("_NDR_CS_SIZE_CONVERT_ROUTINES");
 
     /**

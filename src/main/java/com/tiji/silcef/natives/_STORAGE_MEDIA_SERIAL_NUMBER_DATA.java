@@ -28,9 +28,9 @@ public class _STORAGE_MEDIA_SERIAL_NUMBER_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Reserved"),
-        cef_master_h.C_SHORT.withName("SerialNumberLength"),
-        MemoryLayout.sequenceLayout(0, cef_master_h.C_CHAR).withName("SerialNumber")
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved"),
+        cef_render_handler_capi_h.C_SHORT.withName("SerialNumberLength"),
+        MemoryLayout.sequenceLayout(0, cef_render_handler_capi_h.C_CHAR).withName("SerialNumber")
     ).withName("_STORAGE_MEDIA_SERIAL_NUMBER_DATA");
 
     /**

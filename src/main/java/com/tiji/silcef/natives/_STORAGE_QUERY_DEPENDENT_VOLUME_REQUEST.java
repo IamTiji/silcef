@@ -27,8 +27,8 @@ public class _STORAGE_QUERY_DEPENDENT_VOLUME_REQUEST {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("RequestLevel"),
-        cef_master_h.C_LONG.withName("RequestFlags")
+        cef_render_handler_capi_h.C_LONG.withName("RequestLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("RequestFlags")
     ).withName("_STORAGE_QUERY_DEPENDENT_VOLUME_REQUEST");
 
     /**

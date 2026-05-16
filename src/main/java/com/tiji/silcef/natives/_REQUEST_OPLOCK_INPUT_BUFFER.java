@@ -29,10 +29,10 @@ public class _REQUEST_OPLOCK_INPUT_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("StructureVersion"),
-        cef_master_h.C_SHORT.withName("StructureLength"),
-        cef_master_h.C_LONG.withName("RequestedOplockLevel"),
-        cef_master_h.C_LONG.withName("Flags")
+        cef_render_handler_capi_h.C_SHORT.withName("StructureVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("StructureLength"),
+        cef_render_handler_capi_h.C_LONG.withName("RequestedOplockLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags")
     ).withName("_REQUEST_OPLOCK_INPUT_BUFFER");
 
     /**

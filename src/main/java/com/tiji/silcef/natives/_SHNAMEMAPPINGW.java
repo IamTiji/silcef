@@ -29,10 +29,10 @@ public class _SHNAMEMAPPINGW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszOldPath"),
-        cef_master_h.C_POINTER.withName("pszNewPath"),
-        cef_master_h.C_INT.withName("cchOldPath"),
-        cef_master_h.C_INT.withName("cchNewPath")
+        cef_render_handler_capi_h.C_POINTER.withName("pszOldPath"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszNewPath"),
+        cef_render_handler_capi_h.C_INT.withName("cchOldPath"),
+        cef_render_handler_capi_h.C_INT.withName("cchNewPath")
     ).withName("_SHNAMEMAPPINGW");
 
     /**

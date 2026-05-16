@@ -28,9 +28,9 @@ public class _THREAD_POWER_THROTTLING_STATE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("ControlMask"),
-        cef_master_h.C_LONG.withName("StateMask")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("ControlMask"),
+        cef_render_handler_capi_h.C_LONG.withName("StateMask")
     ).withName("_THREAD_POWER_THROTTLING_STATE");
 
     /**

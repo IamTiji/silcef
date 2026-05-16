@@ -38,7 +38,7 @@ public class DISPLAYCONFIG_SET_TARGET_PERSISTENCE {
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$3134:9"),
-            cef_master_h.C_INT.withName("value")
+            cef_render_handler_capi_h.C_INT.withName("value")
         ).withName("$anon$3132:5")
     ).withName("DISPLAYCONFIG_SET_TARGET_PERSISTENCE");
 

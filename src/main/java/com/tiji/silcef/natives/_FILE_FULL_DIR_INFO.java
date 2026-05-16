@@ -37,18 +37,18 @@ public class _FILE_FULL_DIR_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NextEntryOffset"),
-        cef_master_h.C_LONG.withName("FileIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("NextEntryOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("FileIndex"),
         _LARGE_INTEGER.layout().withName("CreationTime"),
         _LARGE_INTEGER.layout().withName("LastAccessTime"),
         _LARGE_INTEGER.layout().withName("LastWriteTime"),
         _LARGE_INTEGER.layout().withName("ChangeTime"),
         _LARGE_INTEGER.layout().withName("EndOfFile"),
         _LARGE_INTEGER.layout().withName("AllocationSize"),
-        cef_master_h.C_LONG.withName("FileAttributes"),
-        cef_master_h.C_LONG.withName("FileNameLength"),
-        cef_master_h.C_LONG.withName("EaSize"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("FileName"),
+        cef_render_handler_capi_h.C_LONG.withName("FileAttributes"),
+        cef_render_handler_capi_h.C_LONG.withName("FileNameLength"),
+        cef_render_handler_capi_h.C_LONG.withName("EaSize"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("FileName"),
         MemoryLayout.paddingLayout(2)
     ).withName("_FILE_FULL_DIR_INFO");
 

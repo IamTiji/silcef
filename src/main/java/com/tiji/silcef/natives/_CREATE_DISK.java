@@ -30,7 +30,7 @@ public class _CREATE_DISK {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("PartitionStyle"),
+        cef_render_handler_capi_h.C_INT.withName("PartitionStyle"),
         MemoryLayout.unionLayout(
             _CREATE_DISK_MBR.layout().withName("Mbr"),
             _CREATE_DISK_GPT.layout().withName("Gpt")

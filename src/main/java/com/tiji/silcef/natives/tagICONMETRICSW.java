@@ -30,10 +30,10 @@ public class tagICONMETRICSW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_INT.withName("iHorzSpacing"),
-        cef_master_h.C_INT.withName("iVertSpacing"),
-        cef_master_h.C_INT.withName("iTitleWrap"),
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("iHorzSpacing"),
+        cef_render_handler_capi_h.C_INT.withName("iVertSpacing"),
+        cef_render_handler_capi_h.C_INT.withName("iTitleWrap"),
         tagLOGFONTW.layout().withName("lfFont")
     ).withName("tagICONMETRICSW");
 

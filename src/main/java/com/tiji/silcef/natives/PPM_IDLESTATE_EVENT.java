@@ -28,9 +28,9 @@ public class PPM_IDLESTATE_EVENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NewState"),
-        cef_master_h.C_LONG.withName("OldState"),
-        cef_master_h.C_LONG_LONG.withName("Processors")
+        cef_render_handler_capi_h.C_LONG.withName("NewState"),
+        cef_render_handler_capi_h.C_LONG.withName("OldState"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Processors")
     ).withName("$anon$19245:9");
 
     /**

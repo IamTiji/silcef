@@ -32,13 +32,13 @@ public class tagSERIALKEYSA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_POINTER.withName("lpszActivePort"),
-        cef_master_h.C_POINTER.withName("lpszPort"),
-        cef_master_h.C_INT.withName("iBaudRate"),
-        cef_master_h.C_INT.withName("iPortState"),
-        cef_master_h.C_INT.withName("iActive"),
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpszActivePort"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpszPort"),
+        cef_render_handler_capi_h.C_INT.withName("iBaudRate"),
+        cef_render_handler_capi_h.C_INT.withName("iPortState"),
+        cef_render_handler_capi_h.C_INT.withName("iActive"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagSERIALKEYSA");
 

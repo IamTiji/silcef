@@ -31,12 +31,12 @@ public class tagDVTARGETDEVICE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("tdSize"),
-        cef_master_h.C_SHORT.withName("tdDriverNameOffset"),
-        cef_master_h.C_SHORT.withName("tdDeviceNameOffset"),
-        cef_master_h.C_SHORT.withName("tdPortNameOffset"),
-        cef_master_h.C_SHORT.withName("tdExtDevmodeOffset"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("tdData"),
+        cef_render_handler_capi_h.C_LONG.withName("tdSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("tdDriverNameOffset"),
+        cef_render_handler_capi_h.C_SHORT.withName("tdDeviceNameOffset"),
+        cef_render_handler_capi_h.C_SHORT.withName("tdPortNameOffset"),
+        cef_render_handler_capi_h.C_SHORT.withName("tdExtDevmodeOffset"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("tdData"),
         MemoryLayout.paddingLayout(3)
     ).withName("tagDVTARGETDEVICE");
 

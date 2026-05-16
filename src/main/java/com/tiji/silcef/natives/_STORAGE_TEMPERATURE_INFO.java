@@ -34,15 +34,15 @@ public class _STORAGE_TEMPERATURE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Index"),
-        cef_master_h.C_SHORT.withName("Temperature"),
-        cef_master_h.C_SHORT.withName("OverThreshold"),
-        cef_master_h.C_SHORT.withName("UnderThreshold"),
-        cef_master_h.C_CHAR.withName("OverThresholdChangable"),
-        cef_master_h.C_CHAR.withName("UnderThresholdChangable"),
-        cef_master_h.C_CHAR.withName("EventGenerated"),
-        cef_master_h.C_CHAR.withName("Reserved0"),
-        cef_master_h.C_LONG.withName("Reserved1")
+        cef_render_handler_capi_h.C_SHORT.withName("Index"),
+        cef_render_handler_capi_h.C_SHORT.withName("Temperature"),
+        cef_render_handler_capi_h.C_SHORT.withName("OverThreshold"),
+        cef_render_handler_capi_h.C_SHORT.withName("UnderThreshold"),
+        cef_render_handler_capi_h.C_CHAR.withName("OverThresholdChangable"),
+        cef_render_handler_capi_h.C_CHAR.withName("UnderThresholdChangable"),
+        cef_render_handler_capi_h.C_CHAR.withName("EventGenerated"),
+        cef_render_handler_capi_h.C_CHAR.withName("Reserved0"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved1")
     ).withName("_STORAGE_TEMPERATURE_INFO");
 
     /**

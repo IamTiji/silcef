@@ -27,7 +27,7 @@ public class _TRANSACTION_LIST_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NumberOfTransactions"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfTransactions"),
         MemoryLayout.sequenceLayout(1, _TRANSACTION_LIST_ENTRY.layout()).withName("TransactionInformation")
     ).withName("_TRANSACTION_LIST_INFORMATION");
 

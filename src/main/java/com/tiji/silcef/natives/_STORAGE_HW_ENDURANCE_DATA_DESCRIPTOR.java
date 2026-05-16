@@ -28,8 +28,8 @@ public class _STORAGE_HW_ENDURANCE_DATA_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
         _STORAGE_HW_ENDURANCE_INFO.layout().withName("EnduranceInfo")
     ).withName("_STORAGE_HW_ENDURANCE_DATA_DESCRIPTOR");
 

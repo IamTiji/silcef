@@ -40,11 +40,11 @@ public class MEM_EXTENDED_PARAMETER {
             MemoryLayout.paddingLayout(8)
         ).withName("$anon$15048:5"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG_LONG.withName("ULong64"),
-            cef_master_h.C_POINTER.withName("Pointer"),
-            cef_master_h.C_LONG_LONG.withName("Size"),
-            cef_master_h.C_POINTER.withName("Handle"),
-            cef_master_h.C_LONG.withName("ULong")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("ULong64"),
+            cef_render_handler_capi_h.C_POINTER.withName("Pointer"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("Size"),
+            cef_render_handler_capi_h.C_POINTER.withName("Handle"),
+            cef_render_handler_capi_h.C_LONG.withName("ULong")
         ).withName("$anon$15053:5")
     ).withName("MEM_EXTENDED_PARAMETER");
 

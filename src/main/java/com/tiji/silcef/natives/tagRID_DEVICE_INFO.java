@@ -32,8 +32,8 @@ public class tagRID_DEVICE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwType"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwType"),
         MemoryLayout.unionLayout(
             tagRID_DEVICE_INFO_MOUSE.layout().withName("mouse"),
             tagRID_DEVICE_INFO_KEYBOARD.layout().withName("keyboard"),

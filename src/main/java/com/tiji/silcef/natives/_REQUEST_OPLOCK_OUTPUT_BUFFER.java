@@ -32,13 +32,13 @@ public class _REQUEST_OPLOCK_OUTPUT_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("StructureVersion"),
-        cef_master_h.C_SHORT.withName("StructureLength"),
-        cef_master_h.C_LONG.withName("OriginalOplockLevel"),
-        cef_master_h.C_LONG.withName("NewOplockLevel"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("AccessMode"),
-        cef_master_h.C_SHORT.withName("ShareMode"),
+        cef_render_handler_capi_h.C_SHORT.withName("StructureVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("StructureLength"),
+        cef_render_handler_capi_h.C_LONG.withName("OriginalOplockLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("NewOplockLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("AccessMode"),
+        cef_render_handler_capi_h.C_SHORT.withName("ShareMode"),
         MemoryLayout.paddingLayout(2)
     ).withName("_REQUEST_OPLOCK_OUTPUT_BUFFER");
 

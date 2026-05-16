@@ -29,10 +29,10 @@ public class _NOTIFYICONIDENTIFIER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hWnd"),
-        cef_master_h.C_INT.withName("uID"),
+        cef_render_handler_capi_h.C_POINTER.withName("hWnd"),
+        cef_render_handler_capi_h.C_INT.withName("uID"),
         _GUID.layout().withName("guidItem"),
         MemoryLayout.paddingLayout(4)
     ).withName("_NOTIFYICONIDENTIFIER");

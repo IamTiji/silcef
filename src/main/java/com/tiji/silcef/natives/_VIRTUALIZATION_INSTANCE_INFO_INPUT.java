@@ -27,8 +27,8 @@ public class _VIRTUALIZATION_INSTANCE_INFO_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NumberOfWorkerThreads"),
-        cef_master_h.C_LONG.withName("Flags")
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfWorkerThreads"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags")
     ).withName("_VIRTUALIZATION_INSTANCE_INFO_INPUT");
 
     /**

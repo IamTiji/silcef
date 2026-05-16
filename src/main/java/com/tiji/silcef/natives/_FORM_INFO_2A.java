@@ -35,19 +35,19 @@ public class _FORM_INFO_2A {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pName"),
         tagSIZE.layout().withName("Size"),
         _RECTL.layout().withName("ImageableArea"),
-        cef_master_h.C_POINTER.withName("pKeyword"),
-        cef_master_h.C_LONG.withName("StringType"),
+        cef_render_handler_capi_h.C_POINTER.withName("pKeyword"),
+        cef_render_handler_capi_h.C_LONG.withName("StringType"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pMuiDll"),
-        cef_master_h.C_LONG.withName("dwResourceId"),
+        cef_render_handler_capi_h.C_POINTER.withName("pMuiDll"),
+        cef_render_handler_capi_h.C_LONG.withName("dwResourceId"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pDisplayName"),
-        cef_master_h.C_SHORT.withName("wLangId"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDisplayName"),
+        cef_render_handler_capi_h.C_SHORT.withName("wLangId"),
         MemoryLayout.paddingLayout(6)
     ).withName("_FORM_INFO_2A");
 

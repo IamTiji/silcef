@@ -28,7 +28,7 @@ public class tagNCCALCSIZE_PARAMS {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.sequenceLayout(3, tagRECT.layout()).withName("rgrc"),
-        cef_master_h.C_POINTER.withName("lppos")
+        cef_render_handler_capi_h.C_POINTER.withName("lppos")
     ).withName("tagNCCALCSIZE_PARAMS");
 
     /**

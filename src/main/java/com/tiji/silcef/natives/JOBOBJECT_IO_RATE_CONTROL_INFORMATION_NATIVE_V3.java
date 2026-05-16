@@ -44,26 +44,26 @@ public class JOBOBJECT_IO_RATE_CONTROL_INFORMATION_NATIVE_V3 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("MaxIops"),
-        cef_master_h.C_LONG_LONG.withName("MaxBandwidth"),
-        cef_master_h.C_LONG_LONG.withName("ReservationIops"),
-        cef_master_h.C_POINTER.withName("VolumeName"),
-        cef_master_h.C_LONG.withName("BaseIoSize"),
-        cef_master_h.C_INT.withName("ControlFlags"),
-        cef_master_h.C_SHORT.withName("VolumeNameLength"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaxIops"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaxBandwidth"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ReservationIops"),
+        cef_render_handler_capi_h.C_POINTER.withName("VolumeName"),
+        cef_render_handler_capi_h.C_LONG.withName("BaseIoSize"),
+        cef_render_handler_capi_h.C_INT.withName("ControlFlags"),
+        cef_render_handler_capi_h.C_SHORT.withName("VolumeNameLength"),
         MemoryLayout.paddingLayout(6),
-        cef_master_h.C_LONG_LONG.withName("CriticalReservationIops"),
-        cef_master_h.C_LONG_LONG.withName("ReservationBandwidth"),
-        cef_master_h.C_LONG_LONG.withName("CriticalReservationBandwidth"),
-        cef_master_h.C_LONG_LONG.withName("MaxTimePercent"),
-        cef_master_h.C_LONG_LONG.withName("ReservationTimePercent"),
-        cef_master_h.C_LONG_LONG.withName("CriticalReservationTimePercent"),
-        cef_master_h.C_LONG_LONG.withName("SoftMaxIops"),
-        cef_master_h.C_LONG_LONG.withName("SoftMaxBandwidth"),
-        cef_master_h.C_LONG_LONG.withName("SoftMaxTimePercent"),
-        cef_master_h.C_LONG_LONG.withName("LimitExcessNotifyIops"),
-        cef_master_h.C_LONG_LONG.withName("LimitExcessNotifyBandwidth"),
-        cef_master_h.C_LONG_LONG.withName("LimitExcessNotifyTimePercent")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("CriticalReservationIops"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ReservationBandwidth"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("CriticalReservationBandwidth"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaxTimePercent"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ReservationTimePercent"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("CriticalReservationTimePercent"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("SoftMaxIops"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("SoftMaxBandwidth"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("SoftMaxTimePercent"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LimitExcessNotifyIops"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LimitExcessNotifyBandwidth"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LimitExcessNotifyTimePercent")
     ).withName("JOBOBJECT_IO_RATE_CONTROL_INFORMATION_NATIVE_V3");
 
     /**

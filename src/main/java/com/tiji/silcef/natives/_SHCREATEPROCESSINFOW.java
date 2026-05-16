@@ -38,19 +38,19 @@ public class _SHCREATEPROCESSINFOW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("fMask"),
-        cef_master_h.C_POINTER.withName("hwnd"),
-        cef_master_h.C_POINTER.withName("pszFile"),
-        cef_master_h.C_POINTER.withName("pszParameters"),
-        cef_master_h.C_POINTER.withName("pszCurrentDirectory"),
-        cef_master_h.C_POINTER.withName("hUserToken"),
-        cef_master_h.C_POINTER.withName("lpProcessAttributes"),
-        cef_master_h.C_POINTER.withName("lpThreadAttributes"),
-        cef_master_h.C_INT.withName("bInheritHandles"),
-        cef_master_h.C_LONG.withName("dwCreationFlags"),
-        cef_master_h.C_POINTER.withName("lpStartupInfo"),
-        cef_master_h.C_POINTER.withName("lpProcessInformation")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("fMask"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwnd"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszFile"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszParameters"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszCurrentDirectory"),
+        cef_render_handler_capi_h.C_POINTER.withName("hUserToken"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpProcessAttributes"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpThreadAttributes"),
+        cef_render_handler_capi_h.C_INT.withName("bInheritHandles"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCreationFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpStartupInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpProcessInformation")
     ).withName("_SHCREATEPROCESSINFOW");
 
     /**

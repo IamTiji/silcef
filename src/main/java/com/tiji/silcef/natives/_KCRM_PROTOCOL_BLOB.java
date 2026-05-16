@@ -31,10 +31,10 @@ public class _KCRM_PROTOCOL_BLOB {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("ProtocolId"),
-        cef_master_h.C_LONG.withName("StaticInfoLength"),
-        cef_master_h.C_LONG.withName("TransactionIdInfoLength"),
-        cef_master_h.C_LONG.withName("Unused1"),
-        cef_master_h.C_LONG.withName("Unused2")
+        cef_render_handler_capi_h.C_LONG.withName("StaticInfoLength"),
+        cef_render_handler_capi_h.C_LONG.withName("TransactionIdInfoLength"),
+        cef_render_handler_capi_h.C_LONG.withName("Unused1"),
+        cef_render_handler_capi_h.C_LONG.withName("Unused2")
     ).withName("_KCRM_PROTOCOL_BLOB");
 
     /**

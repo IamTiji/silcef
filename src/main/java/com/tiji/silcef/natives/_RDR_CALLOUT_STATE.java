@@ -39,23 +39,23 @@ public class _RDR_CALLOUT_STATE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("LastError"),
+        cef_render_handler_capi_h.C_LONG.withName("LastError"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("LastEEInfo"),
-        cef_master_h.C_INT.withName("LastCalledStage"),
+        cef_render_handler_capi_h.C_POINTER.withName("LastEEInfo"),
+        cef_render_handler_capi_h.C_INT.withName("LastCalledStage"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("ServerName"),
-        cef_master_h.C_POINTER.withName("ServerPort"),
-        cef_master_h.C_POINTER.withName("RemoteUser"),
-        cef_master_h.C_POINTER.withName("AuthType"),
-        cef_master_h.C_CHAR.withName("ResourceTypePresent"),
-        cef_master_h.C_CHAR.withName("SessionIdPresent"),
-        cef_master_h.C_CHAR.withName("InterfacePresent"),
+        cef_render_handler_capi_h.C_POINTER.withName("ServerName"),
+        cef_render_handler_capi_h.C_POINTER.withName("ServerPort"),
+        cef_render_handler_capi_h.C_POINTER.withName("RemoteUser"),
+        cef_render_handler_capi_h.C_POINTER.withName("AuthType"),
+        cef_render_handler_capi_h.C_CHAR.withName("ResourceTypePresent"),
+        cef_render_handler_capi_h.C_CHAR.withName("SessionIdPresent"),
+        cef_render_handler_capi_h.C_CHAR.withName("InterfacePresent"),
         MemoryLayout.paddingLayout(1),
         _GUID.layout().withName("ResourceType"),
         _GUID.layout().withName("SessionId"),
         _RPC_SYNTAX_IDENTIFIER.layout().withName("Interface"),
-        cef_master_h.C_POINTER.withName("CertContext")
+        cef_render_handler_capi_h.C_POINTER.withName("CertContext")
     ).withName("_RDR_CALLOUT_STATE");
 
     /**

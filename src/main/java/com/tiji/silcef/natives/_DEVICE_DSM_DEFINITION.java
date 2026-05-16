@@ -32,15 +32,15 @@ public class _DEVICE_DSM_DEFINITION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Action"),
-        cef_master_h.C_CHAR.withName("SingleRange"),
+        cef_render_handler_capi_h.C_LONG.withName("Action"),
+        cef_render_handler_capi_h.C_CHAR.withName("SingleRange"),
         MemoryLayout.paddingLayout(3),
-        cef_master_h.C_LONG.withName("ParameterBlockAlignment"),
-        cef_master_h.C_LONG.withName("ParameterBlockLength"),
-        cef_master_h.C_CHAR.withName("HasOutput"),
+        cef_render_handler_capi_h.C_LONG.withName("ParameterBlockAlignment"),
+        cef_render_handler_capi_h.C_LONG.withName("ParameterBlockLength"),
+        cef_render_handler_capi_h.C_CHAR.withName("HasOutput"),
         MemoryLayout.paddingLayout(3),
-        cef_master_h.C_LONG.withName("OutputBlockAlignment"),
-        cef_master_h.C_LONG.withName("OutputBlockLength")
+        cef_render_handler_capi_h.C_LONG.withName("OutputBlockAlignment"),
+        cef_render_handler_capi_h.C_LONG.withName("OutputBlockLength")
     ).withName("_DEVICE_DSM_DEFINITION");
 
     /**

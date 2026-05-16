@@ -28,9 +28,9 @@ public class _PACKEDEVENTINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ulSize"),
-        cef_master_h.C_LONG.withName("ulNumEventsForLogFile"),
-        MemoryLayout.sequenceLayout(0, cef_master_h.C_LONG).withName("ulOffsets")
+        cef_render_handler_capi_h.C_LONG.withName("ulSize"),
+        cef_render_handler_capi_h.C_LONG.withName("ulNumEventsForLogFile"),
+        MemoryLayout.sequenceLayout(0, cef_render_handler_capi_h.C_LONG).withName("ulOffsets")
     ).withName("_PACKEDEVENTINFO");
 
     /**

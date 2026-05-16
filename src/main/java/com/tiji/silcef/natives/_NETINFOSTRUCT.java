@@ -33,15 +33,15 @@ public class _NETINFOSTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbStructure"),
-        cef_master_h.C_LONG.withName("dwProviderVersion"),
-        cef_master_h.C_LONG.withName("dwStatus"),
-        cef_master_h.C_LONG.withName("dwCharacteristics"),
-        cef_master_h.C_LONG_LONG.withName("dwHandle"),
-        cef_master_h.C_SHORT.withName("wNetType"),
+        cef_render_handler_capi_h.C_LONG.withName("cbStructure"),
+        cef_render_handler_capi_h.C_LONG.withName("dwProviderVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStatus"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCharacteristics"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwHandle"),
+        cef_render_handler_capi_h.C_SHORT.withName("wNetType"),
         MemoryLayout.paddingLayout(2),
-        cef_master_h.C_LONG.withName("dwPrinters"),
-        cef_master_h.C_LONG.withName("dwDrives"),
+        cef_render_handler_capi_h.C_LONG.withName("dwPrinters"),
+        cef_render_handler_capi_h.C_LONG.withName("dwDrives"),
         MemoryLayout.paddingLayout(4)
     ).withName("_NETINFOSTRUCT");
 

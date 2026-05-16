@@ -31,13 +31,13 @@ public class tagMEASUREITEMSTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("CtlType"),
-        cef_master_h.C_INT.withName("CtlID"),
-        cef_master_h.C_INT.withName("itemID"),
-        cef_master_h.C_INT.withName("itemWidth"),
-        cef_master_h.C_INT.withName("itemHeight"),
+        cef_render_handler_capi_h.C_INT.withName("CtlType"),
+        cef_render_handler_capi_h.C_INT.withName("CtlID"),
+        cef_render_handler_capi_h.C_INT.withName("itemID"),
+        cef_render_handler_capi_h.C_INT.withName("itemWidth"),
+        cef_render_handler_capi_h.C_INT.withName("itemHeight"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("itemData")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("itemData")
     ).withName("tagMEASUREITEMSTRUCT");
 
     /**

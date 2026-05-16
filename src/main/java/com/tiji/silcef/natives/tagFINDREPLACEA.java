@@ -36,20 +36,20 @@ public class tagFINDREPLACEA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("lStructSize"),
+        cef_render_handler_capi_h.C_LONG.withName("lStructSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hwndOwner"),
-        cef_master_h.C_POINTER.withName("hInstance"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndOwner"),
+        cef_render_handler_capi_h.C_POINTER.withName("hInstance"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpstrFindWhat"),
-        cef_master_h.C_POINTER.withName("lpstrReplaceWith"),
-        cef_master_h.C_SHORT.withName("wFindWhatLen"),
-        cef_master_h.C_SHORT.withName("wReplaceWithLen"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpstrFindWhat"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpstrReplaceWith"),
+        cef_render_handler_capi_h.C_SHORT.withName("wFindWhatLen"),
+        cef_render_handler_capi_h.C_SHORT.withName("wReplaceWithLen"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("lCustData"),
-        cef_master_h.C_POINTER.withName("lpfnHook"),
-        cef_master_h.C_POINTER.withName("lpTemplateName")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("lCustData"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpfnHook"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpTemplateName")
     ).withName("tagFINDREPLACEA");
 
     /**

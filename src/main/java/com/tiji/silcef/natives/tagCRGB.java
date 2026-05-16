@@ -29,10 +29,10 @@ public class tagCRGB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("bRed"),
-        cef_master_h.C_CHAR.withName("bGreen"),
-        cef_master_h.C_CHAR.withName("bBlue"),
-        cef_master_h.C_CHAR.withName("bExtra")
+        cef_render_handler_capi_h.C_CHAR.withName("bRed"),
+        cef_render_handler_capi_h.C_CHAR.withName("bGreen"),
+        cef_render_handler_capi_h.C_CHAR.withName("bBlue"),
+        cef_render_handler_capi_h.C_CHAR.withName("bExtra")
     ).withName("tagCRGB");
 
     /**

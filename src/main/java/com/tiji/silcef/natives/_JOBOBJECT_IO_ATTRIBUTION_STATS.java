@@ -29,10 +29,10 @@ public class _JOBOBJECT_IO_ATTRIBUTION_STATS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("IoCount"),
-        cef_master_h.C_LONG_LONG.withName("TotalNonOverlappedQueueTime"),
-        cef_master_h.C_LONG_LONG.withName("TotalNonOverlappedServiceTime"),
-        cef_master_h.C_LONG_LONG.withName("TotalSize")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("IoCount"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("TotalNonOverlappedQueueTime"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("TotalNonOverlappedServiceTime"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("TotalSize")
     ).withName("_JOBOBJECT_IO_ATTRIBUTION_STATS");
 
     /**

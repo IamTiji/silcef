@@ -27,8 +27,8 @@ public class _ACTIVATION_CONTEXT_QUERY_INDEX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ulAssemblyIndex"),
-        cef_master_h.C_LONG.withName("ulFileIndexInAssembly")
+        cef_render_handler_capi_h.C_LONG.withName("ulAssemblyIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("ulFileIndexInAssembly")
     ).withName("_ACTIVATION_CONTEXT_QUERY_INDEX");
 
     /**

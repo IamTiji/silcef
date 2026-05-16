@@ -28,9 +28,9 @@ public class tagUSEROBJECTFLAGS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("fInherit"),
-        cef_master_h.C_INT.withName("fReserved"),
-        cef_master_h.C_LONG.withName("dwFlags")
+        cef_render_handler_capi_h.C_INT.withName("fInherit"),
+        cef_render_handler_capi_h.C_INT.withName("fReserved"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags")
     ).withName("tagUSEROBJECTFLAGS");
 
     /**

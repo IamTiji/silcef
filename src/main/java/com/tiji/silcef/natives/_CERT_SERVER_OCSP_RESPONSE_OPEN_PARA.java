@@ -31,12 +31,12 @@ public class _CERT_SERVER_OCSP_RESPONSE_OPEN_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_POINTER.withName("pcbUsedSize"),
-        cef_master_h.C_POINTER.withName("pwszOcspDirectory"),
-        cef_master_h.C_POINTER.withName("pfnUpdateCallback"),
-        cef_master_h.C_POINTER.withName("pvUpdateCallbackArg")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("pcbUsedSize"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszOcspDirectory"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnUpdateCallback"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvUpdateCallbackArg")
     ).withName("_CERT_SERVER_OCSP_RESPONSE_OPEN_PARA");
 
     /**

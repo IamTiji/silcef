@@ -29,10 +29,10 @@ public class tagDEVNAMES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("wDriverOffset"),
-        cef_master_h.C_SHORT.withName("wDeviceOffset"),
-        cef_master_h.C_SHORT.withName("wOutputOffset"),
-        cef_master_h.C_SHORT.withName("wDefault")
+        cef_render_handler_capi_h.C_SHORT.withName("wDriverOffset"),
+        cef_render_handler_capi_h.C_SHORT.withName("wDeviceOffset"),
+        cef_render_handler_capi_h.C_SHORT.withName("wOutputOffset"),
+        cef_render_handler_capi_h.C_SHORT.withName("wDefault")
     ).withName("tagDEVNAMES");
 
     /**

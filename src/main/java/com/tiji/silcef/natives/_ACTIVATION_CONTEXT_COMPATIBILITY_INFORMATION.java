@@ -27,7 +27,7 @@ public class _ACTIVATION_CONTEXT_COMPATIBILITY_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ElementCount"),
+        cef_render_handler_capi_h.C_LONG.withName("ElementCount"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.sequenceLayout(0, _COMPATIBILITY_CONTEXT_ELEMENT.layout()).withName("Elements")
     ).withName("_ACTIVATION_CONTEXT_COMPATIBILITY_INFORMATION");

@@ -30,11 +30,11 @@ public class _SILOOBJECT_BASIC_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("SiloId"),
-        cef_master_h.C_LONG.withName("SiloParentId"),
-        cef_master_h.C_LONG.withName("NumberOfProcesses"),
-        cef_master_h.C_CHAR.withName("IsInServerSilo"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_CHAR).withName("Reserved")
+        cef_render_handler_capi_h.C_LONG.withName("SiloId"),
+        cef_render_handler_capi_h.C_LONG.withName("SiloParentId"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfProcesses"),
+        cef_render_handler_capi_h.C_CHAR.withName("IsInServerSilo"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_CHAR).withName("Reserved")
     ).withName("_SILOOBJECT_BASIC_INFORMATION");
 
     /**

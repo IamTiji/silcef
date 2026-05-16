@@ -35,16 +35,16 @@ public class _CERT_LOGOTYPE_IMAGE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwLogotypeImageInfoChoice"),
-        cef_master_h.C_LONG.withName("dwFileSize"),
-        cef_master_h.C_LONG.withName("dwXSize"),
-        cef_master_h.C_LONG.withName("dwYSize"),
-        cef_master_h.C_LONG.withName("dwLogotypeImageResolutionChoice"),
+        cef_render_handler_capi_h.C_LONG.withName("dwLogotypeImageInfoChoice"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFileSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwXSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwYSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwLogotypeImageResolutionChoice"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("dwNumBits"),
-            cef_master_h.C_LONG.withName("dwTableSize")
+            cef_render_handler_capi_h.C_LONG.withName("dwNumBits"),
+            cef_render_handler_capi_h.C_LONG.withName("dwTableSize")
         ).withName("$anon$5547:5"),
-        cef_master_h.C_POINTER.withName("pwszLanguage")
+        cef_render_handler_capi_h.C_POINTER.withName("pwszLanguage")
     ).withName("_CERT_LOGOTYPE_IMAGE_INFO");
 
     /**

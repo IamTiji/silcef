@@ -28,9 +28,9 @@ public class _EFS_DECRYPTION_STATUS_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwDecryptionError"),
-        cef_master_h.C_LONG.withName("dwHashOffset"),
-        cef_master_h.C_LONG.withName("cbHash")
+        cef_render_handler_capi_h.C_LONG.withName("dwDecryptionError"),
+        cef_render_handler_capi_h.C_LONG.withName("dwHashOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("cbHash")
     ).withName("_EFS_DECRYPTION_STATUS_INFO");
 
     /**

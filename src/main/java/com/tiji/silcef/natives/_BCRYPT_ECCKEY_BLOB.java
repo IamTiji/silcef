@@ -27,8 +27,8 @@ public class _BCRYPT_ECCKEY_BLOB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwMagic"),
-        cef_master_h.C_LONG.withName("cbKey")
+        cef_render_handler_capi_h.C_LONG.withName("dwMagic"),
+        cef_render_handler_capi_h.C_LONG.withName("cbKey")
     ).withName("_BCRYPT_ECCKEY_BLOB");
 
     /**

@@ -34,14 +34,14 @@ public class _NCRYPT_EXPORTED_ISOLATED_KEY_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("KeyUsage"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("KeyUsage"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG.withName("cbAlgName"),
-        cef_master_h.C_LONG.withName("cbNonce"),
-        cef_master_h.C_LONG.withName("cbAuthTag"),
-        cef_master_h.C_LONG.withName("cbWrappingKey"),
-        cef_master_h.C_LONG.withName("cbIsolatedKey")
+        cef_render_handler_capi_h.C_LONG.withName("cbAlgName"),
+        cef_render_handler_capi_h.C_LONG.withName("cbNonce"),
+        cef_render_handler_capi_h.C_LONG.withName("cbAuthTag"),
+        cef_render_handler_capi_h.C_LONG.withName("cbWrappingKey"),
+        cef_render_handler_capi_h.C_LONG.withName("cbIsolatedKey")
     ).withName("_NCRYPT_EXPORTED_ISOLATED_KEY_HEADER");
 
     /**

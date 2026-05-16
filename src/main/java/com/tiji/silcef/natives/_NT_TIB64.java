@@ -35,16 +35,16 @@ public class _NT_TIB64 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("ExceptionList"),
-        cef_master_h.C_LONG_LONG.withName("StackBase"),
-        cef_master_h.C_LONG_LONG.withName("StackLimit"),
-        cef_master_h.C_LONG_LONG.withName("SubSystemTib"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ExceptionList"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("StackBase"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("StackLimit"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("SubSystemTib"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG_LONG.withName("FiberData"),
-            cef_master_h.C_LONG.withName("Version")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("FiberData"),
+            cef_render_handler_capi_h.C_LONG.withName("Version")
         ).withName("$anon$12816:5"),
-        cef_master_h.C_LONG_LONG.withName("ArbitraryUserPointer"),
-        cef_master_h.C_LONG_LONG.withName("Self")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ArbitraryUserPointer"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Self")
     ).withName("_NT_TIB64");
 
     /**

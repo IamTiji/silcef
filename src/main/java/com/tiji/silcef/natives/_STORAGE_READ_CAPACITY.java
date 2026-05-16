@@ -30,9 +30,9 @@ public class _STORAGE_READ_CAPACITY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("BlockLength"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("BlockLength"),
         MemoryLayout.paddingLayout(4),
         _LARGE_INTEGER.layout().withName("NumberOfBlocks"),
         _LARGE_INTEGER.layout().withName("DiskLength")

@@ -31,12 +31,12 @@ public class _TRIVERTEX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("x"),
-        cef_master_h.C_LONG.withName("y"),
-        cef_master_h.C_SHORT.withName("Red"),
-        cef_master_h.C_SHORT.withName("Green"),
-        cef_master_h.C_SHORT.withName("Blue"),
-        cef_master_h.C_SHORT.withName("Alpha")
+        cef_render_handler_capi_h.C_LONG.withName("x"),
+        cef_render_handler_capi_h.C_LONG.withName("y"),
+        cef_render_handler_capi_h.C_SHORT.withName("Red"),
+        cef_render_handler_capi_h.C_SHORT.withName("Green"),
+        cef_render_handler_capi_h.C_SHORT.withName("Blue"),
+        cef_render_handler_capi_h.C_SHORT.withName("Alpha")
     ).withName("_TRIVERTEX");
 
     /**

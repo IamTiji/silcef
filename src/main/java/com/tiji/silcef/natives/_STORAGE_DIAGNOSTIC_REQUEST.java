@@ -30,11 +30,11 @@ public class _STORAGE_DIAGNOSTIC_REQUEST {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_INT.withName("TargetType"),
-        cef_master_h.C_INT.withName("Level")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_INT.withName("TargetType"),
+        cef_render_handler_capi_h.C_INT.withName("Level")
     ).withName("_STORAGE_DIAGNOSTIC_REQUEST");
 
     /**

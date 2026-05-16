@@ -30,13 +30,13 @@ public class _NCRYPT_KEY_ATTEST_PADDING_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("magic"),
+        cef_render_handler_capi_h.C_LONG.withName("magic"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pbKeyBlob"),
-        cef_master_h.C_LONG.withName("cbKeyBlob"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbKeyBlob"),
+        cef_render_handler_capi_h.C_LONG.withName("cbKeyBlob"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pbKeyAuth"),
-        cef_master_h.C_LONG.withName("cbKeyAuth"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbKeyAuth"),
+        cef_render_handler_capi_h.C_LONG.withName("cbKeyAuth"),
         MemoryLayout.paddingLayout(4)
     ).withName("_NCRYPT_KEY_ATTEST_PADDING_INFO");
 

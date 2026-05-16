@@ -29,10 +29,10 @@ public class sockaddr_in {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("sin_family"),
-        cef_master_h.C_SHORT.withName("sin_port"),
+        cef_render_handler_capi_h.C_SHORT.withName("sin_family"),
+        cef_render_handler_capi_h.C_SHORT.withName("sin_port"),
         in_addr.layout().withName("sin_addr"),
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_CHAR).withName("sin_zero")
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_CHAR).withName("sin_zero")
     ).withName("sockaddr_in");
 
     /**

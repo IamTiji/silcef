@@ -41,16 +41,16 @@ public class WIN32_MEMORY_REGION_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("AllocationBase"),
-        cef_master_h.C_LONG.withName("AllocationProtect"),
+        cef_render_handler_capi_h.C_POINTER.withName("AllocationBase"),
+        cef_render_handler_capi_h.C_LONG.withName("AllocationProtect"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("Flags"),
+            cef_render_handler_capi_h.C_LONG.withName("Flags"),
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$879:9")
         ).withName("$anon$876:5"),
-        cef_master_h.C_LONG_LONG.withName("RegionSize"),
-        cef_master_h.C_LONG_LONG.withName("CommitSize")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("RegionSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("CommitSize")
     ).withName("WIN32_MEMORY_REGION_INFORMATION");
 
     /**

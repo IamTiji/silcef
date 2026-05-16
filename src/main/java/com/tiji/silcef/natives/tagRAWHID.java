@@ -28,9 +28,9 @@ public class tagRAWHID {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSizeHid"),
-        cef_master_h.C_LONG.withName("dwCount"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("bRawData"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSizeHid"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCount"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("bRawData"),
         MemoryLayout.paddingLayout(3)
     ).withName("tagRAWHID");
 

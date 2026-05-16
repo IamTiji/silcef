@@ -27,7 +27,7 @@ public class _WOW64_DESCRIPTOR_TABLE_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Selector"),
+        cef_render_handler_capi_h.C_LONG.withName("Selector"),
         _WOW64_LDT_ENTRY.layout().withName("Descriptor")
     ).withName("_WOW64_DESCRIPTOR_TABLE_ENTRY");
 

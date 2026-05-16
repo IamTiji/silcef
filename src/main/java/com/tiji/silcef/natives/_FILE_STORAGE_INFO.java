@@ -32,13 +32,13 @@ public class _FILE_STORAGE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("LogicalBytesPerSector"),
-        cef_master_h.C_LONG.withName("PhysicalBytesPerSectorForAtomicity"),
-        cef_master_h.C_LONG.withName("PhysicalBytesPerSectorForPerformance"),
-        cef_master_h.C_LONG.withName("FileSystemEffectivePhysicalBytesPerSectorForAtomicity"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("ByteOffsetForSectorAlignment"),
-        cef_master_h.C_LONG.withName("ByteOffsetForPartitionAlignment")
+        cef_render_handler_capi_h.C_LONG.withName("LogicalBytesPerSector"),
+        cef_render_handler_capi_h.C_LONG.withName("PhysicalBytesPerSectorForAtomicity"),
+        cef_render_handler_capi_h.C_LONG.withName("PhysicalBytesPerSectorForPerformance"),
+        cef_render_handler_capi_h.C_LONG.withName("FileSystemEffectivePhysicalBytesPerSectorForAtomicity"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("ByteOffsetForSectorAlignment"),
+        cef_render_handler_capi_h.C_LONG.withName("ByteOffsetForPartitionAlignment")
     ).withName("_FILE_STORAGE_INFO");
 
     /**

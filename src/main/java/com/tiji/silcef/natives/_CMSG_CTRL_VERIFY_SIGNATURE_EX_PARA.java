@@ -30,12 +30,12 @@ public class _CMSG_CTRL_VERIFY_SIGNATURE_EX_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("hCryptProv"),
-        cef_master_h.C_LONG.withName("dwSignerIndex"),
-        cef_master_h.C_LONG.withName("dwSignerType"),
-        cef_master_h.C_POINTER.withName("pvSigner")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("hCryptProv"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSignerIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSignerType"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvSigner")
     ).withName("_CMSG_CTRL_VERIFY_SIGNATURE_EX_PARA");
 
     /**

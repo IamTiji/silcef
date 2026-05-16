@@ -27,8 +27,8 @@ public class _SERVICE_TABLE_ENTRYW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("lpServiceName"),
-        cef_master_h.C_POINTER.withName("lpServiceProc")
+        cef_render_handler_capi_h.C_POINTER.withName("lpServiceName"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpServiceProc")
     ).withName("_SERVICE_TABLE_ENTRYW");
 
     /**

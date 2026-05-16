@@ -30,11 +30,11 @@ public class tagDEBUGHOOKINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("idThread"),
-        cef_master_h.C_LONG.withName("idThreadInstaller"),
-        cef_master_h.C_LONG_LONG.withName("lParam"),
-        cef_master_h.C_LONG_LONG.withName("wParam"),
-        cef_master_h.C_INT.withName("code"),
+        cef_render_handler_capi_h.C_LONG.withName("idThread"),
+        cef_render_handler_capi_h.C_LONG.withName("idThreadInstaller"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("lParam"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("wParam"),
+        cef_render_handler_capi_h.C_INT.withName("code"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagDEBUGHOOKINFO");
 

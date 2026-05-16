@@ -28,9 +28,9 @@ public class _CROSS_CERT_DIST_POINTS_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSyncDeltaTime"),
-        cef_master_h.C_LONG.withName("cDistPoint"),
-        cef_master_h.C_POINTER.withName("rgDistPoint")
+        cef_render_handler_capi_h.C_LONG.withName("dwSyncDeltaTime"),
+        cef_render_handler_capi_h.C_LONG.withName("cDistPoint"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgDistPoint")
     ).withName("_CROSS_CERT_DIST_POINTS_INFO");
 
     /**

@@ -30,11 +30,11 @@ public class _cef_base_ref_counted_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("size"),
-        cef_master_h.C_POINTER.withName("add_ref"),
-        cef_master_h.C_POINTER.withName("release"),
-        cef_master_h.C_POINTER.withName("has_one_ref"),
-        cef_master_h.C_POINTER.withName("has_at_least_one_ref")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("size"),
+        cef_render_handler_capi_h.C_POINTER.withName("add_ref"),
+        cef_render_handler_capi_h.C_POINTER.withName("release"),
+        cef_render_handler_capi_h.C_POINTER.withName("has_one_ref"),
+        cef_render_handler_capi_h.C_POINTER.withName("has_at_least_one_ref")
     ).withName("_cef_base_ref_counted_t");
 
     /**
@@ -107,7 +107,7 @@ public class _cef_base_ref_counted_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -117,7 +117,7 @@ public class _cef_base_ref_counted_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(add_ref.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(add_ref.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -206,8 +206,8 @@ public class _cef_base_ref_counted_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -217,7 +217,7 @@ public class _cef_base_ref_counted_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(release.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(release.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -306,8 +306,8 @@ public class _cef_base_ref_counted_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -317,7 +317,7 @@ public class _cef_base_ref_counted_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(has_one_ref.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(has_one_ref.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -406,8 +406,8 @@ public class _cef_base_ref_counted_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_INT,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -417,7 +417,7 @@ public class _cef_base_ref_counted_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(has_at_least_one_ref.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(has_at_least_one_ref.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

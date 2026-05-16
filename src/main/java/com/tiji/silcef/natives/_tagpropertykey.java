@@ -28,7 +28,7 @@ public class _tagpropertykey {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("fmtid"),
-        cef_master_h.C_LONG.withName("pid")
+        cef_render_handler_capi_h.C_LONG.withName("pid")
     ).withName("_tagpropertykey");
 
     /**

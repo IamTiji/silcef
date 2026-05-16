@@ -29,10 +29,10 @@ public class tagRGBQUAD {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("rgbBlue"),
-        cef_master_h.C_CHAR.withName("rgbGreen"),
-        cef_master_h.C_CHAR.withName("rgbRed"),
-        cef_master_h.C_CHAR.withName("rgbReserved")
+        cef_render_handler_capi_h.C_CHAR.withName("rgbBlue"),
+        cef_render_handler_capi_h.C_CHAR.withName("rgbGreen"),
+        cef_render_handler_capi_h.C_CHAR.withName("rgbRed"),
+        cef_render_handler_capi_h.C_CHAR.withName("rgbReserved")
     ).withName("tagRGBQUAD");
 
     /**

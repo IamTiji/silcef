@@ -26,7 +26,7 @@ public class _RTL_SRWLOCK {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("Ptr")
+        cef_render_handler_capi_h.C_POINTER.withName("Ptr")
     ).withName("_RTL_SRWLOCK");
 
     /**

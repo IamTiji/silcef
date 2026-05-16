@@ -44,8 +44,8 @@ public class _RPC_ASYNC_NOTIFICATION_INFO {
         _RPC_ASYNC_NOTIFICATION_INFO.APC.layout().withName("APC"),
         _RPC_ASYNC_NOTIFICATION_INFO.IOC.layout().withName("IOC"),
         _RPC_ASYNC_NOTIFICATION_INFO.HWND.layout().withName("HWND"),
-        cef_master_h.C_POINTER.withName("hEvent"),
-        cef_master_h.C_POINTER.withName("NotificationRoutine")
+        cef_render_handler_capi_h.C_POINTER.withName("hEvent"),
+        cef_render_handler_capi_h.C_POINTER.withName("NotificationRoutine")
     ).withName("_RPC_ASYNC_NOTIFICATION_INFO");
 
     /**
@@ -70,8 +70,8 @@ public class _RPC_ASYNC_NOTIFICATION_INFO {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_POINTER.withName("NotificationRoutine"),
-            cef_master_h.C_POINTER.withName("hThread")
+            cef_render_handler_capi_h.C_POINTER.withName("NotificationRoutine"),
+            cef_render_handler_capi_h.C_POINTER.withName("hThread")
         ).withName("$anon$106:5");
 
         /**
@@ -287,11 +287,11 @@ public class _RPC_ASYNC_NOTIFICATION_INFO {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_POINTER.withName("hIOPort"),
-            cef_master_h.C_LONG.withName("dwNumberOfBytesTransferred"),
+            cef_render_handler_capi_h.C_POINTER.withName("hIOPort"),
+            cef_render_handler_capi_h.C_LONG.withName("dwNumberOfBytesTransferred"),
             MemoryLayout.paddingLayout(4),
-            cef_master_h.C_LONG_LONG.withName("dwCompletionKey"),
-            cef_master_h.C_POINTER.withName("lpOverlapped")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("dwCompletionKey"),
+            cef_render_handler_capi_h.C_POINTER.withName("lpOverlapped")
         ).withName("$anon$117:5");
 
         /**
@@ -601,8 +601,8 @@ public class _RPC_ASYNC_NOTIFICATION_INFO {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_POINTER.withName("hWnd"),
-            cef_master_h.C_INT.withName("Msg"),
+            cef_render_handler_capi_h.C_POINTER.withName("hWnd"),
+            cef_render_handler_capi_h.C_INT.withName("Msg"),
             MemoryLayout.paddingLayout(4)
         ).withName("$anon$129:5");
 

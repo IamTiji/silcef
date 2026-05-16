@@ -28,10 +28,10 @@ public class _DISK_LOGGING {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("Function"),
+        cef_render_handler_capi_h.C_CHAR.withName("Function"),
         MemoryLayout.paddingLayout(7),
-        cef_master_h.C_POINTER.withName("BufferAddress"),
-        cef_master_h.C_LONG.withName("BufferSize"),
+        cef_render_handler_capi_h.C_POINTER.withName("BufferAddress"),
+        cef_render_handler_capi_h.C_LONG.withName("BufferSize"),
         MemoryLayout.paddingLayout(4)
     ).withName("_DISK_LOGGING");
 

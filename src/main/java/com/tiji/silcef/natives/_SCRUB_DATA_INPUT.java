@@ -33,15 +33,15 @@ public class _SCRUB_DATA_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("MaximumIos"),
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_LONG).withName("ObjectId"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("MaximumIos"),
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_LONG).withName("ObjectId"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("StartingByteOffset"),
-        cef_master_h.C_LONG_LONG.withName("ByteCount"),
-        MemoryLayout.sequenceLayout(36, cef_master_h.C_LONG).withName("Reserved"),
-        MemoryLayout.sequenceLayout(1040, cef_master_h.C_CHAR).withName("ResumeContext")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("StartingByteOffset"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ByteCount"),
+        MemoryLayout.sequenceLayout(36, cef_render_handler_capi_h.C_LONG).withName("Reserved"),
+        MemoryLayout.sequenceLayout(1040, cef_render_handler_capi_h.C_CHAR).withName("ResumeContext")
     ).withName("_SCRUB_DATA_INPUT");
 
     /**

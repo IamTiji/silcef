@@ -29,11 +29,11 @@ public class _SE_IMPERSONATION_STATE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("Token"),
-        cef_master_h.C_CHAR.withName("CopyOnOpen"),
-        cef_master_h.C_CHAR.withName("EffectiveOnly"),
+        cef_render_handler_capi_h.C_POINTER.withName("Token"),
+        cef_render_handler_capi_h.C_CHAR.withName("CopyOnOpen"),
+        cef_render_handler_capi_h.C_CHAR.withName("EffectiveOnly"),
         MemoryLayout.paddingLayout(2),
-        cef_master_h.C_INT.withName("Level")
+        cef_render_handler_capi_h.C_INT.withName("Level")
     ).withName("_SE_IMPERSONATION_STATE");
 
     /**

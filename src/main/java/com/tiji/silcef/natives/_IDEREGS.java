@@ -33,14 +33,14 @@ public class _IDEREGS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("bFeaturesReg"),
-        cef_master_h.C_CHAR.withName("bSectorCountReg"),
-        cef_master_h.C_CHAR.withName("bSectorNumberReg"),
-        cef_master_h.C_CHAR.withName("bCylLowReg"),
-        cef_master_h.C_CHAR.withName("bCylHighReg"),
-        cef_master_h.C_CHAR.withName("bDriveHeadReg"),
-        cef_master_h.C_CHAR.withName("bCommandReg"),
-        cef_master_h.C_CHAR.withName("bReserved")
+        cef_render_handler_capi_h.C_CHAR.withName("bFeaturesReg"),
+        cef_render_handler_capi_h.C_CHAR.withName("bSectorCountReg"),
+        cef_render_handler_capi_h.C_CHAR.withName("bSectorNumberReg"),
+        cef_render_handler_capi_h.C_CHAR.withName("bCylLowReg"),
+        cef_render_handler_capi_h.C_CHAR.withName("bCylHighReg"),
+        cef_render_handler_capi_h.C_CHAR.withName("bDriveHeadReg"),
+        cef_render_handler_capi_h.C_CHAR.withName("bCommandReg"),
+        cef_render_handler_capi_h.C_CHAR.withName("bReserved")
     ).withName("_IDEREGS");
 
     /**

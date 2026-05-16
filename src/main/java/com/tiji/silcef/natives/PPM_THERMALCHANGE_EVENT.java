@@ -27,9 +27,9 @@ public class PPM_THERMALCHANGE_EVENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ThermalConstraint"),
+        cef_render_handler_capi_h.C_LONG.withName("ThermalConstraint"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("Processors")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Processors")
     ).withName("$anon$19251:9");
 
     /**

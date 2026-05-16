@@ -35,16 +35,16 @@ public class _DEVICE_POWER_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_CHAR.withName("DeviceAttentionSupported"),
-        cef_master_h.C_CHAR.withName("AsynchronousNotificationSupported"),
-        cef_master_h.C_CHAR.withName("IdlePowerManagementEnabled"),
-        cef_master_h.C_CHAR.withName("D3ColdEnabled"),
-        cef_master_h.C_CHAR.withName("D3ColdSupported"),
-        cef_master_h.C_CHAR.withName("NoVerifyDuringIdlePower"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("Reserved"),
-        cef_master_h.C_LONG.withName("IdleTimeoutInMS")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_CHAR.withName("DeviceAttentionSupported"),
+        cef_render_handler_capi_h.C_CHAR.withName("AsynchronousNotificationSupported"),
+        cef_render_handler_capi_h.C_CHAR.withName("IdlePowerManagementEnabled"),
+        cef_render_handler_capi_h.C_CHAR.withName("D3ColdEnabled"),
+        cef_render_handler_capi_h.C_CHAR.withName("D3ColdSupported"),
+        cef_render_handler_capi_h.C_CHAR.withName("NoVerifyDuringIdlePower"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("IdleTimeoutInMS")
     ).withName("_DEVICE_POWER_DESCRIPTOR");
 
     /**

@@ -27,8 +27,8 @@ public class _CRYPT_PKCS12_PBE_PARAMS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("iIterations"),
-        cef_master_h.C_LONG.withName("cbSalt")
+        cef_render_handler_capi_h.C_INT.withName("iIterations"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSalt")
     ).withName("_CRYPT_PKCS12_PBE_PARAMS");
 
     /**

@@ -130,8 +130,8 @@ public class _SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_LONG.withName("DataOffset"),
-                MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("Data"),
+                cef_render_handler_capi_h.C_LONG.withName("DataOffset"),
+                MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("Data"),
                 MemoryLayout.paddingLayout(3)
             ).withName("$anon$480:9");
 

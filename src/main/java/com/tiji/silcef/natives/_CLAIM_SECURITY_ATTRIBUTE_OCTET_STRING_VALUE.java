@@ -27,8 +27,8 @@ public class _CLAIM_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pValue"),
-        cef_master_h.C_LONG.withName("ValueLength"),
+        cef_render_handler_capi_h.C_POINTER.withName("pValue"),
+        cef_render_handler_capi_h.C_LONG.withName("ValueLength"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CLAIM_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE");
 

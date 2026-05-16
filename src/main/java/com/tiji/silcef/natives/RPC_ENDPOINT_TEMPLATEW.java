@@ -30,12 +30,12 @@ public class RPC_ENDPOINT_TEMPLATEW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("ProtSeq"),
-        cef_master_h.C_POINTER.withName("Endpoint"),
-        cef_master_h.C_POINTER.withName("SecurityDescriptor"),
-        cef_master_h.C_LONG.withName("Backlog"),
+        cef_render_handler_capi_h.C_POINTER.withName("ProtSeq"),
+        cef_render_handler_capi_h.C_POINTER.withName("Endpoint"),
+        cef_render_handler_capi_h.C_POINTER.withName("SecurityDescriptor"),
+        cef_render_handler_capi_h.C_LONG.withName("Backlog"),
         MemoryLayout.paddingLayout(4)
     ).withName("$anon$3156:9");
 

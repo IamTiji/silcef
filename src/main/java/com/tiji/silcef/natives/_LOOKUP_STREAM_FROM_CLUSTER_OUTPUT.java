@@ -28,9 +28,9 @@ public class _LOOKUP_STREAM_FROM_CLUSTER_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Offset"),
-        cef_master_h.C_LONG.withName("NumberOfMatches"),
-        cef_master_h.C_LONG.withName("BufferSizeRequired")
+        cef_render_handler_capi_h.C_LONG.withName("Offset"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfMatches"),
+        cef_render_handler_capi_h.C_LONG.withName("BufferSizeRequired")
     ).withName("_LOOKUP_STREAM_FROM_CLUSTER_OUTPUT");
 
     /**

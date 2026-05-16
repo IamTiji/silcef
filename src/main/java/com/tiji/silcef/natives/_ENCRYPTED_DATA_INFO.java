@@ -36,17 +36,17 @@ public class _ENCRYPTED_DATA_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("StartingFileOffset"),
-        cef_master_h.C_LONG.withName("OutputBufferOffset"),
-        cef_master_h.C_LONG.withName("BytesWithinFileSize"),
-        cef_master_h.C_LONG.withName("BytesWithinValidDataLength"),
-        cef_master_h.C_SHORT.withName("CompressionFormat"),
-        cef_master_h.C_CHAR.withName("DataUnitShift"),
-        cef_master_h.C_CHAR.withName("ChunkShift"),
-        cef_master_h.C_CHAR.withName("ClusterShift"),
-        cef_master_h.C_CHAR.withName("EncryptionFormat"),
-        cef_master_h.C_SHORT.withName("NumberOfDataBlocks"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG).withName("DataBlockSize")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("StartingFileOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("OutputBufferOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("BytesWithinFileSize"),
+        cef_render_handler_capi_h.C_LONG.withName("BytesWithinValidDataLength"),
+        cef_render_handler_capi_h.C_SHORT.withName("CompressionFormat"),
+        cef_render_handler_capi_h.C_CHAR.withName("DataUnitShift"),
+        cef_render_handler_capi_h.C_CHAR.withName("ChunkShift"),
+        cef_render_handler_capi_h.C_CHAR.withName("ClusterShift"),
+        cef_render_handler_capi_h.C_CHAR.withName("EncryptionFormat"),
+        cef_render_handler_capi_h.C_SHORT.withName("NumberOfDataBlocks"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG).withName("DataBlockSize")
     ).withName("_ENCRYPTED_DATA_INFO");
 
     /**

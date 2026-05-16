@@ -32,10 +32,10 @@ public class _CRYPTNET_URL_CACHE_PRE_FETCH_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwObjectType"),
-        cef_master_h.C_LONG.withName("dwError"),
-        cef_master_h.C_LONG.withName("dwReserved"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwObjectType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwError"),
+        cef_render_handler_capi_h.C_LONG.withName("dwReserved"),
         _FILETIME.layout().withName("ThisUpdateTime"),
         _FILETIME.layout().withName("NextUpdateTime"),
         _FILETIME.layout().withName("PublishTime")

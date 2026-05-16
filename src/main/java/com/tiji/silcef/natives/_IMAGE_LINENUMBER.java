@@ -31,7 +31,7 @@ public class _IMAGE_LINENUMBER {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _IMAGE_LINENUMBER.Type.layout().withName("Type"),
-        cef_master_h.C_SHORT.withName("Linenumber")
+        cef_render_handler_capi_h.C_SHORT.withName("Linenumber")
     ).withName("_IMAGE_LINENUMBER");
 
     /**
@@ -56,8 +56,8 @@ public class _IMAGE_LINENUMBER {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.align(cef_master_h.C_LONG, 2).withName("SymbolTableIndex"),
-            cef_master_h.align(cef_master_h.C_LONG, 2).withName("VirtualAddress")
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("SymbolTableIndex"),
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("VirtualAddress")
         ).withName("$anon$20872:5");
 
         /**

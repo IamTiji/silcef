@@ -27,8 +27,8 @@ public class _CRYPT_IMAGE_REF {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszImage"),
-        cef_master_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszImage"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CRYPT_IMAGE_REF");
 

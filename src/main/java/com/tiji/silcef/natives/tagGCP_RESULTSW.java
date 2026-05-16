@@ -34,16 +34,16 @@ public class tagGCP_RESULTSW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("lStructSize"),
+        cef_render_handler_capi_h.C_LONG.withName("lStructSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpOutString"),
-        cef_master_h.C_POINTER.withName("lpOrder"),
-        cef_master_h.C_POINTER.withName("lpDx"),
-        cef_master_h.C_POINTER.withName("lpCaretPos"),
-        cef_master_h.C_POINTER.withName("lpClass"),
-        cef_master_h.C_POINTER.withName("lpGlyphs"),
-        cef_master_h.C_INT.withName("nGlyphs"),
-        cef_master_h.C_INT.withName("nMaxFit")
+        cef_render_handler_capi_h.C_POINTER.withName("lpOutString"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpOrder"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpDx"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpCaretPos"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpClass"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpGlyphs"),
+        cef_render_handler_capi_h.C_INT.withName("nGlyphs"),
+        cef_render_handler_capi_h.C_INT.withName("nMaxFit")
     ).withName("tagGCP_RESULTSW");
 
     /**

@@ -26,7 +26,7 @@ public class _JOBOBJECT_END_OF_JOB_TIME_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("EndOfJobTimeAction")
+        cef_render_handler_capi_h.C_LONG.withName("EndOfJobTimeAction")
     ).withName("_JOBOBJECT_END_OF_JOB_TIME_INFORMATION");
 
     /**

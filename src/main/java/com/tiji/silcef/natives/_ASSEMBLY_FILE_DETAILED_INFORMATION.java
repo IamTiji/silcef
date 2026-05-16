@@ -30,12 +30,12 @@ public class _ASSEMBLY_FILE_DETAILED_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ulFlags"),
-        cef_master_h.C_LONG.withName("ulFilenameLength"),
-        cef_master_h.C_LONG.withName("ulPathLength"),
+        cef_render_handler_capi_h.C_LONG.withName("ulFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("ulFilenameLength"),
+        cef_render_handler_capi_h.C_LONG.withName("ulPathLength"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpFileName"),
-        cef_master_h.C_POINTER.withName("lpFilePath")
+        cef_render_handler_capi_h.C_POINTER.withName("lpFileName"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpFilePath")
     ).withName("_ASSEMBLY_FILE_DETAILED_INFORMATION");
 
     /**

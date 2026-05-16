@@ -28,9 +28,9 @@ public class _BCryptBufferDesc {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ulVersion"),
-        cef_master_h.C_LONG.withName("cBuffers"),
-        cef_master_h.C_POINTER.withName("pBuffers")
+        cef_render_handler_capi_h.C_LONG.withName("ulVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("cBuffers"),
+        cef_render_handler_capi_h.C_POINTER.withName("pBuffers")
     ).withName("_BCryptBufferDesc");
 
     /**

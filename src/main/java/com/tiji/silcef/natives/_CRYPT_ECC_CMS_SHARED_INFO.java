@@ -30,7 +30,7 @@ public class _CRYPT_ECC_CMS_SHARED_INFO {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("Algorithm"),
         _CRYPTOAPI_BLOB.layout().withName("EntityUInfo"),
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_CHAR).withName("rgbSuppPubInfo"),
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_CHAR).withName("rgbSuppPubInfo"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CRYPT_ECC_CMS_SHARED_INFO");
 

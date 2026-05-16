@@ -26,7 +26,7 @@ public class _SCM_BUS_DEDICATED_MEMORY_STATE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("ActivateState")
+        cef_render_handler_capi_h.C_CHAR.withName("ActivateState")
     ).withName("_SCM_BUS_DEDICATED_MEMORY_STATE");
 
     /**

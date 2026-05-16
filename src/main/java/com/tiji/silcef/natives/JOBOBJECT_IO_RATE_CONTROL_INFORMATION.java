@@ -31,12 +31,12 @@ public class JOBOBJECT_IO_RATE_CONTROL_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("MaxIops"),
-        cef_master_h.C_LONG_LONG.withName("MaxBandwidth"),
-        cef_master_h.C_LONG_LONG.withName("ReservationIops"),
-        cef_master_h.C_POINTER.withName("VolumeName"),
-        cef_master_h.C_LONG.withName("BaseIoSize"),
-        cef_master_h.C_LONG.withName("ControlFlags")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaxIops"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaxBandwidth"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ReservationIops"),
+        cef_render_handler_capi_h.C_POINTER.withName("VolumeName"),
+        cef_render_handler_capi_h.C_LONG.withName("BaseIoSize"),
+        cef_render_handler_capi_h.C_LONG.withName("ControlFlags")
     ).withName("JOBOBJECT_IO_RATE_CONTROL_INFORMATION");
 
     /**

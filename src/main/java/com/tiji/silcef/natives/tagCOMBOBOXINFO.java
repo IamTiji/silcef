@@ -32,13 +32,13 @@ public class tagCOMBOBOXINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         tagRECT.layout().withName("rcItem"),
         tagRECT.layout().withName("rcButton"),
-        cef_master_h.C_LONG.withName("stateButton"),
-        cef_master_h.C_POINTER.withName("hwndCombo"),
-        cef_master_h.C_POINTER.withName("hwndItem"),
-        cef_master_h.C_POINTER.withName("hwndList")
+        cef_render_handler_capi_h.C_LONG.withName("stateButton"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndCombo"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndItem"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndList")
     ).withName("tagCOMBOBOXINFO");
 
     /**

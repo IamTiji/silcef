@@ -35,7 +35,7 @@ public class _STORAGE_CRYPTO_KEY_TYPE {
         MemoryLayout.structLayout(
             MemoryLayout.paddingLayout(1)
         ).withName("$anon$2031:5"),
-        cef_master_h.C_CHAR.withName("AsUchar")
+        cef_render_handler_capi_h.C_CHAR.withName("AsUchar")
     ).withName("_STORAGE_CRYPTO_KEY_TYPE");
 
     /**

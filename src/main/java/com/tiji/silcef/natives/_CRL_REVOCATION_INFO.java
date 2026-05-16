@@ -28,9 +28,9 @@ public class _CRL_REVOCATION_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pCrlEntry"),
-        cef_master_h.C_POINTER.withName("pCrlContext"),
-        cef_master_h.C_POINTER.withName("pCrlIssuerChain")
+        cef_render_handler_capi_h.C_POINTER.withName("pCrlEntry"),
+        cef_render_handler_capi_h.C_POINTER.withName("pCrlContext"),
+        cef_render_handler_capi_h.C_POINTER.withName("pCrlIssuerChain")
     ).withName("_CRL_REVOCATION_INFO");
 
     /**

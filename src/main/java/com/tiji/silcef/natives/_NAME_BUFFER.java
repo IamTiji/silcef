@@ -28,9 +28,9 @@ public class _NAME_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("name"),
-        cef_master_h.C_CHAR.withName("name_num"),
-        cef_master_h.C_CHAR.withName("name_flags")
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("name"),
+        cef_render_handler_capi_h.C_CHAR.withName("name_num"),
+        cef_render_handler_capi_h.C_CHAR.withName("name_flags")
     ).withName("_NAME_BUFFER");
 
     /**

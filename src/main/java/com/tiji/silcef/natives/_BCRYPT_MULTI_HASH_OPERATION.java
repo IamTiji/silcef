@@ -29,10 +29,10 @@ public class _BCRYPT_MULTI_HASH_OPERATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("iHash"),
-        cef_master_h.C_INT.withName("hashOperation"),
-        cef_master_h.C_POINTER.withName("pbBuffer"),
-        cef_master_h.C_LONG.withName("cbBuffer"),
+        cef_render_handler_capi_h.C_LONG.withName("iHash"),
+        cef_render_handler_capi_h.C_INT.withName("hashOperation"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbBuffer"),
+        cef_render_handler_capi_h.C_LONG.withName("cbBuffer"),
         MemoryLayout.paddingLayout(4)
     ).withName("_BCRYPT_MULTI_HASH_OPERATION");
 

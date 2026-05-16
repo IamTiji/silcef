@@ -40,23 +40,23 @@ public class _CMSG_KEY_AGREE_RECIPIENT_ENCODE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("KeyEncryptionAlgorithm"),
-        cef_master_h.C_POINTER.withName("pvKeyEncryptionAuxInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvKeyEncryptionAuxInfo"),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("KeyWrapAlgorithm"),
-        cef_master_h.C_POINTER.withName("pvKeyWrapAuxInfo"),
-        cef_master_h.C_LONG_LONG.withName("hCryptProv"),
-        cef_master_h.C_LONG.withName("dwKeySpec"),
-        cef_master_h.C_LONG.withName("dwKeyChoice"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvKeyWrapAuxInfo"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("hCryptProv"),
+        cef_render_handler_capi_h.C_LONG.withName("dwKeySpec"),
+        cef_render_handler_capi_h.C_LONG.withName("dwKeyChoice"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("pEphemeralAlgorithm"),
-            cef_master_h.C_POINTER.withName("pSenderId")
+            cef_render_handler_capi_h.C_POINTER.withName("pEphemeralAlgorithm"),
+            cef_render_handler_capi_h.C_POINTER.withName("pSenderId")
         ).withName("$anon$7140:5"),
         _CRYPTOAPI_BLOB.layout().withName("UserKeyingMaterial"),
-        cef_master_h.C_LONG.withName("cRecipientEncryptedKeys"),
+        cef_render_handler_capi_h.C_LONG.withName("cRecipientEncryptedKeys"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgpRecipientEncryptedKeys")
+        cef_render_handler_capi_h.C_POINTER.withName("rgpRecipientEncryptedKeys")
     ).withName("_CMSG_KEY_AGREE_RECIPIENT_ENCODE_INFO");
 
     /**

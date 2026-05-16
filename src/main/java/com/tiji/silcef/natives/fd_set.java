@@ -27,9 +27,9 @@ public class fd_set {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("fd_count"),
+        cef_render_handler_capi_h.C_INT.withName("fd_count"),
         MemoryLayout.paddingLayout(4),
-        MemoryLayout.sequenceLayout(64, cef_master_h.C_LONG_LONG).withName("fd_array")
+        MemoryLayout.sequenceLayout(64, cef_render_handler_capi_h.C_LONG_LONG).withName("fd_array")
     ).withName("fd_set");
 
     /**

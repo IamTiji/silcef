@@ -30,9 +30,9 @@ public class _cef_cursor_info_t {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _cef_point_t.layout().withName("hotspot"),
-        cef_master_h.C_FLOAT.withName("image_scale_factor"),
+        cef_render_handler_capi_h.C_FLOAT.withName("image_scale_factor"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("buffer"),
+        cef_render_handler_capi_h.C_POINTER.withName("buffer"),
         _cef_size_t.layout().withName("size")
     ).withName("_cef_cursor_info_t");
 

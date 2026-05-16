@@ -30,7 +30,7 @@ public class _DISK_GEOMETRY_EX {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _DISK_GEOMETRY.layout().withName("Geometry"),
         _LARGE_INTEGER.layout().withName("DiskSize"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("Data"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("Data"),
         MemoryLayout.paddingLayout(7)
     ).withName("_DISK_GEOMETRY_EX");
 

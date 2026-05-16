@@ -37,19 +37,19 @@ public class _SCM_REGION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("NfitHandle"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("NfitHandle"),
         _GUID.layout().withName("LogicalDeviceGuid"),
         _GUID.layout().withName("AddressRangeType"),
-        cef_master_h.C_LONG.withName("AssociatedId"),
+        cef_render_handler_capi_h.C_LONG.withName("AssociatedId"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("Length"),
-        cef_master_h.C_LONG_LONG.withName("StartingDPA"),
-        cef_master_h.C_LONG_LONG.withName("BaseSPA"),
-        cef_master_h.C_LONG_LONG.withName("SPAOffset"),
-        cef_master_h.C_LONG_LONG.withName("RegionOffset")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Length"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("StartingDPA"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("BaseSPA"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("SPAOffset"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("RegionOffset")
     ).withName("_SCM_REGION");
 
     /**

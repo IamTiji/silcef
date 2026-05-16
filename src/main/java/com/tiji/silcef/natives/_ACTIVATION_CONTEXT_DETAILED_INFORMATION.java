@@ -37,19 +37,19 @@ public class _ACTIVATION_CONTEXT_DETAILED_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_LONG.withName("ulFormatVersion"),
-        cef_master_h.C_LONG.withName("ulAssemblyCount"),
-        cef_master_h.C_LONG.withName("ulRootManifestPathType"),
-        cef_master_h.C_LONG.withName("ulRootManifestPathChars"),
-        cef_master_h.C_LONG.withName("ulRootConfigurationPathType"),
-        cef_master_h.C_LONG.withName("ulRootConfigurationPathChars"),
-        cef_master_h.C_LONG.withName("ulAppDirPathType"),
-        cef_master_h.C_LONG.withName("ulAppDirPathChars"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("ulFormatVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("ulAssemblyCount"),
+        cef_render_handler_capi_h.C_LONG.withName("ulRootManifestPathType"),
+        cef_render_handler_capi_h.C_LONG.withName("ulRootManifestPathChars"),
+        cef_render_handler_capi_h.C_LONG.withName("ulRootConfigurationPathType"),
+        cef_render_handler_capi_h.C_LONG.withName("ulRootConfigurationPathChars"),
+        cef_render_handler_capi_h.C_LONG.withName("ulAppDirPathType"),
+        cef_render_handler_capi_h.C_LONG.withName("ulAppDirPathChars"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpRootManifestPath"),
-        cef_master_h.C_POINTER.withName("lpRootConfigurationPath"),
-        cef_master_h.C_POINTER.withName("lpAppDirPath")
+        cef_render_handler_capi_h.C_POINTER.withName("lpRootManifestPath"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpRootConfigurationPath"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpAppDirPath")
     ).withName("_ACTIVATION_CONTEXT_DETAILED_INFORMATION");
 
     /**

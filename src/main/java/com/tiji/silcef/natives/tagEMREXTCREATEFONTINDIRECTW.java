@@ -29,7 +29,7 @@ public class tagEMREXTCREATEFONTINDIRECTW {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
-        cef_master_h.C_LONG.withName("ihFont"),
+        cef_render_handler_capi_h.C_LONG.withName("ihFont"),
         tagEXTLOGFONTW.layout().withName("elfw")
     ).withName("tagEMREXTCREATEFONTINDIRECTW");
 

@@ -41,22 +41,22 @@ public class tagNONCLIENTMETRICSA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_INT.withName("iBorderWidth"),
-        cef_master_h.C_INT.withName("iScrollWidth"),
-        cef_master_h.C_INT.withName("iScrollHeight"),
-        cef_master_h.C_INT.withName("iCaptionWidth"),
-        cef_master_h.C_INT.withName("iCaptionHeight"),
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("iBorderWidth"),
+        cef_render_handler_capi_h.C_INT.withName("iScrollWidth"),
+        cef_render_handler_capi_h.C_INT.withName("iScrollHeight"),
+        cef_render_handler_capi_h.C_INT.withName("iCaptionWidth"),
+        cef_render_handler_capi_h.C_INT.withName("iCaptionHeight"),
         tagLOGFONTA.layout().withName("lfCaptionFont"),
-        cef_master_h.C_INT.withName("iSmCaptionWidth"),
-        cef_master_h.C_INT.withName("iSmCaptionHeight"),
+        cef_render_handler_capi_h.C_INT.withName("iSmCaptionWidth"),
+        cef_render_handler_capi_h.C_INT.withName("iSmCaptionHeight"),
         tagLOGFONTA.layout().withName("lfSmCaptionFont"),
-        cef_master_h.C_INT.withName("iMenuWidth"),
-        cef_master_h.C_INT.withName("iMenuHeight"),
+        cef_render_handler_capi_h.C_INT.withName("iMenuWidth"),
+        cef_render_handler_capi_h.C_INT.withName("iMenuHeight"),
         tagLOGFONTA.layout().withName("lfMenuFont"),
         tagLOGFONTA.layout().withName("lfStatusFont"),
         tagLOGFONTA.layout().withName("lfMessageFont"),
-        cef_master_h.C_INT.withName("iPaddedBorderWidth")
+        cef_render_handler_capi_h.C_INT.withName("iPaddedBorderWidth")
     ).withName("tagNONCLIENTMETRICSA");
 
     /**

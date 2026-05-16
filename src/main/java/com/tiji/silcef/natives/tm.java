@@ -34,15 +34,15 @@ public class tm {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("tm_sec"),
-        cef_master_h.C_INT.withName("tm_min"),
-        cef_master_h.C_INT.withName("tm_hour"),
-        cef_master_h.C_INT.withName("tm_mday"),
-        cef_master_h.C_INT.withName("tm_mon"),
-        cef_master_h.C_INT.withName("tm_year"),
-        cef_master_h.C_INT.withName("tm_wday"),
-        cef_master_h.C_INT.withName("tm_yday"),
-        cef_master_h.C_INT.withName("tm_isdst")
+        cef_render_handler_capi_h.C_INT.withName("tm_sec"),
+        cef_render_handler_capi_h.C_INT.withName("tm_min"),
+        cef_render_handler_capi_h.C_INT.withName("tm_hour"),
+        cef_render_handler_capi_h.C_INT.withName("tm_mday"),
+        cef_render_handler_capi_h.C_INT.withName("tm_mon"),
+        cef_render_handler_capi_h.C_INT.withName("tm_year"),
+        cef_render_handler_capi_h.C_INT.withName("tm_wday"),
+        cef_render_handler_capi_h.C_INT.withName("tm_yday"),
+        cef_render_handler_capi_h.C_INT.withName("tm_isdst")
     ).withName("tm");
 
     /**

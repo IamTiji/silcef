@@ -28,7 +28,7 @@ public class tagEMRSETARCDIRECTION {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
-        cef_master_h.C_LONG.withName("iArcDirection")
+        cef_render_handler_capi_h.C_LONG.withName("iArcDirection")
     ).withName("tagEMRSETARCDIRECTION");
 
     /**

@@ -27,8 +27,8 @@ public class _PROCESS_LEAP_SECOND_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("Reserved")
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved")
     ).withName("_PROCESS_LEAP_SECOND_INFO");
 
     /**

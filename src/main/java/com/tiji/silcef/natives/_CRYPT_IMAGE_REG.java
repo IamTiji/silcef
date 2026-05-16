@@ -28,10 +28,10 @@ public class _CRYPT_IMAGE_REG {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszImage"),
-        cef_master_h.C_LONG.withName("cInterfaces"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszImage"),
+        cef_render_handler_capi_h.C_LONG.withName("cInterfaces"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgpInterfaces")
+        cef_render_handler_capi_h.C_POINTER.withName("rgpInterfaces")
     ).withName("_CRYPT_IMAGE_REG");
 
     /**

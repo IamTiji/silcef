@@ -27,7 +27,7 @@ public class PrintNamedProperty {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("propertyName"),
+        cef_render_handler_capi_h.C_POINTER.withName("propertyName"),
         PrintPropertyValue.layout().withName("propertyValue")
     ).withName("$anon$3749:13");
 

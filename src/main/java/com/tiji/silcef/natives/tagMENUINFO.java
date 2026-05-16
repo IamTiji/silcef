@@ -32,14 +32,14 @@ public class tagMENUINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("fMask"),
-        cef_master_h.C_LONG.withName("dwStyle"),
-        cef_master_h.C_INT.withName("cyMax"),
-        cef_master_h.C_POINTER.withName("hbrBack"),
-        cef_master_h.C_LONG.withName("dwContextHelpID"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("fMask"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStyle"),
+        cef_render_handler_capi_h.C_INT.withName("cyMax"),
+        cef_render_handler_capi_h.C_POINTER.withName("hbrBack"),
+        cef_render_handler_capi_h.C_LONG.withName("dwContextHelpID"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("dwMenuData")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwMenuData")
     ).withName("tagMENUINFO");
 
     /**

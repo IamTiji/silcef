@@ -31,12 +31,12 @@ public final class PTP_WIN32_IO_CALLBACK {
     }
 
     private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-        cef_master_h.C_POINTER,
-        cef_master_h.C_POINTER,
-        cef_master_h.C_POINTER,
-        cef_master_h.C_LONG,
-        cef_master_h.C_LONG_LONG,
-        cef_master_h.C_POINTER
+        cef_render_handler_capi_h.C_POINTER,
+        cef_render_handler_capi_h.C_POINTER,
+        cef_render_handler_capi_h.C_POINTER,
+        cef_render_handler_capi_h.C_LONG,
+        cef_render_handler_capi_h.C_LONG_LONG,
+        cef_render_handler_capi_h.C_POINTER
     );
 
     /**
@@ -46,7 +46,7 @@ public final class PTP_WIN32_IO_CALLBACK {
         return $DESC;
     }
 
-    private static final MethodHandle UP$MH = cef_master_h.upcallHandle(PTP_WIN32_IO_CALLBACK.Function.class, "apply", $DESC);
+    private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(PTP_WIN32_IO_CALLBACK.Function.class, "apply", $DESC);
 
     /**
      * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

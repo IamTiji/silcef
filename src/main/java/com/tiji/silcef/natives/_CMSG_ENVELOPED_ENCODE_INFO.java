@@ -31,14 +31,14 @@ public class _CMSG_ENVELOPED_ENCODE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("hCryptProv"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("hCryptProv"),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("ContentEncryptionAlgorithm"),
-        cef_master_h.C_POINTER.withName("pvEncryptionAuxInfo"),
-        cef_master_h.C_LONG.withName("cRecipients"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvEncryptionAuxInfo"),
+        cef_render_handler_capi_h.C_LONG.withName("cRecipients"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgpRecipients")
+        cef_render_handler_capi_h.C_POINTER.withName("rgpRecipients")
     ).withName("_CMSG_ENVELOPED_ENCODE_INFO");
 
     /**

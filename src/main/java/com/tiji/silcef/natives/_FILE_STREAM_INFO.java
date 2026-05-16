@@ -30,11 +30,11 @@ public class _FILE_STREAM_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NextEntryOffset"),
-        cef_master_h.C_LONG.withName("StreamNameLength"),
+        cef_render_handler_capi_h.C_LONG.withName("NextEntryOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("StreamNameLength"),
         _LARGE_INTEGER.layout().withName("StreamSize"),
         _LARGE_INTEGER.layout().withName("StreamAllocationSize"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("StreamName"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("StreamName"),
         MemoryLayout.paddingLayout(6)
     ).withName("_FILE_STREAM_INFO");
 

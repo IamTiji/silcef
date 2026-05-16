@@ -29,9 +29,9 @@ public class _STORAGE_QUERY_DEPENDENT_VOLUME_LEV1_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("EntryLength"),
-        cef_master_h.C_LONG.withName("DependencyTypeFlags"),
-        cef_master_h.C_LONG.withName("ProviderSpecificFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("EntryLength"),
+        cef_render_handler_capi_h.C_LONG.withName("DependencyTypeFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("ProviderSpecificFlags"),
         _VIRTUAL_STORAGE_TYPE.layout().withName("VirtualStorageType")
     ).withName("_STORAGE_QUERY_DEPENDENT_VOLUME_LEV1_ENTRY");
 

@@ -33,16 +33,16 @@ public class _SHFILEOPSTRUCTW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hwnd"),
-        cef_master_h.C_INT.withName("wFunc"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwnd"),
+        cef_render_handler_capi_h.C_INT.withName("wFunc"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pFrom"),
-        cef_master_h.C_POINTER.withName("pTo"),
-        cef_master_h.C_SHORT.withName("fFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("pFrom"),
+        cef_render_handler_capi_h.C_POINTER.withName("pTo"),
+        cef_render_handler_capi_h.C_SHORT.withName("fFlags"),
         MemoryLayout.paddingLayout(2),
-        cef_master_h.C_INT.withName("fAnyOperationsAborted"),
-        cef_master_h.C_POINTER.withName("hNameMappings"),
-        cef_master_h.C_POINTER.withName("lpszProgressTitle")
+        cef_render_handler_capi_h.C_INT.withName("fAnyOperationsAborted"),
+        cef_render_handler_capi_h.C_POINTER.withName("hNameMappings"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpszProgressTitle")
     ).withName("_SHFILEOPSTRUCTW");
 
     /**

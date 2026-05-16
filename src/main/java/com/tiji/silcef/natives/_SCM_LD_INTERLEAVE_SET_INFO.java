@@ -29,9 +29,9 @@ public class _SCM_LD_INTERLEAVE_SET_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("InterleaveSetSize"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("InterleaveSetSize"),
         MemoryLayout.sequenceLayout(1, _SCM_INTERLEAVED_PD_INFO.layout()).withName("InterleaveSet")
     ).withName("_SCM_LD_INTERLEAVE_SET_INFO");
 

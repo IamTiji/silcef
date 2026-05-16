@@ -47,12 +47,12 @@ public class _FILE_STAT_BASIC_INFORMATION {
         _LARGE_INTEGER.layout().withName("ChangeTime"),
         _LARGE_INTEGER.layout().withName("AllocationSize"),
         _LARGE_INTEGER.layout().withName("EndOfFile"),
-        cef_master_h.C_LONG.withName("FileAttributes"),
-        cef_master_h.C_LONG.withName("ReparseTag"),
-        cef_master_h.C_LONG.withName("NumberOfLinks"),
-        cef_master_h.C_LONG.withName("DeviceType"),
-        cef_master_h.C_LONG.withName("DeviceCharacteristics"),
-        cef_master_h.C_LONG.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("FileAttributes"),
+        cef_render_handler_capi_h.C_LONG.withName("ReparseTag"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfLinks"),
+        cef_render_handler_capi_h.C_LONG.withName("DeviceType"),
+        cef_render_handler_capi_h.C_LONG.withName("DeviceCharacteristics"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved"),
         _LARGE_INTEGER.layout().withName("VolumeSerialNumber"),
         _FILE_ID_128.layout().withName("FileId128")
     ).withName("_FILE_STAT_BASIC_INFORMATION");

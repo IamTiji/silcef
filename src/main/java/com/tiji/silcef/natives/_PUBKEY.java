@@ -27,8 +27,8 @@ public class _PUBKEY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("magic"),
-        cef_master_h.C_LONG.withName("bitlen")
+        cef_render_handler_capi_h.C_LONG.withName("magic"),
+        cef_render_handler_capi_h.C_LONG.withName("bitlen")
     ).withName("_PUBKEY");
 
     /**

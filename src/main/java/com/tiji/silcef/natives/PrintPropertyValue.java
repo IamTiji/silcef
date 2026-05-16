@@ -36,7 +36,7 @@ public class PrintPropertyValue {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("ePropertyType"),
+        cef_render_handler_capi_h.C_INT.withName("ePropertyType"),
         MemoryLayout.paddingLayout(4),
         PrintPropertyValue.value.layout().withName("value")
     ).withName("$anon$3732:13");
@@ -113,10 +113,10 @@ public class PrintPropertyValue {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_CHAR.withName("propertyByte"),
-            cef_master_h.C_POINTER.withName("propertyString"),
-            cef_master_h.C_LONG.withName("propertyInt32"),
-            cef_master_h.C_LONG_LONG.withName("propertyInt64"),
+            cef_render_handler_capi_h.C_CHAR.withName("propertyByte"),
+            cef_render_handler_capi_h.C_POINTER.withName("propertyString"),
+            cef_render_handler_capi_h.C_LONG.withName("propertyInt32"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("propertyInt64"),
             PrintPropertyValue.value.propertyBlob.layout().withName("propertyBlob")
         ).withName("$anon$3735:9");
 
@@ -318,9 +318,9 @@ public class PrintPropertyValue {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_LONG.withName("cbBuf"),
+                cef_render_handler_capi_h.C_LONG.withName("cbBuf"),
                 MemoryLayout.paddingLayout(4),
-                cef_master_h.C_POINTER.withName("pBuf")
+                cef_render_handler_capi_h.C_POINTER.withName("pBuf")
             ).withName("$anon$3741:13");
 
             /**

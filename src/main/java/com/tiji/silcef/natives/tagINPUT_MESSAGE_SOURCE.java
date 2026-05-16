@@ -27,8 +27,8 @@ public class tagINPUT_MESSAGE_SOURCE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("deviceType"),
-        cef_master_h.C_INT.withName("originId")
+        cef_render_handler_capi_h.C_INT.withName("deviceType"),
+        cef_render_handler_capi_h.C_INT.withName("originId")
     ).withName("tagINPUT_MESSAGE_SOURCE");
 
     /**

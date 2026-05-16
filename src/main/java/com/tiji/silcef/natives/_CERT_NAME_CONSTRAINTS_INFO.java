@@ -29,12 +29,12 @@ public class _CERT_NAME_CONSTRAINTS_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cPermittedSubtree"),
+        cef_render_handler_capi_h.C_LONG.withName("cPermittedSubtree"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgPermittedSubtree"),
-        cef_master_h.C_LONG.withName("cExcludedSubtree"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgPermittedSubtree"),
+        cef_render_handler_capi_h.C_LONG.withName("cExcludedSubtree"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgExcludedSubtree")
+        cef_render_handler_capi_h.C_POINTER.withName("rgExcludedSubtree")
     ).withName("_CERT_NAME_CONSTRAINTS_INFO");
 
     /**

@@ -41,22 +41,22 @@ public class tagPOINTER_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("pointerType"),
-        cef_master_h.C_INT.withName("pointerId"),
-        cef_master_h.C_INT.withName("frameId"),
-        cef_master_h.C_INT.withName("pointerFlags"),
-        cef_master_h.C_POINTER.withName("sourceDevice"),
-        cef_master_h.C_POINTER.withName("hwndTarget"),
+        cef_render_handler_capi_h.C_LONG.withName("pointerType"),
+        cef_render_handler_capi_h.C_INT.withName("pointerId"),
+        cef_render_handler_capi_h.C_INT.withName("frameId"),
+        cef_render_handler_capi_h.C_INT.withName("pointerFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("sourceDevice"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndTarget"),
         tagPOINT.layout().withName("ptPixelLocation"),
         tagPOINT.layout().withName("ptHimetricLocation"),
         tagPOINT.layout().withName("ptPixelLocationRaw"),
         tagPOINT.layout().withName("ptHimetricLocationRaw"),
-        cef_master_h.C_LONG.withName("dwTime"),
-        cef_master_h.C_INT.withName("historyCount"),
-        cef_master_h.C_INT.withName("InputData"),
-        cef_master_h.C_LONG.withName("dwKeyStates"),
-        cef_master_h.C_LONG_LONG.withName("PerformanceCount"),
-        cef_master_h.C_INT.withName("ButtonChangeType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTime"),
+        cef_render_handler_capi_h.C_INT.withName("historyCount"),
+        cef_render_handler_capi_h.C_INT.withName("InputData"),
+        cef_render_handler_capi_h.C_LONG.withName("dwKeyStates"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("PerformanceCount"),
+        cef_render_handler_capi_h.C_INT.withName("ButtonChangeType"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagPOINTER_INFO");
 

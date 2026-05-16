@@ -31,12 +31,12 @@ public class SCARD_READERSTATEW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("szReader"),
-        cef_master_h.C_POINTER.withName("pvUserData"),
-        cef_master_h.C_LONG.withName("dwCurrentState"),
-        cef_master_h.C_LONG.withName("dwEventState"),
-        cef_master_h.C_LONG.withName("cbAtr"),
-        MemoryLayout.sequenceLayout(36, cef_master_h.C_CHAR).withName("rgbAtr")
+        cef_render_handler_capi_h.C_POINTER.withName("szReader"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvUserData"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCurrentState"),
+        cef_render_handler_capi_h.C_LONG.withName("dwEventState"),
+        cef_render_handler_capi_h.C_LONG.withName("cbAtr"),
+        MemoryLayout.sequenceLayout(36, cef_render_handler_capi_h.C_CHAR).withName("rgbAtr")
     ).withName("$anon$512:9");
 
     /**

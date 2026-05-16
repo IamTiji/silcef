@@ -31,12 +31,12 @@ public class _SE_ACCESS_REPLY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("ResultListCount"),
-        cef_master_h.C_POINTER.withName("GrantedAccess"),
-        cef_master_h.C_POINTER.withName("AccessStatus"),
-        cef_master_h.C_POINTER.withName("AccessReason"),
-        cef_master_h.C_POINTER.withName("Privileges")
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("ResultListCount"),
+        cef_render_handler_capi_h.C_POINTER.withName("GrantedAccess"),
+        cef_render_handler_capi_h.C_POINTER.withName("AccessStatus"),
+        cef_render_handler_capi_h.C_POINTER.withName("AccessReason"),
+        cef_render_handler_capi_h.C_POINTER.withName("Privileges")
     ).withName("_SE_ACCESS_REPLY");
 
     /**

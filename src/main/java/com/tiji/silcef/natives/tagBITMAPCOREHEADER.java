@@ -30,11 +30,11 @@ public class tagBITMAPCOREHEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("bcSize"),
-        cef_master_h.C_SHORT.withName("bcWidth"),
-        cef_master_h.C_SHORT.withName("bcHeight"),
-        cef_master_h.C_SHORT.withName("bcPlanes"),
-        cef_master_h.C_SHORT.withName("bcBitCount")
+        cef_render_handler_capi_h.C_LONG.withName("bcSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("bcWidth"),
+        cef_render_handler_capi_h.C_SHORT.withName("bcHeight"),
+        cef_render_handler_capi_h.C_SHORT.withName("bcPlanes"),
+        cef_render_handler_capi_h.C_SHORT.withName("bcBitCount")
     ).withName("tagBITMAPCOREHEADER");
 
     /**

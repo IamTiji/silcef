@@ -34,12 +34,12 @@ public class _KEY_EVENT_RECORD {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("bKeyDown"),
-        cef_master_h.C_SHORT.withName("wRepeatCount"),
-        cef_master_h.C_SHORT.withName("wVirtualKeyCode"),
-        cef_master_h.C_SHORT.withName("wVirtualScanCode"),
+        cef_render_handler_capi_h.C_INT.withName("bKeyDown"),
+        cef_render_handler_capi_h.C_SHORT.withName("wRepeatCount"),
+        cef_render_handler_capi_h.C_SHORT.withName("wVirtualKeyCode"),
+        cef_render_handler_capi_h.C_SHORT.withName("wVirtualScanCode"),
         _KEY_EVENT_RECORD.uChar.layout().withName("uChar"),
-        cef_master_h.C_LONG.withName("dwControlKeyState")
+        cef_render_handler_capi_h.C_LONG.withName("dwControlKeyState")
     ).withName("_KEY_EVENT_RECORD");
 
     /**
@@ -240,8 +240,8 @@ public class _KEY_EVENT_RECORD {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_SHORT.withName("UnicodeChar"),
-            cef_master_h.C_CHAR.withName("AsciiChar")
+            cef_render_handler_capi_h.C_SHORT.withName("UnicodeChar"),
+            cef_render_handler_capi_h.C_CHAR.withName("AsciiChar")
         ).withName("$anon$53:5");
 
         /**

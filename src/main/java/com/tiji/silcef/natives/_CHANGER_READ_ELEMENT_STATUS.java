@@ -28,7 +28,7 @@ public class _CHANGER_READ_ELEMENT_STATUS {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CHANGER_ELEMENT_LIST.layout().withName("ElementList"),
-        cef_master_h.C_CHAR.withName("VolumeTagInfo"),
+        cef_render_handler_capi_h.C_CHAR.withName("VolumeTagInfo"),
         MemoryLayout.paddingLayout(3)
     ).withName("_CHANGER_READ_ELEMENT_STATUS");
 

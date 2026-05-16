@@ -31,7 +31,7 @@ public class _ImageArchitectureHeader {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG.withName("FirstEntryRVA")
+        cef_render_handler_capi_h.C_LONG.withName("FirstEntryRVA")
     ).withName("_ImageArchitectureHeader");
 
     /**

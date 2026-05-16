@@ -28,9 +28,9 @@ public class _CERT_FORTEZZA_DATA_PROP {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_CHAR).withName("SerialNumber"),
-        cef_master_h.C_INT.withName("CertIndex"),
-        MemoryLayout.sequenceLayout(36, cef_master_h.C_CHAR).withName("CertLabel")
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_CHAR).withName("SerialNumber"),
+        cef_render_handler_capi_h.C_INT.withName("CertIndex"),
+        MemoryLayout.sequenceLayout(36, cef_render_handler_capi_h.C_CHAR).withName("CertLabel")
     ).withName("_CERT_FORTEZZA_DATA_PROP");
 
     /**

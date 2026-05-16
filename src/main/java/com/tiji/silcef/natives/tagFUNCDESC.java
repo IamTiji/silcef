@@ -37,20 +37,20 @@ public class tagFUNCDESC {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("memid"),
+        cef_render_handler_capi_h.C_LONG.withName("memid"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lprgscode"),
-        cef_master_h.C_POINTER.withName("lprgelemdescParam"),
-        cef_master_h.C_INT.withName("funckind"),
-        cef_master_h.C_INT.withName("invkind"),
-        cef_master_h.C_INT.withName("callconv"),
-        cef_master_h.C_SHORT.withName("cParams"),
-        cef_master_h.C_SHORT.withName("cParamsOpt"),
-        cef_master_h.C_SHORT.withName("oVft"),
-        cef_master_h.C_SHORT.withName("cScodes"),
+        cef_render_handler_capi_h.C_POINTER.withName("lprgscode"),
+        cef_render_handler_capi_h.C_POINTER.withName("lprgelemdescParam"),
+        cef_render_handler_capi_h.C_INT.withName("funckind"),
+        cef_render_handler_capi_h.C_INT.withName("invkind"),
+        cef_render_handler_capi_h.C_INT.withName("callconv"),
+        cef_render_handler_capi_h.C_SHORT.withName("cParams"),
+        cef_render_handler_capi_h.C_SHORT.withName("cParamsOpt"),
+        cef_render_handler_capi_h.C_SHORT.withName("oVft"),
+        cef_render_handler_capi_h.C_SHORT.withName("cScodes"),
         MemoryLayout.paddingLayout(4),
         tagELEMDESC.layout().withName("elemdescFunc"),
-        cef_master_h.C_SHORT.withName("wFuncFlags"),
+        cef_render_handler_capi_h.C_SHORT.withName("wFuncFlags"),
         MemoryLayout.paddingLayout(6)
     ).withName("tagFUNCDESC");
 

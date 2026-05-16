@@ -28,9 +28,9 @@ public class _XSAVE_AREA_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("Mask"),
-        cef_master_h.C_LONG_LONG.withName("CompactionMask"),
-        MemoryLayout.sequenceLayout(6, cef_master_h.C_LONG_LONG).withName("Reserved2")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Mask"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("CompactionMask"),
+        MemoryLayout.sequenceLayout(6, cef_render_handler_capi_h.C_LONG_LONG).withName("Reserved2")
     ).withName("_XSAVE_AREA_HEADER");
 
     /**

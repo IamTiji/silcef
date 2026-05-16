@@ -29,10 +29,10 @@ public class _APP_MEMORY_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("AvailableCommit"),
-        cef_master_h.C_LONG_LONG.withName("PrivateCommitUsage"),
-        cef_master_h.C_LONG_LONG.withName("PeakPrivateCommitUsage"),
-        cef_master_h.C_LONG_LONG.withName("TotalCommitUsage")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("AvailableCommit"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("PrivateCommitUsage"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("PeakPrivateCommitUsage"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("TotalCommitUsage")
     ).withName("_APP_MEMORY_INFORMATION");
 
     /**

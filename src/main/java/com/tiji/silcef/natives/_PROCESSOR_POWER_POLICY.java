@@ -32,11 +32,11 @@ public class _PROCESSOR_POWER_POLICY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Revision"),
-        cef_master_h.C_CHAR.withName("DynamicThrottle"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_CHAR).withName("Spare"),
+        cef_render_handler_capi_h.C_LONG.withName("Revision"),
+        cef_render_handler_capi_h.C_CHAR.withName("DynamicThrottle"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_CHAR).withName("Spare"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG.withName("PolicyCount"),
+        cef_render_handler_capi_h.C_LONG.withName("PolicyCount"),
         MemoryLayout.sequenceLayout(3, _PROCESSOR_POWER_POLICY_INFO.layout()).withName("Policy")
     ).withName("_PROCESSOR_POWER_POLICY");
 

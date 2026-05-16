@@ -36,17 +36,17 @@ public class _IMAGE_EXPORT_DIRECTORY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Characteristics"),
-        cef_master_h.C_LONG.withName("TimeDateStamp"),
-        cef_master_h.C_SHORT.withName("MajorVersion"),
-        cef_master_h.C_SHORT.withName("MinorVersion"),
-        cef_master_h.C_LONG.withName("Name"),
-        cef_master_h.C_LONG.withName("Base"),
-        cef_master_h.C_LONG.withName("NumberOfFunctions"),
-        cef_master_h.C_LONG.withName("NumberOfNames"),
-        cef_master_h.C_LONG.withName("AddressOfFunctions"),
-        cef_master_h.C_LONG.withName("AddressOfNames"),
-        cef_master_h.C_LONG.withName("AddressOfNameOrdinals")
+        cef_render_handler_capi_h.C_LONG.withName("Characteristics"),
+        cef_render_handler_capi_h.C_LONG.withName("TimeDateStamp"),
+        cef_render_handler_capi_h.C_SHORT.withName("MajorVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("MinorVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("Name"),
+        cef_render_handler_capi_h.C_LONG.withName("Base"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfFunctions"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfNames"),
+        cef_render_handler_capi_h.C_LONG.withName("AddressOfFunctions"),
+        cef_render_handler_capi_h.C_LONG.withName("AddressOfNames"),
+        cef_render_handler_capi_h.C_LONG.withName("AddressOfNameOrdinals")
     ).withName("_IMAGE_EXPORT_DIRECTORY");
 
     /**

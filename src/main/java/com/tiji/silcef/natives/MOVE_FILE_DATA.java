@@ -29,10 +29,10 @@ public class MOVE_FILE_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("FileHandle"),
+        cef_render_handler_capi_h.C_POINTER.withName("FileHandle"),
         _LARGE_INTEGER.layout().withName("StartingVcn"),
         _LARGE_INTEGER.layout().withName("StartingLcn"),
-        cef_master_h.C_LONG.withName("ClusterCount"),
+        cef_render_handler_capi_h.C_LONG.withName("ClusterCount"),
         MemoryLayout.paddingLayout(4)
     ).withName("$anon$11849:9");
 

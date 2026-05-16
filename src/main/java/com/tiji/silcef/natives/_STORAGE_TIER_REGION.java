@@ -29,8 +29,8 @@ public class _STORAGE_TIER_REGION {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("TierId"),
-        cef_master_h.C_LONG_LONG.withName("Offset"),
-        cef_master_h.C_LONG_LONG.withName("Length")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Offset"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Length")
     ).withName("_STORAGE_TIER_REGION");
 
     /**

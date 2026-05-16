@@ -32,13 +32,13 @@ public class _COAUTHINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwAuthnSvc"),
-        cef_master_h.C_LONG.withName("dwAuthzSvc"),
-        cef_master_h.C_POINTER.withName("pwszServerPrincName"),
-        cef_master_h.C_LONG.withName("dwAuthnLevel"),
-        cef_master_h.C_LONG.withName("dwImpersonationLevel"),
-        cef_master_h.C_POINTER.withName("pAuthIdentityData"),
-        cef_master_h.C_LONG.withName("dwCapabilities"),
+        cef_render_handler_capi_h.C_LONG.withName("dwAuthnSvc"),
+        cef_render_handler_capi_h.C_LONG.withName("dwAuthzSvc"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszServerPrincName"),
+        cef_render_handler_capi_h.C_LONG.withName("dwAuthnLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("dwImpersonationLevel"),
+        cef_render_handler_capi_h.C_POINTER.withName("pAuthIdentityData"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCapabilities"),
         MemoryLayout.paddingLayout(4)
     ).withName("_COAUTHINFO");
 

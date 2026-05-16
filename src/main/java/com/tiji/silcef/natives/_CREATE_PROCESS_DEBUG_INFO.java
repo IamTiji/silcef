@@ -35,16 +35,16 @@ public class _CREATE_PROCESS_DEBUG_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hFile"),
-        cef_master_h.C_POINTER.withName("hProcess"),
-        cef_master_h.C_POINTER.withName("hThread"),
-        cef_master_h.C_POINTER.withName("lpBaseOfImage"),
-        cef_master_h.C_LONG.withName("dwDebugInfoFileOffset"),
-        cef_master_h.C_LONG.withName("nDebugInfoSize"),
-        cef_master_h.C_POINTER.withName("lpThreadLocalBase"),
-        cef_master_h.C_POINTER.withName("lpStartAddress"),
-        cef_master_h.C_POINTER.withName("lpImageName"),
-        cef_master_h.C_SHORT.withName("fUnicode"),
+        cef_render_handler_capi_h.C_POINTER.withName("hFile"),
+        cef_render_handler_capi_h.C_POINTER.withName("hProcess"),
+        cef_render_handler_capi_h.C_POINTER.withName("hThread"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpBaseOfImage"),
+        cef_render_handler_capi_h.C_LONG.withName("dwDebugInfoFileOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("nDebugInfoSize"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpThreadLocalBase"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpStartAddress"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpImageName"),
+        cef_render_handler_capi_h.C_SHORT.withName("fUnicode"),
         MemoryLayout.paddingLayout(6)
     ).withName("_CREATE_PROCESS_DEBUG_INFO");
 

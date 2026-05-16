@@ -108,10 +108,10 @@ public class _IMAGE_AUX_SYMBOL {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.align(cef_master_h.C_LONG, 2).withName("TagIndex"),
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("TagIndex"),
             _IMAGE_AUX_SYMBOL.Sym.Misc.layout().withName("Misc"),
             _IMAGE_AUX_SYMBOL.Sym.FcnAry.layout().withName("FcnAry"),
-            cef_master_h.C_SHORT.withName("TvIndex")
+            cef_render_handler_capi_h.C_SHORT.withName("TvIndex")
         ).withName("$anon$20360:5");
 
         /**
@@ -184,7 +184,7 @@ public class _IMAGE_AUX_SYMBOL {
 
             private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
                 _IMAGE_AUX_SYMBOL.Sym.Misc.LnSz.layout().withName("LnSz"),
-                cef_master_h.align(cef_master_h.C_LONG, 2).withName("TotalSize")
+                cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("TotalSize")
             ).withName("$anon$20362:9");
 
             /**
@@ -209,8 +209,8 @@ public class _IMAGE_AUX_SYMBOL {
                 }
 
                 private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                    cef_master_h.C_SHORT.withName("Linenumber"),
-                    cef_master_h.C_SHORT.withName("Size")
+                    cef_render_handler_capi_h.C_SHORT.withName("Linenumber"),
+                    cef_render_handler_capi_h.C_SHORT.withName("Size")
                 ).withName("$anon$20363:13");
 
                 /**
@@ -612,8 +612,8 @@ public class _IMAGE_AUX_SYMBOL {
                 }
 
                 private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                    cef_master_h.align(cef_master_h.C_LONG, 2).withName("PointerToLinenumber"),
-                    cef_master_h.align(cef_master_h.C_LONG, 2).withName("PointerToNextFunction")
+                    cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("PointerToLinenumber"),
+                    cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("PointerToNextFunction")
                 ).withName("$anon$20370:13");
 
                 /**
@@ -826,7 +826,7 @@ public class _IMAGE_AUX_SYMBOL {
                 }
 
                 private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                    MemoryLayout.sequenceLayout(4, cef_master_h.C_SHORT).withName("Dimension")
+                    MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_SHORT).withName("Dimension")
                 ).withName("$anon$20374:13");
 
                 /**
@@ -1354,7 +1354,7 @@ public class _IMAGE_AUX_SYMBOL {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            MemoryLayout.sequenceLayout(18, cef_master_h.C_CHAR).withName("Name")
+            MemoryLayout.sequenceLayout(18, cef_render_handler_capi_h.C_CHAR).withName("Name")
         ).withName("$anon$20380:5");
 
         /**
@@ -1559,14 +1559,14 @@ public class _IMAGE_AUX_SYMBOL {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.align(cef_master_h.C_LONG, 2).withName("Length"),
-            cef_master_h.C_SHORT.withName("NumberOfRelocations"),
-            cef_master_h.C_SHORT.withName("NumberOfLinenumbers"),
-            cef_master_h.align(cef_master_h.C_LONG, 2).withName("CheckSum"),
-            cef_master_h.C_SHORT.withName("Number"),
-            cef_master_h.C_CHAR.withName("Selection"),
-            cef_master_h.C_CHAR.withName("bReserved"),
-            cef_master_h.C_SHORT.withName("HighNumber")
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("Length"),
+            cef_render_handler_capi_h.C_SHORT.withName("NumberOfRelocations"),
+            cef_render_handler_capi_h.C_SHORT.withName("NumberOfLinenumbers"),
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("CheckSum"),
+            cef_render_handler_capi_h.C_SHORT.withName("Number"),
+            cef_render_handler_capi_h.C_CHAR.withName("Selection"),
+            cef_render_handler_capi_h.C_CHAR.withName("bReserved"),
+            cef_render_handler_capi_h.C_SHORT.withName("HighNumber")
         ).withName("$anon$20383:5");
 
         /**
@@ -2112,8 +2112,8 @@ public class _IMAGE_AUX_SYMBOL {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.align(cef_master_h.C_LONG, 2).withName("crc"),
-            MemoryLayout.sequenceLayout(14, cef_master_h.C_CHAR).withName("rgbReserved")
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("crc"),
+            MemoryLayout.sequenceLayout(14, cef_render_handler_capi_h.C_CHAR).withName("rgbReserved")
         ).withName("$anon$20394:5");
 
         /**

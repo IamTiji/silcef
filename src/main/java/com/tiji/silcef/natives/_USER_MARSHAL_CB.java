@@ -32,14 +32,14 @@ public class _USER_MARSHAL_CB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pStubMsg"),
-        cef_master_h.C_POINTER.withName("pReserve"),
-        cef_master_h.C_LONG.withName("Signature"),
-        cef_master_h.C_INT.withName("CBType"),
-        cef_master_h.C_POINTER.withName("pFormat"),
-        cef_master_h.C_POINTER.withName("pTypeFormat")
+        cef_render_handler_capi_h.C_POINTER.withName("pStubMsg"),
+        cef_render_handler_capi_h.C_POINTER.withName("pReserve"),
+        cef_render_handler_capi_h.C_LONG.withName("Signature"),
+        cef_render_handler_capi_h.C_INT.withName("CBType"),
+        cef_render_handler_capi_h.C_POINTER.withName("pFormat"),
+        cef_render_handler_capi_h.C_POINTER.withName("pTypeFormat")
     ).withName("_USER_MARSHAL_CB");
 
     /**

@@ -28,8 +28,8 @@ public class _TAPE_GET_POSITION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Type"),
-        cef_master_h.C_LONG.withName("Partition"),
+        cef_render_handler_capi_h.C_LONG.withName("Type"),
+        cef_render_handler_capi_h.C_LONG.withName("Partition"),
         _LARGE_INTEGER.layout().withName("Offset")
     ).withName("_TAPE_GET_POSITION");
 

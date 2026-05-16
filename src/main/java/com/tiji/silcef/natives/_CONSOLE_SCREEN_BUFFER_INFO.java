@@ -32,7 +32,7 @@ public class _CONSOLE_SCREEN_BUFFER_INFO {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _COORD.layout().withName("dwSize"),
         _COORD.layout().withName("dwCursorPosition"),
-        cef_master_h.C_SHORT.withName("wAttributes"),
+        cef_render_handler_capi_h.C_SHORT.withName("wAttributes"),
         _SMALL_RECT.layout().withName("srWindow"),
         _COORD.layout().withName("dwMaximumWindowSize")
     ).withName("_CONSOLE_SCREEN_BUFFER_INFO");

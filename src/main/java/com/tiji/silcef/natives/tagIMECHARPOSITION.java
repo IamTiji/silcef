@@ -30,10 +30,10 @@ public class tagIMECHARPOSITION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSize"),
-        cef_master_h.C_LONG.withName("dwCharPos"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCharPos"),
         tagPOINT.layout().withName("pt"),
-        cef_master_h.C_INT.withName("cLineHeight"),
+        cef_render_handler_capi_h.C_INT.withName("cLineHeight"),
         tagRECT.layout().withName("rcDocument")
     ).withName("tagIMECHARPOSITION");
 

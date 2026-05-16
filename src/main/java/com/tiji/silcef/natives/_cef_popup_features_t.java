@@ -35,16 +35,16 @@ public class _cef_popup_features_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("size"),
-        cef_master_h.C_INT.withName("x"),
-        cef_master_h.C_INT.withName("xSet"),
-        cef_master_h.C_INT.withName("y"),
-        cef_master_h.C_INT.withName("ySet"),
-        cef_master_h.C_INT.withName("width"),
-        cef_master_h.C_INT.withName("widthSet"),
-        cef_master_h.C_INT.withName("height"),
-        cef_master_h.C_INT.withName("heightSet"),
-        cef_master_h.C_INT.withName("isPopup"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("size"),
+        cef_render_handler_capi_h.C_INT.withName("x"),
+        cef_render_handler_capi_h.C_INT.withName("xSet"),
+        cef_render_handler_capi_h.C_INT.withName("y"),
+        cef_render_handler_capi_h.C_INT.withName("ySet"),
+        cef_render_handler_capi_h.C_INT.withName("width"),
+        cef_render_handler_capi_h.C_INT.withName("widthSet"),
+        cef_render_handler_capi_h.C_INT.withName("height"),
+        cef_render_handler_capi_h.C_INT.withName("heightSet"),
+        cef_render_handler_capi_h.C_INT.withName("isPopup"),
         MemoryLayout.paddingLayout(4)
     ).withName("_cef_popup_features_t");
 

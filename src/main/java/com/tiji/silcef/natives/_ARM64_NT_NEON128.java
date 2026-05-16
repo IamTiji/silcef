@@ -34,13 +34,13 @@ public class _ARM64_NT_NEON128 {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
         MemoryLayout.structLayout(
-            cef_master_h.C_LONG_LONG.withName("Low"),
-            cef_master_h.C_LONG_LONG.withName("High")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("Low"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("High")
         ).withName("$anon$6783:5"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_DOUBLE).withName("D"),
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_FLOAT).withName("S"),
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_SHORT).withName("H"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("B")
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_DOUBLE).withName("D"),
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_FLOAT).withName("S"),
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_SHORT).withName("H"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("B")
     ).withName("_ARM64_NT_NEON128");
 
     /**

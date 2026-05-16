@@ -31,9 +31,9 @@ public class _OCSP_SIGNATURE_INFO {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("SignatureAlgorithm"),
         _CRYPT_BIT_BLOB.layout().withName("Signature"),
-        cef_master_h.C_LONG.withName("cCertEncoded"),
+        cef_render_handler_capi_h.C_LONG.withName("cCertEncoded"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgCertEncoded")
+        cef_render_handler_capi_h.C_POINTER.withName("rgCertEncoded")
     ).withName("_OCSP_SIGNATURE_INFO");
 
     /**

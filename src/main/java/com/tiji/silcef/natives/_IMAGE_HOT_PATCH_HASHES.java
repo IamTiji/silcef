@@ -27,8 +27,8 @@ public class _IMAGE_HOT_PATCH_HASHES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("SHA256"),
-        MemoryLayout.sequenceLayout(20, cef_master_h.C_CHAR).withName("SHA1")
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("SHA256"),
+        MemoryLayout.sequenceLayout(20, cef_render_handler_capi_h.C_CHAR).withName("SHA1")
     ).withName("_IMAGE_HOT_PATCH_HASHES");
 
     /**

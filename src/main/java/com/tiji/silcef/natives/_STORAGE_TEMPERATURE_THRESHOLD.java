@@ -32,13 +32,13 @@ public class _STORAGE_TEMPERATURE_THRESHOLD {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_SHORT.withName("Flags"),
-        cef_master_h.C_SHORT.withName("Index"),
-        cef_master_h.C_SHORT.withName("Threshold"),
-        cef_master_h.C_CHAR.withName("OverThreshold"),
-        cef_master_h.C_CHAR.withName("Reserved")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_SHORT.withName("Flags"),
+        cef_render_handler_capi_h.C_SHORT.withName("Index"),
+        cef_render_handler_capi_h.C_SHORT.withName("Threshold"),
+        cef_render_handler_capi_h.C_CHAR.withName("OverThreshold"),
+        cef_render_handler_capi_h.C_CHAR.withName("Reserved")
     ).withName("_STORAGE_TEMPERATURE_THRESHOLD");
 
     /**

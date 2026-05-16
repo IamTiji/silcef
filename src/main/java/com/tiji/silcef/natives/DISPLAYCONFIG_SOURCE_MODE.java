@@ -29,9 +29,9 @@ public class DISPLAYCONFIG_SOURCE_MODE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("width"),
-        cef_master_h.C_INT.withName("height"),
-        cef_master_h.C_INT.withName("pixelFormat"),
+        cef_render_handler_capi_h.C_INT.withName("width"),
+        cef_render_handler_capi_h.C_INT.withName("height"),
+        cef_render_handler_capi_h.C_INT.withName("pixelFormat"),
         _POINTL.layout().withName("position")
     ).withName("DISPLAYCONFIG_SOURCE_MODE");
 

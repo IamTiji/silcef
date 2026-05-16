@@ -41,22 +41,22 @@ public class _XSAVE_FORMAT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("ControlWord"),
-        cef_master_h.C_SHORT.withName("StatusWord"),
-        cef_master_h.C_CHAR.withName("TagWord"),
-        cef_master_h.C_CHAR.withName("Reserved1"),
-        cef_master_h.C_SHORT.withName("ErrorOpcode"),
-        cef_master_h.C_LONG.withName("ErrorOffset"),
-        cef_master_h.C_SHORT.withName("ErrorSelector"),
-        cef_master_h.C_SHORT.withName("Reserved2"),
-        cef_master_h.C_LONG.withName("DataOffset"),
-        cef_master_h.C_SHORT.withName("DataSelector"),
-        cef_master_h.C_SHORT.withName("Reserved3"),
-        cef_master_h.C_LONG.withName("MxCsr"),
-        cef_master_h.C_LONG.withName("MxCsr_Mask"),
+        cef_render_handler_capi_h.C_SHORT.withName("ControlWord"),
+        cef_render_handler_capi_h.C_SHORT.withName("StatusWord"),
+        cef_render_handler_capi_h.C_CHAR.withName("TagWord"),
+        cef_render_handler_capi_h.C_CHAR.withName("Reserved1"),
+        cef_render_handler_capi_h.C_SHORT.withName("ErrorOpcode"),
+        cef_render_handler_capi_h.C_LONG.withName("ErrorOffset"),
+        cef_render_handler_capi_h.C_SHORT.withName("ErrorSelector"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved2"),
+        cef_render_handler_capi_h.C_LONG.withName("DataOffset"),
+        cef_render_handler_capi_h.C_SHORT.withName("DataSelector"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved3"),
+        cef_render_handler_capi_h.C_LONG.withName("MxCsr"),
+        cef_render_handler_capi_h.C_LONG.withName("MxCsr_Mask"),
         MemoryLayout.sequenceLayout(8, _M128A.layout()).withName("FloatRegisters"),
         MemoryLayout.sequenceLayout(16, _M128A.layout()).withName("XmmRegisters"),
-        MemoryLayout.sequenceLayout(96, cef_master_h.C_CHAR).withName("Reserved4")
+        MemoryLayout.sequenceLayout(96, cef_render_handler_capi_h.C_CHAR).withName("Reserved4")
     ).withName("_XSAVE_FORMAT");
 
     /**

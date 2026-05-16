@@ -32,11 +32,11 @@ public class _cef_command_handler_t {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _cef_base_ref_counted_t.layout().withName("base"),
-        cef_master_h.C_POINTER.withName("on_chrome_command"),
-        cef_master_h.C_POINTER.withName("is_chrome_app_menu_item_visible"),
-        cef_master_h.C_POINTER.withName("is_chrome_app_menu_item_enabled"),
-        cef_master_h.C_POINTER.withName("is_chrome_page_action_icon_visible"),
-        cef_master_h.C_POINTER.withName("is_chrome_toolbar_button_visible")
+        cef_app_capi_h.C_POINTER.withName("on_chrome_command"),
+        cef_app_capi_h.C_POINTER.withName("is_chrome_app_menu_item_visible"),
+        cef_app_capi_h.C_POINTER.withName("is_chrome_app_menu_item_enabled"),
+        cef_app_capi_h.C_POINTER.withName("is_chrome_page_action_icon_visible"),
+        cef_app_capi_h.C_POINTER.withName("is_chrome_toolbar_button_visible")
     ).withName("_cef_command_handler_t");
 
     /**
@@ -109,11 +109,11 @@ public class _cef_command_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -123,7 +123,7 @@ public class _cef_command_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_chrome_command.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(on_chrome_command.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -212,10 +212,10 @@ public class _cef_command_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -225,7 +225,7 @@ public class _cef_command_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_chrome_app_menu_item_visible.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_chrome_app_menu_item_visible.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -314,10 +314,10 @@ public class _cef_command_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -327,7 +327,7 @@ public class _cef_command_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_chrome_app_menu_item_enabled.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_chrome_app_menu_item_enabled.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -416,9 +416,9 @@ public class _cef_command_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -428,7 +428,7 @@ public class _cef_command_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_chrome_page_action_icon_visible.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_chrome_page_action_icon_visible.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -517,9 +517,9 @@ public class _cef_command_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT
         );
 
         /**
@@ -529,7 +529,7 @@ public class _cef_command_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(is_chrome_toolbar_button_visible.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(is_chrome_toolbar_button_visible.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

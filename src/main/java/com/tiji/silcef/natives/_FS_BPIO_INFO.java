@@ -28,9 +28,9 @@ public class _FS_BPIO_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ActiveBypassIoCount"),
-        cef_master_h.C_SHORT.withName("StorageDriverNameLen"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_SHORT).withName("StorageDriverName"),
+        cef_render_handler_capi_h.C_LONG.withName("ActiveBypassIoCount"),
+        cef_render_handler_capi_h.C_SHORT.withName("StorageDriverNameLen"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_SHORT).withName("StorageDriverName"),
         MemoryLayout.paddingLayout(2)
     ).withName("_FS_BPIO_INFO");
 

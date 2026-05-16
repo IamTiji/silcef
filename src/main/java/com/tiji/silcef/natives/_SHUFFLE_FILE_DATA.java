@@ -28,9 +28,9 @@ public class _SHUFFLE_FILE_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("StartingOffset"),
-        cef_master_h.C_LONG_LONG.withName("Length"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("StartingOffset"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Length"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         MemoryLayout.paddingLayout(4)
     ).withName("_SHUFFLE_FILE_DATA");
 

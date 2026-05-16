@@ -28,9 +28,9 @@ public class _MESSAGE_RESOURCE_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Length"),
-        cef_master_h.C_SHORT.withName("Flags"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("Text"),
+        cef_render_handler_capi_h.C_SHORT.withName("Length"),
+        cef_render_handler_capi_h.C_SHORT.withName("Flags"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("Text"),
         MemoryLayout.paddingLayout(1)
     ).withName("_MESSAGE_RESOURCE_ENTRY");
 

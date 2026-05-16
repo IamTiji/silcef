@@ -31,10 +31,10 @@ public class _DISK_GEOMETRY {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LARGE_INTEGER.layout().withName("Cylinders"),
-        cef_master_h.C_INT.withName("MediaType"),
-        cef_master_h.C_LONG.withName("TracksPerCylinder"),
-        cef_master_h.C_LONG.withName("SectorsPerTrack"),
-        cef_master_h.C_LONG.withName("BytesPerSector")
+        cef_render_handler_capi_h.C_INT.withName("MediaType"),
+        cef_render_handler_capi_h.C_LONG.withName("TracksPerCylinder"),
+        cef_render_handler_capi_h.C_LONG.withName("SectorsPerTrack"),
+        cef_render_handler_capi_h.C_LONG.withName("BytesPerSector")
     ).withName("_DISK_GEOMETRY");
 
     /**

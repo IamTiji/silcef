@@ -33,8 +33,8 @@ public class _DISK_DETECTION_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("SizeOfDetectInfo"),
-        cef_master_h.C_INT.withName("DetectionType"),
+        cef_render_handler_capi_h.C_LONG.withName("SizeOfDetectInfo"),
+        cef_render_handler_capi_h.C_INT.withName("DetectionType"),
         MemoryLayout.unionLayout(
             MemoryLayout.structLayout(
                 _DISK_INT13_INFO.layout().withName("Int13"),

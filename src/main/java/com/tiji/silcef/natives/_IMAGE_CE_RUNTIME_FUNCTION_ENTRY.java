@@ -30,7 +30,7 @@ public class _IMAGE_CE_RUNTIME_FUNCTION_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("FuncStart"),
+        cef_render_handler_capi_h.C_LONG.withName("FuncStart"),
         MemoryLayout.paddingLayout(4)
     ).withName("_IMAGE_CE_RUNTIME_FUNCTION_ENTRY");
 

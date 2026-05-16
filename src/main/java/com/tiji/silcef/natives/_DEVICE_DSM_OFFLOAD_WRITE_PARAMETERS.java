@@ -29,9 +29,9 @@ public class _DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("Reserved"),
-        cef_master_h.C_LONG_LONG.withName("TokenOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("TokenOffset"),
         _STORAGE_OFFLOAD_TOKEN.layout().withName("Token")
     ).withName("_DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS");
 

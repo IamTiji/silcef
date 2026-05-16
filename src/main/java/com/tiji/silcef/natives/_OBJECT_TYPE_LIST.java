@@ -28,10 +28,10 @@ public class _OBJECT_TYPE_LIST {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Level"),
-        cef_master_h.C_SHORT.withName("Sbz"),
+        cef_render_handler_capi_h.C_SHORT.withName("Level"),
+        cef_render_handler_capi_h.C_SHORT.withName("Sbz"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("ObjectType")
+        cef_render_handler_capi_h.C_POINTER.withName("ObjectType")
     ).withName("_OBJECT_TYPE_LIST");
 
     /**

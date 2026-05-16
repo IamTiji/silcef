@@ -29,9 +29,9 @@ public class tagCURSORINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("flags"),
-        cef_master_h.C_POINTER.withName("hCursor"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("flags"),
+        cef_render_handler_capi_h.C_POINTER.withName("hCursor"),
         tagPOINT.layout().withName("ptScreenPos")
     ).withName("tagCURSORINFO");
 

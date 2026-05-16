@@ -28,9 +28,9 @@ public class tagCLEANLOCALSTORAGE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pInterface"),
-        cef_master_h.C_POINTER.withName("pStorage"),
-        cef_master_h.C_LONG.withName("flags"),
+        cef_render_handler_capi_h.C_POINTER.withName("pInterface"),
+        cef_render_handler_capi_h.C_POINTER.withName("pStorage"),
+        cef_render_handler_capi_h.C_LONG.withName("flags"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagCLEANLOCALSTORAGE");
 

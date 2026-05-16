@@ -33,15 +33,15 @@ public class _CRYPT_TIMESTAMP_REQUEST {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
         MemoryLayout.paddingLayout(4),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("HashAlgorithm"),
         _CRYPTOAPI_BLOB.layout().withName("HashedMessage"),
-        cef_master_h.C_POINTER.withName("pszTSAPolicyId"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszTSAPolicyId"),
         _CRYPTOAPI_BLOB.layout().withName("Nonce"),
-        cef_master_h.C_INT.withName("fCertReq"),
-        cef_master_h.C_LONG.withName("cExtension"),
-        cef_master_h.C_POINTER.withName("rgExtension")
+        cef_render_handler_capi_h.C_INT.withName("fCertReq"),
+        cef_render_handler_capi_h.C_LONG.withName("cExtension"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgExtension")
     ).withName("_CRYPT_TIMESTAMP_REQUEST");
 
     /**

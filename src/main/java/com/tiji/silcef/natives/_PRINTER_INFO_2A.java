@@ -46,27 +46,27 @@ public class _PRINTER_INFO_2A {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pServerName"),
-        cef_master_h.C_POINTER.withName("pPrinterName"),
-        cef_master_h.C_POINTER.withName("pShareName"),
-        cef_master_h.C_POINTER.withName("pPortName"),
-        cef_master_h.C_POINTER.withName("pDriverName"),
-        cef_master_h.C_POINTER.withName("pComment"),
-        cef_master_h.C_POINTER.withName("pLocation"),
-        cef_master_h.C_POINTER.withName("pDevMode"),
-        cef_master_h.C_POINTER.withName("pSepFile"),
-        cef_master_h.C_POINTER.withName("pPrintProcessor"),
-        cef_master_h.C_POINTER.withName("pDatatype"),
-        cef_master_h.C_POINTER.withName("pParameters"),
-        cef_master_h.C_POINTER.withName("pSecurityDescriptor"),
-        cef_master_h.C_LONG.withName("Attributes"),
-        cef_master_h.C_LONG.withName("Priority"),
-        cef_master_h.C_LONG.withName("DefaultPriority"),
-        cef_master_h.C_LONG.withName("StartTime"),
-        cef_master_h.C_LONG.withName("UntilTime"),
-        cef_master_h.C_LONG.withName("Status"),
-        cef_master_h.C_LONG.withName("cJobs"),
-        cef_master_h.C_LONG.withName("AveragePPM")
+        cef_render_handler_capi_h.C_POINTER.withName("pServerName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pPrinterName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pShareName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pPortName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDriverName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pComment"),
+        cef_render_handler_capi_h.C_POINTER.withName("pLocation"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDevMode"),
+        cef_render_handler_capi_h.C_POINTER.withName("pSepFile"),
+        cef_render_handler_capi_h.C_POINTER.withName("pPrintProcessor"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDatatype"),
+        cef_render_handler_capi_h.C_POINTER.withName("pParameters"),
+        cef_render_handler_capi_h.C_POINTER.withName("pSecurityDescriptor"),
+        cef_render_handler_capi_h.C_LONG.withName("Attributes"),
+        cef_render_handler_capi_h.C_LONG.withName("Priority"),
+        cef_render_handler_capi_h.C_LONG.withName("DefaultPriority"),
+        cef_render_handler_capi_h.C_LONG.withName("StartTime"),
+        cef_render_handler_capi_h.C_LONG.withName("UntilTime"),
+        cef_render_handler_capi_h.C_LONG.withName("Status"),
+        cef_render_handler_capi_h.C_LONG.withName("cJobs"),
+        cef_render_handler_capi_h.C_LONG.withName("AveragePPM")
     ).withName("_PRINTER_INFO_2A");
 
     /**

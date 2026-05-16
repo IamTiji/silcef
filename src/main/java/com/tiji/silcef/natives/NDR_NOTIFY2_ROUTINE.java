@@ -31,7 +31,7 @@ public final class NDR_NOTIFY2_ROUTINE {
     }
 
     private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-        cef_master_h.C_CHAR
+        cef_render_handler_capi_h.C_CHAR
     );
 
     /**
@@ -41,7 +41,7 @@ public final class NDR_NOTIFY2_ROUTINE {
         return $DESC;
     }
 
-    private static final MethodHandle UP$MH = cef_master_h.upcallHandle(NDR_NOTIFY2_ROUTINE.Function.class, "apply", $DESC);
+    private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(NDR_NOTIFY2_ROUTINE.Function.class, "apply", $DESC);
 
     /**
      * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

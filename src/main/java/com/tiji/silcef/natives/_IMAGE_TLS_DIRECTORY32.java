@@ -38,13 +38,13 @@ public class _IMAGE_TLS_DIRECTORY32 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("StartAddressOfRawData"),
-        cef_master_h.C_LONG.withName("EndAddressOfRawData"),
-        cef_master_h.C_LONG.withName("AddressOfIndex"),
-        cef_master_h.C_LONG.withName("AddressOfCallBacks"),
-        cef_master_h.C_LONG.withName("SizeOfZeroFill"),
+        cef_render_handler_capi_h.C_LONG.withName("StartAddressOfRawData"),
+        cef_render_handler_capi_h.C_LONG.withName("EndAddressOfRawData"),
+        cef_render_handler_capi_h.C_LONG.withName("AddressOfIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("AddressOfCallBacks"),
+        cef_render_handler_capi_h.C_LONG.withName("SizeOfZeroFill"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("Characteristics"),
+            cef_render_handler_capi_h.C_LONG.withName("Characteristics"),
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$21054:9")

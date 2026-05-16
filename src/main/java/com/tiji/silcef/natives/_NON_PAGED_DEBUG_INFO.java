@@ -34,15 +34,15 @@ public class _NON_PAGED_DEBUG_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Signature"),
-        cef_master_h.C_SHORT.withName("Flags"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_SHORT.withName("Machine"),
-        cef_master_h.C_SHORT.withName("Characteristics"),
-        cef_master_h.C_LONG.withName("TimeDateStamp"),
-        cef_master_h.C_LONG.withName("CheckSum"),
-        cef_master_h.C_LONG.withName("SizeOfImage"),
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 4).withName("ImageBase")
+        cef_render_handler_capi_h.C_SHORT.withName("Signature"),
+        cef_render_handler_capi_h.C_SHORT.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_SHORT.withName("Machine"),
+        cef_render_handler_capi_h.C_SHORT.withName("Characteristics"),
+        cef_render_handler_capi_h.C_LONG.withName("TimeDateStamp"),
+        cef_render_handler_capi_h.C_LONG.withName("CheckSum"),
+        cef_render_handler_capi_h.C_LONG.withName("SizeOfImage"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 4).withName("ImageBase")
     ).withName("_NON_PAGED_DEBUG_INFO");
 
     /**

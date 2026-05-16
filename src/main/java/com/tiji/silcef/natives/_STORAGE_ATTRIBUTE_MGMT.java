@@ -29,10 +29,10 @@ public class _STORAGE_ATTRIBUTE_MGMT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_INT.withName("Action"),
-        cef_master_h.C_LONG.withName("Attribute")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_INT.withName("Action"),
+        cef_render_handler_capi_h.C_LONG.withName("Attribute")
     ).withName("_STORAGE_ATTRIBUTE_MGMT");
 
     /**

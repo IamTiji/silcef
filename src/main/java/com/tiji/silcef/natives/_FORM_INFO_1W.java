@@ -29,9 +29,9 @@ public class _FORM_INFO_1W {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pName"),
         tagSIZE.layout().withName("Size"),
         _RECTL.layout().withName("ImageableArea")
     ).withName("_FORM_INFO_1W");

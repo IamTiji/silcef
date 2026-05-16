@@ -42,24 +42,24 @@ public class _DRIVER_INFO_6A {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("cVersion"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pName"),
-        cef_master_h.C_POINTER.withName("pEnvironment"),
-        cef_master_h.C_POINTER.withName("pDriverPath"),
-        cef_master_h.C_POINTER.withName("pDataFile"),
-        cef_master_h.C_POINTER.withName("pConfigFile"),
-        cef_master_h.C_POINTER.withName("pHelpFile"),
-        cef_master_h.C_POINTER.withName("pDependentFiles"),
-        cef_master_h.C_POINTER.withName("pMonitorName"),
-        cef_master_h.C_POINTER.withName("pDefaultDataType"),
-        cef_master_h.C_POINTER.withName("pszzPreviousNames"),
+        cef_render_handler_capi_h.C_POINTER.withName("pName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pEnvironment"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDriverPath"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDataFile"),
+        cef_render_handler_capi_h.C_POINTER.withName("pConfigFile"),
+        cef_render_handler_capi_h.C_POINTER.withName("pHelpFile"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDependentFiles"),
+        cef_render_handler_capi_h.C_POINTER.withName("pMonitorName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDefaultDataType"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszzPreviousNames"),
         _FILETIME.layout().withName("ftDriverDate"),
-        cef_master_h.C_LONG_LONG.withName("dwlDriverVersion"),
-        cef_master_h.C_POINTER.withName("pszMfgName"),
-        cef_master_h.C_POINTER.withName("pszOEMUrl"),
-        cef_master_h.C_POINTER.withName("pszHardwareID"),
-        cef_master_h.C_POINTER.withName("pszProvider")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwlDriverVersion"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszMfgName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszOEMUrl"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszHardwareID"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszProvider")
     ).withName("_DRIVER_INFO_6A");
 
     /**

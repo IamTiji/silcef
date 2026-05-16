@@ -30,11 +30,11 @@ public class MFT_ENUM_DATA_V1 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("StartFileReferenceNumber"),
-        cef_master_h.C_LONG_LONG.withName("LowUsn"),
-        cef_master_h.C_LONG_LONG.withName("HighUsn"),
-        cef_master_h.C_SHORT.withName("MinMajorVersion"),
-        cef_master_h.C_SHORT.withName("MaxMajorVersion"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("StartFileReferenceNumber"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LowUsn"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("HighUsn"),
+        cef_render_handler_capi_h.C_SHORT.withName("MinMajorVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("MaxMajorVersion"),
         MemoryLayout.paddingLayout(4)
     ).withName("$anon$11922:9");
 

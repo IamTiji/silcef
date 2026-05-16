@@ -26,7 +26,7 @@ public class _MENU_EVENT_RECORD {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("dwCommandId")
+        cef_render_handler_capi_h.C_INT.withName("dwCommandId")
     ).withName("_MENU_EVENT_RECORD");
 
     /**

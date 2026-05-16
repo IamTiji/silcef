@@ -36,15 +36,15 @@ public class _JOBOBJECT_BASIC_LIMIT_INFORMATION {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LARGE_INTEGER.layout().withName("PerProcessUserTimeLimit"),
         _LARGE_INTEGER.layout().withName("PerJobUserTimeLimit"),
-        cef_master_h.C_LONG.withName("LimitFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("LimitFlags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("MinimumWorkingSetSize"),
-        cef_master_h.C_LONG_LONG.withName("MaximumWorkingSetSize"),
-        cef_master_h.C_LONG.withName("ActiveProcessLimit"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MinimumWorkingSetSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaximumWorkingSetSize"),
+        cef_render_handler_capi_h.C_LONG.withName("ActiveProcessLimit"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("Affinity"),
-        cef_master_h.C_LONG.withName("PriorityClass"),
-        cef_master_h.C_LONG.withName("SchedulingClass")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Affinity"),
+        cef_render_handler_capi_h.C_LONG.withName("PriorityClass"),
+        cef_render_handler_capi_h.C_LONG.withName("SchedulingClass")
     ).withName("_JOBOBJECT_BASIC_LIMIT_INFORMATION");
 
     /**

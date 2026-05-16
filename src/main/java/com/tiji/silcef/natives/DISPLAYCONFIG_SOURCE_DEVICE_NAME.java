@@ -28,7 +28,7 @@ public class DISPLAYCONFIG_SOURCE_DEVICE_NAME {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         DISPLAYCONFIG_DEVICE_INFO_HEADER.layout().withName("header"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_SHORT).withName("viewGdiDeviceName")
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_SHORT).withName("viewGdiDeviceName")
     ).withName("DISPLAYCONFIG_SOURCE_DEVICE_NAME");
 
     /**

@@ -32,13 +32,13 @@ public class _STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("BytesPerCacheLine"),
-        cef_master_h.C_LONG.withName("BytesOffsetForCacheAlignment"),
-        cef_master_h.C_LONG.withName("BytesPerLogicalSector"),
-        cef_master_h.C_LONG.withName("BytesPerPhysicalSector"),
-        cef_master_h.C_LONG.withName("BytesOffsetForSectorAlignment")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("BytesPerCacheLine"),
+        cef_render_handler_capi_h.C_LONG.withName("BytesOffsetForCacheAlignment"),
+        cef_render_handler_capi_h.C_LONG.withName("BytesPerLogicalSector"),
+        cef_render_handler_capi_h.C_LONG.withName("BytesPerPhysicalSector"),
+        cef_render_handler_capi_h.C_LONG.withName("BytesOffsetForSectorAlignment")
     ).withName("_STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR");
 
     /**

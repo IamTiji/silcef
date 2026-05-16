@@ -27,9 +27,9 @@ public class PPM_THERMAL_POLICY_EVENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("Mode"),
+        cef_render_handler_capi_h.C_CHAR.withName("Mode"),
         MemoryLayout.paddingLayout(7),
-        cef_master_h.C_LONG_LONG.withName("Processors")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Processors")
     ).withName("$anon$19259:9");
 
     /**

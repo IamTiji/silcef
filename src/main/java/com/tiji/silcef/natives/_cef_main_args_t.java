@@ -26,7 +26,7 @@ public class _cef_main_args_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("instance")
+        cef_render_handler_capi_h.C_POINTER.withName("instance")
     ).withName("_cef_main_args_t");
 
     /**

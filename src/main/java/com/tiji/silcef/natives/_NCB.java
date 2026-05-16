@@ -40,24 +40,24 @@ public class _NCB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("ncb_command"),
-        cef_master_h.C_CHAR.withName("ncb_retcode"),
-        cef_master_h.C_CHAR.withName("ncb_lsn"),
-        cef_master_h.C_CHAR.withName("ncb_num"),
+        cef_render_handler_capi_h.C_CHAR.withName("ncb_command"),
+        cef_render_handler_capi_h.C_CHAR.withName("ncb_retcode"),
+        cef_render_handler_capi_h.C_CHAR.withName("ncb_lsn"),
+        cef_render_handler_capi_h.C_CHAR.withName("ncb_num"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("ncb_buffer"),
-        cef_master_h.C_SHORT.withName("ncb_length"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("ncb_callname"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("ncb_name"),
-        cef_master_h.C_CHAR.withName("ncb_rto"),
-        cef_master_h.C_CHAR.withName("ncb_sto"),
+        cef_render_handler_capi_h.C_POINTER.withName("ncb_buffer"),
+        cef_render_handler_capi_h.C_SHORT.withName("ncb_length"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("ncb_callname"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("ncb_name"),
+        cef_render_handler_capi_h.C_CHAR.withName("ncb_rto"),
+        cef_render_handler_capi_h.C_CHAR.withName("ncb_sto"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("ncb_post"),
-        cef_master_h.C_CHAR.withName("ncb_lana_num"),
-        cef_master_h.C_CHAR.withName("ncb_cmd_cplt"),
-        MemoryLayout.sequenceLayout(18, cef_master_h.C_CHAR).withName("ncb_reserve"),
+        cef_render_handler_capi_h.C_POINTER.withName("ncb_post"),
+        cef_render_handler_capi_h.C_CHAR.withName("ncb_lana_num"),
+        cef_render_handler_capi_h.C_CHAR.withName("ncb_cmd_cplt"),
+        MemoryLayout.sequenceLayout(18, cef_render_handler_capi_h.C_CHAR).withName("ncb_reserve"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("ncb_event")
+        cef_render_handler_capi_h.C_POINTER.withName("ncb_event")
     ).withName("_NCB");
 
     /**
@@ -592,7 +592,7 @@ public class _NCB {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -602,7 +602,7 @@ public class _NCB {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(ncb_post.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(ncb_post.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

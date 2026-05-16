@@ -26,7 +26,7 @@ public class _BCRYPT_PROVIDER_NAME {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszProviderName")
+        cef_render_handler_capi_h.C_POINTER.withName("pszProviderName")
     ).withName("_BCRYPT_PROVIDER_NAME");
 
     /**

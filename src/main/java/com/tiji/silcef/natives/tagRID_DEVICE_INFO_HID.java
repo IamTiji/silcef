@@ -30,11 +30,11 @@ public class tagRID_DEVICE_INFO_HID {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVendorId"),
-        cef_master_h.C_LONG.withName("dwProductId"),
-        cef_master_h.C_LONG.withName("dwVersionNumber"),
-        cef_master_h.C_SHORT.withName("usUsagePage"),
-        cef_master_h.C_SHORT.withName("usUsage")
+        cef_render_handler_capi_h.C_LONG.withName("dwVendorId"),
+        cef_render_handler_capi_h.C_LONG.withName("dwProductId"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersionNumber"),
+        cef_render_handler_capi_h.C_SHORT.withName("usUsagePage"),
+        cef_render_handler_capi_h.C_SHORT.withName("usUsage")
     ).withName("tagRID_DEVICE_INFO_HID");
 
     /**

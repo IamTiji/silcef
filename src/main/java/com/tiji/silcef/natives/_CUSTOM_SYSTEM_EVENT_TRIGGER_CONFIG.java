@@ -27,9 +27,9 @@ public class _CUSTOM_SYSTEM_EVENT_TRIGGER_CONFIG {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("TriggerId")
+        cef_render_handler_capi_h.C_POINTER.withName("TriggerId")
     ).withName("_CUSTOM_SYSTEM_EVENT_TRIGGER_CONFIG");
 
     /**

@@ -28,10 +28,10 @@ public class _PORT_INFO_3A {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwStatus"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStatus"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pszStatus"),
-        cef_master_h.C_LONG.withName("dwSeverity"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszStatus"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSeverity"),
         MemoryLayout.paddingLayout(4)
     ).withName("_PORT_INFO_3A");
 

@@ -29,10 +29,10 @@ public class _CERT_TEMPLATE_EXT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszObjId"),
-        cef_master_h.C_LONG.withName("dwMajorVersion"),
-        cef_master_h.C_INT.withName("fMinorVersion"),
-        cef_master_h.C_LONG.withName("dwMinorVersion"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszObjId"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMajorVersion"),
+        cef_render_handler_capi_h.C_INT.withName("fMinorVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMinorVersion"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CERT_TEMPLATE_EXT");
 

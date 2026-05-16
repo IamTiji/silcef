@@ -34,12 +34,12 @@ public class _STORAGE_OFFLOAD_TOKEN {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_CHAR).withName("TokenType"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("Reserved"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("TokenIdLength"),
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_CHAR).withName("TokenType"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("Reserved"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("TokenIdLength"),
         MemoryLayout.unionLayout(
             _STORAGE_OFFLOAD_TOKEN.StorageOffloadZeroDataToken.layout().withName("StorageOffloadZeroDataToken"),
-            MemoryLayout.sequenceLayout(504, cef_master_h.C_CHAR).withName("Token")
+            MemoryLayout.sequenceLayout(504, cef_render_handler_capi_h.C_CHAR).withName("Token")
         ).withName("$anon$3890:5")
     ).withName("_STORAGE_OFFLOAD_TOKEN");
 
@@ -295,7 +295,7 @@ public class _STORAGE_OFFLOAD_TOKEN {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            MemoryLayout.sequenceLayout(504, cef_master_h.C_CHAR).withName("Reserved2")
+            MemoryLayout.sequenceLayout(504, cef_render_handler_capi_h.C_CHAR).withName("Reserved2")
         ).withName("$anon$3891:9");
 
         /**

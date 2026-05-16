@@ -33,16 +33,16 @@ public class _CTL_CONTEXT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwMsgAndCertEncodingType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMsgAndCertEncodingType"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pbCtlEncoded"),
-        cef_master_h.C_LONG.withName("cbCtlEncoded"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbCtlEncoded"),
+        cef_render_handler_capi_h.C_LONG.withName("cbCtlEncoded"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pCtlInfo"),
-        cef_master_h.C_POINTER.withName("hCertStore"),
-        cef_master_h.C_POINTER.withName("hCryptMsg"),
-        cef_master_h.C_POINTER.withName("pbCtlContent"),
-        cef_master_h.C_LONG.withName("cbCtlContent"),
+        cef_render_handler_capi_h.C_POINTER.withName("pCtlInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("hCertStore"),
+        cef_render_handler_capi_h.C_POINTER.withName("hCryptMsg"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbCtlContent"),
+        cef_render_handler_capi_h.C_LONG.withName("cbCtlContent"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CTL_CONTEXT");
 

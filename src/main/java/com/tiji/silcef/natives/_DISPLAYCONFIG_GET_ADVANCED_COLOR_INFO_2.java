@@ -48,11 +48,11 @@ public class _DISPLAYCONFIG_GET_ADVANCED_COLOR_INFO_2 {
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$3217:9"),
-            cef_master_h.C_INT.withName("value")
+            cef_render_handler_capi_h.C_INT.withName("value")
         ).withName("$anon$3215:5"),
-        cef_master_h.C_INT.withName("colorEncoding"),
-        cef_master_h.C_INT.withName("bitsPerColorChannel"),
-        cef_master_h.C_INT.withName("activeColorMode")
+        cef_render_handler_capi_h.C_INT.withName("colorEncoding"),
+        cef_render_handler_capi_h.C_INT.withName("bitsPerColorChannel"),
+        cef_render_handler_capi_h.C_INT.withName("activeColorMode")
     ).withName("_DISPLAYCONFIG_GET_ADVANCED_COLOR_INFO_2");
 
     /**

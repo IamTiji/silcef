@@ -30,12 +30,12 @@ public class tagDELETEITEMSTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("CtlType"),
-        cef_master_h.C_INT.withName("CtlID"),
-        cef_master_h.C_INT.withName("itemID"),
+        cef_render_handler_capi_h.C_INT.withName("CtlType"),
+        cef_render_handler_capi_h.C_INT.withName("CtlID"),
+        cef_render_handler_capi_h.C_INT.withName("itemID"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hwndItem"),
-        cef_master_h.C_LONG_LONG.withName("itemData")
+        cef_render_handler_capi_h.C_POINTER.withName("hwndItem"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("itemData")
     ).withName("tagDELETEITEMSTRUCT");
 
     /**

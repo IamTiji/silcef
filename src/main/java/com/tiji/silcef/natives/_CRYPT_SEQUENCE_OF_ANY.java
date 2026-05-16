@@ -27,9 +27,9 @@ public class _CRYPT_SEQUENCE_OF_ANY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cValue"),
+        cef_render_handler_capi_h.C_LONG.withName("cValue"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgValue")
+        cef_render_handler_capi_h.C_POINTER.withName("rgValue")
     ).withName("_CRYPT_SEQUENCE_OF_ANY");
 
     /**

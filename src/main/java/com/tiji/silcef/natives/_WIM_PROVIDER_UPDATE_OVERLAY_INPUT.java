@@ -29,8 +29,8 @@ public class _WIM_PROVIDER_UPDATE_OVERLAY_INPUT {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LARGE_INTEGER.layout().withName("DataSourceId"),
-        cef_master_h.C_LONG.withName("WimFileNameOffset"),
-        cef_master_h.C_LONG.withName("WimFileNameLength")
+        cef_render_handler_capi_h.C_LONG.withName("WimFileNameOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("WimFileNameLength")
     ).withName("_WIM_PROVIDER_UPDATE_OVERLAY_INPUT");
 
     /**

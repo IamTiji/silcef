@@ -29,10 +29,10 @@ public class __NCRYPT_SUPPORTED_LENGTHS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwMinLength"),
-        cef_master_h.C_LONG.withName("dwMaxLength"),
-        cef_master_h.C_LONG.withName("dwIncrement"),
-        cef_master_h.C_LONG.withName("dwDefaultLength")
+        cef_render_handler_capi_h.C_LONG.withName("dwMinLength"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMaxLength"),
+        cef_render_handler_capi_h.C_LONG.withName("dwIncrement"),
+        cef_render_handler_capi_h.C_LONG.withName("dwDefaultLength")
     ).withName("__NCRYPT_SUPPORTED_LENGTHS");
 
     /**

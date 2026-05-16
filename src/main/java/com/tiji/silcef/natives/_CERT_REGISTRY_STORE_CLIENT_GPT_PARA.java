@@ -27,8 +27,8 @@ public class _CERT_REGISTRY_STORE_CLIENT_GPT_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hKeyBase"),
-        cef_master_h.C_POINTER.withName("pwszRegPath")
+        cef_render_handler_capi_h.C_POINTER.withName("hKeyBase"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszRegPath")
     ).withName("_CERT_REGISTRY_STORE_CLIENT_GPT_PARA");
 
     /**

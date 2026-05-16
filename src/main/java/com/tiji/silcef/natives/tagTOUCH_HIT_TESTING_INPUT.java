@@ -30,11 +30,11 @@ public class tagTOUCH_HIT_TESTING_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("pointerId"),
+        cef_render_handler_capi_h.C_INT.withName("pointerId"),
         tagPOINT.layout().withName("point"),
         tagRECT.layout().withName("boundingBox"),
         tagRECT.layout().withName("nonOccludedBoundingBox"),
-        cef_master_h.C_INT.withName("orientation")
+        cef_render_handler_capi_h.C_INT.withName("orientation")
     ).withName("tagTOUCH_HIT_TESTING_INPUT");
 
     /**

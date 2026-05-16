@@ -27,8 +27,8 @@ public class _XSTATE_FEATURE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Offset"),
-        cef_master_h.C_LONG.withName("Size")
+        cef_render_handler_capi_h.C_LONG.withName("Offset"),
+        cef_render_handler_capi_h.C_LONG.withName("Size")
     ).withName("_XSTATE_FEATURE");
 
     /**

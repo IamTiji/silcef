@@ -27,8 +27,8 @@ public class _CRYPT_ENROLLMENT_NAME_VALUE_PAIR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pwszName"),
-        cef_master_h.C_POINTER.withName("pwszValue")
+        cef_render_handler_capi_h.C_POINTER.withName("pwszName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszValue")
     ).withName("_CRYPT_ENROLLMENT_NAME_VALUE_PAIR");
 
     /**

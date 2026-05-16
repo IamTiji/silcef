@@ -28,9 +28,9 @@ public class RPC_IMPORT_CONTEXT_P {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("LookupContext"),
-        cef_master_h.C_POINTER.withName("ProposedHandle"),
-        cef_master_h.C_POINTER.withName("Bindings")
+        cef_render_handler_capi_h.C_POINTER.withName("LookupContext"),
+        cef_render_handler_capi_h.C_POINTER.withName("ProposedHandle"),
+        cef_render_handler_capi_h.C_POINTER.withName("Bindings")
     ).withName("$anon$32:9");
 
     /**

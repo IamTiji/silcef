@@ -38,19 +38,19 @@ public class _STORAGE_DEVICE_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_CHAR.withName("DeviceType"),
-        cef_master_h.C_CHAR.withName("DeviceTypeModifier"),
-        cef_master_h.C_CHAR.withName("RemovableMedia"),
-        cef_master_h.C_CHAR.withName("CommandQueueing"),
-        cef_master_h.C_LONG.withName("VendorIdOffset"),
-        cef_master_h.C_LONG.withName("ProductIdOffset"),
-        cef_master_h.C_LONG.withName("ProductRevisionOffset"),
-        cef_master_h.C_LONG.withName("SerialNumberOffset"),
-        cef_master_h.C_INT.withName("BusType"),
-        cef_master_h.C_LONG.withName("RawPropertiesLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("RawDeviceProperties"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_CHAR.withName("DeviceType"),
+        cef_render_handler_capi_h.C_CHAR.withName("DeviceTypeModifier"),
+        cef_render_handler_capi_h.C_CHAR.withName("RemovableMedia"),
+        cef_render_handler_capi_h.C_CHAR.withName("CommandQueueing"),
+        cef_render_handler_capi_h.C_LONG.withName("VendorIdOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("ProductIdOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("ProductRevisionOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("SerialNumberOffset"),
+        cef_render_handler_capi_h.C_INT.withName("BusType"),
+        cef_render_handler_capi_h.C_LONG.withName("RawPropertiesLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("RawDeviceProperties"),
         MemoryLayout.paddingLayout(3)
     ).withName("_STORAGE_DEVICE_DESCRIPTOR");
 

@@ -28,9 +28,9 @@ public class _JOBOBJECT_BASIC_PROCESS_ID_LIST {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NumberOfAssignedProcesses"),
-        cef_master_h.C_LONG.withName("NumberOfProcessIdsInList"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG_LONG).withName("ProcessIdList")
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfAssignedProcesses"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfProcessIdsInList"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG_LONG).withName("ProcessIdList")
     ).withName("_JOBOBJECT_BASIC_PROCESS_ID_LIST");
 
     /**

@@ -31,12 +31,12 @@ public class _DISPLAY_DEVICEA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cb"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("DeviceName"),
-        MemoryLayout.sequenceLayout(128, cef_master_h.C_CHAR).withName("DeviceString"),
-        cef_master_h.C_LONG.withName("StateFlags"),
-        MemoryLayout.sequenceLayout(128, cef_master_h.C_CHAR).withName("DeviceID"),
-        MemoryLayout.sequenceLayout(128, cef_master_h.C_CHAR).withName("DeviceKey")
+        cef_render_handler_capi_h.C_LONG.withName("cb"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("DeviceName"),
+        MemoryLayout.sequenceLayout(128, cef_render_handler_capi_h.C_CHAR).withName("DeviceString"),
+        cef_render_handler_capi_h.C_LONG.withName("StateFlags"),
+        MemoryLayout.sequenceLayout(128, cef_render_handler_capi_h.C_CHAR).withName("DeviceID"),
+        MemoryLayout.sequenceLayout(128, cef_render_handler_capi_h.C_CHAR).withName("DeviceKey")
     ).withName("_DISPLAY_DEVICEA");
 
     /**

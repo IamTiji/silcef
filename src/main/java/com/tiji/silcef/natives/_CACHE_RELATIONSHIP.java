@@ -36,13 +36,13 @@ public class _CACHE_RELATIONSHIP {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("Level"),
-        cef_master_h.C_CHAR.withName("Associativity"),
-        cef_master_h.C_SHORT.withName("LineSize"),
-        cef_master_h.C_LONG.withName("CacheSize"),
-        cef_master_h.C_INT.withName("Type"),
-        MemoryLayout.sequenceLayout(18, cef_master_h.C_CHAR).withName("Reserved"),
-        cef_master_h.C_SHORT.withName("GroupCount"),
+        cef_render_handler_capi_h.C_CHAR.withName("Level"),
+        cef_render_handler_capi_h.C_CHAR.withName("Associativity"),
+        cef_render_handler_capi_h.C_SHORT.withName("LineSize"),
+        cef_render_handler_capi_h.C_LONG.withName("CacheSize"),
+        cef_render_handler_capi_h.C_INT.withName("Type"),
+        MemoryLayout.sequenceLayout(18, cef_render_handler_capi_h.C_CHAR).withName("Reserved"),
+        cef_render_handler_capi_h.C_SHORT.withName("GroupCount"),
         MemoryLayout.unionLayout(
             _GROUP_AFFINITY.layout().withName("GroupMask"),
             MemoryLayout.sequenceLayout(1, _GROUP_AFFINITY.layout()).withName("GroupMasks")

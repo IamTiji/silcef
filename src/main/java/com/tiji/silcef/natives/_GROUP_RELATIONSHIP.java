@@ -29,9 +29,9 @@ public class _GROUP_RELATIONSHIP {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("MaximumGroupCount"),
-        cef_master_h.C_SHORT.withName("ActiveGroupCount"),
-        MemoryLayout.sequenceLayout(20, cef_master_h.C_CHAR).withName("Reserved"),
+        cef_render_handler_capi_h.C_SHORT.withName("MaximumGroupCount"),
+        cef_render_handler_capi_h.C_SHORT.withName("ActiveGroupCount"),
+        MemoryLayout.sequenceLayout(20, cef_render_handler_capi_h.C_CHAR).withName("Reserved"),
         MemoryLayout.sequenceLayout(1, _PROCESSOR_GROUP_INFO.layout()).withName("GroupInfo")
     ).withName("_GROUP_RELATIONSHIP");
 

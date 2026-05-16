@@ -29,10 +29,10 @@ public class joyinfo_tag {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_INT, 1).withName("wXpos"),
-        cef_master_h.align(cef_master_h.C_INT, 1).withName("wYpos"),
-        cef_master_h.align(cef_master_h.C_INT, 1).withName("wZpos"),
-        cef_master_h.align(cef_master_h.C_INT, 1).withName("wButtons")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_INT, 1).withName("wXpos"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_INT, 1).withName("wYpos"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_INT, 1).withName("wZpos"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_INT, 1).withName("wButtons")
     ).withName("joyinfo_tag");
 
     /**

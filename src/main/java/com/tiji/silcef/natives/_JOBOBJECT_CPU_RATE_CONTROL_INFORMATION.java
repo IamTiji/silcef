@@ -34,13 +34,13 @@ public class _JOBOBJECT_CPU_RATE_CONTROL_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ControlFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("ControlFlags"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("CpuRate"),
-            cef_master_h.C_LONG.withName("Weight"),
+            cef_render_handler_capi_h.C_LONG.withName("CpuRate"),
+            cef_render_handler_capi_h.C_LONG.withName("Weight"),
             MemoryLayout.structLayout(
-                cef_master_h.C_SHORT.withName("MinRate"),
-                cef_master_h.C_SHORT.withName("MaxRate")
+                cef_render_handler_capi_h.C_SHORT.withName("MinRate"),
+                cef_render_handler_capi_h.C_SHORT.withName("MaxRate")
             ).withName("$anon$13522:9")
         ).withName("$anon$13519:5")
     ).withName("_JOBOBJECT_CPU_RATE_CONTROL_INFORMATION");

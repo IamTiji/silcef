@@ -30,11 +30,11 @@ public class _SERVICE_NOTIFY_1 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pfnNotifyCallback"),
-        cef_master_h.C_POINTER.withName("pContext"),
-        cef_master_h.C_LONG.withName("dwNotificationStatus"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnNotifyCallback"),
+        cef_render_handler_capi_h.C_POINTER.withName("pContext"),
+        cef_render_handler_capi_h.C_LONG.withName("dwNotificationStatus"),
         _SERVICE_STATUS_PROCESS.layout().withName("ServiceStatus")
     ).withName("_SERVICE_NOTIFY_1");
 

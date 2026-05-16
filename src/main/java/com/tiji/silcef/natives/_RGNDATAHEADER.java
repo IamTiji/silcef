@@ -30,10 +30,10 @@ public class _RGNDATAHEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSize"),
-        cef_master_h.C_LONG.withName("iType"),
-        cef_master_h.C_LONG.withName("nCount"),
-        cef_master_h.C_LONG.withName("nRgnSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSize"),
+        cef_render_handler_capi_h.C_LONG.withName("iType"),
+        cef_render_handler_capi_h.C_LONG.withName("nCount"),
+        cef_render_handler_capi_h.C_LONG.withName("nRgnSize"),
         tagRECT.layout().withName("rcBound")
     ).withName("_RGNDATAHEADER");
 

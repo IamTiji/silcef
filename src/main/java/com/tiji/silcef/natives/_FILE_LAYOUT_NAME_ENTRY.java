@@ -31,12 +31,12 @@ public class _FILE_LAYOUT_NAME_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NextNameOffset"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG_LONG.withName("ParentFileReferenceNumber"),
-        cef_master_h.C_LONG.withName("FileNameLength"),
-        cef_master_h.C_LONG.withName("Reserved"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("FileName"),
+        cef_render_handler_capi_h.C_LONG.withName("NextNameOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ParentFileReferenceNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("FileNameLength"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("FileName"),
         MemoryLayout.paddingLayout(6)
     ).withName("_FILE_LAYOUT_NAME_ENTRY");
 

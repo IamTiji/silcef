@@ -31,7 +31,7 @@ public final class PROC {
     }
 
     private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-        cef_master_h.C_LONG_LONG);
+        cef_render_handler_capi_h.C_LONG_LONG);
 
     /**
      * The descriptor of this function pointer
@@ -40,7 +40,7 @@ public final class PROC {
         return $DESC;
     }
 
-    private static final MethodHandle UP$MH = cef_master_h.upcallHandle(PROC.Function.class, "apply", $DESC);
+    private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(PROC.Function.class, "apply", $DESC);
 
     /**
      * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

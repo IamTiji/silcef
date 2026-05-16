@@ -28,9 +28,9 @@ public class tagBINDPTR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-        cef_master_h.C_POINTER.withName("lpfuncdesc"),
-        cef_master_h.C_POINTER.withName("lpvardesc"),
-        cef_master_h.C_POINTER.withName("lptcomp")
+        cef_render_handler_capi_h.C_POINTER.withName("lpfuncdesc"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpvardesc"),
+        cef_render_handler_capi_h.C_POINTER.withName("lptcomp")
     ).withName("tagBINDPTR");
 
     /**

@@ -38,19 +38,19 @@ public class _FILEMUIINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSize"),
-        cef_master_h.C_LONG.withName("dwVersion"),
-        cef_master_h.C_LONG.withName("dwFileType"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("pChecksum"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("pServiceChecksum"),
-        cef_master_h.C_LONG.withName("dwLanguageNameOffset"),
-        cef_master_h.C_LONG.withName("dwTypeIDMainSize"),
-        cef_master_h.C_LONG.withName("dwTypeIDMainOffset"),
-        cef_master_h.C_LONG.withName("dwTypeNameMainOffset"),
-        cef_master_h.C_LONG.withName("dwTypeIDMUISize"),
-        cef_master_h.C_LONG.withName("dwTypeIDMUIOffset"),
-        cef_master_h.C_LONG.withName("dwTypeNameMUIOffset"),
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_CHAR).withName("abBuffer")
+        cef_render_handler_capi_h.C_LONG.withName("dwSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFileType"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("pChecksum"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("pServiceChecksum"),
+        cef_render_handler_capi_h.C_LONG.withName("dwLanguageNameOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTypeIDMainSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTypeIDMainOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTypeNameMainOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTypeIDMUISize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTypeIDMUIOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTypeNameMUIOffset"),
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_CHAR).withName("abBuffer")
     ).withName("_FILEMUIINFO");
 
     /**

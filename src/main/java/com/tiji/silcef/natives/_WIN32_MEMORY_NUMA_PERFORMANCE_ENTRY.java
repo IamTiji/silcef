@@ -35,13 +35,13 @@ public class _WIN32_MEMORY_NUMA_PERFORMANCE_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("InitiatorNodeNumber"),
-        cef_master_h.C_LONG.withName("TargetNodeNumber"),
-        cef_master_h.C_CHAR.withName("DataType"),
+        cef_render_handler_capi_h.C_LONG.withName("InitiatorNodeNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("TargetNodeNumber"),
+        cef_render_handler_capi_h.C_CHAR.withName("DataType"),
         _WIN32_MEMORY_NUMA_PERFORMANCE_ENTRY.Flags.layout().withName("Flags"),
         MemoryLayout.paddingLayout(6),
-        cef_master_h.C_LONG_LONG.withName("MinTransferSizeInBytes"),
-        cef_master_h.C_LONG_LONG.withName("EntryValue")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MinTransferSizeInBytes"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("EntryValue")
     ).withName("_WIN32_MEMORY_NUMA_PERFORMANCE_ENTRY");
 
     /**

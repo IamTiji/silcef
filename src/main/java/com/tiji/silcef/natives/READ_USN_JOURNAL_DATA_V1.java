@@ -33,14 +33,14 @@ public class READ_USN_JOURNAL_DATA_V1 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("StartUsn"),
-        cef_master_h.C_LONG.withName("ReasonMask"),
-        cef_master_h.C_LONG.withName("ReturnOnlyOnClose"),
-        cef_master_h.C_LONG_LONG.withName("Timeout"),
-        cef_master_h.C_LONG_LONG.withName("BytesToWaitFor"),
-        cef_master_h.C_LONG_LONG.withName("UsnJournalID"),
-        cef_master_h.C_SHORT.withName("MinMajorVersion"),
-        cef_master_h.C_SHORT.withName("MaxMajorVersion"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("StartUsn"),
+        cef_render_handler_capi_h.C_LONG.withName("ReasonMask"),
+        cef_render_handler_capi_h.C_LONG.withName("ReturnOnlyOnClose"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Timeout"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("BytesToWaitFor"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("UsnJournalID"),
+        cef_render_handler_capi_h.C_SHORT.withName("MinMajorVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("MaxMajorVersion"),
         MemoryLayout.paddingLayout(4)
     ).withName("$anon$11987:9");
 

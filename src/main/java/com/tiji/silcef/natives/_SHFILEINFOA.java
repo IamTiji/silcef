@@ -30,11 +30,11 @@ public class _SHFILEINFOA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hIcon"),
-        cef_master_h.C_INT.withName("iIcon"),
-        cef_master_h.C_LONG.withName("dwAttributes"),
-        MemoryLayout.sequenceLayout(260, cef_master_h.C_CHAR).withName("szDisplayName"),
-        MemoryLayout.sequenceLayout(80, cef_master_h.C_CHAR).withName("szTypeName"),
+        cef_render_handler_capi_h.C_POINTER.withName("hIcon"),
+        cef_render_handler_capi_h.C_INT.withName("iIcon"),
+        cef_render_handler_capi_h.C_LONG.withName("dwAttributes"),
+        MemoryLayout.sequenceLayout(260, cef_render_handler_capi_h.C_CHAR).withName("szDisplayName"),
+        MemoryLayout.sequenceLayout(80, cef_render_handler_capi_h.C_CHAR).withName("szTypeName"),
         MemoryLayout.paddingLayout(4)
     ).withName("_SHFILEINFOA");
 

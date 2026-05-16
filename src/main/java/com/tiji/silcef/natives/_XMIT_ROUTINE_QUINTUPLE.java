@@ -29,10 +29,10 @@ public class _XMIT_ROUTINE_QUINTUPLE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pfnTranslateToXmit"),
-        cef_master_h.C_POINTER.withName("pfnTranslateFromXmit"),
-        cef_master_h.C_POINTER.withName("pfnFreeXmit"),
-        cef_master_h.C_POINTER.withName("pfnFreeInst")
+        cef_render_handler_capi_h.C_POINTER.withName("pfnTranslateToXmit"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnTranslateFromXmit"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnFreeXmit"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnFreeInst")
     ).withName("_XMIT_ROUTINE_QUINTUPLE");
 
     /**

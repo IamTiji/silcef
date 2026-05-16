@@ -33,16 +33,16 @@ public class tagCOMPAREITEMSTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("CtlType"),
-        cef_master_h.C_INT.withName("CtlID"),
-        cef_master_h.C_POINTER.withName("hwndItem"),
-        cef_master_h.C_INT.withName("itemID1"),
+        cef_render_handler_capi_h.C_INT.withName("CtlType"),
+        cef_render_handler_capi_h.C_INT.withName("CtlID"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndItem"),
+        cef_render_handler_capi_h.C_INT.withName("itemID1"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("itemData1"),
-        cef_master_h.C_INT.withName("itemID2"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("itemData1"),
+        cef_render_handler_capi_h.C_INT.withName("itemID2"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("itemData2"),
-        cef_master_h.C_LONG.withName("dwLocaleId"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("itemData2"),
+        cef_render_handler_capi_h.C_LONG.withName("dwLocaleId"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagCOMPAREITEMSTRUCT");
 

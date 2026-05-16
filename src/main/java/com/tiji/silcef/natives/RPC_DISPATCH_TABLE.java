@@ -28,10 +28,10 @@ public class RPC_DISPATCH_TABLE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("DispatchTableCount"),
+        cef_render_handler_capi_h.C_INT.withName("DispatchTableCount"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("DispatchTable"),
-        cef_master_h.C_LONG_LONG.withName("Reserved")
+        cef_render_handler_capi_h.C_POINTER.withName("DispatchTable"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Reserved")
     ).withName("$anon$187:9");
 
     /**

@@ -39,9 +39,9 @@ public class _DEBUG_EVENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwDebugEventCode"),
-        cef_master_h.C_LONG.withName("dwProcessId"),
-        cef_master_h.C_LONG.withName("dwThreadId"),
+        cef_render_handler_capi_h.C_LONG.withName("dwDebugEventCode"),
+        cef_render_handler_capi_h.C_LONG.withName("dwProcessId"),
+        cef_render_handler_capi_h.C_LONG.withName("dwThreadId"),
         MemoryLayout.paddingLayout(4),
         _DEBUG_EVENT.u.layout().withName("u")
     ).withName("_DEBUG_EVENT");

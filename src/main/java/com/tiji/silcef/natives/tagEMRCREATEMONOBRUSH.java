@@ -33,12 +33,12 @@ public class tagEMRCREATEMONOBRUSH {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
-        cef_master_h.C_LONG.withName("ihBrush"),
-        cef_master_h.C_LONG.withName("iUsage"),
-        cef_master_h.C_LONG.withName("offBmi"),
-        cef_master_h.C_LONG.withName("cbBmi"),
-        cef_master_h.C_LONG.withName("offBits"),
-        cef_master_h.C_LONG.withName("cbBits")
+        cef_render_handler_capi_h.C_LONG.withName("ihBrush"),
+        cef_render_handler_capi_h.C_LONG.withName("iUsage"),
+        cef_render_handler_capi_h.C_LONG.withName("offBmi"),
+        cef_render_handler_capi_h.C_LONG.withName("cbBmi"),
+        cef_render_handler_capi_h.C_LONG.withName("offBits"),
+        cef_render_handler_capi_h.C_LONG.withName("cbBits")
     ).withName("tagEMRCREATEMONOBRUSH");
 
     /**

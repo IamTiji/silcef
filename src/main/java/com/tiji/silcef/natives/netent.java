@@ -29,11 +29,11 @@ public class netent {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("n_name"),
-        cef_master_h.C_POINTER.withName("n_aliases"),
-        cef_master_h.C_SHORT.withName("n_addrtype"),
+        cef_render_handler_capi_h.C_POINTER.withName("n_name"),
+        cef_render_handler_capi_h.C_POINTER.withName("n_aliases"),
+        cef_render_handler_capi_h.C_SHORT.withName("n_addrtype"),
         MemoryLayout.paddingLayout(2),
-        cef_master_h.C_LONG.withName("n_net")
+        cef_render_handler_capi_h.C_LONG.withName("n_net")
     ).withName("netent");
 
     /**

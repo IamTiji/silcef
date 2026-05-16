@@ -28,10 +28,10 @@ public class _SERVICE_TRIGGER_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cTriggers"),
+        cef_render_handler_capi_h.C_LONG.withName("cTriggers"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pTriggers"),
-        cef_master_h.C_POINTER.withName("pReserved")
+        cef_render_handler_capi_h.C_POINTER.withName("pTriggers"),
+        cef_render_handler_capi_h.C_POINTER.withName("pReserved")
     ).withName("_SERVICE_TRIGGER_INFO");
 
     /**

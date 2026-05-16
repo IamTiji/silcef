@@ -27,8 +27,8 @@ public class _POWER_SESSION_TIMEOUTS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("InputTimeout"),
-        cef_master_h.C_LONG.withName("DisplayTimeout")
+        cef_render_handler_capi_h.C_LONG.withName("InputTimeout"),
+        cef_render_handler_capi_h.C_LONG.withName("DisplayTimeout")
     ).withName("_POWER_SESSION_TIMEOUTS");
 
     /**

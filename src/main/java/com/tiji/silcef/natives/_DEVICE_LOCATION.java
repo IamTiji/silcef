@@ -39,18 +39,18 @@ public class _DEVICE_LOCATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Socket"),
-        cef_master_h.C_LONG.withName("Slot"),
-        cef_master_h.C_LONG.withName("Adapter"),
-        cef_master_h.C_LONG.withName("Port"),
+        cef_render_handler_capi_h.C_LONG.withName("Socket"),
+        cef_render_handler_capi_h.C_LONG.withName("Slot"),
+        cef_render_handler_capi_h.C_LONG.withName("Adapter"),
+        cef_render_handler_capi_h.C_LONG.withName("Port"),
         MemoryLayout.unionLayout(
             MemoryLayout.structLayout(
-                cef_master_h.C_LONG.withName("Channel"),
-                cef_master_h.C_LONG.withName("Device")
+                cef_render_handler_capi_h.C_LONG.withName("Channel"),
+                cef_render_handler_capi_h.C_LONG.withName("Device")
             ).withName("$anon$3369:9"),
             MemoryLayout.structLayout(
-                cef_master_h.C_LONG.withName("Target"),
-                cef_master_h.C_LONG.withName("Lun")
+                cef_render_handler_capi_h.C_LONG.withName("Target"),
+                cef_render_handler_capi_h.C_LONG.withName("Lun")
             ).withName("$anon$3377:9")
         ).withName("$anon$3367:5")
     ).withName("_DEVICE_LOCATION");

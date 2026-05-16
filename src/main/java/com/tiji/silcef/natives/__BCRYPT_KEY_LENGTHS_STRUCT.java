@@ -28,9 +28,9 @@ public class __BCRYPT_KEY_LENGTHS_STRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwMinLength"),
-        cef_master_h.C_LONG.withName("dwMaxLength"),
-        cef_master_h.C_LONG.withName("dwIncrement")
+        cef_render_handler_capi_h.C_LONG.withName("dwMinLength"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMaxLength"),
+        cef_render_handler_capi_h.C_LONG.withName("dwIncrement")
     ).withName("__BCRYPT_KEY_LENGTHS_STRUCT");
 
     /**

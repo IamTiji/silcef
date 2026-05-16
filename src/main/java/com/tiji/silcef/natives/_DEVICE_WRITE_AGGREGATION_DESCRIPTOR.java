@@ -28,9 +28,9 @@ public class _DEVICE_WRITE_AGGREGATION_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_CHAR.withName("BenefitsFromWriteAggregation"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_CHAR.withName("BenefitsFromWriteAggregation"),
         MemoryLayout.paddingLayout(3)
     ).withName("_DEVICE_WRITE_AGGREGATION_DESCRIPTOR");
 

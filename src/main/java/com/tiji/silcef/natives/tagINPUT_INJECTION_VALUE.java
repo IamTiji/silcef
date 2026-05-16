@@ -29,10 +29,10 @@ public class tagINPUT_INJECTION_VALUE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("page"),
-        cef_master_h.C_SHORT.withName("usage"),
-        cef_master_h.C_INT.withName("value"),
-        cef_master_h.C_SHORT.withName("index"),
+        cef_render_handler_capi_h.C_SHORT.withName("page"),
+        cef_render_handler_capi_h.C_SHORT.withName("usage"),
+        cef_render_handler_capi_h.C_INT.withName("value"),
+        cef_render_handler_capi_h.C_SHORT.withName("index"),
         MemoryLayout.paddingLayout(2)
     ).withName("tagINPUT_INJECTION_VALUE");
 

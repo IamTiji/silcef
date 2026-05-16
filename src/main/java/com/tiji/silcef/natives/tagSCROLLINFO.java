@@ -32,13 +32,13 @@ public class tagSCROLLINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_INT.withName("fMask"),
-        cef_master_h.C_INT.withName("nMin"),
-        cef_master_h.C_INT.withName("nMax"),
-        cef_master_h.C_INT.withName("nPage"),
-        cef_master_h.C_INT.withName("nPos"),
-        cef_master_h.C_INT.withName("nTrackPos")
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("fMask"),
+        cef_render_handler_capi_h.C_INT.withName("nMin"),
+        cef_render_handler_capi_h.C_INT.withName("nMax"),
+        cef_render_handler_capi_h.C_INT.withName("nPage"),
+        cef_render_handler_capi_h.C_INT.withName("nPos"),
+        cef_render_handler_capi_h.C_INT.withName("nTrackPos")
     ).withName("tagSCROLLINFO");
 
     /**

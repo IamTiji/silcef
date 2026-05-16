@@ -26,7 +26,7 @@ public class _JOBOBJECT_JOBSET_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("MemberLevel")
+        cef_render_handler_capi_h.C_LONG.withName("MemberLevel")
     ).withName("_JOBOBJECT_JOBSET_INFORMATION");
 
     /**

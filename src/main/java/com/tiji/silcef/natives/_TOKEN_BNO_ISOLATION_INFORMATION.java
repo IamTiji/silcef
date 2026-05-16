@@ -27,8 +27,8 @@ public class _TOKEN_BNO_ISOLATION_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("IsolationPrefix"),
-        cef_master_h.C_CHAR.withName("IsolationEnabled"),
+        cef_render_handler_capi_h.C_POINTER.withName("IsolationPrefix"),
+        cef_render_handler_capi_h.C_CHAR.withName("IsolationEnabled"),
         MemoryLayout.paddingLayout(7)
     ).withName("_TOKEN_BNO_ISOLATION_INFORMATION");
 

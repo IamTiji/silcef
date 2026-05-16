@@ -33,14 +33,14 @@ public class _SYSTEMTIME {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("wYear"),
-        cef_master_h.C_SHORT.withName("wMonth"),
-        cef_master_h.C_SHORT.withName("wDayOfWeek"),
-        cef_master_h.C_SHORT.withName("wDay"),
-        cef_master_h.C_SHORT.withName("wHour"),
-        cef_master_h.C_SHORT.withName("wMinute"),
-        cef_master_h.C_SHORT.withName("wSecond"),
-        cef_master_h.C_SHORT.withName("wMilliseconds")
+        cef_render_handler_capi_h.C_SHORT.withName("wYear"),
+        cef_render_handler_capi_h.C_SHORT.withName("wMonth"),
+        cef_render_handler_capi_h.C_SHORT.withName("wDayOfWeek"),
+        cef_render_handler_capi_h.C_SHORT.withName("wDay"),
+        cef_render_handler_capi_h.C_SHORT.withName("wHour"),
+        cef_render_handler_capi_h.C_SHORT.withName("wMinute"),
+        cef_render_handler_capi_h.C_SHORT.withName("wSecond"),
+        cef_render_handler_capi_h.C_SHORT.withName("wMilliseconds")
     ).withName("_SYSTEMTIME");
 
     /**

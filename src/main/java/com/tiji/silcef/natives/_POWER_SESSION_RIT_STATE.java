@@ -27,9 +27,9 @@ public class _POWER_SESSION_RIT_STATE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("Active"),
+        cef_render_handler_capi_h.C_CHAR.withName("Active"),
         MemoryLayout.paddingLayout(7),
-        cef_master_h.C_LONG_LONG.withName("LastInputTime")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LastInputTime")
     ).withName("_POWER_SESSION_RIT_STATE");
 
     /**

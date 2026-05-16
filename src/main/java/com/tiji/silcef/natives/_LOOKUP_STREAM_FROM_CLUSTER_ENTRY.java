@@ -30,11 +30,11 @@ public class _LOOKUP_STREAM_FROM_CLUSTER_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("OffsetToNext"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("OffsetToNext"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         _LARGE_INTEGER.layout().withName("Reserved"),
         _LARGE_INTEGER.layout().withName("Cluster"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("FileName"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("FileName"),
         MemoryLayout.paddingLayout(6)
     ).withName("_LOOKUP_STREAM_FROM_CLUSTER_ENTRY");
 

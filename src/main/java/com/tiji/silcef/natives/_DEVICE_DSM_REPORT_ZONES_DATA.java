@@ -30,10 +30,10 @@ public class _DEVICE_DSM_REPORT_ZONES_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("ZoneCount"),
-        cef_master_h.C_INT.withName("Attributes"),
-        cef_master_h.C_LONG.withName("Reserved0"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("ZoneCount"),
+        cef_render_handler_capi_h.C_INT.withName("Attributes"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved0"),
         MemoryLayout.sequenceLayout(1, _STORAGE_ZONE_DESCRIPTOR.layout()).withName("ZoneDescriptors")
     ).withName("_DEVICE_DSM_REPORT_ZONES_DATA");
 

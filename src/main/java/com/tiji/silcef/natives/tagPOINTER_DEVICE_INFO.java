@@ -32,15 +32,15 @@ public class tagPOINTER_DEVICE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("displayOrientation"),
+        cef_render_handler_capi_h.C_LONG.withName("displayOrientation"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("device"),
-        cef_master_h.C_INT.withName("pointerDeviceType"),
+        cef_render_handler_capi_h.C_POINTER.withName("device"),
+        cef_render_handler_capi_h.C_INT.withName("pointerDeviceType"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("monitor"),
-        cef_master_h.C_LONG.withName("startingCursorId"),
-        cef_master_h.C_SHORT.withName("maxActiveContacts"),
-        MemoryLayout.sequenceLayout(520, cef_master_h.C_SHORT).withName("productString"),
+        cef_render_handler_capi_h.C_POINTER.withName("monitor"),
+        cef_render_handler_capi_h.C_LONG.withName("startingCursorId"),
+        cef_render_handler_capi_h.C_SHORT.withName("maxActiveContacts"),
+        MemoryLayout.sequenceLayout(520, cef_render_handler_capi_h.C_SHORT).withName("productString"),
         MemoryLayout.paddingLayout(2)
     ).withName("tagPOINTER_DEVICE_INFO");
 

@@ -34,8 +34,8 @@ public class _DEVICEDUMP_STORAGEDEVICE_DATA {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _DEVICEDUMP_STRUCTURE_VERSION.layout().withName("Descriptor"),
         _DEVICEDUMP_SECTION_HEADER.layout().withName("SectionHeader"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwBufferSize"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwReasonForCollection"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwBufferSize"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwReasonForCollection"),
         _DEVICEDUMP_SUBSECTION_POINTER.layout().withName("PublicData"),
         _DEVICEDUMP_SUBSECTION_POINTER.layout().withName("RestrictedData"),
         _DEVICEDUMP_SUBSECTION_POINTER.layout().withName("PrivateData")

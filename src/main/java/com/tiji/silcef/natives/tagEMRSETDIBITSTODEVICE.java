@@ -42,19 +42,19 @@ public class tagEMRSETDIBITSTODEVICE {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
         _RECTL.layout().withName("rclBounds"),
-        cef_master_h.C_LONG.withName("xDest"),
-        cef_master_h.C_LONG.withName("yDest"),
-        cef_master_h.C_LONG.withName("xSrc"),
-        cef_master_h.C_LONG.withName("ySrc"),
-        cef_master_h.C_LONG.withName("cxSrc"),
-        cef_master_h.C_LONG.withName("cySrc"),
-        cef_master_h.C_LONG.withName("offBmiSrc"),
-        cef_master_h.C_LONG.withName("cbBmiSrc"),
-        cef_master_h.C_LONG.withName("offBitsSrc"),
-        cef_master_h.C_LONG.withName("cbBitsSrc"),
-        cef_master_h.C_LONG.withName("iUsageSrc"),
-        cef_master_h.C_LONG.withName("iStartScan"),
-        cef_master_h.C_LONG.withName("cScans")
+        cef_render_handler_capi_h.C_LONG.withName("xDest"),
+        cef_render_handler_capi_h.C_LONG.withName("yDest"),
+        cef_render_handler_capi_h.C_LONG.withName("xSrc"),
+        cef_render_handler_capi_h.C_LONG.withName("ySrc"),
+        cef_render_handler_capi_h.C_LONG.withName("cxSrc"),
+        cef_render_handler_capi_h.C_LONG.withName("cySrc"),
+        cef_render_handler_capi_h.C_LONG.withName("offBmiSrc"),
+        cef_render_handler_capi_h.C_LONG.withName("cbBmiSrc"),
+        cef_render_handler_capi_h.C_LONG.withName("offBitsSrc"),
+        cef_render_handler_capi_h.C_LONG.withName("cbBitsSrc"),
+        cef_render_handler_capi_h.C_LONG.withName("iUsageSrc"),
+        cef_render_handler_capi_h.C_LONG.withName("iStartScan"),
+        cef_render_handler_capi_h.C_LONG.withName("cScans")
     ).withName("tagEMRSETDIBITSTODEVICE");
 
     /**

@@ -26,7 +26,7 @@ public class _FILE_LEVEL_TRIM_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NumRangesProcessed")
+        cef_render_handler_capi_h.C_LONG.withName("NumRangesProcessed")
     ).withName("_FILE_LEVEL_TRIM_OUTPUT");
 
     /**

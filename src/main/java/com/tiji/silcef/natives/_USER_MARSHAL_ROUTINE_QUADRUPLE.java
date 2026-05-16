@@ -29,10 +29,10 @@ public class _USER_MARSHAL_ROUTINE_QUADRUPLE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pfnBufferSize"),
-        cef_master_h.C_POINTER.withName("pfnMarshall"),
-        cef_master_h.C_POINTER.withName("pfnUnmarshall"),
-        cef_master_h.C_POINTER.withName("pfnFree")
+        cef_render_handler_capi_h.C_POINTER.withName("pfnBufferSize"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnMarshall"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnUnmarshall"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnFree")
     ).withName("_USER_MARSHAL_ROUTINE_QUADRUPLE");
 
     /**

@@ -27,8 +27,8 @@ public class _GET_FILTER_FILE_IDENTIFIER_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("AltitudeLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("Altitude")
+        cef_render_handler_capi_h.C_SHORT.withName("AltitudeLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("Altitude")
     ).withName("_GET_FILTER_FILE_IDENTIFIER_INPUT");
 
     /**

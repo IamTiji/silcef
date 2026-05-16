@@ -36,17 +36,17 @@ public class _STREAM_LAYOUT_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("NextStreamOffset"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("ExtentInformationOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("NextStreamOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("ExtentInformationOffset"),
         _LARGE_INTEGER.layout().withName("AllocationSize"),
         _LARGE_INTEGER.layout().withName("EndOfFile"),
-        cef_master_h.C_LONG.withName("StreamInformationOffset"),
-        cef_master_h.C_LONG.withName("AttributeTypeCode"),
-        cef_master_h.C_LONG.withName("AttributeFlags"),
-        cef_master_h.C_LONG.withName("StreamIdentifierLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("StreamIdentifier"),
+        cef_render_handler_capi_h.C_LONG.withName("StreamInformationOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("AttributeTypeCode"),
+        cef_render_handler_capi_h.C_LONG.withName("AttributeFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("StreamIdentifierLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("StreamIdentifier"),
         MemoryLayout.paddingLayout(6)
     ).withName("_STREAM_LAYOUT_ENTRY");
 

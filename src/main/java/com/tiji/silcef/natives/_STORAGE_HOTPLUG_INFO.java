@@ -30,11 +30,11 @@ public class _STORAGE_HOTPLUG_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_CHAR.withName("MediaRemovable"),
-        cef_master_h.C_CHAR.withName("MediaHotplug"),
-        cef_master_h.C_CHAR.withName("DeviceHotplug"),
-        cef_master_h.C_CHAR.withName("WriteCacheEnableOverride")
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_CHAR.withName("MediaRemovable"),
+        cef_render_handler_capi_h.C_CHAR.withName("MediaHotplug"),
+        cef_render_handler_capi_h.C_CHAR.withName("DeviceHotplug"),
+        cef_render_handler_capi_h.C_CHAR.withName("WriteCacheEnableOverride")
     ).withName("_STORAGE_HOTPLUG_INFO");
 
     /**

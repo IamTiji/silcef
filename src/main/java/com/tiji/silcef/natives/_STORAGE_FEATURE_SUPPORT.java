@@ -35,10 +35,10 @@ public class _STORAGE_FEATURE_SUPPORT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
         _STORAGE_FEATURE_SUPPORT.Flags.layout().withName("Flags"),
-        MemoryLayout.sequenceLayout(6, cef_master_h.C_LONG_LONG).withName("Reserved")
+        MemoryLayout.sequenceLayout(6, cef_render_handler_capi_h.C_LONG_LONG).withName("Reserved")
     ).withName("_STORAGE_FEATURE_SUPPORT");
 
     /**
@@ -157,7 +157,7 @@ public class _STORAGE_FEATURE_SUPPORT {
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(8)
             ).withName("$anon$588:9"),
-            cef_master_h.C_LONG_LONG.withName("AsUlonglong")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("AsUlonglong")
         ).withName("$anon$586:5");
 
         /**

@@ -37,21 +37,21 @@ public class _cef_window_info_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("size"),
-        cef_master_h.C_LONG.withName("ex_style"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("size"),
+        cef_render_handler_capi_h.C_LONG.withName("ex_style"),
         MemoryLayout.paddingLayout(4),
         _cef_string_utf16_t.layout().withName("window_name"),
-        cef_master_h.C_LONG.withName("style"),
+        cef_render_handler_capi_h.C_LONG.withName("style"),
         _cef_rect_t.layout().withName("bounds"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("parent_window"),
-        cef_master_h.C_POINTER.withName("menu"),
-        cef_master_h.C_INT.withName("windowless_rendering_enabled"),
-        cef_master_h.C_INT.withName("shared_texture_enabled"),
-        cef_master_h.C_INT.withName("external_begin_frame_enabled"),
+        cef_render_handler_capi_h.C_POINTER.withName("parent_window"),
+        cef_render_handler_capi_h.C_POINTER.withName("menu"),
+        cef_render_handler_capi_h.C_INT.withName("windowless_rendering_enabled"),
+        cef_render_handler_capi_h.C_INT.withName("shared_texture_enabled"),
+        cef_render_handler_capi_h.C_INT.withName("external_begin_frame_enabled"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("window"),
-        cef_master_h.C_INT.withName("runtime_style"),
+        cef_render_handler_capi_h.C_POINTER.withName("window"),
+        cef_render_handler_capi_h.C_INT.withName("runtime_style"),
         MemoryLayout.paddingLayout(4)
     ).withName("_cef_window_info_t");
 

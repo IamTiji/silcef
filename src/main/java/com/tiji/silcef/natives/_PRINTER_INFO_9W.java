@@ -26,7 +26,7 @@ public class _PRINTER_INFO_9W {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pDevMode")
+        cef_render_handler_capi_h.C_POINTER.withName("pDevMode")
     ).withName("_PRINTER_INFO_9W");
 
     /**

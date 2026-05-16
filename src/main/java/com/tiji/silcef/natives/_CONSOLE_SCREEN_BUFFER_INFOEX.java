@@ -34,15 +34,15 @@ public class _CONSOLE_SCREEN_BUFFER_INFOEX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         _COORD.layout().withName("dwSize"),
         _COORD.layout().withName("dwCursorPosition"),
-        cef_master_h.C_SHORT.withName("wAttributes"),
+        cef_render_handler_capi_h.C_SHORT.withName("wAttributes"),
         _SMALL_RECT.layout().withName("srWindow"),
         _COORD.layout().withName("dwMaximumWindowSize"),
-        cef_master_h.C_SHORT.withName("wPopupAttributes"),
-        cef_master_h.C_INT.withName("bFullscreenSupported"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_LONG).withName("ColorTable")
+        cef_render_handler_capi_h.C_SHORT.withName("wPopupAttributes"),
+        cef_render_handler_capi_h.C_INT.withName("bFullscreenSupported"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_LONG).withName("ColorTable")
     ).withName("_CONSOLE_SCREEN_BUFFER_INFOEX");
 
     /**

@@ -31,12 +31,12 @@ public class _NCRYPT_TPM_PLATFORM_ATTESTATION_STATEMENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Magic"),
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("pcrAlg"),
-        cef_master_h.C_LONG.withName("cbSignature"),
-        cef_master_h.C_LONG.withName("cbQuote"),
-        cef_master_h.C_LONG.withName("cbPcrs")
+        cef_render_handler_capi_h.C_LONG.withName("Magic"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("pcrAlg"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSignature"),
+        cef_render_handler_capi_h.C_LONG.withName("cbQuote"),
+        cef_render_handler_capi_h.C_LONG.withName("cbPcrs")
     ).withName("_NCRYPT_TPM_PLATFORM_ATTESTATION_STATEMENT");
 
     /**

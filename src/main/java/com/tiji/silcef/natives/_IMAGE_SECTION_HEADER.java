@@ -38,16 +38,16 @@ public class _IMAGE_SECTION_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_CHAR).withName("Name"),
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_CHAR).withName("Name"),
         _IMAGE_SECTION_HEADER.Misc.layout().withName("Misc"),
-        cef_master_h.C_LONG.withName("VirtualAddress"),
-        cef_master_h.C_LONG.withName("SizeOfRawData"),
-        cef_master_h.C_LONG.withName("PointerToRawData"),
-        cef_master_h.C_LONG.withName("PointerToRelocations"),
-        cef_master_h.C_LONG.withName("PointerToLinenumbers"),
-        cef_master_h.C_SHORT.withName("NumberOfRelocations"),
-        cef_master_h.C_SHORT.withName("NumberOfLinenumbers"),
-        cef_master_h.C_LONG.withName("Characteristics")
+        cef_render_handler_capi_h.C_LONG.withName("VirtualAddress"),
+        cef_render_handler_capi_h.C_LONG.withName("SizeOfRawData"),
+        cef_render_handler_capi_h.C_LONG.withName("PointerToRawData"),
+        cef_render_handler_capi_h.C_LONG.withName("PointerToRelocations"),
+        cef_render_handler_capi_h.C_LONG.withName("PointerToLinenumbers"),
+        cef_render_handler_capi_h.C_SHORT.withName("NumberOfRelocations"),
+        cef_render_handler_capi_h.C_SHORT.withName("NumberOfLinenumbers"),
+        cef_render_handler_capi_h.C_LONG.withName("Characteristics")
     ).withName("_IMAGE_SECTION_HEADER");
 
     /**
@@ -149,8 +149,8 @@ public class _IMAGE_SECTION_HEADER {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("PhysicalAddress"),
-            cef_master_h.C_LONG.withName("VirtualSize")
+            cef_render_handler_capi_h.C_LONG.withName("PhysicalAddress"),
+            cef_render_handler_capi_h.C_LONG.withName("VirtualSize")
         ).withName("$anon$20101:5");
 
         /**

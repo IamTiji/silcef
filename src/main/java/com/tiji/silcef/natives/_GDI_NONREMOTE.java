@@ -30,7 +30,7 @@ public class _GDI_NONREMOTE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("fContext"),
+        cef_render_handler_capi_h.C_LONG.withName("fContext"),
         MemoryLayout.paddingLayout(4),
         _GDI_NONREMOTE.__MIDL_IWinTypes_0002.layout().withName("u")
     ).withName("_GDI_NONREMOTE");
@@ -101,8 +101,8 @@ public class _GDI_NONREMOTE {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("hInproc"),
-            cef_master_h.C_POINTER.withName("hRemote")
+            cef_render_handler_capi_h.C_LONG.withName("hInproc"),
+            cef_render_handler_capi_h.C_POINTER.withName("hRemote")
         ).withName("__MIDL_IWinTypes_0002");
 
         /**

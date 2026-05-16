@@ -27,9 +27,9 @@ public class tagCUSTDATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cCustData"),
+        cef_render_handler_capi_h.C_LONG.withName("cCustData"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("prgCustData")
+        cef_render_handler_capi_h.C_POINTER.withName("prgCustData")
     ).withName("tagCUSTDATA");
 
     /**

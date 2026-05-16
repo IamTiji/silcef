@@ -35,16 +35,16 @@ public class tagWAVEINCAPS2W {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("wMid"),
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("wPid"),
-        cef_master_h.align(cef_master_h.C_INT, 1).withName("vDriverVersion"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.align(cef_master_h.C_SHORT, 1)).withName("szPname"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwFormats"),
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("wChannels"),
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("wReserved1"),
-        cef_master_h.align(_GUID.layout(), 1).withName("ManufacturerGuid"),
-        cef_master_h.align(_GUID.layout(), 1).withName("ProductGuid"),
-        cef_master_h.align(_GUID.layout(), 1).withName("NameGuid")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("wMid"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("wPid"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_INT, 1).withName("vDriverVersion"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1)).withName("szPname"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwFormats"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("wChannels"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("wReserved1"),
+        cef_render_handler_capi_h.align(_GUID.layout(), 1).withName("ManufacturerGuid"),
+        cef_render_handler_capi_h.align(_GUID.layout(), 1).withName("ProductGuid"),
+        cef_render_handler_capi_h.align(_GUID.layout(), 1).withName("NameGuid")
     ).withName("tagWAVEINCAPS2W");
 
     /**

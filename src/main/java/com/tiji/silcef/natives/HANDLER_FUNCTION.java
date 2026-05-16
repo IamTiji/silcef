@@ -31,7 +31,7 @@ public final class HANDLER_FUNCTION {
     }
 
     private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-        cef_master_h.C_LONG
+        cef_render_handler_capi_h.C_LONG
     );
 
     /**
@@ -41,7 +41,7 @@ public final class HANDLER_FUNCTION {
         return $DESC;
     }
 
-    private static final MethodHandle UP$MH = cef_master_h.upcallHandle(HANDLER_FUNCTION.Function.class, "apply", $DESC);
+    private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(HANDLER_FUNCTION.Function.class, "apply", $DESC);
 
     /**
      * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

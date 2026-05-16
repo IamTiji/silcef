@@ -38,7 +38,7 @@ public class _wireSAFEARRAY_UNION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("sfType"),
+        cef_render_handler_capi_h.C_LONG.withName("sfType"),
         MemoryLayout.paddingLayout(4),
         _wireSAFEARRAY_UNION.__MIDL_IOleAutomationTypes_0001.layout().withName("u")
     ).withName("_wireSAFEARRAY_UNION");

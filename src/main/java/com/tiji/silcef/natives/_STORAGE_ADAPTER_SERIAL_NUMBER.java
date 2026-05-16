@@ -28,9 +28,9 @@ public class _STORAGE_ADAPTER_SERIAL_NUMBER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        MemoryLayout.sequenceLayout(128, cef_master_h.C_SHORT).withName("SerialNumber")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        MemoryLayout.sequenceLayout(128, cef_render_handler_capi_h.C_SHORT).withName("SerialNumber")
     ).withName("_STORAGE_ADAPTER_SERIAL_NUMBER");
 
     /**

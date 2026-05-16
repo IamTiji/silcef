@@ -28,9 +28,9 @@ public class _CPS_URLS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszURL"),
-        cef_master_h.C_POINTER.withName("pAlgorithm"),
-        cef_master_h.C_POINTER.withName("pDigest")
+        cef_render_handler_capi_h.C_POINTER.withName("pszURL"),
+        cef_render_handler_capi_h.C_POINTER.withName("pAlgorithm"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDigest")
     ).withName("_CPS_URLS");
 
     /**

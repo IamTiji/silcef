@@ -27,8 +27,8 @@ public class tagFONTSIGNATURE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_LONG).withName("fsUsb"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_LONG).withName("fsCsb")
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_LONG).withName("fsUsb"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_LONG).withName("fsCsb")
     ).withName("tagFONTSIGNATURE");
 
     /**

@@ -29,10 +29,10 @@ public class _PUBLICKEYSTRUC {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("bType"),
-        cef_master_h.C_CHAR.withName("bVersion"),
-        cef_master_h.C_SHORT.withName("reserved"),
-        cef_master_h.C_INT.withName("aiKeyAlg")
+        cef_render_handler_capi_h.C_CHAR.withName("bType"),
+        cef_render_handler_capi_h.C_CHAR.withName("bVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("reserved"),
+        cef_render_handler_capi_h.C_INT.withName("aiKeyAlg")
     ).withName("_PUBLICKEYSTRUC");
 
     /**

@@ -28,9 +28,9 @@ public class _DEVICE_DSM_NVCACHE_CHANGE_PRIORITY_PARAMETERS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_CHAR.withName("TargetPriority"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_CHAR).withName("Reserved")
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_CHAR.withName("TargetPriority"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_CHAR).withName("Reserved")
     ).withName("_DEVICE_DSM_NVCACHE_CHANGE_PRIORITY_PARAMETERS");
 
     /**

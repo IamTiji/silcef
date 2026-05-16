@@ -32,13 +32,13 @@ public class _CRYPT_ENCRYPT_MESSAGE_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwMsgEncodingType"),
-        cef_master_h.C_LONG_LONG.withName("hCryptProv"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMsgEncodingType"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("hCryptProv"),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("ContentEncryptionAlgorithm"),
-        cef_master_h.C_POINTER.withName("pvEncryptionAuxInfo"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_LONG.withName("dwInnerContentType")
+        cef_render_handler_capi_h.C_POINTER.withName("pvEncryptionAuxInfo"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwInnerContentType")
     ).withName("_CRYPT_ENCRYPT_MESSAGE_PARA");
 
     /**

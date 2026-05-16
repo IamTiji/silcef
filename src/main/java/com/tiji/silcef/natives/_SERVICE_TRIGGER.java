@@ -30,12 +30,12 @@ public class _SERVICE_TRIGGER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwTriggerType"),
-        cef_master_h.C_LONG.withName("dwAction"),
-        cef_master_h.C_POINTER.withName("pTriggerSubtype"),
-        cef_master_h.C_LONG.withName("cDataItems"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTriggerType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwAction"),
+        cef_render_handler_capi_h.C_POINTER.withName("pTriggerSubtype"),
+        cef_render_handler_capi_h.C_LONG.withName("cDataItems"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pDataItems")
+        cef_render_handler_capi_h.C_POINTER.withName("pDataItems")
     ).withName("_SERVICE_TRIGGER");
 
     /**

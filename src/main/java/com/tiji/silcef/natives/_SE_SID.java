@@ -28,7 +28,7 @@ public class _SE_SID {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
         _SID.layout().withName("Sid"),
-        MemoryLayout.sequenceLayout(68, cef_master_h.C_CHAR).withName("Buffer")
+        MemoryLayout.sequenceLayout(68, cef_render_handler_capi_h.C_CHAR).withName("Buffer")
     ).withName("_SE_SID");
 
     /**

@@ -34,17 +34,17 @@ public class _RPC_CLIENT_INTERFACE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Length"),
+        cef_render_handler_capi_h.C_INT.withName("Length"),
         _RPC_SYNTAX_IDENTIFIER.layout().withName("InterfaceId"),
         _RPC_SYNTAX_IDENTIFIER.layout().withName("TransferSyntax"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("DispatchTable"),
-        cef_master_h.C_INT.withName("RpcProtseqEndpointCount"),
+        cef_render_handler_capi_h.C_POINTER.withName("DispatchTable"),
+        cef_render_handler_capi_h.C_INT.withName("RpcProtseqEndpointCount"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("RpcProtseqEndpoint"),
-        cef_master_h.C_LONG_LONG.withName("Reserved"),
-        cef_master_h.C_POINTER.withName("InterpreterInfo"),
-        cef_master_h.C_INT.withName("Flags"),
+        cef_render_handler_capi_h.C_POINTER.withName("RpcProtseqEndpoint"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Reserved"),
+        cef_render_handler_capi_h.C_POINTER.withName("InterpreterInfo"),
+        cef_render_handler_capi_h.C_INT.withName("Flags"),
         MemoryLayout.paddingLayout(4)
     ).withName("_RPC_CLIENT_INTERFACE");
 

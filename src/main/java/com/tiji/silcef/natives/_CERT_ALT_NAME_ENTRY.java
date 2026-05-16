@@ -35,16 +35,16 @@ public class _CERT_ALT_NAME_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwAltNameChoice"),
+        cef_render_handler_capi_h.C_LONG.withName("dwAltNameChoice"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("pOtherName"),
-            cef_master_h.C_POINTER.withName("pwszRfc822Name"),
-            cef_master_h.C_POINTER.withName("pwszDNSName"),
+            cef_render_handler_capi_h.C_POINTER.withName("pOtherName"),
+            cef_render_handler_capi_h.C_POINTER.withName("pwszRfc822Name"),
+            cef_render_handler_capi_h.C_POINTER.withName("pwszDNSName"),
             _CRYPTOAPI_BLOB.layout().withName("DirectoryName"),
-            cef_master_h.C_POINTER.withName("pwszURL"),
+            cef_render_handler_capi_h.C_POINTER.withName("pwszURL"),
             _CRYPTOAPI_BLOB.layout().withName("IPAddress"),
-            cef_master_h.C_POINTER.withName("pszRegisteredID")
+            cef_render_handler_capi_h.C_POINTER.withName("pszRegisteredID")
         ).withName("$anon$4048:5")
     ).withName("_CERT_ALT_NAME_ENTRY");
 

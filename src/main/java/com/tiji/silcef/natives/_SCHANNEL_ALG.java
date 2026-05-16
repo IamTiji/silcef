@@ -30,11 +30,11 @@ public class _SCHANNEL_ALG {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwUse"),
-        cef_master_h.C_INT.withName("Algid"),
-        cef_master_h.C_LONG.withName("cBits"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_LONG.withName("dwReserved")
+        cef_render_handler_capi_h.C_LONG.withName("dwUse"),
+        cef_render_handler_capi_h.C_INT.withName("Algid"),
+        cef_render_handler_capi_h.C_LONG.withName("cBits"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwReserved")
     ).withName("_SCHANNEL_ALG");
 
     /**

@@ -30,12 +30,12 @@ public class _CERT_CREATE_CONTEXT_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pfnFree"),
-        cef_master_h.C_POINTER.withName("pvFree"),
-        cef_master_h.C_POINTER.withName("pfnSort"),
-        cef_master_h.C_POINTER.withName("pvSort")
+        cef_render_handler_capi_h.C_POINTER.withName("pfnFree"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvFree"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnSort"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvSort")
     ).withName("_CERT_CREATE_CONTEXT_PARA");
 
     /**

@@ -34,14 +34,14 @@ public class _RPC_SECURITY_QOS_V3_A {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Capabilities"),
-        cef_master_h.C_LONG.withName("IdentityTracking"),
-        cef_master_h.C_LONG.withName("ImpersonationType"),
-        cef_master_h.C_LONG.withName("AdditionalSecurityInfoType"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Capabilities"),
+        cef_render_handler_capi_h.C_LONG.withName("IdentityTracking"),
+        cef_render_handler_capi_h.C_LONG.withName("ImpersonationType"),
+        cef_render_handler_capi_h.C_LONG.withName("AdditionalSecurityInfoType"),
         MemoryLayout.paddingLayout(4),
         _RPC_SECURITY_QOS_V3_A.u.layout().withName("u"),
-        cef_master_h.C_POINTER.withName("Sid")
+        cef_render_handler_capi_h.C_POINTER.withName("Sid")
     ).withName("_RPC_SECURITY_QOS_V3_A");
 
     /**
@@ -285,7 +285,7 @@ public class _RPC_SECURITY_QOS_V3_A {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("HttpCredentials")
+            cef_render_handler_capi_h.C_POINTER.withName("HttpCredentials")
         ).withName("$anon$1861:3");
 
         /**

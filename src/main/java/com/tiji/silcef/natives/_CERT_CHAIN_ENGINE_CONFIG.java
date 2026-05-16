@@ -38,21 +38,21 @@ public class _CERT_CHAIN_ENGINE_CONFIG {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hRestrictedRoot"),
-        cef_master_h.C_POINTER.withName("hRestrictedTrust"),
-        cef_master_h.C_POINTER.withName("hRestrictedOther"),
-        cef_master_h.C_LONG.withName("cAdditionalStore"),
+        cef_render_handler_capi_h.C_POINTER.withName("hRestrictedRoot"),
+        cef_render_handler_capi_h.C_POINTER.withName("hRestrictedTrust"),
+        cef_render_handler_capi_h.C_POINTER.withName("hRestrictedOther"),
+        cef_render_handler_capi_h.C_LONG.withName("cAdditionalStore"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rghAdditionalStore"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_LONG.withName("dwUrlRetrievalTimeout"),
-        cef_master_h.C_LONG.withName("MaximumCachedCertificates"),
-        cef_master_h.C_LONG.withName("CycleDetectionModulus"),
-        cef_master_h.C_POINTER.withName("hExclusiveRoot"),
-        cef_master_h.C_POINTER.withName("hExclusiveTrustedPeople"),
-        cef_master_h.C_LONG.withName("dwExclusiveFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("rghAdditionalStore"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwUrlRetrievalTimeout"),
+        cef_render_handler_capi_h.C_LONG.withName("MaximumCachedCertificates"),
+        cef_render_handler_capi_h.C_LONG.withName("CycleDetectionModulus"),
+        cef_render_handler_capi_h.C_POINTER.withName("hExclusiveRoot"),
+        cef_render_handler_capi_h.C_POINTER.withName("hExclusiveTrustedPeople"),
+        cef_render_handler_capi_h.C_LONG.withName("dwExclusiveFlags"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CERT_CHAIN_ENGINE_CONFIG");
 

@@ -33,14 +33,14 @@ public class _STORAGE_DEVICE_RESILIENCY_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("NameOffset"),
-        cef_master_h.C_LONG.withName("NumberOfLogicalCopies"),
-        cef_master_h.C_LONG.withName("NumberOfPhysicalCopies"),
-        cef_master_h.C_LONG.withName("PhysicalDiskRedundancy"),
-        cef_master_h.C_LONG.withName("NumberOfColumns"),
-        cef_master_h.C_LONG.withName("Interleave")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("NameOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfLogicalCopies"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfPhysicalCopies"),
+        cef_render_handler_capi_h.C_LONG.withName("PhysicalDiskRedundancy"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfColumns"),
+        cef_render_handler_capi_h.C_LONG.withName("Interleave")
     ).withName("_STORAGE_DEVICE_RESILIENCY_DESCRIPTOR");
 
     /**

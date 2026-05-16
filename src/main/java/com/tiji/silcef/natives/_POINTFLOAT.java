@@ -27,8 +27,8 @@ public class _POINTFLOAT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_FLOAT.withName("x"),
-        cef_master_h.C_FLOAT.withName("y")
+        cef_render_handler_capi_h.C_FLOAT.withName("x"),
+        cef_render_handler_capi_h.C_FLOAT.withName("y")
     ).withName("_POINTFLOAT");
 
     /**

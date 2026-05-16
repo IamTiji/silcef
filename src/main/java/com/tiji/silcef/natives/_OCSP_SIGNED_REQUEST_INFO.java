@@ -28,7 +28,7 @@ public class _OCSP_SIGNED_REQUEST_INFO {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CRYPTOAPI_BLOB.layout().withName("ToBeSigned"),
-        cef_master_h.C_POINTER.withName("pOptionalSignatureInfo")
+        cef_render_handler_capi_h.C_POINTER.withName("pOptionalSignatureInfo")
     ).withName("_OCSP_SIGNED_REQUEST_INFO");
 
     /**

@@ -27,8 +27,8 @@ public class timeval {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("tv_sec"),
-        cef_master_h.C_LONG.withName("tv_usec")
+        cef_render_handler_capi_h.C_LONG.withName("tv_sec"),
+        cef_render_handler_capi_h.C_LONG.withName("tv_usec")
     ).withName("timeval");
 
     /**

@@ -29,10 +29,10 @@ public class _BCRYPT_PKCS11_RSA_AES_WRAP_BLOB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwMagic"),
-        cef_master_h.C_LONG.withName("cbKey"),
-        cef_master_h.C_LONG.withName("cbPaddingAlgId"),
-        cef_master_h.C_LONG.withName("cbPaddingLabel")
+        cef_render_handler_capi_h.C_LONG.withName("dwMagic"),
+        cef_render_handler_capi_h.C_LONG.withName("cbKey"),
+        cef_render_handler_capi_h.C_LONG.withName("cbPaddingAlgId"),
+        cef_render_handler_capi_h.C_LONG.withName("cbPaddingLabel")
     ).withName("_BCRYPT_PKCS11_RSA_AES_WRAP_BLOB");
 
     /**

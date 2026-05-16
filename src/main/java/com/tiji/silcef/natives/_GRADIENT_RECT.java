@@ -27,8 +27,8 @@ public class _GRADIENT_RECT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("UpperLeft"),
-        cef_master_h.C_LONG.withName("LowerRight")
+        cef_render_handler_capi_h.C_LONG.withName("UpperLeft"),
+        cef_render_handler_capi_h.C_LONG.withName("LowerRight")
     ).withName("_GRADIENT_RECT");
 
     /**

@@ -29,8 +29,8 @@ public class tagENUMLOGFONTW {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagLOGFONTW.layout().withName("elfLogFont"),
-        MemoryLayout.sequenceLayout(64, cef_master_h.C_SHORT).withName("elfFullName"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_SHORT).withName("elfStyle")
+        MemoryLayout.sequenceLayout(64, cef_render_handler_capi_h.C_SHORT).withName("elfFullName"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_SHORT).withName("elfStyle")
     ).withName("tagENUMLOGFONTW");
 
     /**

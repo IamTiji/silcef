@@ -37,17 +37,17 @@ public class _QUOTA_LIMITS_EX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("PagedPoolLimit"),
-        cef_master_h.C_LONG_LONG.withName("NonPagedPoolLimit"),
-        cef_master_h.C_LONG_LONG.withName("MinimumWorkingSetSize"),
-        cef_master_h.C_LONG_LONG.withName("MaximumWorkingSetSize"),
-        cef_master_h.C_LONG_LONG.withName("PagefileLimit"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("PagedPoolLimit"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NonPagedPoolLimit"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MinimumWorkingSetSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaximumWorkingSetSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("PagefileLimit"),
         _LARGE_INTEGER.layout().withName("TimeLimit"),
-        cef_master_h.C_LONG_LONG.withName("WorkingSetLimit"),
-        cef_master_h.C_LONG_LONG.withName("Reserved2"),
-        cef_master_h.C_LONG_LONG.withName("Reserved3"),
-        cef_master_h.C_LONG_LONG.withName("Reserved4"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("WorkingSetLimit"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Reserved2"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Reserved3"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Reserved4"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         _RATE_QUOTA_LIMIT.layout().withName("CpuRateLimit")
     ).withName("_QUOTA_LIMITS_EX");
 

@@ -26,7 +26,7 @@ public class _FOCUS_EVENT_RECORD {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("bSetFocus")
+        cef_render_handler_capi_h.C_INT.withName("bSetFocus")
     ).withName("_FOCUS_EVENT_RECORD");
 
     /**

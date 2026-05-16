@@ -27,8 +27,8 @@ public class _FIXED {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("fract"),
-        cef_master_h.C_SHORT.withName("value")
+        cef_render_handler_capi_h.C_SHORT.withName("fract"),
+        cef_render_handler_capi_h.C_SHORT.withName("value")
     ).withName("_FIXED");
 
     /**

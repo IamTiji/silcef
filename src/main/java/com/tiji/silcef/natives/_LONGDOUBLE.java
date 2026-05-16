@@ -26,7 +26,7 @@ public class _LONGDOUBLE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_DOUBLE.withName("x")
+        cef_render_handler_capi_h.C_LONG_DOUBLE.withName("x")
     ).withName("$anon$429:9");
 
     /**

@@ -28,9 +28,9 @@ public class _POWER_SESSION_WINLOGON {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("SessionId"),
-        cef_master_h.C_CHAR.withName("Console"),
-        cef_master_h.C_CHAR.withName("Locked"),
+        cef_render_handler_capi_h.C_LONG.withName("SessionId"),
+        cef_render_handler_capi_h.C_CHAR.withName("Console"),
+        cef_render_handler_capi_h.C_CHAR.withName("Locked"),
         MemoryLayout.paddingLayout(2)
     ).withName("_POWER_SESSION_WINLOGON");
 

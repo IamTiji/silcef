@@ -30,11 +30,11 @@ public class _PORT_INFO_2W {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pPortName"),
-        cef_master_h.C_POINTER.withName("pMonitorName"),
-        cef_master_h.C_POINTER.withName("pDescription"),
-        cef_master_h.C_LONG.withName("fPortType"),
-        cef_master_h.C_LONG.withName("Reserved")
+        cef_render_handler_capi_h.C_POINTER.withName("pPortName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pMonitorName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDescription"),
+        cef_render_handler_capi_h.C_LONG.withName("fPortType"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved")
     ).withName("_PORT_INFO_2W");
 
     /**

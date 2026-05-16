@@ -27,8 +27,8 @@ public class tagHSZPAIR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hszSvc"),
-        cef_master_h.C_POINTER.withName("hszTopic")
+        cef_render_handler_capi_h.C_POINTER.withName("hszSvc"),
+        cef_render_handler_capi_h.C_POINTER.withName("hszTopic")
     ).withName("tagHSZPAIR");
 
     /**

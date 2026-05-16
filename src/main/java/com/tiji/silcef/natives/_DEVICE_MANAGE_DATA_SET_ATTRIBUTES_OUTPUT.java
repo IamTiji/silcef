@@ -34,15 +34,15 @@ public class _DEVICE_MANAGE_DATA_SET_ATTRIBUTES_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("Action"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("OperationStatus"),
-        cef_master_h.C_LONG.withName("ExtendedError"),
-        cef_master_h.C_LONG.withName("TargetDetailedError"),
-        cef_master_h.C_LONG.withName("ReservedStatus"),
-        cef_master_h.C_LONG.withName("OutputBlockOffset"),
-        cef_master_h.C_LONG.withName("OutputBlockLength")
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Action"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("OperationStatus"),
+        cef_render_handler_capi_h.C_LONG.withName("ExtendedError"),
+        cef_render_handler_capi_h.C_LONG.withName("TargetDetailedError"),
+        cef_render_handler_capi_h.C_LONG.withName("ReservedStatus"),
+        cef_render_handler_capi_h.C_LONG.withName("OutputBlockOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("OutputBlockLength")
     ).withName("_DEVICE_MANAGE_DATA_SET_ATTRIBUTES_OUTPUT");
 
     /**

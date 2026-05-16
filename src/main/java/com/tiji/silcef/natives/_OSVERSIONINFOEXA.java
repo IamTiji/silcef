@@ -36,17 +36,17 @@ public class _OSVERSIONINFOEXA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwOSVersionInfoSize"),
-        cef_master_h.C_LONG.withName("dwMajorVersion"),
-        cef_master_h.C_LONG.withName("dwMinorVersion"),
-        cef_master_h.C_LONG.withName("dwBuildNumber"),
-        cef_master_h.C_LONG.withName("dwPlatformId"),
-        MemoryLayout.sequenceLayout(128, cef_master_h.C_CHAR).withName("szCSDVersion"),
-        cef_master_h.C_SHORT.withName("wServicePackMajor"),
-        cef_master_h.C_SHORT.withName("wServicePackMinor"),
-        cef_master_h.C_SHORT.withName("wSuiteMask"),
-        cef_master_h.C_CHAR.withName("wProductType"),
-        cef_master_h.C_CHAR.withName("wReserved")
+        cef_render_handler_capi_h.C_LONG.withName("dwOSVersionInfoSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMajorVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMinorVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwBuildNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("dwPlatformId"),
+        MemoryLayout.sequenceLayout(128, cef_render_handler_capi_h.C_CHAR).withName("szCSDVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("wServicePackMajor"),
+        cef_render_handler_capi_h.C_SHORT.withName("wServicePackMinor"),
+        cef_render_handler_capi_h.C_SHORT.withName("wSuiteMask"),
+        cef_render_handler_capi_h.C_CHAR.withName("wProductType"),
+        cef_render_handler_capi_h.C_CHAR.withName("wReserved")
     ).withName("_OSVERSIONINFOEXA");
 
     /**

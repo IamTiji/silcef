@@ -27,8 +27,8 @@ public class tagSTYLEBUFA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwStyle"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("szDescription")
+        cef_render_handler_capi_h.C_LONG.withName("dwStyle"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("szDescription")
     ).withName("tagSTYLEBUFA");
 
     /**

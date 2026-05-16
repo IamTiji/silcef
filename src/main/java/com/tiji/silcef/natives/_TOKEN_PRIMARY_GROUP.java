@@ -26,7 +26,7 @@ public class _TOKEN_PRIMARY_GROUP {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("PrimaryGroup")
+        cef_render_handler_capi_h.C_POINTER.withName("PrimaryGroup")
     ).withName("_TOKEN_PRIMARY_GROUP");
 
     /**

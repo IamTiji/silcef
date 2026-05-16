@@ -30,10 +30,10 @@ public class tagGLYPHSET {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbThis"),
-        cef_master_h.C_LONG.withName("flAccel"),
-        cef_master_h.C_LONG.withName("cGlyphsSupported"),
-        cef_master_h.C_LONG.withName("cRanges"),
+        cef_render_handler_capi_h.C_LONG.withName("cbThis"),
+        cef_render_handler_capi_h.C_LONG.withName("flAccel"),
+        cef_render_handler_capi_h.C_LONG.withName("cGlyphsSupported"),
+        cef_render_handler_capi_h.C_LONG.withName("cRanges"),
         MemoryLayout.sequenceLayout(1, tagWCRANGE.layout()).withName("ranges")
     ).withName("tagGLYPHSET");
 

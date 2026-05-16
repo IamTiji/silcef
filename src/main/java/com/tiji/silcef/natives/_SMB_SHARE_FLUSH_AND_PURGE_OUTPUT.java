@@ -26,7 +26,7 @@ public class _SMB_SHARE_FLUSH_AND_PURGE_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cEntriesPurged")
+        cef_render_handler_capi_h.C_LONG.withName("cEntriesPurged")
     ).withName("_SMB_SHARE_FLUSH_AND_PURGE_OUTPUT");
 
     /**

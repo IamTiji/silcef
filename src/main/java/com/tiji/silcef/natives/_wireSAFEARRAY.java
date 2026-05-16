@@ -31,10 +31,10 @@ public class _wireSAFEARRAY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("cDims"),
-        cef_master_h.C_SHORT.withName("fFeatures"),
-        cef_master_h.C_LONG.withName("cbElements"),
-        cef_master_h.C_LONG.withName("cLocks"),
+        cef_render_handler_capi_h.C_SHORT.withName("cDims"),
+        cef_render_handler_capi_h.C_SHORT.withName("fFeatures"),
+        cef_render_handler_capi_h.C_LONG.withName("cbElements"),
+        cef_render_handler_capi_h.C_LONG.withName("cLocks"),
         MemoryLayout.paddingLayout(4),
         _wireSAFEARRAY_UNION.layout().withName("uArrayStructs"),
         MemoryLayout.sequenceLayout(1, tagSAFEARRAYBOUND.layout()).withName("rgsabound")

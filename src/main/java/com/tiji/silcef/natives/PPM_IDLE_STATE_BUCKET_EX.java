@@ -29,10 +29,10 @@ public class PPM_IDLE_STATE_BUCKET_EX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("TotalTimeUs"),
-        cef_master_h.C_LONG.withName("MinTimeUs"),
-        cef_master_h.C_LONG.withName("MaxTimeUs"),
-        cef_master_h.C_LONG.withName("Count"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("TotalTimeUs"),
+        cef_render_handler_capi_h.C_LONG.withName("MinTimeUs"),
+        cef_render_handler_capi_h.C_LONG.withName("MaxTimeUs"),
+        cef_render_handler_capi_h.C_LONG.withName("Count"),
         MemoryLayout.paddingLayout(4)
     ).withName("$anon$19102:9");
 

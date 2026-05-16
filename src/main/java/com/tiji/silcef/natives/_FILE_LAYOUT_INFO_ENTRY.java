@@ -37,10 +37,10 @@ public class _FILE_LAYOUT_INFO_ENTRY {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _FILE_LAYOUT_INFO_ENTRY.BasicInformation.layout().withName("BasicInformation"),
-        cef_master_h.C_LONG.withName("OwnerId"),
-        cef_master_h.C_LONG.withName("SecurityId"),
-        cef_master_h.C_LONG_LONG.withName("Usn"),
-        cef_master_h.C_INT.withName("StorageReserveId"),
+        cef_render_handler_capi_h.C_LONG.withName("OwnerId"),
+        cef_render_handler_capi_h.C_LONG.withName("SecurityId"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Usn"),
+        cef_render_handler_capi_h.C_INT.withName("StorageReserveId"),
         MemoryLayout.paddingLayout(4)
     ).withName("_FILE_LAYOUT_INFO_ENTRY");
 
@@ -73,7 +73,7 @@ public class _FILE_LAYOUT_INFO_ENTRY {
             _LARGE_INTEGER.layout().withName("LastAccessTime"),
             _LARGE_INTEGER.layout().withName("LastWriteTime"),
             _LARGE_INTEGER.layout().withName("ChangeTime"),
-            cef_master_h.C_LONG.withName("FileAttributes"),
+            cef_render_handler_capi_h.C_LONG.withName("FileAttributes"),
             MemoryLayout.paddingLayout(4)
         ).withName("$anon$15859:5");
 

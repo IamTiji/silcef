@@ -30,12 +30,12 @@ public class _CMC_ADD_ATTRIBUTES_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwCmcDataReference"),
-        cef_master_h.C_LONG.withName("cCertReference"),
-        cef_master_h.C_POINTER.withName("rgdwCertReference"),
-        cef_master_h.C_LONG.withName("cAttribute"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCmcDataReference"),
+        cef_render_handler_capi_h.C_LONG.withName("cCertReference"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgdwCertReference"),
+        cef_render_handler_capi_h.C_LONG.withName("cAttribute"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgAttribute")
+        cef_render_handler_capi_h.C_POINTER.withName("rgAttribute")
     ).withName("_CMC_ADD_ATTRIBUTES_INFO");
 
     /**

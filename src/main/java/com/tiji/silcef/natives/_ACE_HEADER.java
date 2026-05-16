@@ -28,9 +28,9 @@ public class _ACE_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("AceType"),
-        cef_master_h.C_CHAR.withName("AceFlags"),
-        cef_master_h.C_SHORT.withName("AceSize")
+        cef_render_handler_capi_h.C_CHAR.withName("AceType"),
+        cef_render_handler_capi_h.C_CHAR.withName("AceFlags"),
+        cef_render_handler_capi_h.C_SHORT.withName("AceSize")
     ).withName("_ACE_HEADER");
 
     /**

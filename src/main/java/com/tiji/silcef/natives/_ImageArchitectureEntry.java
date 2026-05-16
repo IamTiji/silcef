@@ -27,8 +27,8 @@ public class _ImageArchitectureEntry {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("FixupInstRVA"),
-        cef_master_h.C_LONG.withName("NewInst")
+        cef_render_handler_capi_h.C_LONG.withName("FixupInstRVA"),
+        cef_render_handler_capi_h.C_LONG.withName("NewInst")
     ).withName("_ImageArchitectureEntry");
 
     /**

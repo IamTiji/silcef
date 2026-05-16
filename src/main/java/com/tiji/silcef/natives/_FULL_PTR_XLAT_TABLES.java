@@ -29,10 +29,10 @@ public class _FULL_PTR_XLAT_TABLES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("RefIdToPointer"),
-        cef_master_h.C_POINTER.withName("PointerToRefId"),
-        cef_master_h.C_LONG.withName("NextRefId"),
-        cef_master_h.C_INT.withName("XlatSide")
+        cef_render_handler_capi_h.C_POINTER.withName("RefIdToPointer"),
+        cef_render_handler_capi_h.C_POINTER.withName("PointerToRefId"),
+        cef_render_handler_capi_h.C_LONG.withName("NextRefId"),
+        cef_render_handler_capi_h.C_INT.withName("XlatSide")
     ).withName("_FULL_PTR_XLAT_TABLES");
 
     /**

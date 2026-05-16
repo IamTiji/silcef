@@ -29,9 +29,9 @@ public class _BIDI_RESPONSE_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwResult"),
-        cef_master_h.C_LONG.withName("dwReqNumber"),
-        cef_master_h.C_POINTER.withName("pSchema"),
+        cef_render_handler_capi_h.C_LONG.withName("dwResult"),
+        cef_render_handler_capi_h.C_LONG.withName("dwReqNumber"),
+        cef_render_handler_capi_h.C_POINTER.withName("pSchema"),
         _BIDI_DATA.layout().withName("data")
     ).withName("_BIDI_RESPONSE_DATA");
 

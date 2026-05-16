@@ -30,12 +30,12 @@ public class _DISCDLGSTRUCTA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbStructure"),
+        cef_render_handler_capi_h.C_LONG.withName("cbStructure"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hwndOwner"),
-        cef_master_h.C_POINTER.withName("lpLocalName"),
-        cef_master_h.C_POINTER.withName("lpRemoteName"),
-        cef_master_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndOwner"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpLocalName"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpRemoteName"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
         MemoryLayout.paddingLayout(4)
     ).withName("_DISCDLGSTRUCTA");
 

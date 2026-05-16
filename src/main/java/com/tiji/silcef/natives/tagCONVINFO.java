@@ -41,25 +41,25 @@ public class tagCONVINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cb"),
+        cef_render_handler_capi_h.C_LONG.withName("cb"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("hUser"),
-        cef_master_h.C_POINTER.withName("hConvPartner"),
-        cef_master_h.C_POINTER.withName("hszSvcPartner"),
-        cef_master_h.C_POINTER.withName("hszServiceReq"),
-        cef_master_h.C_POINTER.withName("hszTopic"),
-        cef_master_h.C_POINTER.withName("hszItem"),
-        cef_master_h.C_INT.withName("wFmt"),
-        cef_master_h.C_INT.withName("wType"),
-        cef_master_h.C_INT.withName("wStatus"),
-        cef_master_h.C_INT.withName("wConvst"),
-        cef_master_h.C_INT.withName("wLastError"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("hUser"),
+        cef_render_handler_capi_h.C_POINTER.withName("hConvPartner"),
+        cef_render_handler_capi_h.C_POINTER.withName("hszSvcPartner"),
+        cef_render_handler_capi_h.C_POINTER.withName("hszServiceReq"),
+        cef_render_handler_capi_h.C_POINTER.withName("hszTopic"),
+        cef_render_handler_capi_h.C_POINTER.withName("hszItem"),
+        cef_render_handler_capi_h.C_INT.withName("wFmt"),
+        cef_render_handler_capi_h.C_INT.withName("wType"),
+        cef_render_handler_capi_h.C_INT.withName("wStatus"),
+        cef_render_handler_capi_h.C_INT.withName("wConvst"),
+        cef_render_handler_capi_h.C_INT.withName("wLastError"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hConvList"),
+        cef_render_handler_capi_h.C_POINTER.withName("hConvList"),
         tagCONVCONTEXT.layout().withName("ConvCtxt"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hwnd"),
-        cef_master_h.C_POINTER.withName("hwndPartner")
+        cef_render_handler_capi_h.C_POINTER.withName("hwnd"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndPartner")
     ).withName("tagCONVINFO");
 
     /**

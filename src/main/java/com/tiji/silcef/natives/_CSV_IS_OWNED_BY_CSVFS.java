@@ -26,7 +26,7 @@ public class _CSV_IS_OWNED_BY_CSVFS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("OwnedByCSVFS")
+        cef_render_handler_capi_h.C_CHAR.withName("OwnedByCSVFS")
     ).withName("_CSV_IS_OWNED_BY_CSVFS");
 
     /**

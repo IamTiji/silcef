@@ -27,7 +27,7 @@ public class _CRYPT_ALGORITHM_IDENTIFIER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszObjId"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszObjId"),
         _CRYPTOAPI_BLOB.layout().withName("Parameters")
     ).withName("_CRYPT_ALGORITHM_IDENTIFIER");
 

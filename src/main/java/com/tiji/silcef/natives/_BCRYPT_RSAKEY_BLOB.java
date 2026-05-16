@@ -31,12 +31,12 @@ public class _BCRYPT_RSAKEY_BLOB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Magic"),
-        cef_master_h.C_LONG.withName("BitLength"),
-        cef_master_h.C_LONG.withName("cbPublicExp"),
-        cef_master_h.C_LONG.withName("cbModulus"),
-        cef_master_h.C_LONG.withName("cbPrime1"),
-        cef_master_h.C_LONG.withName("cbPrime2")
+        cef_render_handler_capi_h.C_LONG.withName("Magic"),
+        cef_render_handler_capi_h.C_LONG.withName("BitLength"),
+        cef_render_handler_capi_h.C_LONG.withName("cbPublicExp"),
+        cef_render_handler_capi_h.C_LONG.withName("cbModulus"),
+        cef_render_handler_capi_h.C_LONG.withName("cbPrime1"),
+        cef_render_handler_capi_h.C_LONG.withName("cbPrime2")
     ).withName("_BCRYPT_RSAKEY_BLOB");
 
     /**

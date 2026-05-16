@@ -27,8 +27,8 @@ public class CORRELATION_VECTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("Version"),
-        MemoryLayout.sequenceLayout(129, cef_master_h.C_CHAR).withName("Vector")
+        cef_render_handler_capi_h.C_CHAR.withName("Version"),
+        MemoryLayout.sequenceLayout(129, cef_render_handler_capi_h.C_CHAR).withName("Vector")
     ).withName("CORRELATION_VECTOR");
 
     /**

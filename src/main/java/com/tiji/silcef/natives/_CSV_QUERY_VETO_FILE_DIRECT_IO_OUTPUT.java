@@ -28,9 +28,9 @@ public class _CSV_QUERY_VETO_FILE_DIRECT_IO_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("VetoedFromAltitudeIntegral"),
-        cef_master_h.C_LONG_LONG.withName("VetoedFromAltitudeDecimal"),
-        MemoryLayout.sequenceLayout(256, cef_master_h.C_SHORT).withName("Reason")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("VetoedFromAltitudeIntegral"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("VetoedFromAltitudeDecimal"),
+        MemoryLayout.sequenceLayout(256, cef_render_handler_capi_h.C_SHORT).withName("Reason")
     ).withName("_CSV_QUERY_VETO_FILE_DIRECT_IO_OUTPUT");
 
     /**

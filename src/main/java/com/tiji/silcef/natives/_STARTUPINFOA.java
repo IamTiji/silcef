@@ -43,26 +43,26 @@ public class _STARTUPINFOA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cb"),
+        cef_render_handler_capi_h.C_LONG.withName("cb"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpReserved"),
-        cef_master_h.C_POINTER.withName("lpDesktop"),
-        cef_master_h.C_POINTER.withName("lpTitle"),
-        cef_master_h.C_LONG.withName("dwX"),
-        cef_master_h.C_LONG.withName("dwY"),
-        cef_master_h.C_LONG.withName("dwXSize"),
-        cef_master_h.C_LONG.withName("dwYSize"),
-        cef_master_h.C_LONG.withName("dwXCountChars"),
-        cef_master_h.C_LONG.withName("dwYCountChars"),
-        cef_master_h.C_LONG.withName("dwFillAttribute"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_SHORT.withName("wShowWindow"),
-        cef_master_h.C_SHORT.withName("cbReserved2"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpReserved"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpDesktop"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpTitle"),
+        cef_render_handler_capi_h.C_LONG.withName("dwX"),
+        cef_render_handler_capi_h.C_LONG.withName("dwY"),
+        cef_render_handler_capi_h.C_LONG.withName("dwXSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwYSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwXCountChars"),
+        cef_render_handler_capi_h.C_LONG.withName("dwYCountChars"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFillAttribute"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_SHORT.withName("wShowWindow"),
+        cef_render_handler_capi_h.C_SHORT.withName("cbReserved2"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpReserved2"),
-        cef_master_h.C_POINTER.withName("hStdInput"),
-        cef_master_h.C_POINTER.withName("hStdOutput"),
-        cef_master_h.C_POINTER.withName("hStdError")
+        cef_render_handler_capi_h.C_POINTER.withName("lpReserved2"),
+        cef_render_handler_capi_h.C_POINTER.withName("hStdInput"),
+        cef_render_handler_capi_h.C_POINTER.withName("hStdOutput"),
+        cef_render_handler_capi_h.C_POINTER.withName("hStdError")
     ).withName("_STARTUPINFOA");
 
     /**

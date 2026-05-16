@@ -32,12 +32,12 @@ public class _STORAGE_HW_FIRMWARE_SLOT_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_CHAR.withName("SlotNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_CHAR.withName("SlotNumber"),
         MemoryLayout.paddingLayout(1),
-        MemoryLayout.sequenceLayout(6, cef_master_h.C_CHAR).withName("Reserved1"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("Revision")
+        MemoryLayout.sequenceLayout(6, cef_render_handler_capi_h.C_CHAR).withName("Reserved1"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("Revision")
     ).withName("_STORAGE_HW_FIRMWARE_SLOT_INFO");
 
     /**

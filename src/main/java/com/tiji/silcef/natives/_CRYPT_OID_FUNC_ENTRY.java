@@ -27,8 +27,8 @@ public class _CRYPT_OID_FUNC_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszOID"),
-        cef_master_h.C_POINTER.withName("pvFuncAddr")
+        cef_render_handler_capi_h.C_POINTER.withName("pszOID"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvFuncAddr")
     ).withName("_CRYPT_OID_FUNC_ENTRY");
 
     /**

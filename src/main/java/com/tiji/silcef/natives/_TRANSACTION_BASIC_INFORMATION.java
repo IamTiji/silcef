@@ -29,8 +29,8 @@ public class _TRANSACTION_BASIC_INFORMATION {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("TransactionId"),
-        cef_master_h.C_LONG.withName("State"),
-        cef_master_h.C_LONG.withName("Outcome")
+        cef_render_handler_capi_h.C_LONG.withName("State"),
+        cef_render_handler_capi_h.C_LONG.withName("Outcome")
     ).withName("_TRANSACTION_BASIC_INFORMATION");
 
     /**

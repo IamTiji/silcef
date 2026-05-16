@@ -32,13 +32,13 @@ public class _SD_CHANGE_MACHINE_SID_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("NumSDChangedSuccess"),
-        cef_master_h.C_LONG_LONG.withName("NumSDChangedFail"),
-        cef_master_h.C_LONG_LONG.withName("NumSDUnused"),
-        cef_master_h.C_LONG_LONG.withName("NumSDTotal"),
-        cef_master_h.C_LONG_LONG.withName("NumMftSDChangedSuccess"),
-        cef_master_h.C_LONG_LONG.withName("NumMftSDChangedFail"),
-        cef_master_h.C_LONG_LONG.withName("NumMftSDTotal")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NumSDChangedSuccess"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NumSDChangedFail"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NumSDUnused"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NumSDTotal"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NumMftSDChangedSuccess"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NumMftSDChangedFail"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NumMftSDTotal")
     ).withName("_SD_CHANGE_MACHINE_SID_OUTPUT");
 
     /**

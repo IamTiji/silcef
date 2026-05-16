@@ -30,9 +30,9 @@ public class _TXFS_ROLLFORWARD_REDO_INFORMATION {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LARGE_INTEGER.layout().withName("LastVirtualClock"),
-        cef_master_h.C_LONG_LONG.withName("LastRedoLsn"),
-        cef_master_h.C_LONG_LONG.withName("HighestRecoveryLsn"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LastRedoLsn"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("HighestRecoveryLsn"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         MemoryLayout.paddingLayout(4)
     ).withName("_TXFS_ROLLFORWARD_REDO_INFORMATION");
 

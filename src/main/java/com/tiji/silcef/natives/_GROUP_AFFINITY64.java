@@ -28,9 +28,9 @@ public class _GROUP_AFFINITY64 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("Mask"),
-        cef_master_h.C_SHORT.withName("Group"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_SHORT).withName("Reserved")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Mask"),
+        cef_render_handler_capi_h.C_SHORT.withName("Group"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_SHORT).withName("Reserved")
     ).withName("_GROUP_AFFINITY64");
 
     /**

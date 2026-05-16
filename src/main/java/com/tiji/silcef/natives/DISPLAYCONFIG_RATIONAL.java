@@ -27,8 +27,8 @@ public class DISPLAYCONFIG_RATIONAL {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Numerator"),
-        cef_master_h.C_INT.withName("Denominator")
+        cef_render_handler_capi_h.C_INT.withName("Numerator"),
+        cef_render_handler_capi_h.C_INT.withName("Denominator")
     ).withName("DISPLAYCONFIG_RATIONAL");
 
     /**

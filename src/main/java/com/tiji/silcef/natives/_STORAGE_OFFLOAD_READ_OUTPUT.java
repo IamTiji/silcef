@@ -30,10 +30,10 @@ public class _STORAGE_OFFLOAD_READ_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("OffloadReadFlags"),
-        cef_master_h.C_LONG.withName("Reserved"),
-        cef_master_h.C_LONG_LONG.withName("LengthProtected"),
-        cef_master_h.C_LONG.withName("TokenLength"),
+        cef_render_handler_capi_h.C_LONG.withName("OffloadReadFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LengthProtected"),
+        cef_render_handler_capi_h.C_LONG.withName("TokenLength"),
         _STORAGE_OFFLOAD_TOKEN.layout().withName("Token"),
         MemoryLayout.paddingLayout(4)
     ).withName("_STORAGE_OFFLOAD_READ_OUTPUT");

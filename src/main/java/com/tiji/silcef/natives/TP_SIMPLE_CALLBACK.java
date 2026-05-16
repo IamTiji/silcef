@@ -31,8 +31,8 @@ public final class TP_SIMPLE_CALLBACK {
     }
 
     private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-        cef_master_h.C_POINTER,
-        cef_master_h.C_POINTER
+        cef_render_handler_capi_h.C_POINTER,
+        cef_render_handler_capi_h.C_POINTER
     );
 
     /**
@@ -42,7 +42,7 @@ public final class TP_SIMPLE_CALLBACK {
         return $DESC;
     }
 
-    private static final MethodHandle UP$MH = cef_master_h.upcallHandle(TP_SIMPLE_CALLBACK.Function.class, "apply", $DESC);
+    private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(TP_SIMPLE_CALLBACK.Function.class, "apply", $DESC);
 
     /**
      * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

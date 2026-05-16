@@ -28,9 +28,9 @@ public class tagMULTIKEYHELPA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("mkSize"),
-        cef_master_h.C_CHAR.withName("mkKeylist"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("szKeyphrase"),
+        cef_render_handler_capi_h.C_LONG.withName("mkSize"),
+        cef_render_handler_capi_h.C_CHAR.withName("mkKeylist"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("szKeyphrase"),
         MemoryLayout.paddingLayout(2)
     ).withName("tagMULTIKEYHELPA");
 

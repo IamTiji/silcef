@@ -28,9 +28,9 @@ public class _IMAGE_FUNCTION_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("StartingAddress"),
-        cef_master_h.C_LONG.withName("EndingAddress"),
-        cef_master_h.C_LONG.withName("EndOfPrologue")
+        cef_render_handler_capi_h.C_LONG.withName("StartingAddress"),
+        cef_render_handler_capi_h.C_LONG.withName("EndingAddress"),
+        cef_render_handler_capi_h.C_LONG.withName("EndOfPrologue")
     ).withName("_IMAGE_FUNCTION_ENTRY");
 
     /**

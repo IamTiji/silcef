@@ -28,9 +28,9 @@ public class tagMIXERCONTROLDETAILS_LISTTEXTA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwParam1"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwParam2"),
-        MemoryLayout.sequenceLayout(64, cef_master_h.C_CHAR).withName("szName")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwParam1"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwParam2"),
+        MemoryLayout.sequenceLayout(64, cef_render_handler_capi_h.C_CHAR).withName("szName")
     ).withName("tagMIXERCONTROLDETAILS_LISTTEXTA");
 
     /**

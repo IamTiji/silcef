@@ -28,10 +28,10 @@ public class _SHRINK_VOLUME_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("ShrinkRequestType"),
+        cef_render_handler_capi_h.C_INT.withName("ShrinkRequestType"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("Flags"),
-        cef_master_h.C_LONG_LONG.withName("NewNumberOfSectors")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NewNumberOfSectors")
     ).withName("_SHRINK_VOLUME_INFORMATION");
 
     /**

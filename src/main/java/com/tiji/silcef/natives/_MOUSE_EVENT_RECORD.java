@@ -30,9 +30,9 @@ public class _MOUSE_EVENT_RECORD {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _COORD.layout().withName("dwMousePosition"),
-        cef_master_h.C_LONG.withName("dwButtonState"),
-        cef_master_h.C_LONG.withName("dwControlKeyState"),
-        cef_master_h.C_LONG.withName("dwEventFlags")
+        cef_render_handler_capi_h.C_LONG.withName("dwButtonState"),
+        cef_render_handler_capi_h.C_LONG.withName("dwControlKeyState"),
+        cef_render_handler_capi_h.C_LONG.withName("dwEventFlags")
     ).withName("_MOUSE_EVENT_RECORD");
 
     /**

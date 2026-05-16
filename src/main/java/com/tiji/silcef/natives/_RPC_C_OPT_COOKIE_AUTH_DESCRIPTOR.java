@@ -27,9 +27,9 @@ public class _RPC_C_OPT_COOKIE_AUTH_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("BufferSize"),
+        cef_render_handler_capi_h.C_LONG.withName("BufferSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("Buffer")
+        cef_render_handler_capi_h.C_POINTER.withName("Buffer")
     ).withName("_RPC_C_OPT_COOKIE_AUTH_DESCRIPTOR");
 
     /**

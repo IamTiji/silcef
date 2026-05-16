@@ -30,12 +30,12 @@ public class tagACTCTX_SECTION_KEYED_DATA_ASSEMBLY_METADATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("lpInformation"),
-        cef_master_h.C_POINTER.withName("lpSectionBase"),
-        cef_master_h.C_LONG.withName("ulSectionLength"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpInformation"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpSectionBase"),
+        cef_render_handler_capi_h.C_LONG.withName("ulSectionLength"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpSectionGlobalDataBase"),
-        cef_master_h.C_LONG.withName("ulSectionGlobalDataLength"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpSectionGlobalDataBase"),
+        cef_render_handler_capi_h.C_LONG.withName("ulSectionGlobalDataLength"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagACTCTX_SECTION_KEYED_DATA_ASSEMBLY_METADATA");
 

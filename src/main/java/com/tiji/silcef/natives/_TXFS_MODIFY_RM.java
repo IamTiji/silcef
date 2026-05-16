@@ -33,14 +33,14 @@ public class _TXFS_MODIFY_RM {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("LogContainerCountMax"),
-        cef_master_h.C_LONG.withName("LogContainerCountMin"),
-        cef_master_h.C_LONG.withName("LogContainerCount"),
-        cef_master_h.C_LONG.withName("LogGrowthIncrement"),
-        cef_master_h.C_LONG.withName("LogAutoShrinkPercentage"),
-        cef_master_h.C_LONG_LONG.withName("Reserved"),
-        cef_master_h.C_SHORT.withName("LoggingMode"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("LogContainerCountMax"),
+        cef_render_handler_capi_h.C_LONG.withName("LogContainerCountMin"),
+        cef_render_handler_capi_h.C_LONG.withName("LogContainerCount"),
+        cef_render_handler_capi_h.C_LONG.withName("LogGrowthIncrement"),
+        cef_render_handler_capi_h.C_LONG.withName("LogAutoShrinkPercentage"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Reserved"),
+        cef_render_handler_capi_h.C_SHORT.withName("LoggingMode"),
         MemoryLayout.paddingLayout(6)
     ).withName("_TXFS_MODIFY_RM");
 

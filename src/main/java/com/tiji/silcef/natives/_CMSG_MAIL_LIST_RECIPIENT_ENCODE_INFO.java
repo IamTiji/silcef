@@ -37,20 +37,20 @@ public class _CMSG_MAIL_LIST_RECIPIENT_ENCODE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("KeyEncryptionAlgorithm"),
-        cef_master_h.C_POINTER.withName("pvKeyEncryptionAuxInfo"),
-        cef_master_h.C_LONG_LONG.withName("hCryptProv"),
-        cef_master_h.C_LONG.withName("dwKeyChoice"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvKeyEncryptionAuxInfo"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("hCryptProv"),
+        cef_render_handler_capi_h.C_LONG.withName("dwKeyChoice"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG_LONG.withName("hKeyEncryptionKey"),
-            cef_master_h.C_POINTER.withName("pvKeyEncryptionKey")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("hKeyEncryptionKey"),
+            cef_render_handler_capi_h.C_POINTER.withName("pvKeyEncryptionKey")
         ).withName("$anon$7185:5"),
         _CRYPTOAPI_BLOB.layout().withName("KeyId"),
         _FILETIME.layout().withName("Date"),
-        cef_master_h.C_POINTER.withName("pOtherAttr")
+        cef_render_handler_capi_h.C_POINTER.withName("pOtherAttr")
     ).withName("_CMSG_MAIL_LIST_RECIPIENT_ENCODE_INFO");
 
     /**

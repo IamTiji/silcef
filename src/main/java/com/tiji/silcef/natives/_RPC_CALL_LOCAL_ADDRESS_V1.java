@@ -29,11 +29,11 @@ public class _RPC_CALL_LOCAL_ADDRESS_V1 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Version"),
+        cef_render_handler_capi_h.C_INT.withName("Version"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("Buffer"),
-        cef_master_h.C_LONG.withName("BufferSize"),
-        cef_master_h.C_INT.withName("AddressFormat")
+        cef_render_handler_capi_h.C_POINTER.withName("Buffer"),
+        cef_render_handler_capi_h.C_LONG.withName("BufferSize"),
+        cef_render_handler_capi_h.C_INT.withName("AddressFormat")
     ).withName("_RPC_CALL_LOCAL_ADDRESS_V1");
 
     /**

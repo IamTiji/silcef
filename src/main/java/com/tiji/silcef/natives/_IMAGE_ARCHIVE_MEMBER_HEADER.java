@@ -32,13 +32,13 @@ public class _IMAGE_ARCHIVE_MEMBER_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("Name"),
-        MemoryLayout.sequenceLayout(12, cef_master_h.C_CHAR).withName("Date"),
-        MemoryLayout.sequenceLayout(6, cef_master_h.C_CHAR).withName("UserID"),
-        MemoryLayout.sequenceLayout(6, cef_master_h.C_CHAR).withName("GroupID"),
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_CHAR).withName("Mode"),
-        MemoryLayout.sequenceLayout(10, cef_master_h.C_CHAR).withName("Size"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("EndHeader")
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("Name"),
+        MemoryLayout.sequenceLayout(12, cef_render_handler_capi_h.C_CHAR).withName("Date"),
+        MemoryLayout.sequenceLayout(6, cef_render_handler_capi_h.C_CHAR).withName("UserID"),
+        MemoryLayout.sequenceLayout(6, cef_render_handler_capi_h.C_CHAR).withName("GroupID"),
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_CHAR).withName("Mode"),
+        MemoryLayout.sequenceLayout(10, cef_render_handler_capi_h.C_CHAR).withName("Size"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("EndHeader")
     ).withName("_IMAGE_ARCHIVE_MEMBER_HEADER");
 
     /**

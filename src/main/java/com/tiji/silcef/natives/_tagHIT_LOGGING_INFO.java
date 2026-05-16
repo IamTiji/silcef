@@ -30,12 +30,12 @@ public class _tagHIT_LOGGING_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwStructSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStructSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpszLoggedUrlName"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpszLoggedUrlName"),
         _SYSTEMTIME.layout().withName("StartTime"),
         _SYSTEMTIME.layout().withName("EndTime"),
-        cef_master_h.C_POINTER.withName("lpszExtendedInfo")
+        cef_render_handler_capi_h.C_POINTER.withName("lpszExtendedInfo")
     ).withName("_tagHIT_LOGGING_INFO");
 
     /**

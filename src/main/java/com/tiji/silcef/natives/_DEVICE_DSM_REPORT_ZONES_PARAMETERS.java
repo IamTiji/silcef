@@ -29,10 +29,10 @@ public class _DEVICE_DSM_REPORT_ZONES_PARAMETERS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_CHAR.withName("ReportOption"),
-        cef_master_h.C_CHAR.withName("Partial"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("Reserved")
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_CHAR.withName("ReportOption"),
+        cef_render_handler_capi_h.C_CHAR.withName("Partial"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("Reserved")
     ).withName("_DEVICE_DSM_REPORT_ZONES_PARAMETERS");
 
     /**

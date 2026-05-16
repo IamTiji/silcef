@@ -31,13 +31,13 @@ public class _AppBarData {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hWnd"),
-        cef_master_h.C_INT.withName("uCallbackMessage"),
-        cef_master_h.C_INT.withName("uEdge"),
+        cef_render_handler_capi_h.C_POINTER.withName("hWnd"),
+        cef_render_handler_capi_h.C_INT.withName("uCallbackMessage"),
+        cef_render_handler_capi_h.C_INT.withName("uEdge"),
         tagRECT.layout().withName("rc"),
-        cef_master_h.C_LONG_LONG.withName("lParam")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("lParam")
     ).withName("_AppBarData");
 
     /**

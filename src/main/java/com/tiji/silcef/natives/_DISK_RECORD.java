@@ -35,10 +35,10 @@ public class _DISK_RECORD {
         _LARGE_INTEGER.layout().withName("ByteOffset"),
         _LARGE_INTEGER.layout().withName("StartTime"),
         _LARGE_INTEGER.layout().withName("EndTime"),
-        cef_master_h.C_POINTER.withName("VirtualAddress"),
-        cef_master_h.C_LONG.withName("NumberOfBytes"),
-        cef_master_h.C_CHAR.withName("DeviceNumber"),
-        cef_master_h.C_CHAR.withName("ReadRequest"),
+        cef_render_handler_capi_h.C_POINTER.withName("VirtualAddress"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfBytes"),
+        cef_render_handler_capi_h.C_CHAR.withName("DeviceNumber"),
+        cef_render_handler_capi_h.C_CHAR.withName("ReadRequest"),
         MemoryLayout.paddingLayout(2)
     ).withName("_DISK_RECORD");
 

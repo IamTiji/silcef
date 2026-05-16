@@ -36,8 +36,8 @@ public class _DISK_PARTITION_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("SizeOfPartitionInfo"),
-        cef_master_h.C_INT.withName("PartitionStyle"),
+        cef_render_handler_capi_h.C_LONG.withName("SizeOfPartitionInfo"),
+        cef_render_handler_capi_h.C_INT.withName("PartitionStyle"),
         MemoryLayout.unionLayout(
             _DISK_PARTITION_INFO.Mbr.layout().withName("Mbr"),
             _DISK_PARTITION_INFO.Gpt.layout().withName("Gpt")
@@ -154,8 +154,8 @@ public class _DISK_PARTITION_INFO {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_LONG.withName("Signature"),
-            cef_master_h.C_LONG.withName("CheckSum")
+            cef_render_handler_capi_h.C_LONG.withName("Signature"),
+            cef_render_handler_capi_h.C_LONG.withName("CheckSum")
         ).withName("$anon$9762:17");
 
         /**

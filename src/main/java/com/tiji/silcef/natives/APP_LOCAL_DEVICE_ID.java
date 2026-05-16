@@ -26,7 +26,7 @@ public class APP_LOCAL_DEVICE_ID {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("value")
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("value")
     ).withName("APP_LOCAL_DEVICE_ID");
 
     /**

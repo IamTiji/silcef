@@ -30,13 +30,13 @@ public class _CRL_CONTEXT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwCertEncodingType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCertEncodingType"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pbCrlEncoded"),
-        cef_master_h.C_LONG.withName("cbCrlEncoded"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbCrlEncoded"),
+        cef_render_handler_capi_h.C_LONG.withName("cbCrlEncoded"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pCrlInfo"),
-        cef_master_h.C_POINTER.withName("hCertStore")
+        cef_render_handler_capi_h.C_POINTER.withName("pCrlInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("hCertStore")
     ).withName("_CRL_CONTEXT");
 
     /**

@@ -32,13 +32,13 @@ public class tagMETAHEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("mtType"),
-        cef_master_h.C_SHORT.withName("mtHeaderSize"),
-        cef_master_h.C_SHORT.withName("mtVersion"),
-        cef_master_h.align(cef_master_h.C_LONG, 2).withName("mtSize"),
-        cef_master_h.C_SHORT.withName("mtNoObjects"),
-        cef_master_h.align(cef_master_h.C_LONG, 2).withName("mtMaxRecord"),
-        cef_master_h.C_SHORT.withName("mtNoParameters")
+        cef_render_handler_capi_h.C_SHORT.withName("mtType"),
+        cef_render_handler_capi_h.C_SHORT.withName("mtHeaderSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("mtVersion"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("mtSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("mtNoObjects"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("mtMaxRecord"),
+        cef_render_handler_capi_h.C_SHORT.withName("mtNoParameters")
     ).withName("tagMETAHEADER");
 
     /**

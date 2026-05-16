@@ -27,8 +27,8 @@ public class _IMAGE_RESOURCE_DIR_STRING_U {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Length"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("NameString")
+        cef_render_handler_capi_h.C_SHORT.withName("Length"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("NameString")
     ).withName("_IMAGE_RESOURCE_DIR_STRING_U");
 
     /**

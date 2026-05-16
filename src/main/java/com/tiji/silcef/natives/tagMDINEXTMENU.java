@@ -28,9 +28,9 @@ public class tagMDINEXTMENU {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hmenuIn"),
-        cef_master_h.C_POINTER.withName("hmenuNext"),
-        cef_master_h.C_POINTER.withName("hwndNext")
+        cef_render_handler_capi_h.C_POINTER.withName("hmenuIn"),
+        cef_render_handler_capi_h.C_POINTER.withName("hmenuNext"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndNext")
     ).withName("tagMDINEXTMENU");
 
     /**

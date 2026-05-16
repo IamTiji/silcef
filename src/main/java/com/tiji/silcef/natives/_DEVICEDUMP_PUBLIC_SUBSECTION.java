@@ -29,10 +29,10 @@ public class _DEVICEDUMP_PUBLIC_SUBSECTION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwFlags"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwFlags"),
         MemoryLayout.sequenceLayout(16, _GP_LOG_PAGE_DESCRIPTOR.layout()).withName("GPLogTable"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("szDescription"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("bData")
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("szDescription"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("bData")
     ).withName("_DEVICEDUMP_PUBLIC_SUBSECTION");
 
     /**

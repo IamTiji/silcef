@@ -30,12 +30,12 @@ public class FLASHWINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hwnd"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_INT.withName("uCount"),
-        cef_master_h.C_LONG.withName("dwTimeout"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwnd"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_INT.withName("uCount"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTimeout"),
         MemoryLayout.paddingLayout(4)
     ).withName("$anon$4689:9");
 

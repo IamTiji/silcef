@@ -27,9 +27,9 @@ public class _CRYPT_CONTEXTS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cContexts"),
+        cef_render_handler_capi_h.C_LONG.withName("cContexts"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgpszContexts")
+        cef_render_handler_capi_h.C_POINTER.withName("rgpszContexts")
     ).withName("_CRYPT_CONTEXTS");
 
     /**

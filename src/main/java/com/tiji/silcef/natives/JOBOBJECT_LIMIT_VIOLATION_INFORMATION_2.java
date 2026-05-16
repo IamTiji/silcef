@@ -51,32 +51,32 @@ public class JOBOBJECT_LIMIT_VIOLATION_INFORMATION_2 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("LimitFlags"),
-        cef_master_h.C_LONG.withName("ViolationLimitFlags"),
-        cef_master_h.C_LONG_LONG.withName("IoReadBytes"),
-        cef_master_h.C_LONG_LONG.withName("IoReadBytesLimit"),
-        cef_master_h.C_LONG_LONG.withName("IoWriteBytes"),
-        cef_master_h.C_LONG_LONG.withName("IoWriteBytesLimit"),
+        cef_render_handler_capi_h.C_LONG.withName("LimitFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("ViolationLimitFlags"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("IoReadBytes"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("IoReadBytesLimit"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("IoWriteBytes"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("IoWriteBytesLimit"),
         _LARGE_INTEGER.layout().withName("PerJobUserTime"),
         _LARGE_INTEGER.layout().withName("PerJobUserTimeLimit"),
-        cef_master_h.C_LONG_LONG.withName("JobMemory"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("JobMemory"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG_LONG.withName("JobHighMemoryLimit"),
-            cef_master_h.C_LONG_LONG.withName("JobMemoryLimit")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("JobHighMemoryLimit"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("JobMemoryLimit")
         ).withName("$anon$13492:5"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_INT.withName("RateControlTolerance"),
-            cef_master_h.C_INT.withName("CpuRateControlTolerance")
+            cef_render_handler_capi_h.C_INT.withName("RateControlTolerance"),
+            cef_render_handler_capi_h.C_INT.withName("CpuRateControlTolerance")
         ).withName("$anon$13497:5"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_INT.withName("RateControlToleranceLimit"),
-            cef_master_h.C_INT.withName("CpuRateControlToleranceLimit")
+            cef_render_handler_capi_h.C_INT.withName("RateControlToleranceLimit"),
+            cef_render_handler_capi_h.C_INT.withName("CpuRateControlToleranceLimit")
         ).withName("$anon$13502:5"),
-        cef_master_h.C_LONG_LONG.withName("JobLowMemoryLimit"),
-        cef_master_h.C_INT.withName("IoRateControlTolerance"),
-        cef_master_h.C_INT.withName("IoRateControlToleranceLimit"),
-        cef_master_h.C_INT.withName("NetRateControlTolerance"),
-        cef_master_h.C_INT.withName("NetRateControlToleranceLimit")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("JobLowMemoryLimit"),
+        cef_render_handler_capi_h.C_INT.withName("IoRateControlTolerance"),
+        cef_render_handler_capi_h.C_INT.withName("IoRateControlToleranceLimit"),
+        cef_render_handler_capi_h.C_INT.withName("NetRateControlTolerance"),
+        cef_render_handler_capi_h.C_INT.withName("NetRateControlToleranceLimit")
     ).withName("JOBOBJECT_LIMIT_VIOLATION_INFORMATION_2");
 
     /**

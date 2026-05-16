@@ -33,13 +33,13 @@ public class PPM_IDLE_STATE_ACCOUNTING_EX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("TotalTime"),
-        cef_master_h.C_LONG.withName("IdleTransitions"),
-        cef_master_h.C_LONG.withName("FailedTransitions"),
-        cef_master_h.C_LONG.withName("InvalidBucketIndex"),
-        cef_master_h.C_LONG.withName("MinTimeUs"),
-        cef_master_h.C_LONG.withName("MaxTimeUs"),
-        cef_master_h.C_LONG.withName("CancelledTransitions"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("TotalTime"),
+        cef_render_handler_capi_h.C_LONG.withName("IdleTransitions"),
+        cef_render_handler_capi_h.C_LONG.withName("FailedTransitions"),
+        cef_render_handler_capi_h.C_LONG.withName("InvalidBucketIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("MinTimeUs"),
+        cef_render_handler_capi_h.C_LONG.withName("MaxTimeUs"),
+        cef_render_handler_capi_h.C_LONG.withName("CancelledTransitions"),
         MemoryLayout.sequenceLayout(16, PPM_IDLE_STATE_BUCKET_EX.layout()).withName("IdleTimeBuckets")
     ).withName("$anon$19109:9");
 

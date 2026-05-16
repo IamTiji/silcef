@@ -30,9 +30,9 @@ public class _CERT_GENERAL_SUBTREE {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CERT_ALT_NAME_ENTRY.layout().withName("Base"),
-        cef_master_h.C_LONG.withName("dwMinimum"),
-        cef_master_h.C_INT.withName("fMaximum"),
-        cef_master_h.C_LONG.withName("dwMaximum"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMinimum"),
+        cef_render_handler_capi_h.C_INT.withName("fMaximum"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMaximum"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CERT_GENERAL_SUBTREE");
 

@@ -31,12 +31,12 @@ public class _CERT_REVOCATION_STATUS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwIndex"),
-        cef_master_h.C_LONG.withName("dwError"),
-        cef_master_h.C_LONG.withName("dwReason"),
-        cef_master_h.C_INT.withName("fHasFreshnessTime"),
-        cef_master_h.C_LONG.withName("dwFreshnessTime")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("dwError"),
+        cef_render_handler_capi_h.C_LONG.withName("dwReason"),
+        cef_render_handler_capi_h.C_INT.withName("fHasFreshnessTime"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFreshnessTime")
     ).withName("_CERT_REVOCATION_STATUS");
 
     /**

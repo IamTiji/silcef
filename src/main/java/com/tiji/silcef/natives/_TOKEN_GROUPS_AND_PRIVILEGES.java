@@ -35,15 +35,15 @@ public class _TOKEN_GROUPS_AND_PRIVILEGES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("SidCount"),
-        cef_master_h.C_LONG.withName("SidLength"),
-        cef_master_h.C_POINTER.withName("Sids"),
-        cef_master_h.C_LONG.withName("RestrictedSidCount"),
-        cef_master_h.C_LONG.withName("RestrictedSidLength"),
-        cef_master_h.C_POINTER.withName("RestrictedSids"),
-        cef_master_h.C_LONG.withName("PrivilegeCount"),
-        cef_master_h.C_LONG.withName("PrivilegeLength"),
-        cef_master_h.C_POINTER.withName("Privileges"),
+        cef_render_handler_capi_h.C_LONG.withName("SidCount"),
+        cef_render_handler_capi_h.C_LONG.withName("SidLength"),
+        cef_render_handler_capi_h.C_POINTER.withName("Sids"),
+        cef_render_handler_capi_h.C_LONG.withName("RestrictedSidCount"),
+        cef_render_handler_capi_h.C_LONG.withName("RestrictedSidLength"),
+        cef_render_handler_capi_h.C_POINTER.withName("RestrictedSids"),
+        cef_render_handler_capi_h.C_LONG.withName("PrivilegeCount"),
+        cef_render_handler_capi_h.C_LONG.withName("PrivilegeLength"),
+        cef_render_handler_capi_h.C_POINTER.withName("Privileges"),
         _LUID.layout().withName("AuthenticationId")
     ).withName("_TOKEN_GROUPS_AND_PRIVILEGES");
 

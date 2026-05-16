@@ -26,7 +26,7 @@ public class _PREVENT_MEDIA_REMOVAL {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("PreventMediaRemoval")
+        cef_render_handler_capi_h.C_CHAR.withName("PreventMediaRemoval")
     ).withName("_PREVENT_MEDIA_REMOVAL");
 
     /**

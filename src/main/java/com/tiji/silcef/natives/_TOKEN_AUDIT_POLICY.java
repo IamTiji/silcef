@@ -26,7 +26,7 @@ public class _TOKEN_AUDIT_POLICY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(31, cef_master_h.C_CHAR).withName("PerUserPolicy")
+        MemoryLayout.sequenceLayout(31, cef_render_handler_capi_h.C_CHAR).withName("PerUserPolicy")
     ).withName("_TOKEN_AUDIT_POLICY");
 
     /**

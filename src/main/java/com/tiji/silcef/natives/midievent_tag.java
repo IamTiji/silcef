@@ -29,10 +29,10 @@ public class midievent_tag {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwDeltaTime"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwStreamID"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwEvent"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.align(cef_master_h.C_LONG, 1)).withName("dwParms")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwDeltaTime"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwStreamID"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwEvent"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1)).withName("dwParms")
     ).withName("midievent_tag");
 
     /**

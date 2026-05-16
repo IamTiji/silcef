@@ -29,10 +29,10 @@ public class _STREAMS_QUERY_PARAMETERS_OUTPUT_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("OptimalWriteSize"),
-        cef_master_h.C_LONG.withName("StreamGranularitySize"),
-        cef_master_h.C_LONG.withName("StreamIdMin"),
-        cef_master_h.C_LONG.withName("StreamIdMax")
+        cef_render_handler_capi_h.C_LONG.withName("OptimalWriteSize"),
+        cef_render_handler_capi_h.C_LONG.withName("StreamGranularitySize"),
+        cef_render_handler_capi_h.C_LONG.withName("StreamIdMin"),
+        cef_render_handler_capi_h.C_LONG.withName("StreamIdMax")
     ).withName("_STREAMS_QUERY_PARAMETERS_OUTPUT_BUFFER");
 
     /**

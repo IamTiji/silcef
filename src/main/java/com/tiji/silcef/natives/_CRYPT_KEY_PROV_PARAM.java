@@ -29,11 +29,11 @@ public class _CRYPT_KEY_PROV_PARAM {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwParam"),
+        cef_render_handler_capi_h.C_LONG.withName("dwParam"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pbData"),
-        cef_master_h.C_LONG.withName("cbData"),
-        cef_master_h.C_LONG.withName("dwFlags")
+        cef_render_handler_capi_h.C_POINTER.withName("pbData"),
+        cef_render_handler_capi_h.C_LONG.withName("cbData"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags")
     ).withName("_CRYPT_KEY_PROV_PARAM");
 
     /**

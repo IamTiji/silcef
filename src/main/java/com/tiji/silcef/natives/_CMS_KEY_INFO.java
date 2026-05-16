@@ -29,10 +29,10 @@ public class _CMS_KEY_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
-        cef_master_h.C_INT.withName("Algid"),
-        cef_master_h.C_POINTER.withName("pbOID"),
-        cef_master_h.C_LONG.withName("cbOID"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_INT.withName("Algid"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbOID"),
+        cef_render_handler_capi_h.C_LONG.withName("cbOID"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CMS_KEY_INFO");
 

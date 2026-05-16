@@ -28,10 +28,10 @@ public class _CERT_STRONG_SIGN_SERIALIZED_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pwszCNGSignHashAlgids"),
-        cef_master_h.C_POINTER.withName("pwszCNGPubKeyMinBitLengths")
+        cef_render_handler_capi_h.C_POINTER.withName("pwszCNGSignHashAlgids"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszCNGPubKeyMinBitLengths")
     ).withName("_CERT_STRONG_SIGN_SERIALIZED_INFO");
 
     /**

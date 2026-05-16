@@ -33,8 +33,8 @@ public class DISPLAYCONFIG_MODE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("infoType"),
-        cef_master_h.C_INT.withName("id"),
+        cef_render_handler_capi_h.C_INT.withName("infoType"),
+        cef_render_handler_capi_h.C_INT.withName("id"),
         _LUID.layout().withName("adapterId"),
         MemoryLayout.unionLayout(
             DISPLAYCONFIG_TARGET_MODE.layout().withName("targetMode"),

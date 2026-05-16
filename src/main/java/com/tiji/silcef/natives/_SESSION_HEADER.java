@@ -29,10 +29,10 @@ public class _SESSION_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("sess_name"),
-        cef_master_h.C_CHAR.withName("num_sess"),
-        cef_master_h.C_CHAR.withName("rcv_dg_outstanding"),
-        cef_master_h.C_CHAR.withName("rcv_any_outstanding")
+        cef_render_handler_capi_h.C_CHAR.withName("sess_name"),
+        cef_render_handler_capi_h.C_CHAR.withName("num_sess"),
+        cef_render_handler_capi_h.C_CHAR.withName("rcv_dg_outstanding"),
+        cef_render_handler_capi_h.C_CHAR.withName("rcv_any_outstanding")
     ).withName("_SESSION_HEADER");
 
     /**

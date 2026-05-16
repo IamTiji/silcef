@@ -27,8 +27,8 @@ public class _NDR_CS_ROUTINES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pSizeConvertRoutines"),
-        cef_master_h.C_POINTER.withName("pTagGettingRoutines")
+        cef_render_handler_capi_h.C_POINTER.withName("pSizeConvertRoutines"),
+        cef_render_handler_capi_h.C_POINTER.withName("pTagGettingRoutines")
     ).withName("_NDR_CS_ROUTINES");
 
     /**

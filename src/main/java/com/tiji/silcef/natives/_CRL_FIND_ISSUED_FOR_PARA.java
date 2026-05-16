@@ -27,8 +27,8 @@ public class _CRL_FIND_ISSUED_FOR_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pSubjectCert"),
-        cef_master_h.C_POINTER.withName("pIssuerCert")
+        cef_render_handler_capi_h.C_POINTER.withName("pSubjectCert"),
+        cef_render_handler_capi_h.C_POINTER.withName("pIssuerCert")
     ).withName("_CRL_FIND_ISSUED_FOR_PARA");
 
     /**

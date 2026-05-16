@@ -26,7 +26,7 @@ public class _SET_PURGE_FAILURE_MODE_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags")
+        cef_render_handler_capi_h.C_LONG.withName("Flags")
     ).withName("_SET_PURGE_FAILURE_MODE_INPUT");
 
     /**

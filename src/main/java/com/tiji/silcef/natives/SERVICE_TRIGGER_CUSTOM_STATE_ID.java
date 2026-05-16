@@ -26,7 +26,7 @@ public class SERVICE_TRIGGER_CUSTOM_STATE_ID {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_LONG).withName("Data")
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_LONG).withName("Data")
     ).withName("$anon$472:9");
 
     /**

@@ -27,8 +27,8 @@ public class _HIBERFILE_BUCKET {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("MaxPhysicalMemory"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_LONG).withName("PhysicalMemoryPercent"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaxPhysicalMemory"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_LONG).withName("PhysicalMemoryPercent"),
         MemoryLayout.paddingLayout(4)
     ).withName("_HIBERFILE_BUCKET");
 

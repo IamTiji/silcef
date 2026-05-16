@@ -26,7 +26,7 @@ public class _FILE_ALIGNMENT_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("AlignmentRequirement")
+        cef_render_handler_capi_h.C_LONG.withName("AlignmentRequirement")
     ).withName("_FILE_ALIGNMENT_INFO");
 
     /**

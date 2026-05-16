@@ -29,9 +29,9 @@ public class _STORAGE_DEVICE_FAULT_DOMAIN_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("NumberOfFaultDomains"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfFaultDomains"),
         MemoryLayout.sequenceLayout(1, _GUID.layout()).withName("FaultDomainIds")
     ).withName("_STORAGE_DEVICE_FAULT_DOMAIN_DESCRIPTOR");
 

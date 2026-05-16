@@ -27,8 +27,8 @@ public class _ROOT_INFO_LUID {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("LowPart"),
-        cef_master_h.C_LONG.withName("HighPart")
+        cef_render_handler_capi_h.C_LONG.withName("LowPart"),
+        cef_render_handler_capi_h.C_LONG.withName("HighPart")
     ).withName("_ROOT_INFO_LUID");
 
     /**

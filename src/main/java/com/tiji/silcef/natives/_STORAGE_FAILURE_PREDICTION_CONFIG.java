@@ -30,11 +30,11 @@ public class _STORAGE_FAILURE_PREDICTION_CONFIG {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_CHAR.withName("Set"),
-        cef_master_h.C_CHAR.withName("Enabled"),
-        cef_master_h.C_SHORT.withName("Reserved")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_CHAR.withName("Set"),
+        cef_render_handler_capi_h.C_CHAR.withName("Enabled"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved")
     ).withName("_STORAGE_FAILURE_PREDICTION_CONFIG");
 
     /**

@@ -28,9 +28,9 @@ public class _IMAGE_BDD_DYNAMIC_RELOCATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("Left"),
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("Right"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("Value")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("Left"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("Right"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("Value")
     ).withName("_IMAGE_BDD_DYNAMIC_RELOCATION");
 
     /**

@@ -27,8 +27,8 @@ public class tagWTSSESSION_NOTIFICATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwSessionId")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSessionId")
     ).withName("tagWTSSESSION_NOTIFICATION");
 
     /**

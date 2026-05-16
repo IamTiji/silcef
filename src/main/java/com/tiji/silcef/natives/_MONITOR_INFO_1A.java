@@ -26,7 +26,7 @@ public class _MONITOR_INFO_1A {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pName")
+        cef_render_handler_capi_h.C_POINTER.withName("pName")
     ).withName("_MONITOR_INFO_1A");
 
     /**

@@ -32,14 +32,14 @@ public class _TXFS_LIST_TRANSACTION_LOCKED_FILES_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("Offset"),
-        cef_master_h.C_LONG.withName("NameFlags"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Offset"),
+        cef_render_handler_capi_h.C_LONG.withName("NameFlags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("FileId"),
-        cef_master_h.C_LONG.withName("Reserved1"),
-        cef_master_h.C_LONG.withName("Reserved2"),
-        cef_master_h.C_LONG_LONG.withName("Reserved3"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("FileName"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("FileId"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved1"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved2"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Reserved3"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("FileName"),
         MemoryLayout.paddingLayout(6)
     ).withName("_TXFS_LIST_TRANSACTION_LOCKED_FILES_ENTRY");
 

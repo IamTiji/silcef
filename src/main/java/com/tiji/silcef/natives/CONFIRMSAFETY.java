@@ -29,8 +29,8 @@ public class CONFIRMSAFETY {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("clsid"),
-        cef_master_h.C_POINTER.withName("pUnk"),
-        cef_master_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("pUnk"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
         MemoryLayout.paddingLayout(4)
     ).withName("CONFIRMSAFETY");
 

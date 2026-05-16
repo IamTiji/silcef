@@ -31,12 +31,12 @@ public class _XSTATE_CONTEXT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("Mask"),
-        cef_master_h.C_LONG.withName("Length"),
-        cef_master_h.C_CHAR.withName("Flags"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_CHAR).withName("Reserved0"),
-        cef_master_h.C_POINTER.withName("Area"),
-        cef_master_h.C_POINTER.withName("Buffer")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Mask"),
+        cef_render_handler_capi_h.C_LONG.withName("Length"),
+        cef_render_handler_capi_h.C_CHAR.withName("Flags"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_CHAR).withName("Reserved0"),
+        cef_render_handler_capi_h.C_POINTER.withName("Area"),
+        cef_render_handler_capi_h.C_POINTER.withName("Buffer")
     ).withName("_XSTATE_CONTEXT");
 
     /**

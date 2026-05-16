@@ -36,7 +36,7 @@ public class _cef_urlparts_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("size"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("size"),
         _cef_string_utf16_t.layout().withName("spec"),
         _cef_string_utf16_t.layout().withName("scheme"),
         _cef_string_utf16_t.layout().withName("username"),

@@ -27,8 +27,8 @@ public class _NDR_EXPR_DESC {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pOffset"),
-        cef_master_h.C_POINTER.withName("pFormatExpr")
+        cef_render_handler_capi_h.C_POINTER.withName("pOffset"),
+        cef_render_handler_capi_h.C_POINTER.withName("pFormatExpr")
     ).withName("_NDR_EXPR_DESC");
 
     /**

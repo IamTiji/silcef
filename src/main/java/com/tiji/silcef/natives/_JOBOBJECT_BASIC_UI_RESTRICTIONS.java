@@ -26,7 +26,7 @@ public class _JOBOBJECT_BASIC_UI_RESTRICTIONS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("UIRestrictionsClass")
+        cef_render_handler_capi_h.C_LONG.withName("UIRestrictionsClass")
     ).withName("_JOBOBJECT_BASIC_UI_RESTRICTIONS");
 
     /**

@@ -30,7 +30,7 @@ public class _RATE_QUOTA_LIMIT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-        cef_master_h.C_LONG.withName("RateData"),
+        cef_render_handler_capi_h.C_LONG.withName("RateData"),
         MemoryLayout.structLayout(
             MemoryLayout.paddingLayout(4)
         ).withName("$anon$12962:5")

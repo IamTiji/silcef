@@ -32,14 +32,14 @@ public class _CRYPT_KEY_PROV_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pwszContainerName"),
-        cef_master_h.C_POINTER.withName("pwszProvName"),
-        cef_master_h.C_LONG.withName("dwProvType"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_LONG.withName("cProvParam"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszContainerName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszProvName"),
+        cef_render_handler_capi_h.C_LONG.withName("dwProvType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("cProvParam"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgProvParam"),
-        cef_master_h.C_LONG.withName("dwKeySpec"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgProvParam"),
+        cef_render_handler_capi_h.C_LONG.withName("dwKeySpec"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CRYPT_KEY_PROV_INFO");
 

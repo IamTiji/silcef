@@ -40,23 +40,23 @@ public class _FILE_ID_BOTH_DIR_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NextEntryOffset"),
-        cef_master_h.C_LONG.withName("FileIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("NextEntryOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("FileIndex"),
         _LARGE_INTEGER.layout().withName("CreationTime"),
         _LARGE_INTEGER.layout().withName("LastAccessTime"),
         _LARGE_INTEGER.layout().withName("LastWriteTime"),
         _LARGE_INTEGER.layout().withName("ChangeTime"),
         _LARGE_INTEGER.layout().withName("EndOfFile"),
         _LARGE_INTEGER.layout().withName("AllocationSize"),
-        cef_master_h.C_LONG.withName("FileAttributes"),
-        cef_master_h.C_LONG.withName("FileNameLength"),
-        cef_master_h.C_LONG.withName("EaSize"),
-        cef_master_h.C_CHAR.withName("ShortNameLength"),
+        cef_render_handler_capi_h.C_LONG.withName("FileAttributes"),
+        cef_render_handler_capi_h.C_LONG.withName("FileNameLength"),
+        cef_render_handler_capi_h.C_LONG.withName("EaSize"),
+        cef_render_handler_capi_h.C_CHAR.withName("ShortNameLength"),
         MemoryLayout.paddingLayout(1),
-        MemoryLayout.sequenceLayout(12, cef_master_h.C_SHORT).withName("ShortName"),
+        MemoryLayout.sequenceLayout(12, cef_render_handler_capi_h.C_SHORT).withName("ShortName"),
         MemoryLayout.paddingLayout(2),
         _LARGE_INTEGER.layout().withName("FileId"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("FileName"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("FileName"),
         MemoryLayout.paddingLayout(6)
     ).withName("_FILE_ID_BOTH_DIR_INFO");
 

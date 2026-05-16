@@ -28,9 +28,9 @@ public class _CERT_TPM_SPECIFICATION_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pwszFamily"),
-        cef_master_h.C_LONG.withName("dwLevel"),
-        cef_master_h.C_LONG.withName("dwRevision")
+        cef_render_handler_capi_h.C_POINTER.withName("pwszFamily"),
+        cef_render_handler_capi_h.C_LONG.withName("dwLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("dwRevision")
     ).withName("_CERT_TPM_SPECIFICATION_INFO");
 
     /**

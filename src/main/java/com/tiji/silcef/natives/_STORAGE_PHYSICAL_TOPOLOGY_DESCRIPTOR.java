@@ -30,10 +30,10 @@ public class _STORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("NodeCount"),
-        cef_master_h.C_LONG.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("NodeCount"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved"),
         MemoryLayout.sequenceLayout(1, _STORAGE_PHYSICAL_NODE_DATA.layout()).withName("Node")
     ).withName("_STORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR");
 

@@ -28,9 +28,9 @@ public class _cef_mouse_event_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("x"),
-        cef_master_h.C_INT.withName("y"),
-        cef_master_h.C_INT.withName("modifiers")
+        cef_render_handler_capi_h.C_INT.withName("x"),
+        cef_render_handler_capi_h.C_INT.withName("y"),
+        cef_render_handler_capi_h.C_INT.withName("modifiers")
     ).withName("_cef_mouse_event_t");
 
     /**

@@ -27,8 +27,8 @@ public class _GENERIC_BINDING_ROUTINE_PAIR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pfnBind"),
-        cef_master_h.C_POINTER.withName("pfnUnbind")
+        cef_render_handler_capi_h.C_POINTER.withName("pfnBind"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnUnbind")
     ).withName("_GENERIC_BINDING_ROUTINE_PAIR");
 
     /**

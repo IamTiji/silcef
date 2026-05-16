@@ -27,8 +27,8 @@ public class _FILE_REFERENCE_RANGE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("StartingFileReferenceNumber"),
-        cef_master_h.C_LONG_LONG.withName("EndingFileReferenceNumber")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("StartingFileReferenceNumber"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("EndingFileReferenceNumber")
     ).withName("_FILE_REFERENCE_RANGE");
 
     /**

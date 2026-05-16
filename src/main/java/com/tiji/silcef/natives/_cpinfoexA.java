@@ -31,12 +31,12 @@ public class _cpinfoexA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("MaxCharSize"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("DefaultChar"),
-        MemoryLayout.sequenceLayout(12, cef_master_h.C_CHAR).withName("LeadByte"),
-        cef_master_h.C_SHORT.withName("UnicodeDefaultChar"),
-        cef_master_h.C_INT.withName("CodePage"),
-        MemoryLayout.sequenceLayout(260, cef_master_h.C_CHAR).withName("CodePageName")
+        cef_render_handler_capi_h.C_INT.withName("MaxCharSize"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("DefaultChar"),
+        MemoryLayout.sequenceLayout(12, cef_render_handler_capi_h.C_CHAR).withName("LeadByte"),
+        cef_render_handler_capi_h.C_SHORT.withName("UnicodeDefaultChar"),
+        cef_render_handler_capi_h.C_INT.withName("CodePage"),
+        MemoryLayout.sequenceLayout(260, cef_render_handler_capi_h.C_CHAR).withName("CodePageName")
     ).withName("_cpinfoexA");
 
     /**

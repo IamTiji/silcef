@@ -29,11 +29,11 @@ public class _NCRYPT_VBS_ROOT_KEY_ATTESTATION_CLAIM_DETAILS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ulKeyFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("ulKeyFlags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("ullTrustletId"),
-        cef_master_h.C_LONG.withName("ulTrustletSecurityVersion"),
-        cef_master_h.C_LONG.withName("ulTrustletDebuggable")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ullTrustletId"),
+        cef_render_handler_capi_h.C_LONG.withName("ulTrustletSecurityVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("ulTrustletDebuggable")
     ).withName("_NCRYPT_VBS_ROOT_KEY_ATTESTATION_CLAIM_DETAILS");
 
     /**

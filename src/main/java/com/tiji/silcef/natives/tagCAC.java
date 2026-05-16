@@ -27,9 +27,9 @@ public class tagCAC {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cElems"),
+        cef_render_handler_capi_h.C_LONG.withName("cElems"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pElems")
+        cef_render_handler_capi_h.C_POINTER.withName("pElems")
     ).withName("tagCAC");
 
     /**

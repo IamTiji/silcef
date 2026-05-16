@@ -29,10 +29,10 @@ public class PROCESSOR_IDLESTATE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("TimeCheck"),
-        cef_master_h.C_CHAR.withName("DemotePercent"),
-        cef_master_h.C_CHAR.withName("PromotePercent"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("Spare")
+        cef_render_handler_capi_h.C_LONG.withName("TimeCheck"),
+        cef_render_handler_capi_h.C_CHAR.withName("DemotePercent"),
+        cef_render_handler_capi_h.C_CHAR.withName("PromotePercent"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("Spare")
     ).withName("$anon$19386:9");
 
     /**

@@ -29,9 +29,9 @@ public class _OCSP_REQUEST_ENTRY {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _OCSP_CERT_ID.layout().withName("CertId"),
-        cef_master_h.C_LONG.withName("cExtension"),
+        cef_render_handler_capi_h.C_LONG.withName("cExtension"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgExtension")
+        cef_render_handler_capi_h.C_POINTER.withName("rgExtension")
     ).withName("_OCSP_REQUEST_ENTRY");
 
     /**

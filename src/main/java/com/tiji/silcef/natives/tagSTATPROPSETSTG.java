@@ -34,11 +34,11 @@ public class tagSTATPROPSETSTG {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("fmtid"),
         _GUID.layout().withName("clsid"),
-        cef_master_h.C_LONG.withName("grfFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("grfFlags"),
         _FILETIME.layout().withName("mtime"),
         _FILETIME.layout().withName("ctime"),
         _FILETIME.layout().withName("atime"),
-        cef_master_h.C_LONG.withName("dwOSVersion")
+        cef_render_handler_capi_h.C_LONG.withName("dwOSVersion")
     ).withName("tagSTATPROPSETSTG");
 
     /**

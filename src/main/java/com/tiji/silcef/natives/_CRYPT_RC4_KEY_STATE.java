@@ -29,10 +29,10 @@ public class _CRYPT_RC4_KEY_STATE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("Key"),
-        MemoryLayout.sequenceLayout(256, cef_master_h.C_CHAR).withName("SBox"),
-        cef_master_h.C_CHAR.withName("i"),
-        cef_master_h.C_CHAR.withName("j")
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("Key"),
+        MemoryLayout.sequenceLayout(256, cef_render_handler_capi_h.C_CHAR).withName("SBox"),
+        cef_render_handler_capi_h.C_CHAR.withName("i"),
+        cef_render_handler_capi_h.C_CHAR.withName("j")
     ).withName("_CRYPT_RC4_KEY_STATE");
 
     /**

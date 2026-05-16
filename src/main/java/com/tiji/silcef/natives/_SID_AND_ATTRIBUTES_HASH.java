@@ -28,10 +28,10 @@ public class _SID_AND_ATTRIBUTES_HASH {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("SidCount"),
+        cef_render_handler_capi_h.C_LONG.withName("SidCount"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("SidAttr"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_LONG_LONG).withName("Hash")
+        cef_render_handler_capi_h.C_POINTER.withName("SidAttr"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_LONG_LONG).withName("Hash")
     ).withName("_SID_AND_ATTRIBUTES_HASH");
 
     /**

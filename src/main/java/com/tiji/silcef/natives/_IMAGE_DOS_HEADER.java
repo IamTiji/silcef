@@ -44,25 +44,25 @@ public class _IMAGE_DOS_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("e_magic"),
-        cef_master_h.C_SHORT.withName("e_cblp"),
-        cef_master_h.C_SHORT.withName("e_cp"),
-        cef_master_h.C_SHORT.withName("e_crlc"),
-        cef_master_h.C_SHORT.withName("e_cparhdr"),
-        cef_master_h.C_SHORT.withName("e_minalloc"),
-        cef_master_h.C_SHORT.withName("e_maxalloc"),
-        cef_master_h.C_SHORT.withName("e_ss"),
-        cef_master_h.C_SHORT.withName("e_sp"),
-        cef_master_h.C_SHORT.withName("e_csum"),
-        cef_master_h.C_SHORT.withName("e_ip"),
-        cef_master_h.C_SHORT.withName("e_cs"),
-        cef_master_h.C_SHORT.withName("e_lfarlc"),
-        cef_master_h.C_SHORT.withName("e_ovno"),
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_SHORT).withName("e_res"),
-        cef_master_h.C_SHORT.withName("e_oemid"),
-        cef_master_h.C_SHORT.withName("e_oeminfo"),
-        MemoryLayout.sequenceLayout(10, cef_master_h.C_SHORT).withName("e_res2"),
-        cef_master_h.align(cef_master_h.C_LONG, 2).withName("e_lfanew")
+        cef_render_handler_capi_h.C_SHORT.withName("e_magic"),
+        cef_render_handler_capi_h.C_SHORT.withName("e_cblp"),
+        cef_render_handler_capi_h.C_SHORT.withName("e_cp"),
+        cef_render_handler_capi_h.C_SHORT.withName("e_crlc"),
+        cef_render_handler_capi_h.C_SHORT.withName("e_cparhdr"),
+        cef_render_handler_capi_h.C_SHORT.withName("e_minalloc"),
+        cef_render_handler_capi_h.C_SHORT.withName("e_maxalloc"),
+        cef_render_handler_capi_h.C_SHORT.withName("e_ss"),
+        cef_render_handler_capi_h.C_SHORT.withName("e_sp"),
+        cef_render_handler_capi_h.C_SHORT.withName("e_csum"),
+        cef_render_handler_capi_h.C_SHORT.withName("e_ip"),
+        cef_render_handler_capi_h.C_SHORT.withName("e_cs"),
+        cef_render_handler_capi_h.C_SHORT.withName("e_lfarlc"),
+        cef_render_handler_capi_h.C_SHORT.withName("e_ovno"),
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_SHORT).withName("e_res"),
+        cef_render_handler_capi_h.C_SHORT.withName("e_oemid"),
+        cef_render_handler_capi_h.C_SHORT.withName("e_oeminfo"),
+        MemoryLayout.sequenceLayout(10, cef_render_handler_capi_h.C_SHORT).withName("e_res2"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("e_lfanew")
     ).withName("_IMAGE_DOS_HEADER");
 
     /**

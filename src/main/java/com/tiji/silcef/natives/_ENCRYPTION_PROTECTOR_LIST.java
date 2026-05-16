@@ -27,9 +27,9 @@ public class _ENCRYPTION_PROTECTOR_LIST {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("nProtectors"),
+        cef_render_handler_capi_h.C_LONG.withName("nProtectors"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pProtectors")
+        cef_render_handler_capi_h.C_POINTER.withName("pProtectors")
     ).withName("_ENCRYPTION_PROTECTOR_LIST");
 
     /**

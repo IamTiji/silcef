@@ -42,17 +42,17 @@ public class _TP_CALLBACK_ENVIRON_V3 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("Pool"),
-        cef_master_h.C_POINTER.withName("CleanupGroup"),
-        cef_master_h.C_POINTER.withName("CleanupGroupCancelCallback"),
-        cef_master_h.C_POINTER.withName("RaceDll"),
-        cef_master_h.C_POINTER.withName("ActivationContext"),
-        cef_master_h.C_POINTER.withName("FinalizationCallback"),
+        cef_render_handler_capi_h.C_POINTER.withName("Pool"),
+        cef_render_handler_capi_h.C_POINTER.withName("CleanupGroup"),
+        cef_render_handler_capi_h.C_POINTER.withName("CleanupGroupCancelCallback"),
+        cef_render_handler_capi_h.C_POINTER.withName("RaceDll"),
+        cef_render_handler_capi_h.C_POINTER.withName("ActivationContext"),
+        cef_render_handler_capi_h.C_POINTER.withName("FinalizationCallback"),
         _TP_CALLBACK_ENVIRON_V3.u.layout().withName("u"),
-        cef_master_h.C_INT.withName("CallbackPriority"),
-        cef_master_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_INT.withName("CallbackPriority"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
         MemoryLayout.paddingLayout(4)
     ).withName("_TP_CALLBACK_ENVIRON_V3");
 
@@ -390,7 +390,7 @@ public class _TP_CALLBACK_ENVIRON_V3 {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("Flags"),
+            cef_render_handler_capi_h.C_LONG.withName("Flags"),
             _TP_CALLBACK_ENVIRON_V3.u.s.layout().withName("s")
         ).withName("$anon$25916:5");
 

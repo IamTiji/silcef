@@ -31,12 +31,12 @@ public class _OSVERSIONINFOA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwOSVersionInfoSize"),
-        cef_master_h.C_LONG.withName("dwMajorVersion"),
-        cef_master_h.C_LONG.withName("dwMinorVersion"),
-        cef_master_h.C_LONG.withName("dwBuildNumber"),
-        cef_master_h.C_LONG.withName("dwPlatformId"),
-        MemoryLayout.sequenceLayout(128, cef_master_h.C_CHAR).withName("szCSDVersion")
+        cef_render_handler_capi_h.C_LONG.withName("dwOSVersionInfoSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMajorVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMinorVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwBuildNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("dwPlatformId"),
+        MemoryLayout.sequenceLayout(128, cef_render_handler_capi_h.C_CHAR).withName("szCSDVersion")
     ).withName("_OSVERSIONINFOA");
 
     /**

@@ -36,10 +36,10 @@ public class _PRINTER_NOTIFY_INFO_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Type"),
-        cef_master_h.C_SHORT.withName("Field"),
-        cef_master_h.C_LONG.withName("Reserved"),
-        cef_master_h.C_LONG.withName("Id"),
+        cef_render_handler_capi_h.C_SHORT.withName("Type"),
+        cef_render_handler_capi_h.C_SHORT.withName("Field"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("Id"),
         MemoryLayout.paddingLayout(4),
         _PRINTER_NOTIFY_INFO_DATA.NotifyData.layout().withName("NotifyData")
     ).withName("_PRINTER_NOTIFY_INFO_DATA");
@@ -245,7 +245,7 @@ public class _PRINTER_NOTIFY_INFO_DATA {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            MemoryLayout.sequenceLayout(2, cef_master_h.C_LONG).withName("adwData"),
+            MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_LONG).withName("adwData"),
             _PRINTER_NOTIFY_INFO_DATA.NotifyData.Data.layout().withName("Data")
         ).withName("$anon$2446:5");
 
@@ -348,9 +348,9 @@ public class _PRINTER_NOTIFY_INFO_DATA {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_LONG.withName("cbBuf"),
+                cef_render_handler_capi_h.C_LONG.withName("cbBuf"),
                 MemoryLayout.paddingLayout(4),
-                cef_master_h.C_POINTER.withName("pBuf")
+                cef_render_handler_capi_h.C_POINTER.withName("pBuf")
             ).withName("$anon$2448:9");
 
             /**

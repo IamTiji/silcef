@@ -29,10 +29,10 @@ public class tagRAWINPUTHEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwType"),
-        cef_master_h.C_LONG.withName("dwSize"),
-        cef_master_h.C_POINTER.withName("hDevice"),
-        cef_master_h.C_LONG_LONG.withName("wParam")
+        cef_render_handler_capi_h.C_LONG.withName("dwType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSize"),
+        cef_render_handler_capi_h.C_POINTER.withName("hDevice"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("wParam")
     ).withName("tagRAWINPUTHEADER");
 
     /**

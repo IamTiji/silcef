@@ -34,15 +34,15 @@ public class _PRINTPROCESSOR_CAPS_2 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwLevel"),
-        cef_master_h.C_LONG.withName("dwNupOptions"),
-        cef_master_h.C_LONG.withName("dwPageOrderFlags"),
-        cef_master_h.C_LONG.withName("dwNumberOfCopies"),
-        cef_master_h.C_LONG.withName("dwDuplexHandlingCaps"),
-        cef_master_h.C_LONG.withName("dwNupDirectionCaps"),
-        cef_master_h.C_LONG.withName("dwNupBorderCaps"),
-        cef_master_h.C_LONG.withName("dwBookletHandlingCaps"),
-        cef_master_h.C_LONG.withName("dwScalingCaps")
+        cef_render_handler_capi_h.C_LONG.withName("dwLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("dwNupOptions"),
+        cef_render_handler_capi_h.C_LONG.withName("dwPageOrderFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwNumberOfCopies"),
+        cef_render_handler_capi_h.C_LONG.withName("dwDuplexHandlingCaps"),
+        cef_render_handler_capi_h.C_LONG.withName("dwNupDirectionCaps"),
+        cef_render_handler_capi_h.C_LONG.withName("dwNupBorderCaps"),
+        cef_render_handler_capi_h.C_LONG.withName("dwBookletHandlingCaps"),
+        cef_render_handler_capi_h.C_LONG.withName("dwScalingCaps")
     ).withName("_PRINTPROCESSOR_CAPS_2");
 
     /**

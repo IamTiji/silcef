@@ -32,13 +32,13 @@ public class WSAData {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("wVersion"),
-        cef_master_h.C_SHORT.withName("wHighVersion"),
-        cef_master_h.C_SHORT.withName("iMaxSockets"),
-        cef_master_h.C_SHORT.withName("iMaxUdpDg"),
-        cef_master_h.C_POINTER.withName("lpVendorInfo"),
-        MemoryLayout.sequenceLayout(257, cef_master_h.C_CHAR).withName("szDescription"),
-        MemoryLayout.sequenceLayout(129, cef_master_h.C_CHAR).withName("szSystemStatus"),
+        cef_render_handler_capi_h.C_SHORT.withName("wVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("wHighVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("iMaxSockets"),
+        cef_render_handler_capi_h.C_SHORT.withName("iMaxUdpDg"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpVendorInfo"),
+        MemoryLayout.sequenceLayout(257, cef_render_handler_capi_h.C_CHAR).withName("szDescription"),
+        MemoryLayout.sequenceLayout(129, cef_render_handler_capi_h.C_CHAR).withName("szSystemStatus"),
         MemoryLayout.paddingLayout(6)
     ).withName("WSAData");
 

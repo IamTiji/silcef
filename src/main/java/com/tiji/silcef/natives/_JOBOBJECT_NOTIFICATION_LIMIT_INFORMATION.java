@@ -32,13 +32,13 @@ public class _JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("IoReadBytesLimit"),
-        cef_master_h.C_LONG_LONG.withName("IoWriteBytesLimit"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("IoReadBytesLimit"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("IoWriteBytesLimit"),
         _LARGE_INTEGER.layout().withName("PerJobUserTimeLimit"),
-        cef_master_h.C_LONG_LONG.withName("JobMemoryLimit"),
-        cef_master_h.C_INT.withName("RateControlTolerance"),
-        cef_master_h.C_INT.withName("RateControlToleranceInterval"),
-        cef_master_h.C_LONG.withName("LimitFlags"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("JobMemoryLimit"),
+        cef_render_handler_capi_h.C_INT.withName("RateControlTolerance"),
+        cef_render_handler_capi_h.C_INT.withName("RateControlToleranceInterval"),
+        cef_render_handler_capi_h.C_LONG.withName("LimitFlags"),
         MemoryLayout.paddingLayout(4)
     ).withName("_JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION");
 

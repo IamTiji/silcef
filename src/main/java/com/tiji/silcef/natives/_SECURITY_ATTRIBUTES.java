@@ -28,10 +28,10 @@ public class _SECURITY_ATTRIBUTES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("nLength"),
+        cef_render_handler_capi_h.C_LONG.withName("nLength"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpSecurityDescriptor"),
-        cef_master_h.C_INT.withName("bInheritHandle"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpSecurityDescriptor"),
+        cef_render_handler_capi_h.C_INT.withName("bInheritHandle"),
         MemoryLayout.paddingLayout(4)
     ).withName("_SECURITY_ATTRIBUTES");
 

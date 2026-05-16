@@ -43,26 +43,26 @@ public class _NOTIFYICONDATAW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hWnd"),
-        cef_master_h.C_INT.withName("uID"),
-        cef_master_h.C_INT.withName("uFlags"),
-        cef_master_h.C_INT.withName("uCallbackMessage"),
+        cef_render_handler_capi_h.C_POINTER.withName("hWnd"),
+        cef_render_handler_capi_h.C_INT.withName("uID"),
+        cef_render_handler_capi_h.C_INT.withName("uFlags"),
+        cef_render_handler_capi_h.C_INT.withName("uCallbackMessage"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hIcon"),
-        MemoryLayout.sequenceLayout(128, cef_master_h.C_SHORT).withName("szTip"),
-        cef_master_h.C_LONG.withName("dwState"),
-        cef_master_h.C_LONG.withName("dwStateMask"),
-        MemoryLayout.sequenceLayout(256, cef_master_h.C_SHORT).withName("szInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("hIcon"),
+        MemoryLayout.sequenceLayout(128, cef_render_handler_capi_h.C_SHORT).withName("szTip"),
+        cef_render_handler_capi_h.C_LONG.withName("dwState"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStateMask"),
+        MemoryLayout.sequenceLayout(256, cef_render_handler_capi_h.C_SHORT).withName("szInfo"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_INT.withName("uTimeout"),
-            cef_master_h.C_INT.withName("uVersion")
+            cef_render_handler_capi_h.C_INT.withName("uTimeout"),
+            cef_render_handler_capi_h.C_INT.withName("uVersion")
         ).withName("$anon$1058:5"),
-        MemoryLayout.sequenceLayout(64, cef_master_h.C_SHORT).withName("szInfoTitle"),
-        cef_master_h.C_LONG.withName("dwInfoFlags"),
+        MemoryLayout.sequenceLayout(64, cef_render_handler_capi_h.C_SHORT).withName("szInfoTitle"),
+        cef_render_handler_capi_h.C_LONG.withName("dwInfoFlags"),
         _GUID.layout().withName("guidItem"),
-        cef_master_h.C_POINTER.withName("hBalloonIcon")
+        cef_render_handler_capi_h.C_POINTER.withName("hBalloonIcon")
     ).withName("_NOTIFYICONDATAW");
 
     /**

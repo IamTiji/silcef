@@ -27,8 +27,8 @@ public class tagBinaryParam {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("Buffer"),
-        cef_master_h.C_SHORT.withName("Size"),
+        cef_render_handler_capi_h.C_POINTER.withName("Buffer"),
+        cef_render_handler_capi_h.C_SHORT.withName("Size"),
         MemoryLayout.paddingLayout(6)
     ).withName("tagBinaryParam");
 

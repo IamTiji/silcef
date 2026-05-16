@@ -31,11 +31,11 @@ public final class LPTIMECALLBACK {
     }
 
     private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-        cef_master_h.C_INT,
-        cef_master_h.C_INT,
-        cef_master_h.C_LONG_LONG,
-        cef_master_h.C_LONG_LONG,
-        cef_master_h.C_LONG_LONG
+        cef_render_handler_capi_h.C_INT,
+        cef_render_handler_capi_h.C_INT,
+        cef_render_handler_capi_h.C_LONG_LONG,
+        cef_render_handler_capi_h.C_LONG_LONG,
+        cef_render_handler_capi_h.C_LONG_LONG
     );
 
     /**
@@ -45,7 +45,7 @@ public final class LPTIMECALLBACK {
         return $DESC;
     }
 
-    private static final MethodHandle UP$MH = cef_master_h.upcallHandle(LPTIMECALLBACK.Function.class, "apply", $DESC);
+    private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(LPTIMECALLBACK.Function.class, "apply", $DESC);
 
     /**
      * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

@@ -30,11 +30,11 @@ public class _CERT_SELECT_CHAIN_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hChainEngine"),
-        cef_master_h.C_POINTER.withName("pTime"),
-        cef_master_h.C_POINTER.withName("hAdditionalStore"),
-        cef_master_h.C_POINTER.withName("pChainPara"),
-        cef_master_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("hChainEngine"),
+        cef_render_handler_capi_h.C_POINTER.withName("pTime"),
+        cef_render_handler_capi_h.C_POINTER.withName("hAdditionalStore"),
+        cef_render_handler_capi_h.C_POINTER.withName("pChainPara"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CERT_SELECT_CHAIN_PARA");
 

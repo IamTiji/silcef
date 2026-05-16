@@ -43,27 +43,27 @@ public class OPENCARDNAME_EXA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwStructSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStructSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("hSCardContext"),
-        cef_master_h.C_POINTER.withName("hwndOwner"),
-        cef_master_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("hSCardContext"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndOwner"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpstrTitle"),
-        cef_master_h.C_POINTER.withName("lpstrSearchDesc"),
-        cef_master_h.C_POINTER.withName("hIcon"),
-        cef_master_h.C_POINTER.withName("pOpenCardSearchCriteria"),
-        cef_master_h.C_POINTER.withName("lpfnConnect"),
-        cef_master_h.C_POINTER.withName("pvUserData"),
-        cef_master_h.C_LONG.withName("dwShareMode"),
-        cef_master_h.C_LONG.withName("dwPreferredProtocols"),
-        cef_master_h.C_POINTER.withName("lpstrRdr"),
-        cef_master_h.C_LONG.withName("nMaxRdr"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpstrTitle"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpstrSearchDesc"),
+        cef_render_handler_capi_h.C_POINTER.withName("hIcon"),
+        cef_render_handler_capi_h.C_POINTER.withName("pOpenCardSearchCriteria"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpfnConnect"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvUserData"),
+        cef_render_handler_capi_h.C_LONG.withName("dwShareMode"),
+        cef_render_handler_capi_h.C_LONG.withName("dwPreferredProtocols"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpstrRdr"),
+        cef_render_handler_capi_h.C_LONG.withName("nMaxRdr"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpstrCard"),
-        cef_master_h.C_LONG.withName("nMaxCard"),
-        cef_master_h.C_LONG.withName("dwActiveProtocol"),
-        cef_master_h.C_LONG_LONG.withName("hCardHandle")
+        cef_render_handler_capi_h.C_POINTER.withName("lpstrCard"),
+        cef_render_handler_capi_h.C_LONG.withName("nMaxCard"),
+        cef_render_handler_capi_h.C_LONG.withName("dwActiveProtocol"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("hCardHandle")
     ).withName("$anon$951:9");
 
     /**

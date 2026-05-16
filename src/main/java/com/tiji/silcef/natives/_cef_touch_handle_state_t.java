@@ -34,15 +34,15 @@ public class _cef_touch_handle_state_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("size"),
-        cef_master_h.C_INT.withName("touch_handle_id"),
-        cef_master_h.C_INT.withName("flags"),
-        cef_master_h.C_INT.withName("enabled"),
-        cef_master_h.C_INT.withName("orientation"),
-        cef_master_h.C_INT.withName("mirror_vertical"),
-        cef_master_h.C_INT.withName("mirror_horizontal"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("size"),
+        cef_render_handler_capi_h.C_INT.withName("touch_handle_id"),
+        cef_render_handler_capi_h.C_INT.withName("flags"),
+        cef_render_handler_capi_h.C_INT.withName("enabled"),
+        cef_render_handler_capi_h.C_INT.withName("orientation"),
+        cef_render_handler_capi_h.C_INT.withName("mirror_vertical"),
+        cef_render_handler_capi_h.C_INT.withName("mirror_horizontal"),
         _cef_point_t.layout().withName("origin"),
-        cef_master_h.C_FLOAT.withName("alpha"),
+        cef_render_handler_capi_h.C_FLOAT.withName("alpha"),
         MemoryLayout.paddingLayout(4)
     ).withName("_cef_touch_handle_state_t");
 

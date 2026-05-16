@@ -36,17 +36,17 @@ public class tagBITMAPINFOHEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("biSize"),
-        cef_master_h.C_LONG.withName("biWidth"),
-        cef_master_h.C_LONG.withName("biHeight"),
-        cef_master_h.C_SHORT.withName("biPlanes"),
-        cef_master_h.C_SHORT.withName("biBitCount"),
-        cef_master_h.C_LONG.withName("biCompression"),
-        cef_master_h.C_LONG.withName("biSizeImage"),
-        cef_master_h.C_LONG.withName("biXPelsPerMeter"),
-        cef_master_h.C_LONG.withName("biYPelsPerMeter"),
-        cef_master_h.C_LONG.withName("biClrUsed"),
-        cef_master_h.C_LONG.withName("biClrImportant")
+        cef_render_handler_capi_h.C_LONG.withName("biSize"),
+        cef_render_handler_capi_h.C_LONG.withName("biWidth"),
+        cef_render_handler_capi_h.C_LONG.withName("biHeight"),
+        cef_render_handler_capi_h.C_SHORT.withName("biPlanes"),
+        cef_render_handler_capi_h.C_SHORT.withName("biBitCount"),
+        cef_render_handler_capi_h.C_LONG.withName("biCompression"),
+        cef_render_handler_capi_h.C_LONG.withName("biSizeImage"),
+        cef_render_handler_capi_h.C_LONG.withName("biXPelsPerMeter"),
+        cef_render_handler_capi_h.C_LONG.withName("biYPelsPerMeter"),
+        cef_render_handler_capi_h.C_LONG.withName("biClrUsed"),
+        cef_render_handler_capi_h.C_LONG.withName("biClrImportant")
     ).withName("tagBITMAPINFOHEADER");
 
     /**

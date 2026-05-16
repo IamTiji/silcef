@@ -36,18 +36,18 @@ public class tagSTATSTG {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pwcsName"),
-        cef_master_h.C_LONG.withName("type"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwcsName"),
+        cef_render_handler_capi_h.C_LONG.withName("type"),
         MemoryLayout.paddingLayout(4),
         _ULARGE_INTEGER.layout().withName("cbSize"),
         _FILETIME.layout().withName("mtime"),
         _FILETIME.layout().withName("ctime"),
         _FILETIME.layout().withName("atime"),
-        cef_master_h.C_LONG.withName("grfMode"),
-        cef_master_h.C_LONG.withName("grfLocksSupported"),
+        cef_render_handler_capi_h.C_LONG.withName("grfMode"),
+        cef_render_handler_capi_h.C_LONG.withName("grfLocksSupported"),
         _GUID.layout().withName("clsid"),
-        cef_master_h.C_LONG.withName("grfStateBits"),
-        cef_master_h.C_LONG.withName("reserved")
+        cef_render_handler_capi_h.C_LONG.withName("grfStateBits"),
+        cef_render_handler_capi_h.C_LONG.withName("reserved")
     ).withName("tagSTATSTG");
 
     /**

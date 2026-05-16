@@ -27,8 +27,8 @@ public class _JOBOBJECT_NETWORK_ACCOUNTING_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("DataBytesIn"),
-        cef_master_h.C_LONG_LONG.withName("DataBytesOut")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("DataBytesIn"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("DataBytesOut")
     ).withName("_JOBOBJECT_NETWORK_ACCOUNTING_INFORMATION");
 
     /**

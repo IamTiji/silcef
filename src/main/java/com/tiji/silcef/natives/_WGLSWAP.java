@@ -27,8 +27,8 @@ public class _WGLSWAP {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hdc"),
-        cef_master_h.C_INT.withName("uiFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("hdc"),
+        cef_render_handler_capi_h.C_INT.withName("uiFlags"),
         MemoryLayout.paddingLayout(4)
     ).withName("_WGLSWAP");
 

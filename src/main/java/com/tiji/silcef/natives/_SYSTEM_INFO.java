@@ -42,21 +42,21 @@ public class _SYSTEM_INFO {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("dwOemId"),
+            cef_render_handler_capi_h.C_LONG.withName("dwOemId"),
             MemoryLayout.structLayout(
-                cef_master_h.C_SHORT.withName("wProcessorArchitecture"),
-                cef_master_h.C_SHORT.withName("wReserved")
+                cef_render_handler_capi_h.C_SHORT.withName("wProcessorArchitecture"),
+                cef_render_handler_capi_h.C_SHORT.withName("wReserved")
             ).withName("$anon$50:9")
         ).withName("$anon$48:5"),
-        cef_master_h.C_LONG.withName("dwPageSize"),
-        cef_master_h.C_POINTER.withName("lpMinimumApplicationAddress"),
-        cef_master_h.C_POINTER.withName("lpMaximumApplicationAddress"),
-        cef_master_h.C_LONG_LONG.withName("dwActiveProcessorMask"),
-        cef_master_h.C_LONG.withName("dwNumberOfProcessors"),
-        cef_master_h.C_LONG.withName("dwProcessorType"),
-        cef_master_h.C_LONG.withName("dwAllocationGranularity"),
-        cef_master_h.C_SHORT.withName("wProcessorLevel"),
-        cef_master_h.C_SHORT.withName("wProcessorRevision")
+        cef_render_handler_capi_h.C_LONG.withName("dwPageSize"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpMinimumApplicationAddress"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpMaximumApplicationAddress"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwActiveProcessorMask"),
+        cef_render_handler_capi_h.C_LONG.withName("dwNumberOfProcessors"),
+        cef_render_handler_capi_h.C_LONG.withName("dwProcessorType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwAllocationGranularity"),
+        cef_render_handler_capi_h.C_SHORT.withName("wProcessorLevel"),
+        cef_render_handler_capi_h.C_SHORT.withName("wProcessorRevision")
     ).withName("_SYSTEM_INFO");
 
     /**

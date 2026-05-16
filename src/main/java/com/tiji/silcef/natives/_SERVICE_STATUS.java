@@ -32,13 +32,13 @@ public class _SERVICE_STATUS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwServiceType"),
-        cef_master_h.C_LONG.withName("dwCurrentState"),
-        cef_master_h.C_LONG.withName("dwControlsAccepted"),
-        cef_master_h.C_LONG.withName("dwWin32ExitCode"),
-        cef_master_h.C_LONG.withName("dwServiceSpecificExitCode"),
-        cef_master_h.C_LONG.withName("dwCheckPoint"),
-        cef_master_h.C_LONG.withName("dwWaitHint")
+        cef_render_handler_capi_h.C_LONG.withName("dwServiceType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCurrentState"),
+        cef_render_handler_capi_h.C_LONG.withName("dwControlsAccepted"),
+        cef_render_handler_capi_h.C_LONG.withName("dwWin32ExitCode"),
+        cef_render_handler_capi_h.C_LONG.withName("dwServiceSpecificExitCode"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCheckPoint"),
+        cef_render_handler_capi_h.C_LONG.withName("dwWaitHint")
     ).withName("_SERVICE_STATUS");
 
     /**

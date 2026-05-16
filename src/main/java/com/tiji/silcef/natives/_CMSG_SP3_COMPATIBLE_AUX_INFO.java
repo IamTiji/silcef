@@ -27,8 +27,8 @@ public class _CMSG_SP3_COMPATIBLE_AUX_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwFlags")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags")
     ).withName("_CMSG_SP3_COMPATIBLE_AUX_INFO");
 
     /**

@@ -33,7 +33,7 @@ public class _INPUT_RECORD {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("EventType"),
+        cef_render_handler_capi_h.C_SHORT.withName("EventType"),
         MemoryLayout.paddingLayout(2),
         _INPUT_RECORD.Event.layout().withName("Event")
     ).withName("_INPUT_RECORD");

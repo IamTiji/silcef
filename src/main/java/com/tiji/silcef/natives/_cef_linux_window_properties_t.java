@@ -30,7 +30,7 @@ public class _cef_linux_window_properties_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("size"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("size"),
         _cef_string_utf16_t.layout().withName("wayland_app_id"),
         _cef_string_utf16_t.layout().withName("wm_class_class"),
         _cef_string_utf16_t.layout().withName("wm_class_name"),

@@ -42,20 +42,20 @@ public class DISPLAYCONFIG_PATH_TARGET_INFO {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LUID.layout().withName("adapterId"),
-        cef_master_h.C_INT.withName("id"),
+        cef_render_handler_capi_h.C_INT.withName("id"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_INT.withName("modeInfoIdx"),
+            cef_render_handler_capi_h.C_INT.withName("modeInfoIdx"),
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$2980:9")
         ).withName("$anon$2977:5"),
-        cef_master_h.C_INT.withName("outputTechnology"),
-        cef_master_h.C_INT.withName("rotation"),
-        cef_master_h.C_INT.withName("scaling"),
+        cef_render_handler_capi_h.C_INT.withName("outputTechnology"),
+        cef_render_handler_capi_h.C_INT.withName("rotation"),
+        cef_render_handler_capi_h.C_INT.withName("scaling"),
         DISPLAYCONFIG_RATIONAL.layout().withName("refreshRate"),
-        cef_master_h.C_INT.withName("scanLineOrdering"),
-        cef_master_h.C_INT.withName("targetAvailable"),
-        cef_master_h.C_INT.withName("statusFlags")
+        cef_render_handler_capi_h.C_INT.withName("scanLineOrdering"),
+        cef_render_handler_capi_h.C_INT.withName("targetAvailable"),
+        cef_render_handler_capi_h.C_INT.withName("statusFlags")
     ).withName("DISPLAYCONFIG_PATH_TARGET_INFO");
 
     /**

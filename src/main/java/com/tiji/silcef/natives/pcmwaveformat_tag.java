@@ -28,7 +28,7 @@ public class pcmwaveformat_tag {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         waveformat_tag.layout().withName("wf"),
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("wBitsPerSample")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("wBitsPerSample")
     ).withName("pcmwaveformat_tag");
 
     /**

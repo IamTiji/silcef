@@ -28,9 +28,9 @@ public class _DEVICEDUMP_PRIVATE_SUBSECTION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwFlags"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwFlags"),
         _GP_LOG_PAGE_DESCRIPTOR.layout().withName("GPLogId"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("bData")
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("bData")
     ).withName("_DEVICEDUMP_PRIVATE_SUBSECTION");
 
     /**

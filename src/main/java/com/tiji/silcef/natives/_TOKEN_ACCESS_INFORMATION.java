@@ -38,20 +38,20 @@ public class _TOKEN_ACCESS_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("SidHash"),
-        cef_master_h.C_POINTER.withName("RestrictedSidHash"),
-        cef_master_h.C_POINTER.withName("Privileges"),
+        cef_render_handler_capi_h.C_POINTER.withName("SidHash"),
+        cef_render_handler_capi_h.C_POINTER.withName("RestrictedSidHash"),
+        cef_render_handler_capi_h.C_POINTER.withName("Privileges"),
         _LUID.layout().withName("AuthenticationId"),
-        cef_master_h.C_INT.withName("TokenType"),
-        cef_master_h.C_INT.withName("ImpersonationLevel"),
+        cef_render_handler_capi_h.C_INT.withName("TokenType"),
+        cef_render_handler_capi_h.C_INT.withName("ImpersonationLevel"),
         _TOKEN_MANDATORY_POLICY.layout().withName("MandatoryPolicy"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("AppContainerNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("AppContainerNumber"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("PackageSid"),
-        cef_master_h.C_POINTER.withName("CapabilitiesHash"),
-        cef_master_h.C_POINTER.withName("TrustLevelSid"),
-        cef_master_h.C_POINTER.withName("SecurityAttributes")
+        cef_render_handler_capi_h.C_POINTER.withName("PackageSid"),
+        cef_render_handler_capi_h.C_POINTER.withName("CapabilitiesHash"),
+        cef_render_handler_capi_h.C_POINTER.withName("TrustLevelSid"),
+        cef_render_handler_capi_h.C_POINTER.withName("SecurityAttributes")
     ).withName("_TOKEN_ACCESS_INFORMATION");
 
     /**

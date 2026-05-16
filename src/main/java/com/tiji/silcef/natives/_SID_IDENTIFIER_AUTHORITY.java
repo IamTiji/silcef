@@ -26,7 +26,7 @@ public class _SID_IDENTIFIER_AUTHORITY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(6, cef_master_h.C_CHAR).withName("Value")
+        MemoryLayout.sequenceLayout(6, cef_render_handler_capi_h.C_CHAR).withName("Value")
     ).withName("_SID_IDENTIFIER_AUTHORITY");
 
     /**

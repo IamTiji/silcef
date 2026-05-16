@@ -28,9 +28,9 @@ public class MFT_ENUM_DATA_V0 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("StartFileReferenceNumber"),
-        cef_master_h.C_LONG_LONG.withName("LowUsn"),
-        cef_master_h.C_LONG_LONG.withName("HighUsn")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("StartFileReferenceNumber"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LowUsn"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("HighUsn")
     ).withName("$anon$11914:9");
 
     /**

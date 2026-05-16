@@ -31,11 +31,11 @@ public class _FSCTL_QUERY_STORAGE_CLASSES_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("TotalNumberOfTiers"),
-        cef_master_h.C_LONG.withName("NumberOfTiersReturned"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("TotalNumberOfTiers"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfTiersReturned"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.sequenceLayout(1, _FILE_STORAGE_TIER.layout()).withName("Tiers")
     ).withName("_FSCTL_QUERY_STORAGE_CLASSES_OUTPUT");

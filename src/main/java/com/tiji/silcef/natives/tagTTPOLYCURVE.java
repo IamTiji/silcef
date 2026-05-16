@@ -28,8 +28,8 @@ public class tagTTPOLYCURVE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("wType"),
-        cef_master_h.C_SHORT.withName("cpfx"),
+        cef_render_handler_capi_h.C_SHORT.withName("wType"),
+        cef_render_handler_capi_h.C_SHORT.withName("cpfx"),
         MemoryLayout.sequenceLayout(1, tagPOINTFX.layout()).withName("apfx")
     ).withName("tagTTPOLYCURVE");
 

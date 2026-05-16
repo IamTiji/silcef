@@ -27,8 +27,8 @@ public class _M128A {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("Low"),
-        cef_master_h.C_LONG_LONG.withName("High")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Low"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("High")
     ).withName("_M128A");
 
     /**

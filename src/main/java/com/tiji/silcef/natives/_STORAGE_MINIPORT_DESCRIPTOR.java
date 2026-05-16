@@ -42,16 +42,16 @@ public class _STORAGE_MINIPORT_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_INT.withName("Portdriver"),
-        cef_master_h.C_CHAR.withName("LUNResetSupported"),
-        cef_master_h.C_CHAR.withName("TargetResetSupported"),
-        cef_master_h.C_SHORT.withName("IoTimeoutValue"),
-        cef_master_h.C_CHAR.withName("ExtraIoInfoSupported"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_INT.withName("Portdriver"),
+        cef_render_handler_capi_h.C_CHAR.withName("LUNResetSupported"),
+        cef_render_handler_capi_h.C_CHAR.withName("TargetResetSupported"),
+        cef_render_handler_capi_h.C_SHORT.withName("IoTimeoutValue"),
+        cef_render_handler_capi_h.C_CHAR.withName("ExtraIoInfoSupported"),
         _STORAGE_MINIPORT_DESCRIPTOR.Flags.layout().withName("Flags"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("Reserved0"),
-        cef_master_h.C_LONG.withName("Reserved1")
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("Reserved0"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved1")
     ).withName("_STORAGE_MINIPORT_DESCRIPTOR");
 
     /**
@@ -391,7 +391,7 @@ public class _STORAGE_MINIPORT_DESCRIPTOR {
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(1)
             ).withName("$anon$1541:9"),
-            cef_master_h.C_CHAR.withName("AsBYTE")
+            cef_render_handler_capi_h.C_CHAR.withName("AsBYTE")
         ).withName("$anon$1540:5");
 
         /**

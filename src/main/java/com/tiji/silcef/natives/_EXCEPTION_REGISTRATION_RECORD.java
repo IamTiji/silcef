@@ -27,8 +27,8 @@ public class _EXCEPTION_REGISTRATION_RECORD {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("Next"),
-        cef_master_h.C_POINTER.withName("Handler")
+        cef_render_handler_capi_h.C_POINTER.withName("Next"),
+        cef_render_handler_capi_h.C_POINTER.withName("Handler")
     ).withName("_EXCEPTION_REGISTRATION_RECORD");
 
     /**

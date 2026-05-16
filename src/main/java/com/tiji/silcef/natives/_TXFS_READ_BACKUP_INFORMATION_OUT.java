@@ -30,8 +30,8 @@ public class _TXFS_READ_BACKUP_INFORMATION_OUT {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("BufferLength"),
-            MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("Buffer")
+            cef_render_handler_capi_h.C_LONG.withName("BufferLength"),
+            MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("Buffer")
         ).withName("$anon$14105:5")
     ).withName("_TXFS_READ_BACKUP_INFORMATION_OUT");
 

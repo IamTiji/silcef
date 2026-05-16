@@ -26,7 +26,7 @@ public class _SERVICE_PRESHUTDOWN_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwPreshutdownTimeout")
+        cef_render_handler_capi_h.C_LONG.withName("dwPreshutdownTimeout")
     ).withName("_SERVICE_PRESHUTDOWN_INFO");
 
     /**

@@ -39,20 +39,20 @@ public class USN_RECORD_V3 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("RecordLength"),
-        cef_master_h.C_SHORT.withName("MajorVersion"),
-        cef_master_h.C_SHORT.withName("MinorVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("RecordLength"),
+        cef_render_handler_capi_h.C_SHORT.withName("MajorVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("MinorVersion"),
         _FILE_ID_128.layout().withName("FileReferenceNumber"),
         _FILE_ID_128.layout().withName("ParentFileReferenceNumber"),
-        cef_master_h.C_LONG_LONG.withName("Usn"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Usn"),
         _LARGE_INTEGER.layout().withName("TimeStamp"),
-        cef_master_h.C_LONG.withName("Reason"),
-        cef_master_h.C_LONG.withName("SourceInfo"),
-        cef_master_h.C_LONG.withName("SecurityId"),
-        cef_master_h.C_LONG.withName("FileAttributes"),
-        cef_master_h.C_SHORT.withName("FileNameLength"),
-        cef_master_h.C_SHORT.withName("FileNameOffset"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("FileName"),
+        cef_render_handler_capi_h.C_LONG.withName("Reason"),
+        cef_render_handler_capi_h.C_LONG.withName("SourceInfo"),
+        cef_render_handler_capi_h.C_LONG.withName("SecurityId"),
+        cef_render_handler_capi_h.C_LONG.withName("FileAttributes"),
+        cef_render_handler_capi_h.C_SHORT.withName("FileNameLength"),
+        cef_render_handler_capi_h.C_SHORT.withName("FileNameOffset"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("FileName"),
         MemoryLayout.paddingLayout(2)
     ).withName("$anon$12064:9");
 

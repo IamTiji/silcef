@@ -30,11 +30,11 @@ public class _GLYPHMETRICS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("gmBlackBoxX"),
-        cef_master_h.C_INT.withName("gmBlackBoxY"),
+        cef_render_handler_capi_h.C_INT.withName("gmBlackBoxX"),
+        cef_render_handler_capi_h.C_INT.withName("gmBlackBoxY"),
         tagPOINT.layout().withName("gmptGlyphOrigin"),
-        cef_master_h.C_SHORT.withName("gmCellIncX"),
-        cef_master_h.C_SHORT.withName("gmCellIncY")
+        cef_render_handler_capi_h.C_SHORT.withName("gmCellIncX"),
+        cef_render_handler_capi_h.C_SHORT.withName("gmCellIncY")
     ).withName("_GLYPHMETRICS");
 
     /**

@@ -39,21 +39,21 @@ public class PPM_WMI_PERF_STATE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Frequency"),
-        cef_master_h.C_LONG.withName("Power"),
-        cef_master_h.C_CHAR.withName("PercentFrequency"),
-        cef_master_h.C_CHAR.withName("IncreaseLevel"),
-        cef_master_h.C_CHAR.withName("DecreaseLevel"),
-        cef_master_h.C_CHAR.withName("Type"),
-        cef_master_h.C_LONG.withName("IncreaseTime"),
-        cef_master_h.C_LONG.withName("DecreaseTime"),
+        cef_render_handler_capi_h.C_LONG.withName("Frequency"),
+        cef_render_handler_capi_h.C_LONG.withName("Power"),
+        cef_render_handler_capi_h.C_CHAR.withName("PercentFrequency"),
+        cef_render_handler_capi_h.C_CHAR.withName("IncreaseLevel"),
+        cef_render_handler_capi_h.C_CHAR.withName("DecreaseLevel"),
+        cef_render_handler_capi_h.C_CHAR.withName("Type"),
+        cef_render_handler_capi_h.C_LONG.withName("IncreaseTime"),
+        cef_render_handler_capi_h.C_LONG.withName("DecreaseTime"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("Control"),
-        cef_master_h.C_LONG_LONG.withName("Status"),
-        cef_master_h.C_LONG.withName("HitCount"),
-        cef_master_h.C_LONG.withName("Reserved1"),
-        cef_master_h.C_LONG_LONG.withName("Reserved2"),
-        cef_master_h.C_LONG_LONG.withName("Reserved3")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Control"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Status"),
+        cef_render_handler_capi_h.C_LONG.withName("HitCount"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved1"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Reserved2"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Reserved3")
     ).withName("$anon$19009:9");
 
     /**

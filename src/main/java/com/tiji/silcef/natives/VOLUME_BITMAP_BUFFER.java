@@ -30,7 +30,7 @@ public class VOLUME_BITMAP_BUFFER {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LARGE_INTEGER.layout().withName("StartingLcn"),
         _LARGE_INTEGER.layout().withName("BitmapSize"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("Buffer"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("Buffer"),
         MemoryLayout.paddingLayout(7)
     ).withName("$anon$11744:9");
 

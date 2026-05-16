@@ -30,11 +30,11 @@ public class _CERT_LOGOTYPE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwLogotypeInfoChoice"),
+        cef_render_handler_capi_h.C_LONG.withName("dwLogotypeInfoChoice"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("pLogotypeDirectInfo"),
-            cef_master_h.C_POINTER.withName("pLogotypeIndirectInfo")
+            cef_render_handler_capi_h.C_POINTER.withName("pLogotypeDirectInfo"),
+            cef_render_handler_capi_h.C_POINTER.withName("pLogotypeIndirectInfo")
         ).withName("$anon$5603:5")
     ).withName("_CERT_LOGOTYPE_INFO");
 

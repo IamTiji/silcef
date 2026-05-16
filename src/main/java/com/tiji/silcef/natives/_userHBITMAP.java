@@ -31,7 +31,7 @@ public class _userHBITMAP {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("fContext"),
+        cef_render_handler_capi_h.C_LONG.withName("fContext"),
         MemoryLayout.paddingLayout(4),
         _userHBITMAP.__MIDL_IWinTypes_0007.layout().withName("u")
     ).withName("_userHBITMAP");
@@ -103,9 +103,9 @@ public class _userHBITMAP {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("hInproc"),
-            cef_master_h.C_POINTER.withName("hRemote"),
-            cef_master_h.C_LONG_LONG.withName("hInproc64")
+            cef_render_handler_capi_h.C_LONG.withName("hInproc"),
+            cef_render_handler_capi_h.C_POINTER.withName("hRemote"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("hInproc64")
         ).withName("__MIDL_IWinTypes_0007");
 
         /**

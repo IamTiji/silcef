@@ -34,16 +34,16 @@ public class tagIMEMENUITEMINFOW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_INT.withName("fType"),
-        cef_master_h.C_INT.withName("fState"),
-        cef_master_h.C_INT.withName("wID"),
-        cef_master_h.C_POINTER.withName("hbmpChecked"),
-        cef_master_h.C_POINTER.withName("hbmpUnchecked"),
-        cef_master_h.C_LONG.withName("dwItemData"),
-        MemoryLayout.sequenceLayout(80, cef_master_h.C_SHORT).withName("szString"),
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("fType"),
+        cef_render_handler_capi_h.C_INT.withName("fState"),
+        cef_render_handler_capi_h.C_INT.withName("wID"),
+        cef_render_handler_capi_h.C_POINTER.withName("hbmpChecked"),
+        cef_render_handler_capi_h.C_POINTER.withName("hbmpUnchecked"),
+        cef_render_handler_capi_h.C_LONG.withName("dwItemData"),
+        MemoryLayout.sequenceLayout(80, cef_render_handler_capi_h.C_SHORT).withName("szString"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hbmpItem")
+        cef_render_handler_capi_h.C_POINTER.withName("hbmpItem")
     ).withName("tagIMEMENUITEMINFOW");
 
     /**

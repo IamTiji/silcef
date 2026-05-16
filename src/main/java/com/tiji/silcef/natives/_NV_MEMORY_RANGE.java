@@ -27,8 +27,8 @@ public class _NV_MEMORY_RANGE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("BaseAddress"),
-        cef_master_h.C_LONG_LONG.withName("Length")
+        cef_render_handler_capi_h.C_POINTER.withName("BaseAddress"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Length")
     ).withName("_NV_MEMORY_RANGE");
 
     /**

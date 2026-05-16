@@ -26,7 +26,7 @@ public class tagOleMenuGroupWidths {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(6, cef_master_h.C_LONG).withName("width")
+        MemoryLayout.sequenceLayout(6, cef_render_handler_capi_h.C_LONG).withName("width")
     ).withName("tagOleMenuGroupWidths");
 
     /**

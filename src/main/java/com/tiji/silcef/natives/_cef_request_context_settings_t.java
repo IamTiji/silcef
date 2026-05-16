@@ -31,13 +31,13 @@ public class _cef_request_context_settings_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("size"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("size"),
         _cef_string_utf16_t.layout().withName("cache_path"),
-        cef_master_h.C_INT.withName("persist_session_cookies"),
+        cef_render_handler_capi_h.C_INT.withName("persist_session_cookies"),
         MemoryLayout.paddingLayout(4),
         _cef_string_utf16_t.layout().withName("accept_language_list"),
         _cef_string_utf16_t.layout().withName("cookieable_schemes_list"),
-        cef_master_h.C_INT.withName("cookieable_schemes_exclude_defaults"),
+        cef_render_handler_capi_h.C_INT.withName("cookieable_schemes_exclude_defaults"),
         MemoryLayout.paddingLayout(4)
     ).withName("_cef_request_context_settings_t");
 

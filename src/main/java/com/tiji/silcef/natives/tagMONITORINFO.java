@@ -29,10 +29,10 @@ public class tagMONITORINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         tagRECT.layout().withName("rcMonitor"),
         tagRECT.layout().withName("rcWork"),
-        cef_master_h.C_LONG.withName("dwFlags")
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags")
     ).withName("tagMONITORINFO");
 
     /**

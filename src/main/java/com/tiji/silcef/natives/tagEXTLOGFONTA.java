@@ -36,14 +36,14 @@ public class tagEXTLOGFONTA {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagLOGFONTA.layout().withName("elfLogFont"),
-        MemoryLayout.sequenceLayout(64, cef_master_h.C_CHAR).withName("elfFullName"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("elfStyle"),
-        cef_master_h.C_LONG.withName("elfVersion"),
-        cef_master_h.C_LONG.withName("elfStyleSize"),
-        cef_master_h.C_LONG.withName("elfMatch"),
-        cef_master_h.C_LONG.withName("elfReserved"),
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_CHAR).withName("elfVendorId"),
-        cef_master_h.C_LONG.withName("elfCulture"),
+        MemoryLayout.sequenceLayout(64, cef_render_handler_capi_h.C_CHAR).withName("elfFullName"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("elfStyle"),
+        cef_render_handler_capi_h.C_LONG.withName("elfVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("elfStyleSize"),
+        cef_render_handler_capi_h.C_LONG.withName("elfMatch"),
+        cef_render_handler_capi_h.C_LONG.withName("elfReserved"),
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_CHAR).withName("elfVendorId"),
+        cef_render_handler_capi_h.C_LONG.withName("elfCulture"),
         tagPANOSE.layout().withName("elfPanose"),
         MemoryLayout.paddingLayout(2)
     ).withName("tagEXTLOGFONTA");

@@ -27,8 +27,8 @@ public class _DSSSEED {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("counter"),
-        MemoryLayout.sequenceLayout(20, cef_master_h.C_CHAR).withName("seed")
+        cef_render_handler_capi_h.C_LONG.withName("counter"),
+        MemoryLayout.sequenceLayout(20, cef_render_handler_capi_h.C_CHAR).withName("seed")
     ).withName("_DSSSEED");
 
     /**

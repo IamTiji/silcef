@@ -27,8 +27,8 @@ public class LIST_ENTRY64 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("Flink"),
-        cef_master_h.C_LONG_LONG.withName("Blink")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Flink"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Blink")
     ).withName("LIST_ENTRY64");
 
     /**

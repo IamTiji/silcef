@@ -31,15 +31,15 @@ public class _CMC_RESPONSE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cTaggedAttribute"),
+        cef_render_handler_capi_h.C_LONG.withName("cTaggedAttribute"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgTaggedAttribute"),
-        cef_master_h.C_LONG.withName("cTaggedContentInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgTaggedAttribute"),
+        cef_render_handler_capi_h.C_LONG.withName("cTaggedContentInfo"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgTaggedContentInfo"),
-        cef_master_h.C_LONG.withName("cTaggedOtherMsg"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgTaggedContentInfo"),
+        cef_render_handler_capi_h.C_LONG.withName("cTaggedOtherMsg"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgTaggedOtherMsg")
+        cef_render_handler_capi_h.C_POINTER.withName("rgTaggedOtherMsg")
     ).withName("_CMC_RESPONSE_INFO");
 
     /**

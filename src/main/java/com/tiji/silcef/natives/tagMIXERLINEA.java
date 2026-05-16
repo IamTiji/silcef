@@ -45,18 +45,18 @@ public class tagMIXERLINEA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("cbStruct"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwDestination"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwSource"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwLineID"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("fdwLine"),
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 1).withName("dwUser"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwComponentType"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("cChannels"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("cConnections"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("cControls"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("szShortName"),
-        MemoryLayout.sequenceLayout(64, cef_master_h.C_CHAR).withName("szName"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cbStruct"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwDestination"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwSource"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwLineID"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("fdwLine"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 1).withName("dwUser"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwComponentType"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cChannels"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cConnections"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cControls"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("szShortName"),
+        MemoryLayout.sequenceLayout(64, cef_render_handler_capi_h.C_CHAR).withName("szName"),
         tagMIXERLINEA.Target.layout().withName("Target")
     ).withName("tagMIXERLINEA");
 
@@ -680,12 +680,12 @@ public class tagMIXERLINEA {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwType"),
-            cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwDeviceID"),
-            cef_master_h.align(cef_master_h.C_SHORT, 1).withName("wMid"),
-            cef_master_h.align(cef_master_h.C_SHORT, 1).withName("wPid"),
-            cef_master_h.align(cef_master_h.C_INT, 1).withName("vDriverVersion"),
-            MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("szPname")
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwType"),
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwDeviceID"),
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("wMid"),
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("wPid"),
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_INT, 1).withName("vDriverVersion"),
+            MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("szPname")
         ).withName("$anon$1885:5");
 
         /**

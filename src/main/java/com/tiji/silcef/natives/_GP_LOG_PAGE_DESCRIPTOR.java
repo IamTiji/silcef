@@ -27,8 +27,8 @@ public class _GP_LOG_PAGE_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("LogAddress"),
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("LogSectors")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("LogAddress"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("LogSectors")
     ).withName("_GP_LOG_PAGE_DESCRIPTOR");
 
     /**

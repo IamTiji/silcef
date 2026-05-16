@@ -28,7 +28,7 @@ public class _CERT_LOGOTYPE_IMAGE {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CERT_LOGOTYPE_DETAILS.layout().withName("LogotypeDetails"),
-        cef_master_h.C_POINTER.withName("pLogotypeImageInfo")
+        cef_render_handler_capi_h.C_POINTER.withName("pLogotypeImageInfo")
     ).withName("_CERT_LOGOTYPE_IMAGE");
 
     /**

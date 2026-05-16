@@ -27,8 +27,8 @@ public class _PROCESS_DYNAMIC_EH_CONTINUATION_TARGET {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("TargetAddress"),
-        cef_master_h.C_LONG_LONG.withName("Flags")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("TargetAddress"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Flags")
     ).withName("_PROCESS_DYNAMIC_EH_CONTINUATION_TARGET");
 
     /**

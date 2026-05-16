@@ -36,17 +36,17 @@ public class PPM_WMI_IDLE_STATE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Latency"),
-        cef_master_h.C_LONG.withName("Power"),
-        cef_master_h.C_LONG.withName("TimeCheck"),
-        cef_master_h.C_CHAR.withName("PromotePercent"),
-        cef_master_h.C_CHAR.withName("DemotePercent"),
-        cef_master_h.C_CHAR.withName("StateType"),
-        cef_master_h.C_CHAR.withName("Reserved"),
-        cef_master_h.C_LONG.withName("StateFlags"),
-        cef_master_h.C_LONG.withName("Context"),
-        cef_master_h.C_LONG.withName("IdleHandler"),
-        cef_master_h.C_LONG.withName("Reserved1")
+        cef_render_handler_capi_h.C_LONG.withName("Latency"),
+        cef_render_handler_capi_h.C_LONG.withName("Power"),
+        cef_render_handler_capi_h.C_LONG.withName("TimeCheck"),
+        cef_render_handler_capi_h.C_CHAR.withName("PromotePercent"),
+        cef_render_handler_capi_h.C_CHAR.withName("DemotePercent"),
+        cef_render_handler_capi_h.C_CHAR.withName("StateType"),
+        cef_render_handler_capi_h.C_CHAR.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("StateFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("Context"),
+        cef_render_handler_capi_h.C_LONG.withName("IdleHandler"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved1")
     ).withName("$anon$18977:9");
 
     /**

@@ -48,28 +48,28 @@ public class _PROPSHEETPAGEW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSize"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_POINTER.withName("hInstance"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("hInstance"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("pszTemplate"),
-            cef_master_h.C_POINTER.withName("pResource")
+            cef_render_handler_capi_h.C_POINTER.withName("pszTemplate"),
+            cef_render_handler_capi_h.C_POINTER.withName("pResource")
         ).withName("$anon$271:5"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("hIcon"),
-            cef_master_h.C_POINTER.withName("pszIcon")
+            cef_render_handler_capi_h.C_POINTER.withName("hIcon"),
+            cef_render_handler_capi_h.C_POINTER.withName("pszIcon")
         ).withName("$anon$271:5"),
-        cef_master_h.C_POINTER.withName("pszTitle"),
-        cef_master_h.C_POINTER.withName("pfnDlgProc"),
-        cef_master_h.C_LONG_LONG.withName("lParam"),
-        cef_master_h.C_POINTER.withName("pfnCallback"),
-        cef_master_h.C_POINTER.withName("pcRefParent"),
-        cef_master_h.C_POINTER.withName("pszHeaderTitle"),
-        cef_master_h.C_POINTER.withName("pszHeaderSubTitle"),
-        cef_master_h.C_POINTER.withName("hActCtx"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszTitle"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnDlgProc"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("lParam"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnCallback"),
+        cef_render_handler_capi_h.C_POINTER.withName("pcRefParent"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszHeaderTitle"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszHeaderSubTitle"),
+        cef_render_handler_capi_h.C_POINTER.withName("hActCtx"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("hbmHeader"),
-            cef_master_h.C_POINTER.withName("pszbmHeader")
+            cef_render_handler_capi_h.C_POINTER.withName("hbmHeader"),
+            cef_render_handler_capi_h.C_POINTER.withName("pszbmHeader")
         ).withName("$anon$278:5")
     ).withName("_PROPSHEETPAGEW");
 

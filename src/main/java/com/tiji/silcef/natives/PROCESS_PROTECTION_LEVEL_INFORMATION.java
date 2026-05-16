@@ -26,7 +26,7 @@ public class PROCESS_PROTECTION_LEVEL_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ProtectionLevel")
+        cef_render_handler_capi_h.C_LONG.withName("ProtectionLevel")
     ).withName("PROCESS_PROTECTION_LEVEL_INFORMATION");
 
     /**

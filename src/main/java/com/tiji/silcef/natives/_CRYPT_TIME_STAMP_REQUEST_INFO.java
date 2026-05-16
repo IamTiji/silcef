@@ -30,12 +30,12 @@ public class _CRYPT_TIME_STAMP_REQUEST_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszTimeStampAlgorithm"),
-        cef_master_h.C_POINTER.withName("pszContentType"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszTimeStampAlgorithm"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszContentType"),
         _CRYPTOAPI_BLOB.layout().withName("Content"),
-        cef_master_h.C_LONG.withName("cAttribute"),
+        cef_render_handler_capi_h.C_LONG.withName("cAttribute"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgAttribute")
+        cef_render_handler_capi_h.C_POINTER.withName("rgAttribute")
     ).withName("_CRYPT_TIME_STAMP_REQUEST_INFO");
 
     /**

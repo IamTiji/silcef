@@ -30,9 +30,9 @@ public class _CRYPT_TIMESTAMP_RESPONSE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwStatus"),
-        cef_master_h.C_LONG.withName("cFreeText"),
-        cef_master_h.C_POINTER.withName("rgFreeText"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStatus"),
+        cef_render_handler_capi_h.C_LONG.withName("cFreeText"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgFreeText"),
         _CRYPT_BIT_BLOB.layout().withName("FailureInfo"),
         _CRYPTOAPI_BLOB.layout().withName("ContentInfo")
     ).withName("_CRYPT_TIMESTAMP_RESPONSE");

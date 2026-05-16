@@ -30,9 +30,9 @@ public class _TXFS_LIST_TRANSACTION_LOCKED_FILES {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("KtmTransaction"),
-        cef_master_h.C_LONG_LONG.withName("NumberOfFiles"),
-        cef_master_h.C_LONG_LONG.withName("BufferSizeRequired"),
-        cef_master_h.C_LONG_LONG.withName("Offset")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NumberOfFiles"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("BufferSizeRequired"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Offset")
     ).withName("_TXFS_LIST_TRANSACTION_LOCKED_FILES");
 
     /**

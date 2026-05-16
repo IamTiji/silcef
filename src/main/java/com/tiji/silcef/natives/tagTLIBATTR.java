@@ -32,11 +32,11 @@ public class tagTLIBATTR {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("guid"),
-        cef_master_h.C_LONG.withName("lcid"),
-        cef_master_h.C_INT.withName("syskind"),
-        cef_master_h.C_SHORT.withName("wMajorVerNum"),
-        cef_master_h.C_SHORT.withName("wMinorVerNum"),
-        cef_master_h.C_SHORT.withName("wLibFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("lcid"),
+        cef_render_handler_capi_h.C_INT.withName("syskind"),
+        cef_render_handler_capi_h.C_SHORT.withName("wMajorVerNum"),
+        cef_render_handler_capi_h.C_SHORT.withName("wMinorVerNum"),
+        cef_render_handler_capi_h.C_SHORT.withName("wLibFlags"),
         MemoryLayout.paddingLayout(2)
     ).withName("tagTLIBATTR");
 

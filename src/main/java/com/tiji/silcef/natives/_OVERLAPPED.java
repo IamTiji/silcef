@@ -35,16 +35,16 @@ public class _OVERLAPPED {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("Internal"),
-        cef_master_h.C_LONG_LONG.withName("InternalHigh"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Internal"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("InternalHigh"),
         MemoryLayout.unionLayout(
             MemoryLayout.structLayout(
-                cef_master_h.C_LONG.withName("Offset"),
-                cef_master_h.C_LONG.withName("OffsetHigh")
+                cef_render_handler_capi_h.C_LONG.withName("Offset"),
+                cef_render_handler_capi_h.C_LONG.withName("OffsetHigh")
             ).withName("$anon$56:9"),
-            cef_master_h.C_POINTER.withName("Pointer")
+            cef_render_handler_capi_h.C_POINTER.withName("Pointer")
         ).withName("$anon$55:5"),
-        cef_master_h.C_POINTER.withName("hEvent")
+        cef_render_handler_capi_h.C_POINTER.withName("hEvent")
     ).withName("_OVERLAPPED");
 
     /**

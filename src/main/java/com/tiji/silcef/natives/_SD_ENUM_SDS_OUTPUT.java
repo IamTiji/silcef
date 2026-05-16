@@ -29,9 +29,9 @@ public class _SD_ENUM_SDS_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("NextOffset"),
-        cef_master_h.C_LONG_LONG.withName("NumSDEntriesReturned"),
-        cef_master_h.C_LONG_LONG.withName("NumSDBytesReturned"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NextOffset"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NumSDEntriesReturned"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NumSDBytesReturned"),
         MemoryLayout.sequenceLayout(1, _SD_ENUM_SDS_ENTRY.layout()).withName("SDEntry")
     ).withName("_SD_ENUM_SDS_OUTPUT");
 

@@ -29,12 +29,12 @@ public class _CTL_FIND_SUBJECT_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pUsagePara"),
-        cef_master_h.C_LONG.withName("dwSubjectType"),
+        cef_render_handler_capi_h.C_POINTER.withName("pUsagePara"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSubjectType"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pvSubject")
+        cef_render_handler_capi_h.C_POINTER.withName("pvSubject")
     ).withName("_CTL_FIND_SUBJECT_PARA");
 
     /**

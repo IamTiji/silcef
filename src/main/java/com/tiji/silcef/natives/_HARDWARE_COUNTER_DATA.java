@@ -28,9 +28,9 @@ public class _HARDWARE_COUNTER_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Type"),
-        cef_master_h.C_LONG.withName("Reserved"),
-        cef_master_h.C_LONG_LONG.withName("Value")
+        cef_render_handler_capi_h.C_INT.withName("Type"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Value")
     ).withName("_HARDWARE_COUNTER_DATA");
 
     /**

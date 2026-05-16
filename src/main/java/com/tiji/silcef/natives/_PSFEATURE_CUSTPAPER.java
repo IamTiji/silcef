@@ -30,11 +30,11 @@ public class _PSFEATURE_CUSTPAPER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("lOrientation"),
-        cef_master_h.C_LONG.withName("lWidth"),
-        cef_master_h.C_LONG.withName("lHeight"),
-        cef_master_h.C_LONG.withName("lWidthOffset"),
-        cef_master_h.C_LONG.withName("lHeightOffset")
+        cef_render_handler_capi_h.C_LONG.withName("lOrientation"),
+        cef_render_handler_capi_h.C_LONG.withName("lWidth"),
+        cef_render_handler_capi_h.C_LONG.withName("lHeight"),
+        cef_render_handler_capi_h.C_LONG.withName("lWidthOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("lHeightOffset")
     ).withName("_PSFEATURE_CUSTPAPER");
 
     /**

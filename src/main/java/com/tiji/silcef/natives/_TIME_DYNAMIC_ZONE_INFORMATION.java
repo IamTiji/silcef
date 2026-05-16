@@ -34,15 +34,15 @@ public class _TIME_DYNAMIC_ZONE_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Bias"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_SHORT).withName("StandardName"),
+        cef_render_handler_capi_h.C_LONG.withName("Bias"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_SHORT).withName("StandardName"),
         _SYSTEMTIME.layout().withName("StandardDate"),
-        cef_master_h.C_LONG.withName("StandardBias"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_SHORT).withName("DaylightName"),
+        cef_render_handler_capi_h.C_LONG.withName("StandardBias"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_SHORT).withName("DaylightName"),
         _SYSTEMTIME.layout().withName("DaylightDate"),
-        cef_master_h.C_LONG.withName("DaylightBias"),
-        MemoryLayout.sequenceLayout(128, cef_master_h.C_SHORT).withName("TimeZoneKeyName"),
-        cef_master_h.C_CHAR.withName("DynamicDaylightTimeDisabled"),
+        cef_render_handler_capi_h.C_LONG.withName("DaylightBias"),
+        MemoryLayout.sequenceLayout(128, cef_render_handler_capi_h.C_SHORT).withName("TimeZoneKeyName"),
+        cef_render_handler_capi_h.C_CHAR.withName("DynamicDaylightTimeDisabled"),
         MemoryLayout.paddingLayout(3)
     ).withName("_TIME_DYNAMIC_ZONE_INFORMATION");
 

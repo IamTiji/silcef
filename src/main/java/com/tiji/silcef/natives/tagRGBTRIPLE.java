@@ -28,9 +28,9 @@ public class tagRGBTRIPLE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("rgbtBlue"),
-        cef_master_h.C_CHAR.withName("rgbtGreen"),
-        cef_master_h.C_CHAR.withName("rgbtRed")
+        cef_render_handler_capi_h.C_CHAR.withName("rgbtBlue"),
+        cef_render_handler_capi_h.C_CHAR.withName("rgbtGreen"),
+        cef_render_handler_capi_h.C_CHAR.withName("rgbtRed")
     ).withName("tagRGBTRIPLE");
 
     /**

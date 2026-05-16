@@ -27,8 +27,8 @@ public class tagINTERFACEDATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pmethdata"),
-        cef_master_h.C_INT.withName("cMembers"),
+        cef_render_handler_capi_h.C_POINTER.withName("pmethdata"),
+        cef_render_handler_capi_h.C_INT.withName("cMembers"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagINTERFACEDATA");
 

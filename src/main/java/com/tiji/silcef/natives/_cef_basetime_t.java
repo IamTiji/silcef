@@ -26,7 +26,7 @@ public class _cef_basetime_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("val")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("val")
     ).withName("_cef_basetime_t");
 
     /**

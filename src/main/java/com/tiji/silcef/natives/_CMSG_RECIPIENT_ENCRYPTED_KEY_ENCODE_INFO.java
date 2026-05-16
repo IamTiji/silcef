@@ -30,12 +30,12 @@ public class _CMSG_RECIPIENT_ENCRYPTED_KEY_ENCODE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
         _CRYPT_BIT_BLOB.layout().withName("RecipientPublicKey"),
         _CERT_ID.layout().withName("RecipientId"),
         _FILETIME.layout().withName("Date"),
-        cef_master_h.C_POINTER.withName("pOtherAttr")
+        cef_render_handler_capi_h.C_POINTER.withName("pOtherAttr")
     ).withName("_CMSG_RECIPIENT_ENCRYPTED_KEY_ENCODE_INFO");
 
     /**

@@ -35,16 +35,16 @@ public class _CERT_CHAIN_CONTEXT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         _CERT_TRUST_STATUS.layout().withName("TrustStatus"),
-        cef_master_h.C_LONG.withName("cChain"),
-        cef_master_h.C_POINTER.withName("rgpChain"),
-        cef_master_h.C_LONG.withName("cLowerQualityChainContext"),
+        cef_render_handler_capi_h.C_LONG.withName("cChain"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgpChain"),
+        cef_render_handler_capi_h.C_LONG.withName("cLowerQualityChainContext"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgpLowerQualityChainContext"),
-        cef_master_h.C_INT.withName("fHasRevocationFreshnessTime"),
-        cef_master_h.C_LONG.withName("dwRevocationFreshnessTime"),
-        cef_master_h.C_LONG.withName("dwCreateFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgpLowerQualityChainContext"),
+        cef_render_handler_capi_h.C_INT.withName("fHasRevocationFreshnessTime"),
+        cef_render_handler_capi_h.C_LONG.withName("dwRevocationFreshnessTime"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCreateFlags"),
         _GUID.layout().withName("ChainId"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CERT_CHAIN_CONTEXT");

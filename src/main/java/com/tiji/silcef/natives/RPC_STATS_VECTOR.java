@@ -27,8 +27,8 @@ public class RPC_STATS_VECTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Count"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG).withName("Stats")
+        cef_render_handler_capi_h.C_INT.withName("Count"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG).withName("Stats")
     ).withName("$anon$275:9");
 
     /**

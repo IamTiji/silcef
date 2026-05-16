@@ -38,20 +38,20 @@ public class _tagSOFTDISTINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_LONG.withName("dwAdState"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwAdState"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("szTitle"),
-        cef_master_h.C_POINTER.withName("szAbstract"),
-        cef_master_h.C_POINTER.withName("szHREF"),
-        cef_master_h.C_LONG.withName("dwInstalledVersionMS"),
-        cef_master_h.C_LONG.withName("dwInstalledVersionLS"),
-        cef_master_h.C_LONG.withName("dwUpdateVersionMS"),
-        cef_master_h.C_LONG.withName("dwUpdateVersionLS"),
-        cef_master_h.C_LONG.withName("dwAdvertisedVersionMS"),
-        cef_master_h.C_LONG.withName("dwAdvertisedVersionLS"),
-        cef_master_h.C_LONG.withName("dwReserved"),
+        cef_render_handler_capi_h.C_POINTER.withName("szTitle"),
+        cef_render_handler_capi_h.C_POINTER.withName("szAbstract"),
+        cef_render_handler_capi_h.C_POINTER.withName("szHREF"),
+        cef_render_handler_capi_h.C_LONG.withName("dwInstalledVersionMS"),
+        cef_render_handler_capi_h.C_LONG.withName("dwInstalledVersionLS"),
+        cef_render_handler_capi_h.C_LONG.withName("dwUpdateVersionMS"),
+        cef_render_handler_capi_h.C_LONG.withName("dwUpdateVersionLS"),
+        cef_render_handler_capi_h.C_LONG.withName("dwAdvertisedVersionMS"),
+        cef_render_handler_capi_h.C_LONG.withName("dwAdvertisedVersionLS"),
+        cef_render_handler_capi_h.C_LONG.withName("dwReserved"),
         MemoryLayout.paddingLayout(4)
     ).withName("_tagSOFTDISTINFO");
 

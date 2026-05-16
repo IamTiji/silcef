@@ -35,18 +35,18 @@ public class tagMSGBOXPARAMSW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hwndOwner"),
-        cef_master_h.C_POINTER.withName("hInstance"),
-        cef_master_h.C_POINTER.withName("lpszText"),
-        cef_master_h.C_POINTER.withName("lpszCaption"),
-        cef_master_h.C_LONG.withName("dwStyle"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndOwner"),
+        cef_render_handler_capi_h.C_POINTER.withName("hInstance"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpszText"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpszCaption"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStyle"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpszIcon"),
-        cef_master_h.C_LONG_LONG.withName("dwContextHelpId"),
-        cef_master_h.C_POINTER.withName("lpfnMsgBoxCallback"),
-        cef_master_h.C_LONG.withName("dwLanguageId"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpszIcon"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwContextHelpId"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpfnMsgBoxCallback"),
+        cef_render_handler_capi_h.C_LONG.withName("dwLanguageId"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagMSGBOXPARAMSW");
 

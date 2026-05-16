@@ -29,10 +29,10 @@ public class _cef_insets_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("top"),
-        cef_master_h.C_INT.withName("left"),
-        cef_master_h.C_INT.withName("bottom"),
-        cef_master_h.C_INT.withName("right")
+        cef_render_handler_capi_h.C_INT.withName("top"),
+        cef_render_handler_capi_h.C_INT.withName("left"),
+        cef_render_handler_capi_h.C_INT.withName("bottom"),
+        cef_render_handler_capi_h.C_INT.withName("right")
     ).withName("_cef_insets_t");
 
     /**

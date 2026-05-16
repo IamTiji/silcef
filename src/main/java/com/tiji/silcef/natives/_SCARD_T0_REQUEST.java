@@ -33,11 +33,11 @@ public class _SCARD_T0_REQUEST {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _SCARD_IO_REQUEST.layout().withName("ioRequest"),
-        cef_master_h.C_CHAR.withName("bSw1"),
-        cef_master_h.C_CHAR.withName("bSw2"),
+        cef_render_handler_capi_h.C_CHAR.withName("bSw1"),
+        cef_render_handler_capi_h.C_CHAR.withName("bSw2"),
         MemoryLayout.unionLayout(
             _SCARD_T0_COMMAND.layout().withName("CmdBytes"),
-            MemoryLayout.sequenceLayout(5, cef_master_h.C_CHAR).withName("rgbHeader")
+            MemoryLayout.sequenceLayout(5, cef_render_handler_capi_h.C_CHAR).withName("rgbHeader")
         ).withName("$anon$297:5"),
         MemoryLayout.paddingLayout(1)
     ).withName("_SCARD_T0_REQUEST");

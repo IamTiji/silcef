@@ -41,11 +41,11 @@ public class _DISPLAYCONFIG_SET_MONITOR_SPECIALIZATION {
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$3308:9"),
-            cef_master_h.C_INT.withName("value")
+            cef_render_handler_capi_h.C_INT.withName("value")
         ).withName("$anon$3306:5"),
         _GUID.layout().withName("specializationType"),
         _GUID.layout().withName("specializationSubType"),
-        MemoryLayout.sequenceLayout(128, cef_master_h.C_SHORT).withName("specializationApplicationName")
+        MemoryLayout.sequenceLayout(128, cef_render_handler_capi_h.C_SHORT).withName("specializationApplicationName")
     ).withName("_DISPLAYCONFIG_SET_MONITOR_SPECIALIZATION");
 
     /**

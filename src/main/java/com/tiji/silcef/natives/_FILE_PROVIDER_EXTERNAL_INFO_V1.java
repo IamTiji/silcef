@@ -28,9 +28,9 @@ public class _FILE_PROVIDER_EXTERNAL_INFO_V1 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Algorithm"),
-        cef_master_h.C_LONG.withName("Flags")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Algorithm"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags")
     ).withName("_FILE_PROVIDER_EXTERNAL_INFO_V1");
 
     /**

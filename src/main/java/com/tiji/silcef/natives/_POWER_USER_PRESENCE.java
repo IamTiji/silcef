@@ -26,7 +26,7 @@ public class _POWER_USER_PRESENCE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("UserPresence")
+        cef_render_handler_capi_h.C_INT.withName("UserPresence")
     ).withName("_POWER_USER_PRESENCE");
 
     /**

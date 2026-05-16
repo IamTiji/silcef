@@ -40,14 +40,14 @@ public class _POWER_LIMIT_ATTRIBUTES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Type"),
-        cef_master_h.C_LONG.withName("DomainId"),
-        cef_master_h.C_LONG.withName("MaxValue"),
-        cef_master_h.C_LONG.withName("MinValue"),
-        cef_master_h.C_LONG.withName("MinTimeParameter"),
-        cef_master_h.C_LONG.withName("MaxTimeParameter"),
-        cef_master_h.C_LONG.withName("DefaultACValue"),
-        cef_master_h.C_LONG.withName("DefaultDCValue"),
+        cef_render_handler_capi_h.C_INT.withName("Type"),
+        cef_render_handler_capi_h.C_LONG.withName("DomainId"),
+        cef_render_handler_capi_h.C_LONG.withName("MaxValue"),
+        cef_render_handler_capi_h.C_LONG.withName("MinValue"),
+        cef_render_handler_capi_h.C_LONG.withName("MinTimeParameter"),
+        cef_render_handler_capi_h.C_LONG.withName("MaxTimeParameter"),
+        cef_render_handler_capi_h.C_LONG.withName("DefaultACValue"),
+        cef_render_handler_capi_h.C_LONG.withName("DefaultDCValue"),
         _POWER_LIMIT_ATTRIBUTES.Flags.layout().withName("Flags")
     ).withName("_POWER_LIMIT_ATTRIBUTES");
 
@@ -431,7 +431,7 @@ public class _POWER_LIMIT_ATTRIBUTES {
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$18800:9"),
-            cef_master_h.C_LONG.withName("AsUlong")
+            cef_render_handler_capi_h.C_LONG.withName("AsUlong")
         ).withName("$anon$18799:5");
 
         /**

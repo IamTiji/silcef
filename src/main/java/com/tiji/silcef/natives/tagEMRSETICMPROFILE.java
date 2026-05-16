@@ -31,10 +31,10 @@ public class tagEMRSETICMPROFILE {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_LONG.withName("cbName"),
-        cef_master_h.C_LONG.withName("cbData"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("Data"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("cbName"),
+        cef_render_handler_capi_h.C_LONG.withName("cbData"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("Data"),
         MemoryLayout.paddingLayout(3)
     ).withName("tagEMRSETICMPROFILE");
 

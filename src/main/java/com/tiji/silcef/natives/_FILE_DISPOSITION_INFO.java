@@ -26,7 +26,7 @@ public class _FILE_DISPOSITION_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("DeleteFileA")
+        cef_render_handler_capi_h.C_CHAR.withName("DeleteFileA")
     ).withName("_FILE_DISPOSITION_INFO");
 
     /**

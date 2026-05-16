@@ -26,7 +26,7 @@ public class _EXIT_PROCESS_DEBUG_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwExitCode")
+        cef_render_handler_capi_h.C_LONG.withName("dwExitCode")
     ).withName("_EXIT_PROCESS_DEBUG_INFO");
 
     /**

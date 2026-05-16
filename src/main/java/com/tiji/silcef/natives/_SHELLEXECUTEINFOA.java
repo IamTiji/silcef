@@ -43,26 +43,26 @@ public class _SHELLEXECUTEINFOA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("fMask"),
-        cef_master_h.C_POINTER.withName("hwnd"),
-        cef_master_h.C_POINTER.withName("lpVerb"),
-        cef_master_h.C_POINTER.withName("lpFile"),
-        cef_master_h.C_POINTER.withName("lpParameters"),
-        cef_master_h.C_POINTER.withName("lpDirectory"),
-        cef_master_h.C_INT.withName("nShow"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("fMask"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwnd"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpVerb"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpFile"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpParameters"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpDirectory"),
+        cef_render_handler_capi_h.C_INT.withName("nShow"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hInstApp"),
-        cef_master_h.C_POINTER.withName("lpIDList"),
-        cef_master_h.C_POINTER.withName("lpClass"),
-        cef_master_h.C_POINTER.withName("hkeyClass"),
-        cef_master_h.C_LONG.withName("dwHotKey"),
+        cef_render_handler_capi_h.C_POINTER.withName("hInstApp"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpIDList"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpClass"),
+        cef_render_handler_capi_h.C_POINTER.withName("hkeyClass"),
+        cef_render_handler_capi_h.C_LONG.withName("dwHotKey"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("hIcon"),
-            cef_master_h.C_POINTER.withName("hMonitor")
+            cef_render_handler_capi_h.C_POINTER.withName("hIcon"),
+            cef_render_handler_capi_h.C_POINTER.withName("hMonitor")
         ).withName("$anon$461:5"),
-        cef_master_h.C_POINTER.withName("hProcess")
+        cef_render_handler_capi_h.C_POINTER.withName("hProcess")
     ).withName("_SHELLEXECUTEINFOA");
 
     /**

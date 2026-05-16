@@ -29,8 +29,8 @@ public class _SYSTEM_ALARM_CALLBACK_ACE {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _ACE_HEADER.layout().withName("Header"),
-        cef_master_h.C_LONG.withName("Mask"),
-        cef_master_h.C_LONG.withName("SidStart")
+        cef_render_handler_capi_h.C_LONG.withName("Mask"),
+        cef_render_handler_capi_h.C_LONG.withName("SidStart")
     ).withName("_SYSTEM_ALARM_CALLBACK_ACE");
 
     /**

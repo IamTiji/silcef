@@ -33,10 +33,10 @@ public class _JOBOBJECT_EXTENDED_LIMIT_INFORMATION {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _JOBOBJECT_BASIC_LIMIT_INFORMATION.layout().withName("BasicLimitInformation"),
         _IO_COUNTERS.layout().withName("IoInfo"),
-        cef_master_h.C_LONG_LONG.withName("ProcessMemoryLimit"),
-        cef_master_h.C_LONG_LONG.withName("JobMemoryLimit"),
-        cef_master_h.C_LONG_LONG.withName("PeakProcessMemoryUsed"),
-        cef_master_h.C_LONG_LONG.withName("PeakJobMemoryUsed")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ProcessMemoryLimit"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("JobMemoryLimit"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("PeakProcessMemoryUsed"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("PeakJobMemoryUsed")
     ).withName("_JOBOBJECT_EXTENDED_LIMIT_INFORMATION");
 
     /**

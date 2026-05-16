@@ -32,9 +32,9 @@ public class _NUMA_NODE_RELATIONSHIP {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NodeNumber"),
-        MemoryLayout.sequenceLayout(18, cef_master_h.C_CHAR).withName("Reserved"),
-        cef_master_h.C_SHORT.withName("GroupCount"),
+        cef_render_handler_capi_h.C_LONG.withName("NodeNumber"),
+        MemoryLayout.sequenceLayout(18, cef_render_handler_capi_h.C_CHAR).withName("Reserved"),
+        cef_render_handler_capi_h.C_SHORT.withName("GroupCount"),
         MemoryLayout.unionLayout(
             _GROUP_AFFINITY.layout().withName("GroupMask"),
             MemoryLayout.sequenceLayout(1, _GROUP_AFFINITY.layout()).withName("GroupMasks")

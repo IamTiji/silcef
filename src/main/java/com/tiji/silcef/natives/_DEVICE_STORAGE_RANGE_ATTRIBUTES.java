@@ -33,14 +33,14 @@ public class _DEVICE_STORAGE_RANGE_ATTRIBUTES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("LengthInBytes"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LengthInBytes"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("AllFlags"),
+            cef_render_handler_capi_h.C_LONG.withName("AllFlags"),
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$4924:9")
         ).withName("$anon$4920:5"),
-        cef_master_h.C_LONG.withName("Reserved")
+        cef_render_handler_capi_h.C_LONG.withName("Reserved")
     ).withName("_DEVICE_STORAGE_RANGE_ATTRIBUTES");
 
     /**

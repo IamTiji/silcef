@@ -38,7 +38,7 @@ public class _DISPLAYCONFIG_SET_HDR_STATE {
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$3248:9"),
-            cef_master_h.C_INT.withName("value")
+            cef_render_handler_capi_h.C_INT.withName("value")
         ).withName("$anon$3246:5")
     ).withName("_DISPLAYCONFIG_SET_HDR_STATE");
 

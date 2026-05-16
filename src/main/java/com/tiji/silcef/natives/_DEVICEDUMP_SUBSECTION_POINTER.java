@@ -28,9 +28,9 @@ public class _DEVICEDUMP_SUBSECTION_POINTER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwSize"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwFlags"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwOffset")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwSize"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwFlags"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwOffset")
     ).withName("_DEVICEDUMP_SUBSECTION_POINTER");
 
     /**

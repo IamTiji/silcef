@@ -29,8 +29,8 @@ public class _tagStartParam {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("iid"),
-        cef_master_h.C_POINTER.withName("pIBindCtx"),
-        cef_master_h.C_POINTER.withName("pItf")
+        cef_render_handler_capi_h.C_POINTER.withName("pIBindCtx"),
+        cef_render_handler_capi_h.C_POINTER.withName("pItf")
     ).withName("_tagStartParam");
 
     /**

@@ -31,12 +31,12 @@ public class _STORAGE_GET_BC_PROPERTIES_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("MaximumRequestsPerPeriod"),
-        cef_master_h.C_LONG.withName("MinimumPeriod"),
-        cef_master_h.C_LONG_LONG.withName("MaximumRequestSize"),
-        cef_master_h.C_LONG.withName("EstimatedTimePerRequest"),
-        cef_master_h.C_LONG.withName("NumOutStandingRequests"),
-        cef_master_h.C_LONG_LONG.withName("RequestSize")
+        cef_render_handler_capi_h.C_LONG.withName("MaximumRequestsPerPeriod"),
+        cef_render_handler_capi_h.C_LONG.withName("MinimumPeriod"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaximumRequestSize"),
+        cef_render_handler_capi_h.C_LONG.withName("EstimatedTimePerRequest"),
+        cef_render_handler_capi_h.C_LONG.withName("NumOutStandingRequests"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("RequestSize")
     ).withName("_STORAGE_GET_BC_PROPERTIES_OUTPUT");
 
     /**

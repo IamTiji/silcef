@@ -30,10 +30,10 @@ public class _SCRUB_PARITY_EXTENT_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Size"),
-        cef_master_h.C_SHORT.withName("Flags"),
-        cef_master_h.C_SHORT.withName("NumberOfParityExtents"),
-        cef_master_h.C_SHORT.withName("MaximumNumberOfParityExtents"),
+        cef_render_handler_capi_h.C_SHORT.withName("Size"),
+        cef_render_handler_capi_h.C_SHORT.withName("Flags"),
+        cef_render_handler_capi_h.C_SHORT.withName("NumberOfParityExtents"),
+        cef_render_handler_capi_h.C_SHORT.withName("MaximumNumberOfParityExtents"),
         MemoryLayout.sequenceLayout(1, _SCRUB_PARITY_EXTENT.layout()).withName("ParityExtents")
     ).withName("_SCRUB_PARITY_EXTENT_DATA");
 

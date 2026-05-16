@@ -38,19 +38,19 @@ public class DISK_SPACE_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("ActualTotalAllocationUnits"),
-        cef_master_h.C_LONG_LONG.withName("ActualAvailableAllocationUnits"),
-        cef_master_h.C_LONG_LONG.withName("ActualPoolUnavailableAllocationUnits"),
-        cef_master_h.C_LONG_LONG.withName("CallerTotalAllocationUnits"),
-        cef_master_h.C_LONG_LONG.withName("CallerAvailableAllocationUnits"),
-        cef_master_h.C_LONG_LONG.withName("CallerPoolUnavailableAllocationUnits"),
-        cef_master_h.C_LONG_LONG.withName("UsedAllocationUnits"),
-        cef_master_h.C_LONG_LONG.withName("TotalReservedAllocationUnits"),
-        cef_master_h.C_LONG_LONG.withName("VolumeStorageReserveAllocationUnits"),
-        cef_master_h.C_LONG_LONG.withName("AvailableCommittedAllocationUnits"),
-        cef_master_h.C_LONG_LONG.withName("PoolAvailableAllocationUnits"),
-        cef_master_h.C_LONG.withName("SectorsPerAllocationUnit"),
-        cef_master_h.C_LONG.withName("BytesPerSector")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ActualTotalAllocationUnits"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ActualAvailableAllocationUnits"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ActualPoolUnavailableAllocationUnits"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("CallerTotalAllocationUnits"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("CallerAvailableAllocationUnits"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("CallerPoolUnavailableAllocationUnits"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("UsedAllocationUnits"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("TotalReservedAllocationUnits"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("VolumeStorageReserveAllocationUnits"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("AvailableCommittedAllocationUnits"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("PoolAvailableAllocationUnits"),
+        cef_render_handler_capi_h.C_LONG.withName("SectorsPerAllocationUnit"),
+        cef_render_handler_capi_h.C_LONG.withName("BytesPerSector")
     ).withName("DISK_SPACE_INFORMATION");
 
     /**

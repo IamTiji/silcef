@@ -31,13 +31,13 @@ public class _numberfmtW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("NumDigits"),
-        cef_master_h.C_INT.withName("LeadingZero"),
-        cef_master_h.C_INT.withName("Grouping"),
+        cef_render_handler_capi_h.C_INT.withName("NumDigits"),
+        cef_render_handler_capi_h.C_INT.withName("LeadingZero"),
+        cef_render_handler_capi_h.C_INT.withName("Grouping"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpDecimalSep"),
-        cef_master_h.C_POINTER.withName("lpThousandSep"),
-        cef_master_h.C_INT.withName("NegativeOrder"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpDecimalSep"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpThousandSep"),
+        cef_render_handler_capi_h.C_INT.withName("NegativeOrder"),
         MemoryLayout.paddingLayout(4)
     ).withName("_numberfmtW");
 

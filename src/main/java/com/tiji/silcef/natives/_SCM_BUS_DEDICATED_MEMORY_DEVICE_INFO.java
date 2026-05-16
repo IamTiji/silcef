@@ -34,9 +34,9 @@ public class _SCM_BUS_DEDICATED_MEMORY_DEVICE_INFO {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("DeviceGuid"),
-        cef_master_h.C_LONG.withName("DeviceNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("DeviceNumber"),
         _SCM_BUS_DEDICATED_MEMORY_DEVICE_INFO.Flags.layout().withName("Flags"),
-        cef_master_h.C_LONG_LONG.withName("DeviceSize")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("DeviceSize")
     ).withName("_SCM_BUS_DEDICATED_MEMORY_DEVICE_INFO");
 
     /**

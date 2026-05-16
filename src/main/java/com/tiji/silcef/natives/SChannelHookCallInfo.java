@@ -32,12 +32,12 @@ public class SChannelHookCallInfo {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("iid"),
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         _GUID.layout().withName("uCausality"),
-        cef_master_h.C_LONG.withName("dwServerPid"),
-        cef_master_h.C_LONG.withName("iMethod"),
+        cef_render_handler_capi_h.C_LONG.withName("dwServerPid"),
+        cef_render_handler_capi_h.C_LONG.withName("iMethod"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pObject")
+        cef_render_handler_capi_h.C_POINTER.withName("pObject")
     ).withName("SChannelHookCallInfo");
 
     /**

@@ -34,17 +34,17 @@ public class tagGESTUREINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_LONG.withName("dwID"),
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwID"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hwndTarget"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndTarget"),
         tagPOINTS.layout().withName("ptsLocation"),
-        cef_master_h.C_LONG.withName("dwInstanceID"),
-        cef_master_h.C_LONG.withName("dwSequenceID"),
+        cef_render_handler_capi_h.C_LONG.withName("dwInstanceID"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSequenceID"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("ullArguments"),
-        cef_master_h.C_INT.withName("cbExtraArgs"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ullArguments"),
+        cef_render_handler_capi_h.C_INT.withName("cbExtraArgs"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagGESTUREINFO");
 

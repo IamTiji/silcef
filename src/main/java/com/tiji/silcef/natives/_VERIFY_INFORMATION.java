@@ -28,7 +28,7 @@ public class _VERIFY_INFORMATION {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LARGE_INTEGER.layout().withName("StartingOffset"),
-        cef_master_h.C_LONG.withName("Length"),
+        cef_render_handler_capi_h.C_LONG.withName("Length"),
         MemoryLayout.paddingLayout(4)
     ).withName("_VERIFY_INFORMATION");
 

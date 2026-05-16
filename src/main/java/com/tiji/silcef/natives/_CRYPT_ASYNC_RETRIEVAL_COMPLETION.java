@@ -27,8 +27,8 @@ public class _CRYPT_ASYNC_RETRIEVAL_COMPLETION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pfnCompletion"),
-        cef_master_h.C_POINTER.withName("pvCompletion")
+        cef_render_handler_capi_h.C_POINTER.withName("pfnCompletion"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvCompletion")
     ).withName("_CRYPT_ASYNC_RETRIEVAL_COMPLETION");
 
     /**

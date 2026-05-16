@@ -33,16 +33,16 @@ public class _SE_ACCESS_REQUEST {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("SeSecurityDescriptor"),
-        cef_master_h.C_LONG.withName("DesiredAccess"),
-        cef_master_h.C_LONG.withName("PreviouslyGrantedAccess"),
-        cef_master_h.C_POINTER.withName("PrincipalSelfSid"),
-        cef_master_h.C_POINTER.withName("GenericMapping"),
-        cef_master_h.C_LONG.withName("ObjectTypeListCount"),
+        cef_render_handler_capi_h.C_POINTER.withName("SeSecurityDescriptor"),
+        cef_render_handler_capi_h.C_LONG.withName("DesiredAccess"),
+        cef_render_handler_capi_h.C_LONG.withName("PreviouslyGrantedAccess"),
+        cef_render_handler_capi_h.C_POINTER.withName("PrincipalSelfSid"),
+        cef_render_handler_capi_h.C_POINTER.withName("GenericMapping"),
+        cef_render_handler_capi_h.C_LONG.withName("ObjectTypeListCount"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("ObjectTypeList")
+        cef_render_handler_capi_h.C_POINTER.withName("ObjectTypeList")
     ).withName("_SE_ACCESS_REQUEST");
 
     /**

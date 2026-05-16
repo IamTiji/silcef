@@ -28,9 +28,9 @@ public class _FIND_NAME_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("node_count"),
-        cef_master_h.C_CHAR.withName("reserved"),
-        cef_master_h.C_CHAR.withName("unique_group")
+        cef_render_handler_capi_h.C_SHORT.withName("node_count"),
+        cef_render_handler_capi_h.C_CHAR.withName("reserved"),
+        cef_render_handler_capi_h.C_CHAR.withName("unique_group")
     ).withName("_FIND_NAME_HEADER");
 
     /**

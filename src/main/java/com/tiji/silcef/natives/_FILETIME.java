@@ -27,8 +27,8 @@ public class _FILETIME {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwLowDateTime"),
-        cef_master_h.C_LONG.withName("dwHighDateTime")
+        cef_render_handler_capi_h.C_LONG.withName("dwLowDateTime"),
+        cef_render_handler_capi_h.C_LONG.withName("dwHighDateTime")
     ).withName("_FILETIME");
 
     /**

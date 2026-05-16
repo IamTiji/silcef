@@ -27,8 +27,8 @@ public class tagIDLDESC {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("dwReserved"),
-        cef_master_h.C_SHORT.withName("wIDLFlags"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwReserved"),
+        cef_render_handler_capi_h.C_SHORT.withName("wIDLFlags"),
         MemoryLayout.paddingLayout(6)
     ).withName("tagIDLDESC");
 

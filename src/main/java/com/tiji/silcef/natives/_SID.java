@@ -29,10 +29,10 @@ public class _SID {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("Revision"),
-        cef_master_h.C_CHAR.withName("SubAuthorityCount"),
+        cef_render_handler_capi_h.C_CHAR.withName("Revision"),
+        cef_render_handler_capi_h.C_CHAR.withName("SubAuthorityCount"),
         _SID_IDENTIFIER_AUTHORITY.layout().withName("IdentifierAuthority"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG).withName("SubAuthority")
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG).withName("SubAuthority")
     ).withName("_SID");
 
     /**

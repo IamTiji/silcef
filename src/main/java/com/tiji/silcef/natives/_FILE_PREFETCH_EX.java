@@ -29,10 +29,10 @@ public class _FILE_PREFETCH_EX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Type"),
-        cef_master_h.C_LONG.withName("Count"),
-        cef_master_h.C_POINTER.withName("Context"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG_LONG).withName("Prefetch")
+        cef_render_handler_capi_h.C_LONG.withName("Type"),
+        cef_render_handler_capi_h.C_LONG.withName("Count"),
+        cef_render_handler_capi_h.C_POINTER.withName("Context"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG_LONG).withName("Prefetch")
     ).withName("_FILE_PREFETCH_EX");
 
     /**

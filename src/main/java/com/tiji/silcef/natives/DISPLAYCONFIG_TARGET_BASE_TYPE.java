@@ -28,7 +28,7 @@ public class DISPLAYCONFIG_TARGET_BASE_TYPE {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         DISPLAYCONFIG_DEVICE_INFO_HEADER.layout().withName("header"),
-        cef_master_h.C_INT.withName("baseOutputTechnology")
+        cef_render_handler_capi_h.C_INT.withName("baseOutputTechnology")
     ).withName("DISPLAYCONFIG_TARGET_BASE_TYPE");
 
     /**

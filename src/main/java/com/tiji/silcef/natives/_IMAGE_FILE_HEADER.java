@@ -32,13 +32,13 @@ public class _IMAGE_FILE_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Machine"),
-        cef_master_h.C_SHORT.withName("NumberOfSections"),
-        cef_master_h.C_LONG.withName("TimeDateStamp"),
-        cef_master_h.C_LONG.withName("PointerToSymbolTable"),
-        cef_master_h.C_LONG.withName("NumberOfSymbols"),
-        cef_master_h.C_SHORT.withName("SizeOfOptionalHeader"),
-        cef_master_h.C_SHORT.withName("Characteristics")
+        cef_render_handler_capi_h.C_SHORT.withName("Machine"),
+        cef_render_handler_capi_h.C_SHORT.withName("NumberOfSections"),
+        cef_render_handler_capi_h.C_LONG.withName("TimeDateStamp"),
+        cef_render_handler_capi_h.C_LONG.withName("PointerToSymbolTable"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfSymbols"),
+        cef_render_handler_capi_h.C_SHORT.withName("SizeOfOptionalHeader"),
+        cef_render_handler_capi_h.C_SHORT.withName("Characteristics")
     ).withName("_IMAGE_FILE_HEADER");
 
     /**

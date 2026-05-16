@@ -27,9 +27,9 @@ public class _MIDL_METHOD_PROPERTY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Id"),
+        cef_render_handler_capi_h.C_LONG.withName("Id"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("Value")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Value")
     ).withName("_MIDL_METHOD_PROPERTY");
 
     /**

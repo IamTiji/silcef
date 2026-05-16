@@ -28,10 +28,10 @@ public class _CMSG_STREAM_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbContent"),
+        cef_render_handler_capi_h.C_LONG.withName("cbContent"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pfnStreamOutput"),
-        cef_master_h.C_POINTER.withName("pvArg")
+        cef_render_handler_capi_h.C_POINTER.withName("pfnStreamOutput"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvArg")
     ).withName("_CMSG_STREAM_INFO");
 
     /**

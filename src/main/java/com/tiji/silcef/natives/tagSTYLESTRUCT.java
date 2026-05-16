@@ -27,8 +27,8 @@ public class tagSTYLESTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("styleOld"),
-        cef_master_h.C_LONG.withName("styleNew")
+        cef_render_handler_capi_h.C_LONG.withName("styleOld"),
+        cef_render_handler_capi_h.C_LONG.withName("styleNew")
     ).withName("tagSTYLESTRUCT");
 
     /**

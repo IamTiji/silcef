@@ -30,11 +30,11 @@ public class _CERT_STORE_PROV_FIND_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwMsgAndCertEncodingType"),
-        cef_master_h.C_LONG.withName("dwFindFlags"),
-        cef_master_h.C_LONG.withName("dwFindType"),
-        cef_master_h.C_POINTER.withName("pvFindPara")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMsgAndCertEncodingType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFindFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFindType"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvFindPara")
     ).withName("_CERT_STORE_PROV_FIND_INFO");
 
     /**

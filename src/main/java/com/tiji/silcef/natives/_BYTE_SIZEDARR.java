@@ -27,9 +27,9 @@ public class _BYTE_SIZEDARR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("clSize"),
+        cef_render_handler_capi_h.C_LONG.withName("clSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pData")
+        cef_render_handler_capi_h.C_POINTER.withName("pData")
     ).withName("_BYTE_SIZEDARR");
 
     /**

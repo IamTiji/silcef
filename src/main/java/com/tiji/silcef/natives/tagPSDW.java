@@ -39,22 +39,22 @@ public class tagPSDW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("lStructSize"),
+        cef_render_handler_capi_h.C_LONG.withName("lStructSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hwndOwner"),
-        cef_master_h.C_POINTER.withName("hDevMode"),
-        cef_master_h.C_POINTER.withName("hDevNames"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndOwner"),
+        cef_render_handler_capi_h.C_POINTER.withName("hDevMode"),
+        cef_render_handler_capi_h.C_POINTER.withName("hDevNames"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         tagPOINT.layout().withName("ptPaperSize"),
         tagRECT.layout().withName("rtMinMargin"),
         tagRECT.layout().withName("rtMargin"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hInstance"),
-        cef_master_h.C_LONG_LONG.withName("lCustData"),
-        cef_master_h.C_POINTER.withName("lpfnPageSetupHook"),
-        cef_master_h.C_POINTER.withName("lpfnPagePaintHook"),
-        cef_master_h.C_POINTER.withName("lpPageSetupTemplateName"),
-        cef_master_h.C_POINTER.withName("hPageSetupTemplate")
+        cef_render_handler_capi_h.C_POINTER.withName("hInstance"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("lCustData"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpfnPageSetupHook"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpfnPagePaintHook"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpPageSetupTemplateName"),
+        cef_render_handler_capi_h.C_POINTER.withName("hPageSetupTemplate")
     ).withName("tagPSDW");
 
     /**

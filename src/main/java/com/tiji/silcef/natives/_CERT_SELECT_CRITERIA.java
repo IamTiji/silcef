@@ -28,9 +28,9 @@ public class _CERT_SELECT_CRITERIA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwType"),
-        cef_master_h.C_LONG.withName("cPara"),
-        cef_master_h.C_POINTER.withName("ppPara")
+        cef_render_handler_capi_h.C_LONG.withName("dwType"),
+        cef_render_handler_capi_h.C_LONG.withName("cPara"),
+        cef_render_handler_capi_h.C_POINTER.withName("ppPara")
     ).withName("_CERT_SELECT_CRITERIA");
 
     /**

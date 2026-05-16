@@ -40,19 +40,19 @@ public class _cef_display_handler_t {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _cef_base_ref_counted_t.layout().withName("base"),
-        cef_master_h.C_POINTER.withName("on_address_change"),
-        cef_master_h.C_POINTER.withName("on_title_change"),
-        cef_master_h.C_POINTER.withName("on_favicon_urlchange"),
-        cef_master_h.C_POINTER.withName("on_fullscreen_mode_change"),
-        cef_master_h.C_POINTER.withName("on_tooltip"),
-        cef_master_h.C_POINTER.withName("on_status_message"),
-        cef_master_h.C_POINTER.withName("on_console_message"),
-        cef_master_h.C_POINTER.withName("on_auto_resize"),
-        cef_master_h.C_POINTER.withName("on_loading_progress_change"),
-        cef_master_h.C_POINTER.withName("on_cursor_change"),
-        cef_master_h.C_POINTER.withName("on_media_access_change"),
-        cef_master_h.C_POINTER.withName("on_contents_bounds_change"),
-        cef_master_h.C_POINTER.withName("get_root_window_screen_rect")
+        cef_display_handler_capi_h.C_POINTER.withName("on_address_change"),
+        cef_display_handler_capi_h.C_POINTER.withName("on_title_change"),
+        cef_display_handler_capi_h.C_POINTER.withName("on_favicon_urlchange"),
+        cef_display_handler_capi_h.C_POINTER.withName("on_fullscreen_mode_change"),
+        cef_display_handler_capi_h.C_POINTER.withName("on_tooltip"),
+        cef_display_handler_capi_h.C_POINTER.withName("on_status_message"),
+        cef_display_handler_capi_h.C_POINTER.withName("on_console_message"),
+        cef_display_handler_capi_h.C_POINTER.withName("on_auto_resize"),
+        cef_display_handler_capi_h.C_POINTER.withName("on_loading_progress_change"),
+        cef_display_handler_capi_h.C_POINTER.withName("on_cursor_change"),
+        cef_display_handler_capi_h.C_POINTER.withName("on_media_access_change"),
+        cef_display_handler_capi_h.C_POINTER.withName("on_contents_bounds_change"),
+        cef_display_handler_capi_h.C_POINTER.withName("get_root_window_screen_rect")
     ).withName("_cef_display_handler_t");
 
     /**
@@ -125,10 +125,10 @@ public class _cef_display_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER
         );
 
         /**
@@ -138,7 +138,7 @@ public class _cef_display_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_address_change.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_display_handler_capi_h.upcallHandle(on_address_change.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -227,9 +227,9 @@ public class _cef_display_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER
         );
 
         /**
@@ -239,7 +239,7 @@ public class _cef_display_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_title_change.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_display_handler_capi_h.upcallHandle(on_title_change.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -328,9 +328,9 @@ public class _cef_display_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER
         );
 
         /**
@@ -340,7 +340,7 @@ public class _cef_display_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_favicon_urlchange.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_display_handler_capi_h.upcallHandle(on_favicon_urlchange.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -429,9 +429,9 @@ public class _cef_display_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_INT
         );
 
         /**
@@ -441,7 +441,7 @@ public class _cef_display_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_fullscreen_mode_change.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_display_handler_capi_h.upcallHandle(on_fullscreen_mode_change.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -530,10 +530,10 @@ public class _cef_display_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_display_handler_capi_h.C_INT,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER
         );
 
         /**
@@ -543,7 +543,7 @@ public class _cef_display_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_tooltip.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_display_handler_capi_h.upcallHandle(on_tooltip.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -632,9 +632,9 @@ public class _cef_display_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER
         );
 
         /**
@@ -644,7 +644,7 @@ public class _cef_display_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_status_message.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_display_handler_capi_h.upcallHandle(on_status_message.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -733,13 +733,13 @@ public class _cef_display_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT
+            cef_display_handler_capi_h.C_INT,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_INT,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_INT
         );
 
         /**
@@ -749,7 +749,7 @@ public class _cef_display_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_console_message.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_display_handler_capi_h.upcallHandle(on_console_message.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -838,10 +838,10 @@ public class _cef_display_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_display_handler_capi_h.C_INT,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER
         );
 
         /**
@@ -851,7 +851,7 @@ public class _cef_display_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_auto_resize.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_display_handler_capi_h.upcallHandle(on_auto_resize.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -940,9 +940,9 @@ public class _cef_display_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_DOUBLE
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_DOUBLE
         );
 
         /**
@@ -952,7 +952,7 @@ public class _cef_display_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_loading_progress_change.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_display_handler_capi_h.upcallHandle(on_loading_progress_change.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1041,12 +1041,12 @@ public class _cef_display_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_display_handler_capi_h.C_INT,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_INT,
+            cef_display_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1056,7 +1056,7 @@ public class _cef_display_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_cursor_change.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_display_handler_capi_h.upcallHandle(on_cursor_change.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1145,10 +1145,10 @@ public class _cef_display_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_INT
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_INT,
+            cef_display_handler_capi_h.C_INT
         );
 
         /**
@@ -1158,7 +1158,7 @@ public class _cef_display_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_media_access_change.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_display_handler_capi_h.upcallHandle(on_media_access_change.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1247,10 +1247,10 @@ public class _cef_display_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_display_handler_capi_h.C_INT,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1260,7 +1260,7 @@ public class _cef_display_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_contents_bounds_change.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_display_handler_capi_h.upcallHandle(on_contents_bounds_change.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1349,10 +1349,10 @@ public class _cef_display_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_display_handler_capi_h.C_INT,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER,
+            cef_display_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1362,7 +1362,7 @@ public class _cef_display_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_root_window_screen_rect.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_display_handler_capi_h.upcallHandle(get_root_window_screen_rect.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

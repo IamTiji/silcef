@@ -26,7 +26,7 @@ public class _POWER_PLATFORM_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("AoAc")
+        cef_render_handler_capi_h.C_CHAR.withName("AoAc")
     ).withName("_POWER_PLATFORM_INFORMATION");
 
     /**

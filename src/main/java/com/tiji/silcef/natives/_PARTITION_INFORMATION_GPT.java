@@ -31,8 +31,8 @@ public class _PARTITION_INFORMATION_GPT {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("PartitionType"),
         _GUID.layout().withName("PartitionId"),
-        cef_master_h.C_LONG_LONG.withName("Attributes"),
-        MemoryLayout.sequenceLayout(36, cef_master_h.C_SHORT).withName("Name")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Attributes"),
+        MemoryLayout.sequenceLayout(36, cef_render_handler_capi_h.C_SHORT).withName("Name")
     ).withName("_PARTITION_INFORMATION_GPT");
 
     /**

@@ -30,7 +30,7 @@ public class _CERT_KEY_ATTRIBUTES_INFO {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CRYPTOAPI_BLOB.layout().withName("KeyId"),
         _CRYPT_BIT_BLOB.layout().withName("IntendedKeyUsage"),
-        cef_master_h.C_POINTER.withName("pPrivateKeyUsagePeriod")
+        cef_render_handler_capi_h.C_POINTER.withName("pPrivateKeyUsagePeriod")
     ).withName("_CERT_KEY_ATTRIBUTES_INFO");
 
     /**

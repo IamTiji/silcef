@@ -32,13 +32,13 @@ public class _REPAIR_COPIES_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         _LARGE_INTEGER.layout().withName("FileOffset"),
-        cef_master_h.C_LONG.withName("Length"),
-        cef_master_h.C_LONG.withName("SourceCopy"),
-        cef_master_h.C_LONG.withName("NumberOfRepairCopies"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG).withName("RepairCopies")
+        cef_render_handler_capi_h.C_LONG.withName("Length"),
+        cef_render_handler_capi_h.C_LONG.withName("SourceCopy"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfRepairCopies"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG).withName("RepairCopies")
     ).withName("_REPAIR_COPIES_INPUT");
 
     /**

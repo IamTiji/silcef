@@ -28,7 +28,7 @@ public class _DISK_EXTENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("DiskNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("DiskNumber"),
         MemoryLayout.paddingLayout(4),
         _LARGE_INTEGER.layout().withName("StartingOffset"),
         _LARGE_INTEGER.layout().withName("ExtentLength")

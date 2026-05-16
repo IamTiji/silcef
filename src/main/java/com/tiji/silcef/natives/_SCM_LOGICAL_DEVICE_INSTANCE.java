@@ -29,10 +29,10 @@ public class _SCM_LOGICAL_DEVICE_INSTANCE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
         _GUID.layout().withName("DeviceGuid"),
-        MemoryLayout.sequenceLayout(256, cef_master_h.C_SHORT).withName("SymbolicLink")
+        MemoryLayout.sequenceLayout(256, cef_render_handler_capi_h.C_SHORT).withName("SymbolicLink")
     ).withName("_SCM_LOGICAL_DEVICE_INSTANCE");
 
     /**

@@ -28,10 +28,10 @@ public class tagACCEL {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("fVirt"),
+        cef_render_handler_capi_h.C_CHAR.withName("fVirt"),
         MemoryLayout.paddingLayout(1),
-        cef_master_h.C_SHORT.withName("key"),
-        cef_master_h.C_SHORT.withName("cmd")
+        cef_render_handler_capi_h.C_SHORT.withName("key"),
+        cef_render_handler_capi_h.C_SHORT.withName("cmd")
     ).withName("tagACCEL");
 
     /**

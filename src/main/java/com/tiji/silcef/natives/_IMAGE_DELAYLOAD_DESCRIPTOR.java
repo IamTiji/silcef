@@ -40,13 +40,13 @@ public class _IMAGE_DELAYLOAD_DESCRIPTOR {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _IMAGE_DELAYLOAD_DESCRIPTOR.Attributes.layout().withName("Attributes"),
-        cef_master_h.C_LONG.withName("DllNameRVA"),
-        cef_master_h.C_LONG.withName("ModuleHandleRVA"),
-        cef_master_h.C_LONG.withName("ImportAddressTableRVA"),
-        cef_master_h.C_LONG.withName("ImportNameTableRVA"),
-        cef_master_h.C_LONG.withName("BoundImportAddressTableRVA"),
-        cef_master_h.C_LONG.withName("UnloadInformationTableRVA"),
-        cef_master_h.C_LONG.withName("TimeDateStamp")
+        cef_render_handler_capi_h.C_LONG.withName("DllNameRVA"),
+        cef_render_handler_capi_h.C_LONG.withName("ModuleHandleRVA"),
+        cef_render_handler_capi_h.C_LONG.withName("ImportAddressTableRVA"),
+        cef_render_handler_capi_h.C_LONG.withName("ImportNameTableRVA"),
+        cef_render_handler_capi_h.C_LONG.withName("BoundImportAddressTableRVA"),
+        cef_render_handler_capi_h.C_LONG.withName("UnloadInformationTableRVA"),
+        cef_render_handler_capi_h.C_LONG.withName("TimeDateStamp")
     ).withName("_IMAGE_DELAYLOAD_DESCRIPTOR");
 
     /**
@@ -74,7 +74,7 @@ public class _IMAGE_DELAYLOAD_DESCRIPTOR {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("AllAttributes"),
+            cef_render_handler_capi_h.C_LONG.withName("AllAttributes"),
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$21119:9")

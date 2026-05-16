@@ -28,9 +28,9 @@ public class _NCRYPT_PQ_BLOB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwMagic"),
-        cef_master_h.C_LONG.withName("cbBCryptType"),
-        cef_master_h.C_LONG.withName("cbBCryptBlob")
+        cef_render_handler_capi_h.C_LONG.withName("dwMagic"),
+        cef_render_handler_capi_h.C_LONG.withName("cbBCryptType"),
+        cef_render_handler_capi_h.C_LONG.withName("cbBCryptBlob")
     ).withName("_NCRYPT_PQ_BLOB");
 
     /**

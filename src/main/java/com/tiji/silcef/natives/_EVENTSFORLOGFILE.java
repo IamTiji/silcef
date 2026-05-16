@@ -29,9 +29,9 @@ public class _EVENTSFORLOGFILE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ulSize"),
-        MemoryLayout.sequenceLayout(256, cef_master_h.C_SHORT).withName("szLogicalLogFile"),
-        cef_master_h.C_LONG.withName("ulNumRecords"),
+        cef_render_handler_capi_h.C_LONG.withName("ulSize"),
+        MemoryLayout.sequenceLayout(256, cef_render_handler_capi_h.C_SHORT).withName("szLogicalLogFile"),
+        cef_render_handler_capi_h.C_LONG.withName("ulNumRecords"),
         MemoryLayout.sequenceLayout(0, _EVENTLOGRECORD.layout()).withName("pEventLogRecords")
     ).withName("_EVENTSFORLOGFILE");
 

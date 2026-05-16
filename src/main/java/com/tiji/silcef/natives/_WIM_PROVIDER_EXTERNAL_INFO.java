@@ -29,10 +29,10 @@ public class _WIM_PROVIDER_EXTERNAL_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         _LARGE_INTEGER.layout().withName("DataSourceId"),
-        MemoryLayout.sequenceLayout(20, cef_master_h.C_CHAR).withName("ResourceHash"),
+        MemoryLayout.sequenceLayout(20, cef_render_handler_capi_h.C_CHAR).withName("ResourceHash"),
         MemoryLayout.paddingLayout(4)
     ).withName("_WIM_PROVIDER_EXTERNAL_INFO");
 

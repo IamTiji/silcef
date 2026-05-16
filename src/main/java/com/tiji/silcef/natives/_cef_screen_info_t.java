@@ -32,11 +32,11 @@ public class _cef_screen_info_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("size"),
-        cef_master_h.C_FLOAT.withName("device_scale_factor"),
-        cef_master_h.C_INT.withName("depth"),
-        cef_master_h.C_INT.withName("depth_per_component"),
-        cef_master_h.C_INT.withName("is_monochrome"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("size"),
+        cef_render_handler_capi_h.C_FLOAT.withName("device_scale_factor"),
+        cef_render_handler_capi_h.C_INT.withName("depth"),
+        cef_render_handler_capi_h.C_INT.withName("depth_per_component"),
+        cef_render_handler_capi_h.C_INT.withName("is_monochrome"),
         _cef_rect_t.layout().withName("rect"),
         _cef_rect_t.layout().withName("available_rect")
     ).withName("_cef_screen_info_t");

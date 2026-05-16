@@ -28,7 +28,7 @@ public class UDATE {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _SYSTEMTIME.layout().withName("st"),
-        cef_master_h.C_SHORT.withName("wDayOfYear")
+        cef_render_handler_capi_h.C_SHORT.withName("wDayOfYear")
     ).withName("$anon$930:9");
 
     /**

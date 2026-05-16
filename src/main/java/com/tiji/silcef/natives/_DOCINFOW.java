@@ -30,12 +30,12 @@ public class _DOCINFOW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpszDocName"),
-        cef_master_h.C_POINTER.withName("lpszOutput"),
-        cef_master_h.C_POINTER.withName("lpszDatatype"),
-        cef_master_h.C_LONG.withName("fwType"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpszDocName"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpszOutput"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpszDatatype"),
+        cef_render_handler_capi_h.C_LONG.withName("fwType"),
         MemoryLayout.paddingLayout(4)
     ).withName("_DOCINFOW");
 

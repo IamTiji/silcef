@@ -28,7 +28,7 @@ public class _CMSG_SIGNED_AND_ENVELOPED_ENCODE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
         _CMSG_SIGNED_ENCODE_INFO.layout().withName("SignedInfo"),
         _CMSG_ENVELOPED_ENCODE_INFO.layout().withName("EnvelopedInfo")

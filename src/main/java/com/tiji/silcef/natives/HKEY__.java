@@ -26,7 +26,7 @@ public class HKEY__ {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("unused")
+        cef_render_handler_capi_h.C_INT.withName("unused")
     ).withName("HKEY__");
 
     /**

@@ -29,12 +29,12 @@ public class _CERT_LOGOTYPE_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cLogotypeImage"),
+        cef_render_handler_capi_h.C_LONG.withName("cLogotypeImage"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgLogotypeImage"),
-        cef_master_h.C_LONG.withName("cLogotypeAudio"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgLogotypeImage"),
+        cef_render_handler_capi_h.C_LONG.withName("cLogotypeAudio"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgLogotypeAudio")
+        cef_render_handler_capi_h.C_POINTER.withName("rgLogotypeAudio")
     ).withName("_CERT_LOGOTYPE_DATA");
 
     /**

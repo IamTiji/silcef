@@ -27,8 +27,8 @@ public class _ACTIVATION_CONTEXT_BASIC_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hActCtx"),
-        cef_master_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("hActCtx"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
         MemoryLayout.paddingLayout(4)
     ).withName("_ACTIVATION_CONTEXT_BASIC_INFORMATION");
 

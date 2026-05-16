@@ -32,13 +32,13 @@ public class tagSCROLLBARINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         tagRECT.layout().withName("rcScrollBar"),
-        cef_master_h.C_INT.withName("dxyLineButton"),
-        cef_master_h.C_INT.withName("xyThumbTop"),
-        cef_master_h.C_INT.withName("xyThumbBottom"),
-        cef_master_h.C_INT.withName("reserved"),
-        MemoryLayout.sequenceLayout(6, cef_master_h.C_LONG).withName("rgstate")
+        cef_render_handler_capi_h.C_INT.withName("dxyLineButton"),
+        cef_render_handler_capi_h.C_INT.withName("xyThumbTop"),
+        cef_render_handler_capi_h.C_INT.withName("xyThumbBottom"),
+        cef_render_handler_capi_h.C_INT.withName("reserved"),
+        MemoryLayout.sequenceLayout(6, cef_render_handler_capi_h.C_LONG).withName("rgstate")
     ).withName("tagSCROLLBARINFO");
 
     /**

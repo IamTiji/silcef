@@ -34,15 +34,15 @@ public class tMIXERCONTROLDETAILS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("cbStruct"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwControlID"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("cChannels"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cbStruct"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwControlID"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cChannels"),
         MemoryLayout.unionLayout(
-            cef_master_h.align(cef_master_h.C_POINTER, 1).withName("hwndOwner"),
-            cef_master_h.align(cef_master_h.C_LONG, 1).withName("cMultipleItems")
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("hwndOwner"),
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cMultipleItems")
         ).withName("$anon$2316:5"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("cbDetails"),
-        cef_master_h.align(cef_master_h.C_POINTER, 1).withName("paDetails")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cbDetails"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("paDetails")
     ).withName("tMIXERCONTROLDETAILS");
 
     /**

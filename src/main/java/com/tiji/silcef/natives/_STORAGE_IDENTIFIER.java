@@ -31,12 +31,12 @@ public class _STORAGE_IDENTIFIER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("CodeSet"),
-        cef_master_h.C_INT.withName("Type"),
-        cef_master_h.C_SHORT.withName("IdentifierSize"),
-        cef_master_h.C_SHORT.withName("NextOffset"),
-        cef_master_h.C_INT.withName("Association"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("Identifier"),
+        cef_render_handler_capi_h.C_INT.withName("CodeSet"),
+        cef_render_handler_capi_h.C_INT.withName("Type"),
+        cef_render_handler_capi_h.C_SHORT.withName("IdentifierSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("NextOffset"),
+        cef_render_handler_capi_h.C_INT.withName("Association"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("Identifier"),
         MemoryLayout.paddingLayout(3)
     ).withName("_STORAGE_IDENTIFIER");
 

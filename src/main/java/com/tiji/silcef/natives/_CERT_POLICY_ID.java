@@ -27,9 +27,9 @@ public class _CERT_POLICY_ID {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cCertPolicyElementId"),
+        cef_render_handler_capi_h.C_LONG.withName("cCertPolicyElementId"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgpszCertPolicyElementId")
+        cef_render_handler_capi_h.C_POINTER.withName("rgpszCertPolicyElementId")
     ).withName("_CERT_POLICY_ID");
 
     /**

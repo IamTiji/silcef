@@ -33,14 +33,14 @@ public class _STORAGE_HW_FIRMWARE_DOWNLOAD {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_CHAR.withName("Slot"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_CHAR).withName("Reserved"),
-        cef_master_h.C_LONG_LONG.withName("Offset"),
-        cef_master_h.C_LONG_LONG.withName("BufferSize"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("ImageBuffer"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_CHAR.withName("Slot"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_CHAR).withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Offset"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("BufferSize"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("ImageBuffer"),
         MemoryLayout.paddingLayout(7)
     ).withName("_STORAGE_HW_FIRMWARE_DOWNLOAD");
 

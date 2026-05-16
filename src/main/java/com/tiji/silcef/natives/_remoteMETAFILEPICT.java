@@ -29,11 +29,11 @@ public class _remoteMETAFILEPICT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("mm"),
-        cef_master_h.C_LONG.withName("xExt"),
-        cef_master_h.C_LONG.withName("yExt"),
+        cef_render_handler_capi_h.C_LONG.withName("mm"),
+        cef_render_handler_capi_h.C_LONG.withName("xExt"),
+        cef_render_handler_capi_h.C_LONG.withName("yExt"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hMF")
+        cef_render_handler_capi_h.C_POINTER.withName("hMF")
     ).withName("_remoteMETAFILEPICT");
 
     /**

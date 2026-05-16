@@ -30,11 +30,11 @@ public class _SHFILEINFOW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hIcon"),
-        cef_master_h.C_INT.withName("iIcon"),
-        cef_master_h.C_LONG.withName("dwAttributes"),
-        MemoryLayout.sequenceLayout(260, cef_master_h.C_SHORT).withName("szDisplayName"),
-        MemoryLayout.sequenceLayout(80, cef_master_h.C_SHORT).withName("szTypeName")
+        cef_render_handler_capi_h.C_POINTER.withName("hIcon"),
+        cef_render_handler_capi_h.C_INT.withName("iIcon"),
+        cef_render_handler_capi_h.C_LONG.withName("dwAttributes"),
+        MemoryLayout.sequenceLayout(260, cef_render_handler_capi_h.C_SHORT).withName("szDisplayName"),
+        MemoryLayout.sequenceLayout(80, cef_render_handler_capi_h.C_SHORT).withName("szTypeName")
     ).withName("_SHFILEINFOW");
 
     /**

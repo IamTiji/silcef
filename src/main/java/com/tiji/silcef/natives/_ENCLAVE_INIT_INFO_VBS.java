@@ -27,8 +27,8 @@ public class _ENCLAVE_INIT_INFO_VBS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Length"),
-        cef_master_h.C_LONG.withName("ThreadCount")
+        cef_render_handler_capi_h.C_LONG.withName("Length"),
+        cef_render_handler_capi_h.C_LONG.withName("ThreadCount")
     ).withName("_ENCLAVE_INIT_INFO_VBS");
 
     /**

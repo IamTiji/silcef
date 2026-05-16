@@ -28,9 +28,9 @@ public class _CERT_OR_CRL_BLOB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwChoice"),
-        cef_master_h.C_LONG.withName("cbEncoded"),
-        cef_master_h.C_POINTER.withName("pbEncoded")
+        cef_render_handler_capi_h.C_LONG.withName("dwChoice"),
+        cef_render_handler_capi_h.C_LONG.withName("cbEncoded"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbEncoded")
     ).withName("_CERT_OR_CRL_BLOB");
 
     /**

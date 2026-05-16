@@ -26,7 +26,7 @@ public class _FILE_MAKE_COMPATIBLE_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("CloseDisc")
+        cef_render_handler_capi_h.C_CHAR.withName("CloseDisc")
     ).withName("_FILE_MAKE_COMPATIBLE_BUFFER");
 
     /**

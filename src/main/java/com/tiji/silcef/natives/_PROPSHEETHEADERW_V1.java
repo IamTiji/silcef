@@ -44,26 +44,26 @@ public class _PROPSHEETHEADERW_V1 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSize"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_POINTER.withName("hwndParent"),
-        cef_master_h.C_POINTER.withName("hInstance"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndParent"),
+        cef_render_handler_capi_h.C_POINTER.withName("hInstance"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("hIcon"),
-            cef_master_h.C_POINTER.withName("pszIcon")
+            cef_render_handler_capi_h.C_POINTER.withName("hIcon"),
+            cef_render_handler_capi_h.C_POINTER.withName("pszIcon")
         ).withName("$anon$520:5"),
-        cef_master_h.C_POINTER.withName("pszCaption"),
-        cef_master_h.C_INT.withName("nPages"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszCaption"),
+        cef_render_handler_capi_h.C_INT.withName("nPages"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
-            cef_master_h.C_INT.withName("nStartPage"),
-            cef_master_h.C_POINTER.withName("pStartPage")
+            cef_render_handler_capi_h.C_INT.withName("nStartPage"),
+            cef_render_handler_capi_h.C_POINTER.withName("pStartPage")
         ).withName("$anon$520:5"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("ppsp"),
-            cef_master_h.C_POINTER.withName("phpage")
+            cef_render_handler_capi_h.C_POINTER.withName("ppsp"),
+            cef_render_handler_capi_h.C_POINTER.withName("phpage")
         ).withName("$anon$520:5"),
-        cef_master_h.C_POINTER.withName("pfnCallback")
+        cef_render_handler_capi_h.C_POINTER.withName("pfnCallback")
     ).withName("_PROPSHEETHEADERW_V1");
 
     /**

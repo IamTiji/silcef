@@ -43,16 +43,16 @@ public class _DRIVER_INFO_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("InternalName"),
-        cef_master_h.C_SHORT.withName("ImageHashAlgorithm"),
-        cef_master_h.C_SHORT.withName("PublisherThumbprintHashAlgorithm"),
-        cef_master_h.C_INT.withName("ImageHashOffset"),
-        cef_master_h.C_INT.withName("PublisherThumbprintOffset"),
-        cef_master_h.C_SHORT.withName("LoadCount"),
-        cef_master_h.C_SHORT.withName("OemNameSize"),
-        cef_master_h.C_INT.withName("OemNameOffset"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("InternalName"),
+        cef_render_handler_capi_h.C_SHORT.withName("ImageHashAlgorithm"),
+        cef_render_handler_capi_h.C_SHORT.withName("PublisherThumbprintHashAlgorithm"),
+        cef_render_handler_capi_h.C_INT.withName("ImageHashOffset"),
+        cef_render_handler_capi_h.C_INT.withName("PublisherThumbprintOffset"),
+        cef_render_handler_capi_h.C_SHORT.withName("LoadCount"),
+        cef_render_handler_capi_h.C_SHORT.withName("OemNameSize"),
+        cef_render_handler_capi_h.C_INT.withName("OemNameOffset"),
         _DRIVER_INFO_ENTRY.Flags.layout().withName("Flags"),
-        cef_master_h.C_SHORT.withName("Padding")
+        cef_render_handler_capi_h.C_SHORT.withName("Padding")
     ).withName("_DRIVER_INFO_ENTRY");
 
     /**
@@ -470,7 +470,7 @@ public class _DRIVER_INFO_ENTRY {
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(2)
             ).withName("$anon$14796:9"),
-            cef_master_h.C_SHORT.withName("AsUInt16")
+            cef_render_handler_capi_h.C_SHORT.withName("AsUInt16")
         ).withName("$anon$14795:5");
 
         /**

@@ -26,7 +26,7 @@ public class _DEVICEDUMP_RESTRICTED_SUBSECTION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("bData")
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("bData")
     ).withName("_DEVICEDUMP_RESTRICTED_SUBSECTION");
 
     /**

@@ -26,7 +26,7 @@ public class _TOKEN_OWNER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("Owner")
+        cef_render_handler_capi_h.C_POINTER.withName("Owner")
     ).withName("_TOKEN_OWNER");
 
     /**

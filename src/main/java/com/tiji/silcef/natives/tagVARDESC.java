@@ -34,17 +34,17 @@ public class tagVARDESC {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("memid"),
+        cef_render_handler_capi_h.C_LONG.withName("memid"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpstrSchema"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpstrSchema"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("oInst"),
-            cef_master_h.C_POINTER.withName("lpvarValue")
+            cef_render_handler_capi_h.C_LONG.withName("oInst"),
+            cef_render_handler_capi_h.C_POINTER.withName("lpvarValue")
         ).withName("$anon$880:36"),
         tagELEMDESC.layout().withName("elemdescVar"),
-        cef_master_h.C_SHORT.withName("wVarFlags"),
+        cef_render_handler_capi_h.C_SHORT.withName("wVarFlags"),
         MemoryLayout.paddingLayout(2),
-        cef_master_h.C_INT.withName("varkind")
+        cef_render_handler_capi_h.C_INT.withName("varkind")
     ).withName("tagVARDESC");
 
     /**

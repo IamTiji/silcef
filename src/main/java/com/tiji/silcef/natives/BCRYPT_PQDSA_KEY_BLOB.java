@@ -28,9 +28,9 @@ public class BCRYPT_PQDSA_KEY_BLOB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwMagic"),
-        cef_master_h.C_LONG.withName("cbParameterSet"),
-        cef_master_h.C_LONG.withName("cbKey")
+        cef_render_handler_capi_h.C_LONG.withName("dwMagic"),
+        cef_render_handler_capi_h.C_LONG.withName("cbParameterSet"),
+        cef_render_handler_capi_h.C_LONG.withName("cbKey")
     ).withName("BCRYPT_PQDSA_KEY_BLOB");
 
     /**

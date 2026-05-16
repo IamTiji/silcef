@@ -30,11 +30,11 @@ public class _IMAGE_DYNAMIC_RELOCATION32_V2 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("HeaderSize"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("FixupInfoSize"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("Symbol"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("SymbolGroup"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("Flags")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("HeaderSize"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("FixupInfoSize"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("Symbol"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("SymbolGroup"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("Flags")
     ).withName("_IMAGE_DYNAMIC_RELOCATION32_V2");
 
     /**

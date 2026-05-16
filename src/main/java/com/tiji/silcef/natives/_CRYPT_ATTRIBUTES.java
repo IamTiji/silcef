@@ -27,9 +27,9 @@ public class _CRYPT_ATTRIBUTES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cAttr"),
+        cef_render_handler_capi_h.C_LONG.withName("cAttr"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgAttr")
+        cef_render_handler_capi_h.C_POINTER.withName("rgAttr")
     ).withName("_CRYPT_ATTRIBUTES");
 
     /**

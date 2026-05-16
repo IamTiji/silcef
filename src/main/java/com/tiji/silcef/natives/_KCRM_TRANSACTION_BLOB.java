@@ -33,10 +33,10 @@ public class _KCRM_TRANSACTION_BLOB {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("UOW"),
         _GUID.layout().withName("TmIdentity"),
-        cef_master_h.C_LONG.withName("IsolationLevel"),
-        cef_master_h.C_LONG.withName("IsolationFlags"),
-        cef_master_h.C_LONG.withName("Timeout"),
-        MemoryLayout.sequenceLayout(64, cef_master_h.C_SHORT).withName("Description")
+        cef_render_handler_capi_h.C_LONG.withName("IsolationLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("IsolationFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("Timeout"),
+        MemoryLayout.sequenceLayout(64, cef_render_handler_capi_h.C_SHORT).withName("Description")
     ).withName("_KCRM_TRANSACTION_BLOB");
 
     /**

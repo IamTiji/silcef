@@ -26,7 +26,7 @@ public class _PRINTER_INFO_6 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwStatus")
+        cef_render_handler_capi_h.C_LONG.withName("dwStatus")
     ).withName("_PRINTER_INFO_6");
 
     /**

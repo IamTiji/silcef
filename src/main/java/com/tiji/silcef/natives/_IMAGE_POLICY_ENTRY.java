@@ -41,8 +41,8 @@ public class _IMAGE_POLICY_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Type"),
-        cef_master_h.C_INT.withName("PolicyId"),
+        cef_render_handler_capi_h.C_INT.withName("Type"),
+        cef_render_handler_capi_h.C_INT.withName("PolicyId"),
         _IMAGE_POLICY_ENTRY.u.layout().withName("u")
     ).withName("_IMAGE_POLICY_ENTRY");
 
@@ -166,18 +166,18 @@ public class _IMAGE_POLICY_ENTRY {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("None"),
-            cef_master_h.C_CHAR.withName("BoolValue"),
-            cef_master_h.C_CHAR.withName("Int8Value"),
-            cef_master_h.C_CHAR.withName("UInt8Value"),
-            cef_master_h.C_SHORT.withName("Int16Value"),
-            cef_master_h.C_SHORT.withName("UInt16Value"),
-            cef_master_h.C_INT.withName("Int32Value"),
-            cef_master_h.C_INT.withName("UInt32Value"),
-            cef_master_h.C_LONG_LONG.withName("Int64Value"),
-            cef_master_h.C_LONG_LONG.withName("UInt64Value"),
-            cef_master_h.C_POINTER.withName("AnsiStringValue"),
-            cef_master_h.C_POINTER.withName("UnicodeStringValue")
+            cef_render_handler_capi_h.C_POINTER.withName("None"),
+            cef_render_handler_capi_h.C_CHAR.withName("BoolValue"),
+            cef_render_handler_capi_h.C_CHAR.withName("Int8Value"),
+            cef_render_handler_capi_h.C_CHAR.withName("UInt8Value"),
+            cef_render_handler_capi_h.C_SHORT.withName("Int16Value"),
+            cef_render_handler_capi_h.C_SHORT.withName("UInt16Value"),
+            cef_render_handler_capi_h.C_INT.withName("Int32Value"),
+            cef_render_handler_capi_h.C_INT.withName("UInt32Value"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("Int64Value"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("UInt64Value"),
+            cef_render_handler_capi_h.C_POINTER.withName("AnsiStringValue"),
+            cef_render_handler_capi_h.C_POINTER.withName("UnicodeStringValue")
         ).withName("$anon$24175:5");
 
         /**

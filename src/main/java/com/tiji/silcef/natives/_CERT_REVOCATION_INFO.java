@@ -32,13 +32,13 @@ public class _CERT_REVOCATION_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwRevocationResult"),
-        cef_master_h.C_POINTER.withName("pszRevocationOid"),
-        cef_master_h.C_POINTER.withName("pvOidSpecificInfo"),
-        cef_master_h.C_INT.withName("fHasFreshnessTime"),
-        cef_master_h.C_LONG.withName("dwFreshnessTime"),
-        cef_master_h.C_POINTER.withName("pCrlInfo")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwRevocationResult"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszRevocationOid"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvOidSpecificInfo"),
+        cef_render_handler_capi_h.C_INT.withName("fHasFreshnessTime"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFreshnessTime"),
+        cef_render_handler_capi_h.C_POINTER.withName("pCrlInfo")
     ).withName("_CERT_REVOCATION_INFO");
 
     /**

@@ -29,10 +29,10 @@ public class _SD_CHANGE_MACHINE_SID_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("CurrentMachineSIDOffset"),
-        cef_master_h.C_SHORT.withName("CurrentMachineSIDLength"),
-        cef_master_h.C_SHORT.withName("NewMachineSIDOffset"),
-        cef_master_h.C_SHORT.withName("NewMachineSIDLength")
+        cef_render_handler_capi_h.C_SHORT.withName("CurrentMachineSIDOffset"),
+        cef_render_handler_capi_h.C_SHORT.withName("CurrentMachineSIDLength"),
+        cef_render_handler_capi_h.C_SHORT.withName("NewMachineSIDOffset"),
+        cef_render_handler_capi_h.C_SHORT.withName("NewMachineSIDLength")
     ).withName("_SD_CHANGE_MACHINE_SID_INPUT");
 
     /**

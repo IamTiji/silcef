@@ -27,8 +27,8 @@ public class MENUITEMTEMPLATEHEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("versionNumber"),
-        cef_master_h.C_SHORT.withName("offset")
+        cef_render_handler_capi_h.C_SHORT.withName("versionNumber"),
+        cef_render_handler_capi_h.C_SHORT.withName("offset")
     ).withName("$anon$10521:9");
 
     /**

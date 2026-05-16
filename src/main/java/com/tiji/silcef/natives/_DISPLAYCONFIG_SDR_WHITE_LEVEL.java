@@ -28,7 +28,7 @@ public class _DISPLAYCONFIG_SDR_WHITE_LEVEL {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         DISPLAYCONFIG_DEVICE_INFO_HEADER.layout().withName("header"),
-        cef_master_h.C_LONG.withName("SDRWhiteLevel")
+        cef_render_handler_capi_h.C_LONG.withName("SDRWhiteLevel")
     ).withName("_DISPLAYCONFIG_SDR_WHITE_LEVEL");
 
     /**

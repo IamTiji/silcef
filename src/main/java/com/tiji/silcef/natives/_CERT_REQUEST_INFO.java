@@ -30,13 +30,13 @@ public class _CERT_REQUEST_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
         MemoryLayout.paddingLayout(4),
         _CRYPTOAPI_BLOB.layout().withName("Subject"),
         _CERT_PUBLIC_KEY_INFO.layout().withName("SubjectPublicKeyInfo"),
-        cef_master_h.C_LONG.withName("cAttribute"),
+        cef_render_handler_capi_h.C_LONG.withName("cAttribute"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgAttribute")
+        cef_render_handler_capi_h.C_POINTER.withName("rgAttribute")
     ).withName("_CERT_REQUEST_INFO");
 
     /**

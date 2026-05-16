@@ -29,10 +29,10 @@ public class _CMC_TAGGED_REQUEST {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwTaggedRequestChoice"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTaggedRequestChoice"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("pTaggedCertRequest")
+            cef_render_handler_capi_h.C_POINTER.withName("pTaggedCertRequest")
         ).withName("$anon$5322:5")
     ).withName("_CMC_TAGGED_REQUEST");
 

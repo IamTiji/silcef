@@ -31,12 +31,12 @@ public class _TRANSACTION_PROPERTIES_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("IsolationLevel"),
-        cef_master_h.C_LONG.withName("IsolationFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("IsolationLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("IsolationFlags"),
         _LARGE_INTEGER.layout().withName("Timeout"),
-        cef_master_h.C_LONG.withName("Outcome"),
-        cef_master_h.C_LONG.withName("DescriptionLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("Description"),
+        cef_render_handler_capi_h.C_LONG.withName("Outcome"),
+        cef_render_handler_capi_h.C_LONG.withName("DescriptionLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("Description"),
         MemoryLayout.paddingLayout(6)
     ).withName("_TRANSACTION_PROPERTIES_INFORMATION");
 

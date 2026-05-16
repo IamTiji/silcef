@@ -36,8 +36,8 @@ public class _SLIST_HEADER {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
         MemoryLayout.structLayout(
-            cef_master_h.C_LONG_LONG.withName("Alignment"),
-            cef_master_h.C_LONG_LONG.withName("Region")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("Alignment"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("Region")
         ).withName("$anon$22860:5"),
         _SLIST_HEADER.HeaderX64.layout().withName("HeaderX64")
     ).withName("_SLIST_HEADER");

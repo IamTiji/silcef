@@ -27,8 +27,8 @@ public class __NCRYPT_PCP_RAW_POLICYDIGEST {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
-        cef_master_h.C_LONG.withName("cbDigest")
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("cbDigest")
     ).withName("__NCRYPT_PCP_RAW_POLICYDIGEST");
 
     /**

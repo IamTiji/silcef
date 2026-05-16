@@ -37,18 +37,18 @@ public class USN_JOURNAL_DATA_V2 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("UsnJournalID"),
-        cef_master_h.C_LONG_LONG.withName("FirstUsn"),
-        cef_master_h.C_LONG_LONG.withName("NextUsn"),
-        cef_master_h.C_LONG_LONG.withName("LowestValidUsn"),
-        cef_master_h.C_LONG_LONG.withName("MaxUsn"),
-        cef_master_h.C_LONG_LONG.withName("MaximumSize"),
-        cef_master_h.C_LONG_LONG.withName("AllocationDelta"),
-        cef_master_h.C_SHORT.withName("MinSupportedMajorVersion"),
-        cef_master_h.C_SHORT.withName("MaxSupportedMajorVersion"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG_LONG.withName("RangeTrackChunkSize"),
-        cef_master_h.C_LONG_LONG.withName("RangeTrackFileSizeThreshold")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("UsnJournalID"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("FirstUsn"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NextUsn"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LowestValidUsn"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaxUsn"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaximumSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("AllocationDelta"),
+        cef_render_handler_capi_h.C_SHORT.withName("MinSupportedMajorVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("MaxSupportedMajorVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("RangeTrackChunkSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("RangeTrackFileSizeThreshold")
     ).withName("$anon$12175:9");
 
     /**

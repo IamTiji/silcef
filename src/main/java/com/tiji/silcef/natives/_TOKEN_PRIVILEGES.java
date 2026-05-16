@@ -27,7 +27,7 @@ public class _TOKEN_PRIVILEGES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("PrivilegeCount"),
+        cef_render_handler_capi_h.C_LONG.withName("PrivilegeCount"),
         MemoryLayout.sequenceLayout(1, _LUID_AND_ATTRIBUTES.layout()).withName("Privileges")
     ).withName("_TOKEN_PRIVILEGES");
 

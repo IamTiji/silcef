@@ -31,12 +31,12 @@ public class _cef_composition_underline_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("size"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("size"),
         _cef_range_t.layout().withName("range"),
-        cef_master_h.C_INT.withName("color"),
-        cef_master_h.C_INT.withName("background_color"),
-        cef_master_h.C_INT.withName("thick"),
-        cef_master_h.C_INT.withName("style")
+        cef_render_handler_capi_h.C_INT.withName("color"),
+        cef_render_handler_capi_h.C_INT.withName("background_color"),
+        cef_render_handler_capi_h.C_INT.withName("thick"),
+        cef_render_handler_capi_h.C_INT.withName("style")
     ).withName("_cef_composition_underline_t");
 
     /**

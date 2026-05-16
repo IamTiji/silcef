@@ -27,8 +27,8 @@ public class _RIP_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwError"),
-        cef_master_h.C_LONG.withName("dwType")
+        cef_render_handler_capi_h.C_LONG.withName("dwError"),
+        cef_render_handler_capi_h.C_LONG.withName("dwType")
     ).withName("_RIP_INFO");
 
     /**

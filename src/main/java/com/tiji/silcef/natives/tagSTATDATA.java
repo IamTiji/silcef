@@ -30,10 +30,10 @@ public class tagSTATDATA {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagFORMATETC.layout().withName("formatetc"),
-        cef_master_h.C_LONG.withName("advf"),
+        cef_render_handler_capi_h.C_LONG.withName("advf"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pAdvSink"),
-        cef_master_h.C_LONG.withName("dwConnection"),
+        cef_render_handler_capi_h.C_POINTER.withName("pAdvSink"),
+        cef_render_handler_capi_h.C_LONG.withName("dwConnection"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagSTATDATA");
 

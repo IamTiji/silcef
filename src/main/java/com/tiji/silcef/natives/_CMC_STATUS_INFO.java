@@ -34,15 +34,15 @@ public class _CMC_STATUS_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwStatus"),
-        cef_master_h.C_LONG.withName("cBodyList"),
-        cef_master_h.C_POINTER.withName("rgdwBodyList"),
-        cef_master_h.C_POINTER.withName("pwszStatusString"),
-        cef_master_h.C_LONG.withName("dwOtherInfoChoice"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStatus"),
+        cef_render_handler_capi_h.C_LONG.withName("cBodyList"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgdwBodyList"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszStatusString"),
+        cef_render_handler_capi_h.C_LONG.withName("dwOtherInfoChoice"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("dwFailInfo"),
-            cef_master_h.C_POINTER.withName("pPendInfo")
+            cef_render_handler_capi_h.C_LONG.withName("dwFailInfo"),
+            cef_render_handler_capi_h.C_POINTER.withName("pPendInfo")
         ).withName("$anon$5384:5")
     ).withName("_CMC_STATUS_INFO");
 

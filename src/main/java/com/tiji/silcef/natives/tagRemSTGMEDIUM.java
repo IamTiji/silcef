@@ -31,12 +31,12 @@ public class tagRemSTGMEDIUM {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("tymed"),
-        cef_master_h.C_LONG.withName("dwHandleType"),
-        cef_master_h.C_LONG.withName("pData"),
-        cef_master_h.C_LONG.withName("pUnkForRelease"),
-        cef_master_h.C_LONG.withName("cbData"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("data"),
+        cef_render_handler_capi_h.C_LONG.withName("tymed"),
+        cef_render_handler_capi_h.C_LONG.withName("dwHandleType"),
+        cef_render_handler_capi_h.C_LONG.withName("pData"),
+        cef_render_handler_capi_h.C_LONG.withName("pUnkForRelease"),
+        cef_render_handler_capi_h.C_LONG.withName("cbData"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("data"),
         MemoryLayout.paddingLayout(3)
     ).withName("tagRemSTGMEDIUM");
 

@@ -29,10 +29,10 @@ public class tagCSPLATFORM {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwPlatformId"),
-        cef_master_h.C_LONG.withName("dwVersionHi"),
-        cef_master_h.C_LONG.withName("dwVersionLo"),
-        cef_master_h.C_LONG.withName("dwProcessorArch")
+        cef_render_handler_capi_h.C_LONG.withName("dwPlatformId"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersionHi"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersionLo"),
+        cef_render_handler_capi_h.C_LONG.withName("dwProcessorArch")
     ).withName("tagCSPLATFORM");
 
     /**

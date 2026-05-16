@@ -27,7 +27,7 @@ public class _CMSG_KEY_AGREE_KEY_ENCRYPT_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
         _CRYPTOAPI_BLOB.layout().withName("EncryptedKey")
     ).withName("_CMSG_KEY_AGREE_KEY_ENCRYPT_INFO");

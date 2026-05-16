@@ -26,7 +26,7 @@ public class _TOKEN_SID_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("Sid")
+        cef_render_handler_capi_h.C_POINTER.withName("Sid")
     ).withName("_TOKEN_SID_INFORMATION");
 
     /**

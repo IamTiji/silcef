@@ -30,7 +30,7 @@ public class _SET_PARTITION_INFORMATION_EX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("PartitionStyle"),
+        cef_render_handler_capi_h.C_INT.withName("PartitionStyle"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
             _SET_PARTITION_INFORMATION.layout().withName("Mbr"),

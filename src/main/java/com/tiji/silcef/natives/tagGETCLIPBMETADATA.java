@@ -28,9 +28,9 @@ public class tagGETCLIPBMETADATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Version"),
-        cef_master_h.C_INT.withName("IsDelayRendered"),
-        cef_master_h.C_INT.withName("IsSynthetic")
+        cef_render_handler_capi_h.C_INT.withName("Version"),
+        cef_render_handler_capi_h.C_INT.withName("IsDelayRendered"),
+        cef_render_handler_capi_h.C_INT.withName("IsSynthetic")
     ).withName("tagGETCLIPBMETADATA");
 
     /**

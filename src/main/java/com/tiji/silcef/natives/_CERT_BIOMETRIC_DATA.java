@@ -31,11 +31,11 @@ public class _CERT_BIOMETRIC_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwTypeOfBiometricDataChoice"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTypeOfBiometricDataChoice"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("dwPredefined"),
-            cef_master_h.C_POINTER.withName("pszObjId")
+            cef_render_handler_capi_h.C_LONG.withName("dwPredefined"),
+            cef_render_handler_capi_h.C_POINTER.withName("pszObjId")
         ).withName("$anon$5644:5"),
         _CERT_HASHED_URL.layout().withName("HashedUrl")
     ).withName("_CERT_BIOMETRIC_DATA");

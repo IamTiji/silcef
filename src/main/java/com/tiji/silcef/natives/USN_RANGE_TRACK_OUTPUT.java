@@ -26,7 +26,7 @@ public class USN_RANGE_TRACK_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("Usn")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Usn")
     ).withName("$anon$12019:9");
 
     /**

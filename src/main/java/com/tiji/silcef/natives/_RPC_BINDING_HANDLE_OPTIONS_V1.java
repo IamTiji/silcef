@@ -29,10 +29,10 @@ public class _RPC_BINDING_HANDLE_OPTIONS_V1 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("ComTimeout"),
-        cef_master_h.C_LONG.withName("CallTimeout")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("ComTimeout"),
+        cef_render_handler_capi_h.C_LONG.withName("CallTimeout")
     ).withName("_RPC_BINDING_HANDLE_OPTIONS_V1");
 
     /**

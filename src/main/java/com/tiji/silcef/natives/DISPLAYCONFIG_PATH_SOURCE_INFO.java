@@ -36,14 +36,14 @@ public class DISPLAYCONFIG_PATH_SOURCE_INFO {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LUID.layout().withName("adapterId"),
-        cef_master_h.C_INT.withName("id"),
+        cef_render_handler_capi_h.C_INT.withName("id"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_INT.withName("modeInfoIdx"),
+            cef_render_handler_capi_h.C_INT.withName("modeInfoIdx"),
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$2957:9")
         ).withName("$anon$2954:5"),
-        cef_master_h.C_INT.withName("statusFlags")
+        cef_render_handler_capi_h.C_INT.withName("statusFlags")
     ).withName("DISPLAYCONFIG_PATH_SOURCE_INFO");
 
     /**

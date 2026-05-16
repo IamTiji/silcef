@@ -31,12 +31,12 @@ public class _FIND_NAME_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("length"),
-        cef_master_h.C_CHAR.withName("access_control"),
-        cef_master_h.C_CHAR.withName("frame_control"),
-        MemoryLayout.sequenceLayout(6, cef_master_h.C_CHAR).withName("destination_addr"),
-        MemoryLayout.sequenceLayout(6, cef_master_h.C_CHAR).withName("source_addr"),
-        MemoryLayout.sequenceLayout(18, cef_master_h.C_CHAR).withName("routing_info")
+        cef_render_handler_capi_h.C_CHAR.withName("length"),
+        cef_render_handler_capi_h.C_CHAR.withName("access_control"),
+        cef_render_handler_capi_h.C_CHAR.withName("frame_control"),
+        MemoryLayout.sequenceLayout(6, cef_render_handler_capi_h.C_CHAR).withName("destination_addr"),
+        MemoryLayout.sequenceLayout(6, cef_render_handler_capi_h.C_CHAR).withName("source_addr"),
+        MemoryLayout.sequenceLayout(18, cef_render_handler_capi_h.C_CHAR).withName("routing_info")
     ).withName("_FIND_NAME_BUFFER");
 
     /**

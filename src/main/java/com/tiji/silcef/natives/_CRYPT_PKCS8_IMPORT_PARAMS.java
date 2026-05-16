@@ -31,10 +31,10 @@ public class _CRYPT_PKCS8_IMPORT_PARAMS {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CRYPTOAPI_BLOB.layout().withName("PrivateKey"),
-        cef_master_h.C_POINTER.withName("pResolvehCryptProvFunc"),
-        cef_master_h.C_POINTER.withName("pVoidResolveFunc"),
-        cef_master_h.C_POINTER.withName("pDecryptPrivateKeyFunc"),
-        cef_master_h.C_POINTER.withName("pVoidDecryptFunc")
+        cef_render_handler_capi_h.C_POINTER.withName("pResolvehCryptProvFunc"),
+        cef_render_handler_capi_h.C_POINTER.withName("pVoidResolveFunc"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDecryptPrivateKeyFunc"),
+        cef_render_handler_capi_h.C_POINTER.withName("pVoidDecryptFunc")
     ).withName("_CRYPT_PKCS8_IMPORT_PARAMS");
 
     /**

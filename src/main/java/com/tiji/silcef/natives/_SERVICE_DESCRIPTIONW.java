@@ -26,7 +26,7 @@ public class _SERVICE_DESCRIPTIONW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("lpDescription")
+        cef_render_handler_capi_h.C_POINTER.withName("lpDescription")
     ).withName("_SERVICE_DESCRIPTIONW");
 
     /**

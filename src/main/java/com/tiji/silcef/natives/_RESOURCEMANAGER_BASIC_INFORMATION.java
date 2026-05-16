@@ -29,8 +29,8 @@ public class _RESOURCEMANAGER_BASIC_INFORMATION {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("ResourceManagerId"),
-        cef_master_h.C_LONG.withName("DescriptionLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("Description"),
+        cef_render_handler_capi_h.C_LONG.withName("DescriptionLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("Description"),
         MemoryLayout.paddingLayout(2)
     ).withName("_RESOURCEMANAGER_BASIC_INFORMATION");
 

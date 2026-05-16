@@ -29,10 +29,10 @@ public class _OVERLAPPED_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("lpCompletionKey"),
-        cef_master_h.C_POINTER.withName("lpOverlapped"),
-        cef_master_h.C_LONG_LONG.withName("Internal"),
-        cef_master_h.C_LONG.withName("dwNumberOfBytesTransferred"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("lpCompletionKey"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpOverlapped"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Internal"),
+        cef_render_handler_capi_h.C_LONG.withName("dwNumberOfBytesTransferred"),
         MemoryLayout.paddingLayout(4)
     ).withName("_OVERLAPPED_ENTRY");
 

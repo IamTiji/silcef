@@ -33,14 +33,14 @@ public class _PHYSICAL_ELEMENT_STATUS_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("ElementIdentifier"),
-        cef_master_h.C_CHAR.withName("PhysicalElementType"),
-        cef_master_h.C_CHAR.withName("PhysicalElementHealth"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("Reserved1"),
-        cef_master_h.C_LONG_LONG.withName("AssociatedCapacity"),
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_LONG).withName("Reserved2")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("ElementIdentifier"),
+        cef_render_handler_capi_h.C_CHAR.withName("PhysicalElementType"),
+        cef_render_handler_capi_h.C_CHAR.withName("PhysicalElementHealth"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("Reserved1"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("AssociatedCapacity"),
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_LONG).withName("Reserved2")
     ).withName("_PHYSICAL_ELEMENT_STATUS_DESCRIPTOR");
 
     /**

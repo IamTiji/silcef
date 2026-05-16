@@ -27,7 +27,7 @@ public class _CRYPT_SMART_CARD_ROOT_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("rgbCardID"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("rgbCardID"),
         _ROOT_INFO_LUID.layout().withName("luid")
     ).withName("_CRYPT_SMART_CARD_ROOT_INFO");
 

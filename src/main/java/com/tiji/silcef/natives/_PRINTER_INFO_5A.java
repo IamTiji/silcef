@@ -30,11 +30,11 @@ public class _PRINTER_INFO_5A {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pPrinterName"),
-        cef_master_h.C_POINTER.withName("pPortName"),
-        cef_master_h.C_LONG.withName("Attributes"),
-        cef_master_h.C_LONG.withName("DeviceNotSelectedTimeout"),
-        cef_master_h.C_LONG.withName("TransmissionRetryTimeout"),
+        cef_render_handler_capi_h.C_POINTER.withName("pPrinterName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pPortName"),
+        cef_render_handler_capi_h.C_LONG.withName("Attributes"),
+        cef_render_handler_capi_h.C_LONG.withName("DeviceNotSelectedTimeout"),
+        cef_render_handler_capi_h.C_LONG.withName("TransmissionRetryTimeout"),
         MemoryLayout.paddingLayout(4)
     ).withName("_PRINTER_INFO_5A");
 

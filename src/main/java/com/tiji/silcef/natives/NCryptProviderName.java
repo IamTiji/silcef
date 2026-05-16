@@ -27,8 +27,8 @@ public class NCryptProviderName {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszName"),
-        cef_master_h.C_POINTER.withName("pszComment")
+        cef_render_handler_capi_h.C_POINTER.withName("pszName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszComment")
     ).withName("NCryptProviderName");
 
     /**

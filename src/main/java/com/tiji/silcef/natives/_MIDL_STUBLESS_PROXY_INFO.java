@@ -31,12 +31,12 @@ public class _MIDL_STUBLESS_PROXY_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pStubDesc"),
-        cef_master_h.C_POINTER.withName("ProcFormatString"),
-        cef_master_h.C_POINTER.withName("FormatStringOffset"),
-        cef_master_h.C_POINTER.withName("pTransferSyntax"),
-        cef_master_h.C_LONG_LONG.withName("nCount"),
-        cef_master_h.C_POINTER.withName("pSyntaxInfo")
+        cef_render_handler_capi_h.C_POINTER.withName("pStubDesc"),
+        cef_render_handler_capi_h.C_POINTER.withName("ProcFormatString"),
+        cef_render_handler_capi_h.C_POINTER.withName("FormatStringOffset"),
+        cef_render_handler_capi_h.C_POINTER.withName("pTransferSyntax"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("nCount"),
+        cef_render_handler_capi_h.C_POINTER.withName("pSyntaxInfo")
     ).withName("_MIDL_STUBLESS_PROXY_INFO");
 
     /**

@@ -27,8 +27,8 @@ public class BULK_SECURITY_TEST_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("DesiredAccess"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG).withName("SecurityIds")
+        cef_render_handler_capi_h.C_LONG.withName("DesiredAccess"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG).withName("SecurityIds")
     ).withName("$anon$12430:9");
 
     /**

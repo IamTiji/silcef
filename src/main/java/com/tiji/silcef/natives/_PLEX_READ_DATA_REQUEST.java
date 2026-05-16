@@ -29,8 +29,8 @@ public class _PLEX_READ_DATA_REQUEST {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LARGE_INTEGER.layout().withName("ByteOffset"),
-        cef_master_h.C_LONG.withName("ByteLength"),
-        cef_master_h.C_LONG.withName("PlexNumber")
+        cef_render_handler_capi_h.C_LONG.withName("ByteLength"),
+        cef_render_handler_capi_h.C_LONG.withName("PlexNumber")
     ).withName("_PLEX_READ_DATA_REQUEST");
 
     /**

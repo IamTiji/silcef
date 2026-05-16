@@ -27,7 +27,7 @@ public class SHELLHOOKINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hwnd"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwnd"),
         tagRECT.layout().withName("rc")
     ).withName("$anon$1052:9");
 

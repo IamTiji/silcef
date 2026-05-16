@@ -143,12 +143,12 @@ public class _DEVICE_MEDIA_INFO {
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
                 _LARGE_INTEGER.layout().withName("Cylinders"),
-                cef_master_h.C_INT.withName("MediaType"),
-                cef_master_h.C_LONG.withName("TracksPerCylinder"),
-                cef_master_h.C_LONG.withName("SectorsPerTrack"),
-                cef_master_h.C_LONG.withName("BytesPerSector"),
-                cef_master_h.C_LONG.withName("NumberMediaSides"),
-                cef_master_h.C_LONG.withName("MediaCharacteristics")
+                cef_render_handler_capi_h.C_INT.withName("MediaType"),
+                cef_render_handler_capi_h.C_LONG.withName("TracksPerCylinder"),
+                cef_render_handler_capi_h.C_LONG.withName("SectorsPerTrack"),
+                cef_render_handler_capi_h.C_LONG.withName("BytesPerSector"),
+                cef_render_handler_capi_h.C_LONG.withName("NumberMediaSides"),
+                cef_render_handler_capi_h.C_LONG.withName("MediaCharacteristics")
             ).withName("$anon$997:9");
 
             /**
@@ -608,12 +608,12 @@ public class _DEVICE_MEDIA_INFO {
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
                 _LARGE_INTEGER.layout().withName("Cylinders"),
-                cef_master_h.C_INT.withName("MediaType"),
-                cef_master_h.C_LONG.withName("TracksPerCylinder"),
-                cef_master_h.C_LONG.withName("SectorsPerTrack"),
-                cef_master_h.C_LONG.withName("BytesPerSector"),
-                cef_master_h.C_LONG.withName("NumberMediaSides"),
-                cef_master_h.C_LONG.withName("MediaCharacteristics")
+                cef_render_handler_capi_h.C_INT.withName("MediaType"),
+                cef_render_handler_capi_h.C_LONG.withName("TracksPerCylinder"),
+                cef_render_handler_capi_h.C_LONG.withName("SectorsPerTrack"),
+                cef_render_handler_capi_h.C_LONG.withName("BytesPerSector"),
+                cef_render_handler_capi_h.C_LONG.withName("NumberMediaSides"),
+                cef_render_handler_capi_h.C_LONG.withName("MediaCharacteristics")
             ).withName("$anon$1007:9");
 
             /**
@@ -1075,10 +1075,10 @@ public class _DEVICE_MEDIA_INFO {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_INT.withName("MediaType"),
-                cef_master_h.C_LONG.withName("MediaCharacteristics"),
-                cef_master_h.C_LONG.withName("CurrentBlockSize"),
-                cef_master_h.C_INT.withName("BusType"),
+                cef_render_handler_capi_h.C_INT.withName("MediaType"),
+                cef_render_handler_capi_h.C_LONG.withName("MediaCharacteristics"),
+                cef_render_handler_capi_h.C_LONG.withName("CurrentBlockSize"),
+                cef_render_handler_capi_h.C_INT.withName("BusType"),
                 _DEVICE_MEDIA_INFO.DeviceSpecific.TapeInfo.BusSpecificData.layout().withName("BusSpecificData"),
                 MemoryLayout.paddingLayout(2)
             ).withName("$anon$1017:9");
@@ -1308,8 +1308,8 @@ public class _DEVICE_MEDIA_INFO {
                     }
 
                     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                        cef_master_h.C_CHAR.withName("MediumType"),
-                        cef_master_h.C_CHAR.withName("DensityCode")
+                        cef_render_handler_capi_h.C_CHAR.withName("MediumType"),
+                        cef_render_handler_capi_h.C_CHAR.withName("DensityCode")
                     ).withName("$anon$1028:17");
 
                     /**

@@ -34,15 +34,15 @@ public class _cef_key_event_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("size"),
-        cef_master_h.C_INT.withName("type"),
-        cef_master_h.C_INT.withName("modifiers"),
-        cef_master_h.C_INT.withName("windows_key_code"),
-        cef_master_h.C_INT.withName("native_key_code"),
-        cef_master_h.C_INT.withName("is_system_key"),
-        cef_master_h.C_SHORT.withName("character"),
-        cef_master_h.C_SHORT.withName("unmodified_character"),
-        cef_master_h.C_INT.withName("focus_on_editable_field"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("size"),
+        cef_render_handler_capi_h.C_INT.withName("type"),
+        cef_render_handler_capi_h.C_INT.withName("modifiers"),
+        cef_render_handler_capi_h.C_INT.withName("windows_key_code"),
+        cef_render_handler_capi_h.C_INT.withName("native_key_code"),
+        cef_render_handler_capi_h.C_INT.withName("is_system_key"),
+        cef_render_handler_capi_h.C_SHORT.withName("character"),
+        cef_render_handler_capi_h.C_SHORT.withName("unmodified_character"),
+        cef_render_handler_capi_h.C_INT.withName("focus_on_editable_field"),
         MemoryLayout.paddingLayout(4)
     ).withName("_cef_key_event_t");
 

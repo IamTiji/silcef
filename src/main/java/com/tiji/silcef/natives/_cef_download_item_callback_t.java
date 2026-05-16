@@ -30,9 +30,9 @@ public class _cef_download_item_callback_t {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _cef_base_ref_counted_t.layout().withName("base"),
-        cef_master_h.C_POINTER.withName("cancel"),
-        cef_master_h.C_POINTER.withName("pause"),
-        cef_master_h.C_POINTER.withName("resume")
+        cef_app_capi_h.C_POINTER.withName("cancel"),
+        cef_app_capi_h.C_POINTER.withName("pause"),
+        cef_app_capi_h.C_POINTER.withName("resume")
     ).withName("_cef_download_item_callback_t");
 
     /**
@@ -105,7 +105,7 @@ public class _cef_download_item_callback_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -115,7 +115,7 @@ public class _cef_download_item_callback_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(cancel.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(cancel.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -204,7 +204,7 @@ public class _cef_download_item_callback_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -214,7 +214,7 @@ public class _cef_download_item_callback_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(pause.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(pause.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -303,7 +303,7 @@ public class _cef_download_item_callback_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -313,7 +313,7 @@ public class _cef_download_item_callback_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(resume.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(resume.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

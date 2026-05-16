@@ -30,11 +30,11 @@ public class _CERT_CHAIN_POLICY_STATUS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwError"),
-        cef_master_h.C_LONG.withName("lChainIndex"),
-        cef_master_h.C_LONG.withName("lElementIndex"),
-        cef_master_h.C_POINTER.withName("pvExtraPolicyStatus")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwError"),
+        cef_render_handler_capi_h.C_LONG.withName("lChainIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("lElementIndex"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvExtraPolicyStatus")
     ).withName("_CERT_CHAIN_POLICY_STATUS");
 
     /**

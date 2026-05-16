@@ -53,8 +53,8 @@ public class _SYSTEM_CPU_SET_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_INT.withName("Type"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_INT.withName("Type"),
         MemoryLayout.unionLayout(
             _SYSTEM_CPU_SET_INFORMATION.CpuSet.layout().withName("CpuSet")
         ).withName("$anon$14079:5")
@@ -190,24 +190,24 @@ public class _SYSTEM_CPU_SET_INFORMATION {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_LONG.withName("Id"),
-            cef_master_h.C_SHORT.withName("Group"),
-            cef_master_h.C_CHAR.withName("LogicalProcessorIndex"),
-            cef_master_h.C_CHAR.withName("CoreIndex"),
-            cef_master_h.C_CHAR.withName("LastLevelCacheIndex"),
-            cef_master_h.C_CHAR.withName("NumaNodeIndex"),
-            cef_master_h.C_CHAR.withName("EfficiencyClass"),
+            cef_render_handler_capi_h.C_LONG.withName("Id"),
+            cef_render_handler_capi_h.C_SHORT.withName("Group"),
+            cef_render_handler_capi_h.C_CHAR.withName("LogicalProcessorIndex"),
+            cef_render_handler_capi_h.C_CHAR.withName("CoreIndex"),
+            cef_render_handler_capi_h.C_CHAR.withName("LastLevelCacheIndex"),
+            cef_render_handler_capi_h.C_CHAR.withName("NumaNodeIndex"),
+            cef_render_handler_capi_h.C_CHAR.withName("EfficiencyClass"),
             MemoryLayout.unionLayout(
-                cef_master_h.C_CHAR.withName("AllFlags"),
+                cef_render_handler_capi_h.C_CHAR.withName("AllFlags"),
                 MemoryLayout.structLayout(
                     MemoryLayout.paddingLayout(1)
                 ).withName("$anon$14096:17")
             ).withName("$anon$14088:13"),
             MemoryLayout.unionLayout(
-                cef_master_h.C_LONG.withName("Reserved"),
-                cef_master_h.C_CHAR.withName("SchedulingClass")
+                cef_render_handler_capi_h.C_LONG.withName("Reserved"),
+                cef_render_handler_capi_h.C_CHAR.withName("SchedulingClass")
             ).withName("$anon$14105:13"),
-            cef_master_h.C_LONG_LONG.withName("AllocationTag")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("AllocationTag")
         ).withName("$anon$14080:9");
 
         /**

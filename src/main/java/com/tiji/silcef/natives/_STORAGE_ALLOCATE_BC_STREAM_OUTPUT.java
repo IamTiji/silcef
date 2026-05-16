@@ -27,8 +27,8 @@ public class _STORAGE_ALLOCATE_BC_STREAM_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("RequestSize"),
-        cef_master_h.C_LONG.withName("NumOutStandingRequests"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("RequestSize"),
+        cef_render_handler_capi_h.C_LONG.withName("NumOutStandingRequests"),
         MemoryLayout.paddingLayout(4)
     ).withName("_STORAGE_ALLOCATE_BC_STREAM_OUTPUT");
 

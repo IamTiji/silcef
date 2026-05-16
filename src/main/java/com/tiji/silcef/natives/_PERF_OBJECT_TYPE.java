@@ -39,18 +39,18 @@ public class _PERF_OBJECT_TYPE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("TotalByteLength"),
-        cef_master_h.C_LONG.withName("DefinitionLength"),
-        cef_master_h.C_LONG.withName("HeaderLength"),
-        cef_master_h.C_LONG.withName("ObjectNameTitleIndex"),
-        cef_master_h.C_LONG.withName("ObjectNameTitle"),
-        cef_master_h.C_LONG.withName("ObjectHelpTitleIndex"),
-        cef_master_h.C_LONG.withName("ObjectHelpTitle"),
-        cef_master_h.C_LONG.withName("DetailLevel"),
-        cef_master_h.C_LONG.withName("NumCounters"),
-        cef_master_h.C_LONG.withName("DefaultCounter"),
-        cef_master_h.C_LONG.withName("NumInstances"),
-        cef_master_h.C_LONG.withName("CodePage"),
+        cef_render_handler_capi_h.C_LONG.withName("TotalByteLength"),
+        cef_render_handler_capi_h.C_LONG.withName("DefinitionLength"),
+        cef_render_handler_capi_h.C_LONG.withName("HeaderLength"),
+        cef_render_handler_capi_h.C_LONG.withName("ObjectNameTitleIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("ObjectNameTitle"),
+        cef_render_handler_capi_h.C_LONG.withName("ObjectHelpTitleIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("ObjectHelpTitle"),
+        cef_render_handler_capi_h.C_LONG.withName("DetailLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("NumCounters"),
+        cef_render_handler_capi_h.C_LONG.withName("DefaultCounter"),
+        cef_render_handler_capi_h.C_LONG.withName("NumInstances"),
+        cef_render_handler_capi_h.C_LONG.withName("CodePage"),
         _LARGE_INTEGER.layout().withName("PerfTime"),
         _LARGE_INTEGER.layout().withName("PerfFreq")
     ).withName("_PERF_OBJECT_TYPE");

@@ -27,8 +27,8 @@ public class _ATTRIBUTES_AND_SID {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Attributes"),
-        cef_master_h.C_LONG.withName("SidStart")
+        cef_render_handler_capi_h.C_INT.withName("Attributes"),
+        cef_render_handler_capi_h.C_LONG.withName("SidStart")
     ).withName("_ATTRIBUTES_AND_SID");
 
     /**

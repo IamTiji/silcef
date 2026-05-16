@@ -27,8 +27,8 @@ public class USN_RECORD_EXTENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("Offset"),
-        cef_master_h.C_LONG_LONG.withName("Length")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Offset"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Length")
     ).withName("$anon$12091:9");
 
     /**

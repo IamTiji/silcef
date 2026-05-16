@@ -29,10 +29,10 @@ public class _SMALL_RECT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Left"),
-        cef_master_h.C_SHORT.withName("Top"),
-        cef_master_h.C_SHORT.withName("Right"),
-        cef_master_h.C_SHORT.withName("Bottom")
+        cef_render_handler_capi_h.C_SHORT.withName("Left"),
+        cef_render_handler_capi_h.C_SHORT.withName("Top"),
+        cef_render_handler_capi_h.C_SHORT.withName("Right"),
+        cef_render_handler_capi_h.C_SHORT.withName("Bottom")
     ).withName("_SMALL_RECT");
 
     /**

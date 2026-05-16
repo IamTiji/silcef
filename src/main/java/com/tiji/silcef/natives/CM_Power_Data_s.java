@@ -33,14 +33,14 @@ public class CM_Power_Data_s {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("PD_Size"),
-        cef_master_h.C_INT.withName("PD_MostRecentPowerState"),
-        cef_master_h.C_LONG.withName("PD_Capabilities"),
-        cef_master_h.C_LONG.withName("PD_D1Latency"),
-        cef_master_h.C_LONG.withName("PD_D2Latency"),
-        cef_master_h.C_LONG.withName("PD_D3Latency"),
-        MemoryLayout.sequenceLayout(7, cef_master_h.C_INT).withName("PD_PowerStateMapping"),
-        cef_master_h.C_INT.withName("PD_DeepestSystemWake")
+        cef_render_handler_capi_h.C_LONG.withName("PD_Size"),
+        cef_render_handler_capi_h.C_INT.withName("PD_MostRecentPowerState"),
+        cef_render_handler_capi_h.C_LONG.withName("PD_Capabilities"),
+        cef_render_handler_capi_h.C_LONG.withName("PD_D1Latency"),
+        cef_render_handler_capi_h.C_LONG.withName("PD_D2Latency"),
+        cef_render_handler_capi_h.C_LONG.withName("PD_D3Latency"),
+        MemoryLayout.sequenceLayout(7, cef_render_handler_capi_h.C_INT).withName("PD_PowerStateMapping"),
+        cef_render_handler_capi_h.C_INT.withName("PD_DeepestSystemWake")
     ).withName("CM_Power_Data_s");
 
     /**

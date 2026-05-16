@@ -30,11 +30,11 @@ public class _ACL {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("AclRevision"),
-        cef_master_h.C_CHAR.withName("Sbz1"),
-        cef_master_h.C_SHORT.withName("AclSize"),
-        cef_master_h.C_SHORT.withName("AceCount"),
-        cef_master_h.C_SHORT.withName("Sbz2")
+        cef_render_handler_capi_h.C_CHAR.withName("AclRevision"),
+        cef_render_handler_capi_h.C_CHAR.withName("Sbz1"),
+        cef_render_handler_capi_h.C_SHORT.withName("AclSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("AceCount"),
+        cef_render_handler_capi_h.C_SHORT.withName("Sbz2")
     ).withName("_ACL");
 
     /**

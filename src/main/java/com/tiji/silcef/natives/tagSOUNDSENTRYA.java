@@ -37,18 +37,18 @@ public class tagSOUNDSENTRYA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_LONG.withName("iFSTextEffect"),
-        cef_master_h.C_LONG.withName("iFSTextEffectMSec"),
-        cef_master_h.C_LONG.withName("iFSTextEffectColorBits"),
-        cef_master_h.C_LONG.withName("iFSGrafEffect"),
-        cef_master_h.C_LONG.withName("iFSGrafEffectMSec"),
-        cef_master_h.C_LONG.withName("iFSGrafEffectColor"),
-        cef_master_h.C_LONG.withName("iWindowsEffect"),
-        cef_master_h.C_LONG.withName("iWindowsEffectMSec"),
-        cef_master_h.C_POINTER.withName("lpszWindowsEffectDLL"),
-        cef_master_h.C_LONG.withName("iWindowsEffectOrdinal"),
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("iFSTextEffect"),
+        cef_render_handler_capi_h.C_LONG.withName("iFSTextEffectMSec"),
+        cef_render_handler_capi_h.C_LONG.withName("iFSTextEffectColorBits"),
+        cef_render_handler_capi_h.C_LONG.withName("iFSGrafEffect"),
+        cef_render_handler_capi_h.C_LONG.withName("iFSGrafEffectMSec"),
+        cef_render_handler_capi_h.C_LONG.withName("iFSGrafEffectColor"),
+        cef_render_handler_capi_h.C_LONG.withName("iWindowsEffect"),
+        cef_render_handler_capi_h.C_LONG.withName("iWindowsEffectMSec"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpszWindowsEffectDLL"),
+        cef_render_handler_capi_h.C_LONG.withName("iWindowsEffectOrdinal"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagSOUNDSENTRYA");
 

@@ -28,9 +28,9 @@ public class tagMETARECORD {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("rdSize"),
-        cef_master_h.C_SHORT.withName("rdFunction"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("rdParm")
+        cef_render_handler_capi_h.C_LONG.withName("rdSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("rdFunction"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("rdParm")
     ).withName("tagMETARECORD");
 
     /**

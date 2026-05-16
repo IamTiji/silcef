@@ -28,9 +28,9 @@ public class _CERT_BASIC_CONSTRAINTS2_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("fCA"),
-        cef_master_h.C_INT.withName("fPathLenConstraint"),
-        cef_master_h.C_LONG.withName("dwPathLenConstraint")
+        cef_render_handler_capi_h.C_INT.withName("fCA"),
+        cef_render_handler_capi_h.C_INT.withName("fPathLenConstraint"),
+        cef_render_handler_capi_h.C_LONG.withName("dwPathLenConstraint")
     ).withName("_CERT_BASIC_CONSTRAINTS2_INFO");
 
     /**

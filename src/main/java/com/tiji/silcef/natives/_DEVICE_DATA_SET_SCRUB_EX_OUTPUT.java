@@ -30,11 +30,11 @@ public class _DEVICE_DATA_SET_SCRUB_EX_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("BytesProcessed"),
-        cef_master_h.C_LONG_LONG.withName("BytesRepaired"),
-        cef_master_h.C_LONG_LONG.withName("BytesFailed"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("BytesProcessed"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("BytesRepaired"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("BytesFailed"),
         _DEVICE_DATA_SET_RANGE.layout().withName("ParityExtent"),
-        cef_master_h.C_LONG_LONG.withName("BytesScrubbed")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("BytesScrubbed")
     ).withName("_DEVICE_DATA_SET_SCRUB_EX_OUTPUT");
 
     /**

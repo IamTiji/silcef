@@ -29,10 +29,10 @@ public class _IMAGE_EPILOGUE_DYNAMIC_RELOCATION_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("EpilogueCount"),
-        cef_master_h.C_CHAR.withName("EpilogueByteCount"),
-        cef_master_h.C_CHAR.withName("BranchDescriptorElementSize"),
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("BranchDescriptorCount")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("EpilogueCount"),
+        cef_render_handler_capi_h.C_CHAR.withName("EpilogueByteCount"),
+        cef_render_handler_capi_h.C_CHAR.withName("BranchDescriptorElementSize"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("BranchDescriptorCount")
     ).withName("_IMAGE_EPILOGUE_DYNAMIC_RELOCATION_HEADER");
 
     /**

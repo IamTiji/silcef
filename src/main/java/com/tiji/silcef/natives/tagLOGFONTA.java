@@ -39,20 +39,20 @@ public class tagLOGFONTA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("lfHeight"),
-        cef_master_h.C_LONG.withName("lfWidth"),
-        cef_master_h.C_LONG.withName("lfEscapement"),
-        cef_master_h.C_LONG.withName("lfOrientation"),
-        cef_master_h.C_LONG.withName("lfWeight"),
-        cef_master_h.C_CHAR.withName("lfItalic"),
-        cef_master_h.C_CHAR.withName("lfUnderline"),
-        cef_master_h.C_CHAR.withName("lfStrikeOut"),
-        cef_master_h.C_CHAR.withName("lfCharSet"),
-        cef_master_h.C_CHAR.withName("lfOutPrecision"),
-        cef_master_h.C_CHAR.withName("lfClipPrecision"),
-        cef_master_h.C_CHAR.withName("lfQuality"),
-        cef_master_h.C_CHAR.withName("lfPitchAndFamily"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("lfFaceName")
+        cef_render_handler_capi_h.C_LONG.withName("lfHeight"),
+        cef_render_handler_capi_h.C_LONG.withName("lfWidth"),
+        cef_render_handler_capi_h.C_LONG.withName("lfEscapement"),
+        cef_render_handler_capi_h.C_LONG.withName("lfOrientation"),
+        cef_render_handler_capi_h.C_LONG.withName("lfWeight"),
+        cef_render_handler_capi_h.C_CHAR.withName("lfItalic"),
+        cef_render_handler_capi_h.C_CHAR.withName("lfUnderline"),
+        cef_render_handler_capi_h.C_CHAR.withName("lfStrikeOut"),
+        cef_render_handler_capi_h.C_CHAR.withName("lfCharSet"),
+        cef_render_handler_capi_h.C_CHAR.withName("lfOutPrecision"),
+        cef_render_handler_capi_h.C_CHAR.withName("lfClipPrecision"),
+        cef_render_handler_capi_h.C_CHAR.withName("lfQuality"),
+        cef_render_handler_capi_h.C_CHAR.withName("lfPitchAndFamily"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("lfFaceName")
     ).withName("tagLOGFONTA");
 
     /**

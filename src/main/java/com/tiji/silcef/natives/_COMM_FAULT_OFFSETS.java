@@ -27,8 +27,8 @@ public class _COMM_FAULT_OFFSETS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("CommOffset"),
-        cef_master_h.C_SHORT.withName("FaultOffset")
+        cef_render_handler_capi_h.C_SHORT.withName("CommOffset"),
+        cef_render_handler_capi_h.C_SHORT.withName("FaultOffset")
     ).withName("_COMM_FAULT_OFFSETS");
 
     /**

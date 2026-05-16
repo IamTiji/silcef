@@ -28,9 +28,9 @@ public class _CRYPT_CSP_PROVIDER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwKeySpec"),
+        cef_render_handler_capi_h.C_LONG.withName("dwKeySpec"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pwszProviderName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszProviderName"),
         _CRYPT_BIT_BLOB.layout().withName("Signature")
     ).withName("_CRYPT_CSP_PROVIDER");
 

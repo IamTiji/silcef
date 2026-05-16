@@ -28,8 +28,8 @@ public class _REPAIR_COPIES_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("Status"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Status"),
         _LARGE_INTEGER.layout().withName("ResumeFileOffset")
     ).withName("_REPAIR_COPIES_OUTPUT");
 

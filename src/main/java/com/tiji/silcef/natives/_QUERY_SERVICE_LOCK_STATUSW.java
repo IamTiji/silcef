@@ -28,10 +28,10 @@ public class _QUERY_SERVICE_LOCK_STATUSW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("fIsLocked"),
+        cef_render_handler_capi_h.C_LONG.withName("fIsLocked"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpLockOwner"),
-        cef_master_h.C_LONG.withName("dwLockDuration"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpLockOwner"),
+        cef_render_handler_capi_h.C_LONG.withName("dwLockDuration"),
         MemoryLayout.paddingLayout(4)
     ).withName("_QUERY_SERVICE_LOCK_STATUSW");
 

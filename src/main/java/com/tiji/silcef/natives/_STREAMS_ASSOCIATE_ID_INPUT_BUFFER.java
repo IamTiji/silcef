@@ -27,8 +27,8 @@ public class _STREAMS_ASSOCIATE_ID_INPUT_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("StreamId")
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("StreamId")
     ).withName("_STREAMS_ASSOCIATE_ID_INPUT_BUFFER");
 
     /**

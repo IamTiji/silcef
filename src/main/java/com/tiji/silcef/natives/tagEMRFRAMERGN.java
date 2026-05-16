@@ -33,10 +33,10 @@ public class tagEMRFRAMERGN {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
         _RECTL.layout().withName("rclBounds"),
-        cef_master_h.C_LONG.withName("cbRgnData"),
-        cef_master_h.C_LONG.withName("ihBrush"),
+        cef_render_handler_capi_h.C_LONG.withName("cbRgnData"),
+        cef_render_handler_capi_h.C_LONG.withName("ihBrush"),
         tagSIZE.layout().withName("szlStroke"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("RgnData"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("RgnData"),
         MemoryLayout.paddingLayout(3)
     ).withName("tagEMRFRAMERGN");
 

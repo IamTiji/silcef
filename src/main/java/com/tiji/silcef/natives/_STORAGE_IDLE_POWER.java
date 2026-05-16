@@ -31,10 +31,10 @@ public class _STORAGE_IDLE_POWER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG.withName("D3IdleTimeout")
+        cef_render_handler_capi_h.C_LONG.withName("D3IdleTimeout")
     ).withName("_STORAGE_IDLE_POWER");
 
     /**

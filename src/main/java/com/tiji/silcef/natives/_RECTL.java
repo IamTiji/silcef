@@ -29,10 +29,10 @@ public class _RECTL {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("left"),
-        cef_master_h.C_LONG.withName("top"),
-        cef_master_h.C_LONG.withName("right"),
-        cef_master_h.C_LONG.withName("bottom")
+        cef_render_handler_capi_h.C_LONG.withName("left"),
+        cef_render_handler_capi_h.C_LONG.withName("top"),
+        cef_render_handler_capi_h.C_LONG.withName("right"),
+        cef_render_handler_capi_h.C_LONG.withName("bottom")
     ).withName("_RECTL");
 
     /**

@@ -30,10 +30,10 @@ public class _nlsversioninfo {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwNLSVersionInfoSize"),
-        cef_master_h.C_LONG.withName("dwNLSVersion"),
-        cef_master_h.C_LONG.withName("dwDefinedVersion"),
-        cef_master_h.C_LONG.withName("dwEffectiveId"),
+        cef_render_handler_capi_h.C_LONG.withName("dwNLSVersionInfoSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwNLSVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwDefinedVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwEffectiveId"),
         _GUID.layout().withName("guidCustomVersion")
     ).withName("_nlsversioninfo");
 

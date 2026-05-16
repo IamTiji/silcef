@@ -28,7 +28,7 @@ public class tagEMRRESTOREDC {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
-        cef_master_h.C_LONG.withName("iRelative")
+        cef_render_handler_capi_h.C_LONG.withName("iRelative")
     ).withName("tagEMRRESTOREDC");
 
     /**

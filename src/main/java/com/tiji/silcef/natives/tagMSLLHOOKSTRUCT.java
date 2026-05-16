@@ -31,11 +31,11 @@ public class tagMSLLHOOKSTRUCT {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagPOINT.layout().withName("pt"),
-        cef_master_h.C_LONG.withName("mouseData"),
-        cef_master_h.C_LONG.withName("flags"),
-        cef_master_h.C_LONG.withName("time"),
+        cef_render_handler_capi_h.C_LONG.withName("mouseData"),
+        cef_render_handler_capi_h.C_LONG.withName("flags"),
+        cef_render_handler_capi_h.C_LONG.withName("time"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("dwExtraInfo")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwExtraInfo")
     ).withName("tagMSLLHOOKSTRUCT");
 
     /**

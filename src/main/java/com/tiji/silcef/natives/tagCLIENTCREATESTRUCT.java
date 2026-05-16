@@ -27,8 +27,8 @@ public class tagCLIENTCREATESTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hWindowMenu"),
-        cef_master_h.C_INT.withName("idFirstChild"),
+        cef_render_handler_capi_h.C_POINTER.withName("hWindowMenu"),
+        cef_render_handler_capi_h.C_INT.withName("idFirstChild"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagCLIENTCREATESTRUCT");
 

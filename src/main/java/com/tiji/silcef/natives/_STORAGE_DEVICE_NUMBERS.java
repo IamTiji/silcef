@@ -29,9 +29,9 @@ public class _STORAGE_DEVICE_NUMBERS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("NumberOfDevices"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfDevices"),
         MemoryLayout.sequenceLayout(1, _STORAGE_DEVICE_NUMBER.layout()).withName("Devices")
     ).withName("_STORAGE_DEVICE_NUMBERS");
 

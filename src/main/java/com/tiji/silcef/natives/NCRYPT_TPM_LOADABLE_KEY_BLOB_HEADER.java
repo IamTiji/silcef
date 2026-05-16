@@ -30,11 +30,11 @@ public class NCRYPT_TPM_LOADABLE_KEY_BLOB_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("magic"),
-        cef_master_h.C_LONG.withName("cbHeader"),
-        cef_master_h.C_LONG.withName("cbPublic"),
-        cef_master_h.C_LONG.withName("cbPrivate"),
-        cef_master_h.C_LONG.withName("cbName")
+        cef_render_handler_capi_h.C_LONG.withName("magic"),
+        cef_render_handler_capi_h.C_LONG.withName("cbHeader"),
+        cef_render_handler_capi_h.C_LONG.withName("cbPublic"),
+        cef_render_handler_capi_h.C_LONG.withName("cbPrivate"),
+        cef_render_handler_capi_h.C_LONG.withName("cbName")
     ).withName("NCRYPT_TPM_LOADABLE_KEY_BLOB_HEADER");
 
     /**

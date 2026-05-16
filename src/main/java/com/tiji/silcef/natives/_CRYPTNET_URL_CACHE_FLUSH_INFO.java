@@ -28,8 +28,8 @@ public class _CRYPTNET_URL_CACHE_FLUSH_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwExemptSeconds"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwExemptSeconds"),
         _FILETIME.layout().withName("ExpireTime")
     ).withName("_CRYPTNET_URL_CACHE_FLUSH_INFO");
 

@@ -34,7 +34,7 @@ public class _CERT_X942_DH_PARAMETERS {
         _CRYPTOAPI_BLOB.layout().withName("g"),
         _CRYPTOAPI_BLOB.layout().withName("q"),
         _CRYPTOAPI_BLOB.layout().withName("j"),
-        cef_master_h.C_POINTER.withName("pValidationParams")
+        cef_render_handler_capi_h.C_POINTER.withName("pValidationParams")
     ).withName("_CERT_X942_DH_PARAMETERS");
 
     /**

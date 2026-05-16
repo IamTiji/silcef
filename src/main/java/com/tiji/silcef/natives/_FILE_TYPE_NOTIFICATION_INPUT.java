@@ -28,8 +28,8 @@ public class _FILE_TYPE_NOTIFICATION_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("NumFileTypeIDs"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("NumFileTypeIDs"),
         MemoryLayout.sequenceLayout(1, _GUID.layout()).withName("FileTypeID")
     ).withName("_FILE_TYPE_NOTIFICATION_INPUT");
 

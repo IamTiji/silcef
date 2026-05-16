@@ -28,7 +28,7 @@ public class _TRANSACTION_NOTIFICATION_TM_ONLINE_ARGUMENT {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("TmIdentity"),
-        cef_master_h.C_LONG.withName("Flags")
+        cef_render_handler_capi_h.C_LONG.withName("Flags")
     ).withName("_TRANSACTION_NOTIFICATION_TM_ONLINE_ARGUMENT");
 
     /**

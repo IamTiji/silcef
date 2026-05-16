@@ -27,9 +27,9 @@ public class _BCRYPT_OID {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbOID"),
+        cef_render_handler_capi_h.C_LONG.withName("cbOID"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pbOID")
+        cef_render_handler_capi_h.C_POINTER.withName("pbOID")
     ).withName("_BCRYPT_OID");
 
     /**

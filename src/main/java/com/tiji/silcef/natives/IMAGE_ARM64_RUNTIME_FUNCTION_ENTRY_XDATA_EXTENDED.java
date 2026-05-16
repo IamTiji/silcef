@@ -30,7 +30,7 @@ public class IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA_EXTENDED {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-        cef_master_h.C_LONG.withName("ExtendedHeaderData"),
+        cef_render_handler_capi_h.C_LONG.withName("ExtendedHeaderData"),
         MemoryLayout.structLayout(
             MemoryLayout.paddingLayout(4)
         ).withName("$anon$21750:5")

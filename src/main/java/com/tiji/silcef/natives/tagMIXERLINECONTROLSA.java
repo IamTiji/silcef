@@ -34,15 +34,15 @@ public class tagMIXERLINECONTROLSA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("cbStruct"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwLineID"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cbStruct"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwLineID"),
         MemoryLayout.unionLayout(
-            cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwControlID"),
-            cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwControlType")
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwControlID"),
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwControlType")
         ).withName("$anon$2230:5"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("cControls"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("cbmxctrl"),
-        cef_master_h.align(cef_master_h.C_POINTER, 1).withName("pamxctrl")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cControls"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cbmxctrl"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("pamxctrl")
     ).withName("tagMIXERLINECONTROLSA");
 
     /**

@@ -30,11 +30,11 @@ public class tagMENUGETOBJECTINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_INT.withName("uPos"),
-        cef_master_h.C_POINTER.withName("hmenu"),
-        cef_master_h.C_POINTER.withName("riid"),
-        cef_master_h.C_POINTER.withName("pvObj")
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_INT.withName("uPos"),
+        cef_render_handler_capi_h.C_POINTER.withName("hmenu"),
+        cef_render_handler_capi_h.C_POINTER.withName("riid"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvObj")
     ).withName("tagMENUGETOBJECTINFO");
 
     /**

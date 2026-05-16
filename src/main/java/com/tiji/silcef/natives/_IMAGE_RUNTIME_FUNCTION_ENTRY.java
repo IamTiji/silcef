@@ -31,11 +31,11 @@ public class _IMAGE_RUNTIME_FUNCTION_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("BeginAddress"),
-        cef_master_h.C_LONG.withName("EndAddress"),
+        cef_render_handler_capi_h.C_LONG.withName("BeginAddress"),
+        cef_render_handler_capi_h.C_LONG.withName("EndAddress"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("UnwindInfoAddress"),
-            cef_master_h.C_LONG.withName("UnwindData")
+            cef_render_handler_capi_h.C_LONG.withName("UnwindInfoAddress"),
+            cef_render_handler_capi_h.C_LONG.withName("UnwindData")
         ).withName("$anon$21784:5")
     ).withName("_IMAGE_RUNTIME_FUNCTION_ENTRY");
 

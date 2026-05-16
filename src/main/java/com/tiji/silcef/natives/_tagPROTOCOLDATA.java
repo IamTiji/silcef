@@ -29,10 +29,10 @@ public class _tagPROTOCOLDATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("grfFlags"),
-        cef_master_h.C_LONG.withName("dwState"),
-        cef_master_h.C_POINTER.withName("pData"),
-        cef_master_h.C_LONG.withName("cbData"),
+        cef_render_handler_capi_h.C_LONG.withName("grfFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwState"),
+        cef_render_handler_capi_h.C_POINTER.withName("pData"),
+        cef_render_handler_capi_h.C_LONG.withName("cbData"),
         MemoryLayout.paddingLayout(4)
     ).withName("_tagPROTOCOLDATA");
 

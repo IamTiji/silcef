@@ -33,14 +33,14 @@ public class tagOBJECTDESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         _GUID.layout().withName("clsid"),
-        cef_master_h.C_LONG.withName("dwDrawAspect"),
+        cef_render_handler_capi_h.C_LONG.withName("dwDrawAspect"),
         tagSIZE.layout().withName("sizel"),
         _POINTL.layout().withName("pointl"),
-        cef_master_h.C_LONG.withName("dwStatus"),
-        cef_master_h.C_LONG.withName("dwFullUserTypeName"),
-        cef_master_h.C_LONG.withName("dwSrcOfCopy")
+        cef_render_handler_capi_h.C_LONG.withName("dwStatus"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFullUserTypeName"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSrcOfCopy")
     ).withName("tagOBJECTDESCRIPTOR");
 
     /**

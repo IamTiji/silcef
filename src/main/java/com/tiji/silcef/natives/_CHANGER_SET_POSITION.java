@@ -30,7 +30,7 @@ public class _CHANGER_SET_POSITION {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CHANGER_ELEMENT.layout().withName("Transport"),
         _CHANGER_ELEMENT.layout().withName("Destination"),
-        cef_master_h.C_CHAR.withName("Flip"),
+        cef_render_handler_capi_h.C_CHAR.withName("Flip"),
         MemoryLayout.paddingLayout(3)
     ).withName("_CHANGER_SET_POSITION");
 

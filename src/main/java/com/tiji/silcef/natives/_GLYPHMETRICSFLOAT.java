@@ -30,11 +30,11 @@ public class _GLYPHMETRICSFLOAT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_FLOAT.withName("gmfBlackBoxX"),
-        cef_master_h.C_FLOAT.withName("gmfBlackBoxY"),
+        cef_render_handler_capi_h.C_FLOAT.withName("gmfBlackBoxX"),
+        cef_render_handler_capi_h.C_FLOAT.withName("gmfBlackBoxY"),
         _POINTFLOAT.layout().withName("gmfptGlyphOrigin"),
-        cef_master_h.C_FLOAT.withName("gmfCellIncX"),
-        cef_master_h.C_FLOAT.withName("gmfCellIncY")
+        cef_render_handler_capi_h.C_FLOAT.withName("gmfCellIncX"),
+        cef_render_handler_capi_h.C_FLOAT.withName("gmfCellIncY")
     ).withName("_GLYPHMETRICSFLOAT");
 
     /**

@@ -27,8 +27,8 @@ public class _POWER_SESSION_CONNECT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("Connected"),
-        cef_master_h.C_CHAR.withName("Console")
+        cef_render_handler_capi_h.C_CHAR.withName("Connected"),
+        cef_render_handler_capi_h.C_CHAR.withName("Console")
     ).withName("_POWER_SESSION_CONNECT");
 
     /**

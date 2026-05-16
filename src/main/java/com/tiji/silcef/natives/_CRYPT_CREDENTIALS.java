@@ -28,10 +28,10 @@ public class _CRYPT_CREDENTIALS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pszCredentialsOid"),
-        cef_master_h.C_POINTER.withName("pvCredentials")
+        cef_render_handler_capi_h.C_POINTER.withName("pszCredentialsOid"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvCredentials")
     ).withName("_CRYPT_CREDENTIALS");
 
     /**

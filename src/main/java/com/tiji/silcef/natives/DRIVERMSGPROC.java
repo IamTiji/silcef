@@ -31,12 +31,12 @@ public final class DRIVERMSGPROC {
     }
 
     private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-        cef_master_h.C_LONG,
-        cef_master_h.C_LONG,
-        cef_master_h.C_LONG,
-        cef_master_h.C_LONG_LONG,
-        cef_master_h.C_LONG_LONG,
-        cef_master_h.C_LONG_LONG
+        cef_render_handler_capi_h.C_LONG,
+        cef_render_handler_capi_h.C_LONG,
+        cef_render_handler_capi_h.C_LONG,
+        cef_render_handler_capi_h.C_LONG_LONG,
+        cef_render_handler_capi_h.C_LONG_LONG,
+        cef_render_handler_capi_h.C_LONG_LONG
     );
 
     /**
@@ -46,7 +46,7 @@ public final class DRIVERMSGPROC {
         return $DESC;
     }
 
-    private static final MethodHandle UP$MH = cef_master_h.upcallHandle(DRIVERMSGPROC.Function.class, "apply", $DESC);
+    private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(DRIVERMSGPROC.Function.class, "apply", $DESC);
 
     /**
      * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

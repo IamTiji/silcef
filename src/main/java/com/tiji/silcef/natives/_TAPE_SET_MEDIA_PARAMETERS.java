@@ -26,7 +26,7 @@ public class _TAPE_SET_MEDIA_PARAMETERS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("BlockSize")
+        cef_render_handler_capi_h.C_LONG.withName("BlockSize")
     ).withName("_TAPE_SET_MEDIA_PARAMETERS");
 
     /**

@@ -34,17 +34,17 @@ public class _QUERY_SERVICE_CONFIGW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwServiceType"),
-        cef_master_h.C_LONG.withName("dwStartType"),
-        cef_master_h.C_LONG.withName("dwErrorControl"),
+        cef_render_handler_capi_h.C_LONG.withName("dwServiceType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStartType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwErrorControl"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpBinaryPathName"),
-        cef_master_h.C_POINTER.withName("lpLoadOrderGroup"),
-        cef_master_h.C_LONG.withName("dwTagId"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpBinaryPathName"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpLoadOrderGroup"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTagId"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpDependencies"),
-        cef_master_h.C_POINTER.withName("lpServiceStartName"),
-        cef_master_h.C_POINTER.withName("lpDisplayName")
+        cef_render_handler_capi_h.C_POINTER.withName("lpDependencies"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpServiceStartName"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpDisplayName")
     ).withName("_QUERY_SERVICE_CONFIGW");
 
     /**

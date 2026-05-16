@@ -27,8 +27,8 @@ public class _SCM_PD_DEVICE_SPECIFIC_PROPERTY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(128, cef_master_h.C_SHORT).withName("Name"),
-        cef_master_h.C_LONG_LONG.withName("Value")
+        MemoryLayout.sequenceLayout(128, cef_render_handler_capi_h.C_SHORT).withName("Name"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Value")
     ).withName("_SCM_PD_DEVICE_SPECIFIC_PROPERTY");
 
     /**

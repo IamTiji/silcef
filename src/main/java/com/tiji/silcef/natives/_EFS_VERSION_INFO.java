@@ -27,8 +27,8 @@ public class _EFS_VERSION_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("EfsVersion"),
-        cef_master_h.C_LONG.withName("SubVersion")
+        cef_render_handler_capi_h.C_LONG.withName("EfsVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("SubVersion")
     ).withName("_EFS_VERSION_INFO");
 
     /**

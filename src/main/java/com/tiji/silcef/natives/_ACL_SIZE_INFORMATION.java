@@ -28,9 +28,9 @@ public class _ACL_SIZE_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("AceCount"),
-        cef_master_h.C_LONG.withName("AclBytesInUse"),
-        cef_master_h.C_LONG.withName("AclBytesFree")
+        cef_render_handler_capi_h.C_LONG.withName("AceCount"),
+        cef_render_handler_capi_h.C_LONG.withName("AclBytesInUse"),
+        cef_render_handler_capi_h.C_LONG.withName("AclBytesFree")
     ).withName("_ACL_SIZE_INFORMATION");
 
     /**

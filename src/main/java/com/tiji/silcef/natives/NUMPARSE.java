@@ -31,12 +31,12 @@ public class NUMPARSE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cDig"),
-        cef_master_h.C_LONG.withName("dwInFlags"),
-        cef_master_h.C_LONG.withName("dwOutFlags"),
-        cef_master_h.C_INT.withName("cchUsed"),
-        cef_master_h.C_INT.withName("nBaseShift"),
-        cef_master_h.C_INT.withName("nPwr10")
+        cef_render_handler_capi_h.C_INT.withName("cDig"),
+        cef_render_handler_capi_h.C_LONG.withName("dwInFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwOutFlags"),
+        cef_render_handler_capi_h.C_INT.withName("cchUsed"),
+        cef_render_handler_capi_h.C_INT.withName("nBaseShift"),
+        cef_render_handler_capi_h.C_INT.withName("nPwr10")
     ).withName("$anon$735:9");
 
     /**

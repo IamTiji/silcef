@@ -29,10 +29,10 @@ public class _SCM_PD_DEVICE_HANDLE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
         _GUID.layout().withName("DeviceGuid"),
-        cef_master_h.C_LONG.withName("DeviceHandle")
+        cef_render_handler_capi_h.C_LONG.withName("DeviceHandle")
     ).withName("_SCM_PD_DEVICE_HANDLE");
 
     /**

@@ -29,11 +29,11 @@ public class _CRYPT_PRIVATE_KEY_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
         MemoryLayout.paddingLayout(4),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("Algorithm"),
         _CRYPTOAPI_BLOB.layout().withName("PrivateKey"),
-        cef_master_h.C_POINTER.withName("pAttributes")
+        cef_render_handler_capi_h.C_POINTER.withName("pAttributes")
     ).withName("_CRYPT_PRIVATE_KEY_INFO");
 
     /**

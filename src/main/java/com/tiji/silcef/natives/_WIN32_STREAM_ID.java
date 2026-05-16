@@ -30,11 +30,11 @@ public class _WIN32_STREAM_ID {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwStreamId"),
-        cef_master_h.C_LONG.withName("dwStreamAttributes"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStreamId"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStreamAttributes"),
         _LARGE_INTEGER.layout().withName("Size"),
-        cef_master_h.C_LONG.withName("dwStreamNameSize"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("cStreamName"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStreamNameSize"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("cStreamName"),
         MemoryLayout.paddingLayout(2)
     ).withName("_WIN32_STREAM_ID");
 

@@ -34,8 +34,8 @@ public class _TXFS_GET_METADATA_INFO_OUT {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _TXFS_GET_METADATA_INFO_OUT.TxfFileId.layout().withName("TxfFileId"),
         _GUID.layout().withName("LockingTransaction"),
-        cef_master_h.C_LONG_LONG.withName("LastLsn"),
-        cef_master_h.C_LONG.withName("TransactionState"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LastLsn"),
+        cef_render_handler_capi_h.C_LONG.withName("TransactionState"),
         MemoryLayout.paddingLayout(4)
     ).withName("_TXFS_GET_METADATA_INFO_OUT");
 
@@ -61,8 +61,8 @@ public class _TXFS_GET_METADATA_INFO_OUT {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_LONG_LONG.withName("LowPart"),
-            cef_master_h.C_LONG_LONG.withName("HighPart")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("LowPart"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("HighPart")
         ).withName("$anon$13937:5");
 
         /**

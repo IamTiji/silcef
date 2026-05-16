@@ -27,8 +27,8 @@ public class CREATE_USN_JOURNAL_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("MaximumSize"),
-        cef_master_h.C_LONG_LONG.withName("AllocationDelta")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaximumSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("AllocationDelta")
     ).withName("$anon$11944:9");
 
     /**

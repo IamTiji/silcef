@@ -27,9 +27,9 @@ public class _CERT_BIOMETRIC_EXT_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cBiometricData"),
+        cef_render_handler_capi_h.C_LONG.withName("cBiometricData"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgBiometricData")
+        cef_render_handler_capi_h.C_POINTER.withName("rgBiometricData")
     ).withName("_CERT_BIOMETRIC_EXT_INFO");
 
     /**

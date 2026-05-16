@@ -31,13 +31,13 @@ public class _RPC_BINDING_HANDLE_SECURITY_V1_W {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("ServerPrincName"),
-        cef_master_h.C_LONG.withName("AuthnLevel"),
-        cef_master_h.C_LONG.withName("AuthnSvc"),
-        cef_master_h.C_POINTER.withName("AuthIdentity"),
-        cef_master_h.C_POINTER.withName("SecurityQos")
+        cef_render_handler_capi_h.C_POINTER.withName("ServerPrincName"),
+        cef_render_handler_capi_h.C_LONG.withName("AuthnLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("AuthnSvc"),
+        cef_render_handler_capi_h.C_POINTER.withName("AuthIdentity"),
+        cef_render_handler_capi_h.C_POINTER.withName("SecurityQos")
     ).withName("_RPC_BINDING_HANDLE_SECURITY_V1_W");
 
     /**

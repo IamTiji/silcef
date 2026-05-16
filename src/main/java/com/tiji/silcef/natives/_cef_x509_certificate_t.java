@@ -37,16 +37,16 @@ public class _cef_x509_certificate_t {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _cef_base_ref_counted_t.layout().withName("base"),
-        cef_master_h.C_POINTER.withName("get_subject"),
-        cef_master_h.C_POINTER.withName("get_issuer"),
-        cef_master_h.C_POINTER.withName("get_serial_number"),
-        cef_master_h.C_POINTER.withName("get_valid_start"),
-        cef_master_h.C_POINTER.withName("get_valid_expiry"),
-        cef_master_h.C_POINTER.withName("get_derencoded"),
-        cef_master_h.C_POINTER.withName("get_pemencoded"),
-        cef_master_h.C_POINTER.withName("get_issuer_chain_size"),
-        cef_master_h.C_POINTER.withName("get_derencoded_issuer_chain"),
-        cef_master_h.C_POINTER.withName("get_pemencoded_issuer_chain")
+        cef_render_handler_capi_h.C_POINTER.withName("get_subject"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_issuer"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_serial_number"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_valid_start"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_valid_expiry"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_derencoded"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_pemencoded"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_issuer_chain_size"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_derencoded_issuer_chain"),
+        cef_render_handler_capi_h.C_POINTER.withName("get_pemencoded_issuer_chain")
     ).withName("_cef_x509_certificate_t");
 
     /**
@@ -119,8 +119,8 @@ public class _cef_x509_certificate_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -130,7 +130,7 @@ public class _cef_x509_certificate_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_subject.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_subject.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -219,8 +219,8 @@ public class _cef_x509_certificate_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -230,7 +230,7 @@ public class _cef_x509_certificate_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_issuer.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_issuer.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -319,8 +319,8 @@ public class _cef_x509_certificate_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -330,7 +330,7 @@ public class _cef_x509_certificate_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_serial_number.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_serial_number.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -420,7 +420,7 @@ public class _cef_x509_certificate_t {
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
             _cef_basetime_t.layout(),
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -430,7 +430,7 @@ public class _cef_x509_certificate_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_valid_start.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_valid_start.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -520,7 +520,7 @@ public class _cef_x509_certificate_t {
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
             _cef_basetime_t.layout(),
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -530,7 +530,7 @@ public class _cef_x509_certificate_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_valid_expiry.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_valid_expiry.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -619,8 +619,8 @@ public class _cef_x509_certificate_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -630,7 +630,7 @@ public class _cef_x509_certificate_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_derencoded.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_derencoded.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -719,8 +719,8 @@ public class _cef_x509_certificate_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -730,7 +730,7 @@ public class _cef_x509_certificate_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_pemencoded.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_pemencoded.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -819,8 +819,8 @@ public class _cef_x509_certificate_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG_LONG,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG_LONG,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -830,7 +830,7 @@ public class _cef_x509_certificate_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_issuer_chain_size.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_issuer_chain_size.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -919,9 +919,9 @@ public class _cef_x509_certificate_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -931,7 +931,7 @@ public class _cef_x509_certificate_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_derencoded_issuer_chain.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_derencoded_issuer_chain.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1020,9 +1020,9 @@ public class _cef_x509_certificate_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1032,7 +1032,7 @@ public class _cef_x509_certificate_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_pemencoded_issuer_chain.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(get_pemencoded_issuer_chain.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

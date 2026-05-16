@@ -31,9 +31,9 @@ public class _CRL_ENTRY {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CRYPTOAPI_BLOB.layout().withName("SerialNumber"),
         _FILETIME.layout().withName("RevocationDate"),
-        cef_master_h.C_LONG.withName("cExtension"),
+        cef_render_handler_capi_h.C_LONG.withName("cExtension"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgExtension")
+        cef_render_handler_capi_h.C_POINTER.withName("rgExtension")
     ).withName("_CRL_ENTRY");
 
     /**

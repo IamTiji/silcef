@@ -29,10 +29,10 @@ public class _STORAGE_DEVICE_LOCATION_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
         _DEVICE_LOCATION.layout().withName("Location"),
-        cef_master_h.C_LONG.withName("StringOffset")
+        cef_render_handler_capi_h.C_LONG.withName("StringOffset")
     ).withName("_STORAGE_DEVICE_LOCATION_DESCRIPTOR");
 
     /**

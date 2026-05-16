@@ -31,12 +31,12 @@ public class _IO_COUNTERS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("ReadOperationCount"),
-        cef_master_h.C_LONG_LONG.withName("WriteOperationCount"),
-        cef_master_h.C_LONG_LONG.withName("OtherOperationCount"),
-        cef_master_h.C_LONG_LONG.withName("ReadTransferCount"),
-        cef_master_h.C_LONG_LONG.withName("WriteTransferCount"),
-        cef_master_h.C_LONG_LONG.withName("OtherTransferCount")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ReadOperationCount"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("WriteOperationCount"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("OtherOperationCount"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ReadTransferCount"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("WriteTransferCount"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("OtherTransferCount")
     ).withName("_IO_COUNTERS");
 
     /**

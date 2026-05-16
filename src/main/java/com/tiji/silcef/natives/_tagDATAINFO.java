@@ -29,10 +29,10 @@ public class _tagDATAINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ulTotalSize"),
-        cef_master_h.C_LONG.withName("ulavrPacketSize"),
-        cef_master_h.C_LONG.withName("ulConnectSpeed"),
-        cef_master_h.C_LONG.withName("ulProcessorSpeed")
+        cef_render_handler_capi_h.C_LONG.withName("ulTotalSize"),
+        cef_render_handler_capi_h.C_LONG.withName("ulavrPacketSize"),
+        cef_render_handler_capi_h.C_LONG.withName("ulConnectSpeed"),
+        cef_render_handler_capi_h.C_LONG.withName("ulProcessorSpeed")
     ).withName("_tagDATAINFO");
 
     /**

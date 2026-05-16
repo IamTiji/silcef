@@ -36,17 +36,17 @@ public class _RUNTIME_REPORT_PACKAGE_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Magic"),
-        cef_master_h.C_SHORT.withName("PackageVersion"),
-        cef_master_h.C_SHORT.withName("NumberOfReports"),
-        cef_master_h.C_LONG_LONG.withName("ReportTypesBitmap"),
-        cef_master_h.C_INT.withName("PackageSize"),
-        cef_master_h.C_SHORT.withName("ReportDigestType"),
-        cef_master_h.C_SHORT.withName("TotalReportDigestsSize"),
-        cef_master_h.C_SHORT.withName("Reserved"),
-        cef_master_h.C_SHORT.withName("SignatureScheme"),
-        cef_master_h.C_INT.withName("SignatureSize"),
-        cef_master_h.C_INT.withName("TotalAuthenticatedReportsSize"),
+        cef_render_handler_capi_h.C_INT.withName("Magic"),
+        cef_render_handler_capi_h.C_SHORT.withName("PackageVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("NumberOfReports"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ReportTypesBitmap"),
+        cef_render_handler_capi_h.C_INT.withName("PackageSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("ReportDigestType"),
+        cef_render_handler_capi_h.C_SHORT.withName("TotalReportDigestsSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved"),
+        cef_render_handler_capi_h.C_SHORT.withName("SignatureScheme"),
+        cef_render_handler_capi_h.C_INT.withName("SignatureSize"),
+        cef_render_handler_capi_h.C_INT.withName("TotalAuthenticatedReportsSize"),
         MemoryLayout.paddingLayout(4)
     ).withName("_RUNTIME_REPORT_PACKAGE_HEADER");
 

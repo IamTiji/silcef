@@ -36,19 +36,19 @@ public class _OCSP_BASIC_RESPONSE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
-        cef_master_h.C_LONG.withName("dwResponderIdChoice"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwResponderIdChoice"),
         MemoryLayout.unionLayout(
             _CRYPTOAPI_BLOB.layout().withName("ByNameResponderId"),
             _CRYPTOAPI_BLOB.layout().withName("ByKeyResponderId")
         ).withName("$anon$5797:5"),
         _FILETIME.layout().withName("ProducedAt"),
-        cef_master_h.C_LONG.withName("cResponseEntry"),
+        cef_render_handler_capi_h.C_LONG.withName("cResponseEntry"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgResponseEntry"),
-        cef_master_h.C_LONG.withName("cExtension"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgResponseEntry"),
+        cef_render_handler_capi_h.C_LONG.withName("cExtension"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgExtension")
+        cef_render_handler_capi_h.C_POINTER.withName("rgExtension")
     ).withName("_OCSP_BASIC_RESPONSE_INFO");
 
     /**

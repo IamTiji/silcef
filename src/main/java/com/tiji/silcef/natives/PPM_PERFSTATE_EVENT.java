@@ -30,11 +30,11 @@ public class PPM_PERFSTATE_EVENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("State"),
-        cef_master_h.C_LONG.withName("Status"),
-        cef_master_h.C_LONG.withName("Latency"),
-        cef_master_h.C_LONG.withName("Speed"),
-        cef_master_h.C_LONG.withName("Processor")
+        cef_render_handler_capi_h.C_LONG.withName("State"),
+        cef_render_handler_capi_h.C_LONG.withName("Status"),
+        cef_render_handler_capi_h.C_LONG.withName("Latency"),
+        cef_render_handler_capi_h.C_LONG.withName("Speed"),
+        cef_render_handler_capi_h.C_LONG.withName("Processor")
     ).withName("$anon$19230:9");
 
     /**

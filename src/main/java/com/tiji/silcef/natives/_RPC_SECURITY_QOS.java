@@ -29,10 +29,10 @@ public class _RPC_SECURITY_QOS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Capabilities"),
-        cef_master_h.C_LONG.withName("IdentityTracking"),
-        cef_master_h.C_LONG.withName("ImpersonationType")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Capabilities"),
+        cef_render_handler_capi_h.C_LONG.withName("IdentityTracking"),
+        cef_render_handler_capi_h.C_LONG.withName("ImpersonationType")
     ).withName("_RPC_SECURITY_QOS");
 
     /**

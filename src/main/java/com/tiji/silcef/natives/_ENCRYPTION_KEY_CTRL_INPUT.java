@@ -32,13 +32,13 @@ public class _ENCRYPTION_KEY_CTRL_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("HeaderSize"),
-        cef_master_h.C_LONG.withName("StructureSize"),
-        cef_master_h.C_SHORT.withName("KeyOffset"),
-        cef_master_h.C_SHORT.withName("KeySize"),
-        cef_master_h.C_LONG.withName("DplLock"),
-        cef_master_h.C_LONG_LONG.withName("DplUserId"),
-        cef_master_h.C_LONG_LONG.withName("DplCredentialId")
+        cef_render_handler_capi_h.C_LONG.withName("HeaderSize"),
+        cef_render_handler_capi_h.C_LONG.withName("StructureSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("KeyOffset"),
+        cef_render_handler_capi_h.C_SHORT.withName("KeySize"),
+        cef_render_handler_capi_h.C_LONG.withName("DplLock"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("DplUserId"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("DplCredentialId")
     ).withName("_ENCRYPTION_KEY_CTRL_INPUT");
 
     /**

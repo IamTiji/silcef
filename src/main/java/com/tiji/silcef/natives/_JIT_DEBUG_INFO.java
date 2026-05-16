@@ -32,13 +32,13 @@ public class _JIT_DEBUG_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSize"),
-        cef_master_h.C_LONG.withName("dwProcessorArchitecture"),
-        cef_master_h.C_LONG.withName("dwThreadID"),
-        cef_master_h.C_LONG.withName("dwReserved0"),
-        cef_master_h.C_LONG_LONG.withName("lpExceptionAddress"),
-        cef_master_h.C_LONG_LONG.withName("lpExceptionRecord"),
-        cef_master_h.C_LONG_LONG.withName("lpContextRecord")
+        cef_render_handler_capi_h.C_LONG.withName("dwSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwProcessorArchitecture"),
+        cef_render_handler_capi_h.C_LONG.withName("dwThreadID"),
+        cef_render_handler_capi_h.C_LONG.withName("dwReserved0"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("lpExceptionAddress"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("lpExceptionRecord"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("lpContextRecord")
     ).withName("_JIT_DEBUG_INFO");
 
     /**

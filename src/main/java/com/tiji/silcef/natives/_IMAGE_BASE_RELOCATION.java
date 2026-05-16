@@ -27,8 +27,8 @@ public class _IMAGE_BASE_RELOCATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("VirtualAddress"),
-        cef_master_h.C_LONG.withName("SizeOfBlock")
+        cef_render_handler_capi_h.C_LONG.withName("VirtualAddress"),
+        cef_render_handler_capi_h.C_LONG.withName("SizeOfBlock")
     ).withName("_IMAGE_BASE_RELOCATION");
 
     /**

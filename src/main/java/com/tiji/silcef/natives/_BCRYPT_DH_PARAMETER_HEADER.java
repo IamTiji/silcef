@@ -28,9 +28,9 @@ public class _BCRYPT_DH_PARAMETER_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbLength"),
-        cef_master_h.C_LONG.withName("dwMagic"),
-        cef_master_h.C_LONG.withName("cbKeyLength")
+        cef_render_handler_capi_h.C_LONG.withName("cbLength"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMagic"),
+        cef_render_handler_capi_h.C_LONG.withName("cbKeyLength")
     ).withName("_BCRYPT_DH_PARAMETER_HEADER");
 
     /**

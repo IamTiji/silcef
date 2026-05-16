@@ -30,11 +30,11 @@ public class tagMINIMIZEDMETRICS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_INT.withName("iWidth"),
-        cef_master_h.C_INT.withName("iHorzGap"),
-        cef_master_h.C_INT.withName("iVertGap"),
-        cef_master_h.C_INT.withName("iArrange")
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("iWidth"),
+        cef_render_handler_capi_h.C_INT.withName("iHorzGap"),
+        cef_render_handler_capi_h.C_INT.withName("iVertGap"),
+        cef_render_handler_capi_h.C_INT.withName("iArrange")
     ).withName("tagMINIMIZEDMETRICS");
 
     /**

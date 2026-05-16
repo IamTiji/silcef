@@ -29,9 +29,9 @@ public class _cef_accelerated_paint_info_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("size"),
-        cef_master_h.C_POINTER.withName("shared_texture_handle"),
-        cef_master_h.C_INT.withName("format"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("size"),
+        cef_render_handler_capi_h.C_POINTER.withName("shared_texture_handle"),
+        cef_render_handler_capi_h.C_INT.withName("format"),
         MemoryLayout.paddingLayout(4),
         _cef_accelerated_paint_info_common_t.layout().withName("extra")
     ).withName("_cef_accelerated_paint_info_t");

@@ -38,19 +38,19 @@ public class joyinfoex_tag {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwSize"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwFlags"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwXpos"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwYpos"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwZpos"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwRpos"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwUpos"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwVpos"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwButtons"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwButtonNumber"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwPOV"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwReserved1"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwReserved2")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwSize"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwFlags"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwXpos"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwYpos"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwZpos"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwRpos"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwUpos"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwVpos"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwButtons"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwButtonNumber"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwPOV"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwReserved1"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwReserved2")
     ).withName("joyinfoex_tag");
 
     /**

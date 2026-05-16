@@ -38,12 +38,12 @@ public class _QUERY_FILE_LAYOUT_INPUT {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("FilterEntryCount"),
-            cef_master_h.C_LONG.withName("NumberOfPairs")
+            cef_render_handler_capi_h.C_LONG.withName("FilterEntryCount"),
+            cef_render_handler_capi_h.C_LONG.withName("NumberOfPairs")
         ).withName("$anon$15629:5"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_INT.withName("FilterType"),
-        cef_master_h.C_LONG.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_INT.withName("FilterType"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved"),
         _QUERY_FILE_LAYOUT_INPUT.Filter.layout().withName("Filter")
     ).withName("_QUERY_FILE_LAYOUT_INPUT");
 
@@ -292,7 +292,7 @@ public class _QUERY_FILE_LAYOUT_INPUT {
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
             MemoryLayout.sequenceLayout(1, _CLUSTER_RANGE.layout()).withName("ClusterRanges"),
             MemoryLayout.sequenceLayout(1, _FILE_REFERENCE_RANGE.layout()).withName("FileReferenceRanges"),
-            MemoryLayout.sequenceLayout(1, cef_master_h.C_INT).withName("StorageReserveIds")
+            MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_INT).withName("StorageReserveIds")
         ).withName("$anon$15656:5");
 
         /**

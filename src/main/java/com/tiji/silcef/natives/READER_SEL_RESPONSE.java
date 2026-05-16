@@ -29,10 +29,10 @@ public class READER_SEL_RESPONSE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbReaderNameOffset"),
-        cef_master_h.C_LONG.withName("cchReaderNameLength"),
-        cef_master_h.C_LONG.withName("cbCardNameOffset"),
-        cef_master_h.C_LONG.withName("cchCardNameLength")
+        cef_render_handler_capi_h.C_LONG.withName("cbReaderNameOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("cchReaderNameLength"),
+        cef_render_handler_capi_h.C_LONG.withName("cbCardNameOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("cchCardNameLength")
     ).withName("$anon$1133:9");
 
     /**

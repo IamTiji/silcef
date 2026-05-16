@@ -28,9 +28,9 @@ public class _CSV_QUERY_REDIRECT_STATE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("MdsNodeId"),
-        cef_master_h.C_LONG.withName("DsNodeId"),
-        cef_master_h.C_CHAR.withName("FileRedirected"),
+        cef_render_handler_capi_h.C_LONG.withName("MdsNodeId"),
+        cef_render_handler_capi_h.C_LONG.withName("DsNodeId"),
+        cef_render_handler_capi_h.C_CHAR.withName("FileRedirected"),
         MemoryLayout.paddingLayout(3)
     ).withName("_CSV_QUERY_REDIRECT_STATE");
 

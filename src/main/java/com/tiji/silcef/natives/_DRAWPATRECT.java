@@ -31,8 +31,8 @@ public class _DRAWPATRECT {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagPOINT.layout().withName("ptPosition"),
         tagPOINT.layout().withName("ptSize"),
-        cef_master_h.C_SHORT.withName("wStyle"),
-        cef_master_h.C_SHORT.withName("wPattern")
+        cef_render_handler_capi_h.C_SHORT.withName("wStyle"),
+        cef_render_handler_capi_h.C_SHORT.withName("wPattern")
     ).withName("_DRAWPATRECT");
 
     /**

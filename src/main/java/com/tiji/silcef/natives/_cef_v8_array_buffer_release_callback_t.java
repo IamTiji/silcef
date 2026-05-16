@@ -28,7 +28,7 @@ public class _cef_v8_array_buffer_release_callback_t {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _cef_base_ref_counted_t.layout().withName("base"),
-        cef_master_h.C_POINTER.withName("release_buffer")
+        cef_app_capi_h.C_POINTER.withName("release_buffer")
     ).withName("_cef_v8_array_buffer_release_callback_t");
 
     /**
@@ -101,8 +101,8 @@ public class _cef_v8_array_buffer_release_callback_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -112,7 +112,7 @@ public class _cef_v8_array_buffer_release_callback_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(release_buffer.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(release_buffer.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

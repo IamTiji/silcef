@@ -28,9 +28,9 @@ public class _Mbstatet {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("_Wchar"),
-        cef_master_h.C_SHORT.withName("_Byte"),
-        cef_master_h.C_SHORT.withName("_State")
+        cef_string_types_h.C_LONG.withName("_Wchar"),
+        cef_string_types_h.C_SHORT.withName("_Byte"),
+        cef_string_types_h.C_SHORT.withName("_State")
     ).withName("_Mbstatet");
 
     /**

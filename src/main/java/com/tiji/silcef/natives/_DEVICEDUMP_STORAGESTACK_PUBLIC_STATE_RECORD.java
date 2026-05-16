@@ -42,12 +42,12 @@ public class _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("Cdb"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("Command"),
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 1).withName("StartTime"),
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 1).withName("EndTime"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("OperationStatus"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("OperationError"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("Cdb"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("Command"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 1).withName("StartTime"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 1).withName("EndTime"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("OperationStatus"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("OperationError"),
         _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD.StackSpecific.layout().withName("StackSpecific")
     ).withName("_DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD");
 
@@ -436,7 +436,7 @@ public class _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwReserved")
+                cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwReserved")
             ).withName("$anon$6612:10");
 
             /**
@@ -601,7 +601,7 @@ public class _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwAtaPortSpecific")
+                cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwAtaPortSpecific")
             ).withName("$anon$6616:10");
 
             /**
@@ -766,7 +766,7 @@ public class _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.align(cef_master_h.C_LONG, 1).withName("SrbTag")
+                cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("SrbTag")
             ).withName("$anon$6620:10");
 
             /**

@@ -29,10 +29,10 @@ public class tagRID_DEVICE_INFO_MOUSE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwId"),
-        cef_master_h.C_LONG.withName("dwNumberOfButtons"),
-        cef_master_h.C_LONG.withName("dwSampleRate"),
-        cef_master_h.C_INT.withName("fHasHorizontalWheel")
+        cef_render_handler_capi_h.C_LONG.withName("dwId"),
+        cef_render_handler_capi_h.C_LONG.withName("dwNumberOfButtons"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSampleRate"),
+        cef_render_handler_capi_h.C_INT.withName("fHasHorizontalWheel")
     ).withName("tagRID_DEVICE_INFO_MOUSE");
 
     /**

@@ -33,11 +33,11 @@ public class tagEMREXTCREATEPEN {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
-        cef_master_h.C_LONG.withName("ihPen"),
-        cef_master_h.C_LONG.withName("offBmi"),
-        cef_master_h.C_LONG.withName("cbBmi"),
-        cef_master_h.C_LONG.withName("offBits"),
-        cef_master_h.C_LONG.withName("cbBits"),
+        cef_render_handler_capi_h.C_LONG.withName("ihPen"),
+        cef_render_handler_capi_h.C_LONG.withName("offBmi"),
+        cef_render_handler_capi_h.C_LONG.withName("cbBmi"),
+        cef_render_handler_capi_h.C_LONG.withName("offBits"),
+        cef_render_handler_capi_h.C_LONG.withName("cbBits"),
         tagEXTLOGPEN32.layout().withName("elp")
     ).withName("tagEMREXTCREATEPEN");
 

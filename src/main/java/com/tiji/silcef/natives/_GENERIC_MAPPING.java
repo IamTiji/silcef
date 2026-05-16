@@ -29,10 +29,10 @@ public class _GENERIC_MAPPING {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("GenericRead"),
-        cef_master_h.C_LONG.withName("GenericWrite"),
-        cef_master_h.C_LONG.withName("GenericExecute"),
-        cef_master_h.C_LONG.withName("GenericAll")
+        cef_render_handler_capi_h.C_LONG.withName("GenericRead"),
+        cef_render_handler_capi_h.C_LONG.withName("GenericWrite"),
+        cef_render_handler_capi_h.C_LONG.withName("GenericExecute"),
+        cef_render_handler_capi_h.C_LONG.withName("GenericAll")
     ).withName("_GENERIC_MAPPING");
 
     /**

@@ -29,10 +29,10 @@ public class _FS_BPIO_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Operation"),
-        cef_master_h.C_INT.withName("InFlags"),
-        cef_master_h.C_LONG_LONG.withName("Reserved1"),
-        cef_master_h.C_LONG_LONG.withName("Reserved2")
+        cef_render_handler_capi_h.C_INT.withName("Operation"),
+        cef_render_handler_capi_h.C_INT.withName("InFlags"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Reserved1"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Reserved2")
     ).withName("_FS_BPIO_INPUT");
 
     /**

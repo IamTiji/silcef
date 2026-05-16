@@ -41,7 +41,7 @@ public class __MIDL___MIDL_itf_wtypes_0000_0001_0001 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("tyspec"),
+        cef_render_handler_capi_h.C_LONG.withName("tyspec"),
         MemoryLayout.paddingLayout(4),
         __MIDL___MIDL_itf_wtypes_0000_0001_0001.__MIDL___MIDL_itf_wtypes_0000_0001_0005.layout().withName("tagged_union")
     ).withName("__MIDL___MIDL_itf_wtypes_0000_0001_0001");
@@ -124,10 +124,10 @@ public class __MIDL___MIDL_itf_wtypes_0000_0001_0001 {
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
             _GUID.layout().withName("clsid"),
-            cef_master_h.C_POINTER.withName("pFileExt"),
-            cef_master_h.C_POINTER.withName("pMimeType"),
-            cef_master_h.C_POINTER.withName("pProgId"),
-            cef_master_h.C_POINTER.withName("pFileName"),
+            cef_render_handler_capi_h.C_POINTER.withName("pFileExt"),
+            cef_render_handler_capi_h.C_POINTER.withName("pMimeType"),
+            cef_render_handler_capi_h.C_POINTER.withName("pProgId"),
+            cef_render_handler_capi_h.C_POINTER.withName("pFileName"),
             __MIDL___MIDL_itf_wtypes_0000_0001_0001.__MIDL___MIDL_itf_wtypes_0000_0001_0005.ByName.layout().withName("ByName"),
             __MIDL___MIDL_itf_wtypes_0000_0001_0001.__MIDL___MIDL_itf_wtypes_0000_0001_0005.ByObjectId.layout().withName("ByObjectId")
         ).withName("__MIDL___MIDL_itf_wtypes_0000_0001_0005");
@@ -374,7 +374,7 @@ public class __MIDL___MIDL_itf_wtypes_0000_0001_0001 {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_POINTER.withName("pPackageName"),
+                cef_render_handler_capi_h.C_POINTER.withName("pPackageName"),
                 _GUID.layout().withName("PolicyId")
             ).withName("$anon$938:24");
 

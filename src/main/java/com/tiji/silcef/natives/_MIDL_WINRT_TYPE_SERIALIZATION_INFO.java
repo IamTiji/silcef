@@ -30,13 +30,13 @@ public class _MIDL_WINRT_TYPE_SERIALIZATION_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("TypeFormatString"),
-        cef_master_h.C_SHORT.withName("FormatStringSize"),
-        cef_master_h.C_SHORT.withName("TypeOffset"),
+        cef_render_handler_capi_h.C_POINTER.withName("TypeFormatString"),
+        cef_render_handler_capi_h.C_SHORT.withName("FormatStringSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("TypeOffset"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("StubDesc")
+        cef_render_handler_capi_h.C_POINTER.withName("StubDesc")
     ).withName("_MIDL_WINRT_TYPE_SERIALIZATION_INFO");
 
     /**

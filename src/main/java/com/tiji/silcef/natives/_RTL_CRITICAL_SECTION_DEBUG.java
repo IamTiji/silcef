@@ -34,16 +34,16 @@ public class _RTL_CRITICAL_SECTION_DEBUG {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Type"),
-        cef_master_h.C_SHORT.withName("CreatorBackTraceIndex"),
+        cef_render_handler_capi_h.C_SHORT.withName("Type"),
+        cef_render_handler_capi_h.C_SHORT.withName("CreatorBackTraceIndex"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("CriticalSection"),
+        cef_render_handler_capi_h.C_POINTER.withName("CriticalSection"),
         _LIST_ENTRY.layout().withName("ProcessLocksList"),
-        cef_master_h.C_LONG.withName("EntryCount"),
-        cef_master_h.C_LONG.withName("ContentionCount"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_SHORT.withName("CreatorBackTraceIndexHigh"),
-        cef_master_h.C_SHORT.withName("Identifier")
+        cef_render_handler_capi_h.C_LONG.withName("EntryCount"),
+        cef_render_handler_capi_h.C_LONG.withName("ContentionCount"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_SHORT.withName("CreatorBackTraceIndexHigh"),
+        cef_render_handler_capi_h.C_SHORT.withName("Identifier")
     ).withName("_RTL_CRITICAL_SECTION_DEBUG");
 
     /**

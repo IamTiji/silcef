@@ -27,8 +27,8 @@ public class _SECURITY_OBJECT_AI_PARAMS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("ConstraintMask")
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("ConstraintMask")
     ).withName("_SECURITY_OBJECT_AI_PARAMS");
 
     /**

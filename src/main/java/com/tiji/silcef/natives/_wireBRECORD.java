@@ -29,10 +29,10 @@ public class _wireBRECORD {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("fFlags"),
-        cef_master_h.C_LONG.withName("clSize"),
-        cef_master_h.C_POINTER.withName("pRecInfo"),
-        cef_master_h.C_POINTER.withName("pRecord")
+        cef_render_handler_capi_h.C_LONG.withName("fFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("clSize"),
+        cef_render_handler_capi_h.C_POINTER.withName("pRecInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("pRecord")
     ).withName("_wireBRECORD");
 
     /**

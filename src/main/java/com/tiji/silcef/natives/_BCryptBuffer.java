@@ -28,9 +28,9 @@ public class _BCryptBuffer {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbBuffer"),
-        cef_master_h.C_LONG.withName("BufferType"),
-        cef_master_h.C_POINTER.withName("pvBuffer")
+        cef_render_handler_capi_h.C_LONG.withName("cbBuffer"),
+        cef_render_handler_capi_h.C_LONG.withName("BufferType"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvBuffer")
     ).withName("_BCryptBuffer");
 
     /**

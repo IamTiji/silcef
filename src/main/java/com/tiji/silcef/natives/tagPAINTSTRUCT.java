@@ -31,12 +31,12 @@ public class tagPAINTSTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hdc"),
-        cef_master_h.C_INT.withName("fErase"),
+        cef_render_handler_capi_h.C_POINTER.withName("hdc"),
+        cef_render_handler_capi_h.C_INT.withName("fErase"),
         tagRECT.layout().withName("rcPaint"),
-        cef_master_h.C_INT.withName("fRestore"),
-        cef_master_h.C_INT.withName("fIncUpdate"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("rgbReserved"),
+        cef_render_handler_capi_h.C_INT.withName("fRestore"),
+        cef_render_handler_capi_h.C_INT.withName("fIncUpdate"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("rgbReserved"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagPAINTSTRUCT");
 

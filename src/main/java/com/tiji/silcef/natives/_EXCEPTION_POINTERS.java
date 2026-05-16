@@ -27,8 +27,8 @@ public class _EXCEPTION_POINTERS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("ExceptionRecord"),
-        cef_master_h.C_POINTER.withName("ContextRecord")
+        cef_render_handler_capi_h.C_POINTER.withName("ExceptionRecord"),
+        cef_render_handler_capi_h.C_POINTER.withName("ContextRecord")
     ).withName("_EXCEPTION_POINTERS");
 
     /**

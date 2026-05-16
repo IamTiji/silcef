@@ -31,12 +31,12 @@ public class _STORAGE_DIAGNOSTIC_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
         _GUID.layout().withName("ProviderId"),
-        cef_master_h.C_LONG.withName("BufferSize"),
-        cef_master_h.C_LONG.withName("Reserved"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("DiagnosticDataBuffer"),
+        cef_render_handler_capi_h.C_LONG.withName("BufferSize"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("DiagnosticDataBuffer"),
         MemoryLayout.paddingLayout(3)
     ).withName("_STORAGE_DIAGNOSTIC_DATA");
 

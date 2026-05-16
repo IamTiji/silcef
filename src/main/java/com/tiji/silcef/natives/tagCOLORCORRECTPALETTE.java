@@ -31,10 +31,10 @@ public class tagCOLORCORRECTPALETTE {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
-        cef_master_h.C_LONG.withName("ihPalette"),
-        cef_master_h.C_LONG.withName("nFirstEntry"),
-        cef_master_h.C_LONG.withName("nPalEntries"),
-        cef_master_h.C_LONG.withName("nReserved")
+        cef_render_handler_capi_h.C_LONG.withName("ihPalette"),
+        cef_render_handler_capi_h.C_LONG.withName("nFirstEntry"),
+        cef_render_handler_capi_h.C_LONG.withName("nPalEntries"),
+        cef_render_handler_capi_h.C_LONG.withName("nReserved")
     ).withName("tagCOLORCORRECTPALETTE");
 
     /**

@@ -28,9 +28,9 @@ public class _TAPE_WMI_OPERATIONS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Method"),
-        cef_master_h.C_LONG.withName("DataBufferSize"),
-        cef_master_h.C_POINTER.withName("DataBuffer")
+        cef_render_handler_capi_h.C_LONG.withName("Method"),
+        cef_render_handler_capi_h.C_LONG.withName("DataBufferSize"),
+        cef_render_handler_capi_h.C_POINTER.withName("DataBuffer")
     ).withName("_TAPE_WMI_OPERATIONS");
 
     /**

@@ -27,8 +27,8 @@ public class sockproto {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("sp_family"),
-        cef_master_h.C_SHORT.withName("sp_protocol")
+        cef_render_handler_capi_h.C_SHORT.withName("sp_family"),
+        cef_render_handler_capi_h.C_SHORT.withName("sp_protocol")
     ).withName("sockproto");
 
     /**

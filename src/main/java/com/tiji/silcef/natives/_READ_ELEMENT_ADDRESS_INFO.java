@@ -27,7 +27,7 @@ public class _READ_ELEMENT_ADDRESS_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NumberOfElements"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfElements"),
         MemoryLayout.sequenceLayout(1, _CHANGER_ELEMENT_STATUS.layout()).withName("ElementStatus")
     ).withName("_READ_ELEMENT_ADDRESS_INFO");
 

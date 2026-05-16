@@ -31,7 +31,7 @@ public class _CERT_ID {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwIdChoice"),
+        cef_render_handler_capi_h.C_LONG.withName("dwIdChoice"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
             _CERT_ISSUER_SERIAL_NUMBER.layout().withName("IssuerSerialNumber"),

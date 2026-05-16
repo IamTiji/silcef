@@ -28,9 +28,9 @@ public class tagMCI_INFO_PARMSW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 1).withName("dwCallback"),
-        cef_master_h.align(cef_master_h.C_POINTER, 1).withName("lpstrReturn"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwRetSize")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 1).withName("dwCallback"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("lpstrReturn"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwRetSize")
     ).withName("tagMCI_INFO_PARMSW");
 
     /**

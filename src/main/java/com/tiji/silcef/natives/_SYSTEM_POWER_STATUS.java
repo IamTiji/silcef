@@ -31,12 +31,12 @@ public class _SYSTEM_POWER_STATUS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("ACLineStatus"),
-        cef_master_h.C_CHAR.withName("BatteryFlag"),
-        cef_master_h.C_CHAR.withName("BatteryLifePercent"),
-        cef_master_h.C_CHAR.withName("SystemStatusFlag"),
-        cef_master_h.C_LONG.withName("BatteryLifeTime"),
-        cef_master_h.C_LONG.withName("BatteryFullLifeTime")
+        cef_render_handler_capi_h.C_CHAR.withName("ACLineStatus"),
+        cef_render_handler_capi_h.C_CHAR.withName("BatteryFlag"),
+        cef_render_handler_capi_h.C_CHAR.withName("BatteryLifePercent"),
+        cef_render_handler_capi_h.C_CHAR.withName("SystemStatusFlag"),
+        cef_render_handler_capi_h.C_LONG.withName("BatteryLifeTime"),
+        cef_render_handler_capi_h.C_LONG.withName("BatteryFullLifeTime")
     ).withName("_SYSTEM_POWER_STATUS");
 
     /**

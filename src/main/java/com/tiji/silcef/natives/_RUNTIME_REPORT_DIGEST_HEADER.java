@@ -28,9 +28,9 @@ public class _RUNTIME_REPORT_DIGEST_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("ReportType"),
-        cef_master_h.C_SHORT.withName("Reserved"),
-        MemoryLayout.sequenceLayout(64, cef_master_h.C_CHAR).withName("ReportDigest")
+        cef_render_handler_capi_h.C_SHORT.withName("ReportType"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved"),
+        MemoryLayout.sequenceLayout(64, cef_render_handler_capi_h.C_CHAR).withName("ReportDigest")
     ).withName("_RUNTIME_REPORT_DIGEST_HEADER");
 
     /**

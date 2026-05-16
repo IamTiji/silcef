@@ -29,10 +29,10 @@ public class tagTouchPredictionParameters {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_INT.withName("dwLatency"),
-        cef_master_h.C_INT.withName("dwSampleTime"),
-        cef_master_h.C_INT.withName("bUseHWTimeStamp")
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("dwLatency"),
+        cef_render_handler_capi_h.C_INT.withName("dwSampleTime"),
+        cef_render_handler_capi_h.C_INT.withName("bUseHWTimeStamp")
     ).withName("tagTouchPredictionParameters");
 
     /**

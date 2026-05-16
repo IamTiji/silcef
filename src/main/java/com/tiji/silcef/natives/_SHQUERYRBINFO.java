@@ -28,10 +28,10 @@ public class _SHQUERYRBINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("i64Size"),
-        cef_master_h.C_LONG_LONG.withName("i64NumItems")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("i64Size"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("i64NumItems")
     ).withName("_SHQUERYRBINFO");
 
     /**

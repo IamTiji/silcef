@@ -31,12 +31,12 @@ public class tagHELPINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_INT.withName("iContextType"),
-        cef_master_h.C_INT.withName("iCtrlId"),
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("iContextType"),
+        cef_render_handler_capi_h.C_INT.withName("iCtrlId"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hItemHandle"),
-        cef_master_h.C_LONG_LONG.withName("dwContextId"),
+        cef_render_handler_capi_h.C_POINTER.withName("hItemHandle"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwContextId"),
         tagPOINT.layout().withName("MousePos")
     ).withName("tagHELPINFO");
 

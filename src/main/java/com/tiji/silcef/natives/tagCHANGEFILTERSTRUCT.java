@@ -27,8 +27,8 @@ public class tagCHANGEFILTERSTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("ExtStatus")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("ExtStatus")
     ).withName("tagCHANGEFILTERSTRUCT");
 
     /**

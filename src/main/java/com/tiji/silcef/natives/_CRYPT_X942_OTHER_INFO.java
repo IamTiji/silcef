@@ -29,9 +29,9 @@ public class _CRYPT_X942_OTHER_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszContentEncryptionObjId"),
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_CHAR).withName("rgbCounter"),
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_CHAR).withName("rgbKeyLength"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszContentEncryptionObjId"),
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_CHAR).withName("rgbCounter"),
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_CHAR).withName("rgbKeyLength"),
         _CRYPTOAPI_BLOB.layout().withName("PubInfo")
     ).withName("_CRYPT_X942_OTHER_INFO");
 

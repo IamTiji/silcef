@@ -26,7 +26,7 @@ public class _PERF_COUNTER_BLOCK {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ByteLength")
+        cef_render_handler_capi_h.C_LONG.withName("ByteLength")
     ).withName("_PERF_COUNTER_BLOCK");
 
     /**

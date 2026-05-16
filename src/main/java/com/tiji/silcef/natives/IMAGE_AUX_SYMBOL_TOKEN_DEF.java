@@ -29,10 +29,10 @@ public class IMAGE_AUX_SYMBOL_TOKEN_DEF {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("bAuxType"),
-        cef_master_h.C_CHAR.withName("bReserved"),
-        cef_master_h.align(cef_master_h.C_LONG, 2).withName("SymbolTableIndex"),
-        MemoryLayout.sequenceLayout(12, cef_master_h.C_CHAR).withName("rgbReserved")
+        cef_render_handler_capi_h.C_CHAR.withName("bAuxType"),
+        cef_render_handler_capi_h.C_CHAR.withName("bReserved"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("SymbolTableIndex"),
+        MemoryLayout.sequenceLayout(12, cef_render_handler_capi_h.C_CHAR).withName("rgbReserved")
     ).withName("IMAGE_AUX_SYMBOL_TOKEN_DEF");
 
     /**

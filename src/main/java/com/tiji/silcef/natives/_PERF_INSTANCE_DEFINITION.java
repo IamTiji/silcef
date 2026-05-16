@@ -31,12 +31,12 @@ public class _PERF_INSTANCE_DEFINITION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ByteLength"),
-        cef_master_h.C_LONG.withName("ParentObjectTitleIndex"),
-        cef_master_h.C_LONG.withName("ParentObjectInstance"),
-        cef_master_h.C_LONG.withName("UniqueID"),
-        cef_master_h.C_LONG.withName("NameOffset"),
-        cef_master_h.C_LONG.withName("NameLength")
+        cef_render_handler_capi_h.C_LONG.withName("ByteLength"),
+        cef_render_handler_capi_h.C_LONG.withName("ParentObjectTitleIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("ParentObjectInstance"),
+        cef_render_handler_capi_h.C_LONG.withName("UniqueID"),
+        cef_render_handler_capi_h.C_LONG.withName("NameOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("NameLength")
     ).withName("_PERF_INSTANCE_DEFINITION");
 
     /**

@@ -32,11 +32,11 @@ public class tagMENUBARINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         tagRECT.layout().withName("rcBar"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hMenu"),
-        cef_master_h.C_POINTER.withName("hwndMenu"),
+        cef_render_handler_capi_h.C_POINTER.withName("hMenu"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndMenu"),
         MemoryLayout.paddingLayout(8)
     ).withName("tagMENUBARINFO");
 

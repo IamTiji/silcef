@@ -27,8 +27,8 @@ public class _IMAGE_DYNAMIC_RELOCATION64 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 1).withName("Symbol"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("BaseRelocSize")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 1).withName("Symbol"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("BaseRelocSize")
     ).withName("_IMAGE_DYNAMIC_RELOCATION64");
 
     /**

@@ -28,7 +28,7 @@ public class tagCOMPOSITIONFORM {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwStyle"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStyle"),
         tagPOINT.layout().withName("ptCurrentPos"),
         tagRECT.layout().withName("rcArea")
     ).withName("tagCOMPOSITIONFORM");

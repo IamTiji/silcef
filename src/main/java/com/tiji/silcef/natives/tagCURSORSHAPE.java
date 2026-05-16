@@ -32,13 +32,13 @@ public class tagCURSORSHAPE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("xHotSpot"),
-        cef_master_h.C_INT.withName("yHotSpot"),
-        cef_master_h.C_INT.withName("cx"),
-        cef_master_h.C_INT.withName("cy"),
-        cef_master_h.C_INT.withName("cbWidth"),
-        cef_master_h.C_CHAR.withName("Planes"),
-        cef_master_h.C_CHAR.withName("BitsPixel"),
+        cef_render_handler_capi_h.C_INT.withName("xHotSpot"),
+        cef_render_handler_capi_h.C_INT.withName("yHotSpot"),
+        cef_render_handler_capi_h.C_INT.withName("cx"),
+        cef_render_handler_capi_h.C_INT.withName("cy"),
+        cef_render_handler_capi_h.C_INT.withName("cbWidth"),
+        cef_render_handler_capi_h.C_CHAR.withName("Planes"),
+        cef_render_handler_capi_h.C_CHAR.withName("BitsPixel"),
         MemoryLayout.paddingLayout(2)
     ).withName("tagCURSORSHAPE");
 

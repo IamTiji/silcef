@@ -28,9 +28,9 @@ public class _OUTPUT_DEBUG_STRING_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("lpDebugStringData"),
-        cef_master_h.C_SHORT.withName("fUnicode"),
-        cef_master_h.C_SHORT.withName("nDebugStringLength"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpDebugStringData"),
+        cef_render_handler_capi_h.C_SHORT.withName("fUnicode"),
+        cef_render_handler_capi_h.C_SHORT.withName("nDebugStringLength"),
         MemoryLayout.paddingLayout(4)
     ).withName("_OUTPUT_DEBUG_STRING_INFO");
 

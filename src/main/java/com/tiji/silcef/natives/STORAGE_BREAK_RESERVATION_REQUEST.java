@@ -30,11 +30,11 @@ public class STORAGE_BREAK_RESERVATION_REQUEST {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Length"),
-        cef_master_h.C_CHAR.withName("_unused"),
-        cef_master_h.C_CHAR.withName("PathId"),
-        cef_master_h.C_CHAR.withName("TargetId"),
-        cef_master_h.C_CHAR.withName("Lun")
+        cef_render_handler_capi_h.C_LONG.withName("Length"),
+        cef_render_handler_capi_h.C_CHAR.withName("_unused"),
+        cef_render_handler_capi_h.C_CHAR.withName("PathId"),
+        cef_render_handler_capi_h.C_CHAR.withName("TargetId"),
+        cef_render_handler_capi_h.C_CHAR.withName("Lun")
     ).withName("STORAGE_BREAK_RESERVATION_REQUEST");
 
     /**

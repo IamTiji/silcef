@@ -32,13 +32,13 @@ public class tagEXTLOGPEN {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("elpPenStyle"),
-        cef_master_h.C_LONG.withName("elpWidth"),
-        cef_master_h.C_INT.withName("elpBrushStyle"),
-        cef_master_h.C_LONG.withName("elpColor"),
-        cef_master_h.C_LONG_LONG.withName("elpHatch"),
-        cef_master_h.C_LONG.withName("elpNumEntries"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG).withName("elpStyleEntry")
+        cef_render_handler_capi_h.C_LONG.withName("elpPenStyle"),
+        cef_render_handler_capi_h.C_LONG.withName("elpWidth"),
+        cef_render_handler_capi_h.C_INT.withName("elpBrushStyle"),
+        cef_render_handler_capi_h.C_LONG.withName("elpColor"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("elpHatch"),
+        cef_render_handler_capi_h.C_LONG.withName("elpNumEntries"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG).withName("elpStyleEntry")
     ).withName("tagEXTLOGPEN");
 
     /**

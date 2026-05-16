@@ -29,10 +29,10 @@ public class _QUERY_BAD_RANGES_OUTPUT_RANGE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("Reserved"),
-        cef_master_h.C_LONG_LONG.withName("StartOffset"),
-        cef_master_h.C_LONG_LONG.withName("LengthInBytes")
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("StartOffset"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LengthInBytes")
     ).withName("_QUERY_BAD_RANGES_OUTPUT_RANGE");
 
     /**

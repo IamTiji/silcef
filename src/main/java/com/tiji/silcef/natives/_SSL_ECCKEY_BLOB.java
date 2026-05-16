@@ -27,8 +27,8 @@ public class _SSL_ECCKEY_BLOB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwCurveType"),
-        cef_master_h.C_LONG.withName("cbKey")
+        cef_render_handler_capi_h.C_LONG.withName("dwCurveType"),
+        cef_render_handler_capi_h.C_LONG.withName("cbKey")
     ).withName("_SSL_ECCKEY_BLOB");
 
     /**

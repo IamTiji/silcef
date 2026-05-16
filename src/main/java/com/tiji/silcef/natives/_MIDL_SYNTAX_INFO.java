@@ -35,13 +35,13 @@ public class _MIDL_SYNTAX_INFO {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _RPC_SYNTAX_IDENTIFIER.layout().withName("TransferSyntax"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("DispatchTable"),
-        cef_master_h.C_POINTER.withName("ProcString"),
-        cef_master_h.C_POINTER.withName("FmtStringOffset"),
-        cef_master_h.C_POINTER.withName("TypeString"),
-        cef_master_h.C_POINTER.withName("aUserMarshalQuadruple"),
-        cef_master_h.C_POINTER.withName("pMethodProperties"),
-        cef_master_h.C_LONG_LONG.withName("pReserved2")
+        cef_render_handler_capi_h.C_POINTER.withName("DispatchTable"),
+        cef_render_handler_capi_h.C_POINTER.withName("ProcString"),
+        cef_render_handler_capi_h.C_POINTER.withName("FmtStringOffset"),
+        cef_render_handler_capi_h.C_POINTER.withName("TypeString"),
+        cef_render_handler_capi_h.C_POINTER.withName("aUserMarshalQuadruple"),
+        cef_render_handler_capi_h.C_POINTER.withName("pMethodProperties"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("pReserved2")
     ).withName("_MIDL_SYNTAX_INFO");
 
     /**

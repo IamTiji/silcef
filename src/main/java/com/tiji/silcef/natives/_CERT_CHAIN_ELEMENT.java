@@ -32,14 +32,14 @@ public class _CERT_CHAIN_ELEMENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pCertContext"),
+        cef_render_handler_capi_h.C_POINTER.withName("pCertContext"),
         _CERT_TRUST_STATUS.layout().withName("TrustStatus"),
-        cef_master_h.C_POINTER.withName("pRevocationInfo"),
-        cef_master_h.C_POINTER.withName("pIssuanceUsage"),
-        cef_master_h.C_POINTER.withName("pApplicationUsage"),
-        cef_master_h.C_POINTER.withName("pwszExtendedErrorInfo")
+        cef_render_handler_capi_h.C_POINTER.withName("pRevocationInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("pIssuanceUsage"),
+        cef_render_handler_capi_h.C_POINTER.withName("pApplicationUsage"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszExtendedErrorInfo")
     ).withName("_CERT_CHAIN_ELEMENT");
 
     /**

@@ -29,10 +29,10 @@ public class tagSOLE_AUTHENTICATION_SERVICE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwAuthnSvc"),
-        cef_master_h.C_LONG.withName("dwAuthzSvc"),
-        cef_master_h.C_POINTER.withName("pPrincipalName"),
-        cef_master_h.C_LONG.withName("hr"),
+        cef_render_handler_capi_h.C_LONG.withName("dwAuthnSvc"),
+        cef_render_handler_capi_h.C_LONG.withName("dwAuthzSvc"),
+        cef_render_handler_capi_h.C_POINTER.withName("pPrincipalName"),
+        cef_render_handler_capi_h.C_LONG.withName("hr"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagSOLE_AUTHENTICATION_SERVICE");
 

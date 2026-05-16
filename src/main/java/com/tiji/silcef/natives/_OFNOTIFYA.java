@@ -29,8 +29,8 @@ public class _OFNOTIFYA {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagNMHDR.layout().withName("hdr"),
-        cef_master_h.C_POINTER.withName("lpOFN"),
-        cef_master_h.C_POINTER.withName("pszFile")
+        cef_render_handler_capi_h.C_POINTER.withName("lpOFN"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszFile")
     ).withName("_OFNOTIFYA");
 
     /**

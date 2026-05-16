@@ -27,8 +27,8 @@ public class _PRINTER_INFO_7W {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszObjectGUID"),
-        cef_master_h.C_LONG.withName("dwAction"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszObjectGUID"),
+        cef_render_handler_capi_h.C_LONG.withName("dwAction"),
         MemoryLayout.paddingLayout(4)
     ).withName("_PRINTER_INFO_7W");
 

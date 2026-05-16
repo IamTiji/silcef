@@ -28,9 +28,9 @@ public class tagServerInformation {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwServerPid"),
-        cef_master_h.C_LONG.withName("dwServerTid"),
-        cef_master_h.C_LONG_LONG.withName("ui64ServerAddress")
+        cef_render_handler_capi_h.C_LONG.withName("dwServerPid"),
+        cef_render_handler_capi_h.C_LONG.withName("dwServerTid"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ui64ServerAddress")
     ).withName("tagServerInformation");
 
     /**

@@ -28,7 +28,7 @@ public class STARTING_LCN_INPUT_BUFFER_EX {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LARGE_INTEGER.layout().withName("StartingLcn"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         MemoryLayout.paddingLayout(4)
     ).withName("$anon$11735:9");
 

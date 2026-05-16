@@ -30,10 +30,10 @@ public class _PROCESSOR_RELATIONSHIP {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("Flags"),
-        cef_master_h.C_CHAR.withName("EfficiencyClass"),
-        MemoryLayout.sequenceLayout(20, cef_master_h.C_CHAR).withName("Reserved"),
-        cef_master_h.C_SHORT.withName("GroupCount"),
+        cef_render_handler_capi_h.C_CHAR.withName("Flags"),
+        cef_render_handler_capi_h.C_CHAR.withName("EfficiencyClass"),
+        MemoryLayout.sequenceLayout(20, cef_render_handler_capi_h.C_CHAR).withName("Reserved"),
+        cef_render_handler_capi_h.C_SHORT.withName("GroupCount"),
         MemoryLayout.sequenceLayout(1, _GROUP_AFFINITY.layout()).withName("GroupMask")
     ).withName("_PROCESSOR_RELATIONSHIP");
 

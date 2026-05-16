@@ -33,15 +33,15 @@ public class _SERVERSILO_BASIC_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ServiceSessionId"),
-        cef_master_h.C_INT.withName("State"),
-        cef_master_h.C_LONG.withName("ExitStatus"),
-        cef_master_h.C_CHAR.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("ServiceSessionId"),
+        cef_render_handler_capi_h.C_INT.withName("State"),
+        cef_render_handler_capi_h.C_LONG.withName("ExitStatus"),
+        cef_render_handler_capi_h.C_CHAR.withName("Reserved"),
         MemoryLayout.paddingLayout(3),
-        cef_master_h.C_POINTER.withName("ApiSetSchema"),
-        cef_master_h.C_POINTER.withName("HostApiSetSchema"),
-        cef_master_h.C_LONG.withName("ContainerBuildNumber"),
-        cef_master_h.C_LONG.withName("HostBuildNumber")
+        cef_render_handler_capi_h.C_POINTER.withName("ApiSetSchema"),
+        cef_render_handler_capi_h.C_POINTER.withName("HostApiSetSchema"),
+        cef_render_handler_capi_h.C_LONG.withName("ContainerBuildNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("HostBuildNumber")
     ).withName("_SERVERSILO_BASIC_INFORMATION");
 
     /**

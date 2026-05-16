@@ -48,14 +48,14 @@ public class _FILE_REMOTE_PROTOCOL_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("StructureVersion"),
-        cef_master_h.C_SHORT.withName("StructureSize"),
-        cef_master_h.C_LONG.withName("Protocol"),
-        cef_master_h.C_SHORT.withName("ProtocolMajorVersion"),
-        cef_master_h.C_SHORT.withName("ProtocolMinorVersion"),
-        cef_master_h.C_SHORT.withName("ProtocolRevision"),
-        cef_master_h.C_SHORT.withName("Reserved"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_SHORT.withName("StructureVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("StructureSize"),
+        cef_render_handler_capi_h.C_LONG.withName("Protocol"),
+        cef_render_handler_capi_h.C_SHORT.withName("ProtocolMajorVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("ProtocolMinorVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("ProtocolRevision"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         _FILE_REMOTE_PROTOCOL_INFO.GenericReserved.layout().withName("GenericReserved"),
         _FILE_REMOTE_PROTOCOL_INFO.ProtocolSpecific.layout().withName("ProtocolSpecific")
     ).withName("_FILE_REMOTE_PROTOCOL_INFO");
@@ -433,7 +433,7 @@ public class _FILE_REMOTE_PROTOCOL_INFO {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            MemoryLayout.sequenceLayout(8, cef_master_h.C_LONG).withName("Reserved")
+            MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_LONG).withName("Reserved")
         ).withName("$anon$9343:5");
 
         /**
@@ -641,7 +641,7 @@ public class _FILE_REMOTE_PROTOCOL_INFO {
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
             _FILE_REMOTE_PROTOCOL_INFO.ProtocolSpecific.Smb2.layout().withName("Smb2"),
-            MemoryLayout.sequenceLayout(16, cef_master_h.C_LONG).withName("Reserved")
+            MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_LONG).withName("Reserved")
         ).withName("$anon$9356:5");
 
         /**
@@ -696,7 +696,7 @@ public class _FILE_REMOTE_PROTOCOL_INFO {
                 }
 
                 private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                    cef_master_h.C_LONG.withName("Capabilities")
+                    cef_render_handler_capi_h.C_LONG.withName("Capabilities")
                 ).withName("$anon$9360:13");
 
                 /**
@@ -862,8 +862,8 @@ public class _FILE_REMOTE_PROTOCOL_INFO {
                 }
 
                 private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                    cef_master_h.C_LONG.withName("Capabilities"),
-                    cef_master_h.C_LONG.withName("ShareFlags")
+                    cef_render_handler_capi_h.C_LONG.withName("Capabilities"),
+                    cef_render_handler_capi_h.C_LONG.withName("ShareFlags")
                 ).withName("$anon$9364:13");
 
                 /**

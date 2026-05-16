@@ -45,26 +45,26 @@ public class BITMAPV4HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("bV4Size"),
-        cef_master_h.C_LONG.withName("bV4Width"),
-        cef_master_h.C_LONG.withName("bV4Height"),
-        cef_master_h.C_SHORT.withName("bV4Planes"),
-        cef_master_h.C_SHORT.withName("bV4BitCount"),
-        cef_master_h.C_LONG.withName("bV4V4Compression"),
-        cef_master_h.C_LONG.withName("bV4SizeImage"),
-        cef_master_h.C_LONG.withName("bV4XPelsPerMeter"),
-        cef_master_h.C_LONG.withName("bV4YPelsPerMeter"),
-        cef_master_h.C_LONG.withName("bV4ClrUsed"),
-        cef_master_h.C_LONG.withName("bV4ClrImportant"),
-        cef_master_h.C_LONG.withName("bV4RedMask"),
-        cef_master_h.C_LONG.withName("bV4GreenMask"),
-        cef_master_h.C_LONG.withName("bV4BlueMask"),
-        cef_master_h.C_LONG.withName("bV4AlphaMask"),
-        cef_master_h.C_LONG.withName("bV4CSType"),
+        cef_render_handler_capi_h.C_LONG.withName("bV4Size"),
+        cef_render_handler_capi_h.C_LONG.withName("bV4Width"),
+        cef_render_handler_capi_h.C_LONG.withName("bV4Height"),
+        cef_render_handler_capi_h.C_SHORT.withName("bV4Planes"),
+        cef_render_handler_capi_h.C_SHORT.withName("bV4BitCount"),
+        cef_render_handler_capi_h.C_LONG.withName("bV4V4Compression"),
+        cef_render_handler_capi_h.C_LONG.withName("bV4SizeImage"),
+        cef_render_handler_capi_h.C_LONG.withName("bV4XPelsPerMeter"),
+        cef_render_handler_capi_h.C_LONG.withName("bV4YPelsPerMeter"),
+        cef_render_handler_capi_h.C_LONG.withName("bV4ClrUsed"),
+        cef_render_handler_capi_h.C_LONG.withName("bV4ClrImportant"),
+        cef_render_handler_capi_h.C_LONG.withName("bV4RedMask"),
+        cef_render_handler_capi_h.C_LONG.withName("bV4GreenMask"),
+        cef_render_handler_capi_h.C_LONG.withName("bV4BlueMask"),
+        cef_render_handler_capi_h.C_LONG.withName("bV4AlphaMask"),
+        cef_render_handler_capi_h.C_LONG.withName("bV4CSType"),
         tagICEXYZTRIPLE.layout().withName("bV4Endpoints"),
-        cef_master_h.C_LONG.withName("bV4GammaRed"),
-        cef_master_h.C_LONG.withName("bV4GammaGreen"),
-        cef_master_h.C_LONG.withName("bV4GammaBlue")
+        cef_render_handler_capi_h.C_LONG.withName("bV4GammaRed"),
+        cef_render_handler_capi_h.C_LONG.withName("bV4GammaGreen"),
+        cef_render_handler_capi_h.C_LONG.withName("bV4GammaBlue")
     ).withName("$anon$837:9");
 
     /**

@@ -34,12 +34,12 @@ public class _PROCESSOR_POWER_POLICY_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("TimeCheck"),
-        cef_master_h.C_LONG.withName("DemoteLimit"),
-        cef_master_h.C_LONG.withName("PromoteLimit"),
-        cef_master_h.C_CHAR.withName("DemotePercent"),
-        cef_master_h.C_CHAR.withName("PromotePercent"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("Spare"),
+        cef_render_handler_capi_h.C_LONG.withName("TimeCheck"),
+        cef_render_handler_capi_h.C_LONG.withName("DemoteLimit"),
+        cef_render_handler_capi_h.C_LONG.withName("PromoteLimit"),
+        cef_render_handler_capi_h.C_CHAR.withName("DemotePercent"),
+        cef_render_handler_capi_h.C_CHAR.withName("PromotePercent"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("Spare"),
         MemoryLayout.paddingLayout(4)
     ).withName("_PROCESSOR_POWER_POLICY_INFO");
 

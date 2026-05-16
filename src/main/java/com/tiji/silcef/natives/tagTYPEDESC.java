@@ -32,11 +32,11 @@ public class tagTYPEDESC {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("lptdesc"),
-            cef_master_h.C_POINTER.withName("lpadesc"),
-            cef_master_h.C_LONG.withName("hreftype")
+            cef_render_handler_capi_h.C_POINTER.withName("lptdesc"),
+            cef_render_handler_capi_h.C_POINTER.withName("lpadesc"),
+            cef_render_handler_capi_h.C_LONG.withName("hreftype")
         ).withName("$anon$653:36"),
-        cef_master_h.C_SHORT.withName("vt"),
+        cef_render_handler_capi_h.C_SHORT.withName("vt"),
         MemoryLayout.paddingLayout(6)
     ).withName("tagTYPEDESC");
 

@@ -32,7 +32,7 @@ public class _SCOPE_TABLE_AMD64 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Count"),
+        cef_render_handler_capi_h.C_LONG.withName("Count"),
         MemoryLayout.sequenceLayout(1, _SCOPE_TABLE_AMD64.ScopeRecord.layout()).withName("ScopeRecord")
     ).withName("_SCOPE_TABLE_AMD64");
 
@@ -104,10 +104,10 @@ public class _SCOPE_TABLE_AMD64 {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_LONG.withName("BeginAddress"),
-            cef_master_h.C_LONG.withName("EndAddress"),
-            cef_master_h.C_LONG.withName("HandlerAddress"),
-            cef_master_h.C_LONG.withName("JumpTarget")
+            cef_render_handler_capi_h.C_LONG.withName("BeginAddress"),
+            cef_render_handler_capi_h.C_LONG.withName("EndAddress"),
+            cef_render_handler_capi_h.C_LONG.withName("HandlerAddress"),
+            cef_render_handler_capi_h.C_LONG.withName("JumpTarget")
         ).withName("$anon$2822:5");
 
         /**

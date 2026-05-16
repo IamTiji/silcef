@@ -31,11 +31,11 @@ public class _PRIVKEYVER3 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("magic"),
-        cef_master_h.C_LONG.withName("bitlenP"),
-        cef_master_h.C_LONG.withName("bitlenQ"),
-        cef_master_h.C_LONG.withName("bitlenJ"),
-        cef_master_h.C_LONG.withName("bitlenX"),
+        cef_render_handler_capi_h.C_LONG.withName("magic"),
+        cef_render_handler_capi_h.C_LONG.withName("bitlenP"),
+        cef_render_handler_capi_h.C_LONG.withName("bitlenQ"),
+        cef_render_handler_capi_h.C_LONG.withName("bitlenJ"),
+        cef_render_handler_capi_h.C_LONG.withName("bitlenX"),
         _DSSSEED.layout().withName("DSSSeed")
     ).withName("_PRIVKEYVER3");
 

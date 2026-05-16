@@ -28,9 +28,9 @@ public class _GRADIENT_TRIANGLE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Vertex1"),
-        cef_master_h.C_LONG.withName("Vertex2"),
-        cef_master_h.C_LONG.withName("Vertex3")
+        cef_render_handler_capi_h.C_LONG.withName("Vertex1"),
+        cef_render_handler_capi_h.C_LONG.withName("Vertex2"),
+        cef_render_handler_capi_h.C_LONG.withName("Vertex3")
     ).withName("_GRADIENT_TRIANGLE");
 
     /**

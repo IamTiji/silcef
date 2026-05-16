@@ -38,19 +38,19 @@ public class _cef_accelerated_paint_info_common_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("size"),
-        cef_master_h.C_LONG_LONG.withName("timestamp"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("size"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("timestamp"),
         _cef_size_t.layout().withName("coded_size"),
         _cef_rect_t.layout().withName("visible_rect"),
         _cef_rect_t.layout().withName("content_rect"),
         _cef_size_t.layout().withName("source_size"),
         _cef_rect_t.layout().withName("capture_update_rect"),
         _cef_rect_t.layout().withName("region_capture_rect"),
-        cef_master_h.C_LONG_LONG.withName("capture_counter"),
-        cef_master_h.C_CHAR.withName("has_capture_update_rect"),
-        cef_master_h.C_CHAR.withName("has_region_capture_rect"),
-        cef_master_h.C_CHAR.withName("has_source_size"),
-        cef_master_h.C_CHAR.withName("has_capture_counter"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("capture_counter"),
+        cef_render_handler_capi_h.C_CHAR.withName("has_capture_update_rect"),
+        cef_render_handler_capi_h.C_CHAR.withName("has_region_capture_rect"),
+        cef_render_handler_capi_h.C_CHAR.withName("has_source_size"),
+        cef_render_handler_capi_h.C_CHAR.withName("has_capture_counter"),
         MemoryLayout.paddingLayout(4)
     ).withName("_cef_accelerated_paint_info_common_t");
 

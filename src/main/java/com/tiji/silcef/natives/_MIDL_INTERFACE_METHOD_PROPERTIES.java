@@ -27,9 +27,9 @@ public class _MIDL_INTERFACE_METHOD_PROPERTIES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("MethodCount"),
+        cef_render_handler_capi_h.C_SHORT.withName("MethodCount"),
         MemoryLayout.paddingLayout(6),
-        cef_master_h.C_POINTER.withName("MethodProperties")
+        cef_render_handler_capi_h.C_POINTER.withName("MethodProperties")
     ).withName("_MIDL_INTERFACE_METHOD_PROPERTIES");
 
     /**

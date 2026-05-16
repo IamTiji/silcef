@@ -28,9 +28,9 @@ public class ALLOC_CONSOLE_OPTIONS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("mode"),
-        cef_master_h.C_INT.withName("useShowWindow"),
-        cef_master_h.C_SHORT.withName("showWindow"),
+        cef_render_handler_capi_h.C_INT.withName("mode"),
+        cef_render_handler_capi_h.C_INT.withName("useShowWindow"),
+        cef_render_handler_capi_h.C_SHORT.withName("showWindow"),
         MemoryLayout.paddingLayout(2)
     ).withName("ALLOC_CONSOLE_OPTIONS");
 

@@ -28,9 +28,9 @@ public class _SERVICE_CONTROL_STATUS_REASON_PARAMSA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwReason"),
+        cef_render_handler_capi_h.C_LONG.withName("dwReason"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pszComment"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszComment"),
         _SERVICE_STATUS_PROCESS.layout().withName("ServiceStatus"),
         MemoryLayout.paddingLayout(4)
     ).withName("_SERVICE_CONTROL_STATUS_REASON_PARAMSA");

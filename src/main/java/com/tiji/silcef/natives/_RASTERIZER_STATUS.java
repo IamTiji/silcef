@@ -28,9 +28,9 @@ public class _RASTERIZER_STATUS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("nSize"),
-        cef_master_h.C_SHORT.withName("wFlags"),
-        cef_master_h.C_SHORT.withName("nLanguageID")
+        cef_render_handler_capi_h.C_SHORT.withName("nSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("wFlags"),
+        cef_render_handler_capi_h.C_SHORT.withName("nLanguageID")
     ).withName("_RASTERIZER_STATUS");
 
     /**

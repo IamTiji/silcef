@@ -27,7 +27,7 @@ public class _TRANSACTION_ENLISTMENTS_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NumberOfEnlistments"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfEnlistments"),
         MemoryLayout.sequenceLayout(1, _TRANSACTION_ENLISTMENT_PAIR.layout()).withName("EnlistmentPair")
     ).withName("_TRANSACTION_ENLISTMENTS_INFORMATION");
 

@@ -28,9 +28,9 @@ public class _ACTIVATION_CONTEXT_RUN_LEVEL_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ulFlags"),
-        cef_master_h.C_INT.withName("RunLevel"),
-        cef_master_h.C_LONG.withName("UiAccess")
+        cef_render_handler_capi_h.C_LONG.withName("ulFlags"),
+        cef_render_handler_capi_h.C_INT.withName("RunLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("UiAccess")
     ).withName("_ACTIVATION_CONTEXT_RUN_LEVEL_INFORMATION");
 
     /**

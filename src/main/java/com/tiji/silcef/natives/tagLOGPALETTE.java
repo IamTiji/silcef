@@ -28,8 +28,8 @@ public class tagLOGPALETTE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("palVersion"),
-        cef_master_h.C_SHORT.withName("palNumEntries"),
+        cef_render_handler_capi_h.C_SHORT.withName("palVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("palNumEntries"),
         MemoryLayout.sequenceLayout(1, tagPALETTEENTRY.layout()).withName("palPalEntry")
     ).withName("tagLOGPALETTE");
 

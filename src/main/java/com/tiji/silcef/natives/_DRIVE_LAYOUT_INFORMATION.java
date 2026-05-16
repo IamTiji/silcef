@@ -28,8 +28,8 @@ public class _DRIVE_LAYOUT_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("PartitionCount"),
-        cef_master_h.C_LONG.withName("Signature"),
+        cef_render_handler_capi_h.C_LONG.withName("PartitionCount"),
+        cef_render_handler_capi_h.C_LONG.withName("Signature"),
         MemoryLayout.sequenceLayout(1, _PARTITION_INFORMATION.layout()).withName("PartitionEntry")
     ).withName("_DRIVE_LAYOUT_INFORMATION");
 

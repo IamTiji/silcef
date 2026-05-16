@@ -27,8 +27,8 @@ public class _CERT_CRL_CONTEXT_PAIR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pCertContext"),
-        cef_master_h.C_POINTER.withName("pCrlContext")
+        cef_render_handler_capi_h.C_POINTER.withName("pCertContext"),
+        cef_render_handler_capi_h.C_POINTER.withName("pCrlContext")
     ).withName("_CERT_CRL_CONTEXT_PAIR");
 
     /**

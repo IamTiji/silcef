@@ -27,8 +27,8 @@ public class __crt_locale_pointers {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("locinfo"),
-        cef_master_h.C_POINTER.withName("mbcinfo")
+        cef_string_types_h.C_POINTER.withName("locinfo"),
+        cef_string_types_h.C_POINTER.withName("mbcinfo")
     ).withName("__crt_locale_pointers");
 
     /**

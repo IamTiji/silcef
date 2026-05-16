@@ -30,10 +30,10 @@ public class _FSCTL_QUERY_REGION_INFO_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("NumberOfTierIds"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfTierIds"),
         MemoryLayout.sequenceLayout(1, _GUID.layout()).withName("TierIds")
     ).withName("_FSCTL_QUERY_REGION_INFO_INPUT");
 

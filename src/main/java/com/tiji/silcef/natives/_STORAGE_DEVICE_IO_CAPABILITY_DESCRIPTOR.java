@@ -29,10 +29,10 @@ public class _STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("LunMaxIoCount"),
-        cef_master_h.C_LONG.withName("AdapterMaxIoCount")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("LunMaxIoCount"),
+        cef_render_handler_capi_h.C_LONG.withName("AdapterMaxIoCount")
     ).withName("_STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR");
 
     /**

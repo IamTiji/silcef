@@ -26,7 +26,7 @@ public class _ENCLAVE_CREATE_INFO_SGX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(4096, cef_master_h.C_CHAR).withName("Secs")
+        MemoryLayout.sequenceLayout(4096, cef_render_handler_capi_h.C_CHAR).withName("Secs")
     ).withName("_ENCLAVE_CREATE_INFO_SGX");
 
     /**

@@ -27,8 +27,8 @@ public class _CERT_POLICY_MAPPING {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszIssuerDomainPolicy"),
-        cef_master_h.C_POINTER.withName("pszSubjectDomainPolicy")
+        cef_render_handler_capi_h.C_POINTER.withName("pszIssuerDomainPolicy"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszSubjectDomainPolicy")
     ).withName("_CERT_POLICY_MAPPING");
 
     /**

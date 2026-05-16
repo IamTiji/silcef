@@ -32,13 +32,13 @@ public class _CERT_SIMPLE_CHAIN {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         _CERT_TRUST_STATUS.layout().withName("TrustStatus"),
-        cef_master_h.C_LONG.withName("cElement"),
-        cef_master_h.C_POINTER.withName("rgpElement"),
-        cef_master_h.C_POINTER.withName("pTrustListInfo"),
-        cef_master_h.C_INT.withName("fHasRevocationFreshnessTime"),
-        cef_master_h.C_LONG.withName("dwRevocationFreshnessTime")
+        cef_render_handler_capi_h.C_LONG.withName("cElement"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgpElement"),
+        cef_render_handler_capi_h.C_POINTER.withName("pTrustListInfo"),
+        cef_render_handler_capi_h.C_INT.withName("fHasRevocationFreshnessTime"),
+        cef_render_handler_capi_h.C_LONG.withName("dwRevocationFreshnessTime")
     ).withName("_CERT_SIMPLE_CHAIN");
 
     /**

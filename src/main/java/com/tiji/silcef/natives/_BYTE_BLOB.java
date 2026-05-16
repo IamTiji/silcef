@@ -27,8 +27,8 @@ public class _BYTE_BLOB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("clSize"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("abData"),
+        cef_render_handler_capi_h.C_LONG.withName("clSize"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("abData"),
         MemoryLayout.paddingLayout(3)
     ).withName("_BYTE_BLOB");
 

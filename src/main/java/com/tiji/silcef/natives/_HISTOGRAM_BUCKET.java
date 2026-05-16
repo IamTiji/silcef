@@ -27,8 +27,8 @@ public class _HISTOGRAM_BUCKET {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Reads"),
-        cef_master_h.C_LONG.withName("Writes")
+        cef_render_handler_capi_h.C_LONG.withName("Reads"),
+        cef_render_handler_capi_h.C_LONG.withName("Writes")
     ).withName("_HISTOGRAM_BUCKET");
 
     /**

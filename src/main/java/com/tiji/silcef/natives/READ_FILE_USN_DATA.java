@@ -27,8 +27,8 @@ public class READ_FILE_USN_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("MinMajorVersion"),
-        cef_master_h.C_SHORT.withName("MaxMajorVersion")
+        cef_render_handler_capi_h.C_SHORT.withName("MinMajorVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("MaxMajorVersion")
     ).withName("$anon$11963:9");
 
     /**

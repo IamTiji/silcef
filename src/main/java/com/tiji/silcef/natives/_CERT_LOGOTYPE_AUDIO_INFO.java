@@ -30,11 +30,11 @@ public class _CERT_LOGOTYPE_AUDIO_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwFileSize"),
-        cef_master_h.C_LONG.withName("dwPlayTime"),
-        cef_master_h.C_LONG.withName("dwChannels"),
-        cef_master_h.C_LONG.withName("dwSampleRate"),
-        cef_master_h.C_POINTER.withName("pwszLanguage")
+        cef_render_handler_capi_h.C_LONG.withName("dwFileSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwPlayTime"),
+        cef_render_handler_capi_h.C_LONG.withName("dwChannels"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSampleRate"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszLanguage")
     ).withName("_CERT_LOGOTYPE_AUDIO_INFO");
 
     /**

@@ -26,7 +26,7 @@ public class _CRT_DOUBLE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_DOUBLE.withName("x")
+        cef_render_handler_capi_h.C_DOUBLE.withName("x")
     ).withName("$anon$415:9");
 
     /**

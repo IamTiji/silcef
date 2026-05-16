@@ -29,10 +29,10 @@ public class _KCRM_MARSHAL_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("VersionMajor"),
-        cef_master_h.C_LONG.withName("VersionMinor"),
-        cef_master_h.C_LONG.withName("NumProtocols"),
-        cef_master_h.C_LONG.withName("Unused")
+        cef_render_handler_capi_h.C_LONG.withName("VersionMajor"),
+        cef_render_handler_capi_h.C_LONG.withName("VersionMinor"),
+        cef_render_handler_capi_h.C_LONG.withName("NumProtocols"),
+        cef_render_handler_capi_h.C_LONG.withName("Unused")
     ).withName("_KCRM_MARSHAL_HEADER");
 
     /**

@@ -27,7 +27,7 @@ public class _CERT_USAGE_MATCH {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwType"),
         MemoryLayout.paddingLayout(4),
         _CTL_USAGE.layout().withName("Usage")
     ).withName("_CERT_USAGE_MATCH");

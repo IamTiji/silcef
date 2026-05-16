@@ -29,11 +29,11 @@ public class _PRINTER_INFO_1A {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pDescription"),
-        cef_master_h.C_POINTER.withName("pName"),
-        cef_master_h.C_POINTER.withName("pComment")
+        cef_render_handler_capi_h.C_POINTER.withName("pDescription"),
+        cef_render_handler_capi_h.C_POINTER.withName("pName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pComment")
     ).withName("_PRINTER_INFO_1A");
 
     /**

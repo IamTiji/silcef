@@ -27,8 +27,8 @@ public class _RESOURCEMANAGER_COMPLETION_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("IoCompletionPortHandle"),
-        cef_master_h.C_LONG_LONG.withName("CompletionKey")
+        cef_render_handler_capi_h.C_POINTER.withName("IoCompletionPortHandle"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("CompletionKey")
     ).withName("_RESOURCEMANAGER_COMPLETION_INFORMATION");
 
     /**

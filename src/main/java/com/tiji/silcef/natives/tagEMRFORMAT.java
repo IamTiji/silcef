@@ -29,10 +29,10 @@ public class tagEMRFORMAT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dSignature"),
-        cef_master_h.C_LONG.withName("nVersion"),
-        cef_master_h.C_LONG.withName("cbData"),
-        cef_master_h.C_LONG.withName("offData")
+        cef_render_handler_capi_h.C_LONG.withName("dSignature"),
+        cef_render_handler_capi_h.C_LONG.withName("nVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("cbData"),
+        cef_render_handler_capi_h.C_LONG.withName("offData")
     ).withName("tagEMRFORMAT");
 
     /**

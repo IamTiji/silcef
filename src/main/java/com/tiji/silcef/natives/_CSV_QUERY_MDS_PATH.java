@@ -29,10 +29,10 @@ public class _CSV_QUERY_MDS_PATH {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("MdsNodeId"),
-        cef_master_h.C_LONG.withName("DsNodeId"),
-        cef_master_h.C_LONG.withName("PathLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("Path"),
+        cef_render_handler_capi_h.C_LONG.withName("MdsNodeId"),
+        cef_render_handler_capi_h.C_LONG.withName("DsNodeId"),
+        cef_render_handler_capi_h.C_LONG.withName("PathLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("Path"),
         MemoryLayout.paddingLayout(2)
     ).withName("_CSV_QUERY_MDS_PATH");
 

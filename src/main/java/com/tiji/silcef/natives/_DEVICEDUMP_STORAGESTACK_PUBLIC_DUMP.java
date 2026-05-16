@@ -31,9 +31,9 @@ public class _DEVICEDUMP_STORAGESTACK_PUBLIC_DUMP {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _DEVICEDUMP_STRUCTURE_VERSION.layout().withName("Descriptor"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwReasonForCollection"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("cDriverName"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("uiNumRecords"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwReasonForCollection"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("cDriverName"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("uiNumRecords"),
         MemoryLayout.sequenceLayout(1, _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD.layout()).withName("RecordArray")
     ).withName("_DEVICEDUMP_STORAGESTACK_PUBLIC_DUMP");
 

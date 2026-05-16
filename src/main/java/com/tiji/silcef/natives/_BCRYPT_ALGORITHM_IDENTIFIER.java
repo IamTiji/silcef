@@ -28,9 +28,9 @@ public class _BCRYPT_ALGORITHM_IDENTIFIER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszName"),
-        cef_master_h.C_LONG.withName("dwClass"),
-        cef_master_h.C_LONG.withName("dwFlags")
+        cef_render_handler_capi_h.C_POINTER.withName("pszName"),
+        cef_render_handler_capi_h.C_LONG.withName("dwClass"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags")
     ).withName("_BCRYPT_ALGORITHM_IDENTIFIER");
 
     /**

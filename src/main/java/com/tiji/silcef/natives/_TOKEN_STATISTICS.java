@@ -38,12 +38,12 @@ public class _TOKEN_STATISTICS {
         _LUID.layout().withName("TokenId"),
         _LUID.layout().withName("AuthenticationId"),
         _LARGE_INTEGER.layout().withName("ExpirationTime"),
-        cef_master_h.C_INT.withName("TokenType"),
-        cef_master_h.C_INT.withName("ImpersonationLevel"),
-        cef_master_h.C_LONG.withName("DynamicCharged"),
-        cef_master_h.C_LONG.withName("DynamicAvailable"),
-        cef_master_h.C_LONG.withName("GroupCount"),
-        cef_master_h.C_LONG.withName("PrivilegeCount"),
+        cef_render_handler_capi_h.C_INT.withName("TokenType"),
+        cef_render_handler_capi_h.C_INT.withName("ImpersonationLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("DynamicCharged"),
+        cef_render_handler_capi_h.C_LONG.withName("DynamicAvailable"),
+        cef_render_handler_capi_h.C_LONG.withName("GroupCount"),
+        cef_render_handler_capi_h.C_LONG.withName("PrivilegeCount"),
         _LUID.layout().withName("ModifiedId")
     ).withName("_TOKEN_STATISTICS");
 

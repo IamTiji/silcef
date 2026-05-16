@@ -33,13 +33,13 @@ public class _FILE_RENAME_INFO {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.unionLayout(
-            cef_master_h.C_CHAR.withName("ReplaceIfExists"),
-            cef_master_h.C_LONG.withName("Flags")
+            cef_render_handler_capi_h.C_CHAR.withName("ReplaceIfExists"),
+            cef_render_handler_capi_h.C_LONG.withName("Flags")
         ).withName("$anon$9114:5"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("RootDirectory"),
-        cef_master_h.C_LONG.withName("FileNameLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("FileName"),
+        cef_render_handler_capi_h.C_POINTER.withName("RootDirectory"),
+        cef_render_handler_capi_h.C_LONG.withName("FileNameLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("FileName"),
         MemoryLayout.paddingLayout(2)
     ).withName("_FILE_RENAME_INFO");
 

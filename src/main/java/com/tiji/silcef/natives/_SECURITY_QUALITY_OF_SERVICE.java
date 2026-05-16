@@ -29,10 +29,10 @@ public class _SECURITY_QUALITY_OF_SERVICE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Length"),
-        cef_master_h.C_INT.withName("ImpersonationLevel"),
-        cef_master_h.C_CHAR.withName("ContextTrackingMode"),
-        cef_master_h.C_CHAR.withName("EffectiveOnly"),
+        cef_render_handler_capi_h.C_LONG.withName("Length"),
+        cef_render_handler_capi_h.C_INT.withName("ImpersonationLevel"),
+        cef_render_handler_capi_h.C_CHAR.withName("ContextTrackingMode"),
+        cef_render_handler_capi_h.C_CHAR.withName("EffectiveOnly"),
         MemoryLayout.paddingLayout(2)
     ).withName("_SECURITY_QUALITY_OF_SERVICE");
 

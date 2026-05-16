@@ -27,9 +27,9 @@ public class RPC_IF_ID_VECTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Count"),
+        cef_render_handler_capi_h.C_LONG.withName("Count"),
         MemoryLayout.paddingLayout(4),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_POINTER).withName("IfId")
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_POINTER).withName("IfId")
     ).withName("$anon$286:9");
 
     /**

@@ -29,9 +29,9 @@ public class _cef_media_sink_device_info_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("size"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("size"),
         _cef_string_utf16_t.layout().withName("ip_address"),
-        cef_master_h.C_INT.withName("port"),
+        cef_render_handler_capi_h.C_INT.withName("port"),
         MemoryLayout.paddingLayout(4),
         _cef_string_utf16_t.layout().withName("model_name")
     ).withName("_cef_media_sink_device_info_t");

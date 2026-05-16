@@ -44,24 +44,24 @@ public class tagENHMETAHEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("iType"),
-        cef_master_h.C_LONG.withName("nSize"),
+        cef_render_handler_capi_h.C_LONG.withName("iType"),
+        cef_render_handler_capi_h.C_LONG.withName("nSize"),
         _RECTL.layout().withName("rclBounds"),
         _RECTL.layout().withName("rclFrame"),
-        cef_master_h.C_LONG.withName("dSignature"),
-        cef_master_h.C_LONG.withName("nVersion"),
-        cef_master_h.C_LONG.withName("nBytes"),
-        cef_master_h.C_LONG.withName("nRecords"),
-        cef_master_h.C_SHORT.withName("nHandles"),
-        cef_master_h.C_SHORT.withName("sReserved"),
-        cef_master_h.C_LONG.withName("nDescription"),
-        cef_master_h.C_LONG.withName("offDescription"),
-        cef_master_h.C_LONG.withName("nPalEntries"),
+        cef_render_handler_capi_h.C_LONG.withName("dSignature"),
+        cef_render_handler_capi_h.C_LONG.withName("nVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("nBytes"),
+        cef_render_handler_capi_h.C_LONG.withName("nRecords"),
+        cef_render_handler_capi_h.C_SHORT.withName("nHandles"),
+        cef_render_handler_capi_h.C_SHORT.withName("sReserved"),
+        cef_render_handler_capi_h.C_LONG.withName("nDescription"),
+        cef_render_handler_capi_h.C_LONG.withName("offDescription"),
+        cef_render_handler_capi_h.C_LONG.withName("nPalEntries"),
         tagSIZE.layout().withName("szlDevice"),
         tagSIZE.layout().withName("szlMillimeters"),
-        cef_master_h.C_LONG.withName("cbPixelFormat"),
-        cef_master_h.C_LONG.withName("offPixelFormat"),
-        cef_master_h.C_LONG.withName("bOpenGL"),
+        cef_render_handler_capi_h.C_LONG.withName("cbPixelFormat"),
+        cef_render_handler_capi_h.C_LONG.withName("offPixelFormat"),
+        cef_render_handler_capi_h.C_LONG.withName("bOpenGL"),
         tagSIZE.layout().withName("szlMicrometers")
     ).withName("tagENHMETAHEADER");
 

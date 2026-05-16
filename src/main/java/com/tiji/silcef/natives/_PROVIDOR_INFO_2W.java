@@ -26,7 +26,7 @@ public class _PROVIDOR_INFO_2W {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pOrder")
+        cef_render_handler_capi_h.C_POINTER.withName("pOrder")
     ).withName("_PROVIDOR_INFO_2W");
 
     /**

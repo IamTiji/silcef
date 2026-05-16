@@ -27,8 +27,8 @@ public class _SHARED_VIRTUAL_DISK_SUPPORT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("SharedVirtualDiskSupport"),
-        cef_master_h.C_INT.withName("HandleState")
+        cef_render_handler_capi_h.C_INT.withName("SharedVirtualDiskSupport"),
+        cef_render_handler_capi_h.C_INT.withName("HandleState")
     ).withName("_SHARED_VIRTUAL_DISK_SUPPORT");
 
     /**

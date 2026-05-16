@@ -28,7 +28,7 @@ public class _OCSP_BASIC_REVOKED_INFO {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _FILETIME.layout().withName("RevocationDate"),
-        cef_master_h.C_LONG.withName("dwCrlReasonCode")
+        cef_render_handler_capi_h.C_LONG.withName("dwCrlReasonCode")
     ).withName("_OCSP_BASIC_REVOKED_INFO");
 
     /**

@@ -32,14 +32,14 @@ public class tagRPCOLEMESSAGE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("reserved1"),
-        cef_master_h.C_LONG.withName("dataRepresentation"),
+        cef_render_handler_capi_h.C_POINTER.withName("reserved1"),
+        cef_render_handler_capi_h.C_LONG.withName("dataRepresentation"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("Buffer"),
-        cef_master_h.C_LONG.withName("cbBuffer"),
-        cef_master_h.C_LONG.withName("iMethod"),
-        MemoryLayout.sequenceLayout(5, cef_master_h.C_POINTER).withName("reserved2"),
-        cef_master_h.C_LONG.withName("rpcFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("Buffer"),
+        cef_render_handler_capi_h.C_LONG.withName("cbBuffer"),
+        cef_render_handler_capi_h.C_LONG.withName("iMethod"),
+        MemoryLayout.sequenceLayout(5, cef_render_handler_capi_h.C_POINTER).withName("reserved2"),
+        cef_render_handler_capi_h.C_LONG.withName("rpcFlags"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagRPCOLEMESSAGE");
 

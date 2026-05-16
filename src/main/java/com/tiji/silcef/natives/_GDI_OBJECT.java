@@ -31,7 +31,7 @@ public class _GDI_OBJECT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ObjectType"),
+        cef_render_handler_capi_h.C_LONG.withName("ObjectType"),
         MemoryLayout.paddingLayout(4),
         _GDI_OBJECT.__MIDL_IAdviseSink_0002.layout().withName("u")
     ).withName("_GDI_OBJECT");
@@ -103,9 +103,9 @@ public class _GDI_OBJECT {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("hBitmap"),
-            cef_master_h.C_POINTER.withName("hPalette"),
-            cef_master_h.C_POINTER.withName("hGeneric")
+            cef_render_handler_capi_h.C_POINTER.withName("hBitmap"),
+            cef_render_handler_capi_h.C_POINTER.withName("hPalette"),
+            cef_render_handler_capi_h.C_POINTER.withName("hGeneric")
         ).withName("__MIDL_IAdviseSink_0002");
 
         /**

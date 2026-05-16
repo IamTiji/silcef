@@ -31,12 +31,12 @@ public class _LOAD_DLL_DEBUG_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hFile"),
-        cef_master_h.C_POINTER.withName("lpBaseOfDll"),
-        cef_master_h.C_LONG.withName("dwDebugInfoFileOffset"),
-        cef_master_h.C_LONG.withName("nDebugInfoSize"),
-        cef_master_h.C_POINTER.withName("lpImageName"),
-        cef_master_h.C_SHORT.withName("fUnicode"),
+        cef_render_handler_capi_h.C_POINTER.withName("hFile"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpBaseOfDll"),
+        cef_render_handler_capi_h.C_LONG.withName("dwDebugInfoFileOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("nDebugInfoSize"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpImageName"),
+        cef_render_handler_capi_h.C_SHORT.withName("fUnicode"),
         MemoryLayout.paddingLayout(6)
     ).withName("_LOAD_DLL_DEBUG_INFO");
 

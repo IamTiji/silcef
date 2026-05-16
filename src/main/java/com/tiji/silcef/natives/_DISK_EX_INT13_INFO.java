@@ -33,14 +33,14 @@ public class _DISK_EX_INT13_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("ExBufferSize"),
-        cef_master_h.C_SHORT.withName("ExFlags"),
-        cef_master_h.C_LONG.withName("ExCylinders"),
-        cef_master_h.C_LONG.withName("ExHeads"),
-        cef_master_h.C_LONG.withName("ExSectorsPerTrack"),
-        cef_master_h.C_LONG_LONG.withName("ExSectorsPerDrive"),
-        cef_master_h.C_SHORT.withName("ExSectorSize"),
-        cef_master_h.C_SHORT.withName("ExReserved"),
+        cef_render_handler_capi_h.C_SHORT.withName("ExBufferSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("ExFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("ExCylinders"),
+        cef_render_handler_capi_h.C_LONG.withName("ExHeads"),
+        cef_render_handler_capi_h.C_LONG.withName("ExSectorsPerTrack"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ExSectorsPerDrive"),
+        cef_render_handler_capi_h.C_SHORT.withName("ExSectorSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("ExReserved"),
         MemoryLayout.paddingLayout(4)
     ).withName("_DISK_EX_INT13_INFO");
 

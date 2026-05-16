@@ -28,9 +28,9 @@ public class __crt_locale_data_public {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("_locale_pctype"),
-        cef_master_h.C_INT.withName("_locale_mb_cur_max"),
-        cef_master_h.C_INT.withName("_locale_lc_codepage")
+        cef_string_types_h.C_POINTER.withName("_locale_pctype"),
+        cef_string_types_h.C_INT.withName("_locale_mb_cur_max"),
+        cef_string_types_h.C_INT.withName("_locale_lc_codepage")
     ).withName("__crt_locale_data_public");
 
     /**

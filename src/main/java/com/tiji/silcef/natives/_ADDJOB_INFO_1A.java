@@ -27,8 +27,8 @@ public class _ADDJOB_INFO_1A {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("Path"),
-        cef_master_h.C_LONG.withName("JobId"),
+        cef_render_handler_capi_h.C_POINTER.withName("Path"),
+        cef_render_handler_capi_h.C_LONG.withName("JobId"),
         MemoryLayout.paddingLayout(4)
     ).withName("_ADDJOB_INFO_1A");
 

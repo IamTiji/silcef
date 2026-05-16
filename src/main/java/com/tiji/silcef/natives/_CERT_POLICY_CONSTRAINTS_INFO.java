@@ -29,10 +29,10 @@ public class _CERT_POLICY_CONSTRAINTS_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("fRequireExplicitPolicy"),
-        cef_master_h.C_LONG.withName("dwRequireExplicitPolicySkipCerts"),
-        cef_master_h.C_INT.withName("fInhibitPolicyMapping"),
-        cef_master_h.C_LONG.withName("dwInhibitPolicyMappingSkipCerts")
+        cef_render_handler_capi_h.C_INT.withName("fRequireExplicitPolicy"),
+        cef_render_handler_capi_h.C_LONG.withName("dwRequireExplicitPolicySkipCerts"),
+        cef_render_handler_capi_h.C_INT.withName("fInhibitPolicyMapping"),
+        cef_render_handler_capi_h.C_LONG.withName("dwInhibitPolicyMappingSkipCerts")
     ).withName("_CERT_POLICY_CONSTRAINTS_INFO");
 
     /**

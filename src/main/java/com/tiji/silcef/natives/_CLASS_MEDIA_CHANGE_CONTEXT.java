@@ -27,8 +27,8 @@ public class _CLASS_MEDIA_CHANGE_CONTEXT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("MediaChangeCount"),
-        cef_master_h.C_LONG.withName("NewState")
+        cef_render_handler_capi_h.C_LONG.withName("MediaChangeCount"),
+        cef_render_handler_capi_h.C_LONG.withName("NewState")
     ).withName("_CLASS_MEDIA_CHANGE_CONTEXT");
 
     /**

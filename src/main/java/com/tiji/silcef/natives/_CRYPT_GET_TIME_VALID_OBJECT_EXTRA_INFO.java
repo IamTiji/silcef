@@ -32,13 +32,13 @@ public class _CRYPT_GET_TIME_VALID_OBJECT_EXTRA_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_INT.withName("iDeltaCrlIndicator"),
-        cef_master_h.C_POINTER.withName("pftCacheResync"),
-        cef_master_h.C_POINTER.withName("pLastSyncTime"),
-        cef_master_h.C_POINTER.withName("pMaxAgeTime"),
-        cef_master_h.C_POINTER.withName("pChainPara"),
-        cef_master_h.C_POINTER.withName("pDeltaCrlIndicator")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("iDeltaCrlIndicator"),
+        cef_render_handler_capi_h.C_POINTER.withName("pftCacheResync"),
+        cef_render_handler_capi_h.C_POINTER.withName("pLastSyncTime"),
+        cef_render_handler_capi_h.C_POINTER.withName("pMaxAgeTime"),
+        cef_render_handler_capi_h.C_POINTER.withName("pChainPara"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDeltaCrlIndicator")
     ).withName("_CRYPT_GET_TIME_VALID_OBJECT_EXTRA_INFO");
 
     /**

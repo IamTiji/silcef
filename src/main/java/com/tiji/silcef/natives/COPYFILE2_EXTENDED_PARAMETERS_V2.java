@@ -36,18 +36,18 @@ public class COPYFILE2_EXTENDED_PARAMETERS_V2 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSize"),
-        cef_master_h.C_LONG.withName("dwCopyFlags"),
-        cef_master_h.C_POINTER.withName("pfCancel"),
-        cef_master_h.C_POINTER.withName("pProgressRoutine"),
-        cef_master_h.C_POINTER.withName("pvCallbackContext"),
-        cef_master_h.C_LONG.withName("dwCopyFlagsV2"),
-        cef_master_h.C_LONG.withName("ioDesiredSize"),
-        cef_master_h.C_LONG.withName("ioDesiredRate"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCopyFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfCancel"),
+        cef_render_handler_capi_h.C_POINTER.withName("pProgressRoutine"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvCallbackContext"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCopyFlagsV2"),
+        cef_render_handler_capi_h.C_LONG.withName("ioDesiredSize"),
+        cef_render_handler_capi_h.C_LONG.withName("ioDesiredRate"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pProgressRoutineOld"),
-        cef_master_h.C_POINTER.withName("SourceOplockKeys"),
-        MemoryLayout.sequenceLayout(6, cef_master_h.C_POINTER).withName("reserved")
+        cef_render_handler_capi_h.C_POINTER.withName("pProgressRoutineOld"),
+        cef_render_handler_capi_h.C_POINTER.withName("SourceOplockKeys"),
+        MemoryLayout.sequenceLayout(6, cef_render_handler_capi_h.C_POINTER).withName("reserved")
     ).withName("COPYFILE2_EXTENDED_PARAMETERS_V2");
 
     /**

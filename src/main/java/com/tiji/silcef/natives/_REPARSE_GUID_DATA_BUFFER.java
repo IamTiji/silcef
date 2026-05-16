@@ -32,9 +32,9 @@ public class _REPARSE_GUID_DATA_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ReparseTag"),
-        cef_master_h.C_SHORT.withName("ReparseDataLength"),
-        cef_master_h.C_SHORT.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("ReparseTag"),
+        cef_render_handler_capi_h.C_SHORT.withName("ReparseDataLength"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved"),
         _GUID.layout().withName("ReparseGuid"),
         _REPARSE_GUID_DATA_BUFFER.GenericReparseBuffer.layout().withName("GenericReparseBuffer"),
         MemoryLayout.paddingLayout(3)
@@ -237,7 +237,7 @@ public class _REPARSE_GUID_DATA_BUFFER {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("DataBuffer")
+            MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("DataBuffer")
         ).withName("$anon$15660:5");
 
         /**

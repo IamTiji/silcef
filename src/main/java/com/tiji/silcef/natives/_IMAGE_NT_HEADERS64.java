@@ -28,7 +28,7 @@ public class _IMAGE_NT_HEADERS64 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Signature"),
+        cef_render_handler_capi_h.C_LONG.withName("Signature"),
         _IMAGE_FILE_HEADER.layout().withName("FileHeader"),
         _IMAGE_OPTIONAL_HEADER64.layout().withName("OptionalHeader")
     ).withName("_IMAGE_NT_HEADERS64");

@@ -33,14 +33,14 @@ public class tagRECONVERTSTRING {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSize"),
-        cef_master_h.C_LONG.withName("dwVersion"),
-        cef_master_h.C_LONG.withName("dwStrLen"),
-        cef_master_h.C_LONG.withName("dwStrOffset"),
-        cef_master_h.C_LONG.withName("dwCompStrLen"),
-        cef_master_h.C_LONG.withName("dwCompStrOffset"),
-        cef_master_h.C_LONG.withName("dwTargetStrLen"),
-        cef_master_h.C_LONG.withName("dwTargetStrOffset")
+        cef_render_handler_capi_h.C_LONG.withName("dwSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStrLen"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStrOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCompStrLen"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCompStrOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTargetStrLen"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTargetStrOffset")
     ).withName("tagRECONVERTSTRING");
 
     /**

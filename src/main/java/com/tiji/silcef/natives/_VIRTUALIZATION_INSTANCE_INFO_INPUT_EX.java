@@ -30,12 +30,12 @@ public class _VIRTUALIZATION_INSTANCE_INFO_INPUT_EX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("HeaderSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("HeaderSize"),
         MemoryLayout.paddingLayout(2),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("NotificationInfoSize"),
-        cef_master_h.C_SHORT.withName("NotificationInfoOffset"),
-        cef_master_h.C_SHORT.withName("ProviderMajorVersion")
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("NotificationInfoSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("NotificationInfoOffset"),
+        cef_render_handler_capi_h.C_SHORT.withName("ProviderMajorVersion")
     ).withName("_VIRTUALIZATION_INSTANCE_INFO_INPUT_EX");
 
     /**

@@ -40,25 +40,25 @@ public class _CRYPT_SIGN_MESSAGE_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwMsgEncodingType"),
-        cef_master_h.C_POINTER.withName("pSigningCert"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMsgEncodingType"),
+        cef_render_handler_capi_h.C_POINTER.withName("pSigningCert"),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("HashAlgorithm"),
-        cef_master_h.C_POINTER.withName("pvHashAuxInfo"),
-        cef_master_h.C_LONG.withName("cMsgCert"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvHashAuxInfo"),
+        cef_render_handler_capi_h.C_LONG.withName("cMsgCert"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgpMsgCert"),
-        cef_master_h.C_LONG.withName("cMsgCrl"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgpMsgCert"),
+        cef_render_handler_capi_h.C_LONG.withName("cMsgCrl"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgpMsgCrl"),
-        cef_master_h.C_LONG.withName("cAuthAttr"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgpMsgCrl"),
+        cef_render_handler_capi_h.C_LONG.withName("cAuthAttr"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgAuthAttr"),
-        cef_master_h.C_LONG.withName("cUnauthAttr"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgAuthAttr"),
+        cef_render_handler_capi_h.C_LONG.withName("cUnauthAttr"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgUnauthAttr"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_LONG.withName("dwInnerContentType")
+        cef_render_handler_capi_h.C_POINTER.withName("rgUnauthAttr"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwInnerContentType")
     ).withName("_CRYPT_SIGN_MESSAGE_PARA");
 
     /**

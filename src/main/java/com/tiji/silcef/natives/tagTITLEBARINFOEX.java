@@ -29,9 +29,9 @@ public class tagTITLEBARINFOEX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         tagRECT.layout().withName("rcTitleBar"),
-        MemoryLayout.sequenceLayout(6, cef_master_h.C_LONG).withName("rgstate"),
+        MemoryLayout.sequenceLayout(6, cef_render_handler_capi_h.C_LONG).withName("rgstate"),
         MemoryLayout.sequenceLayout(6, tagRECT.layout()).withName("rgrect")
     ).withName("tagTITLEBARINFOEX");
 

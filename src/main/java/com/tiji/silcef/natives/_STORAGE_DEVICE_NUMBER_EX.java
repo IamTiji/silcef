@@ -32,13 +32,13 @@ public class _STORAGE_DEVICE_NUMBER_EX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("DeviceType"),
-        cef_master_h.C_LONG.withName("DeviceNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("DeviceType"),
+        cef_render_handler_capi_h.C_LONG.withName("DeviceNumber"),
         _GUID.layout().withName("DeviceGuid"),
-        cef_master_h.C_LONG.withName("PartitionNumber")
+        cef_render_handler_capi_h.C_LONG.withName("PartitionNumber")
     ).withName("_STORAGE_DEVICE_NUMBER_EX");
 
     /**

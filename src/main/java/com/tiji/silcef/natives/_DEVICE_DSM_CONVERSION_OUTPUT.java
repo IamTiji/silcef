@@ -27,7 +27,7 @@ public class _DEVICE_DSM_CONVERSION_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
         _GUID.layout().withName("Source")
     ).withName("_DEVICE_DSM_CONVERSION_OUTPUT");
 

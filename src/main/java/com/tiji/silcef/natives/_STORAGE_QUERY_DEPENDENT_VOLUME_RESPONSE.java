@@ -31,8 +31,8 @@ public class _STORAGE_QUERY_DEPENDENT_VOLUME_RESPONSE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ResponseLevel"),
-        cef_master_h.C_LONG.withName("NumberEntries"),
+        cef_render_handler_capi_h.C_LONG.withName("ResponseLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberEntries"),
         MemoryLayout.unionLayout(
             MemoryLayout.sequenceLayout(0, _STORAGE_QUERY_DEPENDENT_VOLUME_LEV1_ENTRY.layout()).withName("Lev1Depends"),
             MemoryLayout.sequenceLayout(0, _STORAGE_QUERY_DEPENDENT_VOLUME_LEV2_ENTRY.layout()).withName("Lev2Depends"),

@@ -37,11 +37,11 @@ public class _CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Name"),
-        cef_master_h.C_SHORT.withName("ValueType"),
-        cef_master_h.C_SHORT.withName("Reserved"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("ValueCount"),
+        cef_render_handler_capi_h.C_LONG.withName("Name"),
+        cef_render_handler_capi_h.C_SHORT.withName("ValueType"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("ValueCount"),
         _CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1.Values.layout().withName("Values")
     ).withName("_CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1");
 
@@ -290,11 +290,11 @@ public class _CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1 {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG).withName("pInt64"),
-            MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG).withName("pUint64"),
-            MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG).withName("ppString"),
-            MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG).withName("pFqbn"),
-            MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG).withName("pOctetString")
+            MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG).withName("pInt64"),
+            MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG).withName("pUint64"),
+            MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG).withName("ppString"),
+            MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG).withName("pFqbn"),
+            MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG).withName("pOctetString")
         ).withName("$anon$12522:5");
 
         /**

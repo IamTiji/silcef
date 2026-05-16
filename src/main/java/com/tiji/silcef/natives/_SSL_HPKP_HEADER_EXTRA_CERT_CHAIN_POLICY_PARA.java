@@ -29,10 +29,10 @@ public class _SSL_HPKP_HEADER_EXTRA_CERT_CHAIN_POLICY_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwReserved"),
-        cef_master_h.C_POINTER.withName("pwszServerName"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_POINTER).withName("rgpszHpkpValue")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwReserved"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszServerName"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_POINTER).withName("rgpszHpkpValue")
     ).withName("_SSL_HPKP_HEADER_EXTRA_CERT_CHAIN_POLICY_PARA");
 
     /**

@@ -32,15 +32,15 @@ public class tagPOLYTEXTA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("x"),
-        cef_master_h.C_INT.withName("y"),
-        cef_master_h.C_INT.withName("n"),
+        cef_render_handler_capi_h.C_INT.withName("x"),
+        cef_render_handler_capi_h.C_INT.withName("y"),
+        cef_render_handler_capi_h.C_INT.withName("n"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpstr"),
-        cef_master_h.C_INT.withName("uiFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpstr"),
+        cef_render_handler_capi_h.C_INT.withName("uiFlags"),
         tagRECT.layout().withName("rcl"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pdx")
+        cef_render_handler_capi_h.C_POINTER.withName("pdx")
     ).withName("tagPOLYTEXTA");
 
     /**

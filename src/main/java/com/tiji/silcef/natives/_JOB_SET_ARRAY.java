@@ -28,9 +28,9 @@ public class _JOB_SET_ARRAY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("JobHandle"),
-        cef_master_h.C_LONG.withName("MemberLevel"),
-        cef_master_h.C_LONG.withName("Flags")
+        cef_render_handler_capi_h.C_POINTER.withName("JobHandle"),
+        cef_render_handler_capi_h.C_LONG.withName("MemberLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags")
     ).withName("_JOB_SET_ARRAY");
 
     /**

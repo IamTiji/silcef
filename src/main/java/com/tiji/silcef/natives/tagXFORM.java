@@ -31,12 +31,12 @@ public class tagXFORM {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_FLOAT.withName("eM11"),
-        cef_master_h.C_FLOAT.withName("eM12"),
-        cef_master_h.C_FLOAT.withName("eM21"),
-        cef_master_h.C_FLOAT.withName("eM22"),
-        cef_master_h.C_FLOAT.withName("eDx"),
-        cef_master_h.C_FLOAT.withName("eDy")
+        cef_render_handler_capi_h.C_FLOAT.withName("eM11"),
+        cef_render_handler_capi_h.C_FLOAT.withName("eM12"),
+        cef_render_handler_capi_h.C_FLOAT.withName("eM21"),
+        cef_render_handler_capi_h.C_FLOAT.withName("eM22"),
+        cef_render_handler_capi_h.C_FLOAT.withName("eDx"),
+        cef_render_handler_capi_h.C_FLOAT.withName("eDy")
     ).withName("tagXFORM");
 
     /**

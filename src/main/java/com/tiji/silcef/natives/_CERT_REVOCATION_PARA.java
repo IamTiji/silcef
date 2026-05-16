@@ -31,14 +31,14 @@ public class _CERT_REVOCATION_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pIssuerCert"),
-        cef_master_h.C_LONG.withName("cCertStore"),
+        cef_render_handler_capi_h.C_POINTER.withName("pIssuerCert"),
+        cef_render_handler_capi_h.C_LONG.withName("cCertStore"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgCertStore"),
-        cef_master_h.C_POINTER.withName("hCrlStore"),
-        cef_master_h.C_POINTER.withName("pftTimeToUse")
+        cef_render_handler_capi_h.C_POINTER.withName("rgCertStore"),
+        cef_render_handler_capi_h.C_POINTER.withName("hCrlStore"),
+        cef_render_handler_capi_h.C_POINTER.withName("pftTimeToUse")
     ).withName("_CERT_REVOCATION_PARA");
 
     /**

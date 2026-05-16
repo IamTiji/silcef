@@ -28,10 +28,10 @@ public class _UMS_CREATE_THREAD_ATTRIBUTES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("UmsVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("UmsVersion"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("UmsContext"),
-        cef_master_h.C_POINTER.withName("UmsCompletionList")
+        cef_render_handler_capi_h.C_POINTER.withName("UmsContext"),
+        cef_render_handler_capi_h.C_POINTER.withName("UmsCompletionList")
     ).withName("_UMS_CREATE_THREAD_ATTRIBUTES");
 
     /**

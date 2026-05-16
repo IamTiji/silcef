@@ -29,10 +29,10 @@ public class _BLENDFUNCTION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("BlendOp"),
-        cef_master_h.C_CHAR.withName("BlendFlags"),
-        cef_master_h.C_CHAR.withName("SourceConstantAlpha"),
-        cef_master_h.C_CHAR.withName("AlphaFormat")
+        cef_render_handler_capi_h.C_CHAR.withName("BlendOp"),
+        cef_render_handler_capi_h.C_CHAR.withName("BlendFlags"),
+        cef_render_handler_capi_h.C_CHAR.withName("SourceConstantAlpha"),
+        cef_render_handler_capi_h.C_CHAR.withName("AlphaFormat")
     ).withName("_BLENDFUNCTION");
 
     /**

@@ -32,13 +32,13 @@ public class tagWINDOWPOS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hwnd"),
-        cef_master_h.C_POINTER.withName("hwndInsertAfter"),
-        cef_master_h.C_INT.withName("x"),
-        cef_master_h.C_INT.withName("y"),
-        cef_master_h.C_INT.withName("cx"),
-        cef_master_h.C_INT.withName("cy"),
-        cef_master_h.C_INT.withName("flags"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwnd"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndInsertAfter"),
+        cef_render_handler_capi_h.C_INT.withName("x"),
+        cef_render_handler_capi_h.C_INT.withName("y"),
+        cef_render_handler_capi_h.C_INT.withName("cx"),
+        cef_render_handler_capi_h.C_INT.withName("cy"),
+        cef_render_handler_capi_h.C_INT.withName("flags"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagWINDOWPOS");
 

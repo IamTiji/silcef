@@ -29,10 +29,10 @@ public class _DRIVERSTATUS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("bDriverError"),
-        cef_master_h.C_CHAR.withName("bIDEError"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("bReserved"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.align(cef_master_h.C_LONG, 1)).withName("dwReserved")
+        cef_render_handler_capi_h.C_CHAR.withName("bDriverError"),
+        cef_render_handler_capi_h.C_CHAR.withName("bIDEError"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("bReserved"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1)).withName("dwReserved")
     ).withName("_DRIVERSTATUS");
 
     /**

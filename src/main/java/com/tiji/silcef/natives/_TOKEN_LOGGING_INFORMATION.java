@@ -38,20 +38,20 @@ public class _TOKEN_LOGGING_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("TokenType"),
+        cef_render_handler_capi_h.C_INT.withName("TokenType"),
         _TOKEN_ELEVATION.layout().withName("TokenElevation"),
-        cef_master_h.C_INT.withName("TokenElevationType"),
-        cef_master_h.C_INT.withName("ImpersonationLevel"),
-        cef_master_h.C_LONG.withName("IntegrityLevel"),
+        cef_render_handler_capi_h.C_INT.withName("TokenElevationType"),
+        cef_render_handler_capi_h.C_INT.withName("ImpersonationLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("IntegrityLevel"),
         MemoryLayout.paddingLayout(4),
         _SID_AND_ATTRIBUTES.layout().withName("User"),
-        cef_master_h.C_POINTER.withName("TrustLevelSid"),
-        cef_master_h.C_LONG.withName("SessionId"),
-        cef_master_h.C_LONG.withName("AppContainerNumber"),
+        cef_render_handler_capi_h.C_POINTER.withName("TrustLevelSid"),
+        cef_render_handler_capi_h.C_LONG.withName("SessionId"),
+        cef_render_handler_capi_h.C_LONG.withName("AppContainerNumber"),
         _LUID.layout().withName("AuthenticationId"),
-        cef_master_h.C_LONG.withName("GroupCount"),
-        cef_master_h.C_LONG.withName("GroupsLength"),
-        cef_master_h.C_POINTER.withName("Groups")
+        cef_render_handler_capi_h.C_LONG.withName("GroupCount"),
+        cef_render_handler_capi_h.C_LONG.withName("GroupsLength"),
+        cef_render_handler_capi_h.C_POINTER.withName("Groups")
     ).withName("_TOKEN_LOGGING_INFORMATION");
 
     /**

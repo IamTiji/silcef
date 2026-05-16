@@ -35,16 +35,16 @@ public class _BY_HANDLE_FILE_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwFileAttributes"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFileAttributes"),
         _FILETIME.layout().withName("ftCreationTime"),
         _FILETIME.layout().withName("ftLastAccessTime"),
         _FILETIME.layout().withName("ftLastWriteTime"),
-        cef_master_h.C_LONG.withName("dwVolumeSerialNumber"),
-        cef_master_h.C_LONG.withName("nFileSizeHigh"),
-        cef_master_h.C_LONG.withName("nFileSizeLow"),
-        cef_master_h.C_LONG.withName("nNumberOfLinks"),
-        cef_master_h.C_LONG.withName("nFileIndexHigh"),
-        cef_master_h.C_LONG.withName("nFileIndexLow")
+        cef_render_handler_capi_h.C_LONG.withName("dwVolumeSerialNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("nFileSizeHigh"),
+        cef_render_handler_capi_h.C_LONG.withName("nFileSizeLow"),
+        cef_render_handler_capi_h.C_LONG.withName("nNumberOfLinks"),
+        cef_render_handler_capi_h.C_LONG.withName("nFileIndexHigh"),
+        cef_render_handler_capi_h.C_LONG.withName("nFileIndexLow")
     ).withName("_BY_HANDLE_FILE_INFORMATION");
 
     /**

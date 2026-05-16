@@ -30,11 +30,11 @@ public class _RTL_BARRIER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Reserved1"),
-        cef_master_h.C_LONG.withName("Reserved2"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_LONG_LONG).withName("Reserved3"),
-        cef_master_h.C_LONG.withName("Reserved4"),
-        cef_master_h.C_LONG.withName("Reserved5")
+        cef_render_handler_capi_h.C_LONG.withName("Reserved1"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved2"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_LONG_LONG).withName("Reserved3"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved4"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved5")
     ).withName("_RTL_BARRIER");
 
     /**

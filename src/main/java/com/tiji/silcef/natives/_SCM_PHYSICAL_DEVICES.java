@@ -29,9 +29,9 @@ public class _SCM_PHYSICAL_DEVICES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("DeviceCount"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("DeviceCount"),
         MemoryLayout.sequenceLayout(1, _SCM_PHYSICAL_DEVICE_INSTANCE.layout()).withName("Devices")
     ).withName("_SCM_PHYSICAL_DEVICES");
 

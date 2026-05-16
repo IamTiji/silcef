@@ -29,11 +29,11 @@ public class tagMONERRSTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cb"),
-        cef_master_h.C_INT.withName("wLastError"),
-        cef_master_h.C_LONG.withName("dwTime"),
+        cef_render_handler_capi_h.C_INT.withName("cb"),
+        cef_render_handler_capi_h.C_INT.withName("wLastError"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTime"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hTask")
+        cef_render_handler_capi_h.C_POINTER.withName("hTask")
     ).withName("tagMONERRSTRUCT");
 
     /**

@@ -28,9 +28,9 @@ public class _DEVICE_DSM_OFFLOAD_READ_PARAMETERS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("TimeToLive"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_LONG).withName("Reserved")
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("TimeToLive"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_LONG).withName("Reserved")
     ).withName("_DEVICE_DSM_OFFLOAD_READ_PARAMETERS");
 
     /**

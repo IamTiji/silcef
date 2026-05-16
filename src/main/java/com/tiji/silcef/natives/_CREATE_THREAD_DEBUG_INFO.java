@@ -28,9 +28,9 @@ public class _CREATE_THREAD_DEBUG_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hThread"),
-        cef_master_h.C_POINTER.withName("lpThreadLocalBase"),
-        cef_master_h.C_POINTER.withName("lpStartAddress")
+        cef_render_handler_capi_h.C_POINTER.withName("hThread"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpThreadLocalBase"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpStartAddress")
     ).withName("_CREATE_THREAD_DEBUG_INFO");
 
     /**

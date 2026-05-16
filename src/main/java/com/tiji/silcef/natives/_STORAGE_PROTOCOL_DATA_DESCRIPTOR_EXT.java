@@ -28,8 +28,8 @@ public class _STORAGE_PROTOCOL_DATA_DESCRIPTOR_EXT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
         _STORAGE_PROTOCOL_SPECIFIC_DATA_EXT.layout().withName("ProtocolSpecificData")
     ).withName("_STORAGE_PROTOCOL_DATA_DESCRIPTOR_EXT");
 

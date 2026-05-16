@@ -29,10 +29,10 @@ public class _DOC_INFO_3A {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pDocName"),
-        cef_master_h.C_POINTER.withName("pOutputFile"),
-        cef_master_h.C_POINTER.withName("pDatatype"),
-        cef_master_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDocName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pOutputFile"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDatatype"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
         MemoryLayout.paddingLayout(4)
     ).withName("_DOC_INFO_3A");
 

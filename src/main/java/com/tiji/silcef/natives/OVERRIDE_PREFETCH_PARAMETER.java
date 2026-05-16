@@ -26,7 +26,7 @@ public class OVERRIDE_PREFETCH_PARAMETER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Value")
+        cef_render_handler_capi_h.C_INT.withName("Value")
     ).withName("OVERRIDE_PREFETCH_PARAMETER");
 
     /**

@@ -30,11 +30,11 @@ public class _COMMTIMEOUTS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ReadIntervalTimeout"),
-        cef_master_h.C_LONG.withName("ReadTotalTimeoutMultiplier"),
-        cef_master_h.C_LONG.withName("ReadTotalTimeoutConstant"),
-        cef_master_h.C_LONG.withName("WriteTotalTimeoutMultiplier"),
-        cef_master_h.C_LONG.withName("WriteTotalTimeoutConstant")
+        cef_render_handler_capi_h.C_LONG.withName("ReadIntervalTimeout"),
+        cef_render_handler_capi_h.C_LONG.withName("ReadTotalTimeoutMultiplier"),
+        cef_render_handler_capi_h.C_LONG.withName("ReadTotalTimeoutConstant"),
+        cef_render_handler_capi_h.C_LONG.withName("WriteTotalTimeoutMultiplier"),
+        cef_render_handler_capi_h.C_LONG.withName("WriteTotalTimeoutConstant")
     ).withName("_COMMTIMEOUTS");
 
     /**

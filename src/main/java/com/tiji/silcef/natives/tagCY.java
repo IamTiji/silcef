@@ -31,10 +31,10 @@ public class tagCY {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
         MemoryLayout.structLayout(
-            cef_master_h.C_LONG.withName("Lo"),
-            cef_master_h.C_LONG.withName("Hi")
+            cef_render_handler_capi_h.C_LONG.withName("Lo"),
+            cef_render_handler_capi_h.C_LONG.withName("Hi")
         ).withName("$anon$679:5"),
-        cef_master_h.C_LONG_LONG.withName("int64")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("int64")
     ).withName("tagCY");
 
     /**

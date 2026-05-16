@@ -29,9 +29,9 @@ public class _IMAGE_POLICY_METADATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("Version"),
-        MemoryLayout.sequenceLayout(7, cef_master_h.C_CHAR).withName("Reserved0"),
-        cef_master_h.C_LONG_LONG.withName("ApplicationId"),
+        cef_render_handler_capi_h.C_CHAR.withName("Version"),
+        MemoryLayout.sequenceLayout(7, cef_render_handler_capi_h.C_CHAR).withName("Reserved0"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ApplicationId"),
         MemoryLayout.sequenceLayout(0, _IMAGE_POLICY_ENTRY.layout()).withName("Policies")
     ).withName("_IMAGE_POLICY_METADATA");
 

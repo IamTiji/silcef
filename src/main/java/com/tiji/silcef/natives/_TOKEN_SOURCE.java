@@ -27,7 +27,7 @@ public class _TOKEN_SOURCE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_CHAR).withName("SourceName"),
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_CHAR).withName("SourceName"),
         _LUID.layout().withName("SourceIdentifier")
     ).withName("_TOKEN_SOURCE");
 

@@ -28,7 +28,7 @@ public class _BIN_COUNT {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _BIN_RANGE.layout().withName("BinRange"),
-        cef_master_h.C_LONG.withName("BinCount"),
+        cef_render_handler_capi_h.C_LONG.withName("BinCount"),
         MemoryLayout.paddingLayout(4)
     ).withName("_BIN_COUNT");
 

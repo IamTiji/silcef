@@ -27,9 +27,9 @@ public class tagBSTRBLOB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pData")
+        cef_render_handler_capi_h.C_POINTER.withName("pData")
     ).withName("tagBSTRBLOB");
 
     /**

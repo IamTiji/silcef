@@ -34,14 +34,14 @@ public class tagGUITHREADINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("flags"),
-        cef_master_h.C_POINTER.withName("hwndActive"),
-        cef_master_h.C_POINTER.withName("hwndFocus"),
-        cef_master_h.C_POINTER.withName("hwndCapture"),
-        cef_master_h.C_POINTER.withName("hwndMenuOwner"),
-        cef_master_h.C_POINTER.withName("hwndMoveSize"),
-        cef_master_h.C_POINTER.withName("hwndCaret"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("flags"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndActive"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndFocus"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndCapture"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndMenuOwner"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndMoveSize"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndCaret"),
         tagRECT.layout().withName("rcCaret")
     ).withName("tagGUITHREADINFO");
 

@@ -26,7 +26,7 @@ public class tagHANDLETABLE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_POINTER).withName("objectHandle")
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_POINTER).withName("objectHandle")
     ).withName("tagHANDLETABLE");
 
     /**

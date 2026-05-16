@@ -27,7 +27,7 @@ public class tagPARAMDESCEX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cBytes"),
+        cef_render_handler_capi_h.C_LONG.withName("cBytes"),
         MemoryLayout.paddingLayout(4),
         tagVARIANT.layout().withName("varDefaultValue")
     ).withName("tagPARAMDESCEX");

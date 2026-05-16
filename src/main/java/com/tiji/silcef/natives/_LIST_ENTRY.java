@@ -27,8 +27,8 @@ public class _LIST_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("Flink"),
-        cef_master_h.C_POINTER.withName("Blink")
+        cef_render_handler_capi_h.C_POINTER.withName("Flink"),
+        cef_render_handler_capi_h.C_POINTER.withName("Blink")
     ).withName("_LIST_ENTRY");
 
     /**

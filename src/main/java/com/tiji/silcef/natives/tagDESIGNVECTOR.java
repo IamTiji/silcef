@@ -28,9 +28,9 @@ public class tagDESIGNVECTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dvReserved"),
-        cef_master_h.C_LONG.withName("dvNumAxes"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_LONG).withName("dvValues")
+        cef_render_handler_capi_h.C_LONG.withName("dvReserved"),
+        cef_render_handler_capi_h.C_LONG.withName("dvNumAxes"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_LONG).withName("dvValues")
     ).withName("tagDESIGNVECTOR");
 
     /**

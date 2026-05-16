@@ -28,9 +28,9 @@ public class _STORAGE_DEVICE_NUMBER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("DeviceType"),
-        cef_master_h.C_LONG.withName("DeviceNumber"),
-        cef_master_h.C_LONG.withName("PartitionNumber")
+        cef_render_handler_capi_h.C_LONG.withName("DeviceType"),
+        cef_render_handler_capi_h.C_LONG.withName("DeviceNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("PartitionNumber")
     ).withName("_STORAGE_DEVICE_NUMBER");
 
     /**

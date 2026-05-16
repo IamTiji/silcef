@@ -27,7 +27,7 @@ public class _CERT_OTHER_LOGOTYPE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszObjId"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszObjId"),
         _CERT_LOGOTYPE_INFO.layout().withName("LogotypeInfo")
     ).withName("_CERT_OTHER_LOGOTYPE_INFO");
 

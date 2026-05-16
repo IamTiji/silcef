@@ -28,9 +28,9 @@ public class _CERT_KEY_USAGE_RESTRICTION_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cCertPolicyId"),
+        cef_render_handler_capi_h.C_LONG.withName("cCertPolicyId"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgCertPolicyId"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgCertPolicyId"),
         _CRYPT_BIT_BLOB.layout().withName("RestrictedKeyUsage")
     ).withName("_CERT_KEY_USAGE_RESTRICTION_INFO");
 

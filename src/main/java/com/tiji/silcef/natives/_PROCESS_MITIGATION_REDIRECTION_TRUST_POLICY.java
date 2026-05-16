@@ -34,7 +34,7 @@ public class _PROCESS_MITIGATION_REDIRECTION_TRUST_POLICY {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("Flags"),
+            cef_render_handler_capi_h.C_LONG.withName("Flags"),
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$13310:9")

@@ -39,16 +39,16 @@ public class DISPLAYCONFIG_VIDEO_SIGNAL_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("pixelRate"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("pixelRate"),
         DISPLAYCONFIG_RATIONAL.layout().withName("hSyncFreq"),
         DISPLAYCONFIG_RATIONAL.layout().withName("vSyncFreq"),
         DISPLAYCONFIG_2DREGION.layout().withName("activeSize"),
         DISPLAYCONFIG_2DREGION.layout().withName("totalSize"),
         MemoryLayout.unionLayout(
             DISPLAYCONFIG_VIDEO_SIGNAL_INFO.AdditionalSignalInfo.layout().withName("AdditionalSignalInfo"),
-            cef_master_h.C_INT.withName("videoStandard")
+            cef_render_handler_capi_h.C_INT.withName("videoStandard")
         ).withName("$anon$2854:5"),
-        cef_master_h.C_INT.withName("scanLineOrdering")
+        cef_render_handler_capi_h.C_INT.withName("scanLineOrdering")
     ).withName("DISPLAYCONFIG_VIDEO_SIGNAL_INFO");
 
     /**

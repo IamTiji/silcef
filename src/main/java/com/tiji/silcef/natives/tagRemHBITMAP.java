@@ -27,8 +27,8 @@ public class tagRemHBITMAP {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbData"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("data"),
+        cef_render_handler_capi_h.C_LONG.withName("cbData"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("data"),
         MemoryLayout.paddingLayout(3)
     ).withName("tagRemHBITMAP");
 

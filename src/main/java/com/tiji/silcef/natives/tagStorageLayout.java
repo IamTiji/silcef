@@ -29,9 +29,9 @@ public class tagStorageLayout {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("LayoutType"),
+        cef_render_handler_capi_h.C_LONG.withName("LayoutType"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pwcsElementName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwcsElementName"),
         _LARGE_INTEGER.layout().withName("cOffset"),
         _LARGE_INTEGER.layout().withName("cBytes")
     ).withName("tagStorageLayout");

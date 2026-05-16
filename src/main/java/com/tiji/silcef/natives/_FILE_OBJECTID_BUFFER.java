@@ -34,14 +34,14 @@ public class _FILE_OBJECTID_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("ObjectId"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("ObjectId"),
         MemoryLayout.unionLayout(
             MemoryLayout.structLayout(
-                MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("BirthVolumeId"),
-                MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("BirthObjectId"),
-                MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("DomainId")
+                MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("BirthVolumeId"),
+                MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("BirthObjectId"),
+                MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("DomainId")
             ).withName("$anon$12858:9"),
-            MemoryLayout.sequenceLayout(48, cef_master_h.C_CHAR).withName("ExtendedInfo")
+            MemoryLayout.sequenceLayout(48, cef_render_handler_capi_h.C_CHAR).withName("ExtendedInfo")
         ).withName("$anon$12857:5")
     ).withName("_FILE_OBJECTID_BUFFER");
 

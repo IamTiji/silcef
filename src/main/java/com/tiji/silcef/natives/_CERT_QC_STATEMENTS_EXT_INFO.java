@@ -27,9 +27,9 @@ public class _CERT_QC_STATEMENTS_EXT_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cStatement"),
+        cef_render_handler_capi_h.C_LONG.withName("cStatement"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgStatement")
+        cef_render_handler_capi_h.C_POINTER.withName("rgStatement")
     ).withName("_CERT_QC_STATEMENTS_EXT_INFO");
 
     /**

@@ -30,11 +30,11 @@ public class tagOIFI {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cb"),
-        cef_master_h.C_INT.withName("fMDIApp"),
-        cef_master_h.C_POINTER.withName("hwndFrame"),
-        cef_master_h.C_POINTER.withName("haccel"),
-        cef_master_h.C_INT.withName("cAccelEntries"),
+        cef_render_handler_capi_h.C_INT.withName("cb"),
+        cef_render_handler_capi_h.C_INT.withName("fMDIApp"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndFrame"),
+        cef_render_handler_capi_h.C_POINTER.withName("haccel"),
+        cef_render_handler_capi_h.C_INT.withName("cAccelEntries"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagOIFI");
 

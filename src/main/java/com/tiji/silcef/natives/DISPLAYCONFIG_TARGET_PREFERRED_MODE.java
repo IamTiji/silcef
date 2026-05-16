@@ -30,8 +30,8 @@ public class DISPLAYCONFIG_TARGET_PREFERRED_MODE {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         DISPLAYCONFIG_DEVICE_INFO_HEADER.layout().withName("header"),
-        cef_master_h.C_INT.withName("width"),
-        cef_master_h.C_INT.withName("height"),
+        cef_render_handler_capi_h.C_INT.withName("width"),
+        cef_render_handler_capi_h.C_INT.withName("height"),
         MemoryLayout.paddingLayout(4),
         DISPLAYCONFIG_TARGET_MODE.layout().withName("targetMode")
     ).withName("DISPLAYCONFIG_TARGET_PREFERRED_MODE");

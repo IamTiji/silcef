@@ -28,8 +28,8 @@ public class _FILE_LEVEL_TRIM {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Key"),
-        cef_master_h.C_LONG.withName("NumRanges"),
+        cef_render_handler_capi_h.C_LONG.withName("Key"),
+        cef_render_handler_capi_h.C_LONG.withName("NumRanges"),
         MemoryLayout.sequenceLayout(1, _FILE_LEVEL_TRIM_RANGE.layout()).withName("Ranges")
     ).withName("_FILE_LEVEL_TRIM");
 

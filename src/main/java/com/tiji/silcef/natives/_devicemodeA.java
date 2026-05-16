@@ -71,52 +71,52 @@ public class _devicemodeA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("dmDeviceName"),
-        cef_master_h.C_SHORT.withName("dmSpecVersion"),
-        cef_master_h.C_SHORT.withName("dmDriverVersion"),
-        cef_master_h.C_SHORT.withName("dmSize"),
-        cef_master_h.C_SHORT.withName("dmDriverExtra"),
-        cef_master_h.C_LONG.withName("dmFields"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("dmDeviceName"),
+        cef_render_handler_capi_h.C_SHORT.withName("dmSpecVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("dmDriverVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("dmSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("dmDriverExtra"),
+        cef_render_handler_capi_h.C_LONG.withName("dmFields"),
         MemoryLayout.unionLayout(
             MemoryLayout.structLayout(
-                cef_master_h.C_SHORT.withName("dmOrientation"),
-                cef_master_h.C_SHORT.withName("dmPaperSize"),
-                cef_master_h.C_SHORT.withName("dmPaperLength"),
-                cef_master_h.C_SHORT.withName("dmPaperWidth"),
-                cef_master_h.C_SHORT.withName("dmScale"),
-                cef_master_h.C_SHORT.withName("dmCopies"),
-                cef_master_h.C_SHORT.withName("dmDefaultSource"),
-                cef_master_h.C_SHORT.withName("dmPrintQuality")
+                cef_render_handler_capi_h.C_SHORT.withName("dmOrientation"),
+                cef_render_handler_capi_h.C_SHORT.withName("dmPaperSize"),
+                cef_render_handler_capi_h.C_SHORT.withName("dmPaperLength"),
+                cef_render_handler_capi_h.C_SHORT.withName("dmPaperWidth"),
+                cef_render_handler_capi_h.C_SHORT.withName("dmScale"),
+                cef_render_handler_capi_h.C_SHORT.withName("dmCopies"),
+                cef_render_handler_capi_h.C_SHORT.withName("dmDefaultSource"),
+                cef_render_handler_capi_h.C_SHORT.withName("dmPrintQuality")
             ).withName("$anon$2207:7"),
             MemoryLayout.structLayout(
                 _POINTL.layout().withName("dmPosition"),
-                cef_master_h.C_LONG.withName("dmDisplayOrientation"),
-                cef_master_h.C_LONG.withName("dmDisplayFixedOutput")
+                cef_render_handler_capi_h.C_LONG.withName("dmDisplayOrientation"),
+                cef_render_handler_capi_h.C_LONG.withName("dmDisplayFixedOutput")
             ).withName("$anon$2218:7")
         ).withName("$anon$2205:5"),
-        cef_master_h.C_SHORT.withName("dmColor"),
-        cef_master_h.C_SHORT.withName("dmDuplex"),
-        cef_master_h.C_SHORT.withName("dmYResolution"),
-        cef_master_h.C_SHORT.withName("dmTTOption"),
-        cef_master_h.C_SHORT.withName("dmCollate"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("dmFormName"),
-        cef_master_h.C_SHORT.withName("dmLogPixels"),
-        cef_master_h.C_LONG.withName("dmBitsPerPel"),
-        cef_master_h.C_LONG.withName("dmPelsWidth"),
-        cef_master_h.C_LONG.withName("dmPelsHeight"),
+        cef_render_handler_capi_h.C_SHORT.withName("dmColor"),
+        cef_render_handler_capi_h.C_SHORT.withName("dmDuplex"),
+        cef_render_handler_capi_h.C_SHORT.withName("dmYResolution"),
+        cef_render_handler_capi_h.C_SHORT.withName("dmTTOption"),
+        cef_render_handler_capi_h.C_SHORT.withName("dmCollate"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("dmFormName"),
+        cef_render_handler_capi_h.C_SHORT.withName("dmLogPixels"),
+        cef_render_handler_capi_h.C_LONG.withName("dmBitsPerPel"),
+        cef_render_handler_capi_h.C_LONG.withName("dmPelsWidth"),
+        cef_render_handler_capi_h.C_LONG.withName("dmPelsHeight"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("dmDisplayFlags"),
-            cef_master_h.C_LONG.withName("dmNup")
+            cef_render_handler_capi_h.C_LONG.withName("dmDisplayFlags"),
+            cef_render_handler_capi_h.C_LONG.withName("dmNup")
         ).withName("$anon$2234:5"),
-        cef_master_h.C_LONG.withName("dmDisplayFrequency"),
-        cef_master_h.C_LONG.withName("dmICMMethod"),
-        cef_master_h.C_LONG.withName("dmICMIntent"),
-        cef_master_h.C_LONG.withName("dmMediaType"),
-        cef_master_h.C_LONG.withName("dmDitherType"),
-        cef_master_h.C_LONG.withName("dmReserved1"),
-        cef_master_h.C_LONG.withName("dmReserved2"),
-        cef_master_h.C_LONG.withName("dmPanningWidth"),
-        cef_master_h.C_LONG.withName("dmPanningHeight")
+        cef_render_handler_capi_h.C_LONG.withName("dmDisplayFrequency"),
+        cef_render_handler_capi_h.C_LONG.withName("dmICMMethod"),
+        cef_render_handler_capi_h.C_LONG.withName("dmICMIntent"),
+        cef_render_handler_capi_h.C_LONG.withName("dmMediaType"),
+        cef_render_handler_capi_h.C_LONG.withName("dmDitherType"),
+        cef_render_handler_capi_h.C_LONG.withName("dmReserved1"),
+        cef_render_handler_capi_h.C_LONG.withName("dmReserved2"),
+        cef_render_handler_capi_h.C_LONG.withName("dmPanningWidth"),
+        cef_render_handler_capi_h.C_LONG.withName("dmPanningHeight")
     ).withName("_devicemodeA");
 
     /**

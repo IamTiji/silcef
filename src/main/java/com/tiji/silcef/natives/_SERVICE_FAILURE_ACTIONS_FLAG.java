@@ -26,7 +26,7 @@ public class _SERVICE_FAILURE_ACTIONS_FLAG {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("fFailureActionsOnNonCrashFailures")
+        cef_render_handler_capi_h.C_INT.withName("fFailureActionsOnNonCrashFailures")
     ).withName("_SERVICE_FAILURE_ACTIONS_FLAG");
 
     /**

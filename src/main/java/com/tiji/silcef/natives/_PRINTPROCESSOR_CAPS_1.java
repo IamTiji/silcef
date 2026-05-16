@@ -29,10 +29,10 @@ public class _PRINTPROCESSOR_CAPS_1 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwLevel"),
-        cef_master_h.C_LONG.withName("dwNupOptions"),
-        cef_master_h.C_LONG.withName("dwPageOrderFlags"),
-        cef_master_h.C_LONG.withName("dwNumberOfCopies")
+        cef_render_handler_capi_h.C_LONG.withName("dwLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("dwNupOptions"),
+        cef_render_handler_capi_h.C_LONG.withName("dwPageOrderFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwNumberOfCopies")
     ).withName("_PRINTPROCESSOR_CAPS_1");
 
     /**

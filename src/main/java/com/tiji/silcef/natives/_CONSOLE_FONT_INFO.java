@@ -27,7 +27,7 @@ public class _CONSOLE_FONT_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("nFont"),
+        cef_render_handler_capi_h.C_LONG.withName("nFont"),
         _COORD.layout().withName("dwFontSize")
     ).withName("_CONSOLE_FONT_INFO");
 

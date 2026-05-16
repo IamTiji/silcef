@@ -38,21 +38,21 @@ public class _tagRemBINDINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("szExtraInfo"),
-        cef_master_h.C_LONG.withName("grfBindInfoF"),
-        cef_master_h.C_LONG.withName("dwBindVerb"),
-        cef_master_h.C_POINTER.withName("szCustomVerb"),
-        cef_master_h.C_LONG.withName("cbstgmedData"),
-        cef_master_h.C_LONG.withName("dwOptions"),
-        cef_master_h.C_LONG.withName("dwOptionsFlags"),
-        cef_master_h.C_LONG.withName("dwCodePage"),
+        cef_render_handler_capi_h.C_POINTER.withName("szExtraInfo"),
+        cef_render_handler_capi_h.C_LONG.withName("grfBindInfoF"),
+        cef_render_handler_capi_h.C_LONG.withName("dwBindVerb"),
+        cef_render_handler_capi_h.C_POINTER.withName("szCustomVerb"),
+        cef_render_handler_capi_h.C_LONG.withName("cbstgmedData"),
+        cef_render_handler_capi_h.C_LONG.withName("dwOptions"),
+        cef_render_handler_capi_h.C_LONG.withName("dwOptionsFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCodePage"),
         _REMSECURITY_ATTRIBUTES.layout().withName("securityAttributes"),
         _GUID.layout().withName("iid"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pUnk"),
-        cef_master_h.C_LONG.withName("dwReserved"),
+        cef_render_handler_capi_h.C_POINTER.withName("pUnk"),
+        cef_render_handler_capi_h.C_LONG.withName("dwReserved"),
         MemoryLayout.paddingLayout(4)
     ).withName("_tagRemBINDINFO");
 

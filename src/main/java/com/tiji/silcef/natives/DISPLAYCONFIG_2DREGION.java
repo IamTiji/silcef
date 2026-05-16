@@ -27,8 +27,8 @@ public class DISPLAYCONFIG_2DREGION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cx"),
-        cef_master_h.C_INT.withName("cy")
+        cef_render_handler_capi_h.C_INT.withName("cx"),
+        cef_render_handler_capi_h.C_INT.withName("cy")
     ).withName("DISPLAYCONFIG_2DREGION");
 
     /**

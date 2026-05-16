@@ -28,9 +28,9 @@ public class tagHW_PROFILE_INFOA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwDockInfo"),
-        MemoryLayout.sequenceLayout(39, cef_master_h.C_CHAR).withName("szHwProfileGuid"),
-        MemoryLayout.sequenceLayout(80, cef_master_h.C_CHAR).withName("szHwProfileName"),
+        cef_render_handler_capi_h.C_LONG.withName("dwDockInfo"),
+        MemoryLayout.sequenceLayout(39, cef_render_handler_capi_h.C_CHAR).withName("szHwProfileGuid"),
+        MemoryLayout.sequenceLayout(80, cef_render_handler_capi_h.C_CHAR).withName("szHwProfileName"),
         MemoryLayout.paddingLayout(1)
     ).withName("tagHW_PROFILE_INFOA");
 

@@ -27,8 +27,8 @@ public class _cef_range_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("from"),
-        cef_master_h.C_INT.withName("to")
+        cef_render_handler_capi_h.C_INT.withName("from"),
+        cef_render_handler_capi_h.C_INT.withName("to")
     ).withName("_cef_range_t");
 
     /**

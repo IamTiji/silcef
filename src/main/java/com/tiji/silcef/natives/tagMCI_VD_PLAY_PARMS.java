@@ -29,10 +29,10 @@ public class tagMCI_VD_PLAY_PARMS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 1).withName("dwCallback"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwFrom"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwTo"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwSpeed")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 1).withName("dwCallback"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwFrom"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwTo"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwSpeed")
     ).withName("tagMCI_VD_PLAY_PARMS");
 
     /**

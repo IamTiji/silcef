@@ -31,7 +31,7 @@ public final class I_RpcDefaultFree$RealFree {
     }
 
     private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-        cef_master_h.C_POINTER
+        cef_render_handler_capi_h.C_POINTER
     );
 
     /**
@@ -41,7 +41,7 @@ public final class I_RpcDefaultFree$RealFree {
         return $DESC;
     }
 
-    private static final MethodHandle UP$MH = cef_master_h.upcallHandle(I_RpcDefaultFree$RealFree.Function.class, "apply", $DESC);
+    private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(I_RpcDefaultFree$RealFree.Function.class, "apply", $DESC);
 
     /**
      * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

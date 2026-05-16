@@ -29,11 +29,11 @@ public class _COSERVERINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwReserved1"),
+        cef_render_handler_capi_h.C_LONG.withName("dwReserved1"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pwszName"),
-        cef_master_h.C_POINTER.withName("pAuthInfo"),
-        cef_master_h.C_LONG.withName("dwReserved2"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pAuthInfo"),
+        cef_render_handler_capi_h.C_LONG.withName("dwReserved2"),
         MemoryLayout.paddingLayout(4)
     ).withName("_COSERVERINFO");
 

@@ -28,9 +28,9 @@ public class POWER_ACTION_POLICY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Action"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("EventCode")
+        cef_render_handler_capi_h.C_INT.withName("Action"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("EventCode")
     ).withName("$anon$19269:9");
 
     /**

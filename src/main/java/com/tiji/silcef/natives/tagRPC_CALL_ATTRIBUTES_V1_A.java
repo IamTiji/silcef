@@ -34,17 +34,17 @@ public class tagRPC_CALL_ATTRIBUTES_V1_A {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Version"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("ServerPrincipalNameBufferLength"),
+        cef_render_handler_capi_h.C_INT.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("ServerPrincipalNameBufferLength"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("ServerPrincipalName"),
-        cef_master_h.C_LONG.withName("ClientPrincipalNameBufferLength"),
+        cef_render_handler_capi_h.C_POINTER.withName("ServerPrincipalName"),
+        cef_render_handler_capi_h.C_LONG.withName("ClientPrincipalNameBufferLength"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("ClientPrincipalName"),
-        cef_master_h.C_LONG.withName("AuthenticationLevel"),
-        cef_master_h.C_LONG.withName("AuthenticationService"),
-        cef_master_h.C_INT.withName("NullSession"),
+        cef_render_handler_capi_h.C_POINTER.withName("ClientPrincipalName"),
+        cef_render_handler_capi_h.C_LONG.withName("AuthenticationLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("AuthenticationService"),
+        cef_render_handler_capi_h.C_INT.withName("NullSession"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagRPC_CALL_ATTRIBUTES_V1_A");
 

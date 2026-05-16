@@ -46,27 +46,27 @@ public class JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION_2 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("IoReadBytesLimit"),
-        cef_master_h.C_LONG_LONG.withName("IoWriteBytesLimit"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("IoReadBytesLimit"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("IoWriteBytesLimit"),
         _LARGE_INTEGER.layout().withName("PerJobUserTimeLimit"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG_LONG.withName("JobHighMemoryLimit"),
-            cef_master_h.C_LONG_LONG.withName("JobMemoryLimit")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("JobHighMemoryLimit"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("JobMemoryLimit")
         ).withName("$anon$13440:5"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_INT.withName("RateControlTolerance"),
-            cef_master_h.C_INT.withName("CpuRateControlTolerance")
+            cef_render_handler_capi_h.C_INT.withName("RateControlTolerance"),
+            cef_render_handler_capi_h.C_INT.withName("CpuRateControlTolerance")
         ).withName("$anon$13445:5"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_INT.withName("RateControlToleranceInterval"),
-            cef_master_h.C_INT.withName("CpuRateControlToleranceInterval")
+            cef_render_handler_capi_h.C_INT.withName("RateControlToleranceInterval"),
+            cef_render_handler_capi_h.C_INT.withName("CpuRateControlToleranceInterval")
         ).withName("$anon$13450:5"),
-        cef_master_h.C_LONG.withName("LimitFlags"),
-        cef_master_h.C_INT.withName("IoRateControlTolerance"),
-        cef_master_h.C_LONG_LONG.withName("JobLowMemoryLimit"),
-        cef_master_h.C_INT.withName("IoRateControlToleranceInterval"),
-        cef_master_h.C_INT.withName("NetRateControlTolerance"),
-        cef_master_h.C_INT.withName("NetRateControlToleranceInterval"),
+        cef_render_handler_capi_h.C_LONG.withName("LimitFlags"),
+        cef_render_handler_capi_h.C_INT.withName("IoRateControlTolerance"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("JobLowMemoryLimit"),
+        cef_render_handler_capi_h.C_INT.withName("IoRateControlToleranceInterval"),
+        cef_render_handler_capi_h.C_INT.withName("NetRateControlTolerance"),
+        cef_render_handler_capi_h.C_INT.withName("NetRateControlToleranceInterval"),
         MemoryLayout.paddingLayout(4)
     ).withName("JOBOBJECT_NOTIFICATION_LIMIT_INFORMATION_2");
 

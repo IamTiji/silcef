@@ -36,18 +36,18 @@ public class _REFS_SMR_VOLUME_INFO_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         _LARGE_INTEGER.layout().withName("SizeOfRandomlyWritableTier"),
         _LARGE_INTEGER.layout().withName("FreeSpaceInRandomlyWritableTier"),
         _LARGE_INTEGER.layout().withName("SizeofSMRTier"),
         _LARGE_INTEGER.layout().withName("FreeSpaceInSMRTier"),
         _LARGE_INTEGER.layout().withName("UsableFreeSpaceInSMRTier"),
-        cef_master_h.C_INT.withName("VolumeGcState"),
-        cef_master_h.C_LONG.withName("VolumeGcLastStatus"),
-        cef_master_h.C_LONG.withName("CurrentGcBandFillPercentage"),
+        cef_render_handler_capi_h.C_INT.withName("VolumeGcState"),
+        cef_render_handler_capi_h.C_LONG.withName("VolumeGcLastStatus"),
+        cef_render_handler_capi_h.C_LONG.withName("CurrentGcBandFillPercentage"),
         MemoryLayout.paddingLayout(4),
-        MemoryLayout.sequenceLayout(6, cef_master_h.C_LONG_LONG).withName("Unused")
+        MemoryLayout.sequenceLayout(6, cef_render_handler_capi_h.C_LONG_LONG).withName("Unused")
     ).withName("_REFS_SMR_VOLUME_INFO_OUTPUT");
 
     /**

@@ -28,9 +28,9 @@ public class _EFS_PIN_BLOB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbPadding"),
-        cef_master_h.C_LONG.withName("cbData"),
-        cef_master_h.C_POINTER.withName("pbData")
+        cef_render_handler_capi_h.C_LONG.withName("cbPadding"),
+        cef_render_handler_capi_h.C_LONG.withName("cbData"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbData")
     ).withName("_EFS_PIN_BLOB");
 
     /**

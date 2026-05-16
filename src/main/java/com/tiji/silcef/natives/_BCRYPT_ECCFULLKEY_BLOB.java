@@ -33,14 +33,14 @@ public class _BCRYPT_ECCFULLKEY_BLOB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwMagic"),
-        cef_master_h.C_LONG.withName("dwVersion"),
-        cef_master_h.C_INT.withName("dwCurveType"),
-        cef_master_h.C_INT.withName("dwCurveGenerationAlgId"),
-        cef_master_h.C_LONG.withName("cbFieldLength"),
-        cef_master_h.C_LONG.withName("cbSubgroupOrder"),
-        cef_master_h.C_LONG.withName("cbCofactor"),
-        cef_master_h.C_LONG.withName("cbSeed")
+        cef_render_handler_capi_h.C_LONG.withName("dwMagic"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_INT.withName("dwCurveType"),
+        cef_render_handler_capi_h.C_INT.withName("dwCurveGenerationAlgId"),
+        cef_render_handler_capi_h.C_LONG.withName("cbFieldLength"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSubgroupOrder"),
+        cef_render_handler_capi_h.C_LONG.withName("cbCofactor"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSeed")
     ).withName("_BCRYPT_ECCFULLKEY_BLOB");
 
     /**

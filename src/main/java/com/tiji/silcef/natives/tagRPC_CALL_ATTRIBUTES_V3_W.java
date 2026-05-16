@@ -45,29 +45,29 @@ public class tagRPC_CALL_ATTRIBUTES_V3_W {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Version"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("ServerPrincipalNameBufferLength"),
+        cef_render_handler_capi_h.C_INT.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("ServerPrincipalNameBufferLength"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("ServerPrincipalName"),
-        cef_master_h.C_LONG.withName("ClientPrincipalNameBufferLength"),
+        cef_render_handler_capi_h.C_POINTER.withName("ServerPrincipalName"),
+        cef_render_handler_capi_h.C_LONG.withName("ClientPrincipalNameBufferLength"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("ClientPrincipalName"),
-        cef_master_h.C_LONG.withName("AuthenticationLevel"),
-        cef_master_h.C_LONG.withName("AuthenticationService"),
-        cef_master_h.C_INT.withName("NullSession"),
-        cef_master_h.C_INT.withName("KernelModeCaller"),
-        cef_master_h.C_LONG.withName("ProtocolSequence"),
-        cef_master_h.C_INT.withName("IsClientLocal"),
-        cef_master_h.C_POINTER.withName("ClientPID"),
-        cef_master_h.C_LONG.withName("CallStatus"),
-        cef_master_h.C_INT.withName("CallType"),
-        cef_master_h.C_POINTER.withName("CallLocalAddress"),
-        cef_master_h.C_SHORT.withName("OpNum"),
+        cef_render_handler_capi_h.C_POINTER.withName("ClientPrincipalName"),
+        cef_render_handler_capi_h.C_LONG.withName("AuthenticationLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("AuthenticationService"),
+        cef_render_handler_capi_h.C_INT.withName("NullSession"),
+        cef_render_handler_capi_h.C_INT.withName("KernelModeCaller"),
+        cef_render_handler_capi_h.C_LONG.withName("ProtocolSequence"),
+        cef_render_handler_capi_h.C_INT.withName("IsClientLocal"),
+        cef_render_handler_capi_h.C_POINTER.withName("ClientPID"),
+        cef_render_handler_capi_h.C_LONG.withName("CallStatus"),
+        cef_render_handler_capi_h.C_INT.withName("CallType"),
+        cef_render_handler_capi_h.C_POINTER.withName("CallLocalAddress"),
+        cef_render_handler_capi_h.C_SHORT.withName("OpNum"),
         MemoryLayout.paddingLayout(2),
         _GUID.layout().withName("InterfaceUuid"),
-        cef_master_h.C_LONG.withName("ClientIdentifierBufferLength"),
-        cef_master_h.C_POINTER.withName("ClientIdentifier")
+        cef_render_handler_capi_h.C_LONG.withName("ClientIdentifierBufferLength"),
+        cef_render_handler_capi_h.C_POINTER.withName("ClientIdentifier")
     ).withName("tagRPC_CALL_ATTRIBUTES_V3_W");
 
     /**

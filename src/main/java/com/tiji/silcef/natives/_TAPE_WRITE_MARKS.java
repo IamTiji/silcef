@@ -28,9 +28,9 @@ public class _TAPE_WRITE_MARKS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Type"),
-        cef_master_h.C_LONG.withName("Count"),
-        cef_master_h.C_CHAR.withName("Immediate"),
+        cef_render_handler_capi_h.C_LONG.withName("Type"),
+        cef_render_handler_capi_h.C_LONG.withName("Count"),
+        cef_render_handler_capi_h.C_CHAR.withName("Immediate"),
         MemoryLayout.paddingLayout(3)
     ).withName("_TAPE_WRITE_MARKS");
 

@@ -33,14 +33,14 @@ public class _MEMORYSTATUS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwLength"),
-        cef_master_h.C_LONG.withName("dwMemoryLoad"),
-        cef_master_h.C_LONG_LONG.withName("dwTotalPhys"),
-        cef_master_h.C_LONG_LONG.withName("dwAvailPhys"),
-        cef_master_h.C_LONG_LONG.withName("dwTotalPageFile"),
-        cef_master_h.C_LONG_LONG.withName("dwAvailPageFile"),
-        cef_master_h.C_LONG_LONG.withName("dwTotalVirtual"),
-        cef_master_h.C_LONG_LONG.withName("dwAvailVirtual")
+        cef_render_handler_capi_h.C_LONG.withName("dwLength"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMemoryLoad"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwTotalPhys"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwAvailPhys"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwTotalPageFile"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwAvailPageFile"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwTotalVirtual"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwAvailVirtual")
     ).withName("_MEMORYSTATUS");
 
     /**

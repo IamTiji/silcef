@@ -30,11 +30,11 @@ public class _PRINTER_ENUM_VALUESA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pValueName"),
-        cef_master_h.C_LONG.withName("cbValueName"),
-        cef_master_h.C_LONG.withName("dwType"),
-        cef_master_h.C_POINTER.withName("pData"),
-        cef_master_h.C_LONG.withName("cbData"),
+        cef_render_handler_capi_h.C_POINTER.withName("pValueName"),
+        cef_render_handler_capi_h.C_LONG.withName("cbValueName"),
+        cef_render_handler_capi_h.C_LONG.withName("dwType"),
+        cef_render_handler_capi_h.C_POINTER.withName("pData"),
+        cef_render_handler_capi_h.C_LONG.withName("cbData"),
         MemoryLayout.paddingLayout(4)
     ).withName("_PRINTER_ENUM_VALUESA");
 

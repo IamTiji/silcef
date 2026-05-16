@@ -29,7 +29,7 @@ public class _NDR_USER_MARSHAL_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("InformationLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("InformationLevel"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
             _NDR_USER_MARSHAL_INFO_LEVEL1.layout().withName("Level1")

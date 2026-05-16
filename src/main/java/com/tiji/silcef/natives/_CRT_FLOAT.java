@@ -26,7 +26,7 @@ public class _CRT_FLOAT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_FLOAT.withName("f")
+        cef_render_handler_capi_h.C_FLOAT.withName("f")
     ).withName("$anon$420:9");
 
     /**

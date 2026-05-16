@@ -31,13 +31,13 @@ public class _DRIVER_INFO_2A {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("cVersion"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pName"),
-        cef_master_h.C_POINTER.withName("pEnvironment"),
-        cef_master_h.C_POINTER.withName("pDriverPath"),
-        cef_master_h.C_POINTER.withName("pDataFile"),
-        cef_master_h.C_POINTER.withName("pConfigFile")
+        cef_render_handler_capi_h.C_POINTER.withName("pName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pEnvironment"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDriverPath"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDataFile"),
+        cef_render_handler_capi_h.C_POINTER.withName("pConfigFile")
     ).withName("_DRIVER_INFO_2A");
 
     /**

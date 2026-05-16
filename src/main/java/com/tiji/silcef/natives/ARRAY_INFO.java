@@ -31,13 +31,13 @@ public class ARRAY_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Dimension"),
+        cef_render_handler_capi_h.C_LONG.withName("Dimension"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("BufferConformanceMark"),
-        cef_master_h.C_POINTER.withName("BufferVarianceMark"),
-        cef_master_h.C_POINTER.withName("MaxCountArray"),
-        cef_master_h.C_POINTER.withName("OffsetArray"),
-        cef_master_h.C_POINTER.withName("ActualCountArray")
+        cef_render_handler_capi_h.C_POINTER.withName("BufferConformanceMark"),
+        cef_render_handler_capi_h.C_POINTER.withName("BufferVarianceMark"),
+        cef_render_handler_capi_h.C_POINTER.withName("MaxCountArray"),
+        cef_render_handler_capi_h.C_POINTER.withName("OffsetArray"),
+        cef_render_handler_capi_h.C_POINTER.withName("ActualCountArray")
     ).withName("$anon$575:9");
 
     /**

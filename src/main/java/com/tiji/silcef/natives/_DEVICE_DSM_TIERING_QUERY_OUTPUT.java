@@ -33,13 +33,13 @@ public class _DEVICE_DSM_TIERING_QUERY_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("Reserved"),
-        cef_master_h.C_LONG_LONG.withName("Alignment"),
-        cef_master_h.C_LONG.withName("TotalNumberOfRegions"),
-        cef_master_h.C_LONG.withName("NumberOfRegionsReturned"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Alignment"),
+        cef_render_handler_capi_h.C_LONG.withName("TotalNumberOfRegions"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfRegionsReturned"),
         MemoryLayout.sequenceLayout(1, _STORAGE_TIER_REGION.layout()).withName("Regions")
     ).withName("_DEVICE_DSM_TIERING_QUERY_OUTPUT");
 

@@ -33,16 +33,16 @@ public class tagMONMSGSTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cb"),
+        cef_render_handler_capi_h.C_INT.withName("cb"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hwndTo"),
-        cef_master_h.C_LONG.withName("dwTime"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndTo"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTime"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hTask"),
-        cef_master_h.C_INT.withName("wMsg"),
+        cef_render_handler_capi_h.C_POINTER.withName("hTask"),
+        cef_render_handler_capi_h.C_INT.withName("wMsg"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("wParam"),
-        cef_master_h.C_LONG_LONG.withName("lParam"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("wParam"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("lParam"),
         tagDDEML_MSG_HOOK_DATA.layout().withName("dmhd")
     ).withName("tagMONMSGSTRUCT");
 

@@ -33,14 +33,14 @@ public class tagPOINTER_DEVICE_PROPERTY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("logicalMin"),
-        cef_master_h.C_INT.withName("logicalMax"),
-        cef_master_h.C_INT.withName("physicalMin"),
-        cef_master_h.C_INT.withName("physicalMax"),
-        cef_master_h.C_INT.withName("unit"),
-        cef_master_h.C_INT.withName("unitExponent"),
-        cef_master_h.C_SHORT.withName("usagePageId"),
-        cef_master_h.C_SHORT.withName("usageId")
+        cef_render_handler_capi_h.C_INT.withName("logicalMin"),
+        cef_render_handler_capi_h.C_INT.withName("logicalMax"),
+        cef_render_handler_capi_h.C_INT.withName("physicalMin"),
+        cef_render_handler_capi_h.C_INT.withName("physicalMax"),
+        cef_render_handler_capi_h.C_INT.withName("unit"),
+        cef_render_handler_capi_h.C_INT.withName("unitExponent"),
+        cef_render_handler_capi_h.C_SHORT.withName("usagePageId"),
+        cef_render_handler_capi_h.C_SHORT.withName("usageId")
     ).withName("tagPOINTER_DEVICE_PROPERTY");
 
     /**

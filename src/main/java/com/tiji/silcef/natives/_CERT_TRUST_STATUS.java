@@ -27,8 +27,8 @@ public class _CERT_TRUST_STATUS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwErrorStatus"),
-        cef_master_h.C_LONG.withName("dwInfoStatus")
+        cef_render_handler_capi_h.C_LONG.withName("dwErrorStatus"),
+        cef_render_handler_capi_h.C_LONG.withName("dwInfoStatus")
     ).withName("_CERT_TRUST_STATUS");
 
     /**

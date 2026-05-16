@@ -27,8 +27,8 @@ public class _COORD {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("X"),
-        cef_master_h.C_SHORT.withName("Y")
+        cef_render_handler_capi_h.C_SHORT.withName("X"),
+        cef_render_handler_capi_h.C_SHORT.withName("Y")
     ).withName("_COORD");
 
     /**

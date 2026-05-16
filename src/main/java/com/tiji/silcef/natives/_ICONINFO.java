@@ -30,12 +30,12 @@ public class _ICONINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("fIcon"),
-        cef_master_h.C_LONG.withName("xHotspot"),
-        cef_master_h.C_LONG.withName("yHotspot"),
+        cef_render_handler_capi_h.C_INT.withName("fIcon"),
+        cef_render_handler_capi_h.C_LONG.withName("xHotspot"),
+        cef_render_handler_capi_h.C_LONG.withName("yHotspot"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hbmMask"),
-        cef_master_h.C_POINTER.withName("hbmColor")
+        cef_render_handler_capi_h.C_POINTER.withName("hbmMask"),
+        cef_render_handler_capi_h.C_POINTER.withName("hbmColor")
     ).withName("_ICONINFO");
 
     /**

@@ -34,16 +34,16 @@ public class tagBIND_OPTS3 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbStruct"),
-        cef_master_h.C_LONG.withName("grfFlags"),
-        cef_master_h.C_LONG.withName("grfMode"),
-        cef_master_h.C_LONG.withName("dwTickCountDeadline"),
-        cef_master_h.C_LONG.withName("dwTrackFlags"),
-        cef_master_h.C_LONG.withName("dwClassContext"),
-        cef_master_h.C_LONG.withName("locale"),
+        cef_render_handler_capi_h.C_LONG.withName("cbStruct"),
+        cef_render_handler_capi_h.C_LONG.withName("grfFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("grfMode"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTickCountDeadline"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTrackFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwClassContext"),
+        cef_render_handler_capi_h.C_LONG.withName("locale"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pServerInfo"),
-        cef_master_h.C_POINTER.withName("hwnd")
+        cef_render_handler_capi_h.C_POINTER.withName("pServerInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwnd")
     ).withName("tagBIND_OPTS3");
 
     /**

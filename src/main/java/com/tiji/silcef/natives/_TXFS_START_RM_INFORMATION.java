@@ -37,19 +37,19 @@ public class _TXFS_START_RM_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("LogContainerSize"),
-        cef_master_h.C_LONG.withName("LogContainerCountMin"),
-        cef_master_h.C_LONG.withName("LogContainerCountMax"),
-        cef_master_h.C_LONG.withName("LogGrowthIncrement"),
-        cef_master_h.C_LONG.withName("LogAutoShrinkPercentage"),
-        cef_master_h.C_LONG.withName("TmLogPathOffset"),
-        cef_master_h.C_SHORT.withName("TmLogPathLength"),
-        cef_master_h.C_SHORT.withName("LoggingMode"),
-        cef_master_h.C_SHORT.withName("LogPathLength"),
-        cef_master_h.C_SHORT.withName("Reserved"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("LogPath"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LogContainerSize"),
+        cef_render_handler_capi_h.C_LONG.withName("LogContainerCountMin"),
+        cef_render_handler_capi_h.C_LONG.withName("LogContainerCountMax"),
+        cef_render_handler_capi_h.C_LONG.withName("LogGrowthIncrement"),
+        cef_render_handler_capi_h.C_LONG.withName("LogAutoShrinkPercentage"),
+        cef_render_handler_capi_h.C_LONG.withName("TmLogPathOffset"),
+        cef_render_handler_capi_h.C_SHORT.withName("TmLogPathLength"),
+        cef_render_handler_capi_h.C_SHORT.withName("LoggingMode"),
+        cef_render_handler_capi_h.C_SHORT.withName("LogPathLength"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("LogPath"),
         MemoryLayout.paddingLayout(2)
     ).withName("_TXFS_START_RM_INFORMATION");
 

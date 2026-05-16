@@ -27,7 +27,7 @@ public class _WIN32_MEMORY_NUMA_PERFORMANCE_INFORMATION_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("EntryCount"),
+        cef_render_handler_capi_h.C_LONG.withName("EntryCount"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.sequenceLayout(1, _WIN32_MEMORY_NUMA_PERFORMANCE_ENTRY.layout()).withName("PerformanceEntries")
     ).withName("_WIN32_MEMORY_NUMA_PERFORMANCE_INFORMATION_OUTPUT");

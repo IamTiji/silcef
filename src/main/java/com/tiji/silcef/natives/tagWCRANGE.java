@@ -27,8 +27,8 @@ public class tagWCRANGE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("wcLow"),
-        cef_master_h.C_SHORT.withName("cGlyphs")
+        cef_render_handler_capi_h.C_SHORT.withName("wcLow"),
+        cef_render_handler_capi_h.C_SHORT.withName("cGlyphs")
     ).withName("tagWCRANGE");
 
     /**

@@ -34,15 +34,15 @@ public class _EXFAT_STATISTICS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("CreateHits"),
-        cef_master_h.C_LONG.withName("SuccessfulCreates"),
-        cef_master_h.C_LONG.withName("FailedCreates"),
-        cef_master_h.C_LONG.withName("NonCachedReads"),
-        cef_master_h.C_LONG.withName("NonCachedReadBytes"),
-        cef_master_h.C_LONG.withName("NonCachedWrites"),
-        cef_master_h.C_LONG.withName("NonCachedWriteBytes"),
-        cef_master_h.C_LONG.withName("NonCachedDiskReads"),
-        cef_master_h.C_LONG.withName("NonCachedDiskWrites")
+        cef_render_handler_capi_h.C_LONG.withName("CreateHits"),
+        cef_render_handler_capi_h.C_LONG.withName("SuccessfulCreates"),
+        cef_render_handler_capi_h.C_LONG.withName("FailedCreates"),
+        cef_render_handler_capi_h.C_LONG.withName("NonCachedReads"),
+        cef_render_handler_capi_h.C_LONG.withName("NonCachedReadBytes"),
+        cef_render_handler_capi_h.C_LONG.withName("NonCachedWrites"),
+        cef_render_handler_capi_h.C_LONG.withName("NonCachedWriteBytes"),
+        cef_render_handler_capi_h.C_LONG.withName("NonCachedDiskReads"),
+        cef_render_handler_capi_h.C_LONG.withName("NonCachedDiskWrites")
     ).withName("_EXFAT_STATISTICS");
 
     /**

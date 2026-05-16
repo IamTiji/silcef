@@ -27,8 +27,8 @@ public class _CERT_LDAP_STORE_OPENED_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pvLdapSessionHandle"),
-        cef_master_h.C_POINTER.withName("pwszLdapUrl")
+        cef_render_handler_capi_h.C_POINTER.withName("pvLdapSessionHandle"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszLdapUrl")
     ).withName("_CERT_LDAP_STORE_OPENED_PARA");
 
     /**

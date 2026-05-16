@@ -58,10 +58,10 @@ public class _IMAGE_THUNK_DATA32 {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("ForwarderString"),
-            cef_master_h.C_LONG.withName("Function"),
-            cef_master_h.C_LONG.withName("Ordinal"),
-            cef_master_h.C_LONG.withName("AddressOfData")
+            cef_render_handler_capi_h.C_LONG.withName("ForwarderString"),
+            cef_render_handler_capi_h.C_LONG.withName("Function"),
+            cef_render_handler_capi_h.C_LONG.withName("Ordinal"),
+            cef_render_handler_capi_h.C_LONG.withName("AddressOfData")
         ).withName("$anon$21000:5");
 
         /**

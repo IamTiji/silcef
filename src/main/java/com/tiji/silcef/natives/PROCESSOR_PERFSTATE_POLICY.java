@@ -46,19 +46,19 @@ public class PROCESSOR_PERFSTATE_POLICY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Revision"),
-        cef_master_h.C_CHAR.withName("MaxThrottle"),
-        cef_master_h.C_CHAR.withName("MinThrottle"),
-        cef_master_h.C_CHAR.withName("BusyAdjThreshold"),
+        cef_render_handler_capi_h.C_LONG.withName("Revision"),
+        cef_render_handler_capi_h.C_CHAR.withName("MaxThrottle"),
+        cef_render_handler_capi_h.C_CHAR.withName("MinThrottle"),
+        cef_render_handler_capi_h.C_CHAR.withName("BusyAdjThreshold"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_CHAR.withName("Spare"),
+            cef_render_handler_capi_h.C_CHAR.withName("Spare"),
             PROCESSOR_PERFSTATE_POLICY.Flags.layout().withName("Flags")
         ).withName("$anon$19469:5"),
-        cef_master_h.C_LONG.withName("TimeCheck"),
-        cef_master_h.C_LONG.withName("IncreaseTime"),
-        cef_master_h.C_LONG.withName("DecreaseTime"),
-        cef_master_h.C_LONG.withName("IncreasePercent"),
-        cef_master_h.C_LONG.withName("DecreasePercent")
+        cef_render_handler_capi_h.C_LONG.withName("TimeCheck"),
+        cef_render_handler_capi_h.C_LONG.withName("IncreaseTime"),
+        cef_render_handler_capi_h.C_LONG.withName("DecreaseTime"),
+        cef_render_handler_capi_h.C_LONG.withName("IncreasePercent"),
+        cef_render_handler_capi_h.C_LONG.withName("DecreasePercent")
     ).withName("$anon$19464:9");
 
     /**
@@ -308,7 +308,7 @@ public class PROCESSOR_PERFSTATE_POLICY {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_CHAR.withName("AsBYTE"),
+            cef_render_handler_capi_h.C_CHAR.withName("AsBYTE"),
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(1)
             ).withName("$anon$19473:13")

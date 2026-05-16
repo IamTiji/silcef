@@ -31,12 +31,12 @@ public class _RTL_CRITICAL_SECTION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("DebugInfo"),
-        cef_master_h.C_LONG.withName("LockCount"),
-        cef_master_h.C_LONG.withName("RecursionCount"),
-        cef_master_h.C_POINTER.withName("OwningThread"),
-        cef_master_h.C_POINTER.withName("LockSemaphore"),
-        cef_master_h.C_LONG_LONG.withName("SpinCount")
+        cef_render_handler_capi_h.C_POINTER.withName("DebugInfo"),
+        cef_render_handler_capi_h.C_LONG.withName("LockCount"),
+        cef_render_handler_capi_h.C_LONG.withName("RecursionCount"),
+        cef_render_handler_capi_h.C_POINTER.withName("OwningThread"),
+        cef_render_handler_capi_h.C_POINTER.withName("LockSemaphore"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("SpinCount")
     ).withName("_RTL_CRITICAL_SECTION");
 
     /**

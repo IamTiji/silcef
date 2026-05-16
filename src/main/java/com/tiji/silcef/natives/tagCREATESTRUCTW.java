@@ -37,19 +37,19 @@ public class tagCREATESTRUCTW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("lpCreateParams"),
-        cef_master_h.C_POINTER.withName("hInstance"),
-        cef_master_h.C_POINTER.withName("hMenu"),
-        cef_master_h.C_POINTER.withName("hwndParent"),
-        cef_master_h.C_INT.withName("cy"),
-        cef_master_h.C_INT.withName("cx"),
-        cef_master_h.C_INT.withName("y"),
-        cef_master_h.C_INT.withName("x"),
-        cef_master_h.C_LONG.withName("style"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpCreateParams"),
+        cef_render_handler_capi_h.C_POINTER.withName("hInstance"),
+        cef_render_handler_capi_h.C_POINTER.withName("hMenu"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndParent"),
+        cef_render_handler_capi_h.C_INT.withName("cy"),
+        cef_render_handler_capi_h.C_INT.withName("cx"),
+        cef_render_handler_capi_h.C_INT.withName("y"),
+        cef_render_handler_capi_h.C_INT.withName("x"),
+        cef_render_handler_capi_h.C_LONG.withName("style"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpszName"),
-        cef_master_h.C_POINTER.withName("lpszClass"),
-        cef_master_h.C_LONG.withName("dwExStyle"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpszName"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpszClass"),
+        cef_render_handler_capi_h.C_LONG.withName("dwExStyle"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagCREATESTRUCTW");
 

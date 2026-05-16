@@ -27,8 +27,8 @@ public class tagPOINTS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("x"),
-        cef_master_h.C_SHORT.withName("y")
+        cef_render_handler_capi_h.C_SHORT.withName("x"),
+        cef_render_handler_capi_h.C_SHORT.withName("y")
     ).withName("tagPOINTS");
 
     /**

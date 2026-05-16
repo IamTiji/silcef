@@ -26,7 +26,7 @@ public class _SET_PARTITION_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("PartitionType")
+        cef_render_handler_capi_h.C_CHAR.withName("PartitionType")
     ).withName("_SET_PARTITION_INFORMATION");
 
     /**

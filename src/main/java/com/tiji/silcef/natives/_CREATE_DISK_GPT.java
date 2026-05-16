@@ -28,7 +28,7 @@ public class _CREATE_DISK_GPT {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("DiskId"),
-        cef_master_h.C_LONG.withName("MaxPartitionCount")
+        cef_render_handler_capi_h.C_LONG.withName("MaxPartitionCount")
     ).withName("_CREATE_DISK_GPT");
 
     /**

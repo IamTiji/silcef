@@ -27,9 +27,9 @@ public class _DEVICE_DSM_FREE_SPACE_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("FreeSpace")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("FreeSpace")
     ).withName("_DEVICE_DSM_FREE_SPACE_OUTPUT");
 
     /**

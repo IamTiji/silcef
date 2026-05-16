@@ -48,13 +48,13 @@ public class tagMIXERCONTROLA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("cbStruct"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwControlID"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwControlType"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("fdwControl"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("cMultipleItems"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("szShortName"),
-        MemoryLayout.sequenceLayout(64, cef_master_h.C_CHAR).withName("szName"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cbStruct"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwControlID"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwControlType"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("fdwControl"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cMultipleItems"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("szShortName"),
+        MemoryLayout.sequenceLayout(64, cef_render_handler_capi_h.C_CHAR).withName("szName"),
         tagMIXERCONTROLA.Bounds.layout().withName("Bounds"),
         tagMIXERCONTROLA.Metrics.layout().withName("Metrics")
     ).withName("tagMIXERCONTROLA");
@@ -463,14 +463,14 @@ public class tagMIXERCONTROLA {
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
             MemoryLayout.structLayout(
-                cef_master_h.align(cef_master_h.C_LONG, 1).withName("lMinimum"),
-                cef_master_h.align(cef_master_h.C_LONG, 1).withName("lMaximum")
+                cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("lMinimum"),
+                cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("lMaximum")
             ).withName("$anon$2064:9"),
             MemoryLayout.structLayout(
-                cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwMinimum"),
-                cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwMaximum")
+                cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwMinimum"),
+                cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwMaximum")
             ).withName("$anon$2068:9"),
-            MemoryLayout.sequenceLayout(6, cef_master_h.align(cef_master_h.C_LONG, 1)).withName("dwReserved")
+            MemoryLayout.sequenceLayout(6, cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1)).withName("dwReserved")
         ).withName("$anon$2063:5");
 
         /**
@@ -878,9 +878,9 @@ public class tagMIXERCONTROLA {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.align(cef_master_h.C_LONG, 1).withName("cSteps"),
-            cef_master_h.align(cef_master_h.C_LONG, 1).withName("cbCustomData"),
-            MemoryLayout.sequenceLayout(6, cef_master_h.align(cef_master_h.C_LONG, 1)).withName("dwReserved")
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cSteps"),
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cbCustomData"),
+            MemoryLayout.sequenceLayout(6, cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1)).withName("dwReserved")
         ).withName("$anon$2074:5");
 
         /**

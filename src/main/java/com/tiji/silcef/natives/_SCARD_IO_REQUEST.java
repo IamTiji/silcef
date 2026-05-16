@@ -27,8 +27,8 @@ public class _SCARD_IO_REQUEST {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwProtocol"),
-        cef_master_h.C_LONG.withName("cbPciLength")
+        cef_render_handler_capi_h.C_LONG.withName("dwProtocol"),
+        cef_render_handler_capi_h.C_LONG.withName("cbPciLength")
     ).withName("_SCARD_IO_REQUEST");
 
     /**

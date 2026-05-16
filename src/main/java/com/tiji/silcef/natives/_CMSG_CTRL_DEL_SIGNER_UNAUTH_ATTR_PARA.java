@@ -28,9 +28,9 @@ public class _CMSG_CTRL_DEL_SIGNER_UNAUTH_ATTR_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwSignerIndex"),
-        cef_master_h.C_LONG.withName("dwUnauthAttrIndex")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSignerIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("dwUnauthAttrIndex")
     ).withName("_CMSG_CTRL_DEL_SIGNER_UNAUTH_ATTR_PARA");
 
     /**

@@ -27,7 +27,7 @@ public class _MESSAGE_RESOURCE_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NumberOfBlocks"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfBlocks"),
         MemoryLayout.sequenceLayout(1, _MESSAGE_RESOURCE_BLOCK.layout()).withName("Blocks")
     ).withName("_MESSAGE_RESOURCE_DATA");
 

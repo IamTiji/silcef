@@ -33,7 +33,7 @@ public class _STORAGE_COUNTER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Type"),
+        cef_render_handler_capi_h.C_INT.withName("Type"),
         MemoryLayout.paddingLayout(4),
         _STORAGE_COUNTER.Value.layout().withName("Value")
     ).withName("_STORAGE_COUNTER");
@@ -108,7 +108,7 @@ public class _STORAGE_COUNTER {
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
             _STORAGE_COUNTER.Value.ManufactureDate.layout().withName("ManufactureDate"),
-            cef_master_h.C_LONG_LONG.withName("AsUlonglong")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("AsUlonglong")
         ).withName("$anon$6940:5");
 
         /**
@@ -133,8 +133,8 @@ public class _STORAGE_COUNTER {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_LONG.withName("Week"),
-                cef_master_h.C_LONG.withName("Year")
+                cef_render_handler_capi_h.C_LONG.withName("Week"),
+                cef_render_handler_capi_h.C_LONG.withName("Year")
             ).withName("$anon$6942:9");
 
             /**

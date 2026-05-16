@@ -28,10 +28,10 @@ public class _CRYPT_TIMESTAMP_CONTEXT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbEncoded"),
+        cef_render_handler_capi_h.C_LONG.withName("cbEncoded"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pbEncoded"),
-        cef_master_h.C_POINTER.withName("pTimeStamp")
+        cef_render_handler_capi_h.C_POINTER.withName("pbEncoded"),
+        cef_render_handler_capi_h.C_POINTER.withName("pTimeStamp")
     ).withName("_CRYPT_TIMESTAMP_CONTEXT");
 
     /**

@@ -30,7 +30,7 @@ public class _CERT_HASHED_URL {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("HashAlgorithm"),
         _CRYPTOAPI_BLOB.layout().withName("Hash"),
-        cef_master_h.C_POINTER.withName("pwszUrl")
+        cef_render_handler_capi_h.C_POINTER.withName("pwszUrl")
     ).withName("_CERT_HASHED_URL");
 
     /**

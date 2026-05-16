@@ -29,11 +29,11 @@ public class _ENCRYPTION_CERTIFICATE_HASH {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbTotalLength"),
+        cef_render_handler_capi_h.C_LONG.withName("cbTotalLength"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pUserSid"),
-        cef_master_h.C_POINTER.withName("pHash"),
-        cef_master_h.C_POINTER.withName("lpDisplayInformation")
+        cef_render_handler_capi_h.C_POINTER.withName("pUserSid"),
+        cef_render_handler_capi_h.C_POINTER.withName("pHash"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpDisplayInformation")
     ).withName("_ENCRYPTION_CERTIFICATE_HASH");
 
     /**

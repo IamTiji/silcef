@@ -35,17 +35,17 @@ public class _cef_task_info_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("size"),
-        cef_master_h.C_LONG_LONG.withName("id"),
-        cef_master_h.C_INT.withName("type"),
-        cef_master_h.C_INT.withName("is_killable"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("size"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("id"),
+        cef_render_handler_capi_h.C_INT.withName("type"),
+        cef_render_handler_capi_h.C_INT.withName("is_killable"),
         _cef_string_utf16_t.layout().withName("title"),
-        cef_master_h.C_DOUBLE.withName("cpu_usage"),
-        cef_master_h.C_INT.withName("number_of_processors"),
+        cef_render_handler_capi_h.C_DOUBLE.withName("cpu_usage"),
+        cef_render_handler_capi_h.C_INT.withName("number_of_processors"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("memory"),
-        cef_master_h.C_LONG_LONG.withName("gpu_memory"),
-        cef_master_h.C_INT.withName("is_gpu_memory_inflated"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("memory"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("gpu_memory"),
+        cef_render_handler_capi_h.C_INT.withName("is_gpu_memory_inflated"),
         MemoryLayout.paddingLayout(4)
     ).withName("_cef_task_info_t");
 

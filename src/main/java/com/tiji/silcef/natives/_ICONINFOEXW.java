@@ -34,15 +34,15 @@ public class _ICONINFOEXW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_INT.withName("fIcon"),
-        cef_master_h.C_LONG.withName("xHotspot"),
-        cef_master_h.C_LONG.withName("yHotspot"),
-        cef_master_h.C_POINTER.withName("hbmMask"),
-        cef_master_h.C_POINTER.withName("hbmColor"),
-        cef_master_h.C_SHORT.withName("wResID"),
-        MemoryLayout.sequenceLayout(260, cef_master_h.C_SHORT).withName("szModName"),
-        MemoryLayout.sequenceLayout(260, cef_master_h.C_SHORT).withName("szResName"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("fIcon"),
+        cef_render_handler_capi_h.C_LONG.withName("xHotspot"),
+        cef_render_handler_capi_h.C_LONG.withName("yHotspot"),
+        cef_render_handler_capi_h.C_POINTER.withName("hbmMask"),
+        cef_render_handler_capi_h.C_POINTER.withName("hbmColor"),
+        cef_render_handler_capi_h.C_SHORT.withName("wResID"),
+        MemoryLayout.sequenceLayout(260, cef_render_handler_capi_h.C_SHORT).withName("szModName"),
+        MemoryLayout.sequenceLayout(260, cef_render_handler_capi_h.C_SHORT).withName("szResName"),
         MemoryLayout.paddingLayout(6)
     ).withName("_ICONINFOEXW");
 

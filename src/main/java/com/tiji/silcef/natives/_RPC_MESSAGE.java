@@ -36,18 +36,18 @@ public class _RPC_MESSAGE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("Handle"),
-        cef_master_h.C_LONG.withName("DataRepresentation"),
+        cef_render_handler_capi_h.C_POINTER.withName("Handle"),
+        cef_render_handler_capi_h.C_LONG.withName("DataRepresentation"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("Buffer"),
-        cef_master_h.C_INT.withName("BufferLength"),
-        cef_master_h.C_INT.withName("ProcNum"),
-        cef_master_h.C_POINTER.withName("TransferSyntax"),
-        cef_master_h.C_POINTER.withName("RpcInterfaceInformation"),
-        cef_master_h.C_POINTER.withName("ReservedForRuntime"),
-        cef_master_h.C_POINTER.withName("ManagerEpv"),
-        cef_master_h.C_POINTER.withName("ImportContext"),
-        cef_master_h.C_LONG.withName("RpcFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("Buffer"),
+        cef_render_handler_capi_h.C_INT.withName("BufferLength"),
+        cef_render_handler_capi_h.C_INT.withName("ProcNum"),
+        cef_render_handler_capi_h.C_POINTER.withName("TransferSyntax"),
+        cef_render_handler_capi_h.C_POINTER.withName("RpcInterfaceInformation"),
+        cef_render_handler_capi_h.C_POINTER.withName("ReservedForRuntime"),
+        cef_render_handler_capi_h.C_POINTER.withName("ManagerEpv"),
+        cef_render_handler_capi_h.C_POINTER.withName("ImportContext"),
+        cef_render_handler_capi_h.C_LONG.withName("RpcFlags"),
         MemoryLayout.paddingLayout(4)
     ).withName("_RPC_MESSAGE");
 

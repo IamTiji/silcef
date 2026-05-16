@@ -28,9 +28,9 @@ public class _CMC_TAGGED_OTHER_MSG {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwBodyPartID"),
+        cef_render_handler_capi_h.C_LONG.withName("dwBodyPartID"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pszObjId"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszObjId"),
         _CRYPTOAPI_BLOB.layout().withName("Value")
     ).withName("_CMC_TAGGED_OTHER_MSG");
 

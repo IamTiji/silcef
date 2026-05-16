@@ -27,8 +27,8 @@ public class _TRANSACTIONMANAGER_LOGPATH_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("LogPathLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("LogPath"),
+        cef_render_handler_capi_h.C_LONG.withName("LogPathLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("LogPath"),
         MemoryLayout.paddingLayout(2)
     ).withName("_TRANSACTIONMANAGER_LOGPATH_INFORMATION");
 

@@ -27,8 +27,8 @@ public class tagLASTINPUTINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwTime")
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTime")
     ).withName("tagLASTINPUTINFO");
 
     /**

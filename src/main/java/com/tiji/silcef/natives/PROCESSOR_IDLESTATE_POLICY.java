@@ -36,9 +36,9 @@ public class PROCESSOR_IDLESTATE_POLICY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Revision"),
+        cef_render_handler_capi_h.C_SHORT.withName("Revision"),
         PROCESSOR_IDLESTATE_POLICY.Flags.layout().withName("Flags"),
-        cef_master_h.C_LONG.withName("PolicyCount"),
+        cef_render_handler_capi_h.C_LONG.withName("PolicyCount"),
         MemoryLayout.sequenceLayout(3, PROCESSOR_IDLESTATE_INFO.layout()).withName("Policy")
     ).withName("$anon$19393:9");
 
@@ -112,7 +112,7 @@ public class PROCESSOR_IDLESTATE_POLICY {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_SHORT.withName("AsWORD"),
+            cef_render_handler_capi_h.C_SHORT.withName("AsWORD"),
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(2)
             ).withName("$anon$19397:9")

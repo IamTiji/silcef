@@ -35,8 +35,8 @@ public class _CHANGER_EXCHANGE_MEDIUM {
         _CHANGER_ELEMENT.layout().withName("Source"),
         _CHANGER_ELEMENT.layout().withName("Destination1"),
         _CHANGER_ELEMENT.layout().withName("Destination2"),
-        cef_master_h.C_CHAR.withName("Flip1"),
-        cef_master_h.C_CHAR.withName("Flip2"),
+        cef_render_handler_capi_h.C_CHAR.withName("Flip1"),
+        cef_render_handler_capi_h.C_CHAR.withName("Flip2"),
         MemoryLayout.paddingLayout(2)
     ).withName("_CHANGER_EXCHANGE_MEDIUM");
 

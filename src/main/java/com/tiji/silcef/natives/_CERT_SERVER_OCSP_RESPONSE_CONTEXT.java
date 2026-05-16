@@ -28,10 +28,10 @@ public class _CERT_SERVER_OCSP_RESPONSE_CONTEXT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pbEncodedOcspResponse"),
-        cef_master_h.C_LONG.withName("cbEncodedOcspResponse"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbEncodedOcspResponse"),
+        cef_render_handler_capi_h.C_LONG.withName("cbEncodedOcspResponse"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CERT_SERVER_OCSP_RESPONSE_CONTEXT");
 

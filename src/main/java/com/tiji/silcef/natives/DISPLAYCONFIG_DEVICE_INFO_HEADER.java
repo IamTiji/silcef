@@ -29,10 +29,10 @@ public class DISPLAYCONFIG_DEVICE_INFO_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("type"),
-        cef_master_h.C_INT.withName("size"),
+        cef_render_handler_capi_h.C_INT.withName("type"),
+        cef_render_handler_capi_h.C_INT.withName("size"),
         _LUID.layout().withName("adapterId"),
-        cef_master_h.C_INT.withName("id")
+        cef_render_handler_capi_h.C_INT.withName("id")
     ).withName("DISPLAYCONFIG_DEVICE_INFO_HEADER");
 
     /**

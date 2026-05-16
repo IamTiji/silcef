@@ -31,12 +31,12 @@ public class _BCRYPT_DSA_PARAMETER_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbLength"),
-        cef_master_h.C_LONG.withName("dwMagic"),
-        cef_master_h.C_LONG.withName("cbKeyLength"),
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_CHAR).withName("Count"),
-        MemoryLayout.sequenceLayout(20, cef_master_h.C_CHAR).withName("Seed"),
-        MemoryLayout.sequenceLayout(20, cef_master_h.C_CHAR).withName("q")
+        cef_render_handler_capi_h.C_LONG.withName("cbLength"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMagic"),
+        cef_render_handler_capi_h.C_LONG.withName("cbKeyLength"),
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_CHAR).withName("Count"),
+        MemoryLayout.sequenceLayout(20, cef_render_handler_capi_h.C_CHAR).withName("Seed"),
+        MemoryLayout.sequenceLayout(20, cef_render_handler_capi_h.C_CHAR).withName("q")
     ).withName("_BCRYPT_DSA_PARAMETER_HEADER");
 
     /**

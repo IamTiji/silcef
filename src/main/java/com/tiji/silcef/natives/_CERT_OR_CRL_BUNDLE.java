@@ -27,9 +27,9 @@ public class _CERT_OR_CRL_BUNDLE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cItem"),
+        cef_render_handler_capi_h.C_LONG.withName("cItem"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgItem")
+        cef_render_handler_capi_h.C_POINTER.withName("rgItem")
     ).withName("_CERT_OR_CRL_BUNDLE");
 
     /**

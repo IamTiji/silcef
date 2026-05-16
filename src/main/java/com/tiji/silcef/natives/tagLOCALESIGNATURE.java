@@ -28,9 +28,9 @@ public class tagLOCALESIGNATURE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_LONG).withName("lsUsb"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_LONG).withName("lsCsbDefault"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_LONG).withName("lsCsbSupported")
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_LONG).withName("lsUsb"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_LONG).withName("lsCsbDefault"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_LONG).withName("lsCsbSupported")
     ).withName("tagLOCALESIGNATURE");
 
     /**

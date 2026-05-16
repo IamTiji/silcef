@@ -29,10 +29,10 @@ public class _PROCESSOR_GROUP_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("MaximumProcessorCount"),
-        cef_master_h.C_CHAR.withName("ActiveProcessorCount"),
-        MemoryLayout.sequenceLayout(38, cef_master_h.C_CHAR).withName("Reserved"),
-        cef_master_h.C_LONG_LONG.withName("ActiveProcessorMask")
+        cef_render_handler_capi_h.C_CHAR.withName("MaximumProcessorCount"),
+        cef_render_handler_capi_h.C_CHAR.withName("ActiveProcessorCount"),
+        MemoryLayout.sequenceLayout(38, cef_render_handler_capi_h.C_CHAR).withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ActiveProcessorMask")
     ).withName("_PROCESSOR_GROUP_INFO");
 
     /**

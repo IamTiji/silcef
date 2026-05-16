@@ -28,7 +28,7 @@ public class _NETWORK_APP_INSTANCE_EA {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("AppInstanceID"),
-        cef_master_h.C_LONG.withName("CsvFlags")
+        cef_render_handler_capi_h.C_LONG.withName("CsvFlags")
     ).withName("_NETWORK_APP_INSTANCE_EA");
 
     /**

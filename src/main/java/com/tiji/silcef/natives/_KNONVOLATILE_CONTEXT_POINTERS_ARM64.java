@@ -45,26 +45,26 @@ public class _KNONVOLATILE_CONTEXT_POINTERS_ARM64 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("X19"),
-        cef_master_h.C_POINTER.withName("X20"),
-        cef_master_h.C_POINTER.withName("X21"),
-        cef_master_h.C_POINTER.withName("X22"),
-        cef_master_h.C_POINTER.withName("X23"),
-        cef_master_h.C_POINTER.withName("X24"),
-        cef_master_h.C_POINTER.withName("X25"),
-        cef_master_h.C_POINTER.withName("X26"),
-        cef_master_h.C_POINTER.withName("X27"),
-        cef_master_h.C_POINTER.withName("X28"),
-        cef_master_h.C_POINTER.withName("Fp"),
-        cef_master_h.C_POINTER.withName("Lr"),
-        cef_master_h.C_POINTER.withName("D8"),
-        cef_master_h.C_POINTER.withName("D9"),
-        cef_master_h.C_POINTER.withName("D10"),
-        cef_master_h.C_POINTER.withName("D11"),
-        cef_master_h.C_POINTER.withName("D12"),
-        cef_master_h.C_POINTER.withName("D13"),
-        cef_master_h.C_POINTER.withName("D14"),
-        cef_master_h.C_POINTER.withName("D15")
+        cef_render_handler_capi_h.C_POINTER.withName("X19"),
+        cef_render_handler_capi_h.C_POINTER.withName("X20"),
+        cef_render_handler_capi_h.C_POINTER.withName("X21"),
+        cef_render_handler_capi_h.C_POINTER.withName("X22"),
+        cef_render_handler_capi_h.C_POINTER.withName("X23"),
+        cef_render_handler_capi_h.C_POINTER.withName("X24"),
+        cef_render_handler_capi_h.C_POINTER.withName("X25"),
+        cef_render_handler_capi_h.C_POINTER.withName("X26"),
+        cef_render_handler_capi_h.C_POINTER.withName("X27"),
+        cef_render_handler_capi_h.C_POINTER.withName("X28"),
+        cef_render_handler_capi_h.C_POINTER.withName("Fp"),
+        cef_render_handler_capi_h.C_POINTER.withName("Lr"),
+        cef_render_handler_capi_h.C_POINTER.withName("D8"),
+        cef_render_handler_capi_h.C_POINTER.withName("D9"),
+        cef_render_handler_capi_h.C_POINTER.withName("D10"),
+        cef_render_handler_capi_h.C_POINTER.withName("D11"),
+        cef_render_handler_capi_h.C_POINTER.withName("D12"),
+        cef_render_handler_capi_h.C_POINTER.withName("D13"),
+        cef_render_handler_capi_h.C_POINTER.withName("D14"),
+        cef_render_handler_capi_h.C_POINTER.withName("D15")
     ).withName("_KNONVOLATILE_CONTEXT_POINTERS_ARM64");
 
     /**

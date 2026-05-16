@@ -29,10 +29,10 @@ public class __NCRYPT_PCP_TPM_FW_VERSION_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("major1"),
-        cef_master_h.C_SHORT.withName("major2"),
-        cef_master_h.C_SHORT.withName("minor1"),
-        cef_master_h.C_SHORT.withName("minor2")
+        cef_render_handler_capi_h.C_SHORT.withName("major1"),
+        cef_render_handler_capi_h.C_SHORT.withName("major2"),
+        cef_render_handler_capi_h.C_SHORT.withName("minor1"),
+        cef_render_handler_capi_h.C_SHORT.withName("minor2")
     ).withName("__NCRYPT_PCP_TPM_FW_VERSION_INFO");
 
     /**

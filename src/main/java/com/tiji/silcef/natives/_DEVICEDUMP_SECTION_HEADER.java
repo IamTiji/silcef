@@ -34,15 +34,15 @@ public class _DEVICEDUMP_SECTION_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(_GUID.layout(), 1).withName("guidDeviceDataId"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("sOrganizationID"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwFirmwareRevision"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("sModelNumber"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("szDeviceManufacturingID"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwFlags"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("bRestrictedPrivateDataVersion"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwFirmwareIssueId"),
-        MemoryLayout.sequenceLayout(132, cef_master_h.C_CHAR).withName("szIssueDescriptionString")
+        cef_render_handler_capi_h.align(_GUID.layout(), 1).withName("guidDeviceDataId"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("sOrganizationID"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwFirmwareRevision"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("sModelNumber"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("szDeviceManufacturingID"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwFlags"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("bRestrictedPrivateDataVersion"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwFirmwareIssueId"),
+        MemoryLayout.sequenceLayout(132, cef_render_handler_capi_h.C_CHAR).withName("szIssueDescriptionString")
     ).withName("_DEVICEDUMP_SECTION_HEADER");
 
     /**

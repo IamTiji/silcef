@@ -30,10 +30,10 @@ public class _DISPATCHER_CONTEXT_NONVOLREG_ARM64 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-        MemoryLayout.sequenceLayout(152, cef_master_h.C_CHAR).withName("Buffer"),
+        MemoryLayout.sequenceLayout(152, cef_render_handler_capi_h.C_CHAR).withName("Buffer"),
         MemoryLayout.structLayout(
-            MemoryLayout.sequenceLayout(11, cef_master_h.C_LONG_LONG).withName("GpNvRegs"),
-            MemoryLayout.sequenceLayout(8, cef_master_h.C_DOUBLE).withName("FpNvRegs")
+            MemoryLayout.sequenceLayout(11, cef_render_handler_capi_h.C_LONG_LONG).withName("GpNvRegs"),
+            MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_DOUBLE).withName("FpNvRegs")
         ).withName("$anon$7118:5")
     ).withName("_DISPATCHER_CONTEXT_NONVOLREG_ARM64");
 

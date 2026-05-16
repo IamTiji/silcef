@@ -33,7 +33,7 @@ public class _STORAGE_SECURITY_COMPLIANCE_BITMASK {
         MemoryLayout.structLayout(
             MemoryLayout.paddingLayout(1)
         ).withName("$anon$2018:5"),
-        cef_master_h.C_CHAR.withName("AsUchar")
+        cef_render_handler_capi_h.C_CHAR.withName("AsUchar")
     ).withName("_STORAGE_SECURITY_COMPLIANCE_BITMASK");
 
     /**

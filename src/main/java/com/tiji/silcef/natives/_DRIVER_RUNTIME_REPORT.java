@@ -38,7 +38,7 @@ public class _DRIVER_RUNTIME_REPORT {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _RUNTIME_REPORT_HEADER.layout().withName("Header"),
-        cef_master_h.C_SHORT.withName("NumberOfDrivers"),
+        cef_render_handler_capi_h.C_SHORT.withName("NumberOfDrivers"),
         _DRIVER_RUNTIME_REPORT.Flags.layout().withName("Flags"),
         MemoryLayout.sequenceLayout(1, _DRIVER_INFO_ENTRY.layout()).withName("DriverEntries")
     ).withName("_DRIVER_RUNTIME_REPORT");
@@ -161,7 +161,7 @@ public class _DRIVER_RUNTIME_REPORT {
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(2)
             ).withName("$anon$14839:9"),
-            cef_master_h.C_SHORT.withName("AsUInt16")
+            cef_render_handler_capi_h.C_SHORT.withName("AsUInt16")
         ).withName("$anon$14838:5");
 
         /**

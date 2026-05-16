@@ -27,7 +27,7 @@ public class _CRYPT_MASK_GEN_ALGORITHM {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszObjId"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszObjId"),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("HashAlgorithm")
     ).withName("_CRYPT_MASK_GEN_ALGORITHM");
 

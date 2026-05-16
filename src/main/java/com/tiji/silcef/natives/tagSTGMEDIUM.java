@@ -36,18 +36,18 @@ public class tagSTGMEDIUM {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("tymed"),
+        cef_render_handler_capi_h.C_LONG.withName("tymed"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("hBitmap"),
-            cef_master_h.C_POINTER.withName("hMetaFilePict"),
-            cef_master_h.C_POINTER.withName("hEnhMetaFile"),
-            cef_master_h.C_POINTER.withName("hGlobal"),
-            cef_master_h.C_POINTER.withName("lpszFileName"),
-            cef_master_h.C_POINTER.withName("pstm"),
-            cef_master_h.C_POINTER.withName("pstg")
+            cef_render_handler_capi_h.C_POINTER.withName("hBitmap"),
+            cef_render_handler_capi_h.C_POINTER.withName("hMetaFilePict"),
+            cef_render_handler_capi_h.C_POINTER.withName("hEnhMetaFile"),
+            cef_render_handler_capi_h.C_POINTER.withName("hGlobal"),
+            cef_render_handler_capi_h.C_POINTER.withName("lpszFileName"),
+            cef_render_handler_capi_h.C_POINTER.withName("pstm"),
+            cef_render_handler_capi_h.C_POINTER.withName("pstg")
         ).withName("$anon$12697:36"),
-        cef_master_h.C_POINTER.withName("pUnkForRelease")
+        cef_render_handler_capi_h.C_POINTER.withName("pUnkForRelease")
     ).withName("tagSTGMEDIUM");
 
     /**

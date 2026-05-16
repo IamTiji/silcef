@@ -33,9 +33,9 @@ public class tagEMRGRADIENTFILL {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
         _RECTL.layout().withName("rclBounds"),
-        cef_master_h.C_LONG.withName("nVer"),
-        cef_master_h.C_LONG.withName("nTri"),
-        cef_master_h.C_LONG.withName("ulMode"),
+        cef_render_handler_capi_h.C_LONG.withName("nVer"),
+        cef_render_handler_capi_h.C_LONG.withName("nTri"),
+        cef_render_handler_capi_h.C_LONG.withName("ulMode"),
         MemoryLayout.sequenceLayout(1, _TRIVERTEX.layout()).withName("Ver")
     ).withName("tagEMRGRADIENTFILL");
 

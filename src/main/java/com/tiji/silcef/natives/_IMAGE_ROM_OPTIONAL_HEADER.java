@@ -38,19 +38,19 @@ public class _IMAGE_ROM_OPTIONAL_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Magic"),
-        cef_master_h.C_CHAR.withName("MajorLinkerVersion"),
-        cef_master_h.C_CHAR.withName("MinorLinkerVersion"),
-        cef_master_h.C_LONG.withName("SizeOfCode"),
-        cef_master_h.C_LONG.withName("SizeOfInitializedData"),
-        cef_master_h.C_LONG.withName("SizeOfUninitializedData"),
-        cef_master_h.C_LONG.withName("AddressOfEntryPoint"),
-        cef_master_h.C_LONG.withName("BaseOfCode"),
-        cef_master_h.C_LONG.withName("BaseOfData"),
-        cef_master_h.C_LONG.withName("BaseOfBss"),
-        cef_master_h.C_LONG.withName("GprMask"),
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_LONG).withName("CprMask"),
-        cef_master_h.C_LONG.withName("GpValue")
+        cef_render_handler_capi_h.C_SHORT.withName("Magic"),
+        cef_render_handler_capi_h.C_CHAR.withName("MajorLinkerVersion"),
+        cef_render_handler_capi_h.C_CHAR.withName("MinorLinkerVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("SizeOfCode"),
+        cef_render_handler_capi_h.C_LONG.withName("SizeOfInitializedData"),
+        cef_render_handler_capi_h.C_LONG.withName("SizeOfUninitializedData"),
+        cef_render_handler_capi_h.C_LONG.withName("AddressOfEntryPoint"),
+        cef_render_handler_capi_h.C_LONG.withName("BaseOfCode"),
+        cef_render_handler_capi_h.C_LONG.withName("BaseOfData"),
+        cef_render_handler_capi_h.C_LONG.withName("BaseOfBss"),
+        cef_render_handler_capi_h.C_LONG.withName("GprMask"),
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_LONG).withName("CprMask"),
+        cef_render_handler_capi_h.C_LONG.withName("GpValue")
     ).withName("_IMAGE_ROM_OPTIONAL_HEADER");
 
     /**

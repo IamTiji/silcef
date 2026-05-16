@@ -29,8 +29,8 @@ public class POWERBROADCAST_SETTING {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("PowerSetting"),
-        cef_master_h.C_LONG.withName("DataLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("Data"),
+        cef_render_handler_capi_h.C_LONG.withName("DataLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("Data"),
         MemoryLayout.paddingLayout(3)
     ).withName("$anon$2361:9");
 

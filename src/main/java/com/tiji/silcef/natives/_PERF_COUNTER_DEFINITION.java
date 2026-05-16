@@ -35,16 +35,16 @@ public class _PERF_COUNTER_DEFINITION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ByteLength"),
-        cef_master_h.C_LONG.withName("CounterNameTitleIndex"),
-        cef_master_h.C_LONG.withName("CounterNameTitle"),
-        cef_master_h.C_LONG.withName("CounterHelpTitleIndex"),
-        cef_master_h.C_LONG.withName("CounterHelpTitle"),
-        cef_master_h.C_LONG.withName("DefaultScale"),
-        cef_master_h.C_LONG.withName("DetailLevel"),
-        cef_master_h.C_LONG.withName("CounterType"),
-        cef_master_h.C_LONG.withName("CounterSize"),
-        cef_master_h.C_LONG.withName("CounterOffset")
+        cef_render_handler_capi_h.C_LONG.withName("ByteLength"),
+        cef_render_handler_capi_h.C_LONG.withName("CounterNameTitleIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("CounterNameTitle"),
+        cef_render_handler_capi_h.C_LONG.withName("CounterHelpTitleIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("CounterHelpTitle"),
+        cef_render_handler_capi_h.C_LONG.withName("DefaultScale"),
+        cef_render_handler_capi_h.C_LONG.withName("DetailLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("CounterType"),
+        cef_render_handler_capi_h.C_LONG.withName("CounterSize"),
+        cef_render_handler_capi_h.C_LONG.withName("CounterOffset")
     ).withName("_PERF_COUNTER_DEFINITION");
 
     /**

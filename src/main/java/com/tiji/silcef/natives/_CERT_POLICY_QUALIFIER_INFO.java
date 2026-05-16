@@ -27,7 +27,7 @@ public class _CERT_POLICY_QUALIFIER_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszPolicyQualifierId"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszPolicyQualifierId"),
         _CRYPTOAPI_BLOB.layout().withName("Qualifier")
     ).withName("_CERT_POLICY_QUALIFIER_INFO");
 

@@ -30,12 +30,12 @@ public class hostent {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("h_name"),
-        cef_master_h.C_POINTER.withName("h_aliases"),
-        cef_master_h.C_SHORT.withName("h_addrtype"),
-        cef_master_h.C_SHORT.withName("h_length"),
+        cef_render_handler_capi_h.C_POINTER.withName("h_name"),
+        cef_render_handler_capi_h.C_POINTER.withName("h_aliases"),
+        cef_render_handler_capi_h.C_SHORT.withName("h_addrtype"),
+        cef_render_handler_capi_h.C_SHORT.withName("h_length"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("h_addr_list")
+        cef_render_handler_capi_h.C_POINTER.withName("h_addr_list")
     ).withName("hostent");
 
     /**

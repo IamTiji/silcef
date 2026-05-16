@@ -27,8 +27,8 @@ public class _TP_POOL_STACK_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("StackReserve"),
-        cef_master_h.C_LONG_LONG.withName("StackCommit")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("StackReserve"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("StackCommit")
     ).withName("_TP_POOL_STACK_INFORMATION");
 
     /**

@@ -30,12 +30,12 @@ public class tagFORMATETC {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("cfFormat"),
+        cef_render_handler_capi_h.C_SHORT.withName("cfFormat"),
         MemoryLayout.paddingLayout(6),
-        cef_master_h.C_POINTER.withName("ptd"),
-        cef_master_h.C_LONG.withName("dwAspect"),
-        cef_master_h.C_LONG.withName("lindex"),
-        cef_master_h.C_LONG.withName("tymed"),
+        cef_render_handler_capi_h.C_POINTER.withName("ptd"),
+        cef_render_handler_capi_h.C_LONG.withName("dwAspect"),
+        cef_render_handler_capi_h.C_LONG.withName("lindex"),
+        cef_render_handler_capi_h.C_LONG.withName("tymed"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagFORMATETC");
 

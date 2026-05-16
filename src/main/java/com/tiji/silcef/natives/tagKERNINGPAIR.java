@@ -28,9 +28,9 @@ public class tagKERNINGPAIR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("wFirst"),
-        cef_master_h.C_SHORT.withName("wSecond"),
-        cef_master_h.C_INT.withName("iKernAmount")
+        cef_render_handler_capi_h.C_SHORT.withName("wFirst"),
+        cef_render_handler_capi_h.C_SHORT.withName("wSecond"),
+        cef_render_handler_capi_h.C_INT.withName("iKernAmount")
     ).withName("tagKERNINGPAIR");
 
     /**

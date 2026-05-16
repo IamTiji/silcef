@@ -29,9 +29,9 @@ public class _CTL_ENTRY {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CRYPTOAPI_BLOB.layout().withName("SubjectIdentifier"),
-        cef_master_h.C_LONG.withName("cAttribute"),
+        cef_render_handler_capi_h.C_LONG.withName("cAttribute"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgAttribute")
+        cef_render_handler_capi_h.C_POINTER.withName("rgAttribute")
     ).withName("_CTL_ENTRY");
 
     /**

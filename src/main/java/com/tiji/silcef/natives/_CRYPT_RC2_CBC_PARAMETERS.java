@@ -28,9 +28,9 @@ public class _CRYPT_RC2_CBC_PARAMETERS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
-        cef_master_h.C_INT.withName("fIV"),
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_CHAR).withName("rgbIV")
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_INT.withName("fIV"),
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_CHAR).withName("rgbIV")
     ).withName("_CRYPT_RC2_CBC_PARAMETERS");
 
     /**

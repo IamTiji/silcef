@@ -53,16 +53,16 @@ public class TOUCHPAD_PARAMETERS_V1 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("versionNumber"),
-        cef_master_h.C_INT.withName("maxSupportedContacts"),
-        cef_master_h.C_INT.withName("legacyTouchpadFeatures"),
+        cef_render_handler_capi_h.C_INT.withName("versionNumber"),
+        cef_render_handler_capi_h.C_INT.withName("maxSupportedContacts"),
+        cef_render_handler_capi_h.C_INT.withName("legacyTouchpadFeatures"),
         MemoryLayout.paddingLayout(8),
-        cef_master_h.C_INT.withName("sensitivityLevel"),
-        cef_master_h.C_INT.withName("cursorSpeed"),
-        cef_master_h.C_INT.withName("feedbackIntensity"),
-        cef_master_h.C_INT.withName("clickForceSensitivity"),
-        cef_master_h.C_INT.withName("rightClickZoneWidth"),
-        cef_master_h.C_INT.withName("rightClickZoneHeight")
+        cef_render_handler_capi_h.C_INT.withName("sensitivityLevel"),
+        cef_render_handler_capi_h.C_INT.withName("cursorSpeed"),
+        cef_render_handler_capi_h.C_INT.withName("feedbackIntensity"),
+        cef_render_handler_capi_h.C_INT.withName("clickForceSensitivity"),
+        cef_render_handler_capi_h.C_INT.withName("rightClickZoneWidth"),
+        cef_render_handler_capi_h.C_INT.withName("rightClickZoneHeight")
     ).withName("TOUCHPAD_PARAMETERS_V1");
 
     /**

@@ -27,9 +27,9 @@ public class _RPC_PROTSEQ_VECTORW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Count"),
+        cef_render_handler_capi_h.C_INT.withName("Count"),
         MemoryLayout.paddingLayout(4),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_POINTER).withName("Protseq")
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_POINTER).withName("Protseq")
     ).withName("_RPC_PROTSEQ_VECTORW");
 
     /**

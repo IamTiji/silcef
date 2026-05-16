@@ -42,9 +42,9 @@ public class _STORAGE_OPERATIONAL_REASON {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_INT.withName("Reason"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_INT.withName("Reason"),
         _STORAGE_OPERATIONAL_REASON.RawBytes.layout().withName("RawBytes")
     ).withName("_STORAGE_OPERATIONAL_REASON");
 
@@ -214,7 +214,7 @@ public class _STORAGE_OPERATIONAL_REASON {
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
             _STORAGE_OPERATIONAL_REASON.RawBytes.ScsiSenseKey.layout().withName("ScsiSenseKey"),
             _STORAGE_OPERATIONAL_REASON.RawBytes.NVDIMM_N.layout().withName("NVDIMM_N"),
-            cef_master_h.C_LONG.withName("AsUlong")
+            cef_render_handler_capi_h.C_LONG.withName("AsUlong")
         ).withName("$anon$3146:5");
 
         /**
@@ -241,10 +241,10 @@ public class _STORAGE_OPERATIONAL_REASON {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_CHAR.withName("SenseKey"),
-                cef_master_h.C_CHAR.withName("ASC"),
-                cef_master_h.C_CHAR.withName("ASCQ"),
-                cef_master_h.C_CHAR.withName("Reserved")
+                cef_render_handler_capi_h.C_CHAR.withName("SenseKey"),
+                cef_render_handler_capi_h.C_CHAR.withName("ASC"),
+                cef_render_handler_capi_h.C_CHAR.withName("ASCQ"),
+                cef_render_handler_capi_h.C_CHAR.withName("Reserved")
             ).withName("$anon$3151:9");
 
             /**
@@ -555,9 +555,9 @@ public class _STORAGE_OPERATIONAL_REASON {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_CHAR.withName("CriticalHealth"),
-                MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("ModuleHealth"),
-                cef_master_h.C_CHAR.withName("ErrorThresholdStatus")
+                cef_render_handler_capi_h.C_CHAR.withName("CriticalHealth"),
+                MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("ModuleHealth"),
+                cef_render_handler_capi_h.C_CHAR.withName("ErrorThresholdStatus")
             ).withName("$anon$3161:9");
 
             /**

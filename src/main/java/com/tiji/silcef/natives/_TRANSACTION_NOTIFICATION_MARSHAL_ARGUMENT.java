@@ -27,7 +27,7 @@ public class _TRANSACTION_NOTIFICATION_MARSHAL_ARGUMENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("MarshalCookie"),
+        cef_render_handler_capi_h.C_LONG.withName("MarshalCookie"),
         _GUID.layout().withName("UOW")
     ).withName("_TRANSACTION_NOTIFICATION_MARSHAL_ARGUMENT");
 

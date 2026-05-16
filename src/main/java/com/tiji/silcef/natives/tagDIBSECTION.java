@@ -32,10 +32,10 @@ public class tagDIBSECTION {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagBITMAP.layout().withName("dsBm"),
         tagBITMAPINFOHEADER.layout().withName("dsBmih"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_LONG).withName("dsBitfields"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_LONG).withName("dsBitfields"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("dshSection"),
-        cef_master_h.C_LONG.withName("dsOffset"),
+        cef_render_handler_capi_h.C_POINTER.withName("dshSection"),
+        cef_render_handler_capi_h.C_LONG.withName("dsOffset"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagDIBSECTION");
 

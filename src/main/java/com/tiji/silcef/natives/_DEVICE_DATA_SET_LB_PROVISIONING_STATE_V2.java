@@ -32,13 +32,13 @@ public class _DEVICE_DATA_SET_LB_PROVISIONING_STATE_V2 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG_LONG.withName("SlabSizeInBytes"),
-        cef_master_h.C_LONG_LONG.withName("SlabOffsetDeltaInBytes"),
-        cef_master_h.C_LONG.withName("SlabAllocationBitMapBitCount"),
-        cef_master_h.C_LONG.withName("SlabAllocationBitMapLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG).withName("SlabAllocationBitMap"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("SlabSizeInBytes"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("SlabOffsetDeltaInBytes"),
+        cef_render_handler_capi_h.C_LONG.withName("SlabAllocationBitMapBitCount"),
+        cef_render_handler_capi_h.C_LONG.withName("SlabAllocationBitMapLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG).withName("SlabAllocationBitMap"),
         MemoryLayout.paddingLayout(4)
     ).withName("_DEVICE_DATA_SET_LB_PROVISIONING_STATE_V2");
 

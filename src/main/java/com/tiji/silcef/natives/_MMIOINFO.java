@@ -41,22 +41,22 @@ public class _MMIOINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwFlags"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("fccIOProc"),
-        cef_master_h.align(cef_master_h.C_POINTER, 1).withName("pIOProc"),
-        cef_master_h.align(cef_master_h.C_INT, 1).withName("wErrorRet"),
-        cef_master_h.align(cef_master_h.C_POINTER, 1).withName("htask"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("cchBuffer"),
-        cef_master_h.align(cef_master_h.C_POINTER, 1).withName("pchBuffer"),
-        cef_master_h.align(cef_master_h.C_POINTER, 1).withName("pchNext"),
-        cef_master_h.align(cef_master_h.C_POINTER, 1).withName("pchEndRead"),
-        cef_master_h.align(cef_master_h.C_POINTER, 1).withName("pchEndWrite"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("lBufOffset"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("lDiskOffset"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.align(cef_master_h.C_LONG, 1)).withName("adwInfo"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwReserved1"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwReserved2"),
-        cef_master_h.align(cef_master_h.C_POINTER, 1).withName("hmmio")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwFlags"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("fccIOProc"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("pIOProc"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_INT, 1).withName("wErrorRet"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("htask"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cchBuffer"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("pchBuffer"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("pchNext"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("pchEndRead"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("pchEndWrite"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("lBufOffset"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("lDiskOffset"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1)).withName("adwInfo"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwReserved1"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwReserved2"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("hmmio")
     ).withName("_MMIOINFO");
 
     /**

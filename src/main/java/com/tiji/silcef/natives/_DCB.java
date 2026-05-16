@@ -53,21 +53,21 @@ public class _DCB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("DCBlength"),
-        cef_master_h.C_LONG.withName("BaudRate"),
+        cef_render_handler_capi_h.C_LONG.withName("DCBlength"),
+        cef_render_handler_capi_h.C_LONG.withName("BaudRate"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_SHORT.withName("wReserved"),
-        cef_master_h.C_SHORT.withName("XonLim"),
-        cef_master_h.C_SHORT.withName("XoffLim"),
-        cef_master_h.C_CHAR.withName("ByteSize"),
-        cef_master_h.C_CHAR.withName("Parity"),
-        cef_master_h.C_CHAR.withName("StopBits"),
-        cef_master_h.C_CHAR.withName("XonChar"),
-        cef_master_h.C_CHAR.withName("XoffChar"),
-        cef_master_h.C_CHAR.withName("ErrorChar"),
-        cef_master_h.C_CHAR.withName("EofChar"),
-        cef_master_h.C_CHAR.withName("EvtChar"),
-        cef_master_h.C_SHORT.withName("wReserved1")
+        cef_render_handler_capi_h.C_SHORT.withName("wReserved"),
+        cef_render_handler_capi_h.C_SHORT.withName("XonLim"),
+        cef_render_handler_capi_h.C_SHORT.withName("XoffLim"),
+        cef_render_handler_capi_h.C_CHAR.withName("ByteSize"),
+        cef_render_handler_capi_h.C_CHAR.withName("Parity"),
+        cef_render_handler_capi_h.C_CHAR.withName("StopBits"),
+        cef_render_handler_capi_h.C_CHAR.withName("XonChar"),
+        cef_render_handler_capi_h.C_CHAR.withName("XoffChar"),
+        cef_render_handler_capi_h.C_CHAR.withName("ErrorChar"),
+        cef_render_handler_capi_h.C_CHAR.withName("EofChar"),
+        cef_render_handler_capi_h.C_CHAR.withName("EvtChar"),
+        cef_render_handler_capi_h.C_SHORT.withName("wReserved1")
     ).withName("_DCB");
 
     /**

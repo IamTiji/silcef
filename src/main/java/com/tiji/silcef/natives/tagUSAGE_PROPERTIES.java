@@ -35,18 +35,18 @@ public class tagUSAGE_PROPERTIES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("level"),
-        cef_master_h.C_SHORT.withName("page"),
-        cef_master_h.C_SHORT.withName("usage"),
+        cef_render_handler_capi_h.C_SHORT.withName("level"),
+        cef_render_handler_capi_h.C_SHORT.withName("page"),
+        cef_render_handler_capi_h.C_SHORT.withName("usage"),
         MemoryLayout.paddingLayout(2),
-        cef_master_h.C_INT.withName("logicalMinimum"),
-        cef_master_h.C_INT.withName("logicalMaximum"),
-        cef_master_h.C_SHORT.withName("unit"),
-        cef_master_h.C_SHORT.withName("exponent"),
-        cef_master_h.C_CHAR.withName("count"),
+        cef_render_handler_capi_h.C_INT.withName("logicalMinimum"),
+        cef_render_handler_capi_h.C_INT.withName("logicalMaximum"),
+        cef_render_handler_capi_h.C_SHORT.withName("unit"),
+        cef_render_handler_capi_h.C_SHORT.withName("exponent"),
+        cef_render_handler_capi_h.C_CHAR.withName("count"),
         MemoryLayout.paddingLayout(3),
-        cef_master_h.C_INT.withName("physicalMinimum"),
-        cef_master_h.C_INT.withName("physicalMaximum")
+        cef_render_handler_capi_h.C_INT.withName("physicalMinimum"),
+        cef_render_handler_capi_h.C_INT.withName("physicalMaximum")
     ).withName("tagUSAGE_PROPERTIES");
 
     /**

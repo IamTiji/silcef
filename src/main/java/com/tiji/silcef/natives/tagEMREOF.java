@@ -30,9 +30,9 @@ public class tagEMREOF {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
-        cef_master_h.C_LONG.withName("nPalEntries"),
-        cef_master_h.C_LONG.withName("offPalEntries"),
-        cef_master_h.C_LONG.withName("nSizeLast")
+        cef_render_handler_capi_h.C_LONG.withName("nPalEntries"),
+        cef_render_handler_capi_h.C_LONG.withName("offPalEntries"),
+        cef_render_handler_capi_h.C_LONG.withName("nSizeLast")
     ).withName("tagEMREOF");
 
     /**

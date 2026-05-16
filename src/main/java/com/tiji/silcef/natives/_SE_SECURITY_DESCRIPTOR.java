@@ -28,9 +28,9 @@ public class _SE_SECURITY_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_POINTER.withName("SecurityDescriptor")
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_POINTER.withName("SecurityDescriptor")
     ).withName("_SE_SECURITY_DESCRIPTOR");
 
     /**

@@ -36,17 +36,17 @@ public class _DEVICE_COPY_OFFLOAD_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("MaximumTokenLifetime"),
-        cef_master_h.C_LONG.withName("DefaultTokenLifetime"),
-        cef_master_h.C_LONG_LONG.withName("MaximumTransferSize"),
-        cef_master_h.C_LONG_LONG.withName("OptimalTransferCount"),
-        cef_master_h.C_LONG.withName("MaximumDataDescriptors"),
-        cef_master_h.C_LONG.withName("MaximumTransferLengthPerDescriptor"),
-        cef_master_h.C_LONG.withName("OptimalTransferLengthPerDescriptor"),
-        cef_master_h.C_SHORT.withName("OptimalTransferLengthGranularity"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("Reserved")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("MaximumTokenLifetime"),
+        cef_render_handler_capi_h.C_LONG.withName("DefaultTokenLifetime"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaximumTransferSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("OptimalTransferCount"),
+        cef_render_handler_capi_h.C_LONG.withName("MaximumDataDescriptors"),
+        cef_render_handler_capi_h.C_LONG.withName("MaximumTransferLengthPerDescriptor"),
+        cef_render_handler_capi_h.C_LONG.withName("OptimalTransferLengthPerDescriptor"),
+        cef_render_handler_capi_h.C_SHORT.withName("OptimalTransferLengthGranularity"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("Reserved")
     ).withName("_DEVICE_COPY_OFFLOAD_DESCRIPTOR");
 
     /**

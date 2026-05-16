@@ -28,10 +28,10 @@ public class _CERT_KEYGEN_REQUEST_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
         MemoryLayout.paddingLayout(4),
         _CERT_PUBLIC_KEY_INFO.layout().withName("SubjectPublicKeyInfo"),
-        cef_master_h.C_POINTER.withName("pwszChallengeString")
+        cef_render_handler_capi_h.C_POINTER.withName("pwszChallengeString")
     ).withName("_CERT_KEYGEN_REQUEST_INFO");
 
     /**

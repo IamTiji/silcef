@@ -29,10 +29,10 @@ public class _IMAGE_LOAD_CONFIG_CODE_INTEGRITY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Flags"),
-        cef_master_h.C_SHORT.withName("Catalog"),
-        cef_master_h.C_LONG.withName("CatalogOffset"),
-        cef_master_h.C_LONG.withName("Reserved")
+        cef_render_handler_capi_h.C_SHORT.withName("Flags"),
+        cef_render_handler_capi_h.C_SHORT.withName("Catalog"),
+        cef_render_handler_capi_h.C_LONG.withName("CatalogOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved")
     ).withName("_IMAGE_LOAD_CONFIG_CODE_INTEGRITY");
 
     /**

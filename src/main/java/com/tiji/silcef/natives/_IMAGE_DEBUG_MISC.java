@@ -30,11 +30,11 @@ public class _IMAGE_DEBUG_MISC {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("DataType"),
-        cef_master_h.C_LONG.withName("Length"),
-        cef_master_h.C_CHAR.withName("Unicode"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_CHAR).withName("Reserved"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("Data"),
+        cef_render_handler_capi_h.C_LONG.withName("DataType"),
+        cef_render_handler_capi_h.C_LONG.withName("Length"),
+        cef_render_handler_capi_h.C_CHAR.withName("Unicode"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_CHAR).withName("Reserved"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("Data"),
         MemoryLayout.paddingLayout(3)
     ).withName("_IMAGE_DEBUG_MISC");
 

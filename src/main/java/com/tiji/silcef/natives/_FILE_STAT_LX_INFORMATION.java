@@ -49,16 +49,16 @@ public class _FILE_STAT_LX_INFORMATION {
         _LARGE_INTEGER.layout().withName("ChangeTime"),
         _LARGE_INTEGER.layout().withName("AllocationSize"),
         _LARGE_INTEGER.layout().withName("EndOfFile"),
-        cef_master_h.C_LONG.withName("FileAttributes"),
-        cef_master_h.C_LONG.withName("ReparseTag"),
-        cef_master_h.C_LONG.withName("NumberOfLinks"),
-        cef_master_h.C_LONG.withName("EffectiveAccess"),
-        cef_master_h.C_LONG.withName("LxFlags"),
-        cef_master_h.C_LONG.withName("LxUid"),
-        cef_master_h.C_LONG.withName("LxGid"),
-        cef_master_h.C_LONG.withName("LxMode"),
-        cef_master_h.C_LONG.withName("LxDeviceIdMajor"),
-        cef_master_h.C_LONG.withName("LxDeviceIdMinor")
+        cef_render_handler_capi_h.C_LONG.withName("FileAttributes"),
+        cef_render_handler_capi_h.C_LONG.withName("ReparseTag"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfLinks"),
+        cef_render_handler_capi_h.C_LONG.withName("EffectiveAccess"),
+        cef_render_handler_capi_h.C_LONG.withName("LxFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("LxUid"),
+        cef_render_handler_capi_h.C_LONG.withName("LxGid"),
+        cef_render_handler_capi_h.C_LONG.withName("LxMode"),
+        cef_render_handler_capi_h.C_LONG.withName("LxDeviceIdMajor"),
+        cef_render_handler_capi_h.C_LONG.withName("LxDeviceIdMinor")
     ).withName("_FILE_STAT_LX_INFORMATION");
 
     /**

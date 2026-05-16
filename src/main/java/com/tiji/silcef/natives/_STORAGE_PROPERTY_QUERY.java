@@ -28,9 +28,9 @@ public class _STORAGE_PROPERTY_QUERY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("PropertyId"),
-        cef_master_h.C_INT.withName("QueryType"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("AdditionalParameters"),
+        cef_render_handler_capi_h.C_INT.withName("PropertyId"),
+        cef_render_handler_capi_h.C_INT.withName("QueryType"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("AdditionalParameters"),
         MemoryLayout.paddingLayout(3)
     ).withName("_STORAGE_PROPERTY_QUERY");
 

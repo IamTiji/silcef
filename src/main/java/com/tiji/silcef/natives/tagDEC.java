@@ -41,21 +41,21 @@ public class tagDEC {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("wReserved"),
+        cef_render_handler_capi_h.C_SHORT.withName("wReserved"),
         MemoryLayout.unionLayout(
             MemoryLayout.structLayout(
-                cef_master_h.C_CHAR.withName("scale"),
-                cef_master_h.C_CHAR.withName("sign")
+                cef_render_handler_capi_h.C_CHAR.withName("scale"),
+                cef_render_handler_capi_h.C_CHAR.withName("sign")
             ).withName("$anon$706:9"),
-            cef_master_h.C_SHORT.withName("signscale")
+            cef_render_handler_capi_h.C_SHORT.withName("signscale")
         ).withName("$anon$705:5"),
-        cef_master_h.C_LONG.withName("Hi32"),
+        cef_render_handler_capi_h.C_LONG.withName("Hi32"),
         MemoryLayout.unionLayout(
             MemoryLayout.structLayout(
-                cef_master_h.C_LONG.withName("Lo32"),
-                cef_master_h.C_LONG.withName("Mid32")
+                cef_render_handler_capi_h.C_LONG.withName("Lo32"),
+                cef_render_handler_capi_h.C_LONG.withName("Mid32")
             ).withName("$anon$714:9"),
-            cef_master_h.C_LONG_LONG.withName("Lo64")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("Lo64")
         ).withName("$anon$713:5")
     ).withName("tagDEC");
 

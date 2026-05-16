@@ -38,19 +38,19 @@ public class _STORAGE_QUERY_DEPENDENT_VOLUME_LEV2_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("EntryLength"),
-        cef_master_h.C_LONG.withName("DependencyTypeFlags"),
-        cef_master_h.C_LONG.withName("ProviderSpecificFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("EntryLength"),
+        cef_render_handler_capi_h.C_LONG.withName("DependencyTypeFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("ProviderSpecificFlags"),
         _VIRTUAL_STORAGE_TYPE.layout().withName("VirtualStorageType"),
-        cef_master_h.C_LONG.withName("AncestorLevel"),
-        cef_master_h.C_LONG.withName("HostVolumeNameOffset"),
-        cef_master_h.C_LONG.withName("HostVolumeNameSize"),
-        cef_master_h.C_LONG.withName("DependentVolumeNameOffset"),
-        cef_master_h.C_LONG.withName("DependentVolumeNameSize"),
-        cef_master_h.C_LONG.withName("RelativePathOffset"),
-        cef_master_h.C_LONG.withName("RelativePathSize"),
-        cef_master_h.C_LONG.withName("DependentDeviceNameOffset"),
-        cef_master_h.C_LONG.withName("DependentDeviceNameSize")
+        cef_render_handler_capi_h.C_LONG.withName("AncestorLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("HostVolumeNameOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("HostVolumeNameSize"),
+        cef_render_handler_capi_h.C_LONG.withName("DependentVolumeNameOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("DependentVolumeNameSize"),
+        cef_render_handler_capi_h.C_LONG.withName("RelativePathOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("RelativePathSize"),
+        cef_render_handler_capi_h.C_LONG.withName("DependentDeviceNameOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("DependentDeviceNameSize")
     ).withName("_STORAGE_QUERY_DEPENDENT_VOLUME_LEV2_ENTRY");
 
     /**

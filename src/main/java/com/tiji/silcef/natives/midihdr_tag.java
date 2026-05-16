@@ -34,15 +34,15 @@ public class midihdr_tag {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_POINTER, 1).withName("lpData"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwBufferLength"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwBytesRecorded"),
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 1).withName("dwUser"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwFlags"),
-        cef_master_h.align(cef_master_h.C_POINTER, 1).withName("lpNext"),
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 1).withName("reserved"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwOffset"),
-        MemoryLayout.sequenceLayout(8, cef_master_h.align(cef_master_h.C_LONG_LONG, 1)).withName("dwReserved")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("lpData"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwBufferLength"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwBytesRecorded"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 1).withName("dwUser"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwFlags"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("lpNext"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 1).withName("reserved"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwOffset"),
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 1)).withName("dwReserved")
     ).withName("midihdr_tag");
 
     /**

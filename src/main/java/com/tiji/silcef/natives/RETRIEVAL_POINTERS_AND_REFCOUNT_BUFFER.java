@@ -32,7 +32,7 @@ public class RETRIEVAL_POINTERS_AND_REFCOUNT_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ExtentCount"),
+        cef_render_handler_capi_h.C_LONG.withName("ExtentCount"),
         MemoryLayout.paddingLayout(4),
         _LARGE_INTEGER.layout().withName("StartingVcn"),
         MemoryLayout.sequenceLayout(1, RETRIEVAL_POINTERS_AND_REFCOUNT_BUFFER.Extents.layout()).withName("Extents")
@@ -151,7 +151,7 @@ public class RETRIEVAL_POINTERS_AND_REFCOUNT_BUFFER {
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
             _LARGE_INTEGER.layout().withName("NextVcn"),
             _LARGE_INTEGER.layout().withName("Lcn"),
-            cef_master_h.C_LONG.withName("ReferenceCount"),
+            cef_render_handler_capi_h.C_LONG.withName("ReferenceCount"),
             MemoryLayout.paddingLayout(4)
         ).withName("$anon$11793:5");
 

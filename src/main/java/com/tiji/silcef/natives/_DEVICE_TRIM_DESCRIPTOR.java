@@ -28,9 +28,9 @@ public class _DEVICE_TRIM_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_CHAR.withName("TrimEnabled"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_CHAR.withName("TrimEnabled"),
         MemoryLayout.paddingLayout(3)
     ).withName("_DEVICE_TRIM_DESCRIPTOR");
 

@@ -32,13 +32,13 @@ public class _BCRYPT_DSA_KEY_BLOB_V2 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwMagic"),
-        cef_master_h.C_LONG.withName("cbKey"),
-        cef_master_h.C_INT.withName("hashAlgorithm"),
-        cef_master_h.C_INT.withName("standardVersion"),
-        cef_master_h.C_LONG.withName("cbSeedLength"),
-        cef_master_h.C_LONG.withName("cbGroupSize"),
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_CHAR).withName("Count")
+        cef_render_handler_capi_h.C_LONG.withName("dwMagic"),
+        cef_render_handler_capi_h.C_LONG.withName("cbKey"),
+        cef_render_handler_capi_h.C_INT.withName("hashAlgorithm"),
+        cef_render_handler_capi_h.C_INT.withName("standardVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSeedLength"),
+        cef_render_handler_capi_h.C_LONG.withName("cbGroupSize"),
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_CHAR).withName("Count")
     ).withName("_BCRYPT_DSA_KEY_BLOB_V2");
 
     /**

@@ -29,7 +29,7 @@ public class _BOOT_AREA_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("BootSectorCount"),
+        cef_render_handler_capi_h.C_LONG.withName("BootSectorCount"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.sequenceLayout(2, _BOOT_AREA_INFO.BootSectors.layout()).withName("BootSectors")
     ).withName("_BOOT_AREA_INFO");

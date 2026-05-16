@@ -35,12 +35,12 @@ public class DISPLAYCONFIG_TARGET_DEVICE_NAME {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         DISPLAYCONFIG_DEVICE_INFO_HEADER.layout().withName("header"),
         DISPLAYCONFIG_TARGET_DEVICE_NAME_FLAGS.layout().withName("flags"),
-        cef_master_h.C_INT.withName("outputTechnology"),
-        cef_master_h.C_SHORT.withName("edidManufactureId"),
-        cef_master_h.C_SHORT.withName("edidProductCodeId"),
-        cef_master_h.C_INT.withName("connectorInstance"),
-        MemoryLayout.sequenceLayout(64, cef_master_h.C_SHORT).withName("monitorFriendlyDeviceName"),
-        MemoryLayout.sequenceLayout(128, cef_master_h.C_SHORT).withName("monitorDevicePath")
+        cef_render_handler_capi_h.C_INT.withName("outputTechnology"),
+        cef_render_handler_capi_h.C_SHORT.withName("edidManufactureId"),
+        cef_render_handler_capi_h.C_SHORT.withName("edidProductCodeId"),
+        cef_render_handler_capi_h.C_INT.withName("connectorInstance"),
+        MemoryLayout.sequenceLayout(64, cef_render_handler_capi_h.C_SHORT).withName("monitorFriendlyDeviceName"),
+        MemoryLayout.sequenceLayout(128, cef_render_handler_capi_h.C_SHORT).withName("monitorDevicePath")
     ).withName("DISPLAYCONFIG_TARGET_DEVICE_NAME");
 
     /**

@@ -28,9 +28,9 @@ public class _SCARD_ATRMASK {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbAtr"),
-        MemoryLayout.sequenceLayout(36, cef_master_h.C_CHAR).withName("rgbAtr"),
-        MemoryLayout.sequenceLayout(36, cef_master_h.C_CHAR).withName("rgbMask")
+        cef_render_handler_capi_h.C_LONG.withName("cbAtr"),
+        MemoryLayout.sequenceLayout(36, cef_render_handler_capi_h.C_CHAR).withName("rgbAtr"),
+        MemoryLayout.sequenceLayout(36, cef_render_handler_capi_h.C_CHAR).withName("rgbMask")
     ).withName("_SCARD_ATRMASK");
 
     /**

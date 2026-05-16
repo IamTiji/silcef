@@ -30,11 +30,11 @@ public class _PARTITION_INFORMATION_MBR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("PartitionType"),
-        cef_master_h.C_CHAR.withName("BootIndicator"),
-        cef_master_h.C_CHAR.withName("RecognizedPartition"),
+        cef_render_handler_capi_h.C_CHAR.withName("PartitionType"),
+        cef_render_handler_capi_h.C_CHAR.withName("BootIndicator"),
+        cef_render_handler_capi_h.C_CHAR.withName("RecognizedPartition"),
         MemoryLayout.paddingLayout(1),
-        cef_master_h.C_LONG.withName("HiddenSectors"),
+        cef_render_handler_capi_h.C_LONG.withName("HiddenSectors"),
         _GUID.layout().withName("PartitionId")
     ).withName("_PARTITION_INFORMATION_MBR");
 

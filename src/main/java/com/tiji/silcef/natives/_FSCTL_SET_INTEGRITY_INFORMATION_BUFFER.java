@@ -28,9 +28,9 @@ public class _FSCTL_SET_INTEGRITY_INFORMATION_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("ChecksumAlgorithm"),
-        cef_master_h.C_SHORT.withName("Reserved"),
-        cef_master_h.C_LONG.withName("Flags")
+        cef_render_handler_capi_h.C_SHORT.withName("ChecksumAlgorithm"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags")
     ).withName("_FSCTL_SET_INTEGRITY_INFORMATION_BUFFER");
 
     /**

@@ -37,11 +37,11 @@ public class _CLAIM_SECURITY_ATTRIBUTE_V1 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("Name"),
-        cef_master_h.C_SHORT.withName("ValueType"),
-        cef_master_h.C_SHORT.withName("Reserved"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("ValueCount"),
+        cef_render_handler_capi_h.C_POINTER.withName("Name"),
+        cef_render_handler_capi_h.C_SHORT.withName("ValueType"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("ValueCount"),
         MemoryLayout.paddingLayout(4),
         _CLAIM_SECURITY_ATTRIBUTE_V1.Values.layout().withName("Values")
     ).withName("_CLAIM_SECURITY_ATTRIBUTE_V1");
@@ -291,11 +291,11 @@ public class _CLAIM_SECURITY_ATTRIBUTE_V1 {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("pInt64"),
-            cef_master_h.C_POINTER.withName("pUint64"),
-            cef_master_h.C_POINTER.withName("ppString"),
-            cef_master_h.C_POINTER.withName("pFqbn"),
-            cef_master_h.C_POINTER.withName("pOctetString")
+            cef_render_handler_capi_h.C_POINTER.withName("pInt64"),
+            cef_render_handler_capi_h.C_POINTER.withName("pUint64"),
+            cef_render_handler_capi_h.C_POINTER.withName("ppString"),
+            cef_render_handler_capi_h.C_POINTER.withName("pFqbn"),
+            cef_render_handler_capi_h.C_POINTER.withName("pOctetString")
         ).withName("$anon$12470:5");
 
         /**

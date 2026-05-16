@@ -31,13 +31,13 @@ public class _NCRYPT_CIPHER_PADDING_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_POINTER.withName("pbIV"),
-        cef_master_h.C_LONG.withName("cbIV"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbIV"),
+        cef_render_handler_capi_h.C_LONG.withName("cbIV"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pbOtherInfo"),
-        cef_master_h.C_LONG.withName("cbOtherInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbOtherInfo"),
+        cef_render_handler_capi_h.C_LONG.withName("cbOtherInfo"),
         MemoryLayout.paddingLayout(4)
     ).withName("_NCRYPT_CIPHER_PADDING_INFO");
 

@@ -27,8 +27,8 @@ public class _FILE_ATTRIBUTE_TAG_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("FileAttributes"),
-        cef_master_h.C_LONG.withName("ReparseTag")
+        cef_render_handler_capi_h.C_LONG.withName("FileAttributes"),
+        cef_render_handler_capi_h.C_LONG.withName("ReparseTag")
     ).withName("_FILE_ATTRIBUTE_TAG_INFO");
 
     /**

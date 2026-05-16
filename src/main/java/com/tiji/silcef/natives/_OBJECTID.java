@@ -28,7 +28,7 @@ public class _OBJECTID {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("Lineage"),
-        cef_master_h.C_LONG.withName("Uniquifier")
+        cef_render_handler_capi_h.C_LONG.withName("Uniquifier")
     ).withName("_OBJECTID");
 
     /**

@@ -27,8 +27,8 @@ public class _WIN32_MEMORY_RANGE_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("VirtualAddress"),
-        cef_master_h.C_LONG_LONG.withName("NumberOfBytes")
+        cef_render_handler_capi_h.C_POINTER.withName("VirtualAddress"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NumberOfBytes")
     ).withName("_WIN32_MEMORY_RANGE_ENTRY");
 
     /**

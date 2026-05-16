@@ -74,7 +74,7 @@ public class in_addr {
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
             in_addr.S_un.S_un_b.layout().withName("S_un_b"),
             in_addr.S_un.S_un_w.layout().withName("S_un_w"),
-            cef_master_h.C_LONG.withName("S_addr")
+            cef_render_handler_capi_h.C_LONG.withName("S_addr")
         ).withName("$anon$26:9");
 
         /**
@@ -101,10 +101,10 @@ public class in_addr {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_CHAR.withName("s_b1"),
-                cef_master_h.C_CHAR.withName("s_b2"),
-                cef_master_h.C_CHAR.withName("s_b3"),
-                cef_master_h.C_CHAR.withName("s_b4")
+                cef_render_handler_capi_h.C_CHAR.withName("s_b1"),
+                cef_render_handler_capi_h.C_CHAR.withName("s_b2"),
+                cef_render_handler_capi_h.C_CHAR.withName("s_b3"),
+                cef_render_handler_capi_h.C_CHAR.withName("s_b4")
             ).withName("$anon$27:17");
 
             /**
@@ -414,8 +414,8 @@ public class in_addr {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_SHORT.withName("s_w1"),
-                cef_master_h.C_SHORT.withName("s_w2")
+                cef_render_handler_capi_h.C_SHORT.withName("s_w1"),
+                cef_render_handler_capi_h.C_SHORT.withName("s_w2")
             ).withName("$anon$28:17");
 
             /**

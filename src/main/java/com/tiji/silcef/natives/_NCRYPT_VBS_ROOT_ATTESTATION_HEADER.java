@@ -31,12 +31,12 @@ public class _NCRYPT_VBS_ROOT_ATTESTATION_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Magic"),
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("cbAttributes"),
-        cef_master_h.C_LONG.withName("cbNonce"),
-        cef_master_h.C_LONG.withName("cbReport"),
-        cef_master_h.C_LONG.withName("cbSignature")
+        cef_render_handler_capi_h.C_LONG.withName("Magic"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("cbAttributes"),
+        cef_render_handler_capi_h.C_LONG.withName("cbNonce"),
+        cef_render_handler_capi_h.C_LONG.withName("cbReport"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSignature")
     ).withName("_NCRYPT_VBS_ROOT_ATTESTATION_HEADER");
 
     /**

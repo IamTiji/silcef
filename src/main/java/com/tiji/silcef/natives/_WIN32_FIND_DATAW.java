@@ -35,16 +35,16 @@ public class _WIN32_FIND_DATAW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwFileAttributes"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFileAttributes"),
         _FILETIME.layout().withName("ftCreationTime"),
         _FILETIME.layout().withName("ftLastAccessTime"),
         _FILETIME.layout().withName("ftLastWriteTime"),
-        cef_master_h.C_LONG.withName("nFileSizeHigh"),
-        cef_master_h.C_LONG.withName("nFileSizeLow"),
-        cef_master_h.C_LONG.withName("dwReserved0"),
-        cef_master_h.C_LONG.withName("dwReserved1"),
-        MemoryLayout.sequenceLayout(260, cef_master_h.C_SHORT).withName("cFileName"),
-        MemoryLayout.sequenceLayout(14, cef_master_h.C_SHORT).withName("cAlternateFileName")
+        cef_render_handler_capi_h.C_LONG.withName("nFileSizeHigh"),
+        cef_render_handler_capi_h.C_LONG.withName("nFileSizeLow"),
+        cef_render_handler_capi_h.C_LONG.withName("dwReserved0"),
+        cef_render_handler_capi_h.C_LONG.withName("dwReserved1"),
+        MemoryLayout.sequenceLayout(260, cef_render_handler_capi_h.C_SHORT).withName("cFileName"),
+        MemoryLayout.sequenceLayout(14, cef_render_handler_capi_h.C_SHORT).withName("cAlternateFileName")
     ).withName("_WIN32_FIND_DATAW");
 
     /**

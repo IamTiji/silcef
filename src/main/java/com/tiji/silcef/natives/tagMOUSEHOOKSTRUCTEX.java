@@ -27,7 +27,7 @@ public class tagMOUSEHOOKSTRUCTEX {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.paddingLayout(32),
-        cef_master_h.C_LONG.withName("mouseData"),
+        cef_render_handler_capi_h.C_LONG.withName("mouseData"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagMOUSEHOOKSTRUCTEX");
 

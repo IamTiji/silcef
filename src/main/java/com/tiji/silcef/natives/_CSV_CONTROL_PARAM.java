@@ -27,9 +27,9 @@ public class _CSV_CONTROL_PARAM {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Operation"),
+        cef_render_handler_capi_h.C_INT.withName("Operation"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("Unused")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Unused")
     ).withName("_CSV_CONTROL_PARAM");
 
     /**

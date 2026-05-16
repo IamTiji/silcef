@@ -34,14 +34,14 @@ public class _ENCLAVE_INIT_INFO_VBS_BASIC {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("FamilyId"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("ImageId"),
-        cef_master_h.C_LONG_LONG.withName("EnclaveSize"),
-        cef_master_h.C_LONG.withName("EnclaveSvn"),
-        cef_master_h.C_LONG.withName("Reserved"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("FamilyId"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("ImageId"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("EnclaveSize"),
+        cef_render_handler_capi_h.C_LONG.withName("EnclaveSvn"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("SignatureInfoHandle"),
-            cef_master_h.C_LONG_LONG.withName("Unused")
+            cef_render_handler_capi_h.C_POINTER.withName("SignatureInfoHandle"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("Unused")
         ).withName("$anon$15161:5")
     ).withName("_ENCLAVE_INIT_INFO_VBS_BASIC");
 

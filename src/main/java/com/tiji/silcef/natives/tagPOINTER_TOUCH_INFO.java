@@ -33,12 +33,12 @@ public class tagPOINTER_TOUCH_INFO {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagPOINTER_INFO.layout().withName("pointerInfo"),
-        cef_master_h.C_INT.withName("touchFlags"),
-        cef_master_h.C_INT.withName("touchMask"),
+        cef_render_handler_capi_h.C_INT.withName("touchFlags"),
+        cef_render_handler_capi_h.C_INT.withName("touchMask"),
         tagRECT.layout().withName("rcContact"),
         tagRECT.layout().withName("rcContactRaw"),
-        cef_master_h.C_INT.withName("orientation"),
-        cef_master_h.C_INT.withName("pressure")
+        cef_render_handler_capi_h.C_INT.withName("orientation"),
+        cef_render_handler_capi_h.C_INT.withName("pressure")
     ).withName("tagPOINTER_TOUCH_INFO");
 
     /**

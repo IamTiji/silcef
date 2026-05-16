@@ -29,11 +29,11 @@ public class _UMS_SCHEDULER_STARTUP_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("UmsVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("UmsVersion"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("CompletionList"),
-        cef_master_h.C_POINTER.withName("SchedulerProc"),
-        cef_master_h.C_POINTER.withName("SchedulerParam")
+        cef_render_handler_capi_h.C_POINTER.withName("CompletionList"),
+        cef_render_handler_capi_h.C_POINTER.withName("SchedulerProc"),
+        cef_render_handler_capi_h.C_POINTER.withName("SchedulerParam")
     ).withName("_UMS_SCHEDULER_STARTUP_INFO");
 
     /**

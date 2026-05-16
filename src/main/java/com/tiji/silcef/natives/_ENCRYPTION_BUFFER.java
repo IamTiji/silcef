@@ -27,8 +27,8 @@ public class _ENCRYPTION_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("EncryptionOperation"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("Private"),
+        cef_render_handler_capi_h.C_LONG.withName("EncryptionOperation"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("Private"),
         MemoryLayout.paddingLayout(3)
     ).withName("_ENCRYPTION_BUFFER");
 

@@ -28,10 +28,10 @@ public class ASSOCIATIONELEMENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("ac"),
+        cef_render_handler_capi_h.C_INT.withName("ac"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hkClass"),
-        cef_master_h.C_POINTER.withName("pszClass")
+        cef_render_handler_capi_h.C_POINTER.withName("hkClass"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszClass")
     ).withName("ASSOCIATIONELEMENT");
 
     /**

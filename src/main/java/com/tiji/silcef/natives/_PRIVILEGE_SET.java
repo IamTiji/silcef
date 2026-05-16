@@ -28,8 +28,8 @@ public class _PRIVILEGE_SET {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("PrivilegeCount"),
-        cef_master_h.C_LONG.withName("Control"),
+        cef_render_handler_capi_h.C_LONG.withName("PrivilegeCount"),
+        cef_render_handler_capi_h.C_LONG.withName("Control"),
         MemoryLayout.sequenceLayout(1, _LUID_AND_ATTRIBUTES.layout()).withName("Privilege")
     ).withName("_PRIVILEGE_SET");
 

@@ -28,9 +28,9 @@ public class _STORAGE_DEVICE_LED_STATE_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG_LONG.withName("State")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("State")
     ).withName("_STORAGE_DEVICE_LED_STATE_DESCRIPTOR");
 
     /**

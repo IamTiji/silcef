@@ -34,15 +34,15 @@ public class _STORAGE_WRITE_CACHE_PROPERTY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_INT.withName("WriteCacheType"),
-        cef_master_h.C_INT.withName("WriteCacheEnabled"),
-        cef_master_h.C_INT.withName("WriteCacheChangeable"),
-        cef_master_h.C_INT.withName("WriteThroughSupported"),
-        cef_master_h.C_CHAR.withName("FlushCacheSupported"),
-        cef_master_h.C_CHAR.withName("UserDefinedPowerProtection"),
-        cef_master_h.C_CHAR.withName("NVCacheEnabled"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_INT.withName("WriteCacheType"),
+        cef_render_handler_capi_h.C_INT.withName("WriteCacheEnabled"),
+        cef_render_handler_capi_h.C_INT.withName("WriteCacheChangeable"),
+        cef_render_handler_capi_h.C_INT.withName("WriteThroughSupported"),
+        cef_render_handler_capi_h.C_CHAR.withName("FlushCacheSupported"),
+        cef_render_handler_capi_h.C_CHAR.withName("UserDefinedPowerProtection"),
+        cef_render_handler_capi_h.C_CHAR.withName("NVCacheEnabled"),
         MemoryLayout.paddingLayout(1)
     ).withName("_STORAGE_WRITE_CACHE_PROPERTY");
 

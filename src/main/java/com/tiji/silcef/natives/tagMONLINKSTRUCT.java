@@ -37,18 +37,18 @@ public class tagMONLINKSTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cb"),
-        cef_master_h.C_LONG.withName("dwTime"),
-        cef_master_h.C_POINTER.withName("hTask"),
-        cef_master_h.C_INT.withName("fEstablished"),
-        cef_master_h.C_INT.withName("fNoData"),
-        cef_master_h.C_POINTER.withName("hszSvc"),
-        cef_master_h.C_POINTER.withName("hszTopic"),
-        cef_master_h.C_POINTER.withName("hszItem"),
-        cef_master_h.C_INT.withName("wFmt"),
-        cef_master_h.C_INT.withName("fServer"),
-        cef_master_h.C_POINTER.withName("hConvServer"),
-        cef_master_h.C_POINTER.withName("hConvClient")
+        cef_render_handler_capi_h.C_INT.withName("cb"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTime"),
+        cef_render_handler_capi_h.C_POINTER.withName("hTask"),
+        cef_render_handler_capi_h.C_INT.withName("fEstablished"),
+        cef_render_handler_capi_h.C_INT.withName("fNoData"),
+        cef_render_handler_capi_h.C_POINTER.withName("hszSvc"),
+        cef_render_handler_capi_h.C_POINTER.withName("hszTopic"),
+        cef_render_handler_capi_h.C_POINTER.withName("hszItem"),
+        cef_render_handler_capi_h.C_INT.withName("wFmt"),
+        cef_render_handler_capi_h.C_INT.withName("fServer"),
+        cef_render_handler_capi_h.C_POINTER.withName("hConvServer"),
+        cef_render_handler_capi_h.C_POINTER.withName("hConvClient")
     ).withName("tagMONLINKSTRUCT");
 
     /**

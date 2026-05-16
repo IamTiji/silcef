@@ -27,7 +27,7 @@ public class FIND_BY_SID_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Restart"),
+        cef_render_handler_capi_h.C_LONG.withName("Restart"),
         _SID.layout().withName("Sid")
     ).withName("$anon$11889:9");
 

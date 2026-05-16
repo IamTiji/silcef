@@ -36,10 +36,10 @@ public class _FS_BPIO_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Operation"),
-        cef_master_h.C_INT.withName("OutFlags"),
-        cef_master_h.C_LONG_LONG.withName("Reserved1"),
-        cef_master_h.C_LONG_LONG.withName("Reserved2"),
+        cef_render_handler_capi_h.C_INT.withName("Operation"),
+        cef_render_handler_capi_h.C_INT.withName("OutFlags"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Reserved1"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Reserved2"),
         MemoryLayout.unionLayout(
             _FS_BPIO_RESULTS.layout().withName("Enable"),
             _FS_BPIO_RESULTS.layout().withName("Query"),

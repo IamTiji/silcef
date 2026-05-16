@@ -33,14 +33,14 @@ public class _COMMCONFIG {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSize"),
-        cef_master_h.C_SHORT.withName("wVersion"),
-        cef_master_h.C_SHORT.withName("wReserved"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("wVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("wReserved"),
         _DCB.layout().withName("dcb"),
-        cef_master_h.C_LONG.withName("dwProviderSubType"),
-        cef_master_h.C_LONG.withName("dwProviderOffset"),
-        cef_master_h.C_LONG.withName("dwProviderSize"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("wcProviderData"),
+        cef_render_handler_capi_h.C_LONG.withName("dwProviderSubType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwProviderOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("dwProviderSize"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("wcProviderData"),
         MemoryLayout.paddingLayout(2)
     ).withName("_COMMCONFIG");
 

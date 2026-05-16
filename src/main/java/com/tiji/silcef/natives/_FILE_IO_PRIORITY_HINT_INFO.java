@@ -26,7 +26,7 @@ public class _FILE_IO_PRIORITY_HINT_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("PriorityHint")
+        cef_render_handler_capi_h.C_INT.withName("PriorityHint")
     ).withName("_FILE_IO_PRIORITY_HINT_INFO");
 
     /**

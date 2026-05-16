@@ -33,9 +33,9 @@ public class tagEMRPOLYPOLYLINE {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
         _RECTL.layout().withName("rclBounds"),
-        cef_master_h.C_LONG.withName("nPolys"),
-        cef_master_h.C_LONG.withName("cptl"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG).withName("aPolyCounts"),
+        cef_render_handler_capi_h.C_LONG.withName("nPolys"),
+        cef_render_handler_capi_h.C_LONG.withName("cptl"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG).withName("aPolyCounts"),
         MemoryLayout.sequenceLayout(1, _POINTL.layout()).withName("aptl")
     ).withName("tagEMRPOLYPOLYLINE");
 

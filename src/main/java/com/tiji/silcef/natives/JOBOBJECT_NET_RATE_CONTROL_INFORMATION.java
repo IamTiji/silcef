@@ -28,9 +28,9 @@ public class JOBOBJECT_NET_RATE_CONTROL_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("MaxBandwidth"),
-        cef_master_h.C_INT.withName("ControlFlags"),
-        cef_master_h.C_CHAR.withName("DscpTag"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaxBandwidth"),
+        cef_render_handler_capi_h.C_INT.withName("ControlFlags"),
+        cef_render_handler_capi_h.C_CHAR.withName("DscpTag"),
         MemoryLayout.paddingLayout(3)
     ).withName("JOBOBJECT_NET_RATE_CONTROL_INFORMATION");
 

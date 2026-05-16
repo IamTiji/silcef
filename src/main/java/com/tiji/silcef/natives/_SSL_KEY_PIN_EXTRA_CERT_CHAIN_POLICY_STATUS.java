@@ -28,9 +28,9 @@ public class _SSL_KEY_PIN_EXTRA_CERT_CHAIN_POLICY_STATUS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("lError"),
-        MemoryLayout.sequenceLayout(512, cef_master_h.C_SHORT).withName("wszErrorText")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("lError"),
+        MemoryLayout.sequenceLayout(512, cef_render_handler_capi_h.C_SHORT).withName("wszErrorText")
     ).withName("_SSL_KEY_PIN_EXTRA_CERT_CHAIN_POLICY_STATUS");
 
     /**

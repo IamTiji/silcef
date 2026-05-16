@@ -28,9 +28,9 @@ public class _SERVICE_TRIGGER_SPECIFIC_DATA_ITEM {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwDataType"),
-        cef_master_h.C_LONG.withName("cbData"),
-        cef_master_h.C_POINTER.withName("pData")
+        cef_render_handler_capi_h.C_LONG.withName("dwDataType"),
+        cef_render_handler_capi_h.C_LONG.withName("cbData"),
+        cef_render_handler_capi_h.C_POINTER.withName("pData")
     ).withName("_SERVICE_TRIGGER_SPECIFIC_DATA_ITEM");
 
     /**

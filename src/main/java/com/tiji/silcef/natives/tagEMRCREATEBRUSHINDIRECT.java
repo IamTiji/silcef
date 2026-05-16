@@ -29,7 +29,7 @@ public class tagEMRCREATEBRUSHINDIRECT {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
-        cef_master_h.C_LONG.withName("ihBrush"),
+        cef_render_handler_capi_h.C_LONG.withName("ihBrush"),
         tagLOGBRUSH32.layout().withName("lb")
     ).withName("tagEMRCREATEBRUSHINDIRECT");
 

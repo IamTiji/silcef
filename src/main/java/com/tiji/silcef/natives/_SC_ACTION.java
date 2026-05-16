@@ -27,8 +27,8 @@ public class _SC_ACTION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Type"),
-        cef_master_h.C_LONG.withName("Delay")
+        cef_render_handler_capi_h.C_INT.withName("Type"),
+        cef_render_handler_capi_h.C_LONG.withName("Delay")
     ).withName("_SC_ACTION");
 
     /**

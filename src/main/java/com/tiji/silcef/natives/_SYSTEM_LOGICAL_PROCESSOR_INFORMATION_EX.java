@@ -33,8 +33,8 @@ public class _SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Relationship"),
-        cef_master_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_INT.withName("Relationship"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
         MemoryLayout.unionLayout(
             _PROCESSOR_RELATIONSHIP.layout().withName("Processor"),
             _NUMA_NODE_RELATIONSHIP.layout().withName("NumaNode"),

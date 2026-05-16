@@ -29,10 +29,10 @@ public class USN_TRACK_MODIFIED_RANGES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("Unused"),
-        cef_master_h.C_LONG_LONG.withName("ChunkSize"),
-        cef_master_h.C_LONG_LONG.withName("FileSizeThreshold")
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Unused"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ChunkSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("FileSizeThreshold")
     ).withName("$anon$12012:9");
 
     /**

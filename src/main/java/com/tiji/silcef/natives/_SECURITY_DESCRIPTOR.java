@@ -32,14 +32,14 @@ public class _SECURITY_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("Revision"),
-        cef_master_h.C_CHAR.withName("Sbz1"),
-        cef_master_h.C_SHORT.withName("Control"),
+        cef_render_handler_capi_h.C_CHAR.withName("Revision"),
+        cef_render_handler_capi_h.C_CHAR.withName("Sbz1"),
+        cef_render_handler_capi_h.C_SHORT.withName("Control"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("Owner"),
-        cef_master_h.C_POINTER.withName("Group"),
-        cef_master_h.C_POINTER.withName("Sacl"),
-        cef_master_h.C_POINTER.withName("Dacl")
+        cef_render_handler_capi_h.C_POINTER.withName("Owner"),
+        cef_render_handler_capi_h.C_POINTER.withName("Group"),
+        cef_render_handler_capi_h.C_POINTER.withName("Sacl"),
+        cef_render_handler_capi_h.C_POINTER.withName("Dacl")
     ).withName("_SECURITY_DESCRIPTOR");
 
     /**

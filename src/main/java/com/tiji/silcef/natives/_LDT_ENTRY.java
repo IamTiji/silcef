@@ -47,8 +47,8 @@ public class _LDT_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("LimitLow"),
-        cef_master_h.C_SHORT.withName("BaseLow"),
+        cef_render_handler_capi_h.C_SHORT.withName("LimitLow"),
+        cef_render_handler_capi_h.C_SHORT.withName("BaseLow"),
         _LDT_ENTRY.HighWord.layout().withName("HighWord")
     ).withName("_LDT_ENTRY");
 
@@ -206,10 +206,10 @@ public class _LDT_ENTRY {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_CHAR.withName("BaseMid"),
-                cef_master_h.C_CHAR.withName("Flags1"),
-                cef_master_h.C_CHAR.withName("Flags2"),
-                cef_master_h.C_CHAR.withName("BaseHi")
+                cef_render_handler_capi_h.C_CHAR.withName("BaseMid"),
+                cef_render_handler_capi_h.C_CHAR.withName("Flags1"),
+                cef_render_handler_capi_h.C_CHAR.withName("Flags2"),
+                cef_render_handler_capi_h.C_CHAR.withName("BaseHi")
             ).withName("$anon$8623:9");
 
             /**

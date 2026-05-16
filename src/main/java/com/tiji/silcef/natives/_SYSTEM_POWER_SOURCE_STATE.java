@@ -36,15 +36,15 @@ public class _SYSTEM_POWER_SOURCE_STATE {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         SYSTEM_BATTERY_STATE.layout().withName("BatteryState"),
-        cef_master_h.C_LONG.withName("InstantaneousPeakPower"),
-        cef_master_h.C_LONG.withName("InstantaneousPeakPeriod"),
-        cef_master_h.C_LONG.withName("SustainablePeakPower"),
-        cef_master_h.C_LONG.withName("SustainablePeakPeriod"),
-        cef_master_h.C_LONG.withName("PeakPower"),
-        cef_master_h.C_LONG.withName("MaxOutputPower"),
-        cef_master_h.C_LONG.withName("MaxInputPower"),
-        cef_master_h.C_LONG.withName("BatteryRateInCurrent"),
-        cef_master_h.C_LONG.withName("BatteryVoltage")
+        cef_render_handler_capi_h.C_LONG.withName("InstantaneousPeakPower"),
+        cef_render_handler_capi_h.C_LONG.withName("InstantaneousPeakPeriod"),
+        cef_render_handler_capi_h.C_LONG.withName("SustainablePeakPower"),
+        cef_render_handler_capi_h.C_LONG.withName("SustainablePeakPeriod"),
+        cef_render_handler_capi_h.C_LONG.withName("PeakPower"),
+        cef_render_handler_capi_h.C_LONG.withName("MaxOutputPower"),
+        cef_render_handler_capi_h.C_LONG.withName("MaxInputPower"),
+        cef_render_handler_capi_h.C_LONG.withName("BatteryRateInCurrent"),
+        cef_render_handler_capi_h.C_LONG.withName("BatteryVoltage")
     ).withName("_SYSTEM_POWER_SOURCE_STATE");
 
     /**

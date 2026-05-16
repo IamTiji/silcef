@@ -27,8 +27,8 @@ public class _EV_EXTRA_CERT_CHAIN_POLICY_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwRootProgramQualifierFlags")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwRootProgramQualifierFlags")
     ).withName("_EV_EXTRA_CERT_CHAIN_POLICY_PARA");
 
     /**

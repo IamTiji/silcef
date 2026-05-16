@@ -31,12 +31,12 @@ public class _SET_DISK_ATTRIBUTES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_CHAR.withName("Persist"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_CHAR).withName("Reserved1"),
-        cef_master_h.C_LONG_LONG.withName("Attributes"),
-        cef_master_h.C_LONG_LONG.withName("AttributesMask"),
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_LONG).withName("Reserved2")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_CHAR.withName("Persist"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_CHAR).withName("Reserved1"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Attributes"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("AttributesMask"),
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_LONG).withName("Reserved2")
     ).withName("_SET_DISK_ATTRIBUTES");
 
     /**

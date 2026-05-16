@@ -29,10 +29,10 @@ public class _IMAGE_RESOURCE_DATA_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("OffsetToData"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("CodePage"),
-        cef_master_h.C_LONG.withName("Reserved")
+        cef_render_handler_capi_h.C_LONG.withName("OffsetToData"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("CodePage"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved")
     ).withName("_IMAGE_RESOURCE_DATA_ENTRY");
 
     /**

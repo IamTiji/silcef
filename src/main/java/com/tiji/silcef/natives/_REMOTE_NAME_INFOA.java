@@ -28,9 +28,9 @@ public class _REMOTE_NAME_INFOA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("lpUniversalName"),
-        cef_master_h.C_POINTER.withName("lpConnectionName"),
-        cef_master_h.C_POINTER.withName("lpRemainingPath")
+        cef_render_handler_capi_h.C_POINTER.withName("lpUniversalName"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpConnectionName"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpRemainingPath")
     ).withName("_REMOTE_NAME_INFOA");
 
     /**

@@ -31,8 +31,8 @@ public class tagEMREXTFLOODFILL {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
         _POINTL.layout().withName("ptlStart"),
-        cef_master_h.C_LONG.withName("crColor"),
-        cef_master_h.C_LONG.withName("iMode")
+        cef_render_handler_capi_h.C_LONG.withName("crColor"),
+        cef_render_handler_capi_h.C_LONG.withName("iMode")
     ).withName("tagEMREXTFLOODFILL");
 
     /**

@@ -33,13 +33,13 @@ public class _HTTPSPolicyCallbackData {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("cbStruct"),
-            cef_master_h.C_LONG.withName("cbSize")
+            cef_render_handler_capi_h.C_LONG.withName("cbStruct"),
+            cef_render_handler_capi_h.C_LONG.withName("cbSize")
         ).withName("$anon$20436:5"),
-        cef_master_h.C_LONG.withName("dwAuthType"),
-        cef_master_h.C_LONG.withName("fdwChecks"),
+        cef_render_handler_capi_h.C_LONG.withName("dwAuthType"),
+        cef_render_handler_capi_h.C_LONG.withName("fdwChecks"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pwszServerName")
+        cef_render_handler_capi_h.C_POINTER.withName("pwszServerName")
     ).withName("_HTTPSPolicyCallbackData");
 
     /**

@@ -30,11 +30,11 @@ public class _FS_BPIO_RESULTS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("OpStatus"),
-        cef_master_h.C_SHORT.withName("FailingDriverNameLen"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_SHORT).withName("FailingDriverName"),
-        cef_master_h.C_SHORT.withName("FailureReasonLen"),
-        MemoryLayout.sequenceLayout(128, cef_master_h.C_SHORT).withName("FailureReason")
+        cef_render_handler_capi_h.C_LONG.withName("OpStatus"),
+        cef_render_handler_capi_h.C_SHORT.withName("FailingDriverNameLen"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_SHORT).withName("FailingDriverName"),
+        cef_render_handler_capi_h.C_SHORT.withName("FailureReasonLen"),
+        MemoryLayout.sequenceLayout(128, cef_render_handler_capi_h.C_SHORT).withName("FailureReason")
     ).withName("_FS_BPIO_RESULTS");
 
     /**

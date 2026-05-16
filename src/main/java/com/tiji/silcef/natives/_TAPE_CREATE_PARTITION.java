@@ -28,9 +28,9 @@ public class _TAPE_CREATE_PARTITION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Method"),
-        cef_master_h.C_LONG.withName("Count"),
-        cef_master_h.C_LONG.withName("Size")
+        cef_render_handler_capi_h.C_LONG.withName("Method"),
+        cef_render_handler_capi_h.C_LONG.withName("Count"),
+        cef_render_handler_capi_h.C_LONG.withName("Size")
     ).withName("_TAPE_CREATE_PARTITION");
 
     /**

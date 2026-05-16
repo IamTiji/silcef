@@ -34,15 +34,15 @@ public class _PROV_ENUMALGS_EX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("aiAlgid"),
-        cef_master_h.C_LONG.withName("dwDefaultLen"),
-        cef_master_h.C_LONG.withName("dwMinLen"),
-        cef_master_h.C_LONG.withName("dwMaxLen"),
-        cef_master_h.C_LONG.withName("dwProtocols"),
-        cef_master_h.C_LONG.withName("dwNameLen"),
-        MemoryLayout.sequenceLayout(20, cef_master_h.C_CHAR).withName("szName"),
-        cef_master_h.C_LONG.withName("dwLongNameLen"),
-        MemoryLayout.sequenceLayout(40, cef_master_h.C_CHAR).withName("szLongName")
+        cef_render_handler_capi_h.C_INT.withName("aiAlgid"),
+        cef_render_handler_capi_h.C_LONG.withName("dwDefaultLen"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMinLen"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMaxLen"),
+        cef_render_handler_capi_h.C_LONG.withName("dwProtocols"),
+        cef_render_handler_capi_h.C_LONG.withName("dwNameLen"),
+        MemoryLayout.sequenceLayout(20, cef_render_handler_capi_h.C_CHAR).withName("szName"),
+        cef_render_handler_capi_h.C_LONG.withName("dwLongNameLen"),
+        MemoryLayout.sequenceLayout(40, cef_render_handler_capi_h.C_CHAR).withName("szLongName")
     ).withName("_PROV_ENUMALGS_EX");
 
     /**

@@ -28,8 +28,8 @@ public class _GET_MEDIA_TYPES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("DeviceType"),
-        cef_master_h.C_LONG.withName("MediaInfoCount"),
+        cef_render_handler_capi_h.C_LONG.withName("DeviceType"),
+        cef_render_handler_capi_h.C_LONG.withName("MediaInfoCount"),
         MemoryLayout.sequenceLayout(1, _DEVICE_MEDIA_INFO.layout()).withName("MediaInfo")
     ).withName("_GET_MEDIA_TYPES");
 

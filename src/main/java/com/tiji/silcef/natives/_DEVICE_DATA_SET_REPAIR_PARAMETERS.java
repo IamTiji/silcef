@@ -28,9 +28,9 @@ public class _DEVICE_DATA_SET_REPAIR_PARAMETERS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NumberOfRepairCopies"),
-        cef_master_h.C_LONG.withName("SourceCopy"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG).withName("RepairCopies")
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfRepairCopies"),
+        cef_render_handler_capi_h.C_LONG.withName("SourceCopy"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG).withName("RepairCopies")
     ).withName("_DEVICE_DATA_SET_REPAIR_PARAMETERS");
 
     /**

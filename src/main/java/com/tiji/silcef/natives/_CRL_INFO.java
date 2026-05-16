@@ -34,18 +34,18 @@ public class _CRL_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
         MemoryLayout.paddingLayout(4),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("SignatureAlgorithm"),
         _CRYPTOAPI_BLOB.layout().withName("Issuer"),
         _FILETIME.layout().withName("ThisUpdate"),
         _FILETIME.layout().withName("NextUpdate"),
-        cef_master_h.C_LONG.withName("cCRLEntry"),
+        cef_render_handler_capi_h.C_LONG.withName("cCRLEntry"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgCRLEntry"),
-        cef_master_h.C_LONG.withName("cExtension"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgCRLEntry"),
+        cef_render_handler_capi_h.C_LONG.withName("cExtension"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgExtension")
+        cef_render_handler_capi_h.C_POINTER.withName("rgExtension")
     ).withName("_CRL_INFO");
 
     /**

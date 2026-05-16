@@ -28,9 +28,9 @@ public class tagCIEXYZ {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ciexyzX"),
-        cef_master_h.C_LONG.withName("ciexyzY"),
-        cef_master_h.C_LONG.withName("ciexyzZ")
+        cef_render_handler_capi_h.C_LONG.withName("ciexyzX"),
+        cef_render_handler_capi_h.C_LONG.withName("ciexyzY"),
+        cef_render_handler_capi_h.C_LONG.withName("ciexyzZ")
     ).withName("tagCIEXYZ");
 
     /**

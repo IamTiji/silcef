@@ -34,13 +34,13 @@ public class _cef_browser_process_handler_t {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _cef_base_ref_counted_t.layout().withName("base"),
-        cef_master_h.C_POINTER.withName("on_register_custom_preferences"),
-        cef_master_h.C_POINTER.withName("on_context_initialized"),
-        cef_master_h.C_POINTER.withName("on_before_child_process_launch"),
-        cef_master_h.C_POINTER.withName("on_already_running_app_relaunch"),
-        cef_master_h.C_POINTER.withName("on_schedule_message_pump_work"),
-        cef_master_h.C_POINTER.withName("get_default_client"),
-        cef_master_h.C_POINTER.withName("get_default_request_context_handler")
+        cef_app_capi_h.C_POINTER.withName("on_register_custom_preferences"),
+        cef_app_capi_h.C_POINTER.withName("on_context_initialized"),
+        cef_app_capi_h.C_POINTER.withName("on_before_child_process_launch"),
+        cef_app_capi_h.C_POINTER.withName("on_already_running_app_relaunch"),
+        cef_app_capi_h.C_POINTER.withName("on_schedule_message_pump_work"),
+        cef_app_capi_h.C_POINTER.withName("get_default_client"),
+        cef_app_capi_h.C_POINTER.withName("get_default_request_context_handler")
     ).withName("_cef_browser_process_handler_t");
 
     /**
@@ -113,9 +113,9 @@ public class _cef_browser_process_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -125,7 +125,7 @@ public class _cef_browser_process_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_register_custom_preferences.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(on_register_custom_preferences.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -214,7 +214,7 @@ public class _cef_browser_process_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -224,7 +224,7 @@ public class _cef_browser_process_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_context_initialized.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(on_context_initialized.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -313,8 +313,8 @@ public class _cef_browser_process_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -324,7 +324,7 @@ public class _cef_browser_process_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_before_child_process_launch.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(on_before_child_process_launch.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -413,10 +413,10 @@ public class _cef_browser_process_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_INT,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_INT,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -426,7 +426,7 @@ public class _cef_browser_process_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_already_running_app_relaunch.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(on_already_running_app_relaunch.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -515,8 +515,8 @@ public class _cef_browser_process_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_LONG_LONG
         );
 
         /**
@@ -526,7 +526,7 @@ public class _cef_browser_process_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(on_schedule_message_pump_work.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(on_schedule_message_pump_work.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -615,8 +615,8 @@ public class _cef_browser_process_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -626,7 +626,7 @@ public class _cef_browser_process_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_default_client.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_default_client.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -715,8 +715,8 @@ public class _cef_browser_process_handler_t {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_POINTER
+            cef_app_capi_h.C_POINTER,
+            cef_app_capi_h.C_POINTER
         );
 
         /**
@@ -726,7 +726,7 @@ public class _cef_browser_process_handler_t {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(get_default_request_context_handler.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_app_capi_h.upcallHandle(get_default_request_context_handler.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

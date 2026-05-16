@@ -29,10 +29,10 @@ public class tagDDEML_MSG_HOOK_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("uiLo"),
-        cef_master_h.C_LONG_LONG.withName("uiHi"),
-        cef_master_h.C_LONG.withName("cbData"),
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_LONG).withName("Data"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("uiLo"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("uiHi"),
+        cef_render_handler_capi_h.C_LONG.withName("cbData"),
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_LONG).withName("Data"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagDDEML_MSG_HOOK_DATA");
 

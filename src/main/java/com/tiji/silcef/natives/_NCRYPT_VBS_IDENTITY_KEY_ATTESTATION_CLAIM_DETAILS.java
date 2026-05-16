@@ -30,13 +30,13 @@ public class _NCRYPT_VBS_IDENTITY_KEY_ATTESTATION_CLAIM_DETAILS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ulKeyFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("ulKeyFlags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pszSignatureHashAlg"),
-        cef_master_h.C_LONG.withName("ulPaddingScheme"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszSignatureHashAlg"),
+        cef_render_handler_capi_h.C_LONG.withName("ulPaddingScheme"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pszPaddingHashAlg"),
-        cef_master_h.C_LONG.withName("ulPaddingSalt"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszPaddingHashAlg"),
+        cef_render_handler_capi_h.C_LONG.withName("ulPaddingSalt"),
         MemoryLayout.paddingLayout(4)
     ).withName("_NCRYPT_VBS_IDENTITY_KEY_ATTESTATION_CLAIM_DETAILS");
 

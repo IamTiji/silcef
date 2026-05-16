@@ -32,11 +32,11 @@ public class tagEMRTEXT {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _POINTL.layout().withName("ptlReference"),
-        cef_master_h.C_LONG.withName("nChars"),
-        cef_master_h.C_LONG.withName("offString"),
-        cef_master_h.C_LONG.withName("fOptions"),
+        cef_render_handler_capi_h.C_LONG.withName("nChars"),
+        cef_render_handler_capi_h.C_LONG.withName("offString"),
+        cef_render_handler_capi_h.C_LONG.withName("fOptions"),
         _RECTL.layout().withName("rcl"),
-        cef_master_h.C_LONG.withName("offDx")
+        cef_render_handler_capi_h.C_LONG.withName("offDx")
     ).withName("tagEMRTEXT");
 
     /**

@@ -40,22 +40,22 @@ public class tagMONCBSTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cb"),
-        cef_master_h.C_LONG.withName("dwTime"),
-        cef_master_h.C_POINTER.withName("hTask"),
-        cef_master_h.C_LONG.withName("dwRet"),
-        cef_master_h.C_INT.withName("wType"),
-        cef_master_h.C_INT.withName("wFmt"),
+        cef_render_handler_capi_h.C_INT.withName("cb"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTime"),
+        cef_render_handler_capi_h.C_POINTER.withName("hTask"),
+        cef_render_handler_capi_h.C_LONG.withName("dwRet"),
+        cef_render_handler_capi_h.C_INT.withName("wType"),
+        cef_render_handler_capi_h.C_INT.withName("wFmt"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hConv"),
-        cef_master_h.C_POINTER.withName("hsz1"),
-        cef_master_h.C_POINTER.withName("hsz2"),
-        cef_master_h.C_POINTER.withName("hData"),
-        cef_master_h.C_LONG_LONG.withName("dwData1"),
-        cef_master_h.C_LONG_LONG.withName("dwData2"),
+        cef_render_handler_capi_h.C_POINTER.withName("hConv"),
+        cef_render_handler_capi_h.C_POINTER.withName("hsz1"),
+        cef_render_handler_capi_h.C_POINTER.withName("hsz2"),
+        cef_render_handler_capi_h.C_POINTER.withName("hData"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwData1"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwData2"),
         tagCONVCONTEXT.layout().withName("cc"),
-        cef_master_h.C_LONG.withName("cbData"),
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_LONG).withName("Data")
+        cef_render_handler_capi_h.C_LONG.withName("cbData"),
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_LONG).withName("Data")
     ).withName("tagMONCBSTRUCT");
 
     /**

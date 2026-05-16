@@ -28,9 +28,9 @@ public class tagSOLE_AUTHENTICATION_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwAuthnSvc"),
-        cef_master_h.C_LONG.withName("dwAuthzSvc"),
-        cef_master_h.C_POINTER.withName("pAuthInfo")
+        cef_render_handler_capi_h.C_LONG.withName("dwAuthnSvc"),
+        cef_render_handler_capi_h.C_LONG.withName("dwAuthzSvc"),
+        cef_render_handler_capi_h.C_POINTER.withName("pAuthInfo")
     ).withName("tagSOLE_AUTHENTICATION_INFO");
 
     /**

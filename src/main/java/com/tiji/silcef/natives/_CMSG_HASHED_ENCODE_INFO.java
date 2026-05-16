@@ -29,11 +29,11 @@ public class _CMSG_HASHED_ENCODE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("hCryptProv"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("hCryptProv"),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("HashAlgorithm"),
-        cef_master_h.C_POINTER.withName("pvHashAuxInfo")
+        cef_render_handler_capi_h.C_POINTER.withName("pvHashAuxInfo")
     ).withName("_CMSG_HASHED_ENCODE_INFO");
 
     /**

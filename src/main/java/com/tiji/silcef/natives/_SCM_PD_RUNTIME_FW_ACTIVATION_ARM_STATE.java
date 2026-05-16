@@ -26,7 +26,7 @@ public class _SCM_PD_RUNTIME_FW_ACTIVATION_ARM_STATE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("ArmState")
+        cef_render_handler_capi_h.C_CHAR.withName("ArmState")
     ).withName("_SCM_PD_RUNTIME_FW_ACTIVATION_ARM_STATE");
 
     /**

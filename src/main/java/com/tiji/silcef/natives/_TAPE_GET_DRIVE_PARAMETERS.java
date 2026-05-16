@@ -36,17 +36,17 @@ public class _TAPE_GET_DRIVE_PARAMETERS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("ECC"),
-        cef_master_h.C_CHAR.withName("Compression"),
-        cef_master_h.C_CHAR.withName("DataPadding"),
-        cef_master_h.C_CHAR.withName("ReportSetmarks"),
-        cef_master_h.C_LONG.withName("DefaultBlockSize"),
-        cef_master_h.C_LONG.withName("MaximumBlockSize"),
-        cef_master_h.C_LONG.withName("MinimumBlockSize"),
-        cef_master_h.C_LONG.withName("MaximumPartitionCount"),
-        cef_master_h.C_LONG.withName("FeaturesLow"),
-        cef_master_h.C_LONG.withName("FeaturesHigh"),
-        cef_master_h.C_LONG.withName("EOTWarningZoneSize")
+        cef_render_handler_capi_h.C_CHAR.withName("ECC"),
+        cef_render_handler_capi_h.C_CHAR.withName("Compression"),
+        cef_render_handler_capi_h.C_CHAR.withName("DataPadding"),
+        cef_render_handler_capi_h.C_CHAR.withName("ReportSetmarks"),
+        cef_render_handler_capi_h.C_LONG.withName("DefaultBlockSize"),
+        cef_render_handler_capi_h.C_LONG.withName("MaximumBlockSize"),
+        cef_render_handler_capi_h.C_LONG.withName("MinimumBlockSize"),
+        cef_render_handler_capi_h.C_LONG.withName("MaximumPartitionCount"),
+        cef_render_handler_capi_h.C_LONG.withName("FeaturesLow"),
+        cef_render_handler_capi_h.C_LONG.withName("FeaturesHigh"),
+        cef_render_handler_capi_h.C_LONG.withName("EOTWarningZoneSize")
     ).withName("_TAPE_GET_DRIVE_PARAMETERS");
 
     /**

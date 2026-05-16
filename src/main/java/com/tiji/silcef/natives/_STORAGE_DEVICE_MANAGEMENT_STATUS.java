@@ -32,12 +32,12 @@ public class _STORAGE_DEVICE_MANAGEMENT_STATUS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_INT.withName("Health"),
-        cef_master_h.C_LONG.withName("NumberOfOperationalStatus"),
-        cef_master_h.C_LONG.withName("NumberOfAdditionalReasons"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_INT).withName("OperationalStatus"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_INT.withName("Health"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfOperationalStatus"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfAdditionalReasons"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_INT).withName("OperationalStatus"),
         MemoryLayout.sequenceLayout(1, _STORAGE_OPERATIONAL_REASON.layout()).withName("AdditionalReasons")
     ).withName("_STORAGE_DEVICE_MANAGEMENT_STATUS");
 

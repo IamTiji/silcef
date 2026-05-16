@@ -28,9 +28,9 @@ public class _CRYPT_TIMESTAMP_ACCURACY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSeconds"),
-        cef_master_h.C_LONG.withName("dwMillis"),
-        cef_master_h.C_LONG.withName("dwMicros")
+        cef_render_handler_capi_h.C_LONG.withName("dwSeconds"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMillis"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMicros")
     ).withName("_CRYPT_TIMESTAMP_ACCURACY");
 
     /**

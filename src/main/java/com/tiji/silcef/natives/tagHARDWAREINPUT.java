@@ -28,9 +28,9 @@ public class tagHARDWAREINPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("uMsg"),
-        cef_master_h.C_SHORT.withName("wParamL"),
-        cef_master_h.C_SHORT.withName("wParamH")
+        cef_render_handler_capi_h.C_LONG.withName("uMsg"),
+        cef_render_handler_capi_h.C_SHORT.withName("wParamL"),
+        cef_render_handler_capi_h.C_SHORT.withName("wParamH")
     ).withName("tagHARDWAREINPUT");
 
     /**

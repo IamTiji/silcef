@@ -26,7 +26,7 @@ public class _BCRYPT_PKCS1_PADDING_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszAlgId")
+        cef_render_handler_capi_h.C_POINTER.withName("pszAlgId")
     ).withName("_BCRYPT_PKCS1_PADDING_INFO");
 
     /**

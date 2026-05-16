@@ -28,9 +28,9 @@ public class _CRYPT_DES_KEY_STATE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_CHAR).withName("Key"),
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_CHAR).withName("IV"),
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_CHAR).withName("Feedback")
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_CHAR).withName("Key"),
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_CHAR).withName("IV"),
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_CHAR).withName("Feedback")
     ).withName("_CRYPT_DES_KEY_STATE");
 
     /**

@@ -30,10 +30,10 @@ public class tagMOUSEHOOKSTRUCT {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagPOINT.layout().withName("pt"),
-        cef_master_h.C_POINTER.withName("hwnd"),
-        cef_master_h.C_INT.withName("wHitTestCode"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwnd"),
+        cef_render_handler_capi_h.C_INT.withName("wHitTestCode"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("dwExtraInfo")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwExtraInfo")
     ).withName("tagMOUSEHOOKSTRUCT");
 
     /**

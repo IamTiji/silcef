@@ -26,7 +26,7 @@ public class _OLESTREAM {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("lpstbl")
+        cef_render_handler_capi_h.C_POINTER.withName("lpstbl")
     ).withName("_OLESTREAM");
 
     /**

@@ -30,9 +30,9 @@ public class tagEMREXTESCAPE {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
-        cef_master_h.C_INT.withName("iEscape"),
-        cef_master_h.C_INT.withName("cbEscData"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("EscData"),
+        cef_render_handler_capi_h.C_INT.withName("iEscape"),
+        cef_render_handler_capi_h.C_INT.withName("cbEscData"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("EscData"),
         MemoryLayout.paddingLayout(3)
     ).withName("tagEMREXTESCAPE");
 

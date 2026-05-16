@@ -28,9 +28,9 @@ public class tagCLIPDATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("ulClipFmt"),
-        cef_master_h.C_POINTER.withName("pClipData")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("ulClipFmt"),
+        cef_render_handler_capi_h.C_POINTER.withName("pClipData")
     ).withName("tagCLIPDATA");
 
     /**

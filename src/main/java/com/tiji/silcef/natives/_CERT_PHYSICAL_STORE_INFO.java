@@ -32,14 +32,14 @@ public class _CERT_PHYSICAL_STORE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pszOpenStoreProvider"),
-        cef_master_h.C_LONG.withName("dwOpenEncodingType"),
-        cef_master_h.C_LONG.withName("dwOpenFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszOpenStoreProvider"),
+        cef_render_handler_capi_h.C_LONG.withName("dwOpenEncodingType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwOpenFlags"),
         _CRYPTOAPI_BLOB.layout().withName("OpenParameters"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_LONG.withName("dwPriority")
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwPriority")
     ).withName("_CERT_PHYSICAL_STORE_INFO");
 
     /**

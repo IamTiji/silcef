@@ -29,8 +29,8 @@ public class _CHANGER_SEND_VOLUME_TAG_INFORMATION {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CHANGER_ELEMENT.layout().withName("StartingElement"),
-        cef_master_h.C_LONG.withName("ActionCode"),
-        MemoryLayout.sequenceLayout(40, cef_master_h.C_CHAR).withName("VolumeIDTemplate")
+        cef_render_handler_capi_h.C_LONG.withName("ActionCode"),
+        MemoryLayout.sequenceLayout(40, cef_render_handler_capi_h.C_CHAR).withName("VolumeIDTemplate")
     ).withName("_CHANGER_SEND_VOLUME_TAG_INFORMATION");
 
     /**

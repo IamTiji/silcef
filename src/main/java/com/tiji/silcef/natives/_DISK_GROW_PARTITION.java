@@ -27,7 +27,7 @@ public class _DISK_GROW_PARTITION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("PartitionNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("PartitionNumber"),
         MemoryLayout.paddingLayout(4),
         _LARGE_INTEGER.layout().withName("BytesToGrow")
     ).withName("_DISK_GROW_PARTITION");

@@ -30,11 +30,11 @@ public class _CHANGER_PRODUCT_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_CHAR).withName("VendorId"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("ProductId"),
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_CHAR).withName("Revision"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("SerialNumber"),
-        cef_master_h.C_CHAR.withName("DeviceType")
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_CHAR).withName("VendorId"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("ProductId"),
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_CHAR).withName("Revision"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("SerialNumber"),
+        cef_render_handler_capi_h.C_CHAR.withName("DeviceType")
     ).withName("_CHANGER_PRODUCT_DATA");
 
     /**

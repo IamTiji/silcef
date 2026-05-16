@@ -27,9 +27,9 @@ public class _PRINTER_CONNECTION_INFO_1W {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pszDriverName")
+        cef_render_handler_capi_h.C_POINTER.withName("pszDriverName")
     ).withName("_PRINTER_CONNECTION_INFO_1W");
 
     /**

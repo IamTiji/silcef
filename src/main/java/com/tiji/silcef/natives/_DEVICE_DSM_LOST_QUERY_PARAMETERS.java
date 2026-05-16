@@ -27,9 +27,9 @@ public class _DEVICE_DSM_LOST_QUERY_PARAMETERS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("Granularity")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Granularity")
     ).withName("_DEVICE_DSM_LOST_QUERY_PARAMETERS");
 
     /**

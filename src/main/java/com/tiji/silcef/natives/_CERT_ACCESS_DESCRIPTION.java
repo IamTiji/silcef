@@ -27,7 +27,7 @@ public class _CERT_ACCESS_DESCRIPTION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszAccessMethod"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszAccessMethod"),
         _CERT_ALT_NAME_ENTRY.layout().withName("AccessLocation")
     ).withName("_CERT_ACCESS_DESCRIPTION");
 

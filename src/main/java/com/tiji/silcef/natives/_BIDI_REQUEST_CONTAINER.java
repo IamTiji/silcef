@@ -29,9 +29,9 @@ public class _BIDI_REQUEST_CONTAINER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("Count"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Count"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.sequenceLayout(1, _BIDI_REQUEST_DATA.layout()).withName("aData")
     ).withName("_BIDI_REQUEST_CONTAINER");

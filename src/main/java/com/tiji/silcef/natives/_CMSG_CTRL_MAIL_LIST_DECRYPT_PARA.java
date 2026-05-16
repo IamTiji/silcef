@@ -34,15 +34,15 @@ public class _CMSG_CTRL_MAIL_LIST_DECRYPT_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("hCryptProv"),
-        cef_master_h.C_POINTER.withName("pMailList"),
-        cef_master_h.C_LONG.withName("dwRecipientIndex"),
-        cef_master_h.C_LONG.withName("dwKeyChoice"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("hCryptProv"),
+        cef_render_handler_capi_h.C_POINTER.withName("pMailList"),
+        cef_render_handler_capi_h.C_LONG.withName("dwRecipientIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("dwKeyChoice"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG_LONG.withName("hKeyEncryptionKey"),
-            cef_master_h.C_POINTER.withName("pvKeyEncryptionKey")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("hKeyEncryptionKey"),
+            cef_render_handler_capi_h.C_POINTER.withName("pvKeyEncryptionKey")
         ).withName("$anon$8329:5")
     ).withName("_CMSG_CTRL_MAIL_LIST_DECRYPT_PARA");
 

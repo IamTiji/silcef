@@ -27,9 +27,9 @@ public class tagCBTACTIVATESTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("fMouse"),
+        cef_render_handler_capi_h.C_INT.withName("fMouse"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hWndActive")
+        cef_render_handler_capi_h.C_POINTER.withName("hWndActive")
     ).withName("tagCBTACTIVATESTRUCT");
 
     /**

@@ -33,9 +33,9 @@ public class tagEMREXTTEXTOUTA {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
         _RECTL.layout().withName("rclBounds"),
-        cef_master_h.C_LONG.withName("iGraphicsMode"),
-        cef_master_h.C_FLOAT.withName("exScale"),
-        cef_master_h.C_FLOAT.withName("eyScale"),
+        cef_render_handler_capi_h.C_LONG.withName("iGraphicsMode"),
+        cef_render_handler_capi_h.C_FLOAT.withName("exScale"),
+        cef_render_handler_capi_h.C_FLOAT.withName("eyScale"),
         tagEMRTEXT.layout().withName("emrtext")
     ).withName("tagEMREXTTEXTOUTA");
 

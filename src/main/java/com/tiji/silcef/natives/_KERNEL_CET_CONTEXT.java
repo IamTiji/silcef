@@ -37,16 +37,16 @@ public class _KERNEL_CET_CONTEXT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("Ssp"),
-        cef_master_h.C_LONG_LONG.withName("Rip"),
-        cef_master_h.C_SHORT.withName("SegCs"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Ssp"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Rip"),
+        cef_render_handler_capi_h.C_SHORT.withName("SegCs"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_SHORT.withName("AllFlags"),
+            cef_render_handler_capi_h.C_SHORT.withName("AllFlags"),
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(2)
             ).withName("$anon$2799:9")
         ).withName("$anon$2797:5"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_SHORT).withName("Fill")
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_SHORT).withName("Fill")
     ).withName("_KERNEL_CET_CONTEXT");
 
     /**

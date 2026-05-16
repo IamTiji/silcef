@@ -26,7 +26,7 @@ public class DPI_AWARENESS_CONTEXT__ {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("unused")
+        cef_render_handler_capi_h.C_INT.withName("unused")
     ).withName("DPI_AWARENESS_CONTEXT__");
 
     /**

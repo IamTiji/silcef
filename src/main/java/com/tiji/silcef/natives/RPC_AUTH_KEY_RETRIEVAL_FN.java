@@ -31,11 +31,11 @@ public final class RPC_AUTH_KEY_RETRIEVAL_FN {
     }
 
     private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-        cef_master_h.C_POINTER,
-        cef_master_h.C_POINTER,
-        cef_master_h.C_LONG,
-        cef_master_h.C_POINTER,
-        cef_master_h.C_POINTER
+        cef_render_handler_capi_h.C_POINTER,
+        cef_render_handler_capi_h.C_POINTER,
+        cef_render_handler_capi_h.C_LONG,
+        cef_render_handler_capi_h.C_POINTER,
+        cef_render_handler_capi_h.C_POINTER
     );
 
     /**
@@ -45,7 +45,7 @@ public final class RPC_AUTH_KEY_RETRIEVAL_FN {
         return $DESC;
     }
 
-    private static final MethodHandle UP$MH = cef_master_h.upcallHandle(RPC_AUTH_KEY_RETRIEVAL_FN.Function.class, "apply", $DESC);
+    private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(RPC_AUTH_KEY_RETRIEVAL_FN.Function.class, "apply", $DESC);
 
     /**
      * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

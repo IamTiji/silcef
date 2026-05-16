@@ -32,13 +32,13 @@ public class _DEVICE_MANAGE_DATA_SET_ATTRIBUTES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("Action"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("ParameterBlockOffset"),
-        cef_master_h.C_LONG.withName("ParameterBlockLength"),
-        cef_master_h.C_LONG.withName("DataSetRangesOffset"),
-        cef_master_h.C_LONG.withName("DataSetRangesLength")
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Action"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("ParameterBlockOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("ParameterBlockLength"),
+        cef_render_handler_capi_h.C_LONG.withName("DataSetRangesOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("DataSetRangesLength")
     ).withName("_DEVICE_MANAGE_DATA_SET_ATTRIBUTES");
 
     /**

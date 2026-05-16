@@ -27,8 +27,8 @@ public class _PATHNAME_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("PathNameLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("Name"),
+        cef_render_handler_capi_h.C_LONG.withName("PathNameLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("Name"),
         MemoryLayout.paddingLayout(2)
     ).withName("_PATHNAME_BUFFER");
 

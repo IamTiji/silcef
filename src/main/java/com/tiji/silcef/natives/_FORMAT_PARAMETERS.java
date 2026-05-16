@@ -30,11 +30,11 @@ public class _FORMAT_PARAMETERS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("MediaType"),
-        cef_master_h.C_LONG.withName("StartCylinderNumber"),
-        cef_master_h.C_LONG.withName("EndCylinderNumber"),
-        cef_master_h.C_LONG.withName("StartHeadNumber"),
-        cef_master_h.C_LONG.withName("EndHeadNumber")
+        cef_render_handler_capi_h.C_INT.withName("MediaType"),
+        cef_render_handler_capi_h.C_LONG.withName("StartCylinderNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("EndCylinderNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("StartHeadNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("EndHeadNumber")
     ).withName("_FORMAT_PARAMETERS");
 
     /**

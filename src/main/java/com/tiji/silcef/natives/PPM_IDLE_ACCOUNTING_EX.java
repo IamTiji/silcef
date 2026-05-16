@@ -31,11 +31,11 @@ public class PPM_IDLE_ACCOUNTING_EX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("StateCount"),
-        cef_master_h.C_LONG.withName("TotalTransitions"),
-        cef_master_h.C_LONG.withName("ResetCount"),
-        cef_master_h.C_LONG.withName("AbortCount"),
-        cef_master_h.C_LONG_LONG.withName("StartTime"),
+        cef_render_handler_capi_h.C_LONG.withName("StateCount"),
+        cef_render_handler_capi_h.C_LONG.withName("TotalTransitions"),
+        cef_render_handler_capi_h.C_LONG.withName("ResetCount"),
+        cef_render_handler_capi_h.C_LONG.withName("AbortCount"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("StartTime"),
         MemoryLayout.sequenceLayout(1, PPM_IDLE_STATE_ACCOUNTING_EX.layout()).withName("State")
     ).withName("$anon$19120:9");
 

@@ -26,7 +26,7 @@ public class _TRANSACTIONMANAGER_RECOVERY_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("LastRecoveredLsn")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LastRecoveredLsn")
     ).withName("_TRANSACTIONMANAGER_RECOVERY_INFORMATION");
 
     /**

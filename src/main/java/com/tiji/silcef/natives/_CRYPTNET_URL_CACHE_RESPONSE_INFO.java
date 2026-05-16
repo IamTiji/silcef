@@ -32,14 +32,14 @@ public class _CRYPTNET_URL_CACHE_RESPONSE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_SHORT.withName("wResponseType"),
-        cef_master_h.C_SHORT.withName("wResponseFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("wResponseType"),
+        cef_render_handler_capi_h.C_SHORT.withName("wResponseFlags"),
         _FILETIME.layout().withName("LastModifiedTime"),
-        cef_master_h.C_LONG.withName("dwMaxAge"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMaxAge"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pwszETag"),
-        cef_master_h.C_LONG.withName("dwProxyId"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszETag"),
+        cef_render_handler_capi_h.C_LONG.withName("dwProxyId"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CRYPTNET_URL_CACHE_RESPONSE_INFO");
 

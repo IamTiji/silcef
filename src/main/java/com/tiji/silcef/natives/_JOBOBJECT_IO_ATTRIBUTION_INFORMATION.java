@@ -28,7 +28,7 @@ public class _JOBOBJECT_IO_ATTRIBUTION_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ControlFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("ControlFlags"),
         MemoryLayout.paddingLayout(4),
         _JOBOBJECT_IO_ATTRIBUTION_STATS.layout().withName("ReadStats"),
         _JOBOBJECT_IO_ATTRIBUTION_STATS.layout().withName("WriteStats")

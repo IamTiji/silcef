@@ -29,9 +29,9 @@ public class _COMPATIBILITY_CONTEXT_ELEMENT {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("Id"),
-        cef_master_h.C_INT.withName("Type"),
+        cef_render_handler_capi_h.C_INT.withName("Type"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("MaxVersionTested")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaxVersionTested")
     ).withName("_COMPATIBILITY_CONTEXT_ELEMENT");
 
     /**

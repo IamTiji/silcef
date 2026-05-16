@@ -33,12 +33,12 @@ public class _UMS_SYSTEM_THREAD_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("UmsVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("UmsVersion"),
         MemoryLayout.unionLayout(
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$1640:9"),
-            cef_master_h.C_LONG.withName("ThreadUmsFlags")
+            cef_render_handler_capi_h.C_LONG.withName("ThreadUmsFlags")
         ).withName("$anon$1639:5")
     ).withName("_UMS_SYSTEM_THREAD_INFORMATION");
 

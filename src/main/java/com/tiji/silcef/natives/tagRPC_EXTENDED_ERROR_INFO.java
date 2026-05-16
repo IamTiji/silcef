@@ -38,16 +38,16 @@ public class tagRPC_EXTENDED_ERROR_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("ComputerName"),
-        cef_master_h.C_LONG.withName("ProcessID"),
+        cef_render_handler_capi_h.C_POINTER.withName("ComputerName"),
+        cef_render_handler_capi_h.C_LONG.withName("ProcessID"),
         tagRPC_EXTENDED_ERROR_INFO.u.layout().withName("u"),
-        cef_master_h.C_LONG.withName("GeneratingComponent"),
-        cef_master_h.C_LONG.withName("Status"),
-        cef_master_h.C_SHORT.withName("DetectionLocation"),
-        cef_master_h.C_SHORT.withName("Flags"),
-        cef_master_h.C_INT.withName("NumberOfParameters"),
+        cef_render_handler_capi_h.C_LONG.withName("GeneratingComponent"),
+        cef_render_handler_capi_h.C_LONG.withName("Status"),
+        cef_render_handler_capi_h.C_SHORT.withName("DetectionLocation"),
+        cef_render_handler_capi_h.C_SHORT.withName("Flags"),
+        cef_render_handler_capi_h.C_INT.withName("NumberOfParameters"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.sequenceLayout(4, tagRPC_EE_INFO_PARAM.layout()).withName("Parameters")
     ).withName("tagRPC_EXTENDED_ERROR_INFO");

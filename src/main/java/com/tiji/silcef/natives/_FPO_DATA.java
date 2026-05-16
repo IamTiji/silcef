@@ -35,10 +35,10 @@ public class _FPO_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ulOffStart"),
-        cef_master_h.C_LONG.withName("cbProcSize"),
-        cef_master_h.C_LONG.withName("cdwLocals"),
-        cef_master_h.C_SHORT.withName("cdwParams"),
+        cef_render_handler_capi_h.C_LONG.withName("ulOffStart"),
+        cef_render_handler_capi_h.C_LONG.withName("cbProcSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cdwLocals"),
+        cef_render_handler_capi_h.C_SHORT.withName("cdwParams"),
         MemoryLayout.paddingLayout(2)
     ).withName("_FPO_DATA");
 

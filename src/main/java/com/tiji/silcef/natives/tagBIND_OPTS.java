@@ -29,10 +29,10 @@ public class tagBIND_OPTS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbStruct"),
-        cef_master_h.C_LONG.withName("grfFlags"),
-        cef_master_h.C_LONG.withName("grfMode"),
-        cef_master_h.C_LONG.withName("dwTickCountDeadline")
+        cef_render_handler_capi_h.C_LONG.withName("cbStruct"),
+        cef_render_handler_capi_h.C_LONG.withName("grfFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("grfMode"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTickCountDeadline")
     ).withName("tagBIND_OPTS");
 
     /**

@@ -29,8 +29,8 @@ public class NTFS_FILE_RECORD_OUTPUT_BUFFER {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LARGE_INTEGER.layout().withName("FileReferenceNumber"),
-        cef_master_h.C_LONG.withName("FileRecordLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("FileRecordBuffer"),
+        cef_render_handler_capi_h.C_LONG.withName("FileRecordLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("FileRecordBuffer"),
         MemoryLayout.paddingLayout(3)
     ).withName("$anon$11833:9");
 

@@ -29,10 +29,10 @@ public class _CONSOLE_READCONSOLE_CONTROL {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("nLength"),
-        cef_master_h.C_LONG.withName("nInitialChars"),
-        cef_master_h.C_LONG.withName("dwCtrlWakeupMask"),
-        cef_master_h.C_LONG.withName("dwControlKeyState")
+        cef_render_handler_capi_h.C_LONG.withName("nLength"),
+        cef_render_handler_capi_h.C_LONG.withName("nInitialChars"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCtrlWakeupMask"),
+        cef_render_handler_capi_h.C_LONG.withName("dwControlKeyState")
     ).withName("_CONSOLE_READCONSOLE_CONTROL");
 
     /**

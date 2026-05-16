@@ -28,7 +28,7 @@ public class _LUID_AND_ATTRIBUTES {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LUID.layout().withName("Luid"),
-        cef_master_h.C_LONG.withName("Attributes")
+        cef_render_handler_capi_h.C_LONG.withName("Attributes")
     ).withName("_LUID_AND_ATTRIBUTES");
 
     /**

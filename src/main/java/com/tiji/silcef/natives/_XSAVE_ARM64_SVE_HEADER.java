@@ -29,10 +29,10 @@ public class _XSAVE_ARM64_SVE_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("VectorLength"),
-        cef_master_h.C_LONG.withName("VectorRegisterOffset"),
-        cef_master_h.C_LONG.withName("PredicateRegisterOffset"),
-        MemoryLayout.sequenceLayout(5, cef_master_h.C_LONG).withName("Reserved")
+        cef_render_handler_capi_h.C_LONG.withName("VectorLength"),
+        cef_render_handler_capi_h.C_LONG.withName("VectorRegisterOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("PredicateRegisterOffset"),
+        MemoryLayout.sequenceLayout(5, cef_render_handler_capi_h.C_LONG).withName("Reserved")
     ).withName("_XSAVE_ARM64_SVE_HEADER");
 
     /**

@@ -39,16 +39,16 @@ public class _CHANGER_ELEMENT_STATUS_EX {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CHANGER_ELEMENT.layout().withName("Element"),
         _CHANGER_ELEMENT.layout().withName("SrcElementAddress"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("ExceptionCode"),
-        cef_master_h.C_CHAR.withName("TargetId"),
-        cef_master_h.C_CHAR.withName("Lun"),
-        cef_master_h.C_SHORT.withName("Reserved"),
-        MemoryLayout.sequenceLayout(36, cef_master_h.C_CHAR).withName("PrimaryVolumeID"),
-        MemoryLayout.sequenceLayout(36, cef_master_h.C_CHAR).withName("AlternateVolumeID"),
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_CHAR).withName("VendorIdentification"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("ProductIdentification"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("SerialNumber")
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("ExceptionCode"),
+        cef_render_handler_capi_h.C_CHAR.withName("TargetId"),
+        cef_render_handler_capi_h.C_CHAR.withName("Lun"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved"),
+        MemoryLayout.sequenceLayout(36, cef_render_handler_capi_h.C_CHAR).withName("PrimaryVolumeID"),
+        MemoryLayout.sequenceLayout(36, cef_render_handler_capi_h.C_CHAR).withName("AlternateVolumeID"),
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_CHAR).withName("VendorIdentification"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("ProductIdentification"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("SerialNumber")
     ).withName("_CHANGER_ELEMENT_STATUS_EX");
 
     /**

@@ -28,9 +28,9 @@ public class _ABC {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("abcA"),
-        cef_master_h.C_INT.withName("abcB"),
-        cef_master_h.C_INT.withName("abcC")
+        cef_render_handler_capi_h.C_INT.withName("abcA"),
+        cef_render_handler_capi_h.C_INT.withName("abcB"),
+        cef_render_handler_capi_h.C_INT.withName("abcC")
     ).withName("_ABC");
 
     /**

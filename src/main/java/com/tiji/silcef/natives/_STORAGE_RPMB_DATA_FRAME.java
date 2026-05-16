@@ -34,15 +34,15 @@ public class _STORAGE_RPMB_DATA_FRAME {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(196, cef_master_h.C_CHAR).withName("Stuff"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("KeyOrMAC"),
-        MemoryLayout.sequenceLayout(256, cef_master_h.C_CHAR).withName("Data"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("Nonce"),
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_CHAR).withName("WriteCounter"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("Address"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("BlockCount"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("OperationResult"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("RequestOrResponseType")
+        MemoryLayout.sequenceLayout(196, cef_render_handler_capi_h.C_CHAR).withName("Stuff"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("KeyOrMAC"),
+        MemoryLayout.sequenceLayout(256, cef_render_handler_capi_h.C_CHAR).withName("Data"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("Nonce"),
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_CHAR).withName("WriteCounter"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("Address"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("BlockCount"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("OperationResult"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("RequestOrResponseType")
     ).withName("_STORAGE_RPMB_DATA_FRAME");
 
     /**

@@ -30,11 +30,11 @@ public class _NETCONNECTINFOSTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbStructure"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_LONG.withName("dwSpeed"),
-        cef_master_h.C_LONG.withName("dwDelay"),
-        cef_master_h.C_LONG.withName("dwOptDataSize")
+        cef_render_handler_capi_h.C_LONG.withName("cbStructure"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSpeed"),
+        cef_render_handler_capi_h.C_LONG.withName("dwDelay"),
+        cef_render_handler_capi_h.C_LONG.withName("dwOptDataSize")
     ).withName("_NETCONNECTINFOSTRUCT");
 
     /**

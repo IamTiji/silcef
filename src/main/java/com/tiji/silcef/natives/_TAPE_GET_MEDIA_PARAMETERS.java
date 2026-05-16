@@ -32,9 +32,9 @@ public class _TAPE_GET_MEDIA_PARAMETERS {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LARGE_INTEGER.layout().withName("Capacity"),
         _LARGE_INTEGER.layout().withName("Remaining"),
-        cef_master_h.C_LONG.withName("BlockSize"),
-        cef_master_h.C_LONG.withName("PartitionCount"),
-        cef_master_h.C_CHAR.withName("WriteProtected"),
+        cef_render_handler_capi_h.C_LONG.withName("BlockSize"),
+        cef_render_handler_capi_h.C_LONG.withName("PartitionCount"),
+        cef_render_handler_capi_h.C_CHAR.withName("WriteProtected"),
         MemoryLayout.paddingLayout(7)
     ).withName("_TAPE_GET_MEDIA_PARAMETERS");
 

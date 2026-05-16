@@ -29,10 +29,10 @@ public class _WIM_PROVIDER_ADD_OVERLAY_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("WimType"),
-        cef_master_h.C_LONG.withName("WimIndex"),
-        cef_master_h.C_LONG.withName("WimFileNameOffset"),
-        cef_master_h.C_LONG.withName("WimFileNameLength")
+        cef_render_handler_capi_h.C_LONG.withName("WimType"),
+        cef_render_handler_capi_h.C_LONG.withName("WimIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("WimFileNameOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("WimFileNameLength")
     ).withName("_WIM_PROVIDER_ADD_OVERLAY_INPUT");
 
     /**

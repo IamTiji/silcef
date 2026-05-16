@@ -29,10 +29,10 @@ public class _SECURITY_CAPABILITIES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("AppContainerSid"),
-        cef_master_h.C_POINTER.withName("Capabilities"),
-        cef_master_h.C_LONG.withName("CapabilityCount"),
-        cef_master_h.C_LONG.withName("Reserved")
+        cef_render_handler_capi_h.C_POINTER.withName("AppContainerSid"),
+        cef_render_handler_capi_h.C_POINTER.withName("Capabilities"),
+        cef_render_handler_capi_h.C_LONG.withName("CapabilityCount"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved")
     ).withName("_SECURITY_CAPABILITIES");
 
     /**

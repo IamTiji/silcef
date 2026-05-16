@@ -53,34 +53,34 @@ public class _PROPSHEETHEADERA_V2 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSize"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_POINTER.withName("hwndParent"),
-        cef_master_h.C_POINTER.withName("hInstance"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndParent"),
+        cef_render_handler_capi_h.C_POINTER.withName("hInstance"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("hIcon"),
-            cef_master_h.C_POINTER.withName("pszIcon")
+            cef_render_handler_capi_h.C_POINTER.withName("hIcon"),
+            cef_render_handler_capi_h.C_POINTER.withName("pszIcon")
         ).withName("$anon$479:5"),
-        cef_master_h.C_POINTER.withName("pszCaption"),
-        cef_master_h.C_INT.withName("nPages"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszCaption"),
+        cef_render_handler_capi_h.C_INT.withName("nPages"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
-            cef_master_h.C_INT.withName("nStartPage"),
-            cef_master_h.C_POINTER.withName("pStartPage")
+            cef_render_handler_capi_h.C_INT.withName("nStartPage"),
+            cef_render_handler_capi_h.C_POINTER.withName("pStartPage")
         ).withName("$anon$479:5"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("ppsp"),
-            cef_master_h.C_POINTER.withName("phpage")
+            cef_render_handler_capi_h.C_POINTER.withName("ppsp"),
+            cef_render_handler_capi_h.C_POINTER.withName("phpage")
         ).withName("$anon$479:5"),
-        cef_master_h.C_POINTER.withName("pfnCallback"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnCallback"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("hbmWatermark"),
-            cef_master_h.C_POINTER.withName("pszbmWatermark")
+            cef_render_handler_capi_h.C_POINTER.withName("hbmWatermark"),
+            cef_render_handler_capi_h.C_POINTER.withName("pszbmWatermark")
         ).withName("$anon$480:5"),
-        cef_master_h.C_POINTER.withName("hplWatermark"),
+        cef_render_handler_capi_h.C_POINTER.withName("hplWatermark"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("hbmHeader"),
-            cef_master_h.C_POINTER.withName("pszbmHeader")
+            cef_render_handler_capi_h.C_POINTER.withName("hbmHeader"),
+            cef_render_handler_capi_h.C_POINTER.withName("pszbmHeader")
         ).withName("$anon$486:5")
     ).withName("_PROPSHEETHEADERA_V2");
 

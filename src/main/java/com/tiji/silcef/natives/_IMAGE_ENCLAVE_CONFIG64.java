@@ -38,19 +38,19 @@ public class _IMAGE_ENCLAVE_CONFIG64 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("MinimumRequiredConfigSize"),
-        cef_master_h.C_LONG.withName("PolicyFlags"),
-        cef_master_h.C_LONG.withName("NumberOfImports"),
-        cef_master_h.C_LONG.withName("ImportList"),
-        cef_master_h.C_LONG.withName("ImportEntrySize"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("FamilyID"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("ImageID"),
-        cef_master_h.C_LONG.withName("ImageVersion"),
-        cef_master_h.C_LONG.withName("SecurityVersion"),
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 4).withName("EnclaveSize"),
-        cef_master_h.C_LONG.withName("NumberOfThreads"),
-        cef_master_h.C_LONG.withName("EnclaveFlags")
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("MinimumRequiredConfigSize"),
+        cef_render_handler_capi_h.C_LONG.withName("PolicyFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfImports"),
+        cef_render_handler_capi_h.C_LONG.withName("ImportList"),
+        cef_render_handler_capi_h.C_LONG.withName("ImportEntrySize"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("FamilyID"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("ImageID"),
+        cef_render_handler_capi_h.C_LONG.withName("ImageVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("SecurityVersion"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 4).withName("EnclaveSize"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfThreads"),
+        cef_render_handler_capi_h.C_LONG.withName("EnclaveFlags")
     ).withName("_IMAGE_ENCLAVE_CONFIG64");
 
     /**

@@ -38,19 +38,19 @@ public class _IMAGE_SEPARATE_DEBUG_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Signature"),
-        cef_master_h.C_SHORT.withName("Flags"),
-        cef_master_h.C_SHORT.withName("Machine"),
-        cef_master_h.C_SHORT.withName("Characteristics"),
-        cef_master_h.C_LONG.withName("TimeDateStamp"),
-        cef_master_h.C_LONG.withName("CheckSum"),
-        cef_master_h.C_LONG.withName("ImageBase"),
-        cef_master_h.C_LONG.withName("SizeOfImage"),
-        cef_master_h.C_LONG.withName("NumberOfSections"),
-        cef_master_h.C_LONG.withName("ExportedNamesSize"),
-        cef_master_h.C_LONG.withName("DebugDirectorySize"),
-        cef_master_h.C_LONG.withName("SectionAlignment"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_LONG).withName("Reserved")
+        cef_render_handler_capi_h.C_SHORT.withName("Signature"),
+        cef_render_handler_capi_h.C_SHORT.withName("Flags"),
+        cef_render_handler_capi_h.C_SHORT.withName("Machine"),
+        cef_render_handler_capi_h.C_SHORT.withName("Characteristics"),
+        cef_render_handler_capi_h.C_LONG.withName("TimeDateStamp"),
+        cef_render_handler_capi_h.C_LONG.withName("CheckSum"),
+        cef_render_handler_capi_h.C_LONG.withName("ImageBase"),
+        cef_render_handler_capi_h.C_LONG.withName("SizeOfImage"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfSections"),
+        cef_render_handler_capi_h.C_LONG.withName("ExportedNamesSize"),
+        cef_render_handler_capi_h.C_LONG.withName("DebugDirectorySize"),
+        cef_render_handler_capi_h.C_LONG.withName("SectionAlignment"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_LONG).withName("Reserved")
     ).withName("_IMAGE_SEPARATE_DEBUG_HEADER");
 
     /**

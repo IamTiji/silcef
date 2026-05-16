@@ -32,12 +32,12 @@ public class tagCONVCONTEXT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cb"),
-        cef_master_h.C_INT.withName("wFlags"),
-        cef_master_h.C_INT.withName("wCountryID"),
-        cef_master_h.C_INT.withName("iCodePage"),
-        cef_master_h.C_LONG.withName("dwLangID"),
-        cef_master_h.C_LONG.withName("dwSecurity"),
+        cef_render_handler_capi_h.C_INT.withName("cb"),
+        cef_render_handler_capi_h.C_INT.withName("wFlags"),
+        cef_render_handler_capi_h.C_INT.withName("wCountryID"),
+        cef_render_handler_capi_h.C_INT.withName("iCodePage"),
+        cef_render_handler_capi_h.C_LONG.withName("dwLangID"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSecurity"),
         _SECURITY_QUALITY_OF_SERVICE.layout().withName("qos")
     ).withName("tagCONVCONTEXT");
 

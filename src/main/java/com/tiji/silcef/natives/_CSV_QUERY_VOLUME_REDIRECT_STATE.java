@@ -30,12 +30,12 @@ public class _CSV_QUERY_VOLUME_REDIRECT_STATE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("MdsNodeId"),
-        cef_master_h.C_LONG.withName("DsNodeId"),
-        cef_master_h.C_CHAR.withName("IsDiskConnected"),
-        cef_master_h.C_CHAR.withName("ClusterEnableDirectIo"),
+        cef_render_handler_capi_h.C_LONG.withName("MdsNodeId"),
+        cef_render_handler_capi_h.C_LONG.withName("DsNodeId"),
+        cef_render_handler_capi_h.C_CHAR.withName("IsDiskConnected"),
+        cef_render_handler_capi_h.C_CHAR.withName("ClusterEnableDirectIo"),
         MemoryLayout.paddingLayout(2),
-        cef_master_h.C_INT.withName("DiskConnectivity")
+        cef_render_handler_capi_h.C_INT.withName("DiskConnectivity")
     ).withName("_CSV_QUERY_VOLUME_REDIRECT_STATE");
 
     /**

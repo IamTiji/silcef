@@ -29,10 +29,10 @@ public class tagMCI_OVLY_WINDOW_PARMSA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 1).withName("dwCallback"),
-        cef_master_h.align(cef_master_h.C_POINTER, 1).withName("hWnd"),
-        cef_master_h.align(cef_master_h.C_INT, 1).withName("nCmdShow"),
-        cef_master_h.align(cef_master_h.C_POINTER, 1).withName("lpstrText")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 1).withName("dwCallback"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("hWnd"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_INT, 1).withName("nCmdShow"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("lpstrText")
     ).withName("tagMCI_OVLY_WINDOW_PARMSA");
 
     /**

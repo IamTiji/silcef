@@ -28,9 +28,9 @@ public class tagNMHDR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hwndFrom"),
-        cef_master_h.C_LONG_LONG.withName("idFrom"),
-        cef_master_h.C_INT.withName("code"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndFrom"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("idFrom"),
+        cef_render_handler_capi_h.C_INT.withName("code"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagNMHDR");
 

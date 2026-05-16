@@ -28,9 +28,9 @@ public class _ACTION_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("transport_id"),
-        cef_master_h.C_SHORT.withName("action_code"),
-        cef_master_h.C_SHORT.withName("reserved")
+        cef_render_handler_capi_h.C_LONG.withName("transport_id"),
+        cef_render_handler_capi_h.C_SHORT.withName("action_code"),
+        cef_render_handler_capi_h.C_SHORT.withName("reserved")
     ).withName("_ACTION_HEADER");
 
     /**

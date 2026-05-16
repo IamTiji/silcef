@@ -27,8 +27,8 @@ public class _LANA_ENUM {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("length"),
-        MemoryLayout.sequenceLayout(255, cef_master_h.C_CHAR).withName("lana")
+        cef_render_handler_capi_h.C_CHAR.withName("length"),
+        MemoryLayout.sequenceLayout(255, cef_render_handler_capi_h.C_CHAR).withName("lana")
     ).withName("_LANA_ENUM");
 
     /**

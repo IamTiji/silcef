@@ -38,9 +38,9 @@ public class _STORAGE_SPEC_VERSION {
     private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
         MemoryLayout.structLayout(
             _STORAGE_SPEC_VERSION.MinorVersion.layout().withName("MinorVersion"),
-            cef_master_h.C_SHORT.withName("MajorVersion")
+            cef_render_handler_capi_h.C_SHORT.withName("MajorVersion")
         ).withName("$anon$2922:5"),
-        cef_master_h.C_LONG.withName("AsUlong")
+        cef_render_handler_capi_h.C_LONG.withName("AsUlong")
     ).withName("_STORAGE_SPEC_VERSION");
 
     /**
@@ -69,10 +69,10 @@ public class _STORAGE_SPEC_VERSION {
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
             MemoryLayout.structLayout(
-                cef_master_h.C_CHAR.withName("SubMinor"),
-                cef_master_h.C_CHAR.withName("Minor")
+                cef_render_handler_capi_h.C_CHAR.withName("SubMinor"),
+                cef_render_handler_capi_h.C_CHAR.withName("Minor")
             ).withName("$anon$2924:13"),
-            cef_master_h.C_SHORT.withName("AsUshort")
+            cef_render_handler_capi_h.C_SHORT.withName("AsUshort")
         ).withName("$anon$2923:9");
 
         /**

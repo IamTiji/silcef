@@ -36,8 +36,8 @@ public class _COMSTAT {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG.withName("cbInQue"),
-        cef_master_h.C_LONG.withName("cbOutQue")
+        cef_render_handler_capi_h.C_LONG.withName("cbInQue"),
+        cef_render_handler_capi_h.C_LONG.withName("cbOutQue")
     ).withName("_COMSTAT");
 
     /**

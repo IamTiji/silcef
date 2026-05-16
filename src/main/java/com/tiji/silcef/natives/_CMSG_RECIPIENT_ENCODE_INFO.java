@@ -31,12 +31,12 @@ public class _CMSG_RECIPIENT_ENCODE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwRecipientChoice"),
+        cef_render_handler_capi_h.C_LONG.withName("dwRecipientChoice"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("pKeyTrans"),
-            cef_master_h.C_POINTER.withName("pKeyAgree"),
-            cef_master_h.C_POINTER.withName("pMailList")
+            cef_render_handler_capi_h.C_POINTER.withName("pKeyTrans"),
+            cef_render_handler_capi_h.C_POINTER.withName("pKeyAgree"),
+            cef_render_handler_capi_h.C_POINTER.withName("pMailList")
         ).withName("$anon$7207:5")
     ).withName("_CMSG_RECIPIENT_ENCODE_INFO");
 

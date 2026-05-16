@@ -36,7 +36,7 @@ public class _STORAGE_PROTOCOL_DATA_SUBVALUE_GET_LOG_PAGE {
         MemoryLayout.structLayout(
             MemoryLayout.paddingLayout(4)
         ).withName("$anon$2661:5"),
-        cef_master_h.C_LONG.withName("AsUlong")
+        cef_render_handler_capi_h.C_LONG.withName("AsUlong")
     ).withName("_STORAGE_PROTOCOL_DATA_SUBVALUE_GET_LOG_PAGE");
 
     /**

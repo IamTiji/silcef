@@ -34,12 +34,12 @@ public class _RPC_BINDING_HANDLE_TEMPLATE_V1_A {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("ProtocolSequence"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("ProtocolSequence"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("NetworkAddress"),
-        cef_master_h.C_POINTER.withName("StringEndpoint"),
+        cef_render_handler_capi_h.C_POINTER.withName("NetworkAddress"),
+        cef_render_handler_capi_h.C_POINTER.withName("StringEndpoint"),
         _RPC_BINDING_HANDLE_TEMPLATE_V1_A.u1.layout().withName("u1"),
         _GUID.layout().withName("ObjectUuid")
     ).withName("_RPC_BINDING_HANDLE_TEMPLATE_V1_A");
@@ -285,7 +285,7 @@ public class _RPC_BINDING_HANDLE_TEMPLATE_V1_A {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("Reserved")
+            cef_render_handler_capi_h.C_POINTER.withName("Reserved")
         ).withName("$anon$2070:5");
 
         /**

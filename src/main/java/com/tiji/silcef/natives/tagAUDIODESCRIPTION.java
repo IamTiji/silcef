@@ -28,9 +28,9 @@ public class tagAUDIODESCRIPTION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_INT.withName("Enabled"),
-        cef_master_h.C_LONG.withName("Locale")
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("Enabled"),
+        cef_render_handler_capi_h.C_LONG.withName("Locale")
     ).withName("tagAUDIODESCRIPTION");
 
     /**

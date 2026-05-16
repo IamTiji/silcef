@@ -34,17 +34,17 @@ public class tagEXCEPINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("wCode"),
-        cef_master_h.C_SHORT.withName("wReserved"),
+        cef_render_handler_capi_h.C_SHORT.withName("wCode"),
+        cef_render_handler_capi_h.C_SHORT.withName("wReserved"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("bstrSource"),
-        cef_master_h.C_POINTER.withName("bstrDescription"),
-        cef_master_h.C_POINTER.withName("bstrHelpFile"),
-        cef_master_h.C_LONG.withName("dwHelpContext"),
+        cef_render_handler_capi_h.C_POINTER.withName("bstrSource"),
+        cef_render_handler_capi_h.C_POINTER.withName("bstrDescription"),
+        cef_render_handler_capi_h.C_POINTER.withName("bstrHelpFile"),
+        cef_render_handler_capi_h.C_LONG.withName("dwHelpContext"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pvReserved"),
-        cef_master_h.C_POINTER.withName("pfnDeferredFillIn"),
-        cef_master_h.C_LONG.withName("scode"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvReserved"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnDeferredFillIn"),
+        cef_render_handler_capi_h.C_LONG.withName("scode"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagEXCEPINFO");
 
@@ -382,8 +382,8 @@ public class tagEXCEPINFO {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_LONG,
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_LONG,
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -393,7 +393,7 @@ public class tagEXCEPINFO {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(pfnDeferredFillIn.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(pfnDeferredFillIn.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

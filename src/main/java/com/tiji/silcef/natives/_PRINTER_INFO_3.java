@@ -26,7 +26,7 @@ public class _PRINTER_INFO_3 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pSecurityDescriptor")
+        cef_render_handler_capi_h.C_POINTER.withName("pSecurityDescriptor")
     ).withName("_PRINTER_INFO_3");
 
     /**

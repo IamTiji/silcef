@@ -35,16 +35,16 @@ public class tagWINDOWINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         tagRECT.layout().withName("rcWindow"),
         tagRECT.layout().withName("rcClient"),
-        cef_master_h.C_LONG.withName("dwStyle"),
-        cef_master_h.C_LONG.withName("dwExStyle"),
-        cef_master_h.C_LONG.withName("dwWindowStatus"),
-        cef_master_h.C_INT.withName("cxWindowBorders"),
-        cef_master_h.C_INT.withName("cyWindowBorders"),
-        cef_master_h.C_SHORT.withName("atomWindowType"),
-        cef_master_h.C_SHORT.withName("wCreatorVersion")
+        cef_render_handler_capi_h.C_LONG.withName("dwStyle"),
+        cef_render_handler_capi_h.C_LONG.withName("dwExStyle"),
+        cef_render_handler_capi_h.C_LONG.withName("dwWindowStatus"),
+        cef_render_handler_capi_h.C_INT.withName("cxWindowBorders"),
+        cef_render_handler_capi_h.C_INT.withName("cyWindowBorders"),
+        cef_render_handler_capi_h.C_SHORT.withName("atomWindowType"),
+        cef_render_handler_capi_h.C_SHORT.withName("wCreatorVersion")
     ).withName("tagWINDOWINFO");
 
     /**

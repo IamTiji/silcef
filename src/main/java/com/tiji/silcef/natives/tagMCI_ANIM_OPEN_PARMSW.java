@@ -32,13 +32,13 @@ public class tagMCI_ANIM_OPEN_PARMSW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 1).withName("dwCallback"),
-        cef_master_h.align(cef_master_h.C_INT, 1).withName("wDeviceID"),
-        cef_master_h.align(cef_master_h.C_POINTER, 1).withName("lpstrDeviceType"),
-        cef_master_h.align(cef_master_h.C_POINTER, 1).withName("lpstrElementName"),
-        cef_master_h.align(cef_master_h.C_POINTER, 1).withName("lpstrAlias"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwStyle"),
-        cef_master_h.align(cef_master_h.C_POINTER, 1).withName("hWndParent")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 1).withName("dwCallback"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_INT, 1).withName("wDeviceID"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("lpstrDeviceType"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("lpstrElementName"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("lpstrAlias"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwStyle"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_POINTER, 1).withName("hWndParent")
     ).withName("tagMCI_ANIM_OPEN_PARMSW");
 
     /**

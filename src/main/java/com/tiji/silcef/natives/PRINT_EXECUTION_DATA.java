@@ -27,8 +27,8 @@ public class PRINT_EXECUTION_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("context"),
-        cef_master_h.C_LONG.withName("clientAppPID")
+        cef_render_handler_capi_h.C_INT.withName("context"),
+        cef_render_handler_capi_h.C_LONG.withName("clientAppPID")
     ).withName("$anon$3817:9");
 
     /**

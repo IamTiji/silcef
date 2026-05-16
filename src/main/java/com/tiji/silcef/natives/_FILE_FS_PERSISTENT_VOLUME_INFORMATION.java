@@ -29,10 +29,10 @@ public class _FILE_FS_PERSISTENT_VOLUME_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("VolumeFlags"),
-        cef_master_h.C_LONG.withName("FlagMask"),
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Reserved")
+        cef_render_handler_capi_h.C_LONG.withName("VolumeFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("FlagMask"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved")
     ).withName("_FILE_FS_PERSISTENT_VOLUME_INFORMATION");
 
     /**

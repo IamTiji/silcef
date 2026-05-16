@@ -27,8 +27,8 @@ public class tagSAFEARRAYBOUND {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cElements"),
-        cef_master_h.C_LONG.withName("lLbound")
+        cef_render_handler_capi_h.C_LONG.withName("cElements"),
+        cef_render_handler_capi_h.C_LONG.withName("lLbound")
     ).withName("tagSAFEARRAYBOUND");
 
     /**

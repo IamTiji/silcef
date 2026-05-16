@@ -28,9 +28,9 @@ public class _PROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("BaseAddress"),
-        cef_master_h.C_LONG_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("BaseAddress"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         MemoryLayout.paddingLayout(4)
     ).withName("_PROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGE");
 

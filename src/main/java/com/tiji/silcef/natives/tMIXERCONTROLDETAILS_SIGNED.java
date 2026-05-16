@@ -26,7 +26,7 @@ public class tMIXERCONTROLDETAILS_SIGNED {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("lValue")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("lValue")
     ).withName("tMIXERCONTROLDETAILS_SIGNED");
 
     /**

@@ -27,8 +27,8 @@ public class _UNWIND_HISTORY_TABLE_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("ImageBase"),
-        cef_master_h.C_POINTER.withName("FunctionEntry")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ImageBase"),
+        cef_render_handler_capi_h.C_POINTER.withName("FunctionEntry")
     ).withName("_UNWIND_HISTORY_TABLE_ENTRY");
 
     /**

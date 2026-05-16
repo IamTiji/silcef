@@ -34,15 +34,15 @@ public class _WOW64_FLOATING_SAVE_AREA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ControlWord"),
-        cef_master_h.C_LONG.withName("StatusWord"),
-        cef_master_h.C_LONG.withName("TagWord"),
-        cef_master_h.C_LONG.withName("ErrorOffset"),
-        cef_master_h.C_LONG.withName("ErrorSelector"),
-        cef_master_h.C_LONG.withName("DataOffset"),
-        cef_master_h.C_LONG.withName("DataSelector"),
-        MemoryLayout.sequenceLayout(80, cef_master_h.C_CHAR).withName("RegisterArea"),
-        cef_master_h.C_LONG.withName("Cr0NpxState")
+        cef_render_handler_capi_h.C_LONG.withName("ControlWord"),
+        cef_render_handler_capi_h.C_LONG.withName("StatusWord"),
+        cef_render_handler_capi_h.C_LONG.withName("TagWord"),
+        cef_render_handler_capi_h.C_LONG.withName("ErrorOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("ErrorSelector"),
+        cef_render_handler_capi_h.C_LONG.withName("DataOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("DataSelector"),
+        MemoryLayout.sequenceLayout(80, cef_render_handler_capi_h.C_CHAR).withName("RegisterArea"),
+        cef_render_handler_capi_h.C_LONG.withName("Cr0NpxState")
     ).withName("_WOW64_FLOATING_SAVE_AREA");
 
     /**

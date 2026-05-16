@@ -32,8 +32,8 @@ public class FILE_ID_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSize"),
-        cef_master_h.C_INT.withName("Type"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSize"),
+        cef_render_handler_capi_h.C_INT.withName("Type"),
         MemoryLayout.unionLayout(
             _LARGE_INTEGER.layout().withName("FileId"),
             _GUID.layout().withName("ObjectId"),

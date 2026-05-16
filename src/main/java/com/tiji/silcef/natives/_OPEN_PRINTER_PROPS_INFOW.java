@@ -30,12 +30,12 @@ public class _OPEN_PRINTER_PROPS_INFOW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pszSheetName"),
-        cef_master_h.C_INT.withName("uSheetIndex"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_INT.withName("bModal"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszSheetName"),
+        cef_render_handler_capi_h.C_INT.withName("uSheetIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_INT.withName("bModal"),
         MemoryLayout.paddingLayout(4)
     ).withName("_OPEN_PRINTER_PROPS_INFOW");
 

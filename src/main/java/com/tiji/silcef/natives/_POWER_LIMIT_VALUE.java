@@ -29,10 +29,10 @@ public class _POWER_LIMIT_VALUE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Type"),
-        cef_master_h.C_LONG.withName("DomainId"),
-        cef_master_h.C_LONG.withName("TargetValue"),
-        cef_master_h.C_LONG.withName("TimeParameter")
+        cef_render_handler_capi_h.C_INT.withName("Type"),
+        cef_render_handler_capi_h.C_LONG.withName("DomainId"),
+        cef_render_handler_capi_h.C_LONG.withName("TargetValue"),
+        cef_render_handler_capi_h.C_LONG.withName("TimeParameter")
     ).withName("_POWER_LIMIT_VALUE");
 
     /**

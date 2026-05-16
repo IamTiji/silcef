@@ -31,13 +31,13 @@ public class _CMSG_MAIL_LIST_RECIPIENT_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
         MemoryLayout.paddingLayout(4),
         _CRYPTOAPI_BLOB.layout().withName("KeyId"),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("KeyEncryptionAlgorithm"),
         _CRYPTOAPI_BLOB.layout().withName("EncryptedKey"),
         _FILETIME.layout().withName("Date"),
-        cef_master_h.C_POINTER.withName("pOtherAttr")
+        cef_render_handler_capi_h.C_POINTER.withName("pOtherAttr")
     ).withName("_CMSG_MAIL_LIST_RECIPIENT_INFO");
 
     /**

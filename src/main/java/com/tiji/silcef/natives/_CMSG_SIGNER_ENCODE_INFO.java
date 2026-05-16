@@ -38,23 +38,23 @@ public class _CMSG_SIGNER_ENCODE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pCertInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("pCertInfo"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG_LONG.withName("hCryptProv"),
-            cef_master_h.C_LONG_LONG.withName("hNCryptKey")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("hCryptProv"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("hNCryptKey")
         ).withName("$anon$6926:5"),
-        cef_master_h.C_LONG.withName("dwKeySpec"),
+        cef_render_handler_capi_h.C_LONG.withName("dwKeySpec"),
         MemoryLayout.paddingLayout(4),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("HashAlgorithm"),
-        cef_master_h.C_POINTER.withName("pvHashAuxInfo"),
-        cef_master_h.C_LONG.withName("cAuthAttr"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvHashAuxInfo"),
+        cef_render_handler_capi_h.C_LONG.withName("cAuthAttr"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgAuthAttr"),
-        cef_master_h.C_LONG.withName("cUnauthAttr"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgAuthAttr"),
+        cef_render_handler_capi_h.C_LONG.withName("cUnauthAttr"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgUnauthAttr")
+        cef_render_handler_capi_h.C_POINTER.withName("rgUnauthAttr")
     ).withName("_CMSG_SIGNER_ENCODE_INFO");
 
     /**

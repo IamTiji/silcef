@@ -37,19 +37,19 @@ public class tagRAWMOUSE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("usFlags"),
+        cef_render_handler_capi_h.C_SHORT.withName("usFlags"),
         MemoryLayout.paddingLayout(2),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("ulButtons"),
+            cef_render_handler_capi_h.C_LONG.withName("ulButtons"),
             MemoryLayout.structLayout(
-                cef_master_h.C_SHORT.withName("usButtonFlags"),
-                cef_master_h.C_SHORT.withName("usButtonData")
+                cef_render_handler_capi_h.C_SHORT.withName("usButtonFlags"),
+                cef_render_handler_capi_h.C_SHORT.withName("usButtonData")
             ).withName("$anon$15022:9")
         ).withName("$anon$15020:5"),
-        cef_master_h.C_LONG.withName("ulRawButtons"),
-        cef_master_h.C_LONG.withName("lLastX"),
-        cef_master_h.C_LONG.withName("lLastY"),
-        cef_master_h.C_LONG.withName("ulExtraInformation")
+        cef_render_handler_capi_h.C_LONG.withName("ulRawButtons"),
+        cef_render_handler_capi_h.C_LONG.withName("lLastX"),
+        cef_render_handler_capi_h.C_LONG.withName("lLastY"),
+        cef_render_handler_capi_h.C_LONG.withName("ulExtraInformation")
     ).withName("tagRAWMOUSE");
 
     /**

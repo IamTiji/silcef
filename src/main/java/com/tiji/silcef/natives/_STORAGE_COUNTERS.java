@@ -29,9 +29,9 @@ public class _STORAGE_COUNTERS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("NumberOfCounters"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfCounters"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.sequenceLayout(1, _STORAGE_COUNTER.layout()).withName("Counters")
     ).withName("_STORAGE_COUNTERS");

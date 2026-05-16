@@ -27,8 +27,8 @@ public class _VIRTUAL_STORAGE_SET_BEHAVIOR_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_INT.withName("BehaviorCode")
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_INT.withName("BehaviorCode")
     ).withName("_VIRTUAL_STORAGE_SET_BEHAVIOR_INPUT");
 
     /**

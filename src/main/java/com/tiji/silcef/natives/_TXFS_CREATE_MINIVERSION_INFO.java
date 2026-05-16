@@ -29,10 +29,10 @@ public class _TXFS_CREATE_MINIVERSION_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("StructureVersion"),
-        cef_master_h.C_SHORT.withName("StructureLength"),
-        cef_master_h.C_LONG.withName("BaseVersion"),
-        cef_master_h.C_SHORT.withName("MiniVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("StructureVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("StructureLength"),
+        cef_render_handler_capi_h.C_LONG.withName("BaseVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("MiniVersion"),
         MemoryLayout.paddingLayout(2)
     ).withName("_TXFS_CREATE_MINIVERSION_INFO");
 

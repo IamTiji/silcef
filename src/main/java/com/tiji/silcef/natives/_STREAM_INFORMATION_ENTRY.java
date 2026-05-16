@@ -51,8 +51,8 @@ public class _STREAM_INFORMATION_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         _STREAM_INFORMATION_ENTRY._StreamInformation.layout().withName("StreamInformation")
     ).withName("_STREAM_INFORMATION_ENTRY");
 
@@ -214,8 +214,8 @@ public class _STREAM_INFORMATION_ENTRY {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_INT.withName("Class"),
-                cef_master_h.C_LONG.withName("Flags")
+                cef_render_handler_capi_h.C_INT.withName("Class"),
+                cef_render_handler_capi_h.C_LONG.withName("Flags")
             ).withName("_DesiredStorageClass");
 
             /**
@@ -419,10 +419,10 @@ public class _STREAM_INFORMATION_ENTRY {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_SHORT.withName("Length"),
-                cef_master_h.C_SHORT.withName("Flags"),
-                cef_master_h.C_LONG.withName("Reserved"),
-                cef_master_h.C_LONG_LONG.withName("Vdl")
+                cef_render_handler_capi_h.C_SHORT.withName("Length"),
+                cef_render_handler_capi_h.C_SHORT.withName("Flags"),
+                cef_render_handler_capi_h.C_LONG.withName("Reserved"),
+                cef_render_handler_capi_h.C_LONG_LONG.withName("Vdl")
             ).withName("_DataStream");
 
             /**
@@ -714,10 +714,10 @@ public class _STREAM_INFORMATION_ENTRY {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_SHORT.withName("Length"),
-                cef_master_h.C_SHORT.withName("Flags"),
-                cef_master_h.C_LONG.withName("ReparseDataSize"),
-                cef_master_h.C_LONG.withName("ReparseDataOffset")
+                cef_render_handler_capi_h.C_SHORT.withName("Length"),
+                cef_render_handler_capi_h.C_SHORT.withName("Flags"),
+                cef_render_handler_capi_h.C_LONG.withName("ReparseDataSize"),
+                cef_render_handler_capi_h.C_LONG.withName("ReparseDataOffset")
             ).withName("_Reparse");
 
             /**
@@ -1009,10 +1009,10 @@ public class _STREAM_INFORMATION_ENTRY {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_SHORT.withName("Length"),
-                cef_master_h.C_SHORT.withName("Flags"),
-                cef_master_h.C_LONG.withName("EaSize"),
-                cef_master_h.C_LONG.withName("EaInformationOffset")
+                cef_render_handler_capi_h.C_SHORT.withName("Length"),
+                cef_render_handler_capi_h.C_SHORT.withName("Flags"),
+                cef_render_handler_capi_h.C_LONG.withName("EaSize"),
+                cef_render_handler_capi_h.C_LONG.withName("EaInformationOffset")
             ).withName("_Ea");
 
             /**

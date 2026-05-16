@@ -30,12 +30,12 @@ public class _tagPROTOCOLFILTERDATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pProtocolSink"),
-        cef_master_h.C_POINTER.withName("pProtocol"),
-        cef_master_h.C_POINTER.withName("pUnk"),
-        cef_master_h.C_LONG.withName("dwFilterFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("pProtocolSink"),
+        cef_render_handler_capi_h.C_POINTER.withName("pProtocol"),
+        cef_render_handler_capi_h.C_POINTER.withName("pUnk"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFilterFlags"),
         MemoryLayout.paddingLayout(4)
     ).withName("_tagPROTOCOLFILTERDATA");
 

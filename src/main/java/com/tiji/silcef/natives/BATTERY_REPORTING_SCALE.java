@@ -27,8 +27,8 @@ public class BATTERY_REPORTING_SCALE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Granularity"),
-        cef_master_h.C_LONG.withName("Capacity")
+        cef_render_handler_capi_h.C_LONG.withName("Granularity"),
+        cef_render_handler_capi_h.C_LONG.withName("Capacity")
     ).withName("$anon$18963:9");
 
     /**

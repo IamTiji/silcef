@@ -27,8 +27,8 @@ public class tagPARAMDATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("szName"),
-        cef_master_h.C_SHORT.withName("vt"),
+        cef_render_handler_capi_h.C_POINTER.withName("szName"),
+        cef_render_handler_capi_h.C_SHORT.withName("vt"),
         MemoryLayout.paddingLayout(6)
     ).withName("tagPARAMDATA");
 

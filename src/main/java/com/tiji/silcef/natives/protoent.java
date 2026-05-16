@@ -28,9 +28,9 @@ public class protoent {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("p_name"),
-        cef_master_h.C_POINTER.withName("p_aliases"),
-        cef_master_h.C_SHORT.withName("p_proto"),
+        cef_render_handler_capi_h.C_POINTER.withName("p_name"),
+        cef_render_handler_capi_h.C_POINTER.withName("p_aliases"),
+        cef_render_handler_capi_h.C_SHORT.withName("p_proto"),
         MemoryLayout.paddingLayout(6)
     ).withName("protoent");
 

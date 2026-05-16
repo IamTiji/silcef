@@ -27,8 +27,8 @@ public class _cef_size_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("width"),
-        cef_master_h.C_INT.withName("height")
+        cef_render_handler_capi_h.C_INT.withName("width"),
+        cef_render_handler_capi_h.C_INT.withName("height")
     ).withName("_cef_size_t");
 
     /**

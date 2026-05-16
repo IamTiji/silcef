@@ -28,9 +28,9 @@ public class _TXFS_SAVEPOINT_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("KtmTransaction"),
-        cef_master_h.C_LONG.withName("ActionCode"),
-        cef_master_h.C_LONG.withName("SavepointId")
+        cef_render_handler_capi_h.C_POINTER.withName("KtmTransaction"),
+        cef_render_handler_capi_h.C_LONG.withName("ActionCode"),
+        cef_render_handler_capi_h.C_LONG.withName("SavepointId")
     ).withName("_TXFS_SAVEPOINT_INFORMATION");
 
     /**

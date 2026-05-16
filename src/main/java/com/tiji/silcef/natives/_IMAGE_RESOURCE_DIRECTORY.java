@@ -31,12 +31,12 @@ public class _IMAGE_RESOURCE_DIRECTORY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Characteristics"),
-        cef_master_h.C_LONG.withName("TimeDateStamp"),
-        cef_master_h.C_SHORT.withName("MajorVersion"),
-        cef_master_h.C_SHORT.withName("MinorVersion"),
-        cef_master_h.C_SHORT.withName("NumberOfNamedEntries"),
-        cef_master_h.C_SHORT.withName("NumberOfIdEntries")
+        cef_render_handler_capi_h.C_LONG.withName("Characteristics"),
+        cef_render_handler_capi_h.C_LONG.withName("TimeDateStamp"),
+        cef_render_handler_capi_h.C_SHORT.withName("MajorVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("MinorVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("NumberOfNamedEntries"),
+        cef_render_handler_capi_h.C_SHORT.withName("NumberOfIdEntries")
     ).withName("_IMAGE_RESOURCE_DIRECTORY");
 
     /**

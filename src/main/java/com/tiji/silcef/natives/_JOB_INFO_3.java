@@ -28,9 +28,9 @@ public class _JOB_INFO_3 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("JobId"),
-        cef_master_h.C_LONG.withName("NextJobId"),
-        cef_master_h.C_LONG.withName("Reserved")
+        cef_render_handler_capi_h.C_LONG.withName("JobId"),
+        cef_render_handler_capi_h.C_LONG.withName("NextJobId"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved")
     ).withName("_JOB_INFO_3");
 
     /**

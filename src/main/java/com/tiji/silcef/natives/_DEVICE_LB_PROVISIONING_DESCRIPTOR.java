@@ -38,14 +38,14 @@ public class _DEVICE_LB_PROVISIONING_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
         MemoryLayout.paddingLayout(1),
-        MemoryLayout.sequenceLayout(7, cef_master_h.C_CHAR).withName("Reserved1"),
-        cef_master_h.C_LONG_LONG.withName("OptimalUnmapGranularity"),
-        cef_master_h.C_LONG_LONG.withName("UnmapGranularityAlignment"),
-        cef_master_h.C_LONG.withName("MaxUnmapLbaCount"),
-        cef_master_h.C_LONG.withName("MaxUnmapBlockDescriptorCount")
+        MemoryLayout.sequenceLayout(7, cef_render_handler_capi_h.C_CHAR).withName("Reserved1"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("OptimalUnmapGranularity"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("UnmapGranularityAlignment"),
+        cef_render_handler_capi_h.C_LONG.withName("MaxUnmapLbaCount"),
+        cef_render_handler_capi_h.C_LONG.withName("MaxUnmapBlockDescriptorCount")
     ).withName("_DEVICE_LB_PROVISIONING_DESCRIPTOR");
 
     /**

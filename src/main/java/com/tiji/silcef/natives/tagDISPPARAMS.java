@@ -29,10 +29,10 @@ public class tagDISPPARAMS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("rgvarg"),
-        cef_master_h.C_POINTER.withName("rgdispidNamedArgs"),
-        cef_master_h.C_INT.withName("cArgs"),
-        cef_master_h.C_INT.withName("cNamedArgs")
+        cef_render_handler_capi_h.C_POINTER.withName("rgvarg"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgdispidNamedArgs"),
+        cef_render_handler_capi_h.C_INT.withName("cArgs"),
+        cef_render_handler_capi_h.C_INT.withName("cNamedArgs")
     ).withName("tagDISPPARAMS");
 
     /**

@@ -30,9 +30,9 @@ public class tagENUMLOGFONTEXA {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagLOGFONTA.layout().withName("elfLogFont"),
-        MemoryLayout.sequenceLayout(64, cef_master_h.C_CHAR).withName("elfFullName"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("elfStyle"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("elfScript")
+        MemoryLayout.sequenceLayout(64, cef_render_handler_capi_h.C_CHAR).withName("elfFullName"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("elfStyle"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("elfScript")
     ).withName("tagENUMLOGFONTEXA");
 
     /**

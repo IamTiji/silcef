@@ -26,7 +26,7 @@ public class _SYSTEM_POOL_ZEROING_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("PoolZeroingSupportPresent")
+        cef_render_handler_capi_h.C_CHAR.withName("PoolZeroingSupportPresent")
     ).withName("_SYSTEM_POOL_ZEROING_INFORMATION");
 
     /**

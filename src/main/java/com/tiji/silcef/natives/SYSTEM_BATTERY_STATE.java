@@ -37,18 +37,18 @@ public class SYSTEM_BATTERY_STATE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("AcOnLine"),
-        cef_master_h.C_CHAR.withName("BatteryPresent"),
-        cef_master_h.C_CHAR.withName("Charging"),
-        cef_master_h.C_CHAR.withName("Discharging"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_CHAR).withName("Spare1"),
-        cef_master_h.C_CHAR.withName("Tag"),
-        cef_master_h.C_LONG.withName("MaxCapacity"),
-        cef_master_h.C_LONG.withName("RemainingCapacity"),
-        cef_master_h.C_LONG.withName("Rate"),
-        cef_master_h.C_LONG.withName("EstimatedTime"),
-        cef_master_h.C_LONG.withName("DefaultAlert1"),
-        cef_master_h.C_LONG.withName("DefaultAlert2")
+        cef_render_handler_capi_h.C_CHAR.withName("AcOnLine"),
+        cef_render_handler_capi_h.C_CHAR.withName("BatteryPresent"),
+        cef_render_handler_capi_h.C_CHAR.withName("Charging"),
+        cef_render_handler_capi_h.C_CHAR.withName("Discharging"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_CHAR).withName("Spare1"),
+        cef_render_handler_capi_h.C_CHAR.withName("Tag"),
+        cef_render_handler_capi_h.C_LONG.withName("MaxCapacity"),
+        cef_render_handler_capi_h.C_LONG.withName("RemainingCapacity"),
+        cef_render_handler_capi_h.C_LONG.withName("Rate"),
+        cef_render_handler_capi_h.C_LONG.withName("EstimatedTime"),
+        cef_render_handler_capi_h.C_LONG.withName("DefaultAlert1"),
+        cef_render_handler_capi_h.C_LONG.withName("DefaultAlert2")
     ).withName("$anon$19584:9");
 
     /**

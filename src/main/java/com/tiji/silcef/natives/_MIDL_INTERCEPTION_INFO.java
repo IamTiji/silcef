@@ -30,13 +30,13 @@ public class _MIDL_INTERCEPTION_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("ProcString"),
-        cef_master_h.C_POINTER.withName("ProcFormatOffsetTable"),
-        cef_master_h.C_LONG.withName("ProcCount"),
+        cef_render_handler_capi_h.C_POINTER.withName("ProcString"),
+        cef_render_handler_capi_h.C_POINTER.withName("ProcFormatOffsetTable"),
+        cef_render_handler_capi_h.C_LONG.withName("ProcCount"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("TypeString")
+        cef_render_handler_capi_h.C_POINTER.withName("TypeString")
     ).withName("_MIDL_INTERCEPTION_INFO");
 
     /**

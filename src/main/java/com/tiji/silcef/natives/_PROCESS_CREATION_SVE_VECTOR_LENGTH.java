@@ -30,7 +30,7 @@ public class _PROCESS_CREATION_SVE_VECTOR_LENGTH {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-        cef_master_h.C_LONG.withName("Data"),
+        cef_render_handler_capi_h.C_LONG.withName("Data"),
         MemoryLayout.structLayout(
             MemoryLayout.paddingLayout(4)
         ).withName("$anon$3623:5")

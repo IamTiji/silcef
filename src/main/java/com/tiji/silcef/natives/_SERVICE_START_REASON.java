@@ -26,7 +26,7 @@ public class _SERVICE_START_REASON {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwReason")
+        cef_render_handler_capi_h.C_LONG.withName("dwReason")
     ).withName("_SERVICE_START_REASON");
 
     /**

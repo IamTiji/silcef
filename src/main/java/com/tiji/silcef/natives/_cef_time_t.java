@@ -33,14 +33,14 @@ public class _cef_time_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("year"),
-        cef_master_h.C_INT.withName("month"),
-        cef_master_h.C_INT.withName("day_of_week"),
-        cef_master_h.C_INT.withName("day_of_month"),
-        cef_master_h.C_INT.withName("hour"),
-        cef_master_h.C_INT.withName("minute"),
-        cef_master_h.C_INT.withName("second"),
-        cef_master_h.C_INT.withName("millisecond")
+        cef_render_handler_capi_h.C_INT.withName("year"),
+        cef_render_handler_capi_h.C_INT.withName("month"),
+        cef_render_handler_capi_h.C_INT.withName("day_of_week"),
+        cef_render_handler_capi_h.C_INT.withName("day_of_month"),
+        cef_render_handler_capi_h.C_INT.withName("hour"),
+        cef_render_handler_capi_h.C_INT.withName("minute"),
+        cef_render_handler_capi_h.C_INT.withName("second"),
+        cef_render_handler_capi_h.C_INT.withName("millisecond")
     ).withName("_cef_time_t");
 
     /**

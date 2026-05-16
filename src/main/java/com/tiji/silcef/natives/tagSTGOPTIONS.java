@@ -29,10 +29,10 @@ public class tagSTGOPTIONS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("usVersion"),
-        cef_master_h.C_SHORT.withName("reserved"),
-        cef_master_h.C_LONG.withName("ulSectorSize"),
-        cef_master_h.C_POINTER.withName("pwcsTemplateFile")
+        cef_render_handler_capi_h.C_SHORT.withName("usVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("ulSectorSize"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwcsTemplateFile")
     ).withName("tagSTGOPTIONS");
 
     /**

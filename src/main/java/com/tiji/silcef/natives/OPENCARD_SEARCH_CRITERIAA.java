@@ -38,23 +38,23 @@ public class OPENCARD_SEARCH_CRITERIAA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwStructSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStructSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpstrGroupNames"),
-        cef_master_h.C_LONG.withName("nMaxGroupNames"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpstrGroupNames"),
+        cef_render_handler_capi_h.C_LONG.withName("nMaxGroupNames"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgguidInterfaces"),
-        cef_master_h.C_LONG.withName("cguidInterfaces"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgguidInterfaces"),
+        cef_render_handler_capi_h.C_LONG.withName("cguidInterfaces"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpstrCardNames"),
-        cef_master_h.C_LONG.withName("nMaxCardNames"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpstrCardNames"),
+        cef_render_handler_capi_h.C_LONG.withName("nMaxCardNames"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpfnCheck"),
-        cef_master_h.C_POINTER.withName("lpfnConnect"),
-        cef_master_h.C_POINTER.withName("lpfnDisconnect"),
-        cef_master_h.C_POINTER.withName("pvUserData"),
-        cef_master_h.C_LONG.withName("dwShareMode"),
-        cef_master_h.C_LONG.withName("dwPreferredProtocols")
+        cef_render_handler_capi_h.C_POINTER.withName("lpfnCheck"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpfnConnect"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpfnDisconnect"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvUserData"),
+        cef_render_handler_capi_h.C_LONG.withName("dwShareMode"),
+        cef_render_handler_capi_h.C_LONG.withName("dwPreferredProtocols")
     ).withName("$anon$904:9");
 
     /**

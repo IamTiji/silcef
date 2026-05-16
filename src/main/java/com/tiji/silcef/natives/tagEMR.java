@@ -27,8 +27,8 @@ public class tagEMR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("iType"),
-        cef_master_h.C_LONG.withName("nSize")
+        cef_render_handler_capi_h.C_LONG.withName("iType"),
+        cef_render_handler_capi_h.C_LONG.withName("nSize")
     ).withName("tagEMR");
 
     /**

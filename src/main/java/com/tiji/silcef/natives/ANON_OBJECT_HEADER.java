@@ -32,13 +32,13 @@ public class ANON_OBJECT_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Sig1"),
-        cef_master_h.C_SHORT.withName("Sig2"),
-        cef_master_h.C_SHORT.withName("Version"),
-        cef_master_h.C_SHORT.withName("Machine"),
-        cef_master_h.C_LONG.withName("TimeDateStamp"),
+        cef_render_handler_capi_h.C_SHORT.withName("Sig1"),
+        cef_render_handler_capi_h.C_SHORT.withName("Sig2"),
+        cef_render_handler_capi_h.C_SHORT.withName("Version"),
+        cef_render_handler_capi_h.C_SHORT.withName("Machine"),
+        cef_render_handler_capi_h.C_LONG.withName("TimeDateStamp"),
         _GUID.layout().withName("ClassID"),
-        cef_master_h.C_LONG.withName("SizeOfData")
+        cef_render_handler_capi_h.C_LONG.withName("SizeOfData")
     ).withName("ANON_OBJECT_HEADER");
 
     /**

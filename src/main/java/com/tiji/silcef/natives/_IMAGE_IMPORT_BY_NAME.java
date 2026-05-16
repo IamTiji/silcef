@@ -27,8 +27,8 @@ public class _IMAGE_IMPORT_BY_NAME {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Hint"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("Name"),
+        cef_render_handler_capi_h.C_SHORT.withName("Hint"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("Name"),
         MemoryLayout.paddingLayout(1)
     ).withName("_IMAGE_IMPORT_BY_NAME");
 

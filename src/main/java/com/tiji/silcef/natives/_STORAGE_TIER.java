@@ -33,12 +33,12 @@ public class _STORAGE_TIER {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _GUID.layout().withName("Id"),
-        MemoryLayout.sequenceLayout(256, cef_master_h.C_SHORT).withName("Name"),
-        MemoryLayout.sequenceLayout(256, cef_master_h.C_SHORT).withName("Description"),
-        cef_master_h.C_LONG_LONG.withName("Flags"),
-        cef_master_h.C_LONG_LONG.withName("ProvisionedCapacity"),
-        cef_master_h.C_INT.withName("MediaType"),
-        cef_master_h.C_INT.withName("Class")
+        MemoryLayout.sequenceLayout(256, cef_render_handler_capi_h.C_SHORT).withName("Name"),
+        MemoryLayout.sequenceLayout(256, cef_render_handler_capi_h.C_SHORT).withName("Description"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ProvisionedCapacity"),
+        cef_render_handler_capi_h.C_INT.withName("MediaType"),
+        cef_render_handler_capi_h.C_INT.withName("Class")
     ).withName("_STORAGE_TIER");
 
     /**

@@ -27,8 +27,8 @@ public class _CLAIM_SECURITY_ATTRIBUTE_FQBN_VALUE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("Version"),
-        cef_master_h.C_POINTER.withName("Name")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_POINTER.withName("Name")
     ).withName("_CLAIM_SECURITY_ATTRIBUTE_FQBN_VALUE");
 
     /**

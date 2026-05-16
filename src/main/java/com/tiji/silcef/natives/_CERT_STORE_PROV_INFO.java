@@ -31,13 +31,13 @@ public class _CERT_STORE_PROV_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("cStoreProvFunc"),
-        cef_master_h.C_POINTER.withName("rgpvStoreProvFunc"),
-        cef_master_h.C_POINTER.withName("hStoreProv"),
-        cef_master_h.C_LONG.withName("dwStoreProvFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cStoreProvFunc"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgpvStoreProvFunc"),
+        cef_render_handler_capi_h.C_POINTER.withName("hStoreProv"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStoreProvFlags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hStoreProvFuncAddr2")
+        cef_render_handler_capi_h.C_POINTER.withName("hStoreProvFuncAddr2")
     ).withName("_CERT_STORE_PROV_INFO");
 
     /**

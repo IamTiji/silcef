@@ -27,8 +27,8 @@ public class _STORAGE_DESCRIPTOR_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size")
     ).withName("_STORAGE_DESCRIPTOR_HEADER");
 
     /**

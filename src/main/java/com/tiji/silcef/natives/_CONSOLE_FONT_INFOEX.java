@@ -31,12 +31,12 @@ public class _CONSOLE_FONT_INFOEX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("nFont"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("nFont"),
         _COORD.layout().withName("dwFontSize"),
-        cef_master_h.C_INT.withName("FontFamily"),
-        cef_master_h.C_INT.withName("FontWeight"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_SHORT).withName("FaceName")
+        cef_render_handler_capi_h.C_INT.withName("FontFamily"),
+        cef_render_handler_capi_h.C_INT.withName("FontWeight"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_SHORT).withName("FaceName")
     ).withName("_CONSOLE_FONT_INFOEX");
 
     /**

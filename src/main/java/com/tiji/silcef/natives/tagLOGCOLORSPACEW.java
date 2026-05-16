@@ -35,16 +35,16 @@ public class tagLOGCOLORSPACEW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("lcsSignature"),
-        cef_master_h.C_LONG.withName("lcsVersion"),
-        cef_master_h.C_LONG.withName("lcsSize"),
-        cef_master_h.C_LONG.withName("lcsCSType"),
-        cef_master_h.C_LONG.withName("lcsIntent"),
+        cef_render_handler_capi_h.C_LONG.withName("lcsSignature"),
+        cef_render_handler_capi_h.C_LONG.withName("lcsVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("lcsSize"),
+        cef_render_handler_capi_h.C_LONG.withName("lcsCSType"),
+        cef_render_handler_capi_h.C_LONG.withName("lcsIntent"),
         tagICEXYZTRIPLE.layout().withName("lcsEndpoints"),
-        cef_master_h.C_LONG.withName("lcsGammaRed"),
-        cef_master_h.C_LONG.withName("lcsGammaGreen"),
-        cef_master_h.C_LONG.withName("lcsGammaBlue"),
-        MemoryLayout.sequenceLayout(260, cef_master_h.C_SHORT).withName("lcsFilename")
+        cef_render_handler_capi_h.C_LONG.withName("lcsGammaRed"),
+        cef_render_handler_capi_h.C_LONG.withName("lcsGammaGreen"),
+        cef_render_handler_capi_h.C_LONG.withName("lcsGammaBlue"),
+        MemoryLayout.sequenceLayout(260, cef_render_handler_capi_h.C_SHORT).withName("lcsFilename")
     ).withName("tagLOGCOLORSPACEW");
 
     /**

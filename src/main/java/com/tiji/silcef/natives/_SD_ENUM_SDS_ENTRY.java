@@ -30,11 +30,11 @@ public class _SD_ENUM_SDS_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Hash"),
-        cef_master_h.C_LONG.withName("SecurityId"),
-        cef_master_h.C_LONG_LONG.withName("Offset"),
-        cef_master_h.C_LONG.withName("Length"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("Descriptor"),
+        cef_render_handler_capi_h.C_LONG.withName("Hash"),
+        cef_render_handler_capi_h.C_LONG.withName("SecurityId"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Offset"),
+        cef_render_handler_capi_h.C_LONG.withName("Length"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("Descriptor"),
         MemoryLayout.paddingLayout(3)
     ).withName("_SD_ENUM_SDS_ENTRY");
 

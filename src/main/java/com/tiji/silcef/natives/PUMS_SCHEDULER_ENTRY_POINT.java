@@ -31,9 +31,9 @@ public final class PUMS_SCHEDULER_ENTRY_POINT {
     }
 
     private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-        cef_master_h.C_INT,
-        cef_master_h.C_LONG_LONG,
-        cef_master_h.C_POINTER
+        cef_render_handler_capi_h.C_INT,
+        cef_render_handler_capi_h.C_LONG_LONG,
+        cef_render_handler_capi_h.C_POINTER
     );
 
     /**
@@ -43,7 +43,7 @@ public final class PUMS_SCHEDULER_ENTRY_POINT {
         return $DESC;
     }
 
-    private static final MethodHandle UP$MH = cef_master_h.upcallHandle(PUMS_SCHEDULER_ENTRY_POINT.Function.class, "apply", $DESC);
+    private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(PUMS_SCHEDULER_ENTRY_POINT.Function.class, "apply", $DESC);
 
     /**
      * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

@@ -28,9 +28,9 @@ public class _CERTIFICATE_BLOB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwCertEncodingType"),
-        cef_master_h.C_LONG.withName("cbData"),
-        cef_master_h.C_POINTER.withName("pbData")
+        cef_render_handler_capi_h.C_LONG.withName("dwCertEncodingType"),
+        cef_render_handler_capi_h.C_LONG.withName("cbData"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbData")
     ).withName("_CERTIFICATE_BLOB");
 
     /**

@@ -42,13 +42,13 @@ public class _DISK_PERFORMANCE {
         _LARGE_INTEGER.layout().withName("ReadTime"),
         _LARGE_INTEGER.layout().withName("WriteTime"),
         _LARGE_INTEGER.layout().withName("IdleTime"),
-        cef_master_h.C_LONG.withName("ReadCount"),
-        cef_master_h.C_LONG.withName("WriteCount"),
-        cef_master_h.C_LONG.withName("QueueDepth"),
-        cef_master_h.C_LONG.withName("SplitCount"),
+        cef_render_handler_capi_h.C_LONG.withName("ReadCount"),
+        cef_render_handler_capi_h.C_LONG.withName("WriteCount"),
+        cef_render_handler_capi_h.C_LONG.withName("QueueDepth"),
+        cef_render_handler_capi_h.C_LONG.withName("SplitCount"),
         _LARGE_INTEGER.layout().withName("QueryTime"),
-        cef_master_h.C_LONG.withName("StorageDeviceNumber"),
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_SHORT).withName("StorageManagerName"),
+        cef_render_handler_capi_h.C_LONG.withName("StorageDeviceNumber"),
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_SHORT).withName("StorageManagerName"),
         MemoryLayout.paddingLayout(4)
     ).withName("_DISK_PERFORMANCE");
 

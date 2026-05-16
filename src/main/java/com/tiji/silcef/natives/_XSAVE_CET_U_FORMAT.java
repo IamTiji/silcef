@@ -27,8 +27,8 @@ public class _XSAVE_CET_U_FORMAT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("Ia32CetUMsr"),
-        cef_master_h.C_LONG_LONG.withName("Ia32Pl3SspMsr")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Ia32CetUMsr"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Ia32Pl3SspMsr")
     ).withName("_XSAVE_CET_U_FORMAT");
 
     /**

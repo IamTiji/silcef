@@ -27,8 +27,8 @@ public class midiproptempo_tag {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("cbStruct"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwTempo")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cbStruct"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwTempo")
     ).withName("midiproptempo_tag");
 
     /**

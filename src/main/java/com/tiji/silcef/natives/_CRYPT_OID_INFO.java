@@ -35,15 +35,15 @@ public class _CRYPT_OID_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pszOID"),
-        cef_master_h.C_POINTER.withName("pwszName"),
-        cef_master_h.C_LONG.withName("dwGroupId"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszOID"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszName"),
+        cef_render_handler_capi_h.C_LONG.withName("dwGroupId"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("dwValue"),
-            cef_master_h.C_INT.withName("Algid"),
-            cef_master_h.C_LONG.withName("dwLength")
+            cef_render_handler_capi_h.C_LONG.withName("dwValue"),
+            cef_render_handler_capi_h.C_INT.withName("Algid"),
+            cef_render_handler_capi_h.C_LONG.withName("dwLength")
         ).withName("$anon$6364:5"),
         _CRYPTOAPI_BLOB.layout().withName("ExtraInfo")
     ).withName("_CRYPT_OID_INFO");

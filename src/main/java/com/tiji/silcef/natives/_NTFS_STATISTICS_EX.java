@@ -113,68 +113,68 @@ public class _NTFS_STATISTICS_EX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("LogFileFullExceptions"),
-        cef_master_h.C_LONG.withName("OtherExceptions"),
-        cef_master_h.C_LONG_LONG.withName("MftReads"),
-        cef_master_h.C_LONG_LONG.withName("MftReadBytes"),
-        cef_master_h.C_LONG_LONG.withName("MftWrites"),
-        cef_master_h.C_LONG_LONG.withName("MftWriteBytes"),
+        cef_render_handler_capi_h.C_LONG.withName("LogFileFullExceptions"),
+        cef_render_handler_capi_h.C_LONG.withName("OtherExceptions"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MftReads"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MftReadBytes"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MftWrites"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MftWriteBytes"),
         _NTFS_STATISTICS_EX.MftWritesUserLevel.layout().withName("MftWritesUserLevel"),
-        cef_master_h.C_LONG.withName("MftWritesFlushForLogFileFull"),
-        cef_master_h.C_LONG.withName("MftWritesLazyWriter"),
-        cef_master_h.C_LONG.withName("MftWritesUserRequest"),
+        cef_render_handler_capi_h.C_LONG.withName("MftWritesFlushForLogFileFull"),
+        cef_render_handler_capi_h.C_LONG.withName("MftWritesLazyWriter"),
+        cef_render_handler_capi_h.C_LONG.withName("MftWritesUserRequest"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("Mft2Writes"),
-        cef_master_h.C_LONG_LONG.withName("Mft2WriteBytes"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Mft2Writes"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Mft2WriteBytes"),
         _NTFS_STATISTICS_EX.Mft2WritesUserLevel.layout().withName("Mft2WritesUserLevel"),
-        cef_master_h.C_LONG.withName("Mft2WritesFlushForLogFileFull"),
-        cef_master_h.C_LONG.withName("Mft2WritesLazyWriter"),
-        cef_master_h.C_LONG.withName("Mft2WritesUserRequest"),
+        cef_render_handler_capi_h.C_LONG.withName("Mft2WritesFlushForLogFileFull"),
+        cef_render_handler_capi_h.C_LONG.withName("Mft2WritesLazyWriter"),
+        cef_render_handler_capi_h.C_LONG.withName("Mft2WritesUserRequest"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("RootIndexReads"),
-        cef_master_h.C_LONG_LONG.withName("RootIndexReadBytes"),
-        cef_master_h.C_LONG_LONG.withName("RootIndexWrites"),
-        cef_master_h.C_LONG_LONG.withName("RootIndexWriteBytes"),
-        cef_master_h.C_LONG_LONG.withName("BitmapReads"),
-        cef_master_h.C_LONG_LONG.withName("BitmapReadBytes"),
-        cef_master_h.C_LONG_LONG.withName("BitmapWrites"),
-        cef_master_h.C_LONG_LONG.withName("BitmapWriteBytes"),
-        cef_master_h.C_LONG.withName("BitmapWritesFlushForLogFileFull"),
-        cef_master_h.C_LONG.withName("BitmapWritesLazyWriter"),
-        cef_master_h.C_LONG.withName("BitmapWritesUserRequest"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("RootIndexReads"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("RootIndexReadBytes"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("RootIndexWrites"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("RootIndexWriteBytes"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("BitmapReads"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("BitmapReadBytes"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("BitmapWrites"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("BitmapWriteBytes"),
+        cef_render_handler_capi_h.C_LONG.withName("BitmapWritesFlushForLogFileFull"),
+        cef_render_handler_capi_h.C_LONG.withName("BitmapWritesLazyWriter"),
+        cef_render_handler_capi_h.C_LONG.withName("BitmapWritesUserRequest"),
         _NTFS_STATISTICS_EX.BitmapWritesUserLevel.layout().withName("BitmapWritesUserLevel"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("MftBitmapReads"),
-        cef_master_h.C_LONG_LONG.withName("MftBitmapReadBytes"),
-        cef_master_h.C_LONG_LONG.withName("MftBitmapWrites"),
-        cef_master_h.C_LONG_LONG.withName("MftBitmapWriteBytes"),
-        cef_master_h.C_LONG.withName("MftBitmapWritesFlushForLogFileFull"),
-        cef_master_h.C_LONG.withName("MftBitmapWritesLazyWriter"),
-        cef_master_h.C_LONG.withName("MftBitmapWritesUserRequest"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MftBitmapReads"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MftBitmapReadBytes"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MftBitmapWrites"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MftBitmapWriteBytes"),
+        cef_render_handler_capi_h.C_LONG.withName("MftBitmapWritesFlushForLogFileFull"),
+        cef_render_handler_capi_h.C_LONG.withName("MftBitmapWritesLazyWriter"),
+        cef_render_handler_capi_h.C_LONG.withName("MftBitmapWritesUserRequest"),
         _NTFS_STATISTICS_EX.MftBitmapWritesUserLevel.layout().withName("MftBitmapWritesUserLevel"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("UserIndexReads"),
-        cef_master_h.C_LONG_LONG.withName("UserIndexReadBytes"),
-        cef_master_h.C_LONG_LONG.withName("UserIndexWrites"),
-        cef_master_h.C_LONG_LONG.withName("UserIndexWriteBytes"),
-        cef_master_h.C_LONG_LONG.withName("LogFileReads"),
-        cef_master_h.C_LONG_LONG.withName("LogFileReadBytes"),
-        cef_master_h.C_LONG_LONG.withName("LogFileWrites"),
-        cef_master_h.C_LONG_LONG.withName("LogFileWriteBytes"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("UserIndexReads"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("UserIndexReadBytes"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("UserIndexWrites"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("UserIndexWriteBytes"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LogFileReads"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LogFileReadBytes"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LogFileWrites"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LogFileWriteBytes"),
         _NTFS_STATISTICS_EX.Allocate.layout().withName("Allocate"),
-        cef_master_h.C_LONG.withName("DiskResourcesExhausted"),
+        cef_render_handler_capi_h.C_LONG.withName("DiskResourcesExhausted"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("VolumeTrimCount"),
-        cef_master_h.C_LONG_LONG.withName("VolumeTrimTime"),
-        cef_master_h.C_LONG_LONG.withName("VolumeTrimByteCount"),
-        cef_master_h.C_LONG_LONG.withName("FileLevelTrimCount"),
-        cef_master_h.C_LONG_LONG.withName("FileLevelTrimTime"),
-        cef_master_h.C_LONG_LONG.withName("FileLevelTrimByteCount"),
-        cef_master_h.C_LONG_LONG.withName("VolumeTrimSkippedCount"),
-        cef_master_h.C_LONG_LONG.withName("VolumeTrimSkippedByteCount"),
-        cef_master_h.C_LONG_LONG.withName("NtfsFillStatInfoFromMftRecordCalledCount"),
-        cef_master_h.C_LONG_LONG.withName("NtfsFillStatInfoFromMftRecordBailedBecauseOfAttributeListCount"),
-        cef_master_h.C_LONG_LONG.withName("NtfsFillStatInfoFromMftRecordBailedBecauseOfNonResReparsePointCount")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("VolumeTrimCount"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("VolumeTrimTime"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("VolumeTrimByteCount"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("FileLevelTrimCount"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("FileLevelTrimTime"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("FileLevelTrimByteCount"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("VolumeTrimSkippedCount"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("VolumeTrimSkippedByteCount"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NtfsFillStatInfoFromMftRecordCalledCount"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NtfsFillStatInfoFromMftRecordBailedBecauseOfAttributeListCount"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NtfsFillStatInfoFromMftRecordBailedBecauseOfNonResReparsePointCount")
     ).withName("_NTFS_STATISTICS_EX");
 
     /**
@@ -465,10 +465,10 @@ public class _NTFS_STATISTICS_EX {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_LONG.withName("Write"),
-            cef_master_h.C_LONG.withName("Create"),
-            cef_master_h.C_LONG.withName("SetInfo"),
-            cef_master_h.C_LONG.withName("Flush")
+            cef_render_handler_capi_h.C_LONG.withName("Write"),
+            cef_render_handler_capi_h.C_LONG.withName("Create"),
+            cef_render_handler_capi_h.C_LONG.withName("SetInfo"),
+            cef_render_handler_capi_h.C_LONG.withName("Flush")
         ).withName("$anon$12708:5");
 
         /**
@@ -1000,10 +1000,10 @@ public class _NTFS_STATISTICS_EX {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_LONG.withName("Write"),
-            cef_master_h.C_LONG.withName("Create"),
-            cef_master_h.C_LONG.withName("SetInfo"),
-            cef_master_h.C_LONG.withName("Flush")
+            cef_render_handler_capi_h.C_LONG.withName("Write"),
+            cef_render_handler_capi_h.C_LONG.withName("Create"),
+            cef_render_handler_capi_h.C_LONG.withName("SetInfo"),
+            cef_render_handler_capi_h.C_LONG.withName("Flush")
         ).withName("$anon$12721:5");
 
         /**
@@ -1931,10 +1931,10 @@ public class _NTFS_STATISTICS_EX {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_LONG.withName("Write"),
-            cef_master_h.C_LONG.withName("Create"),
-            cef_master_h.C_LONG.withName("SetInfo"),
-            cef_master_h.C_LONG.withName("Flush")
+            cef_render_handler_capi_h.C_LONG.withName("Write"),
+            cef_render_handler_capi_h.C_LONG.withName("Create"),
+            cef_render_handler_capi_h.C_LONG.withName("SetInfo"),
+            cef_render_handler_capi_h.C_LONG.withName("Flush")
         ).withName("$anon$12746:5");
 
         /**
@@ -2554,10 +2554,10 @@ public class _NTFS_STATISTICS_EX {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_LONG.withName("Write"),
-            cef_master_h.C_LONG.withName("Create"),
-            cef_master_h.C_LONG.withName("SetInfo"),
-            cef_master_h.C_LONG.withName("Flush")
+            cef_render_handler_capi_h.C_LONG.withName("Write"),
+            cef_render_handler_capi_h.C_LONG.withName("Create"),
+            cef_render_handler_capi_h.C_LONG.withName("SetInfo"),
+            cef_render_handler_capi_h.C_LONG.withName("Flush")
         ).withName("$anon$12762:5");
 
         /**
@@ -3227,16 +3227,16 @@ public class _NTFS_STATISTICS_EX {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_LONG.withName("Calls"),
-            cef_master_h.C_LONG.withName("RunsReturned"),
-            cef_master_h.C_LONG.withName("Hints"),
-            cef_master_h.C_LONG.withName("HintsHonored"),
-            cef_master_h.C_LONG.withName("Cache"),
-            cef_master_h.C_LONG.withName("CacheMiss"),
-            cef_master_h.C_LONG_LONG.withName("Clusters"),
-            cef_master_h.C_LONG_LONG.withName("HintsClusters"),
-            cef_master_h.C_LONG_LONG.withName("CacheClusters"),
-            cef_master_h.C_LONG_LONG.withName("CacheMissClusters")
+            cef_render_handler_capi_h.C_LONG.withName("Calls"),
+            cef_render_handler_capi_h.C_LONG.withName("RunsReturned"),
+            cef_render_handler_capi_h.C_LONG.withName("Hints"),
+            cef_render_handler_capi_h.C_LONG.withName("HintsHonored"),
+            cef_render_handler_capi_h.C_LONG.withName("Cache"),
+            cef_render_handler_capi_h.C_LONG.withName("CacheMiss"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("Clusters"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("HintsClusters"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("CacheClusters"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("CacheMissClusters")
         ).withName("$anon$12783:5");
 
         /**

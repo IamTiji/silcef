@@ -38,19 +38,19 @@ public class _STORAGE_PROTOCOL_SPECIFIC_DATA_EXT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("ProtocolType"),
-        cef_master_h.C_LONG.withName("DataType"),
-        cef_master_h.C_LONG.withName("ProtocolDataValue"),
-        cef_master_h.C_LONG.withName("ProtocolDataSubValue"),
-        cef_master_h.C_LONG.withName("ProtocolDataOffset"),
-        cef_master_h.C_LONG.withName("ProtocolDataLength"),
-        cef_master_h.C_LONG.withName("FixedProtocolReturnData"),
-        cef_master_h.C_LONG.withName("ProtocolDataSubValue2"),
-        cef_master_h.C_LONG.withName("ProtocolDataSubValue3"),
-        cef_master_h.C_LONG.withName("ProtocolDataSubValue4"),
-        cef_master_h.C_LONG.withName("ProtocolDataSubValue5"),
-        cef_master_h.C_LONG.withName("ProtocolDataSubValue6"),
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_LONG).withName("Reserved")
+        cef_render_handler_capi_h.C_INT.withName("ProtocolType"),
+        cef_render_handler_capi_h.C_LONG.withName("DataType"),
+        cef_render_handler_capi_h.C_LONG.withName("ProtocolDataValue"),
+        cef_render_handler_capi_h.C_LONG.withName("ProtocolDataSubValue"),
+        cef_render_handler_capi_h.C_LONG.withName("ProtocolDataOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("ProtocolDataLength"),
+        cef_render_handler_capi_h.C_LONG.withName("FixedProtocolReturnData"),
+        cef_render_handler_capi_h.C_LONG.withName("ProtocolDataSubValue2"),
+        cef_render_handler_capi_h.C_LONG.withName("ProtocolDataSubValue3"),
+        cef_render_handler_capi_h.C_LONG.withName("ProtocolDataSubValue4"),
+        cef_render_handler_capi_h.C_LONG.withName("ProtocolDataSubValue5"),
+        cef_render_handler_capi_h.C_LONG.withName("ProtocolDataSubValue6"),
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_LONG).withName("Reserved")
     ).withName("_STORAGE_PROTOCOL_SPECIFIC_DATA_EXT");
 
     /**

@@ -35,19 +35,19 @@ public class tagUPDATELAYEREDWINDOWINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hdcDst"),
-        cef_master_h.C_POINTER.withName("pptDst"),
-        cef_master_h.C_POINTER.withName("psize"),
-        cef_master_h.C_POINTER.withName("hdcSrc"),
-        cef_master_h.C_POINTER.withName("pptSrc"),
-        cef_master_h.C_LONG.withName("crKey"),
+        cef_render_handler_capi_h.C_POINTER.withName("hdcDst"),
+        cef_render_handler_capi_h.C_POINTER.withName("pptDst"),
+        cef_render_handler_capi_h.C_POINTER.withName("psize"),
+        cef_render_handler_capi_h.C_POINTER.withName("hdcSrc"),
+        cef_render_handler_capi_h.C_POINTER.withName("pptSrc"),
+        cef_render_handler_capi_h.C_LONG.withName("crKey"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pblend"),
-        cef_master_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("pblend"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("prcDirty")
+        cef_render_handler_capi_h.C_POINTER.withName("prcDirty")
     ).withName("tagUPDATELAYEREDWINDOWINFO");
 
     /**

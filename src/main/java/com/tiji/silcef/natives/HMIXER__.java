@@ -26,7 +26,7 @@ public class HMIXER__ {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_INT, 1).withName("unused")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_INT, 1).withName("unused")
     ).withName("HMIXER__");
 
     /**

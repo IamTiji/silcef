@@ -38,12 +38,12 @@ public class USN_RECORD_V4 {
         USN_RECORD_COMMON_HEADER.layout().withName("Header"),
         _FILE_ID_128.layout().withName("FileReferenceNumber"),
         _FILE_ID_128.layout().withName("ParentFileReferenceNumber"),
-        cef_master_h.C_LONG_LONG.withName("Usn"),
-        cef_master_h.C_LONG.withName("Reason"),
-        cef_master_h.C_LONG.withName("SourceInfo"),
-        cef_master_h.C_LONG.withName("RemainingExtents"),
-        cef_master_h.C_SHORT.withName("NumberOfExtents"),
-        cef_master_h.C_SHORT.withName("ExtentSize"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Usn"),
+        cef_render_handler_capi_h.C_LONG.withName("Reason"),
+        cef_render_handler_capi_h.C_LONG.withName("SourceInfo"),
+        cef_render_handler_capi_h.C_LONG.withName("RemainingExtents"),
+        cef_render_handler_capi_h.C_SHORT.withName("NumberOfExtents"),
+        cef_render_handler_capi_h.C_SHORT.withName("ExtentSize"),
         MemoryLayout.sequenceLayout(1, USN_RECORD_EXTENT.layout()).withName("Extents")
     ).withName("$anon$12096:9");
 

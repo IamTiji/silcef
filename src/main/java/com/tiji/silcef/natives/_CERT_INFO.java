@@ -37,7 +37,7 @@ public class _CERT_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
         MemoryLayout.paddingLayout(4),
         _CRYPTOAPI_BLOB.layout().withName("SerialNumber"),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("SignatureAlgorithm"),
@@ -48,9 +48,9 @@ public class _CERT_INFO {
         _CERT_PUBLIC_KEY_INFO.layout().withName("SubjectPublicKeyInfo"),
         _CRYPT_BIT_BLOB.layout().withName("IssuerUniqueId"),
         _CRYPT_BIT_BLOB.layout().withName("SubjectUniqueId"),
-        cef_master_h.C_LONG.withName("cExtension"),
+        cef_render_handler_capi_h.C_LONG.withName("cExtension"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgExtension")
+        cef_render_handler_capi_h.C_POINTER.withName("rgExtension")
     ).withName("_CERT_INFO");
 
     /**

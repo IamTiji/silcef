@@ -27,7 +27,7 @@ public class _CERT_QC_STATEMENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszStatementId"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszStatementId"),
         _CRYPTOAPI_BLOB.layout().withName("StatementInfo")
     ).withName("_CERT_QC_STATEMENT");
 

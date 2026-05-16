@@ -30,12 +30,12 @@ public class _HEAP_SUMMARY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cb"),
+        cef_render_handler_capi_h.C_LONG.withName("cb"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("cbAllocated"),
-        cef_master_h.C_LONG_LONG.withName("cbCommitted"),
-        cef_master_h.C_LONG_LONG.withName("cbReserved"),
-        cef_master_h.C_LONG_LONG.withName("cbMaxReserve")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("cbAllocated"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("cbCommitted"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("cbReserved"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("cbMaxReserve")
     ).withName("_HEAP_SUMMARY");
 
     /**

@@ -30,11 +30,11 @@ public class tagMIDIINCAPSA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("wMid"),
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("wPid"),
-        cef_master_h.align(cef_master_h.C_INT, 1).withName("vDriverVersion"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("szPname"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwSupport")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("wMid"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("wPid"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_INT, 1).withName("vDriverVersion"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("szPname"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwSupport")
     ).withName("tagMIDIINCAPSA");
 
     /**

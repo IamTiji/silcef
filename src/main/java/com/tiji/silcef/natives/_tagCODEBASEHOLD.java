@@ -31,13 +31,13 @@ public class _tagCODEBASEHOLD {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("szDistUnit"),
-        cef_master_h.C_POINTER.withName("szCodeBase"),
-        cef_master_h.C_LONG.withName("dwVersionMS"),
-        cef_master_h.C_LONG.withName("dwVersionLS"),
-        cef_master_h.C_LONG.withName("dwStyle"),
+        cef_render_handler_capi_h.C_POINTER.withName("szDistUnit"),
+        cef_render_handler_capi_h.C_POINTER.withName("szCodeBase"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersionMS"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersionLS"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStyle"),
         MemoryLayout.paddingLayout(4)
     ).withName("_tagCODEBASEHOLD");
 

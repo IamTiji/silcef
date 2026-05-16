@@ -29,10 +29,10 @@ public class _SCM_PD_PASSTHROUGH_INVDIMM_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("GeneralStatus"),
-        cef_master_h.C_SHORT.withName("ExtendedStatus"),
-        cef_master_h.C_LONG.withName("OutputDataLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("OutputData"),
+        cef_render_handler_capi_h.C_SHORT.withName("GeneralStatus"),
+        cef_render_handler_capi_h.C_SHORT.withName("ExtendedStatus"),
+        cef_render_handler_capi_h.C_LONG.withName("OutputDataLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("OutputData"),
         MemoryLayout.paddingLayout(3)
     ).withName("_SCM_PD_PASSTHROUGH_INVDIMM_OUTPUT");
 

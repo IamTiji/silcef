@@ -30,11 +30,11 @@ public class _IMAGE_ALPHA64_RUNTIME_FUNCTION_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 4).withName("BeginAddress"),
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 4).withName("EndAddress"),
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 4).withName("ExceptionHandler"),
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 4).withName("HandlerData"),
-        cef_master_h.align(cef_master_h.C_LONG_LONG, 4).withName("PrologEndAddress")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 4).withName("BeginAddress"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 4).withName("EndAddress"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 4).withName("ExceptionHandler"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 4).withName("HandlerData"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG_LONG, 4).withName("PrologEndAddress")
     ).withName("_IMAGE_ALPHA64_RUNTIME_FUNCTION_ENTRY");
 
     /**

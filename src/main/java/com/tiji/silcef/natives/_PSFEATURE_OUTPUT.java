@@ -27,8 +27,8 @@ public class _PSFEATURE_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("bPageIndependent"),
-        cef_master_h.C_INT.withName("bSetPageDevice")
+        cef_render_handler_capi_h.C_INT.withName("bPageIndependent"),
+        cef_render_handler_capi_h.C_INT.withName("bSetPageDevice")
     ).withName("_PSFEATURE_OUTPUT");
 
     /**

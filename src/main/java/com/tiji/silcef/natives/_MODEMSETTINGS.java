@@ -37,18 +37,18 @@ public class _MODEMSETTINGS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwActualSize"),
-        cef_master_h.C_LONG.withName("dwRequiredSize"),
-        cef_master_h.C_LONG.withName("dwDevSpecificOffset"),
-        cef_master_h.C_LONG.withName("dwDevSpecificSize"),
-        cef_master_h.C_LONG.withName("dwCallSetupFailTimer"),
-        cef_master_h.C_LONG.withName("dwInactivityTimeout"),
-        cef_master_h.C_LONG.withName("dwSpeakerVolume"),
-        cef_master_h.C_LONG.withName("dwSpeakerMode"),
-        cef_master_h.C_LONG.withName("dwPreferredModemOptions"),
-        cef_master_h.C_LONG.withName("dwNegotiatedModemOptions"),
-        cef_master_h.C_LONG.withName("dwNegotiatedDCERate"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("abVariablePortion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwActualSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwRequiredSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwDevSpecificOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("dwDevSpecificSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCallSetupFailTimer"),
+        cef_render_handler_capi_h.C_LONG.withName("dwInactivityTimeout"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSpeakerVolume"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSpeakerMode"),
+        cef_render_handler_capi_h.C_LONG.withName("dwPreferredModemOptions"),
+        cef_render_handler_capi_h.C_LONG.withName("dwNegotiatedModemOptions"),
+        cef_render_handler_capi_h.C_LONG.withName("dwNegotiatedDCERate"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("abVariablePortion"),
         MemoryLayout.paddingLayout(3)
     ).withName("_MODEMSETTINGS");
 

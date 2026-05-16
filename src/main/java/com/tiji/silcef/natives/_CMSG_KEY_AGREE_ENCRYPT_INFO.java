@@ -37,20 +37,20 @@ public class _CMSG_KEY_AGREE_ENCRYPT_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwRecipientIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwRecipientIndex"),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("KeyEncryptionAlgorithm"),
         _CRYPTOAPI_BLOB.layout().withName("UserKeyingMaterial"),
-        cef_master_h.C_LONG.withName("dwOriginatorChoice"),
+        cef_render_handler_capi_h.C_LONG.withName("dwOriginatorChoice"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.unionLayout(
             _CERT_ID.layout().withName("OriginatorCertId"),
             _CERT_PUBLIC_KEY_INFO.layout().withName("OriginatorPublicKeyInfo")
         ).withName("$anon$8809:5"),
-        cef_master_h.C_LONG.withName("cKeyAgreeKeyEncryptInfo"),
+        cef_render_handler_capi_h.C_LONG.withName("cKeyAgreeKeyEncryptInfo"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgpKeyAgreeKeyEncryptInfo"),
-        cef_master_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgpKeyAgreeKeyEncryptInfo"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CMSG_KEY_AGREE_ENCRYPT_INFO");
 

@@ -31,8 +31,8 @@ public final class I_RpcProxyGetConnectionTimeoutFn {
     }
 
     private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-        cef_master_h.C_LONG,
-        cef_master_h.C_POINTER
+        cef_render_handler_capi_h.C_LONG,
+        cef_render_handler_capi_h.C_POINTER
     );
 
     /**
@@ -42,7 +42,7 @@ public final class I_RpcProxyGetConnectionTimeoutFn {
         return $DESC;
     }
 
-    private static final MethodHandle UP$MH = cef_master_h.upcallHandle(I_RpcProxyGetConnectionTimeoutFn.Function.class, "apply", $DESC);
+    private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(I_RpcProxyGetConnectionTimeoutFn.Function.class, "apply", $DESC);
 
     /**
      * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

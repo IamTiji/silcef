@@ -31,13 +31,13 @@ public class tagDROPSTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hwndSource"),
-        cef_master_h.C_POINTER.withName("hwndSink"),
-        cef_master_h.C_LONG.withName("wFmt"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndSource"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndSink"),
+        cef_render_handler_capi_h.C_LONG.withName("wFmt"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("dwData"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwData"),
         tagPOINT.layout().withName("ptDrop"),
-        cef_master_h.C_LONG.withName("dwControlData"),
+        cef_render_handler_capi_h.C_LONG.withName("dwControlData"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagDROPSTRUCT");
 

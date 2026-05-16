@@ -35,16 +35,16 @@ public class _CRYPT_KEY_SIGN_MESSAGE_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwMsgAndCertEncodingType"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMsgAndCertEncodingType"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG_LONG.withName("hCryptProv"),
-            cef_master_h.C_LONG_LONG.withName("hNCryptKey")
+            cef_render_handler_capi_h.C_LONG_LONG.withName("hCryptProv"),
+            cef_render_handler_capi_h.C_LONG_LONG.withName("hNCryptKey")
         ).withName("$anon$16380:5"),
-        cef_master_h.C_LONG.withName("dwKeySpec"),
+        cef_render_handler_capi_h.C_LONG.withName("dwKeySpec"),
         MemoryLayout.paddingLayout(4),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("HashAlgorithm"),
-        cef_master_h.C_POINTER.withName("pvHashAuxInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvHashAuxInfo"),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("PubKeyAlgorithm")
     ).withName("_CRYPT_KEY_SIGN_MESSAGE_PARA");
 

@@ -28,9 +28,9 @@ public class _SSL_KEY_PIN_EXTRA_CERT_CHAIN_POLICY_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwReserved"),
-        cef_master_h.C_POINTER.withName("pwszServerName")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwReserved"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszServerName")
     ).withName("_SSL_KEY_PIN_EXTRA_CERT_CHAIN_POLICY_PARA");
 
     /**

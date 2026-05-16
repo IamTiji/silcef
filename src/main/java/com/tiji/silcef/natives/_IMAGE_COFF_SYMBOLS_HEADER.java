@@ -33,14 +33,14 @@ public class _IMAGE_COFF_SYMBOLS_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NumberOfSymbols"),
-        cef_master_h.C_LONG.withName("LvaToFirstSymbol"),
-        cef_master_h.C_LONG.withName("NumberOfLinenumbers"),
-        cef_master_h.C_LONG.withName("LvaToFirstLinenumber"),
-        cef_master_h.C_LONG.withName("RvaToFirstByteOfCode"),
-        cef_master_h.C_LONG.withName("RvaToLastByteOfCode"),
-        cef_master_h.C_LONG.withName("RvaToFirstByteOfData"),
-        cef_master_h.C_LONG.withName("RvaToLastByteOfData")
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfSymbols"),
+        cef_render_handler_capi_h.C_LONG.withName("LvaToFirstSymbol"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfLinenumbers"),
+        cef_render_handler_capi_h.C_LONG.withName("LvaToFirstLinenumber"),
+        cef_render_handler_capi_h.C_LONG.withName("RvaToFirstByteOfCode"),
+        cef_render_handler_capi_h.C_LONG.withName("RvaToLastByteOfCode"),
+        cef_render_handler_capi_h.C_LONG.withName("RvaToFirstByteOfData"),
+        cef_render_handler_capi_h.C_LONG.withName("RvaToLastByteOfData")
     ).withName("_IMAGE_COFF_SYMBOLS_HEADER");
 
     /**

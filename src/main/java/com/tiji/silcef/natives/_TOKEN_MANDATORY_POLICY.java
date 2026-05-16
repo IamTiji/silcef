@@ -26,7 +26,7 @@ public class _TOKEN_MANDATORY_POLICY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Policy")
+        cef_render_handler_capi_h.C_LONG.withName("Policy")
     ).withName("_TOKEN_MANDATORY_POLICY");
 
     /**

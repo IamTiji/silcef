@@ -28,9 +28,9 @@ public class _MEM_ADDRESS_REQUIREMENTS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("LowestStartingAddress"),
-        cef_master_h.C_POINTER.withName("HighestEndingAddress"),
-        cef_master_h.C_LONG_LONG.withName("Alignment")
+        cef_render_handler_capi_h.C_POINTER.withName("LowestStartingAddress"),
+        cef_render_handler_capi_h.C_POINTER.withName("HighestEndingAddress"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Alignment")
     ).withName("_MEM_ADDRESS_REQUIREMENTS");
 
     /**

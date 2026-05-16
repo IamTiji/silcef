@@ -27,9 +27,9 @@ public class _MIDL_METHOD_PROPERTY_MAP {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Count"),
+        cef_render_handler_capi_h.C_LONG.withName("Count"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("Properties")
+        cef_render_handler_capi_h.C_POINTER.withName("Properties")
     ).withName("_MIDL_METHOD_PROPERTY_MAP");
 
     /**

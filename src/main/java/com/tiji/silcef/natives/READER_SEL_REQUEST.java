@@ -43,9 +43,9 @@ public class READER_SEL_REQUEST {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwShareMode"),
-        cef_master_h.C_LONG.withName("dwPreferredProtocols"),
-        cef_master_h.C_INT.withName("MatchType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwShareMode"),
+        cef_render_handler_capi_h.C_LONG.withName("dwPreferredProtocols"),
+        cef_render_handler_capi_h.C_INT.withName("MatchType"),
         MemoryLayout.unionLayout(
             READER_SEL_REQUEST.ReaderAndContainerParameter.layout().withName("ReaderAndContainerParameter"),
             READER_SEL_REQUEST.SerialNumberParameter.layout().withName("SerialNumberParameter")
@@ -210,12 +210,12 @@ public class READER_SEL_REQUEST {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_LONG.withName("cbReaderNameOffset"),
-            cef_master_h.C_LONG.withName("cchReaderNameLength"),
-            cef_master_h.C_LONG.withName("cbContainerNameOffset"),
-            cef_master_h.C_LONG.withName("cchContainerNameLength"),
-            cef_master_h.C_LONG.withName("dwDesiredCardModuleVersion"),
-            cef_master_h.C_LONG.withName("dwCspFlags")
+            cef_render_handler_capi_h.C_LONG.withName("cbReaderNameOffset"),
+            cef_render_handler_capi_h.C_LONG.withName("cchReaderNameLength"),
+            cef_render_handler_capi_h.C_LONG.withName("cbContainerNameOffset"),
+            cef_render_handler_capi_h.C_LONG.withName("cchContainerNameLength"),
+            cef_render_handler_capi_h.C_LONG.withName("dwDesiredCardModuleVersion"),
+            cef_render_handler_capi_h.C_LONG.withName("dwCspFlags")
         ).withName("$anon$1097:9");
 
         /**
@@ -622,9 +622,9 @@ public class READER_SEL_REQUEST {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_LONG.withName("cbSerialNumberOffset"),
-            cef_master_h.C_LONG.withName("cbSerialNumberLength"),
-            cef_master_h.C_LONG.withName("dwDesiredCardModuleVersion")
+            cef_render_handler_capi_h.C_LONG.withName("cbSerialNumberOffset"),
+            cef_render_handler_capi_h.C_LONG.withName("cbSerialNumberLength"),
+            cef_render_handler_capi_h.C_LONG.withName("dwDesiredCardModuleVersion")
         ).withName("$anon$1105:9");
 
         /**

@@ -31,12 +31,12 @@ public class tagMSG {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("hwnd"),
-        cef_master_h.C_INT.withName("message"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwnd"),
+        cef_render_handler_capi_h.C_INT.withName("message"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("wParam"),
-        cef_master_h.C_LONG_LONG.withName("lParam"),
-        cef_master_h.C_LONG.withName("time"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("wParam"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("lParam"),
+        cef_render_handler_capi_h.C_LONG.withName("time"),
         tagPOINT.layout().withName("pt"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagMSG");

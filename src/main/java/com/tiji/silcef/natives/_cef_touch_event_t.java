@@ -35,16 +35,16 @@ public class _cef_touch_event_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("id"),
-        cef_master_h.C_FLOAT.withName("x"),
-        cef_master_h.C_FLOAT.withName("y"),
-        cef_master_h.C_FLOAT.withName("radius_x"),
-        cef_master_h.C_FLOAT.withName("radius_y"),
-        cef_master_h.C_FLOAT.withName("rotation_angle"),
-        cef_master_h.C_FLOAT.withName("pressure"),
-        cef_master_h.C_INT.withName("type"),
-        cef_master_h.C_INT.withName("modifiers"),
-        cef_master_h.C_INT.withName("pointer_type")
+        cef_render_handler_capi_h.C_INT.withName("id"),
+        cef_render_handler_capi_h.C_FLOAT.withName("x"),
+        cef_render_handler_capi_h.C_FLOAT.withName("y"),
+        cef_render_handler_capi_h.C_FLOAT.withName("radius_x"),
+        cef_render_handler_capi_h.C_FLOAT.withName("radius_y"),
+        cef_render_handler_capi_h.C_FLOAT.withName("rotation_angle"),
+        cef_render_handler_capi_h.C_FLOAT.withName("pressure"),
+        cef_render_handler_capi_h.C_INT.withName("type"),
+        cef_render_handler_capi_h.C_INT.withName("modifiers"),
+        cef_render_handler_capi_h.C_INT.withName("pointer_type")
     ).withName("_cef_touch_event_t");
 
     /**

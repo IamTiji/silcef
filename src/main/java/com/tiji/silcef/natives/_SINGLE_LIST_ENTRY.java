@@ -26,7 +26,7 @@ public class _SINGLE_LIST_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("Next")
+        cef_render_handler_capi_h.C_POINTER.withName("Next")
     ).withName("_SINGLE_LIST_ENTRY");
 
     /**

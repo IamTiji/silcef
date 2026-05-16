@@ -36,18 +36,18 @@ public class _DRIVER_INFO_4A {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("cVersion"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pName"),
-        cef_master_h.C_POINTER.withName("pEnvironment"),
-        cef_master_h.C_POINTER.withName("pDriverPath"),
-        cef_master_h.C_POINTER.withName("pDataFile"),
-        cef_master_h.C_POINTER.withName("pConfigFile"),
-        cef_master_h.C_POINTER.withName("pHelpFile"),
-        cef_master_h.C_POINTER.withName("pDependentFiles"),
-        cef_master_h.C_POINTER.withName("pMonitorName"),
-        cef_master_h.C_POINTER.withName("pDefaultDataType"),
-        cef_master_h.C_POINTER.withName("pszzPreviousNames")
+        cef_render_handler_capi_h.C_POINTER.withName("pName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pEnvironment"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDriverPath"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDataFile"),
+        cef_render_handler_capi_h.C_POINTER.withName("pConfigFile"),
+        cef_render_handler_capi_h.C_POINTER.withName("pHelpFile"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDependentFiles"),
+        cef_render_handler_capi_h.C_POINTER.withName("pMonitorName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDefaultDataType"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszzPreviousNames")
     ).withName("_DRIVER_INFO_4A");
 
     /**

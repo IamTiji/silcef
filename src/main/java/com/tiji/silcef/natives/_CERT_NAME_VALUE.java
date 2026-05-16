@@ -27,7 +27,7 @@ public class _CERT_NAME_VALUE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwValueType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwValueType"),
         MemoryLayout.paddingLayout(4),
         _CRYPTOAPI_BLOB.layout().withName("Value")
     ).withName("_CERT_NAME_VALUE");

@@ -26,7 +26,7 @@ public class _WOF_VERSION_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("WofVersion")
+        cef_render_handler_capi_h.C_LONG.withName("WofVersion")
     ).withName("_WOF_VERSION_INFO");
 
     /**

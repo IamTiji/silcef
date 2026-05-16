@@ -30,12 +30,12 @@ public class _CRYPT_PKCS8_EXPORT_PARAMS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("hCryptProv"),
-        cef_master_h.C_LONG.withName("dwKeySpec"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("hCryptProv"),
+        cef_render_handler_capi_h.C_LONG.withName("dwKeySpec"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pszPrivateKeyObjId"),
-        cef_master_h.C_POINTER.withName("pEncryptPrivateKeyFunc"),
-        cef_master_h.C_POINTER.withName("pVoidEncryptFunc")
+        cef_render_handler_capi_h.C_POINTER.withName("pszPrivateKeyObjId"),
+        cef_render_handler_capi_h.C_POINTER.withName("pEncryptPrivateKeyFunc"),
+        cef_render_handler_capi_h.C_POINTER.withName("pVoidEncryptFunc")
     ).withName("_CRYPT_PKCS8_EXPORT_PARAMS");
 
     /**

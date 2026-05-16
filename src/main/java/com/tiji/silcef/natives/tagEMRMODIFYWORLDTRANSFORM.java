@@ -30,7 +30,7 @@ public class tagEMRMODIFYWORLDTRANSFORM {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
         tagXFORM.layout().withName("xform"),
-        cef_master_h.C_LONG.withName("iMode")
+        cef_render_handler_capi_h.C_LONG.withName("iMode")
     ).withName("tagEMRMODIFYWORLDTRANSFORM");
 
     /**

@@ -28,9 +28,9 @@ public class tagLOGPEN {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("lopnStyle"),
+        cef_render_handler_capi_h.C_INT.withName("lopnStyle"),
         tagPOINT.layout().withName("lopnWidth"),
-        cef_master_h.C_LONG.withName("lopnColor")
+        cef_render_handler_capi_h.C_LONG.withName("lopnColor")
     ).withName("tagLOGPEN");
 
     /**

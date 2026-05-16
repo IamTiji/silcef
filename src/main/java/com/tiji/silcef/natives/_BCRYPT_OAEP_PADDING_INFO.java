@@ -28,9 +28,9 @@ public class _BCRYPT_OAEP_PADDING_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pszAlgId"),
-        cef_master_h.C_POINTER.withName("pbLabel"),
-        cef_master_h.C_LONG.withName("cbLabel"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszAlgId"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbLabel"),
+        cef_render_handler_capi_h.C_LONG.withName("cbLabel"),
         MemoryLayout.paddingLayout(4)
     ).withName("_BCRYPT_OAEP_PADDING_INFO");
 

@@ -44,27 +44,27 @@ public class tagPDA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("lStructSize"),
+        cef_render_handler_capi_h.C_LONG.withName("lStructSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hwndOwner"),
-        cef_master_h.C_POINTER.withName("hDevMode"),
-        cef_master_h.C_POINTER.withName("hDevNames"),
-        cef_master_h.C_POINTER.withName("hDC"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_SHORT.withName("nFromPage"),
-        cef_master_h.C_SHORT.withName("nToPage"),
-        cef_master_h.C_SHORT.withName("nMinPage"),
-        cef_master_h.C_SHORT.withName("nMaxPage"),
-        cef_master_h.C_SHORT.withName("nCopies"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndOwner"),
+        cef_render_handler_capi_h.C_POINTER.withName("hDevMode"),
+        cef_render_handler_capi_h.C_POINTER.withName("hDevNames"),
+        cef_render_handler_capi_h.C_POINTER.withName("hDC"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_SHORT.withName("nFromPage"),
+        cef_render_handler_capi_h.C_SHORT.withName("nToPage"),
+        cef_render_handler_capi_h.C_SHORT.withName("nMinPage"),
+        cef_render_handler_capi_h.C_SHORT.withName("nMaxPage"),
+        cef_render_handler_capi_h.C_SHORT.withName("nCopies"),
         MemoryLayout.paddingLayout(2),
-        cef_master_h.C_POINTER.withName("hInstance"),
-        cef_master_h.C_LONG_LONG.withName("lCustData"),
-        cef_master_h.C_POINTER.withName("lpfnPrintHook"),
-        cef_master_h.C_POINTER.withName("lpfnSetupHook"),
-        cef_master_h.C_POINTER.withName("lpPrintTemplateName"),
-        cef_master_h.C_POINTER.withName("lpSetupTemplateName"),
-        cef_master_h.C_POINTER.withName("hPrintTemplate"),
-        cef_master_h.C_POINTER.withName("hSetupTemplate")
+        cef_render_handler_capi_h.C_POINTER.withName("hInstance"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("lCustData"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpfnPrintHook"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpfnSetupHook"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpPrintTemplateName"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpSetupTemplateName"),
+        cef_render_handler_capi_h.C_POINTER.withName("hPrintTemplate"),
+        cef_render_handler_capi_h.C_POINTER.withName("hSetupTemplate")
     ).withName("tagPDA");
 
     /**

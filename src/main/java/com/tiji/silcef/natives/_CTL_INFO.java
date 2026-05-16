@@ -36,7 +36,7 @@ public class _CTL_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
         MemoryLayout.paddingLayout(4),
         _CTL_USAGE.layout().withName("SubjectUsage"),
         _CRYPTOAPI_BLOB.layout().withName("ListIdentifier"),
@@ -44,12 +44,12 @@ public class _CTL_INFO {
         _FILETIME.layout().withName("ThisUpdate"),
         _FILETIME.layout().withName("NextUpdate"),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("SubjectAlgorithm"),
-        cef_master_h.C_LONG.withName("cCTLEntry"),
+        cef_render_handler_capi_h.C_LONG.withName("cCTLEntry"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgCTLEntry"),
-        cef_master_h.C_LONG.withName("cExtension"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgCTLEntry"),
+        cef_render_handler_capi_h.C_LONG.withName("cExtension"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgExtension")
+        cef_render_handler_capi_h.C_POINTER.withName("rgExtension")
     ).withName("_CTL_INFO");
 
     /**

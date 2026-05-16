@@ -28,10 +28,10 @@ public class _CMSG_ENCRYPTED_ENCODE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("ContentEncryptionAlgorithm"),
-        cef_master_h.C_POINTER.withName("pvEncryptionAuxInfo")
+        cef_render_handler_capi_h.C_POINTER.withName("pvEncryptionAuxInfo")
     ).withName("_CMSG_ENCRYPTED_ENCODE_INFO");
 
     /**

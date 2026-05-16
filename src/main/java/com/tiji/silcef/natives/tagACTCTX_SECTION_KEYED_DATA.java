@@ -37,20 +37,20 @@ public class tagACTCTX_SECTION_KEYED_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("ulDataFormatVersion"),
-        cef_master_h.C_POINTER.withName("lpData"),
-        cef_master_h.C_LONG.withName("ulLength"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("ulDataFormatVersion"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpData"),
+        cef_render_handler_capi_h.C_LONG.withName("ulLength"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpSectionGlobalData"),
-        cef_master_h.C_LONG.withName("ulSectionGlobalDataLength"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpSectionGlobalData"),
+        cef_render_handler_capi_h.C_LONG.withName("ulSectionGlobalDataLength"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpSectionBase"),
-        cef_master_h.C_LONG.withName("ulSectionTotalLength"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpSectionBase"),
+        cef_render_handler_capi_h.C_LONG.withName("ulSectionTotalLength"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hActCtx"),
-        cef_master_h.C_LONG.withName("ulAssemblyRosterIndex"),
-        cef_master_h.C_LONG.withName("ulFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("hActCtx"),
+        cef_render_handler_capi_h.C_LONG.withName("ulAssemblyRosterIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("ulFlags"),
         tagACTCTX_SECTION_KEYED_DATA_ASSEMBLY_METADATA.layout().withName("AssemblyMetadata")
     ).withName("tagACTCTX_SECTION_KEYED_DATA");
 

@@ -26,7 +26,7 @@ public class _BCRYPT_KEY_BLOB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Magic")
+        cef_render_handler_capi_h.C_LONG.withName("Magic")
     ).withName("_BCRYPT_KEY_BLOB");
 
     /**

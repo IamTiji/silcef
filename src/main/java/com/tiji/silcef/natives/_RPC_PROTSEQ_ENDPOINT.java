@@ -27,8 +27,8 @@ public class _RPC_PROTSEQ_ENDPOINT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("RpcProtocolSequence"),
-        cef_master_h.C_POINTER.withName("Endpoint")
+        cef_render_handler_capi_h.C_POINTER.withName("RpcProtocolSequence"),
+        cef_render_handler_capi_h.C_POINTER.withName("Endpoint")
     ).withName("_RPC_PROTSEQ_ENDPOINT");
 
     /**

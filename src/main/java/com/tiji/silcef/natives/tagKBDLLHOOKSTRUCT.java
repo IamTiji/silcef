@@ -30,11 +30,11 @@ public class tagKBDLLHOOKSTRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("vkCode"),
-        cef_master_h.C_LONG.withName("scanCode"),
-        cef_master_h.C_LONG.withName("flags"),
-        cef_master_h.C_LONG.withName("time"),
-        cef_master_h.C_LONG_LONG.withName("dwExtraInfo")
+        cef_render_handler_capi_h.C_LONG.withName("vkCode"),
+        cef_render_handler_capi_h.C_LONG.withName("scanCode"),
+        cef_render_handler_capi_h.C_LONG.withName("flags"),
+        cef_render_handler_capi_h.C_LONG.withName("time"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwExtraInfo")
     ).withName("tagKBDLLHOOKSTRUCT");
 
     /**

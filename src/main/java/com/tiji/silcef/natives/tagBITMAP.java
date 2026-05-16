@@ -32,14 +32,14 @@ public class tagBITMAP {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("bmType"),
-        cef_master_h.C_LONG.withName("bmWidth"),
-        cef_master_h.C_LONG.withName("bmHeight"),
-        cef_master_h.C_LONG.withName("bmWidthBytes"),
-        cef_master_h.C_SHORT.withName("bmPlanes"),
-        cef_master_h.C_SHORT.withName("bmBitsPixel"),
+        cef_render_handler_capi_h.C_LONG.withName("bmType"),
+        cef_render_handler_capi_h.C_LONG.withName("bmWidth"),
+        cef_render_handler_capi_h.C_LONG.withName("bmHeight"),
+        cef_render_handler_capi_h.C_LONG.withName("bmWidthBytes"),
+        cef_render_handler_capi_h.C_SHORT.withName("bmPlanes"),
+        cef_render_handler_capi_h.C_SHORT.withName("bmBitsPixel"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("bmBits")
+        cef_render_handler_capi_h.C_POINTER.withName("bmBits")
     ).withName("tagBITMAP");
 
     /**

@@ -26,7 +26,7 @@ public class _SYSTEM_PROCESSOR_CYCLE_TIME_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("CycleTime")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("CycleTime")
     ).withName("_SYSTEM_PROCESSOR_CYCLE_TIME_INFORMATION");
 
     /**

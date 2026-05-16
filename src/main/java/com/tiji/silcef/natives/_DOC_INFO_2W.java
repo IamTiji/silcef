@@ -30,11 +30,11 @@ public class _DOC_INFO_2W {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pDocName"),
-        cef_master_h.C_POINTER.withName("pOutputFile"),
-        cef_master_h.C_POINTER.withName("pDatatype"),
-        cef_master_h.C_LONG.withName("dwMode"),
-        cef_master_h.C_LONG.withName("JobId")
+        cef_render_handler_capi_h.C_POINTER.withName("pDocName"),
+        cef_render_handler_capi_h.C_POINTER.withName("pOutputFile"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDatatype"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMode"),
+        cef_render_handler_capi_h.C_LONG.withName("JobId")
     ).withName("_DOC_INFO_2W");
 
     /**

@@ -43,14 +43,14 @@ public class _DISK_CACHE_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("ParametersSavable"),
-        cef_master_h.C_CHAR.withName("ReadCacheEnabled"),
-        cef_master_h.C_CHAR.withName("WriteCacheEnabled"),
+        cef_render_handler_capi_h.C_CHAR.withName("ParametersSavable"),
+        cef_render_handler_capi_h.C_CHAR.withName("ReadCacheEnabled"),
+        cef_render_handler_capi_h.C_CHAR.withName("WriteCacheEnabled"),
         MemoryLayout.paddingLayout(1),
-        cef_master_h.C_INT.withName("ReadRetentionPriority"),
-        cef_master_h.C_INT.withName("WriteRetentionPriority"),
-        cef_master_h.C_SHORT.withName("DisablePrefetchTransferLength"),
-        cef_master_h.C_CHAR.withName("PrefetchScalar"),
+        cef_render_handler_capi_h.C_INT.withName("ReadRetentionPriority"),
+        cef_render_handler_capi_h.C_INT.withName("WriteRetentionPriority"),
+        cef_render_handler_capi_h.C_SHORT.withName("DisablePrefetchTransferLength"),
+        cef_render_handler_capi_h.C_CHAR.withName("PrefetchScalar"),
         MemoryLayout.paddingLayout(1),
         MemoryLayout.unionLayout(
             _DISK_CACHE_INFORMATION.ScalarPrefetch.layout().withName("ScalarPrefetch"),
@@ -390,9 +390,9 @@ public class _DISK_CACHE_INFORMATION {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_SHORT.withName("Minimum"),
-            cef_master_h.C_SHORT.withName("Maximum"),
-            cef_master_h.C_SHORT.withName("MaximumBlocks")
+            cef_render_handler_capi_h.C_SHORT.withName("Minimum"),
+            cef_render_handler_capi_h.C_SHORT.withName("Maximum"),
+            cef_render_handler_capi_h.C_SHORT.withName("MaximumBlocks")
         ).withName("$anon$9907:9");
 
         /**
@@ -654,8 +654,8 @@ public class _DISK_CACHE_INFORMATION {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_SHORT.withName("Minimum"),
-            cef_master_h.C_SHORT.withName("Maximum")
+            cef_render_handler_capi_h.C_SHORT.withName("Minimum"),
+            cef_render_handler_capi_h.C_SHORT.withName("Maximum")
         ).withName("$anon$9919:9");
 
         /**

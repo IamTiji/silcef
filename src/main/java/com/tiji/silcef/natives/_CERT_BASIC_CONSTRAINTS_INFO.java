@@ -31,11 +31,11 @@ public class _CERT_BASIC_CONSTRAINTS_INFO {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CRYPT_BIT_BLOB.layout().withName("SubjectType"),
-        cef_master_h.C_INT.withName("fPathLenConstraint"),
-        cef_master_h.C_LONG.withName("dwPathLenConstraint"),
-        cef_master_h.C_LONG.withName("cSubtreesConstraint"),
+        cef_render_handler_capi_h.C_INT.withName("fPathLenConstraint"),
+        cef_render_handler_capi_h.C_LONG.withName("dwPathLenConstraint"),
+        cef_render_handler_capi_h.C_LONG.withName("cSubtreesConstraint"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgSubtreesConstraint")
+        cef_render_handler_capi_h.C_POINTER.withName("rgSubtreesConstraint")
     ).withName("_CERT_BASIC_CONSTRAINTS_INFO");
 
     /**

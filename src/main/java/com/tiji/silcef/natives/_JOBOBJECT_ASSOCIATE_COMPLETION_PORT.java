@@ -27,8 +27,8 @@ public class _JOBOBJECT_ASSOCIATE_COMPLETION_PORT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("CompletionKey"),
-        cef_master_h.C_POINTER.withName("CompletionPort")
+        cef_render_handler_capi_h.C_POINTER.withName("CompletionKey"),
+        cef_render_handler_capi_h.C_POINTER.withName("CompletionPort")
     ).withName("_JOBOBJECT_ASSOCIATE_COMPLETION_PORT");
 
     /**

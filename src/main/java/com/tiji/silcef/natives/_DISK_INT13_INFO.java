@@ -30,12 +30,12 @@ public class _DISK_INT13_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("DriveSelect"),
+        cef_render_handler_capi_h.C_SHORT.withName("DriveSelect"),
         MemoryLayout.paddingLayout(2),
-        cef_master_h.C_LONG.withName("MaxCylinders"),
-        cef_master_h.C_SHORT.withName("SectorsPerTrack"),
-        cef_master_h.C_SHORT.withName("MaxHeads"),
-        cef_master_h.C_SHORT.withName("NumberDrives"),
+        cef_render_handler_capi_h.C_LONG.withName("MaxCylinders"),
+        cef_render_handler_capi_h.C_SHORT.withName("SectorsPerTrack"),
+        cef_render_handler_capi_h.C_SHORT.withName("MaxHeads"),
+        cef_render_handler_capi_h.C_SHORT.withName("NumberDrives"),
         MemoryLayout.paddingLayout(2)
     ).withName("_DISK_INT13_INFO");
 

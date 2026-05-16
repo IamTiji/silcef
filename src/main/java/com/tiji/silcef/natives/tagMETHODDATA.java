@@ -33,14 +33,14 @@ public class tagMETHODDATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("szName"),
-        cef_master_h.C_POINTER.withName("ppdata"),
-        cef_master_h.C_LONG.withName("dispid"),
-        cef_master_h.C_INT.withName("iMeth"),
-        cef_master_h.C_INT.withName("cc"),
-        cef_master_h.C_INT.withName("cArgs"),
-        cef_master_h.C_SHORT.withName("wFlags"),
-        cef_master_h.C_SHORT.withName("vtReturn"),
+        cef_render_handler_capi_h.C_POINTER.withName("szName"),
+        cef_render_handler_capi_h.C_POINTER.withName("ppdata"),
+        cef_render_handler_capi_h.C_LONG.withName("dispid"),
+        cef_render_handler_capi_h.C_INT.withName("iMeth"),
+        cef_render_handler_capi_h.C_INT.withName("cc"),
+        cef_render_handler_capi_h.C_INT.withName("cArgs"),
+        cef_render_handler_capi_h.C_SHORT.withName("wFlags"),
+        cef_render_handler_capi_h.C_SHORT.withName("vtReturn"),
         MemoryLayout.paddingLayout(4)
     ).withName("tagMETHODDATA");
 

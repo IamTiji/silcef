@@ -28,8 +28,8 @@ public class tagCHARSETINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("ciCharset"),
-        cef_master_h.C_INT.withName("ciACP"),
+        cef_render_handler_capi_h.C_INT.withName("ciCharset"),
+        cef_render_handler_capi_h.C_INT.withName("ciACP"),
         tagFONTSIGNATURE.layout().withName("fs")
     ).withName("tagCHARSETINFO");
 

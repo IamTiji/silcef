@@ -28,9 +28,9 @@ public class _IMAGE_BOUND_IMPORT_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("TimeDateStamp"),
-        cef_master_h.C_SHORT.withName("OffsetModuleName"),
-        cef_master_h.C_SHORT.withName("NumberOfModuleForwarderRefs")
+        cef_render_handler_capi_h.C_LONG.withName("TimeDateStamp"),
+        cef_render_handler_capi_h.C_SHORT.withName("OffsetModuleName"),
+        cef_render_handler_capi_h.C_SHORT.withName("NumberOfModuleForwarderRefs")
     ).withName("_IMAGE_BOUND_IMPORT_DESCRIPTOR");
 
     /**

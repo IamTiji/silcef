@@ -29,10 +29,10 @@ public class _APC_CALLBACK_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("Parameter"),
-        cef_master_h.C_POINTER.withName("ContextRecord"),
-        cef_master_h.C_LONG_LONG.withName("Reserved0"),
-        cef_master_h.C_LONG_LONG.withName("Reserved1")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Parameter"),
+        cef_render_handler_capi_h.C_POINTER.withName("ContextRecord"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Reserved0"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Reserved1")
     ).withName("_APC_CALLBACK_DATA");
 
     /**

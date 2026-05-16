@@ -31,12 +31,12 @@ public class _SENDCMDINPARAMS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("cBufferSize"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("cBufferSize"),
         _IDEREGS.layout().withName("irDriveRegs"),
-        cef_master_h.C_CHAR.withName("bDriveNumber"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_CHAR).withName("bReserved"),
-        MemoryLayout.sequenceLayout(4, cef_master_h.align(cef_master_h.C_LONG, 1)).withName("dwReserved"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("bBuffer")
+        cef_render_handler_capi_h.C_CHAR.withName("bDriveNumber"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_CHAR).withName("bReserved"),
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1)).withName("dwReserved"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("bBuffer")
     ).withName("_SENDCMDINPARAMS");
 
     /**

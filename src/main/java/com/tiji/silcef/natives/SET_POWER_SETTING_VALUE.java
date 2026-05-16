@@ -30,11 +30,11 @@ public class SET_POWER_SETTING_VALUE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
         _GUID.layout().withName("Guid"),
-        cef_master_h.C_INT.withName("PowerCondition"),
-        cef_master_h.C_LONG.withName("DataLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("Data"),
+        cef_render_handler_capi_h.C_INT.withName("PowerCondition"),
+        cef_render_handler_capi_h.C_LONG.withName("DataLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("Data"),
         MemoryLayout.paddingLayout(3)
     ).withName("$anon$18841:9");
 

@@ -27,8 +27,8 @@ public class _FILE_SEGMENT_ELEMENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-        cef_master_h.C_POINTER.withName("Buffer"),
-        cef_master_h.C_LONG_LONG.withName("Alignment")
+        cef_render_handler_capi_h.C_POINTER.withName("Buffer"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Alignment")
     ).withName("_FILE_SEGMENT_ELEMENT");
 
     /**

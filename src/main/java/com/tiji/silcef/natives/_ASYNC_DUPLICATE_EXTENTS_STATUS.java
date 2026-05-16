@@ -31,12 +31,12 @@ public class _ASYNC_DUPLICATE_EXTENTS_STATUS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_INT.withName("State"),
-        cef_master_h.C_LONG_LONG.withName("SourceFileOffset"),
-        cef_master_h.C_LONG_LONG.withName("TargetFileOffset"),
-        cef_master_h.C_LONG_LONG.withName("ByteCount"),
-        cef_master_h.C_LONG_LONG.withName("BytesDuplicated")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_INT.withName("State"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("SourceFileOffset"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("TargetFileOffset"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ByteCount"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("BytesDuplicated")
     ).withName("_ASYNC_DUPLICATE_EXTENTS_STATUS");
 
     /**

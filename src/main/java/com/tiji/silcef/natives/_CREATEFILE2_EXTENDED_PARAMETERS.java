@@ -31,12 +31,12 @@ public class _CREATEFILE2_EXTENDED_PARAMETERS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSize"),
-        cef_master_h.C_LONG.withName("dwFileAttributes"),
-        cef_master_h.C_LONG.withName("dwFileFlags"),
-        cef_master_h.C_LONG.withName("dwSecurityQosFlags"),
-        cef_master_h.C_POINTER.withName("lpSecurityAttributes"),
-        cef_master_h.C_POINTER.withName("hTemplateFile")
+        cef_render_handler_capi_h.C_LONG.withName("dwSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFileAttributes"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFileFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSecurityQosFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpSecurityAttributes"),
+        cef_render_handler_capi_h.C_POINTER.withName("hTemplateFile")
     ).withName("_CREATEFILE2_EXTENDED_PARAMETERS");
 
     /**

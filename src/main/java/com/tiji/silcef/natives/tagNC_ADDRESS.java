@@ -28,9 +28,9 @@ public class tagNC_ADDRESS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pAddrInfo"),
-        cef_master_h.C_SHORT.withName("PortNumber"),
-        cef_master_h.C_CHAR.withName("PrefixLength"),
+        cef_render_handler_capi_h.C_POINTER.withName("pAddrInfo"),
+        cef_render_handler_capi_h.C_SHORT.withName("PortNumber"),
+        cef_render_handler_capi_h.C_CHAR.withName("PrefixLength"),
         MemoryLayout.paddingLayout(5)
     ).withName("tagNC_ADDRESS");
 

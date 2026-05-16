@@ -28,9 +28,9 @@ public class _GET_DISK_ATTRIBUTES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Reserved1"),
-        cef_master_h.C_LONG_LONG.withName("Attributes")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved1"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Attributes")
     ).withName("_GET_DISK_ATTRIBUTES");
 
     /**

@@ -33,16 +33,16 @@ public class _CERT_CHAIN_FIND_BY_ISSUER_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pszUsageIdentifier"),
-        cef_master_h.C_LONG.withName("dwKeySpec"),
-        cef_master_h.C_LONG.withName("dwAcquirePrivateKeyFlags"),
-        cef_master_h.C_LONG.withName("cIssuer"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszUsageIdentifier"),
+        cef_render_handler_capi_h.C_LONG.withName("dwKeySpec"),
+        cef_render_handler_capi_h.C_LONG.withName("dwAcquirePrivateKeyFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("cIssuer"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgIssuer"),
-        cef_master_h.C_POINTER.withName("pfnFindCallback"),
-        cef_master_h.C_POINTER.withName("pvFindArg")
+        cef_render_handler_capi_h.C_POINTER.withName("rgIssuer"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnFindCallback"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvFindArg")
     ).withName("_CERT_CHAIN_FIND_BY_ISSUER_PARA");
 
     /**

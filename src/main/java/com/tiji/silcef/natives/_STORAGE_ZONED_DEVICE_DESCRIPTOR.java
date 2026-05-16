@@ -42,12 +42,12 @@ public class _STORAGE_ZONED_DEVICE_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_INT.withName("DeviceType"),
-        cef_master_h.C_LONG.withName("ZoneCount"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_INT.withName("DeviceType"),
+        cef_render_handler_capi_h.C_LONG.withName("ZoneCount"),
         _STORAGE_ZONED_DEVICE_DESCRIPTOR.ZoneAttributes.layout().withName("ZoneAttributes"),
-        cef_master_h.C_LONG.withName("ZoneGroupCount"),
+        cef_render_handler_capi_h.C_LONG.withName("ZoneGroupCount"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.sequenceLayout(1, _STORAGE_ZONE_GROUP.layout()).withName("ZoneGroup")
     ).withName("_STORAGE_ZONED_DEVICE_DESCRIPTOR");
@@ -284,9 +284,9 @@ public class _STORAGE_ZONED_DEVICE_DESCRIPTOR {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_LONG.withName("MaxOpenZoneCount"),
-                cef_master_h.C_CHAR.withName("UnrestrictedRead"),
-                MemoryLayout.sequenceLayout(3, cef_master_h.C_CHAR).withName("Reserved")
+                cef_render_handler_capi_h.C_LONG.withName("MaxOpenZoneCount"),
+                cef_render_handler_capi_h.C_CHAR.withName("UnrestrictedRead"),
+                MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_CHAR).withName("Reserved")
             ).withName("$anon$3319:9");
 
             /**
@@ -581,8 +581,8 @@ public class _STORAGE_ZONED_DEVICE_DESCRIPTOR {
             }
 
             private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-                cef_master_h.C_LONG.withName("OptimalOpenZoneCount"),
-                cef_master_h.C_LONG.withName("Reserved")
+                cef_render_handler_capi_h.C_LONG.withName("OptimalOpenZoneCount"),
+                cef_render_handler_capi_h.C_LONG.withName("Reserved")
             ).withName("$anon$3329:9");
 
             /**

@@ -32,15 +32,15 @@ public class _CMSG_SIGNED_ENCODE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("cSigners"),
-        cef_master_h.C_POINTER.withName("rgSigners"),
-        cef_master_h.C_LONG.withName("cCertEncoded"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cSigners"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgSigners"),
+        cef_render_handler_capi_h.C_LONG.withName("cCertEncoded"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgCertEncoded"),
-        cef_master_h.C_LONG.withName("cCrlEncoded"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgCertEncoded"),
+        cef_render_handler_capi_h.C_LONG.withName("cCrlEncoded"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgCrlEncoded")
+        cef_render_handler_capi_h.C_POINTER.withName("rgCrlEncoded")
     ).withName("_CMSG_SIGNED_ENCODE_INFO");
 
     /**

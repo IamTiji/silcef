@@ -28,9 +28,9 @@ public class _DEVICEDUMP_STRUCTURE_VERSION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwSignature"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwVersion"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("dwSize")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwSignature"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwVersion"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("dwSize")
     ).withName("_DEVICEDUMP_STRUCTURE_VERSION");
 
     /**

@@ -28,7 +28,7 @@ public class _EXCEPTION_DEBUG_INFO {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _EXCEPTION_RECORD.layout().withName("ExceptionRecord"),
-        cef_master_h.C_LONG.withName("dwFirstChance"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFirstChance"),
         MemoryLayout.paddingLayout(4)
     ).withName("_EXCEPTION_DEBUG_INFO");
 

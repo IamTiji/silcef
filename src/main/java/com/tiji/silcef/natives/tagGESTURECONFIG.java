@@ -28,9 +28,9 @@ public class tagGESTURECONFIG {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwID"),
-        cef_master_h.C_LONG.withName("dwWant"),
-        cef_master_h.C_LONG.withName("dwBlock")
+        cef_render_handler_capi_h.C_LONG.withName("dwID"),
+        cef_render_handler_capi_h.C_LONG.withName("dwWant"),
+        cef_render_handler_capi_h.C_LONG.withName("dwBlock")
     ).withName("tagGESTURECONFIG");
 
     /**

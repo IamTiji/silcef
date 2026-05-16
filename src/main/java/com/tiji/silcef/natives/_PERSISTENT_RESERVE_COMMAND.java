@@ -41,8 +41,8 @@ public class _PERSISTENT_RESERVE_COMMAND {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
         MemoryLayout.unionLayout(
             _PERSISTENT_RESERVE_COMMAND.PR_IN.layout().withName("PR_IN"),
             _PERSISTENT_RESERVE_COMMAND.PR_OUT.layout().withName("PR_OUT")
@@ -161,7 +161,7 @@ public class _PERSISTENT_RESERVE_COMMAND {
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
             MemoryLayout.paddingLayout(2),
-            cef_master_h.C_SHORT.withName("AllocationLength")
+            cef_render_handler_capi_h.C_SHORT.withName("AllocationLength")
         ).withName("$anon$6274:9");
 
         /**
@@ -339,7 +339,7 @@ public class _PERSISTENT_RESERVE_COMMAND {
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
             MemoryLayout.paddingLayout(2),
-            MemoryLayout.sequenceLayout(0, cef_master_h.C_CHAR).withName("ParameterList")
+            MemoryLayout.sequenceLayout(0, cef_render_handler_capi_h.C_CHAR).withName("ParameterList")
         ).withName("$anon$6291:9");
 
         /**

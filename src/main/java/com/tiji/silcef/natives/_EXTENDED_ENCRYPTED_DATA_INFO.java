@@ -29,10 +29,10 @@ public class _EXTENDED_ENCRYPTED_DATA_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ExtendedCode"),
-        cef_master_h.C_LONG.withName("Length"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("Reserved")
+        cef_render_handler_capi_h.C_LONG.withName("ExtendedCode"),
+        cef_render_handler_capi_h.C_LONG.withName("Length"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved")
     ).withName("_EXTENDED_ENCRYPTED_DATA_INFO");
 
     /**

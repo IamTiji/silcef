@@ -27,8 +27,8 @@ public class tagPRINTPAGERANGE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("nFromPage"),
-        cef_master_h.C_LONG.withName("nToPage")
+        cef_render_handler_capi_h.C_LONG.withName("nFromPage"),
+        cef_render_handler_capi_h.C_LONG.withName("nToPage")
     ).withName("tagPRINTPAGERANGE");
 
     /**

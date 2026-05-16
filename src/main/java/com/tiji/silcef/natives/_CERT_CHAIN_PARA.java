@@ -27,7 +27,7 @@ public class _CERT_CHAIN_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
         _CERT_USAGE_MATCH.layout().withName("RequestedUsage")
     ).withName("_CERT_CHAIN_PARA");

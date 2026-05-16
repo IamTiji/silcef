@@ -29,7 +29,7 @@ public class tagARRAYDESC {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagTYPEDESC.layout().withName("tdescElem"),
-        cef_master_h.C_SHORT.withName("cDims"),
+        cef_render_handler_capi_h.C_SHORT.withName("cDims"),
         MemoryLayout.paddingLayout(2),
         MemoryLayout.sequenceLayout(1, tagSAFEARRAYBOUND.layout()).withName("rgbounds"),
         MemoryLayout.paddingLayout(4)

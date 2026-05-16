@@ -37,18 +37,18 @@ public class _STORAGE_PHYSICAL_DEVICE_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("DeviceId"),
-        cef_master_h.C_LONG.withName("Role"),
-        cef_master_h.C_INT.withName("HealthStatus"),
-        cef_master_h.C_INT.withName("CommandProtocol"),
+        cef_render_handler_capi_h.C_LONG.withName("DeviceId"),
+        cef_render_handler_capi_h.C_LONG.withName("Role"),
+        cef_render_handler_capi_h.C_INT.withName("HealthStatus"),
+        cef_render_handler_capi_h.C_INT.withName("CommandProtocol"),
         _STORAGE_SPEC_VERSION.layout().withName("SpecVersion"),
-        cef_master_h.C_INT.withName("FormFactor"),
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_CHAR).withName("Vendor"),
-        MemoryLayout.sequenceLayout(40, cef_master_h.C_CHAR).withName("Model"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("FirmwareRevision"),
-        cef_master_h.C_LONG_LONG.withName("Capacity"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("PhysicalLocation"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_LONG).withName("Reserved")
+        cef_render_handler_capi_h.C_INT.withName("FormFactor"),
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_CHAR).withName("Vendor"),
+        MemoryLayout.sequenceLayout(40, cef_render_handler_capi_h.C_CHAR).withName("Model"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("FirmwareRevision"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Capacity"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("PhysicalLocation"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_LONG).withName("Reserved")
     ).withName("_STORAGE_PHYSICAL_DEVICE_DATA");
 
     /**

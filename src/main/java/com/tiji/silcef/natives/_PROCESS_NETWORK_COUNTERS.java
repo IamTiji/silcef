@@ -27,8 +27,8 @@ public class _PROCESS_NETWORK_COUNTERS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("BytesIn"),
-        cef_master_h.C_LONG_LONG.withName("BytesOut")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("BytesIn"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("BytesOut")
     ).withName("_PROCESS_NETWORK_COUNTERS");
 
     /**

@@ -31,7 +31,7 @@ public class _CHAR_INFO {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CHAR_INFO.Char.layout().withName("Char"),
-        cef_master_h.C_SHORT.withName("Attributes")
+        cef_render_handler_capi_h.C_SHORT.withName("Attributes")
     ).withName("_CHAR_INFO");
 
     /**
@@ -56,8 +56,8 @@ public class _CHAR_INFO {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_SHORT.withName("UnicodeChar"),
-            cef_master_h.C_CHAR.withName("AsciiChar")
+            cef_render_handler_capi_h.C_SHORT.withName("UnicodeChar"),
+            cef_render_handler_capi_h.C_CHAR.withName("AsciiChar")
         ).withName("$anon$144:5");
 
         /**

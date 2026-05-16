@@ -27,8 +27,8 @@ public class _NDR_SCONTEXT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_POINTER).withName("pad"),
-        cef_master_h.C_POINTER.withName("userContext")
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_POINTER).withName("pad"),
+        cef_render_handler_capi_h.C_POINTER.withName("userContext")
     ).withName("_NDR_SCONTEXT");
 
     /**

@@ -29,10 +29,10 @@ public class FRAME_MARGIN {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("left"),
-        cef_master_h.C_SHORT.withName("right"),
-        cef_master_h.C_SHORT.withName("top"),
-        cef_master_h.C_SHORT.withName("bottom")
+        cef_render_handler_capi_h.C_SHORT.withName("left"),
+        cef_render_handler_capi_h.C_SHORT.withName("right"),
+        cef_render_handler_capi_h.C_SHORT.withName("top"),
+        cef_render_handler_capi_h.C_SHORT.withName("bottom")
     ).withName("$anon$4659:9");
 
     /**

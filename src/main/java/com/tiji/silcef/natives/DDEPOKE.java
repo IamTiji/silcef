@@ -31,8 +31,8 @@ public class DDEPOKE {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.paddingLayout(2),
-        cef_master_h.C_SHORT.withName("cfFormat"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("Value"),
+        cef_render_handler_capi_h.C_SHORT.withName("cfFormat"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("Value"),
         MemoryLayout.paddingLayout(1)
     ).withName("$anon$124:9");
 

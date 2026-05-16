@@ -28,8 +28,8 @@ public class _PERF_BIN {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NumberOfBins"),
-        cef_master_h.C_LONG.withName("TypeOfBin"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfBins"),
+        cef_render_handler_capi_h.C_LONG.withName("TypeOfBin"),
         MemoryLayout.sequenceLayout(1, _BIN_RANGE.layout()).withName("BinsRanges")
     ).withName("_PERF_BIN");
 

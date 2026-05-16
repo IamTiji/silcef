@@ -33,14 +33,14 @@ public class _MIDL_SERVER_INFO_ {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pStubDesc"),
-        cef_master_h.C_POINTER.withName("DispatchTable"),
-        cef_master_h.C_POINTER.withName("ProcString"),
-        cef_master_h.C_POINTER.withName("FmtStringOffset"),
-        cef_master_h.C_POINTER.withName("ThunkTable"),
-        cef_master_h.C_POINTER.withName("pTransferSyntax"),
-        cef_master_h.C_LONG_LONG.withName("nCount"),
-        cef_master_h.C_POINTER.withName("pSyntaxInfo")
+        cef_render_handler_capi_h.C_POINTER.withName("pStubDesc"),
+        cef_render_handler_capi_h.C_POINTER.withName("DispatchTable"),
+        cef_render_handler_capi_h.C_POINTER.withName("ProcString"),
+        cef_render_handler_capi_h.C_POINTER.withName("FmtStringOffset"),
+        cef_render_handler_capi_h.C_POINTER.withName("ThunkTable"),
+        cef_render_handler_capi_h.C_POINTER.withName("pTransferSyntax"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("nCount"),
+        cef_render_handler_capi_h.C_POINTER.withName("pSyntaxInfo")
     ).withName("_MIDL_SERVER_INFO_");
 
     /**

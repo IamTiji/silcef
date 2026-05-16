@@ -27,9 +27,9 @@ public class _CRYPT_CONTEXT_FUNCTIONS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cFunctions"),
+        cef_render_handler_capi_h.C_LONG.withName("cFunctions"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgpszFunctions")
+        cef_render_handler_capi_h.C_POINTER.withName("rgpszFunctions")
     ).withName("_CRYPT_CONTEXT_FUNCTIONS");
 
     /**

@@ -32,11 +32,11 @@ public class _IMAGE_RELOCATION {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.unionLayout(
-            cef_master_h.align(cef_master_h.C_LONG, 2).withName("VirtualAddress"),
-            cef_master_h.align(cef_master_h.C_LONG, 2).withName("RelocCount")
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("VirtualAddress"),
+            cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("RelocCount")
         ).withName("$anon$20459:5"),
-        cef_master_h.align(cef_master_h.C_LONG, 2).withName("SymbolTableIndex"),
-        cef_master_h.C_SHORT.withName("Type")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("SymbolTableIndex"),
+        cef_render_handler_capi_h.C_SHORT.withName("Type")
     ).withName("_IMAGE_RELOCATION");
 
     /**

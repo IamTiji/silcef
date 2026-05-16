@@ -28,10 +28,10 @@ public class tagRPC_ERROR_ENUM_HANDLE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Signature"),
+        cef_render_handler_capi_h.C_LONG.withName("Signature"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("CurrentPos"),
-        cef_master_h.C_POINTER.withName("Head")
+        cef_render_handler_capi_h.C_POINTER.withName("CurrentPos"),
+        cef_render_handler_capi_h.C_POINTER.withName("Head")
     ).withName("tagRPC_ERROR_ENUM_HANDLE");
 
     /**

@@ -28,9 +28,9 @@ public class NCRYPT_TPM_PERSISTENT_KEY_BLOB_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("magic"),
-        cef_master_h.C_LONG.withName("cbHeader"),
-        cef_master_h.C_LONG.withName("tpmHandle")
+        cef_render_handler_capi_h.C_LONG.withName("magic"),
+        cef_render_handler_capi_h.C_LONG.withName("cbHeader"),
+        cef_render_handler_capi_h.C_LONG.withName("tpmHandle")
     ).withName("NCRYPT_TPM_PERSISTENT_KEY_BLOB_HEADER");
 
     /**

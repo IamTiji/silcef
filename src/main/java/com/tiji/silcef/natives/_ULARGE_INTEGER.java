@@ -35,11 +35,11 @@ public class _ULARGE_INTEGER {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
         MemoryLayout.structLayout(
-            cef_master_h.C_LONG.withName("LowPart"),
-            cef_master_h.C_LONG.withName("HighPart")
+            cef_render_handler_capi_h.C_LONG.withName("LowPart"),
+            cef_render_handler_capi_h.C_LONG.withName("HighPart")
         ).withName("$anon$949:5"),
         _ULARGE_INTEGER.u.layout().withName("u"),
-        cef_master_h.C_LONG_LONG.withName("QuadPart")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("QuadPart")
     ).withName("_ULARGE_INTEGER");
 
     /**
@@ -152,8 +152,8 @@ public class _ULARGE_INTEGER {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-            cef_master_h.C_LONG.withName("LowPart"),
-            cef_master_h.C_LONG.withName("HighPart")
+            cef_render_handler_capi_h.C_LONG.withName("LowPart"),
+            cef_render_handler_capi_h.C_LONG.withName("HighPart")
         ).withName("$anon$953:5");
 
         /**

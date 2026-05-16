@@ -28,9 +28,9 @@ public class tagINTERFACEINFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pUnk"),
+        cef_render_handler_capi_h.C_POINTER.withName("pUnk"),
         _GUID.layout().withName("iid"),
-        cef_master_h.C_SHORT.withName("wMethod"),
+        cef_render_handler_capi_h.C_SHORT.withName("wMethod"),
         MemoryLayout.paddingLayout(6)
     ).withName("tagINTERFACEINFO");
 

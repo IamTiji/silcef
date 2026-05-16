@@ -27,8 +27,8 @@ public class _DEVICE_DSM_QUERY_PREFER_LOCAL_REPAIR_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_CHAR.withName("PreferLocalRepair"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_CHAR.withName("PreferLocalRepair"),
         MemoryLayout.paddingLayout(3)
     ).withName("_DEVICE_DSM_QUERY_PREFER_LOCAL_REPAIR_OUTPUT");
 

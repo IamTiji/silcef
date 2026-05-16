@@ -26,7 +26,7 @@ public class _TRANSACTION_NOTIFICATION_SAVEPOINT_ARGUMENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("SavepointId")
+        cef_render_handler_capi_h.C_LONG.withName("SavepointId")
     ).withName("_TRANSACTION_NOTIFICATION_SAVEPOINT_ARGUMENT");
 
     /**

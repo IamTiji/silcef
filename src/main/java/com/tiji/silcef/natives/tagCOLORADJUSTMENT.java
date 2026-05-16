@@ -37,18 +37,18 @@ public class tagCOLORADJUSTMENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("caSize"),
-        cef_master_h.C_SHORT.withName("caFlags"),
-        cef_master_h.C_SHORT.withName("caIlluminantIndex"),
-        cef_master_h.C_SHORT.withName("caRedGamma"),
-        cef_master_h.C_SHORT.withName("caGreenGamma"),
-        cef_master_h.C_SHORT.withName("caBlueGamma"),
-        cef_master_h.C_SHORT.withName("caReferenceBlack"),
-        cef_master_h.C_SHORT.withName("caReferenceWhite"),
-        cef_master_h.C_SHORT.withName("caContrast"),
-        cef_master_h.C_SHORT.withName("caBrightness"),
-        cef_master_h.C_SHORT.withName("caColorfulness"),
-        cef_master_h.C_SHORT.withName("caRedGreenTint")
+        cef_render_handler_capi_h.C_SHORT.withName("caSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("caFlags"),
+        cef_render_handler_capi_h.C_SHORT.withName("caIlluminantIndex"),
+        cef_render_handler_capi_h.C_SHORT.withName("caRedGamma"),
+        cef_render_handler_capi_h.C_SHORT.withName("caGreenGamma"),
+        cef_render_handler_capi_h.C_SHORT.withName("caBlueGamma"),
+        cef_render_handler_capi_h.C_SHORT.withName("caReferenceBlack"),
+        cef_render_handler_capi_h.C_SHORT.withName("caReferenceWhite"),
+        cef_render_handler_capi_h.C_SHORT.withName("caContrast"),
+        cef_render_handler_capi_h.C_SHORT.withName("caBrightness"),
+        cef_render_handler_capi_h.C_SHORT.withName("caColorfulness"),
+        cef_render_handler_capi_h.C_SHORT.withName("caRedGreenTint")
     ).withName("tagCOLORADJUSTMENT");
 
     /**

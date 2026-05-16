@@ -33,14 +33,14 @@ public class _STORAGE_ALLOCATE_BC_STREAM_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("RequestsPerPeriod"),
-        cef_master_h.C_LONG.withName("Period"),
-        cef_master_h.C_CHAR.withName("RetryFailures"),
-        cef_master_h.C_CHAR.withName("Discardable"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("Reserved1"),
-        cef_master_h.C_LONG.withName("AccessType"),
-        cef_master_h.C_LONG.withName("AccessMode")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("RequestsPerPeriod"),
+        cef_render_handler_capi_h.C_LONG.withName("Period"),
+        cef_render_handler_capi_h.C_CHAR.withName("RetryFailures"),
+        cef_render_handler_capi_h.C_CHAR.withName("Discardable"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("Reserved1"),
+        cef_render_handler_capi_h.C_LONG.withName("AccessType"),
+        cef_render_handler_capi_h.C_LONG.withName("AccessMode")
     ).withName("_STORAGE_ALLOCATE_BC_STREAM_INPUT");
 
     /**

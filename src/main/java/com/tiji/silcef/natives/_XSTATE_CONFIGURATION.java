@@ -46,26 +46,26 @@ public class _XSTATE_CONFIGURATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("EnabledFeatures"),
-        cef_master_h.C_LONG_LONG.withName("EnabledVolatileFeatures"),
-        cef_master_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("EnabledFeatures"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("EnabledVolatileFeatures"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("ControlFlags"),
+            cef_render_handler_capi_h.C_LONG.withName("ControlFlags"),
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$14479:9")
         ).withName("$anon$14477:5"),
         MemoryLayout.sequenceLayout(64, _XSTATE_FEATURE.layout()).withName("Features"),
-        cef_master_h.C_LONG_LONG.withName("EnabledSupervisorFeatures"),
-        cef_master_h.C_LONG_LONG.withName("AlignedFeatures"),
-        cef_master_h.C_LONG.withName("AllFeatureSize"),
-        MemoryLayout.sequenceLayout(64, cef_master_h.C_LONG).withName("AllFeatures"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("EnabledSupervisorFeatures"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("AlignedFeatures"),
+        cef_render_handler_capi_h.C_LONG.withName("AllFeatureSize"),
+        MemoryLayout.sequenceLayout(64, cef_render_handler_capi_h.C_LONG).withName("AllFeatures"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("EnabledUserVisibleSupervisorFeatures"),
-        cef_master_h.C_LONG_LONG.withName("ExtendedFeatureDisableFeatures"),
-        cef_master_h.C_LONG.withName("AllNonLargeFeatureSize"),
-        cef_master_h.C_SHORT.withName("MaxSveVectorLength"),
-        cef_master_h.C_SHORT.withName("Spare1")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("EnabledUserVisibleSupervisorFeatures"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("ExtendedFeatureDisableFeatures"),
+        cef_render_handler_capi_h.C_LONG.withName("AllNonLargeFeatureSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("MaxSveVectorLength"),
+        cef_render_handler_capi_h.C_SHORT.withName("Spare1")
     ).withName("_XSTATE_CONFIGURATION");
 
     /**

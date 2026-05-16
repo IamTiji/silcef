@@ -27,8 +27,8 @@ public class _timespec64 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("tv_sec"),
-        cef_master_h.C_LONG.withName("tv_nsec"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("tv_sec"),
+        cef_render_handler_capi_h.C_LONG.withName("tv_nsec"),
         MemoryLayout.paddingLayout(4)
     ).withName("_timespec64");
 

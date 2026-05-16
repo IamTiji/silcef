@@ -26,7 +26,7 @@ public class _FILE_SET_DEFECT_MGMT_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("Disable")
+        cef_render_handler_capi_h.C_CHAR.withName("Disable")
     ).withName("_FILE_SET_DEFECT_MGMT_BUFFER");
 
     /**

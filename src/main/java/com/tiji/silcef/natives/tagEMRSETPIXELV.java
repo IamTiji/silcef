@@ -30,7 +30,7 @@ public class tagEMRSETPIXELV {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
         _POINTL.layout().withName("ptlPixel"),
-        cef_master_h.C_LONG.withName("crColor")
+        cef_render_handler_capi_h.C_LONG.withName("crColor")
     ).withName("tagEMRSETPIXELV");
 
     /**

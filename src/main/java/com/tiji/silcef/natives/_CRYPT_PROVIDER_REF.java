@@ -32,15 +32,15 @@ public class _CRYPT_PROVIDER_REF {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwInterface"),
+        cef_render_handler_capi_h.C_LONG.withName("dwInterface"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pszFunction"),
-        cef_master_h.C_POINTER.withName("pszProvider"),
-        cef_master_h.C_LONG.withName("cProperties"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszFunction"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszProvider"),
+        cef_render_handler_capi_h.C_LONG.withName("cProperties"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgpProperties"),
-        cef_master_h.C_POINTER.withName("pUM"),
-        cef_master_h.C_POINTER.withName("pKM")
+        cef_render_handler_capi_h.C_POINTER.withName("rgpProperties"),
+        cef_render_handler_capi_h.C_POINTER.withName("pUM"),
+        cef_render_handler_capi_h.C_POINTER.withName("pKM")
     ).withName("_CRYPT_PROVIDER_REF");
 
     /**

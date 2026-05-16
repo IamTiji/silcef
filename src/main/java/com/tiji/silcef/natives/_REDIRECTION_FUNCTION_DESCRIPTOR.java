@@ -28,9 +28,9 @@ public class _REDIRECTION_FUNCTION_DESCRIPTOR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("DllName"),
-        cef_master_h.C_POINTER.withName("FunctionName"),
-        cef_master_h.C_POINTER.withName("RedirectionTarget")
+        cef_render_handler_capi_h.C_POINTER.withName("DllName"),
+        cef_render_handler_capi_h.C_POINTER.withName("FunctionName"),
+        cef_render_handler_capi_h.C_POINTER.withName("RedirectionTarget")
     ).withName("_REDIRECTION_FUNCTION_DESCRIPTOR");
 
     /**

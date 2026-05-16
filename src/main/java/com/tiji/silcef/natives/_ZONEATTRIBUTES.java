@@ -33,14 +33,14 @@ public class _ZONEATTRIBUTES {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        MemoryLayout.sequenceLayout(260, cef_master_h.C_SHORT).withName("szDisplayName"),
-        MemoryLayout.sequenceLayout(200, cef_master_h.C_SHORT).withName("szDescription"),
-        MemoryLayout.sequenceLayout(260, cef_master_h.C_SHORT).withName("szIconPath"),
-        cef_master_h.C_LONG.withName("dwTemplateMinLevel"),
-        cef_master_h.C_LONG.withName("dwTemplateRecommended"),
-        cef_master_h.C_LONG.withName("dwTemplateCurrentLevel"),
-        cef_master_h.C_LONG.withName("dwFlags")
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        MemoryLayout.sequenceLayout(260, cef_render_handler_capi_h.C_SHORT).withName("szDisplayName"),
+        MemoryLayout.sequenceLayout(200, cef_render_handler_capi_h.C_SHORT).withName("szDescription"),
+        MemoryLayout.sequenceLayout(260, cef_render_handler_capi_h.C_SHORT).withName("szIconPath"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTemplateMinLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTemplateRecommended"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTemplateCurrentLevel"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags")
     ).withName("_ZONEATTRIBUTES");
 
     /**

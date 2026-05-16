@@ -26,7 +26,7 @@ public class _STORAGE_BUS_RESET_REQUEST {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("PathId")
+        cef_render_handler_capi_h.C_CHAR.withName("PathId")
     ).withName("_STORAGE_BUS_RESET_REQUEST");
 
     /**

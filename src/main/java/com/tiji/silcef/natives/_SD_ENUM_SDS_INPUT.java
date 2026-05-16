@@ -27,8 +27,8 @@ public class _SD_ENUM_SDS_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("StartingOffset"),
-        cef_master_h.C_LONG_LONG.withName("MaxSDEntriesToReturn")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("StartingOffset"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaxSDEntriesToReturn")
     ).withName("_SD_ENUM_SDS_INPUT");
 
     /**

@@ -26,7 +26,7 @@ public class _TAPE_GET_STATISTICS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Operation")
+        cef_render_handler_capi_h.C_LONG.withName("Operation")
     ).withName("_TAPE_GET_STATISTICS");
 
     /**

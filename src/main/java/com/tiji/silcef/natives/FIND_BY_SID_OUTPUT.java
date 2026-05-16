@@ -29,10 +29,10 @@ public class FIND_BY_SID_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NextEntryOffset"),
-        cef_master_h.C_LONG.withName("FileIndex"),
-        cef_master_h.C_LONG.withName("FileNameLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("FileName"),
+        cef_render_handler_capi_h.C_LONG.withName("NextEntryOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("FileIndex"),
+        cef_render_handler_capi_h.C_LONG.withName("FileNameLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("FileName"),
         MemoryLayout.paddingLayout(2)
     ).withName("$anon$11894:9");
 

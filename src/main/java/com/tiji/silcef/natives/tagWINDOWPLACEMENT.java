@@ -31,9 +31,9 @@ public class tagWINDOWPLACEMENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("length"),
-        cef_master_h.C_INT.withName("flags"),
-        cef_master_h.C_INT.withName("showCmd"),
+        cef_render_handler_capi_h.C_INT.withName("length"),
+        cef_render_handler_capi_h.C_INT.withName("flags"),
+        cef_render_handler_capi_h.C_INT.withName("showCmd"),
         tagPOINT.layout().withName("ptMinPosition"),
         tagPOINT.layout().withName("ptMaxPosition"),
         tagRECT.layout().withName("rcNormalPosition")

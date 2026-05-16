@@ -26,7 +26,7 @@ public class _STREAMS_QUERY_ID_OUTPUT_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("StreamId")
+        cef_render_handler_capi_h.C_LONG.withName("StreamId")
     ).withName("_STREAMS_QUERY_ID_OUTPUT_BUFFER");
 
     /**

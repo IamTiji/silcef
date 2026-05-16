@@ -38,9 +38,9 @@ public class _IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("BeginAddress"),
+        cef_render_handler_capi_h.C_LONG.withName("BeginAddress"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("UnwindData"),
+            cef_render_handler_capi_h.C_LONG.withName("UnwindData"),
             MemoryLayout.structLayout(
                 MemoryLayout.paddingLayout(4)
             ).withName("$anon$21724:9")

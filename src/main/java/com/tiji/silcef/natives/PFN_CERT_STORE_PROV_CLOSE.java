@@ -31,8 +31,8 @@ public final class PFN_CERT_STORE_PROV_CLOSE {
     }
 
     private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-        cef_master_h.C_POINTER,
-        cef_master_h.C_LONG
+        cef_render_handler_capi_h.C_POINTER,
+        cef_render_handler_capi_h.C_LONG
     );
 
     /**
@@ -42,7 +42,7 @@ public final class PFN_CERT_STORE_PROV_CLOSE {
         return $DESC;
     }
 
-    private static final MethodHandle UP$MH = cef_master_h.upcallHandle(PFN_CERT_STORE_PROV_CLOSE.Function.class, "apply", $DESC);
+    private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(PFN_CERT_STORE_PROV_CLOSE.Function.class, "apply", $DESC);
 
     /**
      * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

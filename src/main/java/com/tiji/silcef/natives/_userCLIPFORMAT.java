@@ -30,7 +30,7 @@ public class _userCLIPFORMAT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("fContext"),
+        cef_render_handler_capi_h.C_LONG.withName("fContext"),
         MemoryLayout.paddingLayout(4),
         _userCLIPFORMAT.__MIDL_IWinTypes_0001.layout().withName("u")
     ).withName("_userCLIPFORMAT");
@@ -101,8 +101,8 @@ public class _userCLIPFORMAT {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("dwValue"),
-            cef_master_h.C_POINTER.withName("pwszName")
+            cef_render_handler_capi_h.C_LONG.withName("dwValue"),
+            cef_render_handler_capi_h.C_POINTER.withName("pwszName")
         ).withName("__MIDL_IWinTypes_0001");
 
         /**

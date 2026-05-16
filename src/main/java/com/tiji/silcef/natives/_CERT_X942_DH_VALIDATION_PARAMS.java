@@ -28,7 +28,7 @@ public class _CERT_X942_DH_VALIDATION_PARAMS {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CRYPT_BIT_BLOB.layout().withName("seed"),
-        cef_master_h.C_LONG.withName("pgenCounter"),
+        cef_render_handler_capi_h.C_LONG.withName("pgenCounter"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CERT_X942_DH_VALIDATION_PARAMS");
 

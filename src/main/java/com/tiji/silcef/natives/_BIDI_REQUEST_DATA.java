@@ -28,9 +28,9 @@ public class _BIDI_REQUEST_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwReqNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("dwReqNumber"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pSchema"),
+        cef_render_handler_capi_h.C_POINTER.withName("pSchema"),
         _BIDI_DATA.layout().withName("data")
     ).withName("_BIDI_REQUEST_DATA");
 

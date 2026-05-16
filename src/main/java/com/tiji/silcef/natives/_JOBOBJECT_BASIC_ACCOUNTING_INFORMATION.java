@@ -37,10 +37,10 @@ public class _JOBOBJECT_BASIC_ACCOUNTING_INFORMATION {
         _LARGE_INTEGER.layout().withName("TotalKernelTime"),
         _LARGE_INTEGER.layout().withName("ThisPeriodTotalUserTime"),
         _LARGE_INTEGER.layout().withName("ThisPeriodTotalKernelTime"),
-        cef_master_h.C_LONG.withName("TotalPageFaultCount"),
-        cef_master_h.C_LONG.withName("TotalProcesses"),
-        cef_master_h.C_LONG.withName("ActiveProcesses"),
-        cef_master_h.C_LONG.withName("TotalTerminatedProcesses")
+        cef_render_handler_capi_h.C_LONG.withName("TotalPageFaultCount"),
+        cef_render_handler_capi_h.C_LONG.withName("TotalProcesses"),
+        cef_render_handler_capi_h.C_LONG.withName("ActiveProcesses"),
+        cef_render_handler_capi_h.C_LONG.withName("TotalTerminatedProcesses")
     ).withName("_JOBOBJECT_BASIC_ACCOUNTING_INFORMATION");
 
     /**

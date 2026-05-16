@@ -27,7 +27,7 @@ public class tagTOUCH_HIT_TESTING_PROXIMITY_EVALUATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("score"),
+        cef_render_handler_capi_h.C_SHORT.withName("score"),
         MemoryLayout.paddingLayout(2),
         tagPOINT.layout().withName("adjustedPoint")
     ).withName("tagTOUCH_HIT_TESTING_PROXIMITY_EVALUATION");

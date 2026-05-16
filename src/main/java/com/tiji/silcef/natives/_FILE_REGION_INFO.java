@@ -29,10 +29,10 @@ public class _FILE_REGION_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("FileOffset"),
-        cef_master_h.C_LONG_LONG.withName("Length"),
-        cef_master_h.C_LONG.withName("Usage"),
-        cef_master_h.C_LONG.withName("Reserved")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("FileOffset"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Length"),
+        cef_render_handler_capi_h.C_LONG.withName("Usage"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved")
     ).withName("_FILE_REGION_INFO");
 
     /**

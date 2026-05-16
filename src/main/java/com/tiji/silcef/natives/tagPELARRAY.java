@@ -30,11 +30,11 @@ public class tagPELARRAY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("paXCount"),
-        cef_master_h.C_LONG.withName("paYCount"),
-        cef_master_h.C_LONG.withName("paXExt"),
-        cef_master_h.C_LONG.withName("paYExt"),
-        cef_master_h.C_CHAR.withName("paRGBs"),
+        cef_render_handler_capi_h.C_LONG.withName("paXCount"),
+        cef_render_handler_capi_h.C_LONG.withName("paYCount"),
+        cef_render_handler_capi_h.C_LONG.withName("paXExt"),
+        cef_render_handler_capi_h.C_LONG.withName("paYExt"),
+        cef_render_handler_capi_h.C_CHAR.withName("paRGBs"),
         MemoryLayout.paddingLayout(3)
     ).withName("tagPELARRAY");
 

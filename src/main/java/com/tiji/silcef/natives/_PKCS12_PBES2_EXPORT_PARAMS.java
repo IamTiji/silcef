@@ -28,10 +28,10 @@ public class _PKCS12_PBES2_EXPORT_PARAMS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hNcryptDescriptor"),
-        cef_master_h.C_POINTER.withName("pwszPbes2Alg")
+        cef_render_handler_capi_h.C_POINTER.withName("hNcryptDescriptor"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszPbes2Alg")
     ).withName("_PKCS12_PBES2_EXPORT_PARAMS");
 
     /**

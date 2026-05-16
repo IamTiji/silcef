@@ -31,12 +31,12 @@ public class tagFILTERKEYS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_LONG.withName("iWaitMSec"),
-        cef_master_h.C_LONG.withName("iDelayMSec"),
-        cef_master_h.C_LONG.withName("iRepeatMSec"),
-        cef_master_h.C_LONG.withName("iBounceMSec")
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("iWaitMSec"),
+        cef_render_handler_capi_h.C_LONG.withName("iDelayMSec"),
+        cef_render_handler_capi_h.C_LONG.withName("iRepeatMSec"),
+        cef_render_handler_capi_h.C_LONG.withName("iBounceMSec")
     ).withName("tagFILTERKEYS");
 
     /**

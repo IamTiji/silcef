@@ -32,9 +32,9 @@ public class _FILE_STANDARD_INFO {
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LARGE_INTEGER.layout().withName("AllocationSize"),
         _LARGE_INTEGER.layout().withName("EndOfFile"),
-        cef_master_h.C_LONG.withName("NumberOfLinks"),
-        cef_master_h.C_CHAR.withName("DeletePending"),
-        cef_master_h.C_CHAR.withName("Directory"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfLinks"),
+        cef_render_handler_capi_h.C_CHAR.withName("DeletePending"),
+        cef_render_handler_capi_h.C_CHAR.withName("Directory"),
         MemoryLayout.paddingLayout(2)
     ).withName("_FILE_STANDARD_INFO");
 

@@ -28,7 +28,7 @@ public class _WIN32_FIND_STREAM_DATA {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LARGE_INTEGER.layout().withName("StreamSize"),
-        MemoryLayout.sequenceLayout(296, cef_master_h.C_SHORT).withName("cStreamName")
+        MemoryLayout.sequenceLayout(296, cef_render_handler_capi_h.C_SHORT).withName("cStreamName")
     ).withName("_WIN32_FIND_STREAM_DATA");
 
     /**

@@ -27,9 +27,9 @@ public class PrintPropertiesCollection {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("numberOfProperties"),
+        cef_render_handler_capi_h.C_LONG.withName("numberOfProperties"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("propertiesCollection")
+        cef_render_handler_capi_h.C_POINTER.withName("propertiesCollection")
     ).withName("$anon$3756:13");
 
     /**

@@ -28,7 +28,7 @@ public class DISPLAYCONFIG_ADAPTER_NAME {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         DISPLAYCONFIG_DEVICE_INFO_HEADER.layout().withName("header"),
-        MemoryLayout.sequenceLayout(128, cef_master_h.C_SHORT).withName("adapterDevicePath")
+        MemoryLayout.sequenceLayout(128, cef_render_handler_capi_h.C_SHORT).withName("adapterDevicePath")
     ).withName("DISPLAYCONFIG_ADAPTER_NAME");
 
     /**

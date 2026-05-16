@@ -30,11 +30,11 @@ public class tagBITMAPFILEHEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("bfType"),
-        cef_master_h.align(cef_master_h.C_LONG, 2).withName("bfSize"),
-        cef_master_h.C_SHORT.withName("bfReserved1"),
-        cef_master_h.C_SHORT.withName("bfReserved2"),
-        cef_master_h.align(cef_master_h.C_LONG, 2).withName("bfOffBits")
+        cef_render_handler_capi_h.C_SHORT.withName("bfType"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("bfSize"),
+        cef_render_handler_capi_h.C_SHORT.withName("bfReserved1"),
+        cef_render_handler_capi_h.C_SHORT.withName("bfReserved2"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 2).withName("bfOffBits")
     ).withName("tagBITMAPFILEHEADER");
 
     /**

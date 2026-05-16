@@ -28,9 +28,9 @@ public class _PRINTER_DEFAULTSA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pDatatype"),
-        cef_master_h.C_POINTER.withName("pDevMode"),
-        cef_master_h.C_LONG.withName("DesiredAccess"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDatatype"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDevMode"),
+        cef_render_handler_capi_h.C_LONG.withName("DesiredAccess"),
         MemoryLayout.paddingLayout(4)
     ).withName("_PRINTER_DEFAULTSA");
 

@@ -29,10 +29,10 @@ public class tagPALETTEENTRY {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("peRed"),
-        cef_master_h.C_CHAR.withName("peGreen"),
-        cef_master_h.C_CHAR.withName("peBlue"),
-        cef_master_h.C_CHAR.withName("peFlags")
+        cef_render_handler_capi_h.C_CHAR.withName("peRed"),
+        cef_render_handler_capi_h.C_CHAR.withName("peGreen"),
+        cef_render_handler_capi_h.C_CHAR.withName("peBlue"),
+        cef_render_handler_capi_h.C_CHAR.withName("peFlags")
     ).withName("tagPALETTEENTRY");
 
     /**

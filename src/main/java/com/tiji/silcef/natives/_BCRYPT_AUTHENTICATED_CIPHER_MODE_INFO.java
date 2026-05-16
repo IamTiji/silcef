@@ -38,22 +38,22 @@ public class _BCRYPT_AUTHENTICATED_CIPHER_MODE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwInfoVersion"),
-        cef_master_h.C_POINTER.withName("pbNonce"),
-        cef_master_h.C_LONG.withName("cbNonce"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwInfoVersion"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbNonce"),
+        cef_render_handler_capi_h.C_LONG.withName("cbNonce"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pbAuthData"),
-        cef_master_h.C_LONG.withName("cbAuthData"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbAuthData"),
+        cef_render_handler_capi_h.C_LONG.withName("cbAuthData"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pbTag"),
-        cef_master_h.C_LONG.withName("cbTag"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbTag"),
+        cef_render_handler_capi_h.C_LONG.withName("cbTag"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pbMacContext"),
-        cef_master_h.C_LONG.withName("cbMacContext"),
-        cef_master_h.C_LONG.withName("cbAAD"),
-        cef_master_h.C_LONG_LONG.withName("cbData"),
-        cef_master_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbMacContext"),
+        cef_render_handler_capi_h.C_LONG.withName("cbMacContext"),
+        cef_render_handler_capi_h.C_LONG.withName("cbAAD"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("cbData"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
         MemoryLayout.paddingLayout(4)
     ).withName("_BCRYPT_AUTHENTICATED_CIPHER_MODE_INFO");
 

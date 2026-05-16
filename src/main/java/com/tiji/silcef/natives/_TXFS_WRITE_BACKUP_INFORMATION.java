@@ -26,7 +26,7 @@ public class _TXFS_WRITE_BACKUP_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("Buffer")
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("Buffer")
     ).withName("_TXFS_WRITE_BACKUP_INFORMATION");
 
     /**

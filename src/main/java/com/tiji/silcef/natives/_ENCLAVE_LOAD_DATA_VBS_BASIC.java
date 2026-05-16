@@ -26,7 +26,7 @@ public class _ENCLAVE_LOAD_DATA_VBS_BASIC {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("PageType")
+        cef_render_handler_capi_h.C_LONG.withName("PageType")
     ).withName("_ENCLAVE_LOAD_DATA_VBS_BASIC");
 
     /**

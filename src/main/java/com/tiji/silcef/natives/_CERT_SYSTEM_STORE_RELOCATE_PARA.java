@@ -35,13 +35,13 @@ public class _CERT_SYSTEM_STORE_RELOCATE_PARA {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("hKeyBase"),
-            cef_master_h.C_POINTER.withName("pvBase")
+            cef_render_handler_capi_h.C_POINTER.withName("hKeyBase"),
+            cef_render_handler_capi_h.C_POINTER.withName("pvBase")
         ).withName("$anon$9689:5"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("pvSystemStore"),
-            cef_master_h.C_POINTER.withName("pszSystemStore"),
-            cef_master_h.C_POINTER.withName("pwszSystemStore")
+            cef_render_handler_capi_h.C_POINTER.withName("pvSystemStore"),
+            cef_render_handler_capi_h.C_POINTER.withName("pszSystemStore"),
+            cef_render_handler_capi_h.C_POINTER.withName("pwszSystemStore")
         ).withName("$anon$9693:5")
     ).withName("_CERT_SYSTEM_STORE_RELOCATE_PARA");
 

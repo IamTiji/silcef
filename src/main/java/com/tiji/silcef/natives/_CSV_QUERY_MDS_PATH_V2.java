@@ -36,17 +36,17 @@ public class _CSV_QUERY_MDS_PATH_V2 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("RequiredSize"),
-        cef_master_h.C_LONG.withName("MdsNodeId"),
-        cef_master_h.C_LONG.withName("DsNodeId"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_INT.withName("DiskConnectivity"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("RequiredSize"),
+        cef_render_handler_capi_h.C_LONG.withName("MdsNodeId"),
+        cef_render_handler_capi_h.C_LONG.withName("DsNodeId"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_INT.withName("DiskConnectivity"),
         _GUID.layout().withName("VolumeId"),
-        cef_master_h.C_LONG.withName("IpAddressOffset"),
-        cef_master_h.C_LONG.withName("IpAddressLength"),
-        cef_master_h.C_LONG.withName("PathOffset"),
-        cef_master_h.C_LONG.withName("PathLength"),
+        cef_render_handler_capi_h.C_LONG.withName("IpAddressOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("IpAddressLength"),
+        cef_render_handler_capi_h.C_LONG.withName("PathOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("PathLength"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CSV_QUERY_MDS_PATH_V2");
 

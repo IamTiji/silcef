@@ -27,8 +27,8 @@ public class _DEVICE_DATA_SET_TOPOLOGY_ID_QUERY_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("TopologyRangeBytes"),
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("TopologyId")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("TopologyRangeBytes"),
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("TopologyId")
     ).withName("_DEVICE_DATA_SET_TOPOLOGY_ID_QUERY_OUTPUT");
 
     /**

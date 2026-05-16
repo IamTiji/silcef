@@ -34,15 +34,15 @@ public class tagI_RpcProxyCallbackInterface {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("IsValidMachineFn"),
-        cef_master_h.C_POINTER.withName("GetClientAddressFn"),
-        cef_master_h.C_POINTER.withName("GetConnectionTimeoutFn"),
-        cef_master_h.C_POINTER.withName("PerformCalloutFn"),
-        cef_master_h.C_POINTER.withName("FreeCalloutStateFn"),
-        cef_master_h.C_POINTER.withName("GetClientSessionAndResourceUUIDFn"),
-        cef_master_h.C_POINTER.withName("ProxyFilterIfFn"),
-        cef_master_h.C_POINTER.withName("RpcProxyUpdatePerfCounterFn"),
-        cef_master_h.C_POINTER.withName("RpcProxyUpdatePerfCounterBackendServerFn")
+        cef_render_handler_capi_h.C_POINTER.withName("IsValidMachineFn"),
+        cef_render_handler_capi_h.C_POINTER.withName("GetClientAddressFn"),
+        cef_render_handler_capi_h.C_POINTER.withName("GetConnectionTimeoutFn"),
+        cef_render_handler_capi_h.C_POINTER.withName("PerformCalloutFn"),
+        cef_render_handler_capi_h.C_POINTER.withName("FreeCalloutStateFn"),
+        cef_render_handler_capi_h.C_POINTER.withName("GetClientSessionAndResourceUUIDFn"),
+        cef_render_handler_capi_h.C_POINTER.withName("ProxyFilterIfFn"),
+        cef_render_handler_capi_h.C_POINTER.withName("RpcProxyUpdatePerfCounterFn"),
+        cef_render_handler_capi_h.C_POINTER.withName("RpcProxyUpdatePerfCounterBackendServerFn")
     ).withName("tagI_RpcProxyCallbackInterface");
 
     /**

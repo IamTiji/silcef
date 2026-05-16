@@ -37,20 +37,20 @@ public class _CRYPT_RETRIEVE_AUX_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pLastSyncTime"),
-        cef_master_h.C_LONG.withName("dwMaxUrlRetrievalByteCount"),
+        cef_render_handler_capi_h.C_POINTER.withName("pLastSyncTime"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMaxUrlRetrievalByteCount"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pPreFetchInfo"),
-        cef_master_h.C_POINTER.withName("pFlushInfo"),
-        cef_master_h.C_POINTER.withName("ppResponseInfo"),
-        cef_master_h.C_POINTER.withName("pwszCacheFileNamePrefix"),
-        cef_master_h.C_POINTER.withName("pftCacheResync"),
-        cef_master_h.C_INT.withName("fProxyCacheRetrieval"),
-        cef_master_h.C_LONG.withName("dwHttpStatusCode"),
-        cef_master_h.C_POINTER.withName("ppwszErrorResponseHeaders"),
-        cef_master_h.C_POINTER.withName("ppErrorContentBlob")
+        cef_render_handler_capi_h.C_POINTER.withName("pPreFetchInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("pFlushInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("ppResponseInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("pwszCacheFileNamePrefix"),
+        cef_render_handler_capi_h.C_POINTER.withName("pftCacheResync"),
+        cef_render_handler_capi_h.C_INT.withName("fProxyCacheRetrieval"),
+        cef_render_handler_capi_h.C_LONG.withName("dwHttpStatusCode"),
+        cef_render_handler_capi_h.C_POINTER.withName("ppwszErrorResponseHeaders"),
+        cef_render_handler_capi_h.C_POINTER.withName("ppErrorContentBlob")
     ).withName("_CRYPT_RETRIEVE_AUX_INFO");
 
     /**

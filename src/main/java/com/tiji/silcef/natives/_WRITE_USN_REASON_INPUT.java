@@ -27,8 +27,8 @@ public class _WRITE_USN_REASON_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("UsnReasonToWrite")
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("UsnReasonToWrite")
     ).withName("_WRITE_USN_REASON_INPUT");
 
     /**

@@ -29,9 +29,9 @@ public class _QUERY_BAD_RANGES_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("NumBadRanges"),
-        cef_master_h.C_LONG_LONG.withName("NextOffsetToLookUp"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("NumBadRanges"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("NextOffsetToLookUp"),
         MemoryLayout.sequenceLayout(1, _QUERY_BAD_RANGES_OUTPUT_RANGE.layout()).withName("BadRanges")
     ).withName("_QUERY_BAD_RANGES_OUTPUT");
 

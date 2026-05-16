@@ -26,7 +26,7 @@ public class _TOKEN_APPCONTAINER_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("TokenAppContainer")
+        cef_render_handler_capi_h.C_POINTER.withName("TokenAppContainer")
     ).withName("_TOKEN_APPCONTAINER_INFORMATION");
 
     /**

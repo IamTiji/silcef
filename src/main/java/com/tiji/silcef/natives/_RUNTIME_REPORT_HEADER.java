@@ -28,9 +28,9 @@ public class _RUNTIME_REPORT_HEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("ReportType"),
-        cef_master_h.C_SHORT.withName("Reserved"),
-        cef_master_h.C_INT.withName("ReportSize")
+        cef_render_handler_capi_h.C_SHORT.withName("ReportType"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved"),
+        cef_render_handler_capi_h.C_INT.withName("ReportSize")
     ).withName("_RUNTIME_REPORT_HEADER");
 
     /**

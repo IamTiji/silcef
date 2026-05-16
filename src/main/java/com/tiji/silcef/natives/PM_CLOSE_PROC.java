@@ -31,7 +31,7 @@ public final class PM_CLOSE_PROC {
     }
 
     private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-        cef_master_h.C_LONG);
+        cef_render_handler_capi_h.C_LONG);
 
     /**
      * The descriptor of this function pointer
@@ -40,7 +40,7 @@ public final class PM_CLOSE_PROC {
         return $DESC;
     }
 
-    private static final MethodHandle UP$MH = cef_master_h.upcallHandle(PM_CLOSE_PROC.Function.class, "apply", $DESC);
+    private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(PM_CLOSE_PROC.Function.class, "apply", $DESC);
 
     /**
      * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

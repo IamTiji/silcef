@@ -29,7 +29,7 @@ public class tagEMRCREATECOLORSPACE {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         tagEMR.layout().withName("emr"),
-        cef_master_h.C_LONG.withName("ihCS"),
+        cef_render_handler_capi_h.C_LONG.withName("ihCS"),
         tagLOGCOLORSPACEA.layout().withName("lcs")
     ).withName("tagEMRCREATECOLORSPACE");
 

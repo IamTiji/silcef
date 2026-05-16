@@ -30,11 +30,11 @@ public class _TXFS_GET_TRANSACTED_VERSION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ThisBaseVersion"),
-        cef_master_h.C_LONG.withName("LatestVersion"),
-        cef_master_h.C_SHORT.withName("ThisMiniVersion"),
-        cef_master_h.C_SHORT.withName("FirstMiniVersion"),
-        cef_master_h.C_SHORT.withName("LatestMiniVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("ThisBaseVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("LatestVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("ThisMiniVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("FirstMiniVersion"),
+        cef_render_handler_capi_h.C_SHORT.withName("LatestMiniVersion"),
         MemoryLayout.paddingLayout(2)
     ).withName("_TXFS_GET_TRANSACTED_VERSION");
 

@@ -28,7 +28,7 @@ public class _STARTUPINFOEXA {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _STARTUPINFOA.layout().withName("StartupInfo"),
-        cef_master_h.C_POINTER.withName("lpAttributeList")
+        cef_render_handler_capi_h.C_POINTER.withName("lpAttributeList")
     ).withName("_STARTUPINFOEXA");
 
     /**

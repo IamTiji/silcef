@@ -35,16 +35,16 @@ public class tagTOUCHINPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("x"),
-        cef_master_h.C_LONG.withName("y"),
-        cef_master_h.C_POINTER.withName("hSource"),
-        cef_master_h.C_LONG.withName("dwID"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_LONG.withName("dwMask"),
-        cef_master_h.C_LONG.withName("dwTime"),
-        cef_master_h.C_LONG_LONG.withName("dwExtraInfo"),
-        cef_master_h.C_LONG.withName("cxContact"),
-        cef_master_h.C_LONG.withName("cyContact")
+        cef_render_handler_capi_h.C_LONG.withName("x"),
+        cef_render_handler_capi_h.C_LONG.withName("y"),
+        cef_render_handler_capi_h.C_POINTER.withName("hSource"),
+        cef_render_handler_capi_h.C_LONG.withName("dwID"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwMask"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTime"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("dwExtraInfo"),
+        cef_render_handler_capi_h.C_LONG.withName("cxContact"),
+        cef_render_handler_capi_h.C_LONG.withName("cyContact")
     ).withName("tagTOUCHINPUT");
 
     /**

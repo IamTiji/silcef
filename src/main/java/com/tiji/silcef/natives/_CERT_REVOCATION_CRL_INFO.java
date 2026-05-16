@@ -30,12 +30,12 @@ public class _CERT_REVOCATION_CRL_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pBaseCrlContext"),
-        cef_master_h.C_POINTER.withName("pDeltaCrlContext"),
-        cef_master_h.C_POINTER.withName("pCrlEntry"),
-        cef_master_h.C_INT.withName("fDeltaCrlEntry"),
+        cef_render_handler_capi_h.C_POINTER.withName("pBaseCrlContext"),
+        cef_render_handler_capi_h.C_POINTER.withName("pDeltaCrlContext"),
+        cef_render_handler_capi_h.C_POINTER.withName("pCrlEntry"),
+        cef_render_handler_capi_h.C_INT.withName("fDeltaCrlEntry"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CERT_REVOCATION_CRL_INFO");
 

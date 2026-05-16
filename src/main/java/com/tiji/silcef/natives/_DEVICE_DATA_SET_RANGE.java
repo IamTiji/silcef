@@ -27,8 +27,8 @@ public class _DEVICE_DATA_SET_RANGE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("StartingOffset"),
-        cef_master_h.C_LONG_LONG.withName("LengthInBytes")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("StartingOffset"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LengthInBytes")
     ).withName("_DEVICE_DATA_SET_RANGE");
 
     /**

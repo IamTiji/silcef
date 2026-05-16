@@ -32,13 +32,13 @@ public class tagHELPWININFOW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("wStructSize"),
-        cef_master_h.C_INT.withName("x"),
-        cef_master_h.C_INT.withName("y"),
-        cef_master_h.C_INT.withName("dx"),
-        cef_master_h.C_INT.withName("dy"),
-        cef_master_h.C_INT.withName("wMax"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_SHORT).withName("rgchMember")
+        cef_render_handler_capi_h.C_INT.withName("wStructSize"),
+        cef_render_handler_capi_h.C_INT.withName("x"),
+        cef_render_handler_capi_h.C_INT.withName("y"),
+        cef_render_handler_capi_h.C_INT.withName("dx"),
+        cef_render_handler_capi_h.C_INT.withName("dy"),
+        cef_render_handler_capi_h.C_INT.withName("wMax"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_SHORT).withName("rgchMember")
     ).withName("tagHELPWININFOW");
 
     /**

@@ -29,10 +29,10 @@ public class _CONSOLE_HISTORY_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_INT.withName("HistoryBufferSize"),
-        cef_master_h.C_INT.withName("NumberOfHistoryBuffers"),
-        cef_master_h.C_LONG.withName("dwFlags")
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_INT.withName("HistoryBufferSize"),
+        cef_render_handler_capi_h.C_INT.withName("NumberOfHistoryBuffers"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags")
     ).withName("_CONSOLE_HISTORY_INFO");
 
     /**

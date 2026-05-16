@@ -31,11 +31,11 @@ public class _CMSG_KEY_TRANS_RECIPIENT_ENCODE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("KeyEncryptionAlgorithm"),
-        cef_master_h.C_POINTER.withName("pvKeyEncryptionAuxInfo"),
-        cef_master_h.C_LONG_LONG.withName("hCryptProv"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvKeyEncryptionAuxInfo"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("hCryptProv"),
         _CRYPT_BIT_BLOB.layout().withName("RecipientPublicKey"),
         _CERT_ID.layout().withName("RecipientId")
     ).withName("_CMSG_KEY_TRANS_RECIPIENT_ENCODE_INFO");

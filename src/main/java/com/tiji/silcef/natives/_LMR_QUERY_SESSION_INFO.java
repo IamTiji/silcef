@@ -26,7 +26,7 @@ public class _LMR_QUERY_SESSION_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("SessionId")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("SessionId")
     ).withName("_LMR_QUERY_SESSION_INFO");
 
     /**

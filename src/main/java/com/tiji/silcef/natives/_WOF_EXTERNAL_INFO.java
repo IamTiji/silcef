@@ -27,8 +27,8 @@ public class _WOF_EXTERNAL_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Provider")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Provider")
     ).withName("_WOF_EXTERNAL_INFO");
 
     /**

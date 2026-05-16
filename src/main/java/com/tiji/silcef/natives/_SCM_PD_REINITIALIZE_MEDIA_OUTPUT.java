@@ -28,9 +28,9 @@ public class _SCM_PD_REINITIALIZE_MEDIA_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_INT.withName("Status")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_INT.withName("Status")
     ).withName("_SCM_PD_REINITIALIZE_MEDIA_OUTPUT");
 
     /**

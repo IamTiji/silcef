@@ -29,8 +29,8 @@ public class _APPLICATIONLAUNCH_SETTING_VALUE {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _LARGE_INTEGER.layout().withName("ActivationTime"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("ButtonInstanceID")
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("ButtonInstanceID")
     ).withName("_APPLICATIONLAUNCH_SETTING_VALUE");
 
     /**

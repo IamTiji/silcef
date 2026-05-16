@@ -37,21 +37,21 @@ public class _CRYPT_TIMESTAMP_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pszTSAPolicyId"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszTSAPolicyId"),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("HashAlgorithm"),
         _CRYPTOAPI_BLOB.layout().withName("HashedMessage"),
         _CRYPTOAPI_BLOB.layout().withName("SerialNumber"),
         _FILETIME.layout().withName("ftTime"),
-        cef_master_h.C_POINTER.withName("pvAccuracy"),
-        cef_master_h.C_INT.withName("fOrdering"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvAccuracy"),
+        cef_render_handler_capi_h.C_INT.withName("fOrdering"),
         MemoryLayout.paddingLayout(4),
         _CRYPTOAPI_BLOB.layout().withName("Nonce"),
         _CRYPTOAPI_BLOB.layout().withName("Tsa"),
-        cef_master_h.C_LONG.withName("cExtension"),
+        cef_render_handler_capi_h.C_LONG.withName("cExtension"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgExtension")
+        cef_render_handler_capi_h.C_POINTER.withName("rgExtension")
     ).withName("_CRYPT_TIMESTAMP_INFO");
 
     /**

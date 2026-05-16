@@ -27,8 +27,8 @@ public class _ldiv_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("quot"),
-        cef_master_h.C_LONG.withName("rem")
+        cef_render_handler_capi_h.C_LONG.withName("quot"),
+        cef_render_handler_capi_h.C_LONG.withName("rem")
     ).withName("_ldiv_t");
 
     /**

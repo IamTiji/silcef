@@ -31,13 +31,13 @@ public class _CRYPT_OBJECT_LOCATOR_PROVIDER_TABLE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pfnGet"),
-        cef_master_h.C_POINTER.withName("pfnRelease"),
-        cef_master_h.C_POINTER.withName("pfnFreePassword"),
-        cef_master_h.C_POINTER.withName("pfnFree"),
-        cef_master_h.C_POINTER.withName("pfnFreeIdentifier")
+        cef_render_handler_capi_h.C_POINTER.withName("pfnGet"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnRelease"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnFreePassword"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnFree"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnFreeIdentifier")
     ).withName("_CRYPT_OBJECT_LOCATOR_PROVIDER_TABLE");
 
     /**

@@ -27,8 +27,8 @@ public class _CRYPT_CONTEXT_FUNCTION_CONFIG {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_LONG.withName("dwReserved")
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("dwReserved")
     ).withName("_CRYPT_CONTEXT_FUNCTION_CONFIG");
 
     /**

@@ -27,8 +27,8 @@ public class _timespec32 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("tv_sec"),
-        cef_master_h.C_LONG.withName("tv_nsec")
+        cef_render_handler_capi_h.C_LONG.withName("tv_sec"),
+        cef_render_handler_capi_h.C_LONG.withName("tv_nsec")
     ).withName("_timespec32");
 
     /**

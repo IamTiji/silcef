@@ -30,11 +30,11 @@ public class waveformat_tag {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("wFormatTag"),
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("nChannels"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("nSamplesPerSec"),
-        cef_master_h.align(cef_master_h.C_LONG, 1).withName("nAvgBytesPerSec"),
-        cef_master_h.align(cef_master_h.C_SHORT, 1).withName("nBlockAlign")
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("wFormatTag"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("nChannels"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("nSamplesPerSec"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_LONG, 1).withName("nAvgBytesPerSec"),
+        cef_render_handler_capi_h.align(cef_render_handler_capi_h.C_SHORT, 1).withName("nBlockAlign")
     ).withName("waveformat_tag");
 
     /**

@@ -30,11 +30,11 @@ public class SYSTEM_POWER_LEVEL {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_CHAR.withName("Enable"),
-        MemoryLayout.sequenceLayout(3, cef_master_h.C_CHAR).withName("Spare"),
-        cef_master_h.C_LONG.withName("BatteryLevel"),
+        cef_render_handler_capi_h.C_CHAR.withName("Enable"),
+        MemoryLayout.sequenceLayout(3, cef_render_handler_capi_h.C_CHAR).withName("Spare"),
+        cef_render_handler_capi_h.C_LONG.withName("BatteryLevel"),
         POWER_ACTION_POLICY.layout().withName("PowerPolicy"),
-        cef_master_h.C_INT.withName("MinSystemState")
+        cef_render_handler_capi_h.C_INT.withName("MinSystemState")
     ).withName("$anon$19311:9");
 
     /**

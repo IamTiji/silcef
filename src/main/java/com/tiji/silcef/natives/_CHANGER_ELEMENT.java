@@ -27,8 +27,8 @@ public class _CHANGER_ELEMENT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("ElementType"),
-        cef_master_h.C_LONG.withName("ElementAddress")
+        cef_render_handler_capi_h.C_INT.withName("ElementType"),
+        cef_render_handler_capi_h.C_LONG.withName("ElementAddress")
     ).withName("_CHANGER_ELEMENT");
 
     /**

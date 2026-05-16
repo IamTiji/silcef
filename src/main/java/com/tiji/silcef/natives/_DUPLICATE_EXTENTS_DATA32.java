@@ -29,7 +29,7 @@ public class _DUPLICATE_EXTENTS_DATA32 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("FileHandle"),
+        cef_render_handler_capi_h.C_INT.withName("FileHandle"),
         MemoryLayout.paddingLayout(4),
         _LARGE_INTEGER.layout().withName("SourceFileOffset"),
         _LARGE_INTEGER.layout().withName("TargetFileOffset"),

@@ -28,9 +28,9 @@ public class _FSCTL_OFFLOAD_WRITE_OUTPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG_LONG.withName("LengthWritten")
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("LengthWritten")
     ).withName("_FSCTL_OFFLOAD_WRITE_OUTPUT");
 
     /**

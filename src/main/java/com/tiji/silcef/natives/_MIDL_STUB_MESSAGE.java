@@ -98,69 +98,69 @@ public class _MIDL_STUB_MESSAGE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("RpcMsg"),
-        cef_master_h.C_POINTER.withName("Buffer"),
-        cef_master_h.C_POINTER.withName("BufferStart"),
-        cef_master_h.C_POINTER.withName("BufferEnd"),
-        cef_master_h.C_POINTER.withName("BufferMark"),
-        cef_master_h.C_LONG.withName("BufferLength"),
-        cef_master_h.C_LONG.withName("MemorySize"),
-        cef_master_h.C_POINTER.withName("Memory"),
-        cef_master_h.C_CHAR.withName("IsClient"),
-        cef_master_h.C_CHAR.withName("Pad"),
-        cef_master_h.C_SHORT.withName("uFlags2"),
-        cef_master_h.C_INT.withName("ReuseBuffer"),
-        cef_master_h.C_POINTER.withName("pAllocAllNodesContext"),
-        cef_master_h.C_POINTER.withName("pPointerQueueState"),
-        cef_master_h.C_INT.withName("IgnoreEmbeddedPointers"),
+        cef_render_handler_capi_h.C_POINTER.withName("RpcMsg"),
+        cef_render_handler_capi_h.C_POINTER.withName("Buffer"),
+        cef_render_handler_capi_h.C_POINTER.withName("BufferStart"),
+        cef_render_handler_capi_h.C_POINTER.withName("BufferEnd"),
+        cef_render_handler_capi_h.C_POINTER.withName("BufferMark"),
+        cef_render_handler_capi_h.C_LONG.withName("BufferLength"),
+        cef_render_handler_capi_h.C_LONG.withName("MemorySize"),
+        cef_render_handler_capi_h.C_POINTER.withName("Memory"),
+        cef_render_handler_capi_h.C_CHAR.withName("IsClient"),
+        cef_render_handler_capi_h.C_CHAR.withName("Pad"),
+        cef_render_handler_capi_h.C_SHORT.withName("uFlags2"),
+        cef_render_handler_capi_h.C_INT.withName("ReuseBuffer"),
+        cef_render_handler_capi_h.C_POINTER.withName("pAllocAllNodesContext"),
+        cef_render_handler_capi_h.C_POINTER.withName("pPointerQueueState"),
+        cef_render_handler_capi_h.C_INT.withName("IgnoreEmbeddedPointers"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("PointerBufferMark"),
-        cef_master_h.C_CHAR.withName("CorrDespIncrement"),
-        cef_master_h.C_CHAR.withName("uFlags"),
-        cef_master_h.C_SHORT.withName("UniquePtrCount"),
+        cef_render_handler_capi_h.C_POINTER.withName("PointerBufferMark"),
+        cef_render_handler_capi_h.C_CHAR.withName("CorrDespIncrement"),
+        cef_render_handler_capi_h.C_CHAR.withName("uFlags"),
+        cef_render_handler_capi_h.C_SHORT.withName("UniquePtrCount"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("MaxCount"),
-        cef_master_h.C_LONG.withName("Offset"),
-        cef_master_h.C_LONG.withName("ActualCount"),
-        cef_master_h.C_POINTER.withName("pfnAllocate"),
-        cef_master_h.C_POINTER.withName("pfnFree"),
-        cef_master_h.C_POINTER.withName("StackTop"),
-        cef_master_h.C_POINTER.withName("pPresentedType"),
-        cef_master_h.C_POINTER.withName("pTransmitType"),
-        cef_master_h.C_POINTER.withName("SavedHandle"),
-        cef_master_h.C_POINTER.withName("StubDesc"),
-        cef_master_h.C_POINTER.withName("FullPtrXlatTables"),
-        cef_master_h.C_LONG.withName("FullPtrRefId"),
-        cef_master_h.C_LONG.withName("PointerLength"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("MaxCount"),
+        cef_render_handler_capi_h.C_LONG.withName("Offset"),
+        cef_render_handler_capi_h.C_LONG.withName("ActualCount"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnAllocate"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnFree"),
+        cef_render_handler_capi_h.C_POINTER.withName("StackTop"),
+        cef_render_handler_capi_h.C_POINTER.withName("pPresentedType"),
+        cef_render_handler_capi_h.C_POINTER.withName("pTransmitType"),
+        cef_render_handler_capi_h.C_POINTER.withName("SavedHandle"),
+        cef_render_handler_capi_h.C_POINTER.withName("StubDesc"),
+        cef_render_handler_capi_h.C_POINTER.withName("FullPtrXlatTables"),
+        cef_render_handler_capi_h.C_LONG.withName("FullPtrRefId"),
+        cef_render_handler_capi_h.C_LONG.withName("PointerLength"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG.withName("dwDestContext"),
-        cef_master_h.C_POINTER.withName("pvDestContext"),
-        cef_master_h.C_POINTER.withName("SavedContextHandles"),
-        cef_master_h.C_LONG.withName("ParamNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("dwDestContext"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvDestContext"),
+        cef_render_handler_capi_h.C_POINTER.withName("SavedContextHandles"),
+        cef_render_handler_capi_h.C_LONG.withName("ParamNumber"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pRpcChannelBuffer"),
-        cef_master_h.C_POINTER.withName("pArrayInfo"),
-        cef_master_h.C_POINTER.withName("SizePtrCountArray"),
-        cef_master_h.C_POINTER.withName("SizePtrOffsetArray"),
-        cef_master_h.C_POINTER.withName("SizePtrLengthArray"),
-        cef_master_h.C_POINTER.withName("pArgQueue"),
-        cef_master_h.C_LONG.withName("dwStubPhase"),
+        cef_render_handler_capi_h.C_POINTER.withName("pRpcChannelBuffer"),
+        cef_render_handler_capi_h.C_POINTER.withName("pArrayInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("SizePtrCountArray"),
+        cef_render_handler_capi_h.C_POINTER.withName("SizePtrOffsetArray"),
+        cef_render_handler_capi_h.C_POINTER.withName("SizePtrLengthArray"),
+        cef_render_handler_capi_h.C_POINTER.withName("pArgQueue"),
+        cef_render_handler_capi_h.C_LONG.withName("dwStubPhase"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("LowStackMark"),
-        cef_master_h.C_POINTER.withName("pAsyncMsg"),
-        cef_master_h.C_POINTER.withName("pCorrInfo"),
-        cef_master_h.C_POINTER.withName("pCorrMemory"),
-        cef_master_h.C_POINTER.withName("pMemoryList"),
-        cef_master_h.C_LONG_LONG.withName("pCSInfo"),
-        cef_master_h.C_POINTER.withName("ConformanceMark"),
-        cef_master_h.C_POINTER.withName("VarianceMark"),
-        cef_master_h.C_LONG_LONG.withName("Unused"),
-        cef_master_h.C_POINTER.withName("pContext"),
-        cef_master_h.C_POINTER.withName("ContextHandleHash"),
-        cef_master_h.C_POINTER.withName("pUserMarshalList"),
-        cef_master_h.C_POINTER.withName("pFullPtrFormat"),
-        cef_master_h.C_LONG_LONG.withName("Reserved51_4"),
-        cef_master_h.C_LONG_LONG.withName("Reserved51_5")
+        cef_render_handler_capi_h.C_POINTER.withName("LowStackMark"),
+        cef_render_handler_capi_h.C_POINTER.withName("pAsyncMsg"),
+        cef_render_handler_capi_h.C_POINTER.withName("pCorrInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("pCorrMemory"),
+        cef_render_handler_capi_h.C_POINTER.withName("pMemoryList"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("pCSInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("ConformanceMark"),
+        cef_render_handler_capi_h.C_POINTER.withName("VarianceMark"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Unused"),
+        cef_render_handler_capi_h.C_POINTER.withName("pContext"),
+        cef_render_handler_capi_h.C_POINTER.withName("ContextHandleHash"),
+        cef_render_handler_capi_h.C_POINTER.withName("pUserMarshalList"),
+        cef_render_handler_capi_h.C_POINTER.withName("pFullPtrFormat"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Reserved51_4"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("Reserved51_5")
     ).withName("_MIDL_STUB_MESSAGE");
 
     /**
@@ -1157,8 +1157,8 @@ public class _MIDL_STUB_MESSAGE {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_LONG_LONG
         );
 
         /**
@@ -1168,7 +1168,7 @@ public class _MIDL_STUB_MESSAGE {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(pfnAllocate.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(pfnAllocate.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -1257,7 +1257,7 @@ public class _MIDL_STUB_MESSAGE {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -1267,7 +1267,7 @@ public class _MIDL_STUB_MESSAGE {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(pfnFree.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(pfnFree.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

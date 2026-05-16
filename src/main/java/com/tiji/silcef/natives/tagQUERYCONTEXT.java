@@ -30,11 +30,11 @@ public class tagQUERYCONTEXT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwContext"),
+        cef_render_handler_capi_h.C_LONG.withName("dwContext"),
         tagCSPLATFORM.layout().withName("Platform"),
-        cef_master_h.C_LONG.withName("Locale"),
-        cef_master_h.C_LONG.withName("dwVersionHi"),
-        cef_master_h.C_LONG.withName("dwVersionLo")
+        cef_render_handler_capi_h.C_LONG.withName("Locale"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersionHi"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersionLo")
     ).withName("tagQUERYCONTEXT");
 
     /**

@@ -28,9 +28,9 @@ public class tagRemSNB {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("ulCntStr"),
-        cef_master_h.C_LONG.withName("ulCntChar"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("rgString"),
+        cef_render_handler_capi_h.C_LONG.withName("ulCntStr"),
+        cef_render_handler_capi_h.C_LONG.withName("ulCntChar"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("rgString"),
         MemoryLayout.paddingLayout(2)
     ).withName("tagRemSNB");
 

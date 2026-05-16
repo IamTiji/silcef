@@ -30,11 +30,11 @@ public class _CMS_DH_KEY_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
-        cef_master_h.C_INT.withName("Algid"),
-        cef_master_h.C_POINTER.withName("pszContentEncObjId"),
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_INT.withName("Algid"),
+        cef_render_handler_capi_h.C_POINTER.withName("pszContentEncObjId"),
         _CRYPTOAPI_BLOB.layout().withName("PubInfo"),
-        cef_master_h.C_POINTER.withName("pReserved")
+        cef_render_handler_capi_h.C_POINTER.withName("pReserved")
     ).withName("_CMS_DH_KEY_INFO");
 
     /**

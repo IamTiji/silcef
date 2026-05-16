@@ -31,13 +31,13 @@ public class tagMONHSZSTRUCTA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cb"),
-        cef_master_h.C_INT.withName("fsAction"),
-        cef_master_h.C_LONG.withName("dwTime"),
+        cef_render_handler_capi_h.C_INT.withName("cb"),
+        cef_render_handler_capi_h.C_INT.withName("fsAction"),
+        cef_render_handler_capi_h.C_LONG.withName("dwTime"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hsz"),
-        cef_master_h.C_POINTER.withName("hTask"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("str"),
+        cef_render_handler_capi_h.C_POINTER.withName("hsz"),
+        cef_render_handler_capi_h.C_POINTER.withName("hTask"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("str"),
         MemoryLayout.paddingLayout(7)
     ).withName("tagMONHSZSTRUCTA");
 

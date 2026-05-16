@@ -26,7 +26,7 @@ public class _FILE_ID_128 {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        MemoryLayout.sequenceLayout(16, cef_master_h.C_CHAR).withName("Identifier")
+        MemoryLayout.sequenceLayout(16, cef_render_handler_capi_h.C_CHAR).withName("Identifier")
     ).withName("_FILE_ID_128");
 
     /**

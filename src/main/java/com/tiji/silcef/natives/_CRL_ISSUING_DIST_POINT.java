@@ -31,10 +31,10 @@ public class _CRL_ISSUING_DIST_POINT {
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
         _CRL_DIST_POINT_NAME.layout().withName("DistPointName"),
-        cef_master_h.C_INT.withName("fOnlyContainsUserCerts"),
-        cef_master_h.C_INT.withName("fOnlyContainsCACerts"),
+        cef_render_handler_capi_h.C_INT.withName("fOnlyContainsUserCerts"),
+        cef_render_handler_capi_h.C_INT.withName("fOnlyContainsCACerts"),
         _CRYPT_BIT_BLOB.layout().withName("OnlySomeReasonFlags"),
-        cef_master_h.C_INT.withName("fIndirectCRL"),
+        cef_render_handler_capi_h.C_INT.withName("fIndirectCRL"),
         MemoryLayout.paddingLayout(4)
     ).withName("_CRL_ISSUING_DIST_POINT");
 

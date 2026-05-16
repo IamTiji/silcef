@@ -31,14 +31,14 @@ public class _CERT_LOGOTYPE_EXT_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cCommunityLogo"),
+        cef_render_handler_capi_h.C_LONG.withName("cCommunityLogo"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgCommunityLogo"),
-        cef_master_h.C_POINTER.withName("pIssuerLogo"),
-        cef_master_h.C_POINTER.withName("pSubjectLogo"),
-        cef_master_h.C_LONG.withName("cOtherLogo"),
+        cef_render_handler_capi_h.C_POINTER.withName("rgCommunityLogo"),
+        cef_render_handler_capi_h.C_POINTER.withName("pIssuerLogo"),
+        cef_render_handler_capi_h.C_POINTER.withName("pSubjectLogo"),
+        cef_render_handler_capi_h.C_LONG.withName("cOtherLogo"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgOtherLogo")
+        cef_render_handler_capi_h.C_POINTER.withName("rgOtherLogo")
     ).withName("_CERT_LOGOTYPE_EXT_INFO");
 
     /**

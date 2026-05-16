@@ -30,11 +30,11 @@ public class tagEVENTMSG {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("message"),
-        cef_master_h.C_INT.withName("paramL"),
-        cef_master_h.C_INT.withName("paramH"),
-        cef_master_h.C_LONG.withName("time"),
-        cef_master_h.C_POINTER.withName("hwnd")
+        cef_render_handler_capi_h.C_INT.withName("message"),
+        cef_render_handler_capi_h.C_INT.withName("paramL"),
+        cef_render_handler_capi_h.C_INT.withName("paramH"),
+        cef_render_handler_capi_h.C_LONG.withName("time"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwnd")
     ).withName("tagEVENTMSG");
 
     /**

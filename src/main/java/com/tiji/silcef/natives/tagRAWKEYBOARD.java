@@ -31,12 +31,12 @@ public class tagRAWKEYBOARD {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("MakeCode"),
-        cef_master_h.C_SHORT.withName("Flags"),
-        cef_master_h.C_SHORT.withName("Reserved"),
-        cef_master_h.C_SHORT.withName("VKey"),
-        cef_master_h.C_INT.withName("Message"),
-        cef_master_h.C_LONG.withName("ExtraInformation")
+        cef_render_handler_capi_h.C_SHORT.withName("MakeCode"),
+        cef_render_handler_capi_h.C_SHORT.withName("Flags"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved"),
+        cef_render_handler_capi_h.C_SHORT.withName("VKey"),
+        cef_render_handler_capi_h.C_INT.withName("Message"),
+        cef_render_handler_capi_h.C_LONG.withName("ExtraInformation")
     ).withName("tagRAWKEYBOARD");
 
     /**

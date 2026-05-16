@@ -32,13 +32,13 @@ public class tagMOUSEKEYS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("cbSize"),
-        cef_master_h.C_LONG.withName("dwFlags"),
-        cef_master_h.C_LONG.withName("iMaxSpeed"),
-        cef_master_h.C_LONG.withName("iTimeToMaxSpeed"),
-        cef_master_h.C_LONG.withName("iCtrlSpeed"),
-        cef_master_h.C_LONG.withName("dwReserved1"),
-        cef_master_h.C_LONG.withName("dwReserved2")
+        cef_render_handler_capi_h.C_INT.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("iMaxSpeed"),
+        cef_render_handler_capi_h.C_LONG.withName("iTimeToMaxSpeed"),
+        cef_render_handler_capi_h.C_LONG.withName("iCtrlSpeed"),
+        cef_render_handler_capi_h.C_LONG.withName("dwReserved1"),
+        cef_render_handler_capi_h.C_LONG.withName("dwReserved2")
     ).withName("tagMOUSEKEYS");
 
     /**

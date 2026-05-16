@@ -27,9 +27,9 @@ public class _CRYPT_DEFAULT_CONTEXT_MULTI_OID_PARA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cOID"),
+        cef_render_handler_capi_h.C_LONG.withName("cOID"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("rgpszOID")
+        cef_render_handler_capi_h.C_POINTER.withName("rgpszOID")
     ).withName("_CRYPT_DEFAULT_CONTEXT_MULTI_OID_PARA");
 
     /**

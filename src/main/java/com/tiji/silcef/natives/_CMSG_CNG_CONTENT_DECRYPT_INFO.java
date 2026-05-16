@@ -34,17 +34,17 @@ public class _CMSG_CNG_CONTENT_DECRYPT_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cbSize"),
+        cef_render_handler_capi_h.C_LONG.withName("cbSize"),
         MemoryLayout.paddingLayout(4),
         _CRYPT_ALGORITHM_IDENTIFIER.layout().withName("ContentEncryptionAlgorithm"),
-        cef_master_h.C_POINTER.withName("pfnAlloc"),
-        cef_master_h.C_POINTER.withName("pfnFree"),
-        cef_master_h.C_LONG_LONG.withName("hNCryptKey"),
-        cef_master_h.C_POINTER.withName("pbContentEncryptKey"),
-        cef_master_h.C_LONG.withName("cbContentEncryptKey"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnAlloc"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnFree"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("hNCryptKey"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbContentEncryptKey"),
+        cef_render_handler_capi_h.C_LONG.withName("cbContentEncryptKey"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hCNGContentEncryptKey"),
-        cef_master_h.C_POINTER.withName("pbCNGContentEncryptKeyObject")
+        cef_render_handler_capi_h.C_POINTER.withName("hCNGContentEncryptKey"),
+        cef_render_handler_capi_h.C_POINTER.withName("pbCNGContentEncryptKeyObject")
     ).withName("_CMSG_CNG_CONTENT_DECRYPT_INFO");
 
     /**

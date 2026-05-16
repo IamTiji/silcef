@@ -27,7 +27,7 @@ public class _TOKEN_GROUPS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("GroupCount"),
+        cef_render_handler_capi_h.C_LONG.withName("GroupCount"),
         MemoryLayout.paddingLayout(4),
         MemoryLayout.sequenceLayout(1, _SID_AND_ATTRIBUTES.layout()).withName("Groups")
     ).withName("_TOKEN_GROUPS");

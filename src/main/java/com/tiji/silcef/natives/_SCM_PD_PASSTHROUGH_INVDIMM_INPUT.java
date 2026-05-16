@@ -28,9 +28,9 @@ public class _SCM_PD_PASSTHROUGH_INVDIMM_INPUT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Opcode"),
-        cef_master_h.C_LONG.withName("OpcodeParametersLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("OpcodeParameters"),
+        cef_render_handler_capi_h.C_LONG.withName("Opcode"),
+        cef_render_handler_capi_h.C_LONG.withName("OpcodeParametersLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("OpcodeParameters"),
         MemoryLayout.paddingLayout(3)
     ).withName("_SCM_PD_PASSTHROUGH_INVDIMM_INPUT");
 

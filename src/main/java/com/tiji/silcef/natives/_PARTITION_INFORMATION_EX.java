@@ -35,13 +35,13 @@ public class _PARTITION_INFORMATION_EX {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("PartitionStyle"),
+        cef_render_handler_capi_h.C_INT.withName("PartitionStyle"),
         MemoryLayout.paddingLayout(4),
         _LARGE_INTEGER.layout().withName("StartingOffset"),
         _LARGE_INTEGER.layout().withName("PartitionLength"),
-        cef_master_h.C_LONG.withName("PartitionNumber"),
-        cef_master_h.C_CHAR.withName("RewritePartition"),
-        cef_master_h.C_CHAR.withName("IsServicePartition"),
+        cef_render_handler_capi_h.C_LONG.withName("PartitionNumber"),
+        cef_render_handler_capi_h.C_CHAR.withName("RewritePartition"),
+        cef_render_handler_capi_h.C_CHAR.withName("IsServicePartition"),
         MemoryLayout.paddingLayout(2),
         MemoryLayout.unionLayout(
             _PARTITION_INFORMATION_MBR.layout().withName("Mbr"),

@@ -28,7 +28,7 @@ public class MOVE_FILE_RECORD_DATA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("FileHandle"),
+        cef_render_handler_capi_h.C_POINTER.withName("FileHandle"),
         _LARGE_INTEGER.layout().withName("SourceFileRecord"),
         _LARGE_INTEGER.layout().withName("TargetFileRecord")
     ).withName("$anon$11858:9");

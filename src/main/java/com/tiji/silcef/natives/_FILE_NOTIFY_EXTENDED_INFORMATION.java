@@ -42,23 +42,23 @@ public class _FILE_NOTIFY_EXTENDED_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("NextEntryOffset"),
-        cef_master_h.C_LONG.withName("Action"),
+        cef_render_handler_capi_h.C_LONG.withName("NextEntryOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("Action"),
         _LARGE_INTEGER.layout().withName("CreationTime"),
         _LARGE_INTEGER.layout().withName("LastModificationTime"),
         _LARGE_INTEGER.layout().withName("LastChangeTime"),
         _LARGE_INTEGER.layout().withName("LastAccessTime"),
         _LARGE_INTEGER.layout().withName("AllocatedLength"),
         _LARGE_INTEGER.layout().withName("FileSize"),
-        cef_master_h.C_LONG.withName("FileAttributes"),
+        cef_render_handler_capi_h.C_LONG.withName("FileAttributes"),
         MemoryLayout.unionLayout(
-            cef_master_h.C_LONG.withName("ReparsePointTag"),
-            cef_master_h.C_LONG.withName("EaSize")
+            cef_render_handler_capi_h.C_LONG.withName("ReparsePointTag"),
+            cef_render_handler_capi_h.C_LONG.withName("EaSize")
         ).withName("$anon$15407:5"),
         _LARGE_INTEGER.layout().withName("FileId"),
         _LARGE_INTEGER.layout().withName("ParentFileId"),
-        cef_master_h.C_LONG.withName("FileNameLength"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_SHORT).withName("FileName"),
+        cef_render_handler_capi_h.C_LONG.withName("FileNameLength"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_SHORT).withName("FileName"),
         MemoryLayout.paddingLayout(2)
     ).withName("_FILE_NOTIFY_EXTENDED_INFORMATION");
 

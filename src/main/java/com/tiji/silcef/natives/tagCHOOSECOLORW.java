@@ -34,18 +34,18 @@ public class tagCHOOSECOLORW {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("lStructSize"),
+        cef_render_handler_capi_h.C_LONG.withName("lStructSize"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("hwndOwner"),
-        cef_master_h.C_POINTER.withName("hInstance"),
-        cef_master_h.C_LONG.withName("rgbResult"),
+        cef_render_handler_capi_h.C_POINTER.withName("hwndOwner"),
+        cef_render_handler_capi_h.C_POINTER.withName("hInstance"),
+        cef_render_handler_capi_h.C_LONG.withName("rgbResult"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpCustColors"),
-        cef_master_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpCustColors"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_LONG_LONG.withName("lCustData"),
-        cef_master_h.C_POINTER.withName("lpfnHook"),
-        cef_master_h.C_POINTER.withName("lpTemplateName")
+        cef_render_handler_capi_h.C_LONG_LONG.withName("lCustData"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpfnHook"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpTemplateName")
     ).withName("tagCHOOSECOLORW");
 
     /**

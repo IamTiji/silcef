@@ -38,20 +38,20 @@ public class _cef_cookie_t {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG_LONG.withName("size"),
+        cef_render_handler_capi_h.C_LONG_LONG.withName("size"),
         _cef_string_utf16_t.layout().withName("name"),
         _cef_string_utf16_t.layout().withName("value"),
         _cef_string_utf16_t.layout().withName("domain"),
         _cef_string_utf16_t.layout().withName("path"),
-        cef_master_h.C_INT.withName("secure"),
-        cef_master_h.C_INT.withName("httponly"),
+        cef_render_handler_capi_h.C_INT.withName("secure"),
+        cef_render_handler_capi_h.C_INT.withName("httponly"),
         _cef_basetime_t.layout().withName("creation"),
         _cef_basetime_t.layout().withName("last_access"),
-        cef_master_h.C_INT.withName("has_expires"),
+        cef_render_handler_capi_h.C_INT.withName("has_expires"),
         MemoryLayout.paddingLayout(4),
         _cef_basetime_t.layout().withName("expires"),
-        cef_master_h.C_INT.withName("same_site"),
-        cef_master_h.C_INT.withName("priority")
+        cef_render_handler_capi_h.C_INT.withName("same_site"),
+        cef_render_handler_capi_h.C_INT.withName("priority")
     ).withName("_cef_cookie_t");
 
     /**

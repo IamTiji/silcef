@@ -32,7 +32,7 @@ public class _DRIVE_LAYOUT_INFORMATION_GPT {
         _GUID.layout().withName("DiskId"),
         _LARGE_INTEGER.layout().withName("StartingUsableOffset"),
         _LARGE_INTEGER.layout().withName("UsableLength"),
-        cef_master_h.C_LONG.withName("MaxPartitionCount"),
+        cef_render_handler_capi_h.C_LONG.withName("MaxPartitionCount"),
         MemoryLayout.paddingLayout(4)
     ).withName("_DRIVE_LAYOUT_INFORMATION_GPT");
 

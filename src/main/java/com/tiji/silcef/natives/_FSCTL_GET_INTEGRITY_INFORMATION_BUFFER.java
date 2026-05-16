@@ -30,11 +30,11 @@ public class _FSCTL_GET_INTEGRITY_INFORMATION_BUFFER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("ChecksumAlgorithm"),
-        cef_master_h.C_SHORT.withName("Reserved"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("ChecksumChunkSizeInBytes"),
-        cef_master_h.C_LONG.withName("ClusterSizeInBytes")
+        cef_render_handler_capi_h.C_SHORT.withName("ChecksumAlgorithm"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("ChecksumChunkSizeInBytes"),
+        cef_render_handler_capi_h.C_LONG.withName("ClusterSizeInBytes")
     ).withName("_FSCTL_GET_INTEGRITY_INFORMATION_BUFFER");
 
     /**

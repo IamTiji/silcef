@@ -30,11 +30,11 @@ public class COPYFILE2_EXTENDED_PARAMETERS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwSize"),
-        cef_master_h.C_LONG.withName("dwCopyFlags"),
-        cef_master_h.C_POINTER.withName("pfCancel"),
-        cef_master_h.C_POINTER.withName("pProgressRoutine"),
-        cef_master_h.C_POINTER.withName("pvCallbackContext")
+        cef_render_handler_capi_h.C_LONG.withName("dwSize"),
+        cef_render_handler_capi_h.C_LONG.withName("dwCopyFlags"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfCancel"),
+        cef_render_handler_capi_h.C_POINTER.withName("pProgressRoutine"),
+        cef_render_handler_capi_h.C_POINTER.withName("pvCallbackContext")
     ).withName("COPYFILE2_EXTENDED_PARAMETERS");
 
     /**

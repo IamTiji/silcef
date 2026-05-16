@@ -28,9 +28,9 @@ public class tagENHMETARECORD {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("iType"),
-        cef_master_h.C_LONG.withName("nSize"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG).withName("dParm")
+        cef_render_handler_capi_h.C_LONG.withName("iType"),
+        cef_render_handler_capi_h.C_LONG.withName("nSize"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG).withName("dParm")
     ).withName("tagENHMETARECORD");
 
     /**

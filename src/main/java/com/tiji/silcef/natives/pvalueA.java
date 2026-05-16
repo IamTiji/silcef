@@ -29,11 +29,11 @@ public class pvalueA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pv_valuename"),
-        cef_master_h.C_INT.withName("pv_valuelen"),
+        cef_render_handler_capi_h.C_POINTER.withName("pv_valuename"),
+        cef_render_handler_capi_h.C_INT.withName("pv_valuelen"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("pv_value_context"),
-        cef_master_h.C_LONG.withName("pv_type"),
+        cef_render_handler_capi_h.C_POINTER.withName("pv_value_context"),
+        cef_render_handler_capi_h.C_LONG.withName("pv_type"),
         MemoryLayout.paddingLayout(4)
     ).withName("pvalueA");
 

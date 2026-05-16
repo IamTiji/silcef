@@ -28,9 +28,9 @@ public class _REASSIGN_BLOCKS {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Reserved"),
-        cef_master_h.C_SHORT.withName("Count"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_LONG).withName("BlockNumber")
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved"),
+        cef_render_handler_capi_h.C_SHORT.withName("Count"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_LONG).withName("BlockNumber")
     ).withName("_REASSIGN_BLOCKS");
 
     /**

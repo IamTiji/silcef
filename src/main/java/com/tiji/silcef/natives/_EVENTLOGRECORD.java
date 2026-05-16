@@ -41,22 +41,22 @@ public class _EVENTLOGRECORD {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Length"),
-        cef_master_h.C_LONG.withName("Reserved"),
-        cef_master_h.C_LONG.withName("RecordNumber"),
-        cef_master_h.C_LONG.withName("TimeGenerated"),
-        cef_master_h.C_LONG.withName("TimeWritten"),
-        cef_master_h.C_LONG.withName("EventID"),
-        cef_master_h.C_SHORT.withName("EventType"),
-        cef_master_h.C_SHORT.withName("NumStrings"),
-        cef_master_h.C_SHORT.withName("EventCategory"),
-        cef_master_h.C_SHORT.withName("ReservedFlags"),
-        cef_master_h.C_LONG.withName("ClosingRecordNumber"),
-        cef_master_h.C_LONG.withName("StringOffset"),
-        cef_master_h.C_LONG.withName("UserSidLength"),
-        cef_master_h.C_LONG.withName("UserSidOffset"),
-        cef_master_h.C_LONG.withName("DataLength"),
-        cef_master_h.C_LONG.withName("DataOffset")
+        cef_render_handler_capi_h.C_LONG.withName("Length"),
+        cef_render_handler_capi_h.C_LONG.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("RecordNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("TimeGenerated"),
+        cef_render_handler_capi_h.C_LONG.withName("TimeWritten"),
+        cef_render_handler_capi_h.C_LONG.withName("EventID"),
+        cef_render_handler_capi_h.C_SHORT.withName("EventType"),
+        cef_render_handler_capi_h.C_SHORT.withName("NumStrings"),
+        cef_render_handler_capi_h.C_SHORT.withName("EventCategory"),
+        cef_render_handler_capi_h.C_SHORT.withName("ReservedFlags"),
+        cef_render_handler_capi_h.C_LONG.withName("ClosingRecordNumber"),
+        cef_render_handler_capi_h.C_LONG.withName("StringOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("UserSidLength"),
+        cef_render_handler_capi_h.C_LONG.withName("UserSidOffset"),
+        cef_render_handler_capi_h.C_LONG.withName("DataLength"),
+        cef_render_handler_capi_h.C_LONG.withName("DataOffset")
     ).withName("_EVENTLOGRECORD");
 
     /**

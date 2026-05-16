@@ -26,7 +26,7 @@ public class _TOKEN_DEFAULT_DACL {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("DefaultDacl")
+        cef_render_handler_capi_h.C_POINTER.withName("DefaultDacl")
     ).withName("_TOKEN_DEFAULT_DACL");
 
     /**

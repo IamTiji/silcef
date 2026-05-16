@@ -28,8 +28,8 @@ public class tagTTPOLYGONHEADER {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("cb"),
-        cef_master_h.C_LONG.withName("dwType"),
+        cef_render_handler_capi_h.C_LONG.withName("cb"),
+        cef_render_handler_capi_h.C_LONG.withName("dwType"),
         tagPOINTFX.layout().withName("pfxStart")
     ).withName("tagTTPOLYGONHEADER");
 

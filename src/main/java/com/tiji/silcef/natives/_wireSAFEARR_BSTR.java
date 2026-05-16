@@ -27,9 +27,9 @@ public class _wireSAFEARR_BSTR {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("aBstr")
+        cef_render_handler_capi_h.C_POINTER.withName("aBstr")
     ).withName("_wireSAFEARR_BSTR");
 
     /**

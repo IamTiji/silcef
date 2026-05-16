@@ -36,17 +36,17 @@ public class _RPC_ASYNC_STATE {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_INT.withName("Size"),
-        cef_master_h.C_LONG.withName("Signature"),
-        cef_master_h.C_LONG.withName("Lock"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_POINTER.withName("StubInfo"),
-        cef_master_h.C_POINTER.withName("UserInfo"),
-        cef_master_h.C_POINTER.withName("RuntimeInfo"),
-        cef_master_h.C_INT.withName("Event"),
-        cef_master_h.C_INT.withName("NotificationType"),
+        cef_render_handler_capi_h.C_INT.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("Signature"),
+        cef_render_handler_capi_h.C_LONG.withName("Lock"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_POINTER.withName("StubInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("UserInfo"),
+        cef_render_handler_capi_h.C_POINTER.withName("RuntimeInfo"),
+        cef_render_handler_capi_h.C_INT.withName("Event"),
+        cef_render_handler_capi_h.C_INT.withName("NotificationType"),
         _RPC_ASYNC_NOTIFICATION_INFO.layout().withName("u"),
-        MemoryLayout.sequenceLayout(4, cef_master_h.C_LONG_LONG).withName("Reserved")
+        MemoryLayout.sequenceLayout(4, cef_render_handler_capi_h.C_LONG_LONG).withName("Reserved")
     ).withName("_RPC_ASYNC_STATE");
 
     /**

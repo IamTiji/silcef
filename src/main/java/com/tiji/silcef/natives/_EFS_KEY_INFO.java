@@ -29,10 +29,10 @@ public class _EFS_KEY_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
-        cef_master_h.C_LONG.withName("Entropy"),
-        cef_master_h.C_INT.withName("Algorithm"),
-        cef_master_h.C_LONG.withName("KeyLength")
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_LONG.withName("Entropy"),
+        cef_render_handler_capi_h.C_INT.withName("Algorithm"),
+        cef_render_handler_capi_h.C_LONG.withName("KeyLength")
     ).withName("_EFS_KEY_INFO");
 
     /**

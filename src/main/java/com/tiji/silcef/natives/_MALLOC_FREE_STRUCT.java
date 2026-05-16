@@ -27,8 +27,8 @@ public class _MALLOC_FREE_STRUCT {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("pfnAllocate"),
-        cef_master_h.C_POINTER.withName("pfnFree")
+        cef_render_handler_capi_h.C_POINTER.withName("pfnAllocate"),
+        cef_render_handler_capi_h.C_POINTER.withName("pfnFree")
     ).withName("_MALLOC_FREE_STRUCT");
 
     /**
@@ -57,8 +57,8 @@ public class _MALLOC_FREE_STRUCT {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
-            cef_master_h.C_POINTER,
-            cef_master_h.C_LONG_LONG
+            cef_render_handler_capi_h.C_POINTER,
+            cef_render_handler_capi_h.C_LONG_LONG
         );
 
         /**
@@ -68,7 +68,7 @@ public class _MALLOC_FREE_STRUCT {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(pfnAllocate.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(pfnAllocate.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.
@@ -157,7 +157,7 @@ public class _MALLOC_FREE_STRUCT {
         }
 
         private static final FunctionDescriptor $DESC = FunctionDescriptor.ofVoid(
-            cef_master_h.C_POINTER
+            cef_render_handler_capi_h.C_POINTER
         );
 
         /**
@@ -167,7 +167,7 @@ public class _MALLOC_FREE_STRUCT {
             return $DESC;
         }
 
-        private static final MethodHandle UP$MH = cef_master_h.upcallHandle(pfnFree.Function.class, "apply", $DESC);
+        private static final MethodHandle UP$MH = cef_render_handler_capi_h.upcallHandle(pfnFree.Function.class, "apply", $DESC);
 
         /**
          * Allocates a new upcall stub, whose implementation is defined by {@code fi}.

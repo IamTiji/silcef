@@ -31,9 +31,9 @@ public class _CLAIM_SECURITY_ATTRIBUTES_INFORMATION {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_SHORT.withName("Version"),
-        cef_master_h.C_SHORT.withName("Reserved"),
-        cef_master_h.C_LONG.withName("AttributeCount"),
+        cef_render_handler_capi_h.C_SHORT.withName("Version"),
+        cef_render_handler_capi_h.C_SHORT.withName("Reserved"),
+        cef_render_handler_capi_h.C_LONG.withName("AttributeCount"),
         _CLAIM_SECURITY_ATTRIBUTES_INFORMATION.Attribute.layout().withName("Attribute")
     ).withName("_CLAIM_SECURITY_ATTRIBUTES_INFORMATION");
 
@@ -190,7 +190,7 @@ public class _CLAIM_SECURITY_ATTRIBUTES_INFORMATION {
         }
 
         private static final GroupLayout $LAYOUT = MemoryLayout.unionLayout(
-            cef_master_h.C_POINTER.withName("pAttributeV1")
+            cef_render_handler_capi_h.C_POINTER.withName("pAttributeV1")
         ).withName("$anon$12566:5");
 
         /**

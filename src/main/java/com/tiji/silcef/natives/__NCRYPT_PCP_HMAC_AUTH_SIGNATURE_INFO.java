@@ -30,11 +30,11 @@ public class __NCRYPT_PCP_HMAC_AUTH_SIGNATURE_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwVersion"),
-        cef_master_h.C_INT.withName("iExpiration"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("pabNonce"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("pabPolicyRef"),
-        MemoryLayout.sequenceLayout(32, cef_master_h.C_CHAR).withName("pabHMAC")
+        cef_render_handler_capi_h.C_LONG.withName("dwVersion"),
+        cef_render_handler_capi_h.C_INT.withName("iExpiration"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("pabNonce"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("pabPolicyRef"),
+        MemoryLayout.sequenceLayout(32, cef_render_handler_capi_h.C_CHAR).withName("pabHMAC")
     ).withName("__NCRYPT_PCP_HMAC_AUTH_SIGNATURE_INFO");
 
     /**

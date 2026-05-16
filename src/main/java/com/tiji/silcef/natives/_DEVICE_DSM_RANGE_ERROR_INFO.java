@@ -30,10 +30,10 @@ public class _DEVICE_DSM_RANGE_ERROR_INFO {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("TotalNumberOfRanges"),
-        cef_master_h.C_LONG.withName("NumberOfRangesReturned"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("TotalNumberOfRanges"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfRangesReturned"),
         MemoryLayout.sequenceLayout(1, _DEVICE_STORAGE_RANGE_ATTRIBUTES.layout()).withName("Ranges")
     ).withName("_DEVICE_DSM_RANGE_ERROR_INFO");
 

@@ -31,12 +31,12 @@ public class tagRID_DEVICE_INFO_KEYBOARD {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwType"),
-        cef_master_h.C_LONG.withName("dwSubType"),
-        cef_master_h.C_LONG.withName("dwKeyboardMode"),
-        cef_master_h.C_LONG.withName("dwNumberOfFunctionKeys"),
-        cef_master_h.C_LONG.withName("dwNumberOfIndicators"),
-        cef_master_h.C_LONG.withName("dwNumberOfKeysTotal")
+        cef_render_handler_capi_h.C_LONG.withName("dwType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwSubType"),
+        cef_render_handler_capi_h.C_LONG.withName("dwKeyboardMode"),
+        cef_render_handler_capi_h.C_LONG.withName("dwNumberOfFunctionKeys"),
+        cef_render_handler_capi_h.C_LONG.withName("dwNumberOfIndicators"),
+        cef_render_handler_capi_h.C_LONG.withName("dwNumberOfKeysTotal")
     ).withName("tagRID_DEVICE_INFO_KEYBOARD");
 
     /**

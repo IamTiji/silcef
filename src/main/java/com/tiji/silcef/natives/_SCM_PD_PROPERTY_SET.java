@@ -30,11 +30,11 @@ public class _SCM_PD_PROPERTY_SET {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_INT.withName("PropertyId"),
-        cef_master_h.C_INT.withName("SetType"),
-        MemoryLayout.sequenceLayout(1, cef_master_h.C_CHAR).withName("AdditionalParameters"),
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_INT.withName("PropertyId"),
+        cef_render_handler_capi_h.C_INT.withName("SetType"),
+        MemoryLayout.sequenceLayout(1, cef_render_handler_capi_h.C_CHAR).withName("AdditionalParameters"),
         MemoryLayout.paddingLayout(3)
     ).withName("_SCM_PD_PROPERTY_SET");
 

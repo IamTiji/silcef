@@ -31,12 +31,12 @@ public class _PHYSICAL_ELEMENT_STATUS_REQUEST {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Version"),
-        cef_master_h.C_LONG.withName("Size"),
-        cef_master_h.C_LONG.withName("StartingElement"),
-        cef_master_h.C_CHAR.withName("Filter"),
-        cef_master_h.C_CHAR.withName("ReportType"),
-        MemoryLayout.sequenceLayout(2, cef_master_h.C_CHAR).withName("Reserved")
+        cef_render_handler_capi_h.C_LONG.withName("Version"),
+        cef_render_handler_capi_h.C_LONG.withName("Size"),
+        cef_render_handler_capi_h.C_LONG.withName("StartingElement"),
+        cef_render_handler_capi_h.C_CHAR.withName("Filter"),
+        cef_render_handler_capi_h.C_CHAR.withName("ReportType"),
+        MemoryLayout.sequenceLayout(2, cef_render_handler_capi_h.C_CHAR).withName("Reserved")
     ).withName("_PHYSICAL_ELEMENT_STATUS_REQUEST");
 
     /**

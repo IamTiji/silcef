@@ -29,10 +29,10 @@ public class _GUID {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("Data1"),
-        cef_master_h.C_SHORT.withName("Data2"),
-        cef_master_h.C_SHORT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, cef_master_h.C_CHAR).withName("Data4")
+        cef_render_handler_capi_h.C_LONG.withName("Data1"),
+        cef_render_handler_capi_h.C_SHORT.withName("Data2"),
+        cef_render_handler_capi_h.C_SHORT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, cef_render_handler_capi_h.C_CHAR).withName("Data4")
     ).withName("_GUID");
 
     /**

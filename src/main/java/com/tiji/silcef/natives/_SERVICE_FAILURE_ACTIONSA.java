@@ -30,13 +30,13 @@ public class _SERVICE_FAILURE_ACTIONSA {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_LONG.withName("dwResetPeriod"),
+        cef_render_handler_capi_h.C_LONG.withName("dwResetPeriod"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpRebootMsg"),
-        cef_master_h.C_POINTER.withName("lpCommand"),
-        cef_master_h.C_LONG.withName("cActions"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpRebootMsg"),
+        cef_render_handler_capi_h.C_POINTER.withName("lpCommand"),
+        cef_render_handler_capi_h.C_LONG.withName("cActions"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("lpsaActions")
+        cef_render_handler_capi_h.C_POINTER.withName("lpsaActions")
     ).withName("_SERVICE_FAILURE_ACTIONSA");
 
     /**

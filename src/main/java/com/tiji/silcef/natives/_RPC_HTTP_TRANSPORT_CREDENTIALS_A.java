@@ -31,13 +31,13 @@ public class _RPC_HTTP_TRANSPORT_CREDENTIALS_A {
     }
 
     private static final GroupLayout $LAYOUT = MemoryLayout.structLayout(
-        cef_master_h.C_POINTER.withName("TransportCredentials"),
-        cef_master_h.C_LONG.withName("Flags"),
-        cef_master_h.C_LONG.withName("AuthenticationTarget"),
-        cef_master_h.C_LONG.withName("NumberOfAuthnSchemes"),
+        cef_render_handler_capi_h.C_POINTER.withName("TransportCredentials"),
+        cef_render_handler_capi_h.C_LONG.withName("Flags"),
+        cef_render_handler_capi_h.C_LONG.withName("AuthenticationTarget"),
+        cef_render_handler_capi_h.C_LONG.withName("NumberOfAuthnSchemes"),
         MemoryLayout.paddingLayout(4),
-        cef_master_h.C_POINTER.withName("AuthnSchemes"),
-        cef_master_h.C_POINTER.withName("ServerCertificateSubject")
+        cef_render_handler_capi_h.C_POINTER.withName("AuthnSchemes"),
+        cef_render_handler_capi_h.C_POINTER.withName("ServerCertificateSubject")
     ).withName("_RPC_HTTP_TRANSPORT_CREDENTIALS_A");
 
     /**
