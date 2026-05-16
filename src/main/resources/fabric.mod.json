@@ -18,7 +18,6 @@
     "slicef.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
     "minecraft": "${minecraft_version}"
   }

@@ -31,6 +31,14 @@ dependencies {
     implementation(files("./jcef/jcef.jar"))
 }
 
+tasks.processResources {
+    from("src/main/resources/fabric.mod.json") {
+        expand("version" to project.version,
+            "minecraft_version" to project.property("minecraft_version")!!)
+    }
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+}
+
 val targetJavaVersion = 21
 tasks.withType<JavaCompile>().configureEach {
     // ensure that the encoding is set to UTF-8, no matter what the system default is
