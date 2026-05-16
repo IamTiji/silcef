@@ -102,6 +102,7 @@ tasks.register("genMasterHeader") {
         if (it.extension != "h") return@forEach
         header.append("#include <${it.path.substringAfter("cef/")}>\n")
     }
+    header.append("#include <include/cef_version.h>\n")
     header.append("\n#endif // SLICEF_CEF_MASTER_HEADER_")
 
     val file = File("src/main/headers/cef_master.h")
