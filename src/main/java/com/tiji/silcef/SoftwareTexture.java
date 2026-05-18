@@ -60,7 +60,9 @@ public class SoftwareTexture {
     }
 
 
-    public void onPaint(Rectangle[] dirtyRects, ByteBuffer pixels) {
+    public void onPaint(Rectangle[] dirtyRects, ByteBuffer pixels, int width, int height) {
+        if (width != this.width && height != this.height) return; // Sometimes when we resize the browser, it sends frame with different size than we requested
+
         if (destroyed) throw new IllegalStateException("Texture has already been destroyed");
 
         glBindTexture(GL_TEXTURE_2D, GLTextureId);

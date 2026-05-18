@@ -29,13 +29,11 @@ Note that this is under development, and bugs and lack of features are expected.
 
 ### Building this project
 
-You will need to build [JCEF](https://github.com/IamTiji/java-cef) first. Follow
-build instruction there, and put build binaries in `jcef` folder. There must be 
-`jcef.jar` and `jcef.dll` in `jcef` folder.
+You need to get JetBrains Runtime with JCEF included. You can get it from 
+<https://github.com/JetBrains/JetBrainsRuntime>.
 
-After putting appropriate files, run `gradle runClient` to run Minecraft, and
-`gradle build` to build the mod. Note that building as a standalone mod file
-won't work right now.
+Run `gradle runClient` to run Minecraft, and `gradle build` to build the mod.
+Note that building as a standalone mod file won't work right now.
 
 ### Contributions & Filing an issue
 Contributions are welcomed! When making a pull request, make sure that your changes:

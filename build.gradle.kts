@@ -27,8 +27,6 @@ dependencies {
     modImplementation("net.fabricmc:fabric-loader:${project.property("loader_version")!!}")
 
     modImplementation("net.fabricmc.fabric-api:fabric-api:${project.property("fabric_version")!!}")
-
-    implementation(files("./jcef/jcef.jar"))
 }
 
 tasks.processResources {
@@ -46,16 +44,26 @@ tasks.withType<JavaCompile>().configureEach {
     // see http://yodaconditions.net/blog/fix-for-java-file-encoding-problems-with-gradle.html
     // If Javadoc is generated, this must be specified in that task too.
     options.encoding = "UTF-8"
-    if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible()) {
+    if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible) {
         options.release.set(targetJavaVersion)
     }
+    sourceCompatibility = "25"
+    targetCompatibility = "25"
+    options.release = null
+
+    options.compilerArgs.addAll(arrayOf("--add-modules", "jcef"))
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
 
     withSourcesJar()
+
+    //toolchain {
+    //    vendor.set(JvmVendorSpec.JETBRAINS)
+    //    languageVersion.set(JavaLanguageVersion.of(25))
+    //}
 }
 
 tasks.jar {

@@ -1,5 +1,6 @@
 package com.tiji.silcef;
 
+import net.fabricmc.fabric.api.client.screen.v1.ScreenMouseEvents;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
@@ -7,7 +8,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class TestBrowserScreen extends Screen {
     private final SlicefBrowser browser;
-    private SlicefWidget widget;
+    private final SlicefWidget widget;
 
     public TestBrowserScreen(String url) {
         super(Component.empty());
@@ -23,6 +24,7 @@ public class TestBrowserScreen extends Screen {
         widget.resize(width, height - 100);
 
         super.addRenderableWidget(widget);
+        ScreenMouseEvents.beforeMouseRelease(this).register(((screen, context) -> widget.mouseReleased(context)));
     }
 
     @Override

@@ -6,14 +6,14 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.AbstractWidget;
 import net.minecraft.client.gui.narration.NarrationElementOutput;
 import net.minecraft.client.input.CharacterEvent;
-import net.minecraft.client.input.KeyEvent;
+import java.awt.event.KeyEvent;
 import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.network.chat.Component;
-import org.cef.event.CefKeyEvent;
-import org.cef.event.CefMouseEvent;
-import org.cef.event.CefMouseWheelEvent;
-import org.cef.misc.EventFlags;
 import org.jetbrains.annotations.NotNull;
+
+import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseWheelEvent;
 
 import static org.lwjgl.glfw.GLFW.*;
 
@@ -21,10 +21,10 @@ public class SlicefWidget extends AbstractWidget {
     private final SlicefBrowser browser;
     private final SlicefRenderState state;
 
-    private int mouseModifier;
+    private static final java.awt.Component fakeComponent = new Label();
 
     public SlicefWidget(SlicefBrowser browser, int x, int y) {
-        super(x, y, browser.getViewRect(browser).width, browser.getViewRect(browser).height, Component.literal("Slicef Browser Widget"));
+        super(x, y, browser.getViewRect().width, browser.getViewRect().height, Component.literal("Slicef Browser Widget"));
         this.browser = browser;
         this.state = new SlicefRenderState(browser);
         state.setPos(x, y);
@@ -62,29 +62,29 @@ public class SlicefWidget extends AbstractWidget {
     }
 
     private static int fixMouse(int key) {
-        if (key == 1) return 2;
-        if (key == 2) return 1;
-        return key;
+        if (key == 1) return 3;
+        if (key == 2) return 2;
+        return key + 1;
     }
 
     private static int getModifiers() {
         long window = Minecraft.getInstance().getWindow().handle();
         int mod = 0;
-        if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT  ) == GLFW_PRESS) mod |= EventFlags.EVENTFLAG_LEFT_MOUSE_BUTTON;
-        if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT ) == GLFW_PRESS) mod |= EventFlags.EVENTFLAG_RIGHT_MOUSE_BUTTON;
-        if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_MIDDLE) == GLFW_PRESS) mod |= EventFlags.EVENTFLAG_MIDDLE_MOUSE_BUTTON;
+        if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT  ) == GLFW_PRESS) mod |= KeyEvent.BUTTON1_DOWN_MASK;
+        if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_MIDDLE) == GLFW_PRESS) mod |= KeyEvent.BUTTON2_DOWN_MASK;
+        if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT ) == GLFW_PRESS) mod |= KeyEvent.BUTTON3_DOWN_MASK;
 
         //alt
-        if (glfwGetKey        (window, GLFW_KEY_LEFT_ALT)        == GLFW_PRESS) mod |= EventFlags.EVENTFLAG_ALT_DOWN;
-        if (glfwGetKey        (window, GLFW_KEY_RIGHT_ALT)       == GLFW_PRESS) mod |= EventFlags.EVENTFLAG_ALT_DOWN;
+        if (glfwGetKey        (window, GLFW_KEY_LEFT_ALT)        == GLFW_PRESS) mod |= KeyEvent.ALT_DOWN_MASK;
+        if (glfwGetKey        (window, GLFW_KEY_RIGHT_ALT)       == GLFW_PRESS) mod |= KeyEvent.ALT_DOWN_MASK;
 
         //ctrl
-        if (glfwGetKey        (window, GLFW_KEY_LEFT_CONTROL)     == GLFW_PRESS) mod |= EventFlags.EVENTFLAG_CONTROL_DOWN;
-        if (glfwGetKey        (window, GLFW_KEY_RIGHT_CONTROL)    == GLFW_PRESS) mod |= EventFlags.EVENTFLAG_CONTROL_DOWN;
+        if (glfwGetKey        (window, GLFW_KEY_LEFT_CONTROL)     == GLFW_PRESS) mod |= KeyEvent.CTRL_DOWN_MASK;
+        if (glfwGetKey        (window, GLFW_KEY_RIGHT_CONTROL)    == GLFW_PRESS) mod |= KeyEvent.CTRL_DOWN_MASK;
 
         //shift
-        if (glfwGetKey        (window, GLFW_KEY_LEFT_SHIFT)      == GLFW_PRESS) mod |= EventFlags.EVENTFLAG_SHIFT_DOWN;
-        if (glfwGetKey        (window, GLFW_KEY_RIGHT_SHIFT)     == GLFW_PRESS) mod |= EventFlags.EVENTFLAG_SHIFT_DOWN;
+        if (glfwGetKey        (window, GLFW_KEY_LEFT_SHIFT)      == GLFW_PRESS) mod |= KeyEvent.SHIFT_DOWN_MASK;
+        if (glfwGetKey        (window, GLFW_KEY_RIGHT_SHIFT)     == GLFW_PRESS) mod |= KeyEvent.SHIFT_DOWN_MASK;
 
         return mod;
     }
@@ -92,24 +92,39 @@ public class SlicefWidget extends AbstractWidget {
     @Override
     public void mouseMoved(double mouseX, double mouseY) {
         super.mouseMoved(mouseX, mouseY);
-        CefMouseEvent event = new CefMouseEvent(
-                CefMouseEvent.MOUSE_MOVED,
+
+        //noinspection MagicConstant
+        MouseEvent cefEvent = new MouseEvent(
+                fakeComponent,
+                MouseEvent.MOUSE_MOVED,
+                0,
+                getModifiers(),
                 normalizeMouse(mouseX, getX()), normalizeMouse(mouseY, getY()),
-                0, 0, getModifiers()
+                0,
+                false,
+                0
         );
-        browser.sendMouseEvent(event);
+        browser.sendMouseEvent(cefEvent);
     }
+
 
     @Override
     public boolean mouseClicked(@NotNull MouseButtonEvent event, boolean isDoubleClick) {
         if (!this.isHovered) return super.mouseClicked(event, isDoubleClick);
-        CefMouseEvent cefEvent = new CefMouseEvent(
-                GLFW_PRESS,
+
+        //noinspection MagicConstant
+        MouseEvent cefEvent = new MouseEvent(
+                fakeComponent,
+                MouseEvent.MOUSE_PRESSED,
+                0,
+                getModifiers(),
                 normalizeMouse(event.x(), getX()), normalizeMouse(event.y(), getY()),
-                isDoubleClick ? 2 : 1, fixMouse(event.button()), getModifiers()
+                isDoubleClick ? 2 : 1,
+                false,
+                fixMouse(event.button())
         );
-        browser.sendMouseEvent(cefEvent);
         browser.setFocus(true);
+        browser.sendMouseEvent(cefEvent);
 
         return true;
     }
@@ -117,10 +132,17 @@ public class SlicefWidget extends AbstractWidget {
     @Override
     public boolean mouseReleased(@NotNull MouseButtonEvent event) {
         if (!this.isHovered) return super.mouseReleased(event);
-        CefMouseEvent cefEvent = new CefMouseEvent(
-                GLFW_RELEASE,
+
+        //noinspection MagicConstant
+        MouseEvent cefEvent = new MouseEvent(
+                fakeComponent,
+                MouseEvent.MOUSE_RELEASED,
+                0,
+                getModifiers(),
                 normalizeMouse(event.x(), getX()), normalizeMouse(event.y(), getY()),
-                0, fixMouse(event.button()), getModifiers()
+                0,
+                false,
+                fixMouse(event.button())
         );
         browser.sendMouseEvent(cefEvent);
 
@@ -130,41 +152,64 @@ public class SlicefWidget extends AbstractWidget {
     @Override
     public boolean mouseScrolled(double mouseX, double mouseY, double scrollX, double scrollY) {
         if (!this.isHovered) return super.mouseScrolled(mouseX, mouseY, scrollX, scrollY);
-        CefMouseWheelEvent cefEvent = new CefMouseWheelEvent(
-                CefMouseWheelEvent.WHEEL_UNIT_SCROLL,
+
+        //noinspection MagicConstant
+        MouseWheelEvent mouseWheelEvent = new MouseWheelEvent(
+                fakeComponent,
+                MouseEvent.MOUSE_WHEEL,
+                0,
+                getModifiers(),
                 normalizeMouse(mouseX, getX()), normalizeMouse(mouseY, getY()),
-                scrollY*2, getModifiers()
+                0,
+                false,
+                MouseWheelEvent.WHEEL_UNIT_SCROLL,
+                (int) -scrollY*120,
+                1
         );
-        browser.sendMouseWheelEvent(cefEvent);
+        browser.sendMouseWheelEvent(mouseWheelEvent);
 
         return true;
     }
 
     @Override
-    public boolean keyPressed(@NotNull KeyEvent event) {
+    public boolean keyPressed(@NotNull net.minecraft.client.input.KeyEvent event) {
         if (!this.isFocused()) return super.keyPressed(event);
 
-        CefKeyEvent cefEvent = new CefKeyEvent(
-                CefKeyEvent.KEY_PRESS,
-                event.key(),
-                (char) event.key(),
-                getModifiers()
+        //noinspection MagicConstant
+        KeyEvent cefEvent = new KeyEvent(
+                fakeComponent,
+                KeyEvent.KEY_PRESSED,
+                0,
+                getModifiers(),
+                KeycodeUtils.KEYCODE_MAP[event.key()],
+                event.key() == GLFW_KEY_BACKSPACE ? '\b' : KeyEvent.CHAR_UNDEFINED,
+                KeycodeUtils.KEY_LOCATION_MAP[event.key()]
         );
+        UnsafeFieldOverride.overrideLongField("scancode", cefEvent, event.scancode());
+        // Technically macos and linux has different map, but it is only read on windows, so should be fine
+        UnsafeFieldOverride.overrideLongField("rawCode", cefEvent, KeycodeUtils.KEYCODE_MAP[event.key()]);
         browser.sendKeyEvent(cefEvent);
 
         return true;
     }
 
     @Override
-    public boolean keyReleased(@NotNull KeyEvent event) {
+    public boolean keyReleased(@NotNull net.minecraft.client.input.KeyEvent event) {
         if (!this.isFocused()) return super.keyReleased(event);
 
-        CefKeyEvent cefEvent = new CefKeyEvent(
-                CefKeyEvent.KEY_RELEASE,
-                event.key(),
-                (char) event.key(),
-                getModifiers()
+        //noinspection MagicConstant
+        KeyEvent cefEvent = new KeyEvent(
+                fakeComponent,
+                KeyEvent.KEY_RELEASED,
+                0,
+                getModifiers(),
+                KeycodeUtils.KEYCODE_MAP[event.key()],
+                event.key() == GLFW_KEY_BACKSPACE ? '\b' : KeyEvent.CHAR_UNDEFINED,
+                KeycodeUtils.KEY_LOCATION_MAP[event.key()]
         );
+        UnsafeFieldOverride.overrideLongField("scancode", cefEvent, event.scancode());
+        // Technically macos and linux has different map, but it is only read on windows, so should be fine
+        UnsafeFieldOverride.overrideLongField("rawCode", cefEvent, KeycodeUtils.KEYCODE_MAP[event.key()]);
         browser.sendKeyEvent(cefEvent);
 
         return true;
@@ -174,11 +219,14 @@ public class SlicefWidget extends AbstractWidget {
     public boolean charTyped(@NotNull CharacterEvent event) {
         if (!this.isFocused()) return super.charTyped(event);
 
-        CefKeyEvent cefEvent = new CefKeyEvent(
-                CefKeyEvent.KEY_TYPE,
-                event.codepoint(),
-                (char) event.codepoint(),
-                getModifiers()
+        //noinspection MagicConstant
+        KeyEvent cefEvent = new KeyEvent(
+                fakeComponent,
+                KeyEvent.KEY_TYPED,
+                0,
+                getModifiers(),
+                KeyEvent.VK_UNDEFINED,
+                (char) event.codepoint()
         );
         browser.sendKeyEvent(cefEvent);
 
