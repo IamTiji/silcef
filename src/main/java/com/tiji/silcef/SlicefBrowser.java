@@ -10,7 +10,7 @@ import org.cef.browser.CefRequestContext;
 import java.awt.*;
 
 public class SlicefBrowser extends CefBrowserOsrWithHandler {
-    public String currentTitle;
+    public volatile String currentTitle;
 
     private final RenderHandlerImpl renderHandler;
     private SlicefWarning warnings = new SlicefWarning();
