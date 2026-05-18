@@ -11,6 +11,7 @@ import java.awt.*;
 
 public class SlicefBrowser extends CefBrowserOsrWithHandler {
     public volatile String currentTitle;
+    public volatile TooltipStatus currentTooltip = TooltipStatus.ofInvisible();
 
     private final RenderHandlerImpl renderHandler;
     private SlicefWarning warnings = new SlicefWarning();

@@ -3,8 +3,15 @@ package com.tiji.silcef;
 import net.fabricmc.fabric.api.client.screen.v1.ScreenMouseEvents;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent;
+import net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipPositioner;
+import net.minecraft.client.gui.screens.inventory.tooltip.DefaultTooltipPositioner;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.Style;
+import net.minecraft.util.FormattedCharSequence;
 import org.jetbrains.annotations.NotNull;
+
+import java.util.List;
 
 public class TestBrowserScreen extends Screen {
     private final SlicefBrowser browser;
@@ -32,6 +39,15 @@ public class TestBrowserScreen extends Screen {
         super.render(guiGraphics, mouseX, mouseY, partialTick);
 
         guiGraphics.drawString(font, browser.currentTitle, 20, height - 90, 0xFFFFFFFF);
+
+        if (browser.currentTooltip.isVisible()) {
+            guiGraphics.renderTooltip(font,
+                    List.of(ClientTooltipComponent.create(
+                            FormattedCharSequence.forward(browser.currentTooltip.getTooltipText(), Style.EMPTY))), 
+                    mouseX, mouseY,
+                    DefaultTooltipPositioner.INSTANCE,
+                    null);
+        }
 
         SlicefWarning warnings = browser.getWarnings();
         int y = height - 70;

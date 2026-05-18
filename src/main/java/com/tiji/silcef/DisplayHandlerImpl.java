@@ -53,4 +53,16 @@ public class DisplayHandlerImpl extends CefDisplayHandlerAdapter {
             slicefBrowser.currentTitle = title;
         }
     }
+
+    @Override
+    public boolean onTooltip(CefBrowser browser, String text) {
+        if (browser instanceof SlicefBrowser slicefBrowser) {
+            if (text.isBlank()) {
+                slicefBrowser.currentTooltip = TooltipStatus.ofInvisible();
+            } else {
+                slicefBrowser.currentTooltip = TooltipStatus.ofVisible(text);
+            }
+        }
+        return true;
+    }
 }
