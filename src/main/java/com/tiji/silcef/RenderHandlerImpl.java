@@ -14,11 +14,6 @@ import java.nio.ByteBuffer;
 import java.util.Map;
 
 import static org.lwjgl.glfw.GLFW.*;
-import static org.lwjgl.glfw.GLFW.GLFW_ARROW_CURSOR;
-import static org.lwjgl.glfw.GLFW.GLFW_IBEAM_CURSOR;
-import static org.lwjgl.glfw.GLFW.GLFW_POINTING_HAND_CURSOR;
-import static org.lwjgl.glfw.GLFW.GLFW_RESIZE_ALL_CURSOR;
-import static org.lwjgl.glfw.GLFW.GLFW_RESIZE_NWSE_CURSOR;
 
 class RenderHandlerImpl implements CefRenderHandler {
     public Rectangle popupBounds, mcPopupBounds;
