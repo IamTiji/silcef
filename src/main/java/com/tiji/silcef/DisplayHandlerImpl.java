@@ -17,23 +17,25 @@ public class DisplayHandlerImpl extends CefDisplayHandlerAdapter {
         //noinspection SuspiciousMethodCalls
         if (!loggedBrowsers.contains(browser)) return true;
 
+        String linePostfix = line != 0 ? "@" + line : "";
+
         switch (level) {
             case LOGSEVERITY_VERBOSE:
-                LOGGER.debug("{} ({}@{})", message, source, line);
+                LOGGER.debug("{} ({}{})", message, source, linePostfix);
                 break;
 
             case LOGSEVERITY_DEFAULT:
             case LOGSEVERITY_INFO:
-                LOGGER.info("{} ({}@{})", message, source, line);
+                LOGGER.info("{} ({}{})", message, source, linePostfix);
                 break;
 
             case LOGSEVERITY_WARNING:
-                LOGGER.warn("{} ({}@{})", message, source, line);
+                LOGGER.warn("{} ({}{})", message, source, linePostfix);
                 break;
 
             case LOGSEVERITY_ERROR:
             case LOGSEVERITY_FATAL:
-                LOGGER.error("{}{} ({}@{})", level == CefSettings.LogSeverity.LOGSEVERITY_FATAL ? "(FATAL) " : "", message, source, line);
+                LOGGER.error("{}{} ({}{})", level == CefSettings.LogSeverity.LOGSEVERITY_FATAL ? "(FATAL) " : "", message, source, linePostfix);
                 break;
         }
         return true;
