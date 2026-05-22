@@ -4,6 +4,7 @@ import com.jetbrains.cef.JCefAppConfig;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.sun.jna.Pointer;
 import com.sun.jna.ptr.PointerByReference;
+import com.tiji.silcef.internals.*;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;

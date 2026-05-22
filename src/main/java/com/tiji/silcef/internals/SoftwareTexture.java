@@ -1,8 +1,9 @@
-package com.tiji.silcef;
+package com.tiji.silcef.internals;
 
 import com.mojang.blaze3d.opengl.GlSampler;
 import com.mojang.blaze3d.opengl.GlTextureView;
 import com.mojang.blaze3d.textures.*;
+import com.tiji.silcef.Slicef;
 
 import java.awt.*;
 import java.nio.ByteBuffer;

@@ -1,5 +1,7 @@
-package com.tiji.silcef;
+package com.tiji.silcef.internals;
 
+import com.tiji.silcef.SlicefBrowser;
+import com.tiji.silcef.TooltipStatus;
 import org.cef.CefSettings;
 import org.cef.browser.CefBrowser;
 import org.cef.handler.CefDisplayHandlerAdapter;

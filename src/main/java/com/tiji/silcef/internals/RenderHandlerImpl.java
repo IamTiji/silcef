@@ -1,6 +1,7 @@
-package com.tiji.silcef;
+package com.tiji.silcef.internals;
 
 import com.mojang.blaze3d.platform.cursor.CursorType;
+import com.tiji.silcef.Slicef;
 import net.minecraft.client.Minecraft;
 import org.cef.browser.CefBrowser;
 import org.cef.callback.CefDragData;
@@ -15,7 +16,7 @@ import java.util.Map;
 
 import static org.lwjgl.glfw.GLFW.*;
 
-class RenderHandlerImpl implements CefRenderHandler {
+public class RenderHandlerImpl implements CefRenderHandler {
     public Rectangle popupBounds, mcPopupBounds;
     public int width, height;
     public int mcWidth, mcHeight;

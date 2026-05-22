@@ -1,10 +1,13 @@
-package com.tiji.silcef;
+package com.tiji.silcef.internals;
 
+import com.tiji.silcef.Slicef;
+import com.tiji.silcef.SlicefBrowser;
+import com.tiji.silcef.SlicefWarning;
+import com.tiji.silcef.SlicefWidget;
 import net.fabricmc.fabric.api.client.screen.v1.ScreenMouseEvents;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent;
-import net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipPositioner;
 import net.minecraft.client.gui.screens.inventory.tooltip.DefaultTooltipPositioner;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;

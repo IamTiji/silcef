@@ -1,7 +1,8 @@
-package com.tiji.silcef;
+package com.tiji.silcef.internals;
 
 import com.mojang.blaze3d.opengl.GlTexture;
 import com.mojang.blaze3d.textures.*;
+import com.tiji.silcef.Slicef;
 import org.jetbrains.annotations.NotNull;
 import org.lwjgl.BufferUtils;
 import org.lwjgl.PointerBuffer;

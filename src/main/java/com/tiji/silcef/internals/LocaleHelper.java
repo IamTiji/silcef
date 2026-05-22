@@ -1,4 +1,4 @@
-package com.tiji.silcef;
+package com.tiji.silcef.internals;
 
 import java.util.Map;
 
