@@ -143,6 +143,11 @@ public class Slicef implements ModInitializer {
         return new SlicefBrowser(client, url, width, height, true);
     }
 
+    public static void destroyBrowser(SlicefBrowser browser) {
+        browser.close(true);
+        ((RenderHandlerImpl) browser.getRenderHandler()).destroy();
+    }
+
     public static void scheduleStartup(Runnable runnable) {
         if (isLoaded) runnable.run();
         else {

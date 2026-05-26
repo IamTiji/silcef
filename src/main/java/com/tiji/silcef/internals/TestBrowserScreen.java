@@ -63,7 +63,6 @@ public class TestBrowserScreen extends Screen {
     @Override
     public void onClose() {
         super.onClose();
-        browser.setCloseAllowed();
-        browser.close(true);
+        Slicef.destroyBrowser(browser);
     }
 }

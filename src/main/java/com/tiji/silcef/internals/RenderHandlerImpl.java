@@ -31,6 +31,10 @@ public class RenderHandlerImpl implements CefRenderHandler {
         texture = new SoftwareTexture(width, height);
     }
 
+    public void destroy() {
+        texture.destroy();
+    }
+
     @Override
     public void onPaint(CefBrowser cefBrowser, boolean popup, Rectangle[] dirtyRects, ByteBuffer pixels, int w, int h) {
         if (dirtyRects.length == 0) return;
