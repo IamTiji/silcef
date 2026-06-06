@@ -1,6 +1,7 @@
 package com.tiji.silcef.internals;
 
 import com.mojang.blaze3d.platform.cursor.CursorType;
+import com.tiji.silcef.AbstractTexture;
 import com.tiji.silcef.Slicef;
 import net.minecraft.client.Minecraft;
 import org.cef.browser.CefBrowser;
@@ -150,7 +151,7 @@ public class RenderHandlerImpl implements CefRenderHandler {
         return new Rectangle(0, 0, mcWidth, mcHeight);
     }
 
-    public SoftwareTexture getTexture() {
+    public AbstractTexture getTexture() {
         return texture;
     }
 

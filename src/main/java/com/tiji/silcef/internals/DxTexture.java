@@ -2,6 +2,7 @@ package com.tiji.silcef.internals;
 
 import com.mojang.blaze3d.opengl.GlTexture;
 import com.mojang.blaze3d.textures.*;
+import com.tiji.silcef.AbstractTexture;
 import com.tiji.silcef.Slicef;
 import org.jetbrains.annotations.NotNull;
 import org.lwjgl.BufferUtils;
@@ -16,17 +17,17 @@ import static org.lwjgl.opengl.GL33C.GL_TEXTURE_SWIZZLE_R;
 import static org.lwjgl.opengl.GL43C.glObjectLabel;
 import static org.lwjgl.opengl.WGLNVDXInterop.*;
 
-public class DxTexture {
-    public final long DXTextureHandle;
-    public final int GLTextureId;
-    public final PointerBuffer DXTextureHandleBuffer;
+public class DxTexture extends AbstractTexture {
+    private final long DXTextureHandle;
+    private final int GLTextureId;
+    private final PointerBuffer DXTextureHandleBuffer;
 
-    public final int width;
-    public final int height;
+    private final int width;
+    private final int height;
 
-    public final GlTexture mcGlTexture;
-    public final GpuTextureView mcTextureView;
-    public final GpuSampler mcSampler;
+    private final GlTexture mcGlTexture;
+    private final GpuTextureView mcTextureView;
+    private final GpuSampler mcSampler;
 
     private boolean destroyed = false;
 
@@ -139,6 +140,32 @@ public class DxTexture {
         wglDXUnlockObjectsNV(Slicef.DXDevice, DXTextureHandleBuffer);
     }
 
+    @Override
+    public GlTexture getMcTexture() {
+        return mcGlTexture;
+    }
+
+    @Override
+    public GpuTextureView getTextureView() {
+        return mcTextureView;
+    }
+
+    @Override
+    public GpuSampler getSampler() {
+        return mcSampler;
+    }
+
+    @Override
+    public int getWidth() {
+        return width;
+    }
+
+    @Override
+    public int getHeight() {
+        return height;
+    }
+
+    @Override
     public void destroy() {
         if (destroyed) throw new IllegalStateException("Texture already destroyed");
         destroyed = true;

@@ -63,8 +63,8 @@ public class SlicefRenderState implements GuiElementRenderState {
     @Override
     public @NotNull TextureSetup textureSetup() {
         return TextureSetup.singleTexture(
-                browser.getTexture().mcTextureView,
-                browser.getTexture().mcSampler
+                browser.getTexture().getTextureView(),
+                browser.getTexture().getSampler()
         );
     }
 

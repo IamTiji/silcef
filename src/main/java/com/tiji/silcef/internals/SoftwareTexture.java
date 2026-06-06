@@ -1,8 +1,10 @@
 package com.tiji.silcef.internals;
 
 import com.mojang.blaze3d.opengl.GlSampler;
+import com.mojang.blaze3d.opengl.GlTexture;
 import com.mojang.blaze3d.opengl.GlTextureView;
 import com.mojang.blaze3d.textures.*;
+import com.tiji.silcef.AbstractTexture;
 import com.tiji.silcef.Slicef;
 
 import java.awt.*;
@@ -12,12 +14,12 @@ import java.util.OptionalDouble;
 import static org.lwjgl.opengl.GL33C.*;
 import static org.lwjgl.opengl.GL43C.glObjectLabel;
 
-public class SoftwareTexture {
+public class SoftwareTexture extends AbstractTexture {
     private final int GLTextureId;
     private final int width, height;
-    public GlTextureWrapper mcGlTexture;
-    public GpuTextureView mcTextureView;
-    public GpuSampler mcSampler;
+    private final GlTextureWrapper mcGlTexture;
+    private final GpuTextureView mcTextureView;
+    private final GpuSampler mcSampler;
 
     private boolean destroyed = false;
 
@@ -83,6 +85,32 @@ public class SoftwareTexture {
         glPixelStorei(GL_UNPACK_ROW_LENGTH, 0);
     }
 
+    @Override
+    public GlTexture getMcTexture() {
+        return mcGlTexture;
+    }
+
+    @Override
+    public GpuTextureView getTextureView() {
+        return mcTextureView;
+    }
+
+    @Override
+    public GpuSampler getSampler() {
+        return mcSampler;
+    }
+
+    @Override
+    public int getWidth() {
+        return width;
+    }
+
+    @Override
+    public int getHeight() {
+        return height;
+    }
+
+    @Override
     public void destroy() {
         if (destroyed) throw new IllegalStateException("Texture has already been destroyed");
 
