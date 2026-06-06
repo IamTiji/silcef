@@ -27,6 +27,8 @@ dependencies {
     modImplementation("net.fabricmc:fabric-loader:${project.property("loader_version")!!}")
 
     modImplementation("net.fabricmc.fabric-api:fabric-api:${project.property("fabric_version")!!}")
+
+    implementation(files("jcef/jcef.jar"))
 }
 
 tasks.processResources {
@@ -47,16 +49,11 @@ tasks.withType<JavaCompile>().configureEach {
     if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible) {
         options.release.set(targetJavaVersion)
     }
-    sourceCompatibility = "25"
-    targetCompatibility = "25"
-    options.release = null
-
-    options.compilerArgs.addAll(arrayOf("--add-modules", "jcef"))
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_25
-    targetCompatibility = JavaVersion.VERSION_25
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
 
     withSourcesJar()
 

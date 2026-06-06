@@ -4,8 +4,9 @@ import com.mojang.blaze3d.platform.cursor.CursorType;
 import com.tiji.silcef.Slicef;
 import net.minecraft.client.Minecraft;
 import org.cef.browser.CefBrowser;
+import org.cef.browser.CefPaintEvent;
 import org.cef.callback.CefDragData;
-import org.cef.handler.CefAcceleratedPaintInfo;
+import org.cef.misc.CefAcceleratedPaintInfo;
 import org.cef.handler.CefRenderHandler;
 import org.cef.handler.CefScreenInfo;
 import org.lwjgl.BufferUtils;
@@ -13,6 +14,7 @@ import org.lwjgl.BufferUtils;
 import java.awt.*;
 import java.nio.ByteBuffer;
 import java.util.Map;
+import java.util.function.Consumer;
 
 import static org.lwjgl.glfw.GLFW.*;
 
@@ -28,7 +30,8 @@ public class RenderHandlerImpl implements CefRenderHandler {
         this.height = height;
         this.mcWidth = mcWidth;
         this.mcHeight = mcHeight;
-        texture = new SoftwareTexture(width, height);
+
+        Minecraft.getInstance().execute(() -> texture = new SoftwareTexture(width, height));
     }
 
     public void destroy() {
@@ -74,11 +77,6 @@ public class RenderHandlerImpl implements CefRenderHandler {
     @Override
     public Point getScreenPoint(CefBrowser cefBrowser, Point point) {
         return new Point(0, 0);
-    }
-
-    @Override
-    public double getDeviceScaleFactor(CefBrowser cefBrowser) {
-        return 0;
     }
 
     @Override
@@ -155,4 +153,11 @@ public class RenderHandlerImpl implements CefRenderHandler {
     public SoftwareTexture getTexture() {
         return texture;
     }
+
+    // Does nothing
+    @Override public void addOnPaintListener(Consumer<CefPaintEvent> consumer) {}
+
+    @Override public void setOnPaintListener(Consumer<CefPaintEvent> consumer) {}
+
+    @Override public void removeOnPaintListener(Consumer<CefPaintEvent> consumer) {}
 }

@@ -20,17 +20,19 @@ Note that this is under development, and bugs and lack of features are expected.
 
 ### Platform support
 
-| Platform      | Support                      |
-|---------------|------------------------------|
-| Windows       | 🟩 **Supported**               |
+| Platform      | Support                       |
+|---------------|-------------------------------|
+| Windows       | 🟩 **Supported**              |
 | MacOS         | 🟨 **Unsupported**; planned   |
 | Linux X11     | 🟥 **Unsupported**; unplanned |
 | Linux Wayland | 🟨 **Unsupported**; planned   |
 
 ### Building this project
 
-You need to get JetBrains Runtime with JCEF included. You can get it from 
-<https://github.com/JetBrains/JetBrainsRuntime>.
+You need JCEF for this project to run. Get it from <https://github.com/IamTiji/java-cef>.
+As I haven't built anything, you need to build it yourself. I will build JCEF once I 
+implement automatic JCEF download in this project. Put everything from C++ build and 
+`jcef.jar` to `jcef` folder, and you are good to go!
 
 Run `gradle runClient` to run Minecraft, and `gradle build` to build the mod.
 Note that building as a standalone mod file won't work right now.
