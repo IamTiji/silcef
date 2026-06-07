@@ -165,7 +165,7 @@ public class SlicefWidget extends AbstractWidget {
                 0,
                 false,
                 MouseWheelEvent.WHEEL_UNIT_SCROLL,
-                (int) -scrollY*120,
+                (int) scrollY*120,
                 1
         );
         browser.sendMouseWheelEvent(mouseWheelEvent);
