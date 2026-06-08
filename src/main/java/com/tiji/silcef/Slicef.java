@@ -4,6 +4,9 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 import com.sun.jna.Pointer;
 import com.sun.jna.ptr.PointerByReference;
 import com.tiji.silcef.internals.*;
+import com.tiji.silcef.internals.win.D3D11;
+import com.tiji.silcef.internals.win.D3D11Device;
+import com.tiji.silcef.internals.win.DxTexture;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
@@ -20,6 +23,7 @@ import org.slf4j.LoggerFactory;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.UUID;
+import java.util.concurrent.CompletableFuture;
 
 import static org.lwjgl.opengl.WGLNVDXInterop.*;
 
@@ -39,6 +43,7 @@ public class Slicef implements ModInitializer {
     private static ArrayList<Runnable> scheduledTasks = new ArrayList<>();
 
     public static long DXDevice;
+    public static D3D11Device DXDeviceContainer;
 
     private static CefApp app;
     private static CefClient client;
@@ -92,6 +97,23 @@ public class Slicef implements ModInitializer {
             }
         });
 
+        CompletableFuture<Void> future = new CompletableFuture<>();
+        mc.execute(() -> {
+            // These needs to be called in render thread
+            if (isAcceleratedPaintAllowed) {
+                try {
+                    D3D11.initialize();
+                    getDXDevice();
+                    LOGGER.info("DirectX device is linked");
+                } catch (Throwable t) {
+                    LOGGER.error("Failed to link DirectX device", t);
+                    isAcceleratedPaintAllowed = false;
+                }
+            }
+            future.complete(null);
+        });
+        future.join();
+
         CefSettings settings = new CefSettings();
         settings.windowless_rendering_enabled = true;
         settings.browser_subprocess_path = Path.of(NATIVE_PATH, "/jcef_helper.exe").toAbsolutePath().toString();
@@ -107,9 +129,9 @@ public class Slicef implements ModInitializer {
 
         ArrayList<String> args = new ArrayList<>();
         args.add("--no-sandbox");
+        args.add("--force-high-performance-gpu");
         args.add("--disable-features=ThreadNaming");
         if (isAcceleratedPaintAllowed) {
-            D3D11.initialize();
             args.add("--shared-texture-enabled");
             LOGGER.info("Accelerated painting is enabled!");
         }
@@ -120,11 +142,6 @@ public class Slicef implements ModInitializer {
         app = CefApp.getInstance(argsArray, settings);
         client = app.createClient();
         client.addDisplayHandler(new DisplayHandlerImpl());
-
-        if (isAcceleratedPaintAllowed) {
-            getDXDevice();
-            LOGGER.info("DirectX device is linked");
-        }
 
         isLoaded = true;
         scheduledTasks.forEach(Runnable::run);
@@ -157,18 +174,24 @@ public class Slicef implements ModInitializer {
         PointerByReference ppDevice = new PointerByReference();
         PointerByReference ppContext = new PointerByReference();
 
-        D3D11.get().D3D11CreateDevice(
+        int hr = D3D11.get().D3D11CreateDevice(
                 null,
                 D3D11.D3D_DRIVER_TYPE_HARDWARE,
                 null,
-                0,
+                2,
                 null, 0,
                 D3D11.D3D11_SDK_VERSION,
                 ppDevice,
                 null,
                 ppContext
         );
+
+        if (hr != 0) throw new RuntimeException("Failed to create DirectX device");
+
+        // I should probably cast it to D3D11Device1 but every additional methods are pain to add
+
         DXDevice = wglDXOpenDeviceNV(Pointer.nativeValue(ppDevice.getValue()));
+        DXDeviceContainer = new D3D11Device(ppDevice.getValue());
     }
 
     public static @NotNull String getUniqueName(String type) {

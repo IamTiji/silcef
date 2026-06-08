@@ -3,6 +3,7 @@ package com.tiji.silcef.internals;
 import com.mojang.blaze3d.platform.cursor.CursorType;
 import com.tiji.silcef.AbstractTexture;
 import com.tiji.silcef.Slicef;
+import com.tiji.silcef.internals.win.DxTexture;
 import net.minecraft.client.Minecraft;
 import org.cef.browser.CefBrowser;
 import org.cef.browser.CefPaintEvent;
@@ -15,6 +16,7 @@ import org.lwjgl.BufferUtils;
 import java.awt.*;
 import java.nio.ByteBuffer;
 import java.util.Map;
+import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
 
 import static org.lwjgl.glfw.GLFW.*;
@@ -23,7 +25,12 @@ public class RenderHandlerImpl implements CefRenderHandler {
     public Rectangle popupBounds, mcPopupBounds;
     public int width, height;
     public int mcWidth, mcHeight;
-    private SoftwareTexture texture;
+
+    private boolean wasPreviousPaintAccelerated = true;
+
+    private SoftwareTexture softwareTexture;
+    private DxTexture hardwareTexture;
+
     private boolean popupVisible;
 
     public RenderHandlerImpl(int width, int height, int mcWidth, int mcHeight) {
@@ -31,20 +38,23 @@ public class RenderHandlerImpl implements CefRenderHandler {
         this.height = height;
         this.mcWidth = mcWidth;
         this.mcHeight = mcHeight;
-
-        Minecraft.getInstance().execute(() -> texture = new SoftwareTexture(width, height));
     }
 
     public void destroy() {
-        texture.destroy();
+        softwareTexture.destroy();
+        hardwareTexture.destroy();
     }
 
     @Override
     public void onPaint(CefBrowser cefBrowser, boolean popup, Rectangle[] dirtyRects, ByteBuffer pixels, int w, int h) {
+        wasPreviousPaintAccelerated = false;
+
+        if (softwareTexture == null) return;
         if (dirtyRects.length == 0) return;
+
         ByteBuffer safeBuffer = BufferUtils.createByteBuffer(pixels.remaining());
         safeBuffer.put(pixels);
-        Minecraft.getInstance().execute(() -> texture.onPaint(dirtyRects, safeBuffer, w, h));
+        Minecraft.getInstance().execute(() -> softwareTexture.onPaint(dirtyRects, safeBuffer, w, h));
     }
 
     @Override
@@ -82,6 +92,18 @@ public class RenderHandlerImpl implements CefRenderHandler {
 
     @Override
     public void onAcceleratedPaint(CefBrowser cefBrowser, boolean b, Rectangle[] rectangles, CefAcceleratedPaintInfo info) {
+        wasPreviousPaintAccelerated = true;
+
+        if (hardwareTexture == null) return;
+
+        CompletableFuture<Void> future = new CompletableFuture<>();
+
+        Minecraft.getInstance().execute(() -> {
+            hardwareTexture.onPaint(info); // Doesn't throw exception; if it does, dont worry its gonna crash the JVM
+            future.complete(null);
+        });
+
+        future.join();
     }
 
     @Override
@@ -143,8 +165,10 @@ public class RenderHandlerImpl implements CefRenderHandler {
         this.mcWidth = width;
         this.mcHeight = height;
 
-        texture.destroy();
-        texture = new SoftwareTexture(this.width, this.height);
+        if (softwareTexture != null) softwareTexture.destroy();
+        if (hardwareTexture != null) hardwareTexture.destroy();
+        hardwareTexture = new DxTexture(this.width, this.height);
+        softwareTexture = new SoftwareTexture(this.width, this.height);
     }
 
     public Rectangle getMinecraftBounds() {
@@ -152,7 +176,7 @@ public class RenderHandlerImpl implements CefRenderHandler {
     }
 
     public AbstractTexture getTexture() {
-        return texture;
+        return wasPreviousPaintAccelerated ? hardwareTexture : softwareTexture;
     }
 
     // Does nothing

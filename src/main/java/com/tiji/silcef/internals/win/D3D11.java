@@ -1,4 +1,4 @@
-package com.tiji.silcef.internals;
+package com.tiji.silcef.internals.win;
 
 import com.sun.jna.Native;
 import com.sun.jna.Pointer;

@@ -3,6 +3,7 @@ package com.tiji.silcef;
 import com.mojang.blaze3d.platform.cursor.CursorType;
 import com.tiji.silcef.internals.DisplayHandlerImpl;
 import com.tiji.silcef.internals.RenderHandlerImpl;
+import com.tiji.silcef.internals.SoftwareTexture;
 import net.minecraft.client.Minecraft;
 import org.cef.CefBrowserSettings;
 import org.cef.CefClient;
@@ -88,7 +89,9 @@ public class SlicefBrowser extends CefBrowser_N {
     }
 
     public AbstractTexture getTexture() {
-        return renderHandler.getTexture();
+        AbstractTexture texture = renderHandler.getTexture();
+        warnings.addConditionalWarning(SlicefWarning.Warning.WARN_SOFTWARE_FALLBACK, texture instanceof SoftwareTexture);
+        return texture;
     }
 
     public Rectangle getMinecraftBounds() {
