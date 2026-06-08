@@ -118,39 +118,11 @@ public class RenderHandlerImpl implements CefRenderHandler {
 
     private CursorType currentCursor = CursorType.DEFAULT;
 
+    protected static final CursorConverter cursorConverter = CursorConverter.getInstance();
     @Override
     public boolean onCursorChange(CefBrowser browser, int cursorType) {
-        currentCursor = convertCursor(cursorType);
+        currentCursor = cursorConverter.convert(cursorType);
         return true;
-    }
-
-    private static final Map<Integer, CursorType> cursorMap = Map.ofEntries(
-            Map.entry(Cursor.DEFAULT_CURSOR,    CursorType.createStandardCursor(GLFW_ARROW_CURSOR,         "slicef_DEFAULT_CURSOR",     CursorType.DEFAULT)),
-            Map.entry(Cursor.CROSSHAIR_CURSOR,  CursorType.createStandardCursor(GLFW_CROSSHAIR_CURSOR,     "slicef_CROSSHAIR_CURSOR",   CursorType.DEFAULT)),
-            Map.entry(Cursor.HAND_CURSOR,       CursorType.createStandardCursor(GLFW_POINTING_HAND_CURSOR, "slicef_HAND_CURSOR",        CursorType.DEFAULT)),
-            Map.entry(Cursor.MOVE_CURSOR,       CursorType.createStandardCursor(GLFW_RESIZE_ALL_CURSOR,    "slicef_MOVE_CURSOR",        CursorType.DEFAULT)),
-            Map.entry(Cursor.TEXT_CURSOR,       CursorType.createStandardCursor(GLFW_IBEAM_CURSOR,         "slicef_TEXT_CURSOR",        CursorType.DEFAULT)),
-            //Map.entry(Cursor.WAIT_CURSOR,        CursorType.createStandardCursor(,         "slicef_WAIT_CURSOR",         CursorType.DEFAULT)),
-            Map.entry(Cursor.N_RESIZE_CURSOR,   CursorType.createStandardCursor(GLFW_VRESIZE_CURSOR,       "slicef_N_RESIZE_CURSOR",    CursorType.DEFAULT)),
-            Map.entry(Cursor.S_RESIZE_CURSOR,   CursorType.createStandardCursor(GLFW_VRESIZE_CURSOR,       "slicef_S_RESIZE_CURSOR",    CursorType.DEFAULT)),
-            Map.entry(Cursor.E_RESIZE_CURSOR,   CursorType.createStandardCursor(GLFW_HRESIZE_CURSOR,       "slicef_E_RESIZE_CURSOR",    CursorType.DEFAULT)),
-            Map.entry(Cursor.W_RESIZE_CURSOR,   CursorType.createStandardCursor(GLFW_HRESIZE_CURSOR,       "slicef_W_RESIZE_CURSOR",    CursorType.DEFAULT)),
-
-            Map.entry(Cursor.NW_RESIZE_CURSOR,  CursorType.createStandardCursor(GLFW_RESIZE_NWSE_CURSOR,   "slicef_NW_RESIZE_CURSOR",   CursorType.DEFAULT)),
-            Map.entry(Cursor.NE_RESIZE_CURSOR,  CursorType.createStandardCursor(GLFW_RESIZE_NWSE_CURSOR,   "slicef_NE_RESIZE_CURSOR",   CursorType.DEFAULT)),
-            Map.entry(Cursor.SW_RESIZE_CURSOR,  CursorType.createStandardCursor(GLFW_RESIZE_NWSE_CURSOR,   "slicef_SW_RESIZE_CURSOR",   CursorType.DEFAULT)),
-            Map.entry(Cursor.SE_RESIZE_CURSOR,  CursorType.createStandardCursor(GLFW_RESIZE_NWSE_CURSOR,   "slicef_SE_RESIZE_CURSOR",   CursorType.DEFAULT))
-    );
-    private static CursorType convertCursor(int cursorType) {
-        //if (cursorType == 37) return null; // CT_NONE, no cursor.
-
-        if (cursorMap.containsKey(cursorType)) {
-            return cursorMap.get(cursorType);
-        }
-
-        Slicef.LOGGER.warn("Unsupported cursor type: {}", cursorType);
-
-        return CursorType.DEFAULT;
     }
 
     public CursorType getCurrentCursor() {
