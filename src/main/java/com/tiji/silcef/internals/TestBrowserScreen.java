@@ -23,7 +23,7 @@ public class TestBrowserScreen extends Screen {
     public TestBrowserScreen(String url) {
         super(Component.empty());
 
-        browser = Slicef.getBrowser(url, 300, 300);
+        browser = Slicef.getBrowser(url);
         widget = new SlicefWidget(browser, 0, 0);
     }
 

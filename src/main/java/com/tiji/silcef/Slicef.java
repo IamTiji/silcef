@@ -150,9 +150,9 @@ public class Slicef implements ModInitializer {
         app.runMessageLoop();
     }
 
-    public static SlicefBrowser getBrowser(String url, int width, int height) {
+    public static SlicefBrowser getBrowser(String url) {
         if (!isLoaded) throw new IllegalStateException("Slicef is not loaded yet. Use scheduleStartup to run something immediately after Slicef is ready.");
-        SlicefBrowser browser = new SlicefBrowser(client, url, width, height, true);
+        SlicefBrowser browser = new SlicefBrowser(client, url, true);
         browser.createImmediately();
         return browser;
     }

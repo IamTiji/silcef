@@ -33,13 +33,6 @@ public class RenderHandlerImpl implements CefRenderHandler {
 
     private boolean popupVisible;
 
-    public RenderHandlerImpl(int width, int height, int mcWidth, int mcHeight) {
-        this.width = width;
-        this.height = height;
-        this.mcWidth = mcWidth;
-        this.mcHeight = mcHeight;
-    }
-
     public void destroy() {
         softwareTexture.destroy();
         hardwareTexture.destroy();

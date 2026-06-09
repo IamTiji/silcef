@@ -29,11 +29,10 @@ public class SlicefBrowser extends CefBrowser_N implements CefRenderHandler {
     private final RenderHandlerImpl renderHandler;
     private SlicefWarning warnings = new SlicefWarning();
 
-    public SlicefBrowser(CefClient cefClient, String url, int width, int height, boolean loggingEnabled) {
+    public SlicefBrowser(CefClient cefClient, String url, boolean loggingEnabled) {
         super(cefClient, url, CefRequestContext.getGlobalContext(), null, null, getBrowserSettings());
 
-        int scaleFactor = Minecraft.getInstance().getWindow().getGuiScale();
-        renderHandler = new RenderHandlerImpl(width * scaleFactor, height * scaleFactor, width, height);
+        renderHandler = new RenderHandlerImpl();
 
         if (loggingEnabled) {
             DisplayHandlerImpl.logBrowser(this);
