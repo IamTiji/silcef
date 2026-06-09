@@ -7,15 +7,22 @@ import com.tiji.silcef.internals.SoftwareTexture;
 import net.minecraft.client.Minecraft;
 import org.cef.CefBrowserSettings;
 import org.cef.CefClient;
+import org.cef.browser.CefBrowser;
 import org.cef.browser.CefBrowser_N;
+import org.cef.browser.CefPaintEvent;
 import org.cef.browser.CefRequestContext;
+import org.cef.callback.CefDragData;
 import org.cef.handler.CefRenderHandler;
+import org.cef.handler.CefScreenInfo;
+import org.cef.misc.CefAcceleratedPaintInfo;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.nio.ByteBuffer;
 import java.util.concurrent.CompletableFuture;
+import java.util.function.Consumer;
 
-public class SlicefBrowser extends CefBrowser_N {
+public class SlicefBrowser extends CefBrowser_N implements CefRenderHandler {
     public volatile String currentTitle;
     public volatile TooltipStatus currentTooltip = TooltipStatus.ofInvisible();
 
@@ -109,5 +116,73 @@ public class SlicefBrowser extends CefBrowser_N {
 
     public CursorType getCurrentCursor() {
         return renderHandler.getCurrentCursor();
+    }
+
+
+
+    // Just so that JCEF finds it
+    @Override
+    public Rectangle getViewRect(CefBrowser cefBrowser) {
+        return renderHandler.getViewRect(cefBrowser);
+    }
+
+    @Override
+    public boolean getScreenInfo(CefBrowser cefBrowser, CefScreenInfo cefScreenInfo) {
+        return renderHandler.getScreenInfo(cefBrowser, cefScreenInfo);
+    }
+
+    @Override
+    public Point getScreenPoint(CefBrowser cefBrowser, Point point) {
+        return renderHandler.getScreenPoint(cefBrowser, point);
+    }
+
+    @Override
+    public void onPopupShow(CefBrowser cefBrowser, boolean b) {
+        renderHandler.onPopupShow(cefBrowser, b);
+    }
+
+    @Override
+    public void onPopupSize(CefBrowser cefBrowser, Rectangle rectangle) {
+        renderHandler.onPopupSize(cefBrowser, rectangle);
+    }
+
+    @Override
+    public void onPaint(CefBrowser cefBrowser, boolean b, Rectangle[] rectangles, ByteBuffer byteBuffer, int i, int i1) {
+        renderHandler.onPaint(cefBrowser, b, rectangles, byteBuffer, i, i1);
+    }
+
+    @Override
+    public void addOnPaintListener(Consumer<CefPaintEvent> consumer) {
+        renderHandler.addOnPaintListener(consumer);
+    }
+
+    @Override
+    public void setOnPaintListener(Consumer<CefPaintEvent> consumer) {
+        renderHandler.setOnPaintListener(consumer);
+    }
+
+    @Override
+    public void removeOnPaintListener(Consumer<CefPaintEvent> consumer) {
+        renderHandler.removeOnPaintListener(consumer);
+    }
+
+    @Override
+    public boolean onCursorChange(CefBrowser cefBrowser, int i) {
+        return renderHandler.onCursorChange(cefBrowser, i);
+    }
+
+    @Override
+    public boolean startDragging(CefBrowser cefBrowser, CefDragData cefDragData, int i, int i1, int i2) {
+        return renderHandler.startDragging(cefBrowser, cefDragData, i, i1, i2);
+    }
+
+    @Override
+    public void updateDragCursor(CefBrowser cefBrowser, int i) {
+        renderHandler.updateDragCursor(cefBrowser, i);
+    }
+
+    @Override
+    public void onAcceleratedPaint(CefBrowser cefBrowser, boolean b, Rectangle[] rectangles, CefAcceleratedPaintInfo cefAcceleratedPaintInfo) {
+        renderHandler.onAcceleratedPaint(cefBrowser, b, rectangles, cefAcceleratedPaintInfo);
     }
 }
