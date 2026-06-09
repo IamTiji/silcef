@@ -25,6 +25,7 @@ public class TestBrowserScreen extends Screen {
 
         browser = Slicef.getBrowser(url);
         widget = new SlicefWidget(browser, 0, 0);
+        widget.setFocused(true);
     }
 
     @Override
