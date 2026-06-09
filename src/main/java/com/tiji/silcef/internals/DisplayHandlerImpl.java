@@ -69,4 +69,15 @@ public class DisplayHandlerImpl extends CefDisplayHandlerAdapter {
         }
         return true;
     }
+
+    @Override
+    public void onStatusMessage(CefBrowser browser, String value) {
+        if (browser instanceof SlicefBrowser slicefBrowser) {
+            if (value.isBlank()) {
+                slicefBrowser.statusText = null;
+            } else {
+                slicefBrowser.statusText = value;
+            }
+        }
+    }
 }

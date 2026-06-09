@@ -42,6 +42,10 @@ public class TestBrowserScreen extends Screen {
         super.render(guiGraphics, mouseX, mouseY, partialTick);
 
         guiGraphics.drawString(font, browser.currentTitle, 20, height - 90, 0xFFFFFFFF);
+        if (browser.statusText != null) {
+            guiGraphics.fill(0, height - 101 - font.lineHeight, font.width(browser.statusText) + 1, height - 100, 0xFFFFFFFF);
+            guiGraphics.drawString(font, browser.statusText, 1, height - 100 - font.lineHeight, 0xFF000000, false);
+        }
 
         if (browser.currentTooltip.isVisible()) {
             guiGraphics.renderTooltip(font,

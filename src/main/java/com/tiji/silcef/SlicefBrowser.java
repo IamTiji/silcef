@@ -4,7 +4,6 @@ import com.mojang.blaze3d.platform.cursor.CursorType;
 import com.tiji.silcef.internals.DisplayHandlerImpl;
 import com.tiji.silcef.internals.RenderHandlerImpl;
 import com.tiji.silcef.internals.SoftwareTexture;
-import net.minecraft.client.Minecraft;
 import org.cef.CefBrowserSettings;
 import org.cef.CefClient;
 import org.cef.browser.CefBrowser;
@@ -25,6 +24,7 @@ import java.util.function.Consumer;
 public class SlicefBrowser extends CefBrowser_N implements CefRenderHandler {
     public volatile String currentTitle;
     public volatile TooltipStatus currentTooltip = TooltipStatus.ofInvisible();
+    public volatile String statusText;
 
     private final RenderHandlerImpl renderHandler;
     private SlicefWarning warnings = new SlicefWarning();
