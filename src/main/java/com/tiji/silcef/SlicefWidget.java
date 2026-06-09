@@ -24,6 +24,9 @@ public class SlicefWidget extends AbstractWidget {
     private final SlicefRenderState state;
 
     private static final java.awt.Component fakeComponent = new Label();
+    static {
+        fakeComponent.setVisible(true); // awt is awful
+    }
 
     public SlicefWidget(SlicefBrowser browser, int x, int y) {
         super(x, y, browser.getViewRect().width, browser.getViewRect().height, Component.literal("Slicef Browser Widget"));
@@ -102,13 +105,13 @@ public class SlicefWidget extends AbstractWidget {
                 0,
                 getModifiers(),
                 normalizeMouse(mouseX, getX()), normalizeMouse(mouseY, getY()),
+                0, 0,
                 0,
                 false,
                 0
         );
         browser.sendMouseEvent(cefEvent);
     }
-
 
     @Override
     public boolean mouseClicked(@NotNull MouseButtonEvent event, boolean isDoubleClick) {
@@ -121,11 +124,11 @@ public class SlicefWidget extends AbstractWidget {
                 0,
                 getModifiers(),
                 normalizeMouse(event.x(), getX()), normalizeMouse(event.y(), getY()),
+                0, 0,
                 isDoubleClick ? 2 : 1,
                 false,
                 fixMouse(event.button())
         );
-        browser.setFocus(true);
         browser.sendMouseEvent(cefEvent);
 
         return true;
@@ -142,6 +145,7 @@ public class SlicefWidget extends AbstractWidget {
                 0,
                 getModifiers(),
                 normalizeMouse(event.x(), getX()), normalizeMouse(event.y(), getY()),
+                0, 0,
                 0,
                 false,
                 fixMouse(event.button())
@@ -233,5 +237,12 @@ public class SlicefWidget extends AbstractWidget {
         browser.sendKeyEvent(cefEvent);
 
         return true;
+    }
+
+    @Override
+    public void setFocused(boolean focused) {
+        super.setFocused(focused);
+
+        browser.setFocus(focused);
     }
 }
