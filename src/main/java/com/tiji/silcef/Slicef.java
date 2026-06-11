@@ -25,6 +25,7 @@ import java.util.ArrayList;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 
+import static org.lwjgl.glfw.GLFW.glfwExtensionSupported;
 import static org.lwjgl.opengl.WGLNVDXInterop.*;
 
 public class Slicef implements ModInitializer {
@@ -79,8 +80,10 @@ public class Slicef implements ModInitializer {
     }
 
     public void start(Minecraft mc) {
-        if (!System.getProperty("os.name").contains("Windows")) {
-            LOGGER.warn("Slicef doesn't support this platform for accelerated painting. This won't stop you from using this, but note that rendering might stutter.");
+        String noAccelerationWarning = "This won't stop you from using this, but note that rendering might stutter.";
+        boolean isWindows = System.getProperty("os.name").contains("Windows");
+        if (!isWindows) {
+            LOGGER.warn("Slicef doesn't support this platform for accelerated painting. {}", noAccelerationWarning);
             isAcceleratedPaintAllowed = false;
         }
 
@@ -99,8 +102,15 @@ public class Slicef implements ModInitializer {
 
         CompletableFuture<Void> future = new CompletableFuture<>();
         mc.execute(() -> {
+            // Last check on render thread
+            if (isWindows && !glfwExtensionSupported("WGL_NV_DX_interop2")) {
+                LOGGER.warn("WGL_NV_DX_interop2 extension is not supported on this system. " +
+                        "If your GPU supports it, check if you have appropriate drivers installed. {}", noAccelerationWarning);
+                isAcceleratedPaintAllowed = false;
+            }
+
             // These needs to be called in render thread
-            if (isAcceleratedPaintAllowed) {
+            if (isWindows && isAcceleratedPaintAllowed) {
                 try {
                     D3D11.initialize();
                     getDXDevice();
