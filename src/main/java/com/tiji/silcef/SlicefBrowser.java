@@ -70,7 +70,7 @@ public class SlicefBrowser extends CefBrowser_N implements CefRenderHandler {
 
     @Override
     public Component getUIComponent() {
-        throw new UnsupportedOperationException("Why would you do this...");
+        return null;
     }
 
     @Override
