@@ -2,8 +2,6 @@ package com.tiji.silcef.internals;
 
 import com.mojang.blaze3d.platform.cursor.CursorType;
 import com.tiji.silcef.AbstractTexture;
-import com.tiji.silcef.Slicef;
-import com.tiji.silcef.internals.win.DxTexture;
 import net.minecraft.client.Minecraft;
 import org.cef.browser.CefBrowser;
 import org.cef.browser.CefPaintEvent;
@@ -15,11 +13,7 @@ import org.lwjgl.BufferUtils;
 
 import java.awt.*;
 import java.nio.ByteBuffer;
-import java.util.Map;
-import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
-
-import static org.lwjgl.glfw.GLFW.*;
 
 public class RenderHandlerImpl implements CefRenderHandler {
     public Rectangle popupBounds, mcPopupBounds;
@@ -29,13 +23,13 @@ public class RenderHandlerImpl implements CefRenderHandler {
     private boolean wasPreviousPaintAccelerated = true;
 
     private SoftwareTexture softwareTexture;
-    private DxTexture hardwareTexture;
+    private final AcceleratedPaintHandler acceleratedPaintHandler = AcceleratedPaintHandler.getInstance();
 
     private boolean popupVisible;
 
     public void destroy() {
         softwareTexture.destroy();
-        hardwareTexture.destroy();
+        acceleratedPaintHandler.destroy();
     }
 
     @Override
@@ -87,16 +81,7 @@ public class RenderHandlerImpl implements CefRenderHandler {
     public void onAcceleratedPaint(CefBrowser cefBrowser, boolean b, Rectangle[] rectangles, CefAcceleratedPaintInfo info) {
         wasPreviousPaintAccelerated = true;
 
-        if (hardwareTexture == null) return;
-
-        CompletableFuture<Void> future = new CompletableFuture<>();
-
-        Minecraft.getInstance().execute(() -> {
-            hardwareTexture.onPaint(info); // Doesn't throw exception; if it does, dont worry its gonna crash the JVM
-            future.complete(null);
-        });
-
-        future.join();
+        acceleratedPaintHandler.onPaint(info);
     }
 
     @Override
@@ -131,9 +116,9 @@ public class RenderHandlerImpl implements CefRenderHandler {
         this.mcHeight = height;
 
         if (softwareTexture != null) softwareTexture.destroy();
-        if (hardwareTexture != null) hardwareTexture.destroy();
-        hardwareTexture = new DxTexture(this.width, this.height);
         softwareTexture = new SoftwareTexture(this.width, this.height);
+
+        acceleratedPaintHandler.onResize(this.width, this.height);
     }
 
     public Rectangle getMinecraftBounds() {
@@ -141,7 +126,7 @@ public class RenderHandlerImpl implements CefRenderHandler {
     }
 
     public AbstractTexture getTexture() {
-        return wasPreviousPaintAccelerated ? hardwareTexture : softwareTexture;
+        return wasPreviousPaintAccelerated ? acceleratedPaintHandler.getTexture() : softwareTexture;
     }
 
     // Does nothing
