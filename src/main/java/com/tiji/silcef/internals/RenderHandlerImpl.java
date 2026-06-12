@@ -25,6 +25,8 @@ public class RenderHandlerImpl implements CefRenderHandler {
     private SoftwareTexture softwareTexture;
     private final AcceleratedPaintHandler acceleratedPaintHandler = AcceleratedPaintHandler.getInstance();
 
+    private boolean ignorePaint = false;
+
     private boolean popupVisible;
 
     public void destroy() {
@@ -36,12 +38,13 @@ public class RenderHandlerImpl implements CefRenderHandler {
     public void onPaint(CefBrowser cefBrowser, boolean popup, Rectangle[] dirtyRects, ByteBuffer pixels, int w, int h) {
         wasPreviousPaintAccelerated = false;
 
+        if (ignorePaint) return;
         if (softwareTexture == null) return;
         if (dirtyRects.length == 0) return;
 
         ByteBuffer safeBuffer = BufferUtils.createByteBuffer(pixels.remaining());
         safeBuffer.put(pixels);
-        Minecraft.getInstance().execute(() -> softwareTexture.onPaint(dirtyRects, safeBuffer, w, h));
+        Minecraft.getInstance().execute(() -> softwareTexture.onPaint(dirtyRects, safeBuffer, w));
     }
 
     @Override
@@ -81,11 +84,14 @@ public class RenderHandlerImpl implements CefRenderHandler {
     public void onAcceleratedPaint(CefBrowser cefBrowser, boolean b, Rectangle[] rectangles, CefAcceleratedPaintInfo info) {
         wasPreviousPaintAccelerated = true;
 
+        if (ignorePaint) return;
+
         acceleratedPaintHandler.onPaint(info);
     }
 
     @Override
     public Rectangle getViewRect(CefBrowser cefBrowser) {
+        ignorePaint = false;
         return new Rectangle(0, 0, width, height);
     }
 
@@ -114,6 +120,8 @@ public class RenderHandlerImpl implements CefRenderHandler {
 
         this.mcWidth = width;
         this.mcHeight = height;
+
+        ignorePaint = true;
 
         if (softwareTexture != null) softwareTexture.destroy();
         softwareTexture = new SoftwareTexture(this.width, this.height);

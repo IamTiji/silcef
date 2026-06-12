@@ -63,9 +63,7 @@ public class SoftwareTexture extends AbstractTexture {
     }
 
 
-    public void onPaint(Rectangle[] dirtyRects, ByteBuffer pixels, int width, int height) {
-        if (width != this.width && height != this.height) return; // Sometimes when we resize the browser, it sends frame with different size than we requested
-
+    public void onPaint(Rectangle[] dirtyRects, ByteBuffer pixels, int width) {
         if (destroyed) throw new IllegalStateException("Texture has already been destroyed");
 
         glBindTexture(GL_TEXTURE_2D, GLTextureId);
