@@ -147,6 +147,8 @@ public class DxTexture extends AbstractTexture {
         );
 
         wglDXUnlockObjectsNV(WinAcceleratedPaintHandler.DXDevice, handlePointer);
+
+        wglDXUnregisterObjectNV(WinAcceleratedPaintHandler.DXDevice, handle);
     }
 
     @Override
