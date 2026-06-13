@@ -44,7 +44,7 @@ public class DxTexture extends AbstractTexture {
 
     public static void destroyAll() {
         for (SharedTexture sharedTexture : PREINIT_INSTANCES.values()) {
-            wglDXUnregisterObjectNV(Slicef.DXDevice, sharedTexture.handle);
+            wglDXUnregisterObjectNV(WinAcceleratedPaintHandler.DXDevice, sharedTexture.handle);
             glDeleteTextures(sharedTexture.opengl);
         }
         PREINIT_INSTANCES.clear();
@@ -98,7 +98,7 @@ public class DxTexture extends AbstractTexture {
         int srcTextureId;
         long handle;
         PointerByReference texture = new PointerByReference();
-        int hr = Slicef.DXDeviceContainer.openSharedResource1(
+        int hr = WinAcceleratedPaintHandler.DXDeviceContainer.openSharedResource1(
                 new WinNT.HANDLE(Pointer.createConstant(info.shared_texture_handle)),
                 new Guid.REFIID(Guid.IID.fromString("{6F15AAF2-D208-4E89-9AB4-489535D34F9C}").getPointer()),
                 texture
@@ -119,7 +119,7 @@ public class DxTexture extends AbstractTexture {
         // nvidia, this wasn't on manual
         wglDXSetResourceShareHandleNV(pdxResource, info.shared_texture_handle);
         handle = wglDXRegisterObjectNV(
-                Slicef.DXDevice,
+                WinAcceleratedPaintHandler.DXDevice,
                 pdxResource,
                 srcTextureId,
                 GL_TEXTURE_2D,
@@ -131,7 +131,7 @@ public class DxTexture extends AbstractTexture {
         }
 
         PointerBuffer handlePointer = BufferUtils.createPointerBuffer(1).put(handle).flip();
-        wglDXLockObjectsNV(Slicef.DXDevice, handlePointer);
+        wglDXLockObjectsNV(WinAcceleratedPaintHandler.DXDevice, handlePointer);
 
         // this probably dont work on macos but future me will fix it
         glCopyImageSubData(
@@ -146,7 +146,7 @@ public class DxTexture extends AbstractTexture {
                 width, height, 1
         );
 
-        wglDXUnlockObjectsNV(Slicef.DXDevice, handlePointer);
+        wglDXUnlockObjectsNV(WinAcceleratedPaintHandler.DXDevice, handlePointer);
     }
 
     @Override

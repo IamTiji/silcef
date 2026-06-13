@@ -1,12 +1,10 @@
 package com.tiji.silcef;
 
 import com.mojang.brigadier.arguments.StringArgumentType;
-import com.sun.jna.Pointer;
-import com.sun.jna.ptr.PointerByReference;
 import com.tiji.silcef.internals.*;
 import com.tiji.silcef.internals.win.D3D11;
-import com.tiji.silcef.internals.win.D3D11Device;
 import com.tiji.silcef.internals.win.DxTexture;
+import com.tiji.silcef.internals.win.WinAcceleratedPaintHandler;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
@@ -39,12 +37,9 @@ public class Slicef implements ModInitializer {
 
     public static boolean isFallbackLang = false;
     public static boolean isLoaded = false;
-    public static boolean isAcceleratedPaintAllowed = true;
+    public static boolean isAcceleratedPaintAllowed = false;
 
     private static ArrayList<Runnable> scheduledTasks = new ArrayList<>();
-
-    public static long DXDevice;
-    public static D3D11Device DXDeviceContainer;
 
     private static CefApp app;
     private static CefClient client;
@@ -72,7 +67,7 @@ public class Slicef implements ModInitializer {
         });
 
         ClientLifecycleEvents.CLIENT_STOPPING.register((unused) -> {
-            wglDXCloseDeviceNV(DXDevice);
+            wglDXCloseDeviceNV(WinAcceleratedPaintHandler.DXDevice);
             DxTexture.destroyAll();
             client.dispose();
             app.dispose();
@@ -80,13 +75,6 @@ public class Slicef implements ModInitializer {
     }
 
     public void start(Minecraft mc) {
-        String noAccelerationWarning = "This won't stop you from using this, but note that rendering might stutter.";
-        boolean isWindows = System.getProperty("os.name").contains("Windows");
-        if (!isWindows) {
-            LOGGER.warn("Slicef doesn't support this platform for accelerated painting. {}", noAccelerationWarning);
-            isAcceleratedPaintAllowed = false;
-        }
-
         System.setProperty("java.awt.headless", "false"); // Why java...
 
         LOGGER.info("Loading natives from {}", NATIVE_PATH);
@@ -100,25 +88,16 @@ public class Slicef implements ModInitializer {
             }
         });
 
+        String noAccelerationWarning = "This won't stop you from using this, but note that rendering might stutter.";
         CompletableFuture<Void> future = new CompletableFuture<>();
         mc.execute(() -> {
-            // Last check on render thread
-            if (isWindows && !glfwExtensionSupported("WGL_NV_DX_interop2")) {
-                LOGGER.warn("WGL_NV_DX_interop2 extension is not supported on this system. " +
-                        "If your GPU supports it, check if you have appropriate drivers installed. {}", noAccelerationWarning);
-                isAcceleratedPaintAllowed = false;
-            }
+            try {
+                isAcceleratedPaintAllowed = AcceleratedPaintHandler.initialize();
+            } catch (Throwable e) { LOGGER.error(e.getMessage()); }
 
             // These needs to be called in render thread
-            if (isWindows && isAcceleratedPaintAllowed) {
-                try {
-                    D3D11.initialize();
-                    getDXDevice();
-                    LOGGER.info("DirectX device is linked");
-                } catch (Throwable t) {
-                    LOGGER.error("Failed to link DirectX device", t);
-                    isAcceleratedPaintAllowed = false;
-                }
+            if (!isAcceleratedPaintAllowed) {
+                LOGGER.warn("Failed to initialize accelerated painting. {}", noAccelerationWarning);
             }
             future.complete(null);
         });
@@ -178,30 +157,6 @@ public class Slicef implements ModInitializer {
         else {
             scheduledTasks.add(runnable);
         }
-    }
-
-    private static void getDXDevice() {
-        PointerByReference ppDevice = new PointerByReference();
-        PointerByReference ppContext = new PointerByReference();
-
-        int hr = D3D11.get().D3D11CreateDevice(
-                null,
-                D3D11.D3D_DRIVER_TYPE_HARDWARE,
-                null,
-                2,
-                null, 0,
-                D3D11.D3D11_SDK_VERSION,
-                ppDevice,
-                null,
-                ppContext
-        );
-
-        if (hr != 0) throw new RuntimeException("Failed to create DirectX device");
-
-        // I should probably cast it to D3D11Device1 but every additional methods are pain to add
-
-        DXDevice = wglDXOpenDeviceNV(Pointer.nativeValue(ppDevice.getValue()));
-        DXDeviceContainer = new D3D11Device(ppDevice.getValue());
     }
 
     public static @NotNull String getUniqueName(String type) {

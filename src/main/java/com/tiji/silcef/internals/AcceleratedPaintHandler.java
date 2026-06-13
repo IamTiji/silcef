@@ -30,4 +30,14 @@ public interface AcceleratedPaintHandler {
         }
         return new VoidHandler();
     }
+
+    static boolean initialize() {
+        String os = System.getProperty("os.name").toLowerCase();
+
+        if (os.contains("win")) {
+            WinAcceleratedPaintHandler.initialize();
+            return true;
+        }
+        return false;
+    }
 }
