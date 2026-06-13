@@ -133,7 +133,6 @@ public class DxTexture extends AbstractTexture {
         PointerBuffer handlePointer = BufferUtils.createPointerBuffer(1).put(handle).flip();
         wglDXLockObjectsNV(WinAcceleratedPaintHandler.DXDevice, handlePointer);
 
-        // this probably dont work on macos but future me will fix it
         glCopyImageSubData(
                 srcTextureId,
                 GL_TEXTURE_2D,
