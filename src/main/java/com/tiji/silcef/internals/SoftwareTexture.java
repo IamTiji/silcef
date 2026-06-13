@@ -6,6 +6,7 @@ import com.mojang.blaze3d.opengl.GlTextureView;
 import com.mojang.blaze3d.textures.*;
 import com.tiji.silcef.AbstractTexture;
 import com.tiji.silcef.Slicef;
+import org.apache.commons.lang3.time.StopWatch;
 
 import java.awt.*;
 import java.nio.ByteBuffer;
@@ -62,8 +63,12 @@ public class SoftwareTexture extends AbstractTexture {
         );
     }
 
-
+    private static final boolean shouldLogTime = false;
+    private final StopWatch timer = StopWatch.create();
     public void onPaint(Rectangle[] dirtyRects, ByteBuffer pixels, int width) {
+        if (shouldLogTime)
+            timer.start();
+
         if (destroyed) throw new IllegalStateException("Texture has already been destroyed");
 
         glBindTexture(GL_TEXTURE_2D, GLTextureId);
@@ -81,6 +86,12 @@ public class SoftwareTexture extends AbstractTexture {
             glTexSubImage2D(GL_TEXTURE_2D, 0, x, y, w, h, GL_RGBA, GL_UNSIGNED_BYTE, pixels);
         }
         glPixelStorei(GL_UNPACK_ROW_LENGTH, 0);
+
+        if (shouldLogTime) {
+            timer.stop();
+            Slicef.LOGGER.info("Painting took {} ms", timer.getTime());
+            timer.reset();
+        }
     }
 
     @Override

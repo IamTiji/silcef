@@ -6,6 +6,7 @@ import com.tiji.silcef.AbstractTexture;
 import com.tiji.silcef.Slicef;
 import com.tiji.silcef.internals.AcceleratedPaintHandler;
 import net.minecraft.client.Minecraft;
+import org.apache.commons.lang3.time.StopWatch;
 import org.cef.misc.CefAcceleratedPaintInfo;
 
 import java.util.concurrent.CompletableFuture;
@@ -18,8 +19,13 @@ public class WinAcceleratedPaintHandler implements AcceleratedPaintHandler {
     public static D3D11Device DXDeviceContainer;
     private DxTexture hardwareTexture;
 
+    private static final boolean shouldLogTime = false;
+    private final StopWatch timer = StopWatch.create();
     @Override
     public void onPaint(CefAcceleratedPaintInfo info) {
+        if (shouldLogTime)
+            timer.start();
+
         if (hardwareTexture == null) return;
 
         CompletableFuture<Void> future = new CompletableFuture<>();
@@ -30,6 +36,12 @@ public class WinAcceleratedPaintHandler implements AcceleratedPaintHandler {
         });
 
         future.join();
+
+        if (shouldLogTime) {
+            timer.stop();
+            Slicef.LOGGER.info("Painting took {} ms", timer.getTime());
+            timer.reset();
+        }
     }
 
     @Override
