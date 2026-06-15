@@ -1,4 +1,4 @@
-package com.tiji.silcef.internals;
+package com.tiji.silcef.internals.utils;
 
 import com.mojang.blaze3d.opengl.GlTexture;
 import com.mojang.blaze3d.textures.TextureFormat;

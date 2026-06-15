@@ -9,7 +9,7 @@ import com.sun.jna.platform.win32.WinNT;
 import com.sun.jna.ptr.PointerByReference;
 import com.tiji.silcef.AbstractTexture;
 import com.tiji.silcef.Slicef;
-import com.tiji.silcef.internals.GlTextureWrapper;
+import com.tiji.silcef.internals.utils.GlTextureWrapper;
 import org.cef.misc.CefAcceleratedPaintInfo;
 import org.lwjgl.BufferUtils;
 import org.lwjgl.PointerBuffer;

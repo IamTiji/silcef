@@ -1,4 +1,4 @@
-package com.tiji.silcef.internals;
+package com.tiji.silcef.internals.utils;
 
 import java.awt.event.KeyEvent;
 import java.util.Arrays;

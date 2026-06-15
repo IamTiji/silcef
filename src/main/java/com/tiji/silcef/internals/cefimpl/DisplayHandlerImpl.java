@@ -1,4 +1,4 @@
-package com.tiji.silcef.internals;
+package com.tiji.silcef.internals.cefimpl;
 
 import com.tiji.silcef.SlicefBrowser;
 import com.tiji.silcef.TooltipStatus;

@@ -1,8 +1,8 @@
 package com.tiji.silcef;
 
 import com.mojang.blaze3d.platform.cursor.CursorType;
-import com.tiji.silcef.internals.DisplayHandlerImpl;
-import com.tiji.silcef.internals.RenderHandlerImpl;
+import com.tiji.silcef.internals.cefimpl.DisplayHandlerImpl;
+import com.tiji.silcef.internals.cefimpl.RenderHandlerImpl;
 import com.tiji.silcef.internals.SoftwareTexture;
 import org.cef.CefBrowserSettings;
 import org.cef.CefClient;

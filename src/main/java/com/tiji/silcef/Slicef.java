@@ -2,7 +2,9 @@ package com.tiji.silcef;
 
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.tiji.silcef.internals.*;
-import com.tiji.silcef.internals.win.D3D11;
+import com.tiji.silcef.internals.cefimpl.DisplayHandlerImpl;
+import com.tiji.silcef.internals.cefimpl.RenderHandlerImpl;
+import com.tiji.silcef.internals.utils.LocaleHelper;
 import com.tiji.silcef.internals.win.DxTexture;
 import com.tiji.silcef.internals.win.WinAcceleratedPaintHandler;
 import net.fabricmc.api.ModInitializer;

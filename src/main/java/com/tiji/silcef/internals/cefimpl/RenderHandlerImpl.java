@@ -1,7 +1,10 @@
-package com.tiji.silcef.internals;
+package com.tiji.silcef.internals.cefimpl;
 
 import com.mojang.blaze3d.platform.cursor.CursorType;
 import com.tiji.silcef.AbstractTexture;
+import com.tiji.silcef.internals.AcceleratedPaintHandler;
+import com.tiji.silcef.internals.CursorConverter;
+import com.tiji.silcef.internals.SoftwareTexture;
 import net.minecraft.client.Minecraft;
 import org.cef.browser.CefBrowser;
 import org.cef.browser.CefPaintEvent;

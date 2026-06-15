@@ -6,6 +6,7 @@ import com.mojang.blaze3d.opengl.GlTextureView;
 import com.mojang.blaze3d.textures.*;
 import com.tiji.silcef.AbstractTexture;
 import com.tiji.silcef.Slicef;
+import com.tiji.silcef.internals.utils.GlTextureWrapper;
 import org.apache.commons.lang3.time.StopWatch;
 
 import java.awt.*;

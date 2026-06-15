@@ -1,8 +1,8 @@
 package com.tiji.silcef;
 
 import com.mojang.blaze3d.platform.cursor.CursorType;
-import com.tiji.silcef.internals.KeycodeUtils;
-import com.tiji.silcef.internals.UnsafeFieldOverride;
+import com.tiji.silcef.internals.utils.KeycodeUtils;
+import com.tiji.silcef.internals.utils.UnsafeFieldOverride;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.AbstractWidget;
