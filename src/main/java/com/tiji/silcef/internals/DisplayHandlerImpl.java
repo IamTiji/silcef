@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.HashSet;
+import java.util.Vector;
 
 public class DisplayHandlerImpl extends CefDisplayHandlerAdapter {
     private static final Logger LOGGER = LoggerFactory.getLogger("Slicef Browser");
@@ -78,6 +79,20 @@ public class DisplayHandlerImpl extends CefDisplayHandlerAdapter {
             } else {
                 slicefBrowser.statusText = value;
             }
+        }
+    }
+
+    @Override
+    public void onLoadProgressChange(CefBrowser browser, double progress) {
+        if (browser instanceof SlicefBrowser slicefBrowser) {
+            slicefBrowser.loadProgress = progress;
+        }
+    }
+
+    @Override
+    public void onFaviconURLChange(CefBrowser browser, Vector<String> urls) {
+        if (browser instanceof SlicefBrowser slicefBrowser) {
+            slicefBrowser.faviconUrl = urls.getFirst();
         }
     }
 }

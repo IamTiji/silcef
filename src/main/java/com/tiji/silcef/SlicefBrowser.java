@@ -25,6 +25,8 @@ public class SlicefBrowser extends CefBrowser_N implements CefRenderHandler {
     public volatile String currentTitle;
     public volatile TooltipStatus currentTooltip = TooltipStatus.ofInvisible();
     public volatile String statusText;
+    public volatile double loadProgress;
+    public volatile String faviconUrl;
 
     private final RenderHandlerImpl renderHandler;
     private SlicefWarning warnings = new SlicefWarning();

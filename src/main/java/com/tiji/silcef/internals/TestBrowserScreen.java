@@ -64,6 +64,11 @@ public class TestBrowserScreen extends Screen {
             guiGraphics.drawString(font, warning.message(), 20, y, 0xFFFFFF00);
             y += font.lineHeight + 2;
         }
+
+        y += font.lineHeight + 2;
+        guiGraphics.drawString(font, browser.faviconUrl, 20, y, 0xFFFFFF00);
+        y += font.lineHeight + 2;
+        guiGraphics.drawString(font, String.valueOf(browser.loadProgress), 20, y, 0xFFFFFF00);
     }
 
     @Override
