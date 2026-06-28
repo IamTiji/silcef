@@ -119,6 +119,14 @@ public class SlicefBrowser extends CefBrowser_N implements CefRenderHandler {
         return renderHandler.getCurrentCursor();
     }
 
+    public void setPermissionHandler(Consumer<PermissionRequest> permissionHandler) {
+        this.permissionHandler = permissionHandler;
+    }
+
+    private Consumer<PermissionRequest> permissionHandler;
+    public void onPermissionRequest(PermissionRequest request) {
+        permissionHandler.accept(request);
+    }
 
 
     // Just so that JCEF finds it

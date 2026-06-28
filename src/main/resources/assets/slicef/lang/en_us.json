@@ -14,5 +14,36 @@
   "slicef.warnings.unsupported_language.details": "Although this won't stop from this mod from working, this will make browser run in English, not in your language.",
 
   "slicef.warnings.accelerated_paint_no_support": "Slicef does not support accelerated paint on this platform.",
-  "slicef.warnings.accelerated_paint_no_support.details": "This will not stop you from using this mod, but note that rendering will stutter."
+  "slicef.warnings.accelerated_paint_no_support.details": "This will not stop you from using this mod, but note that rendering will stutter.",
+
+  "slicef.permission.prompt_heading": "%s wants to:",
+
+  "slicef.permission.type.AR_SESSION": "Start an AR session",
+  "slicef.permission.type.CAMERA_PAN_TILT_ZOOM": "Physically move your camara",
+  "slicef.permission.type.CAMERA_STREAM": "Access your camera",
+  "slicef.permission.type.CAPTURED_SURFACE_CONTROL": "Control other sites",
+  "slicef.permission.type.CLIPBOARD": "Access your clipboard",
+  "slicef.permission.type.TOP_LEVEL_STORAGE_ACCESS": "Access data from its containing website",
+  "slicef.permission.type.DISK_QUOTA": "Use extra storage",
+  "slicef.permission.type.LOCAL_FONTS": "Access what fonts you have installed",
+  "slicef.permission.type.GEOLOCATION": "Access your location",
+  "slicef.permission.type.HAND_TRACKING": "Track your hands",
+  "slicef.permission.type.IDENTITY_PROVIDER": "Use external identity provider",
+  "slicef.permission.type.IDLE_DETECTION": "Detect your idle state",
+  "slicef.permission.type.MIC_STREAM": "Use microphone",
+  "slicef.permission.type.MIDI_SYSEX": "Access MIDI devices",
+  "slicef.permission.type.MULTIPLE_DOWNLOADS": "Download multiple files at once",
+  "slicef.permission.type.NOTIFICATIONS": "Send notifications",
+  "slicef.permission.type.KEYBOARD_LOCK": "Lock your keyboard",
+  "slicef.permission.type.POINTER_LOCK": "Lock your mouse",
+  "slicef.permission.type.PROTECTED_MEDIA_IDENTIFIER": "Use DRM for protected contents",
+  "slicef.permission.type.REGISTER_PROTOCOL_HANDLER": "Handle special links by itself",
+  "slicef.permission.type.STORAGE_ACCESS": "Access data from other websites",
+  "slicef.permission.type.VR_SESSION": "Start a VR session",
+  "slicef.permission.type.WEB_APP_INSTALLATION": "Install itself as an app",
+  "slicef.permission.type.WINDOW_MANAGEMENT": "Access your monitor configuration",
+  "slicef.permission.type.FILE_SYSTEM_ACCESS": "Access files on your device",
+  "slicef.permission.type.LOCAL_NETWORK_ACCESS": "Access devices on your local network",
+  "slicef.permission.type.LOCAL_NETWORK": "Access local service on your device",
+  "slicef.permission.type.LOOPBACK_NETWORK": "Access other software on your device"
 }

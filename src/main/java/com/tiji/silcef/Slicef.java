@@ -3,8 +3,10 @@ package com.tiji.silcef;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.tiji.silcef.internals.*;
 import com.tiji.silcef.internals.cefimpl.DisplayHandlerImpl;
+import com.tiji.silcef.internals.cefimpl.PermissionHandlerImpl;
 import com.tiji.silcef.internals.cefimpl.RenderHandlerImpl;
 import com.tiji.silcef.internals.utils.LocaleHelper;
+import com.tiji.silcef.internals.utils.PermissionSentenceUtils;
 import com.tiji.silcef.internals.win.DxTexture;
 import com.tiji.silcef.internals.win.WinAcceleratedPaintHandler;
 import net.fabricmc.api.ModInitializer;
@@ -25,7 +27,6 @@ import java.util.ArrayList;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 
-import static org.lwjgl.glfw.GLFW.glfwExtensionSupported;
 import static org.lwjgl.opengl.WGLNVDXInterop.*;
 
 public class Slicef implements ModInitializer {
@@ -115,6 +116,7 @@ public class Slicef implements ModInitializer {
         settings.log_severity = CefSettings.LogSeverity.LOGSEVERITY_VERBOSE;
         settings.log_file = Path.of("./slicef/cef_log.log").toAbsolutePath().toString();
         String locale = mc.options.languageCode;
+        PermissionSentenceUtils.load(locale);
         settings.locale = LocaleHelper.getCEFLanguageCode(locale);
         isFallbackLang = !LocaleHelper.isSupported(locale);
 
@@ -133,6 +135,7 @@ public class Slicef implements ModInitializer {
         app = CefApp.getInstance(argsArray, settings);
         client = app.createClient();
         client.addDisplayHandler(new DisplayHandlerImpl());
+        client.addPermissionHandler(new PermissionHandlerImpl());
 
         isLoaded = true;
         scheduledTasks.forEach(Runnable::run);

@@ -1,9 +1,6 @@
 package com.tiji.silcef.internals;
 
-import com.tiji.silcef.Slicef;
-import com.tiji.silcef.SlicefBrowser;
-import com.tiji.silcef.SlicefWarning;
-import com.tiji.silcef.SlicefWidget;
+import com.tiji.silcef.*;
 import net.fabricmc.fabric.api.client.screen.v1.ScreenMouseEvents;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
@@ -12,6 +9,7 @@ import net.minecraft.client.gui.screens.inventory.tooltip.DefaultTooltipPosition
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
 import net.minecraft.util.FormattedCharSequence;
+import org.cef.handler.CefPermissionRequestResult;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
@@ -24,6 +22,7 @@ public class TestBrowserScreen extends Screen {
         super(Component.empty());
 
         browser = Slicef.getBrowser(url);
+        browser.setPermissionHandler(this::permissionHandler);
         widget = new SlicefWidget(browser, 0, 0);
         widget.setFocused(true);
     }
@@ -69,6 +68,11 @@ public class TestBrowserScreen extends Screen {
         guiGraphics.drawString(font, browser.faviconUrl, 20, y, 0xFFFFFF00);
         y += font.lineHeight + 2;
         guiGraphics.drawString(font, String.valueOf(browser.loadProgress), 20, y, 0xFFFFFF00);
+    }
+
+    private void permissionHandler(PermissionRequest req) {
+        Slicef.LOGGER.info("Web Permission request: {}", req.getAsSingularSentence());
+        req.resolve(CefPermissionRequestResult.ACCEPT);
     }
 
     @Override

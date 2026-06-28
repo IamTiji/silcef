@@ -1,0 +1,76 @@
+// Sentence structure for permission requests
+
+{
+  // word groups, in order of permission definition in CEF
+  "verb": {
+    "AR_SESSION"                : "start",
+    "CAMERA_PAN_TILT_ZOOM"      : "control",
+    "CAMERA_STREAM"             : "access",
+    "CAPTURED_SURFACE_CONTROL"  : "control",
+    "CLIPBOARD"                 : "access",
+    "TOP_LEVEL_STORAGE_ACCESS"  : "access",
+    "DISK_QUOTA"                : "use",
+    "LOCAL_FONTS"               : "access",
+    "GEOLOCATION"               : "know",
+    "HAND_TRACKING"             : "track",
+    "IDENTITY_PROVIDER"         : "sign",
+    "IDLE_DETECTION"            : "know",
+    "MIC_STREAM"                : "access",
+    "MIDI_SYSEX"                : "access",
+    "MULTIPLE_DOWNLOADS"        : "download",
+    "NOTIFICATIONS"             : "send",
+    "KEYBOARD_LOCK"             : "lock",
+    "POINTER_LOCK"              : "lock",
+    "PROTECTED_MEDIA_IDENTIFIER": "use",
+    "REGISTER_PROTOCOL_HANDLER" : "handle",
+    "STORAGE_ACCESS"            : "access",
+    "VR_SESSION"                : "start",
+    "WEB_APP_INSTALLATION"      : "install",
+    "WINDOW_MANAGEMENT"         : "access",
+    "FILE_SYSTEM_ACCESS"        : "edit",
+    "LOCAL_NETWORK_ACCESS"      : "access",
+    "LOCAL_NETWORK"             : "access",
+    "LOOPBACK_NETWORK"          : "access"
+  },
+
+  "rest": {
+    "AR_SESSION"                : "an AR session",
+    "CAMERA_PAN_TILT_ZOOM"      : "your camera's physical orientation",
+    "CAMERA_STREAM"             : "your camera",
+    "CAPTURED_SURFACE_CONTROL"  : "other tabs",
+    "CLIPBOARD"                 : "your clipboard",
+    "TOP_LEVEL_STORAGE_ACCESS"  : "the data by its containing website",
+    "DISK_QUOTA"                : "extra storage",
+    "LOCAL_FONTS"               : "fonts on your computer",
+    "GEOLOCATION"               : "your location",
+    "HAND_TRACKING"             : "your hand movements",
+    "IDENTITY_PROVIDER"         : "you in using external account provider",
+    "IDLE_DETECTION"            : "your idle state",
+    "MIC_STREAM"                : "your microphone",
+    "MIDI_SYSEX"                : "your MIDI devices",
+    "MULTIPLE_DOWNLOADS"        : "multiple files simultaneously",
+    "NOTIFICATIONS"             : "notifications",
+    "KEYBOARD_LOCK"             : "keyboard shortcuts",
+    "POINTER_LOCK"              : "your mouse",
+    "PROTECTED_MEDIA_IDENTIFIER": "DRM to play protected contents",
+    "REGISTER_PROTOCOL_HANDLER" : "special links by itself",
+    "STORAGE_ACCESS"            : "data from other websites",
+    "VR_SESSION"                : "a VR session",
+    "WEB_APP_INSTALLATION"      : "itself as a app on your device",
+    "WINDOW_MANAGEMENT"         : "your monitor configuration",
+    "FILE_SYSTEM_ACCESS"        : "your files on your device",
+    "LOCAL_NETWORK_ACCESS"      : "other devices on your local network",
+    "LOCAL_NETWORK"             : "other devices on your local network",
+    "LOOPBACK_NETWORK"          : "local software"
+  },
+
+  "format": {
+    "one": "%s",
+    "two": "%s and %s",
+    "three": "%s, %s and %s",
+
+    "verb_and_rest": "%s %s", // replace this for language with different order
+
+    "full": "%s wants to %s"
+  }
+}

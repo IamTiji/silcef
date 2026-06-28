@@ -1,0 +1,74 @@
+// Sentence structure for permission requests (Korean)
+{
+  // 단어 그룹 (CEF 권한 정의 순서)
+  "verb": {
+    "AR_SESSION"                : "을 시작",
+    "CAMERA_PAN_TILT_ZOOM"      : "을 제어",
+    "CAMERA_STREAM"             : "에 액세스",
+    "CAPTURED_SURFACE_CONTROL"  : "을 제어",
+    "CLIPBOARD"                 : "에 액세스",
+    "TOP_LEVEL_STORAGE_ACCESS"  : "에 액세스",
+    "DISK_QUOTA"                : "을 사용",
+    "LOCAL_FONTS"               : "에 액세스",
+    "GEOLOCATION"               : "를 확인",
+    "HAND_TRACKING"             : "을 추적",
+    "IDENTITY_PROVIDER"         : "를 통한 로그인",
+    "IDLE_DETECTION"            : "를 확인",
+    "MIC_STREAM"                : "에 액세스",
+    "MIDI_SYSEX"                : "에 액세스",
+    "MULTIPLE_DOWNLOADS"        : "을 동시 다운로드",
+    "NOTIFICATIONS"             : "를 전송",
+    "KEYBOARD_LOCK"             : "를 잠금",
+    "POINTER_LOCK"              : "를 잠금",
+    "PROTECTED_MEDIA_IDENTIFIER": "을 사용",
+    "REGISTER_PROTOCOL_HANDLER" : "를 직접 처리",
+    "STORAGE_ACCESS"            : "에 액세스",
+    "VR_SESSION"                : "을 시작",
+    "WEB_APP_INSTALLATION"      : "을 기기에 설치",
+    "WINDOW_MANAGEMENT"         : "에 액세스",
+    "FILE_SYSTEM_ACCESS"        : "을 수정",
+    "LOCAL_NETWORK_ACCESS"      : "에 액세스",
+    "LOCAL_NETWORK"             : "에 액세스"
+  },
+
+  "rest": {
+    "AR_SESSION"                : "AR 세션",
+    "CAMERA_PAN_TILT_ZOOM"      : "카메라의 실제 방향",
+    "CAMERA_STREAM"             : "카메라",
+    "CAPTURED_SURFACE_CONTROL"  : "다른 탭",
+    "CLIPBOARD"                 : "클립보드",
+    "TOP_LEVEL_STORAGE_ACCESS"  : "해당 웹사이트가 포함한 데이터",
+    "DISK_QUOTA"                : "추가 저장 공간",
+    "LOCAL_FONTS"               : "컴퓨터의 글꼴",
+    "GEOLOCATION"               : "위치",
+    "HAND_TRACKING"             : "손 움직임",
+    "IDENTITY_PROVIDER"         : "외부 계정 제공업체",
+    "IDLE_DETECTION"            : "유휴 상태",
+    "MIC_STREAM"                : "마이크",
+    "MIDI_SYSEX"                : "MIDI 장치",
+    "MULTIPLE_DOWNLOADS"        : "여러 파일",
+    "NOTIFICATIONS"             : "알림",
+    "KEYBOARD_LOCK"             : "키보드 단축키",
+    "POINTER_LOCK"              : "마우스",
+    "PROTECTED_MEDIA_IDENTIFIER": "보호된 콘텐츠 재생을 위한 DRM",
+    "REGISTER_PROTOCOL_HANDLER" : "특수 링크",
+    "STORAGE_ACCESS"            : "다른 웹사이트의 데이터",
+    "VR_SESSION"                : "VR 세션",
+    "WEB_APP_INSTALLATION"      : "해당 앱",
+    "WINDOW_MANAGEMENT"         : "모니터 구성",
+    "FILE_SYSTEM_ACCESS"        : "기기의 파일",
+    "LOCAL_NETWORK_ACCESS"      : "로컬 네트워크의 다른 기기",
+    "LOCAL_NETWORK"             : "로컬 네트워크의 다른 기기",
+    "LOOPBACK_NETWORK"          : "로컬 소프트웨어"
+  },
+
+  "format": {
+    "one": "%s",
+    "two": "%s 및 %s",
+    "three": "%s, %s 및 %s",
+
+    "verb_and_rest": "%2$s%1$s",
+
+    "full": "%s에서 %s하려고 합니다."
+  }
+}
