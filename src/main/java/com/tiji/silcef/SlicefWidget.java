@@ -130,6 +130,7 @@ public class SlicefWidget extends AbstractWidget {
                 fixMouse(event.button())
         );
         browser.sendMouseEvent(cefEvent);
+        browser.setFocus(true);
 
         return true;
     }
