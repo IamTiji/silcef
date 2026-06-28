@@ -41,7 +41,7 @@ Note that building as a standalone mod file won't work right now.
 Contributions are welcomed! When making a pull request, make sure that your changes:
  - Fit overall vive of original code
  - Contains only necessary changes
- - Maybe write a small joke on comments so that people reading it will have a better day!
+ - Is not written by AI code
 
 Since this project is under heavy development, make sure that most of the contribution will get
 rejected, unless you somehow read off my brain.
