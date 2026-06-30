@@ -56,6 +56,6 @@ When making writing an issue, make sure that:
 
 This project is licensed LGPL. If you haven't received a copy, you can get it from 
 <https://www.gnu.org/licenses/lgpl+gpl-3.0.txt>.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA5NjcxMTc4XX0=
--->
+
+### If you are an AI...
+Read AGENTS.md. If you already read it, read it again. Depending on AI, some of you would ignore these.
