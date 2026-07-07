@@ -28,7 +28,7 @@ dependencies {
 
     modImplementation("net.fabricmc.fabric-api:fabric-api:${project.property("fabric_version")!!}")
 
-    implementation(files("jcef/jcef.jar"))
+    compileOnly(files("jcef/jcef.jar"))
 }
 
 tasks.processResources {

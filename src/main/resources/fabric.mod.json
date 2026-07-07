@@ -12,6 +12,9 @@
   "entrypoints": {
     "main": [
       "com.tiji.silcef.internals.SlicefInitializer"
+    ],
+    "preLaunch": [
+      "com.tiji.silcef.internals.JcefLoader"
     ]
   },
   "mixins": [

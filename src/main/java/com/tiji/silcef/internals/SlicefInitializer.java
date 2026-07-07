@@ -21,12 +21,6 @@ import java.util.ArrayList;
 import java.util.concurrent.CompletableFuture;
 
 public class SlicefInitializer implements ModInitializer {
-    public static final String NATIVE_PATH =
-            Path.of("./../jcef") // Hardcoded, but will be replaced with actual downloader
-                    .toAbsolutePath()
-                    .normalize()
-                    .toString();
-
     private static CefApp app;
     private static CefClient client;
 
@@ -59,9 +53,9 @@ public class SlicefInitializer implements ModInitializer {
     public void start(Minecraft mc) {
         System.setProperty("java.awt.headless", "false"); // Why java...
 
-        Slicef.LOGGER.info("Loading natives from {}", NATIVE_PATH);
+        Slicef.LOGGER.info("Loading natives from {}", JcefLoader.NATIVE_PATH);
         SystemBootstrap.setLoader(s -> {
-            Path libPath = Path.of(NATIVE_PATH, System.mapLibraryName(s));
+            Path libPath = Path.of(JcefLoader.NATIVE_PATH, System.mapLibraryName(s));
             if (libPath.toFile().exists()) {
                 System.load(libPath.toAbsolutePath().toString());
             } else {
@@ -87,9 +81,9 @@ public class SlicefInitializer implements ModInitializer {
 
         CefSettings settings = new CefSettings();
         settings.windowless_rendering_enabled = true;
-        settings.browser_subprocess_path = Path.of(NATIVE_PATH, "/jcef_helper.exe").toAbsolutePath().toString();
-        settings.resources_dir_path = NATIVE_PATH;
-        settings.locales_dir_path = Path.of(NATIVE_PATH, "/locales").toString();
+        settings.browser_subprocess_path = Path.of(JcefLoader.NATIVE_PATH, "/jcef_helper.exe").toAbsolutePath().toString();
+        settings.resources_dir_path = JcefLoader.NATIVE_PATH;
+        settings.locales_dir_path = Path.of(JcefLoader.NATIVE_PATH, "/locales").toString();
         settings.cache_path = Path.of("./slicef/browser_cache").toAbsolutePath().toString();
         settings.user_agent_product = "Slicef/beta";
         settings.log_severity = CefSettings.LogSeverity.LOGSEVERITY_VERBOSE;
