@@ -76,7 +76,7 @@ public class WinAcceleratedPaintHandler implements AcceleratedPaintHandler {
                 null,
                 D3D11.D3D_DRIVER_TYPE_HARDWARE,
                 null,
-                2,
+                0,
                 null, 0,
                 D3D11.D3D11_SDK_VERSION,
                 ppDevice,
@@ -84,7 +84,7 @@ public class WinAcceleratedPaintHandler implements AcceleratedPaintHandler {
                 ppContext
         );
 
-        if (hr != 0) throw new RuntimeException("DirectX initialization failed");
+        if (hr != 0) throw new RuntimeException("DirectX initialization failed: %s".formatted(hr));
 
         DXDevice = wglDXOpenDeviceNV(Pointer.nativeValue(ppDevice.getValue()));
         DXDeviceContainer = new D3D11Device(ppDevice.getValue());
