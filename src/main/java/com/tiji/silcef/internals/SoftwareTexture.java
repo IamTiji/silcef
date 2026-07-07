@@ -7,6 +7,7 @@ import com.mojang.blaze3d.textures.*;
 import com.tiji.silcef.AbstractTexture;
 import com.tiji.silcef.Slicef;
 import com.tiji.silcef.internals.utils.GlTextureWrapper;
+import com.tiji.silcef.internals.utils.NameUtils;
 import org.apache.commons.lang3.time.StopWatch;
 
 import java.awt.*;
@@ -30,7 +31,7 @@ public class SoftwareTexture extends AbstractTexture {
         this.width = width;
         this.height = height;
         this.GLTextureId = glGenTextures();
-        String name = Slicef.getUniqueName("softwareTexture");
+        String name = NameUtils.getUniqueName("softwareTexture");
 
         glBindTexture(GL_TEXTURE_2D, GLTextureId);
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, 0L);

@@ -5,6 +5,7 @@ import com.sun.jna.Pointer;
 import com.sun.jna.platform.win32.Kernel32;
 import com.tiji.silcef.Slicef;
 import com.tiji.silcef.internals.CursorConverter;
+import com.tiji.silcef.internals.SlicefInitializer;
 import org.jetbrains.annotations.Nullable;
 import org.lwjgl.glfw.GLFW;
 import sun.misc.Unsafe;
@@ -85,7 +86,8 @@ public class WindowsCursorConverter implements CursorConverter {
         return getCursor(cursorId, ole32DLL);
     }
 
-    private static final long libcefDLL = getDLLHandle(Path.of(Slicef.NATIVE_PATH, "libcef.dll").toString());
+    private static final long libcefDLL =
+            getDLLHandle(Path.of(SlicefInitializer.NATIVE_PATH, "libcef.dll").toString());
 
     /**
      * Fetches cursor from libcef.dll file

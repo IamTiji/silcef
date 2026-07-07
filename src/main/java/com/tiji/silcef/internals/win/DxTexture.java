@@ -4,8 +4,8 @@ import com.mojang.blaze3d.opengl.GlTexture;
 import com.mojang.blaze3d.opengl.GlTextureView;
 import com.mojang.blaze3d.textures.*;
 import com.tiji.silcef.AbstractTexture;
-import com.tiji.silcef.Slicef;
 import com.tiji.silcef.internals.utils.GlTextureWrapper;
+import com.tiji.silcef.internals.utils.NameUtils;
 import org.cef.misc.CefAcceleratedPaintInfo;
 
 import java.nio.ByteBuffer;
@@ -35,7 +35,7 @@ public class DxTexture extends AbstractTexture {
         glBindTexture(GL_TEXTURE_2D, GLTextureId);
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, (ByteBuffer) null);
 
-        String name = Slicef.getUniqueName("acceleratedTexture");
+        String name = NameUtils.getUniqueName("acceleratedTexture");
         mcGlTexture = new GlTextureWrapper(GpuTexture.USAGE_RENDER_ATTACHMENT,
                 name,
                 TextureFormat.RGBA8,

@@ -11,7 +11,7 @@
   "environment": "client",
   "entrypoints": {
     "main": [
-      "com.tiji.silcef.Slicef"
+      "com.tiji.silcef.internals.SlicefInitializer"
     ]
   },
   "mixins": [
