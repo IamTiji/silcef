@@ -8,7 +8,9 @@ import org.cef.handler.CefPermissionRequestType;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Collections;
 import java.util.EnumSet;
+import java.util.Set;
 
 @SuppressWarnings("ClassCanBeRecord") // Breaks encapsulation
 public final class PermissionRequest {
@@ -60,5 +62,9 @@ public final class PermissionRequest {
 
     public long getPromptId() {
         return promptId;
+    }
+
+    public Set<CefPermissionRequestType> getRequestedPermissions() {
+        return Collections.unmodifiableSet(requestedPermissions);
     }
 }
