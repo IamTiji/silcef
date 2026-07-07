@@ -22,6 +22,8 @@ import org.slf4j.LoggerFactory;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 
@@ -35,10 +37,10 @@ public class Slicef implements ModInitializer {
     public static final boolean INDEV = true;
 
     public static boolean isFallbackLang = false;
-    public static boolean isLoaded = false;
+    public static volatile boolean isLoaded = false;
     public static boolean isAcceleratedPaintAllowed = false;
 
-    private static ArrayList<Runnable> scheduledTasks = new ArrayList<>();
+    private static List<Runnable> scheduledTasks = Collections.synchronizedList(new ArrayList<>());
 
     private static CefApp app;
     private static CefClient client;
