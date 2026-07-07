@@ -7,8 +7,6 @@ import com.tiji.silcef.internals.cefimpl.PermissionHandlerImpl;
 import com.tiji.silcef.internals.cefimpl.RenderHandlerImpl;
 import com.tiji.silcef.internals.utils.LocaleHelper;
 import com.tiji.silcef.internals.utils.PermissionSentenceUtils;
-import com.tiji.silcef.internals.win.DxTexture;
-import com.tiji.silcef.internals.win.WinAcceleratedPaintHandler;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
@@ -26,8 +24,6 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
-
-import static org.lwjgl.opengl.WGLNVDXInterop.*;
 
 public class Slicef implements ModInitializer {
     public static final String NATIVE_PATH =
@@ -70,8 +66,6 @@ public class Slicef implements ModInitializer {
         });
 
         ClientLifecycleEvents.CLIENT_STOPPING.register((unused) -> {
-            wglDXCloseDeviceNV(WinAcceleratedPaintHandler.DXDevice);
-            DxTexture.destroyAll();
             client.dispose();
             app.dispose();
         });

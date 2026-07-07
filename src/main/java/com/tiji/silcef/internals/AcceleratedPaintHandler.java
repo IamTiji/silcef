@@ -6,13 +6,13 @@ import com.tiji.silcef.internals.win.WinAcceleratedPaintHandler;
 import org.cef.misc.CefAcceleratedPaintInfo;
 
 public interface AcceleratedPaintHandler {
-    void onPaint(CefAcceleratedPaintInfo info);
+    void onPaint(CefAcceleratedPaintInfo info, int width, int height);
     void onResize(int width, int height);
     void destroy();
     AbstractTexture getTexture();
 
     class VoidHandler implements AcceleratedPaintHandler {
-        @Override public void onPaint(CefAcceleratedPaintInfo info) {}
+        @Override public void onPaint(CefAcceleratedPaintInfo info, int width, int height) {}
 
         @Override public void onResize(int width, int height) {}
 

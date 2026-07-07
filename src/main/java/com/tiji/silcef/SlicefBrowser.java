@@ -191,7 +191,8 @@ public class SlicefBrowser extends CefBrowser_N implements CefRenderHandler {
     }
 
     @Override
-    public void onAcceleratedPaint(CefBrowser cefBrowser, boolean b, Rectangle[] rectangles, CefAcceleratedPaintInfo cefAcceleratedPaintInfo) {
-        renderHandler.onAcceleratedPaint(cefBrowser, b, rectangles, cefAcceleratedPaintInfo);
+    public void onAcceleratedPaint(CefBrowser cefBrowser, boolean b, Rectangle[] rectangles,
+                                   CefAcceleratedPaintInfo cefAcceleratedPaintInfo, int width, int height) {
+        renderHandler.onAcceleratedPaint(cefBrowser, b, rectangles, cefAcceleratedPaintInfo, width, height);
     }
 }

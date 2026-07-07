@@ -1,7 +1,5 @@
 package com.tiji.silcef.internals.win;
 
-import com.sun.jna.Pointer;
-import com.sun.jna.ptr.PointerByReference;
 import com.tiji.silcef.AbstractTexture;
 import com.tiji.silcef.Slicef;
 import com.tiji.silcef.internals.AcceleratedPaintHandler;
@@ -10,19 +8,23 @@ import org.apache.commons.lang3.time.StopWatch;
 import org.cef.misc.CefAcceleratedPaintInfo;
 
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.TimeUnit;
 
 import static org.lwjgl.glfw.GLFW.glfwExtensionSupported;
-import static org.lwjgl.opengl.WGLNVDXInterop.wglDXOpenDeviceNV;
 
 public class WinAcceleratedPaintHandler implements AcceleratedPaintHandler {
-    public static long DXDevice;
-    public static D3D11Device DXDeviceContainer;
     private DxTexture hardwareTexture;
 
+    /// **Things you should understand before using this:**
+    ///
+    /// OpenGL commands used in this method forces pipeline flush;
+    /// this means that all the pending work that Minecraft haven't
+    /// done yet will add on to this call. The time logged from
+    /// here shouldn't be a measure of how performant this mod is.
     private static final boolean shouldLogTime = false;
     private final StopWatch timer = StopWatch.create();
     @Override
-    public void onPaint(CefAcceleratedPaintInfo info) {
+    public void onPaint(CefAcceleratedPaintInfo info, int width, int height) {
         if (shouldLogTime)
             timer.start();
 
@@ -31,7 +33,7 @@ public class WinAcceleratedPaintHandler implements AcceleratedPaintHandler {
         CompletableFuture<Void> future = new CompletableFuture<>();
 
         Minecraft.getInstance().execute(() -> {
-            hardwareTexture.onPaint(info); // Doesn't throw exception; if it does, dont worry as its gonna crash the JVM
+            hardwareTexture.onPaint(info, width, height);
             future.complete(null);
         });
 
@@ -39,7 +41,7 @@ public class WinAcceleratedPaintHandler implements AcceleratedPaintHandler {
 
         if (shouldLogTime) {
             timer.stop();
-            Slicef.LOGGER.info("Painting took {} ms", timer.getTime());
+            Slicef.LOGGER.info("Painting took {} μs", timer.getTime(TimeUnit.MICROSECONDS));
             timer.reset();
         }
     }
@@ -61,34 +63,10 @@ public class WinAcceleratedPaintHandler implements AcceleratedPaintHandler {
     }
 
     public static void initialize() {
-        if (!glfwExtensionSupported("WGL_NV_DX_interop2")) {
-            Slicef.LOGGER.warn("WGL_NV_DX_interop2 extension is not supported on this system. " +
+        if (!glfwExtensionSupported("GL_EXT_memory_object")) {
+            Slicef.LOGGER.warn("GL_EXT_memory_object extension is not supported on this system. " +
                     "If your GPU supports it, check if you have appropriate drivers installed");
             throw new RuntimeException("DirectX initialization failed");
         }
-
-        D3D11.initialize();
-
-        PointerByReference ppDevice = new PointerByReference();
-        PointerByReference ppContext = new PointerByReference();
-
-        int hr = D3D11.get().D3D11CreateDevice(
-                null,
-                D3D11.D3D_DRIVER_TYPE_HARDWARE,
-                null,
-                0,
-                null, 0,
-                D3D11.D3D11_SDK_VERSION,
-                ppDevice,
-                null,
-                ppContext
-        );
-
-        if (hr != 0) throw new RuntimeException("DirectX initialization failed: %s".formatted(hr));
-
-        DXDevice = wglDXOpenDeviceNV(Pointer.nativeValue(ppDevice.getValue()));
-        DXDeviceContainer = new D3D11Device(ppDevice.getValue());
-
-        Slicef.LOGGER.info("DirectX device is linked");
     }
 }

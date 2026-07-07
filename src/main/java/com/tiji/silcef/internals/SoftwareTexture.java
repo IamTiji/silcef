@@ -12,6 +12,7 @@ import org.apache.commons.lang3.time.StopWatch;
 import java.awt.*;
 import java.nio.ByteBuffer;
 import java.util.OptionalDouble;
+import java.util.concurrent.TimeUnit;
 
 import static org.lwjgl.opengl.GL33C.*;
 import static org.lwjgl.opengl.GL43C.glObjectLabel;

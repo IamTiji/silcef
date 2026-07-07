@@ -84,12 +84,13 @@ public class RenderHandlerImpl implements CefRenderHandler {
     }
 
     @Override
-    public void onAcceleratedPaint(CefBrowser cefBrowser, boolean b, Rectangle[] rectangles, CefAcceleratedPaintInfo info) {
+    public void onAcceleratedPaint(CefBrowser cefBrowser, boolean b, Rectangle[] rectangles,
+                                   CefAcceleratedPaintInfo info, int width, int height) {
         wasPreviousPaintAccelerated = true;
 
         if (ignorePaint) return;
 
-        acceleratedPaintHandler.onPaint(info);
+        acceleratedPaintHandler.onPaint(info, width, height);
     }
 
     @Override

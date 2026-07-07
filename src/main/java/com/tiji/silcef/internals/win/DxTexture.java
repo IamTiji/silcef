@@ -3,32 +3,19 @@ package com.tiji.silcef.internals.win;
 import com.mojang.blaze3d.opengl.GlTexture;
 import com.mojang.blaze3d.opengl.GlTextureView;
 import com.mojang.blaze3d.textures.*;
-import com.sun.jna.Pointer;
-import com.sun.jna.platform.win32.Guid;
-import com.sun.jna.platform.win32.WinNT;
-import com.sun.jna.ptr.PointerByReference;
 import com.tiji.silcef.AbstractTexture;
 import com.tiji.silcef.Slicef;
 import com.tiji.silcef.internals.utils.GlTextureWrapper;
 import org.cef.misc.CefAcceleratedPaintInfo;
-import org.lwjgl.BufferUtils;
-import org.lwjgl.PointerBuffer;
 
 import java.nio.ByteBuffer;
-import java.util.HashMap;
 import java.util.OptionalDouble;
 
-import static org.lwjgl.opengl.GL11C.*;
-import static org.lwjgl.opengl.GL12C.GL_TEXTURE_BASE_LEVEL;
-import static org.lwjgl.opengl.GL12C.GL_TEXTURE_MAX_LEVEL;
-import static org.lwjgl.opengl.GL43C.glCopyImageSubData;
-import static org.lwjgl.opengl.GL43C.glObjectLabel;
-import static org.lwjgl.opengl.WGLNVDXInterop.*;
-import static org.lwjgl.system.windows.WinBase.GetLastError;
+import static org.lwjgl.opengl.EXTMemoryObject.*;
+import static org.lwjgl.opengl.EXTMemoryObjectWin32.*;
+import static org.lwjgl.opengl.GL45C.*;
 
 public class DxTexture extends AbstractTexture {
-    private record SharedTexture(long handle, int opengl) {}
-
     private final int GLTextureId;
 
     private final int width;
@@ -39,16 +26,6 @@ public class DxTexture extends AbstractTexture {
     private final GpuSampler mcSampler;
 
     private boolean destroyed = false;
-
-    private static final HashMap<Long, SharedTexture> PREINIT_INSTANCES = new HashMap<>();
-
-    public static void destroyAll() {
-        for (SharedTexture sharedTexture : PREINIT_INSTANCES.values()) {
-            wglDXUnregisterObjectNV(WinAcceleratedPaintHandler.DXDevice, sharedTexture.handle);
-            glDeleteTextures(sharedTexture.opengl);
-        }
-        PREINIT_INSTANCES.clear();
-    }
 
     public DxTexture(int width, int height) {
         this.width = width;
@@ -65,8 +42,8 @@ public class DxTexture extends AbstractTexture {
                 width, height,
                 0, 0, GLTextureId
         );
-        //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_SWIZZLE_B, GL_RED);
-        //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_SWIZZLE_R, GL_BLUE);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_SWIZZLE_R, GL_BLUE);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_SWIZZLE_B, GL_RED);
 
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_BASE_LEVEL, 0);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_LEVEL, 0);
@@ -94,44 +71,17 @@ public class DxTexture extends AbstractTexture {
         );
     }
 
-    public void onPaint(CefAcceleratedPaintInfo info) {
+    public void onPaint(CefAcceleratedPaintInfo info, int width, int height) {
+        if (width != this.width || height != this.height) return;
+
         int srcTextureId;
-        long handle;
-        PointerByReference texture = new PointerByReference();
-        int hr = WinAcceleratedPaintHandler.DXDeviceContainer.openSharedResource1(
-                new WinNT.HANDLE(Pointer.createConstant(info.shared_texture_handle)),
-                new Guid.REFIID(Guid.IID.fromString("{6F15AAF2-D208-4E89-9AB4-489535D34F9C}").getPointer()),
-                texture
-        );
-        if (hr != 0) {
-            Slicef.LOGGER.warn("Failed to open texture {} with error {}", info.shared_texture_handle, "%X".formatted(hr));
-            return;
-        }
 
-        srcTextureId = glGenTextures();
-        glBindTexture(GL_TEXTURE_2D, srcTextureId);
+        int memObject = glCreateMemoryObjectsEXT();
+        glImportMemoryWin32HandleEXT(memObject, 0,
+                GL_HANDLE_TYPE_D3D11_IMAGE_EXT, info.shared_texture_handle);
 
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_LEVEL, 0);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_BASE_LEVEL, 0);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-
-        long pdxResource = Pointer.nativeValue(texture.getValue());
-        // nvidia, this wasn't on manual
-        wglDXSetResourceShareHandleNV(pdxResource, info.shared_texture_handle);
-        handle = wglDXRegisterObjectNV(
-                WinAcceleratedPaintHandler.DXDevice,
-                pdxResource,
-                srcTextureId,
-                GL_TEXTURE_2D,
-                WGL_ACCESS_READ_ONLY_NV);
-
-        if (handle == 0L) {
-            Slicef.LOGGER.warn("Failed to register texture {} with error {}", info.shared_texture_handle, GetLastError());
-            return;
-        }
-
-        PointerBuffer handlePointer = BufferUtils.createPointerBuffer(1).put(handle).flip();
-        wglDXLockObjectsNV(WinAcceleratedPaintHandler.DXDevice, handlePointer);
+        srcTextureId = glCreateTextures(GL_TEXTURE_2D);
+        glTextureStorageMem2DEXT(srcTextureId, 1, GL_RGBA8, width, height, memObject, 0);
 
         glCopyImageSubData(
                 srcTextureId,
@@ -145,9 +95,10 @@ public class DxTexture extends AbstractTexture {
                 width, height, 1
         );
 
-        wglDXUnlockObjectsNV(WinAcceleratedPaintHandler.DXDevice, handlePointer);
+        glDeleteTextures(srcTextureId);
+        glDeleteMemoryObjectsEXT(memObject);
 
-        wglDXUnregisterObjectNV(WinAcceleratedPaintHandler.DXDevice, handle);
+        glFlush(); // make sure that all commands are executed before cef takes it back
     }
 
     @Override
