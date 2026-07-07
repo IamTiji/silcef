@@ -90,7 +90,7 @@ public class SoftwareTexture extends AbstractTexture {
 
         if (shouldLogTime) {
             timer.stop();
-            Slicef.LOGGER.info("Painting took {} ms", timer.getTime());
+            Slicef.LOGGER.info("Painting took {} μs", timer.getTime(TimeUnit.MICROSECONDS));
             timer.reset();
         }
     }
