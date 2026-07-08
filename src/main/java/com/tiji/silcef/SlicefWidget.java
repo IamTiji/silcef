@@ -19,6 +19,21 @@ import java.awt.event.MouseWheelEvent;
 
 import static org.lwjgl.glfw.GLFW.*;
 
+/// Widget instance that may be used to render browser onto
+/// GUI. This handles cursor and inputs, so you may just add
+/// it to your GUI.
+///
+/// **Fabric API bug workaround:**
+/// Fabric API swallows release event of mouse, so some
+/// websites may behave wrongly. To fix this, you should
+/// add this to end of your screen constructor:
+/// ```java
+/// ScreenMouseEvents.beforeMouseRelease(this).register(((screen, context) -> widget.mouseReleased(context)));
+/// ```
+/// This will fix the issue with Fabric API.
+///
+/// @since 1.0
+/// @author Tiji
 public class SlicefWidget extends AbstractWidget {
     private final SlicefBrowser browser;
     private final SlicefRenderState state;
@@ -28,6 +43,15 @@ public class SlicefWidget extends AbstractWidget {
         fakeComponent.setVisible(true); // awt is awful
     }
 
+    /// Constructs browser widget. You should never construct this every
+    /// time `init` method is called. Instead, you should construct this
+    /// in screen constructor, then resize accordingly in `init` method.
+    ///
+    /// Also, this widget is not functional until first `resize` is
+    /// called. Make sure to call it in `init` method.
+    ///
+    /// @since 1.0
+    /// @author Tiji
     public SlicefWidget(SlicefBrowser browser, int x, int y) {
         super(x, y, browser.getViewRect().width, browser.getViewRect().height, Component.literal("Slicef Browser Widget"));
         this.browser = browser;
@@ -35,6 +59,12 @@ public class SlicefWidget extends AbstractWidget {
         state.setPos(x, y);
     }
 
+    /// Resizes widget to new size. Browser is also resized, therefore
+    /// resizing often should be avoided.
+    ///
+    /// @since 1.0
+    /// @author Tiji
+    /// @see SlicefBrowser#resize(int, int)
     public void resize(int width, int height) {
         state.setSize(width, height);
         super.setRectangle(width, height, getX(), getY());

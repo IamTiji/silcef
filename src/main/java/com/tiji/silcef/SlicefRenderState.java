@@ -12,6 +12,12 @@ import org.jetbrains.annotations.Nullable;
 
 import java.awt.*;
 
+/// Render state implementation for Silcef browser.
+/// You may use this to render browser to GUI, but
+/// it is recommended to use [SlicefWidget] instead.
+///
+/// @since 1.0
+/// @author Tiji
 public class SlicefRenderState implements GuiElementRenderState {
     private final SlicefBrowser browser;
     private int x, y, width, height;

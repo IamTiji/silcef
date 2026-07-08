@@ -21,16 +21,26 @@ import java.nio.ByteBuffer;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
 
+/// Browser class representing all browser made by Silcef mod.
+///
+/// @since 1.0
+/// @author Tiji
 public class SlicefBrowser extends CefBrowser_N implements CefRenderHandler {
+    /// Title of current website
     public volatile String currentTitle;
+    /// Tooltip of element that is hovered over by cursor
     public volatile TooltipStatus currentTooltip = TooltipStatus.ofInvisible();
+    /// Status text of current website (Hovered link, load state, etc.)
     public volatile String statusText;
+    /// How much the website is loaded normalized to 0-1. 1 means that website is fully loaded
     public volatile double loadProgress;
+    /// Link to current website's favicon
     public volatile String faviconUrl;
 
     private final RenderHandlerImpl renderHandler;
     private SlicefWarning warnings = new SlicefWarning();
 
+    /// Constructs browser instance. You should probably use [Slicef#getBrowser] instead.
     public SlicefBrowser(CefClient cefClient, String url, boolean loggingEnabled) {
         super(cefClient, url, CefRequestContext.getGlobalContext(), null, null, getBrowserSettings());
 
@@ -47,7 +57,11 @@ public class SlicefBrowser extends CefBrowser_N implements CefRenderHandler {
         return settings;
     }
 
-    // Do note that warnings that are constant (like unsupported platform) will not be cleared.
+    /// Clears warning that has been raised since last warning clear or browser construction.
+    /// Do note that warnings that are constant (like unsupported platform) will not be cleared.
+    ///
+    /// @since 1.0
+    /// @author Tiji
     public void clearWarnings() {
         warnings = new SlicefWarning();
     }
@@ -91,34 +105,72 @@ public class SlicefBrowser extends CefBrowser_N implements CefRenderHandler {
         throw new UnsupportedOperationException("not implemented");
     }
 
-
+    /// Returns instance of [SlicefWarning], containing warnings
+    /// that has been raised. Warning instance will never be null.
+    ///
+    /// @since 1.0
+    /// @author Tiji
     public SlicefWarning getWarnings() {
         return warnings;
     }
 
+    /// Returns texture instance, with current render of website.
+    /// This is never null, but texture instance may contain empty
+    /// unpopulated texture.
+    ///
+    /// @since 1.0
+    /// @author Tiji
     public AbstractTexture getTexture() {
         AbstractTexture texture = renderHandler.getTexture();
         warnings.addConditionalWarning(SlicefWarning.Warning.WARN_SOFTWARE_FALLBACK, texture instanceof SoftwareTexture);
         return texture;
     }
 
+    /// Returns bounds in Minecraft pixels; meaning that it scales
+    /// with Minecraft's UI scale.
+    ///
+    /// @since 1.0
+    /// @author Tiji
     public Rectangle getMinecraftBounds() {
         return renderHandler.getMinecraftBounds();
     }
 
+    /// Resize the browser to new size. This is a heavy task; you
+    /// should never call this frequently.
+    ///
+    /// @since 1.0
+    /// @author Tiji
     public void resize(int width, int height) {
         renderHandler.resize(width, height);
         wasResized(renderHandler.width, renderHandler.height);
     }
 
+    /// Returns bounds in raw pixels; meaning that it does not scale
+    /// with Minecraft's UI scale.
+    ///
+    /// @since 1.0
+    /// @author Tiji
     public Rectangle getViewRect() {
         return renderHandler.getViewRect(this);
     }
 
+    /// Returns appropriate cursor to be used when user hovers over
+    /// browser. This uses internal hack to use more cursors, so you
+    /// cannot check if cursor is equal to pre-initialized instances
+    /// in [CursorTypes] class of Blaze3D.
+    ///
+    /// @since 1.0
+    /// @author Tiji
     public CursorType getCurrentCursor() {
         return renderHandler.getCurrentCursor();
     }
 
+    /// Sets permission handler to be used when website requests for
+    /// some permission. You may use pre-defined handlers from
+    /// [PermissionHandlers] here.
+    ///
+    /// @since 1.0
+    /// @author Tiji
     public void setPermissionHandler(Consumer<PermissionRequest> permissionHandler) {
         this.permissionHandler = permissionHandler;
     }

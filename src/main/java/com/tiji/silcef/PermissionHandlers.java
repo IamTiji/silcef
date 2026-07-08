@@ -6,11 +6,18 @@ import org.cef.handler.CefPermissionRequestType;
 import java.util.Set;
 import java.util.function.Consumer;
 
+/// Utility class containing simple permission handler implementations
+///
+/// @since 1.0
+/// @author Tiji
 public class PermissionHandlers {
     private PermissionHandlers() {
         throw new UnsupportedOperationException();
     }
 
+    /// @return permission handler that denies all requests
+    /// @since 1.0
+    /// @author Tiji
     public static Consumer<PermissionRequest> denyAll() {
         return permissionRequest -> permissionRequest.resolve(CefPermissionRequestResult.DENY);
     }
@@ -27,6 +34,9 @@ public class PermissionHandlers {
         return permissionRequest -> permissionRequest.resolve(CefPermissionRequestResult.ACCEPT);
     }
 
+    /// @return permission handler that ignores all requests
+    /// @since 1.0
+    /// @author Tiji
     public static Consumer<PermissionRequest> ignoreAll() {
         return permissionRequest -> permissionRequest.resolve(CefPermissionRequestResult.IGNORE);
     }
@@ -40,6 +50,12 @@ public class PermissionHandlers {
             CefPermissionRequestType.LOCAL_NETWORK_ACCESS,
             CefPermissionRequestType.LOOPBACK_NETWORK
     );
+    /// @param fallback fallback handler when requested permission needs user confirmation
+    ///
+    /// @return permission handler that grants basic permissions; calls fallback otherwise
+    /// @since 1.0
+    /// @author Tiji
+    /// @apiNote *"Basic permission"* refers to permissions that are granted by default in usual browsers
     public static Consumer<PermissionRequest> acceptBasic(Consumer<PermissionRequest> fallback) {
         return permissionRequest -> {
             for (CefPermissionRequestType type : permissionRequest.getRequestedPermissions()) {
@@ -51,6 +67,10 @@ public class PermissionHandlers {
         };
     }
 
+    /// @return permission handler that grants basic permissions; denies otherwise
+    /// @since 1.0
+    /// @author Tiji
+    /// @apiNote *"Basic permission"* refers to permissions that are granted by default in usual browsers
     public static Consumer<PermissionRequest> acceptBasic() {
         return acceptBasic(denyAll());
     }
