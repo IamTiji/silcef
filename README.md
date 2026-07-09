@@ -10,7 +10,7 @@ Note that this is under development, and bugs and lack of features are expected.
    travel through CPU from GPU then back to GPU. This is inefficient, and accelerated 
    paint is here for a fix. Pixel data will never leave GPU and be drawn straight to
    your screen.
- - **Permission handler:** Allows you to have explict control over permissions.
+ - **Permission handler:** Allows you to have explicit control over permissions.
  - **IME support:** MCEF doesn't allow users to use IME, making typing experience for
    Koreans, Chinese, Japanese a pain. Allows for users to actually see what they
    are typing.
