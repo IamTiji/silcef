@@ -68,3 +68,9 @@ tasks.jar {
         rename { "${it}_${project.property("archives_base_name")!!}" }
     }
 }
+
+tasks.withType<Javadoc> {
+    (options as StandardJavadocDocletOptions).tags(
+        "apiNote:a:API Note:"
+    )
+}
