@@ -177,7 +177,8 @@ public class SlicefBrowser extends CefBrowser_N implements CefRenderHandler {
 
     private Consumer<PermissionRequest> permissionHandler;
     public void onPermissionRequest(PermissionRequest request) {
-        permissionHandler.accept(request);
+        if (permissionHandler != null)
+            permissionHandler.accept(request);
     }
 
 
