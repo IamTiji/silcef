@@ -11,6 +11,7 @@ import org.cef.browser.CefBrowser_N;
 import org.cef.browser.CefPaintEvent;
 import org.cef.browser.CefRequestContext;
 import org.cef.callback.CefDragData;
+import org.cef.callback.CefRunContextMenuCallback;
 import org.cef.handler.CefRenderHandler;
 import org.cef.handler.CefScreenInfo;
 import org.cef.misc.CefAcceleratedPaintInfo;
@@ -179,6 +180,26 @@ public class SlicefBrowser extends CefBrowser_N implements CefRenderHandler {
     public void onPermissionRequest(PermissionRequest request) {
         if (permissionHandler != null)
             permissionHandler.accept(request);
+    }
+
+    /// Sets context menu handler to be used when context menu pops
+    /// up on a website.
+    ///
+    /// @since 1.0
+    /// @author Tiji
+    public void setContextMenuHandler(ContextMenuHandler handler) {
+        if (handler == null) throw new IllegalArgumentException("Handler may not be null");
+        this.handler = handler;
+    }
+
+    private ContextMenuHandler handler = ContextMenuHandler.noopHandler();
+
+    public void onContextMenu(ContextMenuItem[] contextMenu, CefRunContextMenuCallback callback) {
+        handler.onContextMenu(contextMenu, callback);
+    }
+
+    public void onDismiss() {
+        handler.onDismiss();
     }
 
 

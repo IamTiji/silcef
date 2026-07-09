@@ -2,6 +2,7 @@ package com.tiji.silcef.internals;
 
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.tiji.silcef.Slicef;
+import com.tiji.silcef.internals.cefimpl.ContextMenuHandlerImpl;
 import com.tiji.silcef.internals.cefimpl.DisplayHandlerImpl;
 import com.tiji.silcef.internals.cefimpl.PermissionHandlerImpl;
 import com.tiji.silcef.internals.utils.LocaleHelper;
@@ -109,6 +110,7 @@ public class SlicefInitializer implements ModInitializer {
         client = app.createClient();
         client.addDisplayHandler(new DisplayHandlerImpl());
         client.addPermissionHandler(new PermissionHandlerImpl());
+        client.addContextMenuHandler(new ContextMenuHandlerImpl());
 
         Slicef.isLoaded = true;
         Slicef.executeScheduledTasks();
