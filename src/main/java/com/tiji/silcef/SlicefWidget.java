@@ -23,14 +23,13 @@ import static org.lwjgl.glfw.GLFW.*;
 /// GUI. This handles cursor and inputs, so you may just add
 /// it to your GUI.
 ///
-/// **Fabric API bug workaround:**
-/// Fabric API swallows release event of mouse, so some
-/// websites may behave wrongly. To fix this, you should
-/// add this to end of your screen constructor:
+/// You need to add this line at the end of your screen
+/// constructor; Minecraft doesn't give mouse release events
+/// for mouse clicks that aren't primary click. This will
+/// make user experience horrible, so make sure to add this.
 /// ```java
 /// ScreenMouseEvents.beforeMouseRelease(this).register(((screen, context) -> widget.mouseReleased(context)));
 /// ```
-/// This will fix the issue with Fabric API.
 ///
 /// @since 1.0
 /// @author Tiji
