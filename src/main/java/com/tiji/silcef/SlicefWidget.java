@@ -221,7 +221,7 @@ public class SlicefWidget extends AbstractWidget {
                 event.key() == GLFW_KEY_BACKSPACE ? '\b' : KeyEvent.CHAR_UNDEFINED,
                 KeycodeUtils.KEY_LOCATION_MAP[event.key()]
         );
-        UnsafeFieldOverride.overrideLongField("scancode", cefEvent, event.scancode());
+        UnsafeFieldOverride.overrideLongField("scancode", cefEvent, event.scancode() & ~0x100);
         // Technically macos and linux has different map, but it is only read on windows, so should be fine
         UnsafeFieldOverride.overrideLongField("rawCode", cefEvent, KeycodeUtils.KEYCODE_MAP[event.key()]);
         browser.sendKeyEvent(cefEvent);
@@ -243,7 +243,7 @@ public class SlicefWidget extends AbstractWidget {
                 event.key() == GLFW_KEY_BACKSPACE ? '\b' : KeyEvent.CHAR_UNDEFINED,
                 KeycodeUtils.KEY_LOCATION_MAP[event.key()]
         );
-        UnsafeFieldOverride.overrideLongField("scancode", cefEvent, event.scancode());
+        UnsafeFieldOverride.overrideLongField("scancode", cefEvent, event.scancode() & ~0x100);
         // Technically macos and linux has different map, but it is only read on windows, so should be fine
         UnsafeFieldOverride.overrideLongField("rawCode", cefEvent, KeycodeUtils.KEYCODE_MAP[event.key()]);
         browser.sendKeyEvent(cefEvent);
