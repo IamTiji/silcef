@@ -86,7 +86,7 @@ public class SlicefInitializer implements ModInitializer {
         settings.resources_dir_path = JcefLoader.NATIVE_PATH;
         settings.locales_dir_path = Path.of(JcefLoader.NATIVE_PATH, "/locales").toString();
         settings.cache_path = Path.of("./slicef/browser_cache").toAbsolutePath().toString();
-        settings.user_agent_product = "Slicef/beta";
+        //settings.user_agent_product = "Slicef/beta";
         settings.log_severity = CefSettings.LogSeverity.LOGSEVERITY_VERBOSE;
         settings.log_file = Path.of("./slicef/cef_log.log").toAbsolutePath().toString();
         String locale = mc.options.languageCode;
