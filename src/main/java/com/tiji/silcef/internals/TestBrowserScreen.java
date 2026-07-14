@@ -1,7 +1,6 @@
 package com.tiji.silcef.internals;
 
 import com.tiji.silcef.*;
-import net.fabricmc.fabric.api.client.screen.v1.ScreenMouseEvents;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent;
@@ -34,7 +33,6 @@ public class TestBrowserScreen extends Screen {
         widget.resize(width, height - 100);
 
         super.addRenderableWidget(widget);
-        ScreenMouseEvents.beforeMouseRelease(this).register(((screen, context) -> widget.mouseReleased(context)));
     }
 
     @Override

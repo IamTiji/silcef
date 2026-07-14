@@ -6,7 +6,8 @@
   "mixins": [
   ],
   "client": [
-    "MouseMoveFixMixin"
+    "MouseMoveFixMixin",
+    "MouseReleaseFixMixin"
   ],
   "injectors": {
     "defaultRequire": 1

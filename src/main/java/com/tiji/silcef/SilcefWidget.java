@@ -17,14 +17,6 @@ import static org.lwjgl.glfw.GLFW.*;
 /// GUI. This handles cursor and inputs, so you may just add
 /// it to your GUI.
 ///
-/// You need to add this line at the end of your screen
-/// constructor; Minecraft doesn't give mouse release events
-/// for mouse clicks that aren't primary click. This will
-/// make user experience horrible, so make sure to add this.
-/// ```java
-/// ScreenMouseEvents.beforeMouseRelease(this).register(((screen, context) -> widget.mouseReleased(context)));
-/// ```
-///
 /// @since 1.0
 /// @author Tiji
 public class SilcefWidget extends AbstractWidget {
