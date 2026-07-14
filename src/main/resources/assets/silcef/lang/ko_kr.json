@@ -1,18 +1,18 @@
 {
-  "slicef.warnings.prefix": "경고: ",
+  "silcef.warnings.prefix": "경고: ",
 
-  "slicef.warnings.software_fallback": "CEF가 소프트웨어 렌더링을 사용하기 시작했습니다.",
-  "slicef.warnings.software_fallback.details": "당신의 플랫폼이 지원돼는지 확인 해주세요. 만약 지원됀다면, CEF 로그를 확인한 후 이슈 트랙커에 신고해주세요.",
+  "silcef.warnings.software_fallback": "CEF가 소프트웨어 렌더링을 사용하기 시작했습니다.",
+  "silcef.warnings.software_fallback.details": "당신의 플랫폼이 지원돼는지 확인 해주세요. 만약 지원됀다면, CEF 로그를 확인한 후 이슈 트랙커에 신고해주세요.",
 
-  "slicef.warnings.unsupported_platform": "이 플랫폼은 지원돼지 않습니다.",
-  "slicef.warnings.unsupported_platform.details": "대부분의 기능은 작동할수 있지만, 몇몇 고급 기능들은 작동하지 않을 수 있습니다.",
+  "silcef.warnings.unsupported_platform": "이 플랫폼은 지원돼지 않습니다.",
+  "silcef.warnings.unsupported_platform.details": "대부분의 기능은 작동할수 있지만, 몇몇 고급 기능들은 작동하지 않을 수 있습니다.",
 
-  "slicef.warnings.development": "이 버젼은 완성본이 아닙니다.",
-  "slicef.warnings.development.details": "버그와 크래시가 언제든지 발생할 수 있습니다. 발견한다면 제보를 반드시 해주세요.",
+  "silcef.warnings.development": "이 버젼은 완성본이 아닙니다.",
+  "silcef.warnings.development.details": "버그와 크래시가 언제든지 발생할 수 있습니다. 발견한다면 제보를 반드시 해주세요.",
 
-  "slicef.warnings.unsupported_language": "당신의 언어는 CEF에게 지원되지 않습니다. ",
-  "slicef.warnings.unsupported_language.details": "이 모드를 사용하는데 문제가 발생하진 않지만, 브라우저가 당신의 언어가 아닌 영어로 돌아갈 것 입니다.", // 아니 어차피 CEF 한국어 지원하는데 이거 왜 쓴거지
+  "silcef.warnings.unsupported_language": "당신의 언어는 CEF에게 지원되지 않습니다. ",
+  "silcef.warnings.unsupported_language.details": "이 모드를 사용하는데 문제가 발생하진 않지만, 브라우저가 당신의 언어가 아닌 영어로 돌아갈 것 입니다.", // 아니 어차피 CEF 한국어 지원하는데 이거 왜 쓴거지
 
-  "slicef.warnings.accelerated_paint_no_support": "Slicef는 가속화된 렌더링을 이 플렛폼에서 지원하지 않습니다.",
-  "slicef.warnings.accelerated_paint_no_support.details": "이는 이 모드의 사용을 막지 않지만, 렌더링이 끊길 수 있을을 숙지해주세요."
+  "silcef.warnings.accelerated_paint_no_support": "Silcef는 가속화된 렌더링을 이 플렛폼에서 지원하지 않습니다.",
+  "silcef.warnings.accelerated_paint_no_support.details": "이는 이 모드의 사용을 막지 않지만, 렌더링이 끊길 수 있을을 숙지해주세요."
 }
