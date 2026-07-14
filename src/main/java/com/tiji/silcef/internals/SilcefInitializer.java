@@ -1,7 +1,7 @@
 package com.tiji.silcef.internals;
 
 import com.mojang.brigadier.arguments.StringArgumentType;
-import com.tiji.silcef.Slicef;
+import com.tiji.silcef.Silcef;
 import com.tiji.silcef.internals.cefimpl.ContextMenuHandlerImpl;
 import com.tiji.silcef.internals.cefimpl.DisplayHandlerImpl;
 import com.tiji.silcef.internals.cefimpl.PermissionHandlerImpl;
@@ -21,14 +21,14 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.concurrent.CompletableFuture;
 
-public class SlicefInitializer implements ModInitializer {
+public class SilcefInitializer implements ModInitializer {
     private static CefApp app;
     private static CefClient client;
 
     @Override
     public void onInitialize() {
         ClientLifecycleEvents.CLIENT_STARTED.register((mc) ->
-                new Thread(null, () -> this.start(mc), "Slicef CEF Message Worker").start());
+                new Thread(null, () -> this.start(mc), "Silcef CEF Message Worker").start());
         CommandRegistrationCallback.EVENT.register((dispatcher, context, commandSelection) -> {
             dispatcher.register(
                     Commands.literal(
@@ -54,7 +54,7 @@ public class SlicefInitializer implements ModInitializer {
     public void start(Minecraft mc) {
         System.setProperty("java.awt.headless", "false"); // Why java...
 
-        Slicef.LOGGER.info("Loading natives from {}", JcefLoader.NATIVE_PATH);
+        Silcef.LOGGER.info("Loading natives from {}", JcefLoader.NATIVE_PATH);
         SystemBootstrap.setLoader(s -> {
             Path libPath = Path.of(JcefLoader.NATIVE_PATH, System.mapLibraryName(s));
             if (libPath.toFile().exists()) {
@@ -69,12 +69,12 @@ public class SlicefInitializer implements ModInitializer {
         CompletableFuture<Void> future = new CompletableFuture<>();
         mc.execute(() -> {
             try {
-                Slicef.isAcceleratedPaintAllowed = AcceleratedPaintHandler.initialize();
-            } catch (Throwable e) { Slicef.LOGGER.error(e.getMessage()); }
+                Silcef.isAcceleratedPaintAllowed = AcceleratedPaintHandler.initialize();
+            } catch (Throwable e) { Silcef.LOGGER.error(e.getMessage()); }
 
             // These needs to be called in render thread
-            if (!Slicef.isAcceleratedPaintAllowed) {
-                Slicef.LOGGER.warn("Failed to initialize accelerated painting. {}", noAccelerationWarning);
+            if (!Silcef.isAcceleratedPaintAllowed) {
+                Silcef.LOGGER.warn("Failed to initialize accelerated painting. {}", noAccelerationWarning);
             }
             future.complete(null);
         });
@@ -85,22 +85,22 @@ public class SlicefInitializer implements ModInitializer {
         settings.browser_subprocess_path = Path.of(JcefLoader.NATIVE_PATH, "/jcef_helper.exe").toAbsolutePath().toString();
         settings.resources_dir_path = JcefLoader.NATIVE_PATH;
         settings.locales_dir_path = Path.of(JcefLoader.NATIVE_PATH, "/locales").toString();
-        settings.cache_path = Path.of("./slicef/browser_cache").toAbsolutePath().toString();
-        //settings.user_agent_product = "Slicef/beta";
+        settings.cache_path = Path.of("./silcef/browser_cache").toAbsolutePath().toString();
+        //settings.user_agent_product = "Silcef/beta";
         settings.log_severity = CefSettings.LogSeverity.LOGSEVERITY_VERBOSE;
-        settings.log_file = Path.of("./slicef/cef_log.log").toAbsolutePath().toString();
+        settings.log_file = Path.of("./silcef/cef_log.log").toAbsolutePath().toString();
         String locale = mc.options.languageCode;
         PermissionSentenceUtils.load(locale);
         settings.locale = LocaleHelper.getCEFLanguageCode(locale);
-        Slicef.isFallbackLang = !LocaleHelper.isSupported(locale);
+        Silcef.isFallbackLang = !LocaleHelper.isSupported(locale);
 
         ArrayList<String> args = new ArrayList<>();
         args.add("--no-sandbox");
         args.add("--force-high-performance-gpu");
         args.add("--disable-features=ThreadNaming");
-        if (Slicef.isAcceleratedPaintAllowed) {
+        if (Silcef.isAcceleratedPaintAllowed) {
             args.add("--shared-texture-enabled");
-            Slicef.LOGGER.info("Accelerated painting is enabled!");
+            Silcef.LOGGER.info("Accelerated painting is enabled!");
         }
         String[] argsArray = args.toArray(new String[0]);
 
@@ -112,8 +112,8 @@ public class SlicefInitializer implements ModInitializer {
         client.addPermissionHandler(new PermissionHandlerImpl());
         client.addContextMenuHandler(new ContextMenuHandlerImpl());
 
-        Slicef.isLoaded = true;
-        Slicef.executeScheduledTasks();
+        Silcef.isLoaded = true;
+        Silcef.executeScheduledTasks();
 
         app.runMessageLoop();
     }

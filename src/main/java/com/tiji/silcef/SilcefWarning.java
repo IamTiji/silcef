@@ -11,37 +11,37 @@ import java.util.Set;
 ///
 /// @since 1.0
 /// @author Tiji
-public class SlicefWarning {
+public class SilcefWarning {
     /// Record class, representing singular type of warning.
     ///
     /// @since 1.0
     /// @author Tiji
     public record Warning(String id, Component message, Component details) {
         public static final Warning WARN_SOFTWARE_FALLBACK = new Warning(
-                "slicef_software_fallback",
-                Component.translatable("slicef.warnings.software_fallback"),
-                Component.translatable("slicef.warnings.software_fallback.details"));
+                "silcef_software_fallback",
+                Component.translatable("silcef.warnings.software_fallback"),
+                Component.translatable("silcef.warnings.software_fallback.details"));
         public static final Warning WARN_UNSUPPORTED_PLATFORM = new Warning(
-                "slicef_unsupported_platform",
-                Component.translatable("slicef.warnings.unsupported_platform"),
-                Component.translatable("slicef.warnings.unsupported_platform.details"));
+                "silcef_unsupported_platform",
+                Component.translatable("silcef.warnings.unsupported_platform"),
+                Component.translatable("silcef.warnings.unsupported_platform.details"));
         public static final Warning WARN_DEVELOPMENT = new Warning(
-                "slicef_development",
-                Component.translatable("slicef.warnings.development"),
-                Component.translatable("slicef.warnings.development.details"));
+                "silcef_development",
+                Component.translatable("silcef.warnings.development"),
+                Component.translatable("silcef.warnings.development.details"));
         public static final Warning WARN_FALLBACK_LANGUAGE = new Warning(
-                "slicef_fallback_language",
-                Component.translatable("slicef.warnings.unsupported_language"),
-                Component.translatable("slicef.warnings.unsupported_language.details"));
+                "silcef_fallback_language",
+                Component.translatable("silcef.warnings.unsupported_language"),
+                Component.translatable("silcef.warnings.unsupported_language.details"));
         public static final Warning WARN_ACCELERATED_PAINT_NO_SUPPORT = new Warning(
-                "slicef_accelerated_paint_no_support",
-                Component.translatable("slicef.warnings.accelerated_paint_no_support"),
-                Component.translatable("slicef.warnings.accelerated_paint_no_support.details"));
+                "silcef_accelerated_paint_no_support",
+                Component.translatable("silcef.warnings.accelerated_paint_no_support"),
+                Component.translatable("silcef.warnings.accelerated_paint_no_support.details"));
 
         /// Simple "Warning" text, that is localized to user's language.
         /// You may use this as prefix to warnings when displaying these
         /// to user.
-        public static final Component PREFIX = Component.translatable("slicef.warnings.prefix");
+        public static final Component PREFIX = Component.translatable("silcef.warnings.prefix");
 
         @Override
         public int hashCode() {
@@ -59,10 +59,10 @@ public class SlicefWarning {
 
     private final HashSet<Warning> warnings = new HashSet<>();
 
-    public SlicefWarning() {
-        addConditionalWarning(SlicefWarning.Warning.WARN_DEVELOPMENT                   , Slicef.INDEV                       );
-        addConditionalWarning(SlicefWarning.Warning.WARN_FALLBACK_LANGUAGE             , Slicef.isFallbackLang              );
-        addConditionalWarning(SlicefWarning.Warning.WARN_ACCELERATED_PAINT_NO_SUPPORT  , !Slicef.isAcceleratedPaintAllowed  );
+    public SilcefWarning() {
+        addConditionalWarning(SilcefWarning.Warning.WARN_DEVELOPMENT                   , Silcef.INDEV                       );
+        addConditionalWarning(SilcefWarning.Warning.WARN_FALLBACK_LANGUAGE             , Silcef.isFallbackLang              );
+        addConditionalWarning(SilcefWarning.Warning.WARN_ACCELERATED_PAINT_NO_SUPPORT  , !Silcef.isAcceleratedPaintAllowed  );
     }
 
     /// Adds warning to warnings list. You may add warnings that

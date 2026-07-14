@@ -3,7 +3,7 @@ package com.tiji.silcef.internals.win;
 import com.mojang.blaze3d.platform.cursor.CursorType;
 import com.sun.jna.Pointer;
 import com.sun.jna.platform.win32.Kernel32;
-import com.tiji.silcef.Slicef;
+import com.tiji.silcef.Silcef;
 import com.tiji.silcef.internals.CursorConverter;
 import com.tiji.silcef.internals.JcefLoader;
 import org.jetbrains.annotations.Nullable;
@@ -67,7 +67,7 @@ public class WindowsCursorConverter implements CursorConverter {
     private static long getDLLHandle(String name) {
         HINSTANCE hinstance = Kernel32.INSTANCE.LoadLibraryEx(name, null, 0x822);
         if (hinstance == null) {
-            Slicef.LOGGER.error("Failed to load {}: {}", name, Kernel32.INSTANCE.GetLastError());
+            Silcef.LOGGER.error("Failed to load {}: {}", name, Kernel32.INSTANCE.GetLastError());
             return 0L;
         }
 

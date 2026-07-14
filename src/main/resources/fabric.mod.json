@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
-  "id": "slicef",
+  "id": "silcef",
   "version": "${version}",
-  "name": "Slicef",
-  "description": "Browser mod by Tiji",
+  "name": "Silcef",
+  "description": "Better MCEF",
   "authors": [],
   "contact": {},
   "license": "LGPLv3.0",
-  "accessWidener": "slicef.accesswidener",
+  "accessWidener": "silcef.accesswidener",
   "environment": "client",
   "entrypoints": {
     "main": [
-      "com.tiji.silcef.internals.SlicefInitializer"
+      "com.tiji.silcef.internals.SilcefInitializer"
     ],
     "preLaunch": [
       "com.tiji.silcef.internals.JcefLoader"
     ]
   },
   "mixins": [
-    "slicef.mixins.json"
+    "silcef.mixins.json"
   ],
   "depends": {
     "fabric-api": "*",

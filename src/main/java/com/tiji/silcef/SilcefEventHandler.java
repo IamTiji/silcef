@@ -19,7 +19,7 @@ import static org.lwjgl.glfw.GLFW.glfwGetMouseButton;
 ///
 /// @since 1.0
 /// @author Tiji
-public class SlicefEventHandler {
+public class SilcefEventHandler {
     private static final java.awt.Component fakeComponent = new Label();
     static {
         fakeComponent.setVisible(true); // awt is awful
@@ -27,9 +27,9 @@ public class SlicefEventHandler {
 
     private static final int SCROLL_MULTIPLIER = 120;
 
-    private final SlicefBrowser browser;
+    private final SilcefBrowser browser;
 
-    public SlicefEventHandler(SlicefBrowser browser) {
+    public SilcefEventHandler(SilcefBrowser browser) {
         this.browser = browser;
     }
 

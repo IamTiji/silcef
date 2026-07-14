@@ -4,7 +4,7 @@ import com.mojang.blaze3d.opengl.GlTexture;
 import com.mojang.blaze3d.textures.GpuSampler;
 import com.mojang.blaze3d.textures.GpuTextureView;
 
-/// A class representing all textures used in Slicef.
+/// A class representing all textures used in Silcef.
 ///
 /// @since 1.0
 /// @author Tiji

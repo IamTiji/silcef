@@ -27,10 +27,10 @@ import static org.lwjgl.glfw.GLFW.*;
 ///
 /// @since 1.0
 /// @author Tiji
-public class SlicefWidget extends AbstractWidget {
-    private final SlicefBrowser browser;
-    private final SlicefRenderState state;
-    private final SlicefEventHandler eventHandler;
+public class SilcefWidget extends AbstractWidget {
+    private final SilcefBrowser browser;
+    private final SilcefRenderState state;
+    private final SilcefEventHandler eventHandler;
 
     /// Constructs browser widget. You should never construct this every
     /// time `init` method is called. Instead, you should construct this
@@ -41,11 +41,11 @@ public class SlicefWidget extends AbstractWidget {
     ///
     /// @since 1.0
     /// @author Tiji
-    public SlicefWidget(SlicefBrowser browser, int x, int y) {
-        super(x, y, browser.getViewRect().width, browser.getViewRect().height, Component.literal("Slicef Browser Widget"));
+    public SilcefWidget(SilcefBrowser browser, int x, int y) {
+        super(x, y, browser.getViewRect().width, browser.getViewRect().height, Component.literal("Silcef Browser Widget"));
         this.browser = browser;
-        this.state = new SlicefRenderState(browser);
-        this.eventHandler = new SlicefEventHandler(browser);
+        this.state = new SilcefRenderState(browser);
+        this.eventHandler = new SilcefEventHandler(browser);
         state.setPos(x, y);
     }
 
@@ -54,7 +54,7 @@ public class SlicefWidget extends AbstractWidget {
     ///
     /// @since 1.0
     /// @author Tiji
-    /// @see SlicefBrowser#resize(int, int)
+    /// @see SilcefBrowser#resize(int, int)
     public void resize(int width, int height) {
         state.setSize(width, height);
         super.setRectangle(width, height, getX(), getY());

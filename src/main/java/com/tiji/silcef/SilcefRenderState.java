@@ -14,15 +14,15 @@ import java.awt.*;
 
 /// Render state implementation for Silcef browser.
 /// You may use this to render browser to GUI, but
-/// it is recommended to use [SlicefWidget] instead.
+/// it is recommended to use [SilcefWidget] instead.
 ///
 /// @since 1.0
 /// @author Tiji
-public class SlicefRenderState implements GuiElementRenderState {
-    private final SlicefBrowser browser;
+public class SilcefRenderState implements GuiElementRenderState {
+    private final SilcefBrowser browser;
     private int x, y, width, height;
 
-    public SlicefRenderState(SlicefBrowser browser) {
+    public SilcefRenderState(SilcefBrowser browser) {
         this.browser = browser;
 
         Rectangle rect = browser.getMinecraftBounds();

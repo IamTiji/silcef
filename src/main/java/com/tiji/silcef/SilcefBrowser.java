@@ -26,7 +26,7 @@ import java.util.function.Consumer;
 ///
 /// @since 1.0
 /// @author Tiji
-public class SlicefBrowser extends CefBrowser_N implements CefRenderHandler {
+public class SilcefBrowser extends CefBrowser_N implements CefRenderHandler {
     /// Title of current website
     public volatile String currentTitle;
     /// Tooltip of element that is hovered over by cursor
@@ -39,10 +39,10 @@ public class SlicefBrowser extends CefBrowser_N implements CefRenderHandler {
     public volatile String faviconUrl;
 
     private final RenderHandlerImpl renderHandler;
-    private SlicefWarning warnings = new SlicefWarning();
+    private SilcefWarning warnings = new SilcefWarning();
 
-    /// Constructs browser instance. You should probably use [Slicef#getBrowser] instead.
-    public SlicefBrowser(CefClient cefClient, String url, boolean loggingEnabled) {
+    /// Constructs browser instance. You should probably use [Silcef#getBrowser] instead.
+    public SilcefBrowser(CefClient cefClient, String url, boolean loggingEnabled) {
         super(cefClient, url, CefRequestContext.getGlobalContext(), null, null, getBrowserSettings());
 
         renderHandler = new RenderHandlerImpl();
@@ -64,7 +64,7 @@ public class SlicefBrowser extends CefBrowser_N implements CefRenderHandler {
     /// @since 1.0
     /// @author Tiji
     public void clearWarnings() {
-        warnings = new SlicefWarning();
+        warnings = new SilcefWarning();
     }
 
     @Override
@@ -106,12 +106,12 @@ public class SlicefBrowser extends CefBrowser_N implements CefRenderHandler {
         throw new UnsupportedOperationException("not implemented");
     }
 
-    /// Returns instance of [SlicefWarning], containing warnings
+    /// Returns instance of [SilcefWarning], containing warnings
     /// that has been raised. Warning instance will never be null.
     ///
     /// @since 1.0
     /// @author Tiji
-    public SlicefWarning getWarnings() {
+    public SilcefWarning getWarnings() {
         return warnings;
     }
 
@@ -123,7 +123,7 @@ public class SlicefBrowser extends CefBrowser_N implements CefRenderHandler {
     /// @author Tiji
     public AbstractTexture getTexture() {
         AbstractTexture texture = renderHandler.getTexture();
-        warnings.addConditionalWarning(SlicefWarning.Warning.WARN_SOFTWARE_FALLBACK, texture instanceof SoftwareTexture);
+        warnings.addConditionalWarning(SilcefWarning.Warning.WARN_SOFTWARE_FALLBACK, texture instanceof SoftwareTexture);
         return texture;
     }
 

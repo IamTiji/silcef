@@ -5,7 +5,7 @@ import com.mojang.blaze3d.opengl.GlTexture;
 import com.mojang.blaze3d.opengl.GlTextureView;
 import com.mojang.blaze3d.textures.*;
 import com.tiji.silcef.AbstractTexture;
-import com.tiji.silcef.Slicef;
+import com.tiji.silcef.Silcef;
 import com.tiji.silcef.internals.utils.GlTextureWrapper;
 import com.tiji.silcef.internals.utils.NameUtils;
 import org.apache.commons.lang3.time.StopWatch;
@@ -92,7 +92,7 @@ public class SoftwareTexture extends AbstractTexture {
 
         if (shouldLogTime) {
             timer.stop();
-            Slicef.LOGGER.info("Painting took {} μs", timer.getTime(TimeUnit.MICROSECONDS));
+            Silcef.LOGGER.info("Painting took {} μs", timer.getTime(TimeUnit.MICROSECONDS));
             timer.reset();
         }
     }

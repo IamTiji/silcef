@@ -2,7 +2,7 @@ package com.tiji.silcef;
 
 import org.cef.callback.CefRunContextMenuCallback;
 
-/// A callback class that Slicef will use to tell what context
+/// A callback class that Silcef will use to tell what context
 /// menu is active. It is recommended to use it as anonymous
 /// class, but it is really up to you.
 ///

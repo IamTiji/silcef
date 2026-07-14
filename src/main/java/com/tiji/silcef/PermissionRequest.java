@@ -69,7 +69,7 @@ public final class PermissionRequest {
     /// @since 1.0
     /// @author Tiji
     public Component getRequestHeading() {
-        return Component.translatable("slicef.permission.prompt_heading", getOrigin());
+        return Component.translatable("silcef.permission.prompt_heading", getOrigin());
     }
 
     /// Returns array of text, representing each permission type for this
@@ -84,7 +84,7 @@ public final class PermissionRequest {
 
         int i = 0;
         for (CefPermissionRequestType type : requestedPermissions) {
-            texts[i++] = Component.translatable("slicef.permission.type.%s".formatted(type.name()));
+            texts[i++] = Component.translatable("silcef.permission.type.%s".formatted(type.name()));
         }
 
         return texts;

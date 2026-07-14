@@ -1,6 +1,6 @@
 package com.tiji.silcef.internals.cefimpl;
 
-import com.tiji.silcef.SlicefBrowser;
+import com.tiji.silcef.SilcefBrowser;
 import com.tiji.silcef.TooltipStatus;
 import org.cef.CefSettings;
 import org.cef.browser.CefBrowser;
@@ -12,8 +12,8 @@ import java.util.HashSet;
 import java.util.Vector;
 
 public class DisplayHandlerImpl extends CefDisplayHandlerAdapter {
-    private static final Logger LOGGER = LoggerFactory.getLogger("Slicef Browser");
-    private static final HashSet<SlicefBrowser> loggedBrowsers = new HashSet<>();
+    private static final Logger LOGGER = LoggerFactory.getLogger("Silcef Browser");
+    private static final HashSet<SilcefBrowser> loggedBrowsers = new HashSet<>();
 
     @Override
     public boolean onConsoleMessage(CefBrowser browser, CefSettings.LogSeverity level, String message, String source, int line) {
@@ -44,28 +44,28 @@ public class DisplayHandlerImpl extends CefDisplayHandlerAdapter {
         return true;
     }
 
-    public static void logBrowser(SlicefBrowser browser) {
+    public static void logBrowser(SilcefBrowser browser) {
         loggedBrowsers.add(browser);
     }
 
-    public static void unlogBrowser(SlicefBrowser browser) {
+    public static void unlogBrowser(SilcefBrowser browser) {
         loggedBrowsers.remove(browser);
     }
 
     @Override
     public void onTitleChange(CefBrowser browser, String title) {
-        if (browser instanceof SlicefBrowser slicefBrowser) {
-            slicefBrowser.currentTitle = title;
+        if (browser instanceof SilcefBrowser silcefBrowser) {
+            silcefBrowser.currentTitle = title;
         }
     }
 
     @Override
     public boolean onTooltip(CefBrowser browser, String text) {
-        if (browser instanceof SlicefBrowser slicefBrowser) {
+        if (browser instanceof SilcefBrowser silcefBrowser) {
             if (text.isBlank()) {
-                slicefBrowser.currentTooltip = TooltipStatus.ofInvisible();
+                silcefBrowser.currentTooltip = TooltipStatus.ofInvisible();
             } else {
-                slicefBrowser.currentTooltip = TooltipStatus.ofVisible(text);
+                silcefBrowser.currentTooltip = TooltipStatus.ofVisible(text);
             }
         }
         return true;
@@ -73,26 +73,26 @@ public class DisplayHandlerImpl extends CefDisplayHandlerAdapter {
 
     @Override
     public void onStatusMessage(CefBrowser browser, String value) {
-        if (browser instanceof SlicefBrowser slicefBrowser) {
+        if (browser instanceof SilcefBrowser silcefBrowser) {
             if (value.isBlank()) {
-                slicefBrowser.statusText = null;
+                silcefBrowser.statusText = null;
             } else {
-                slicefBrowser.statusText = value;
+                silcefBrowser.statusText = value;
             }
         }
     }
 
     @Override
     public void onLoadProgressChange(CefBrowser browser, double progress) {
-        if (browser instanceof SlicefBrowser slicefBrowser) {
-            slicefBrowser.loadProgress = progress;
+        if (browser instanceof SilcefBrowser silcefBrowser) {
+            silcefBrowser.loadProgress = progress;
         }
     }
 
     @Override
     public void onFaviconURLChange(CefBrowser browser, Vector<String> urls) {
-        if (browser instanceof SlicefBrowser slicefBrowser) {
-            slicefBrowser.faviconUrl = urls.getFirst();
+        if (browser instanceof SilcefBrowser silcefBrowser) {
+            silcefBrowser.faviconUrl = urls.getFirst();
         }
     }
 }

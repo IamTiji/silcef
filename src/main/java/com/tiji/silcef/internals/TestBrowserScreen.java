@@ -15,15 +15,15 @@ import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
 public class TestBrowserScreen extends Screen {
-    private final SlicefBrowser browser;
-    private final SlicefWidget widget;
+    private final SilcefBrowser browser;
+    private final SilcefWidget widget;
 
     public TestBrowserScreen(String url) {
         super(Component.empty());
 
-        browser = Slicef.getBrowser(url);
+        browser = Silcef.getBrowser(url);
         browser.setPermissionHandler(this::permissionHandler);
-        widget = new SlicefWidget(browser, 0, 0);
+        widget = new SilcefWidget(browser, 0, 0);
         widget.setFocused(true);
     }
 
@@ -57,9 +57,9 @@ public class TestBrowserScreen extends Screen {
                     null);
         }
 
-        SlicefWarning warnings = browser.getWarnings();
+        SilcefWarning warnings = browser.getWarnings();
         int y = height - 70;
-        for (SlicefWarning.Warning warning : warnings.allWarnings()) {
+        for (SilcefWarning.Warning warning : warnings.allWarnings()) {
             guiGraphics.drawString(font, warning.message(), 20, y, 0xFFFFFF00);
             y += font.lineHeight + 2;
         }
@@ -71,13 +71,13 @@ public class TestBrowserScreen extends Screen {
     }
 
     private void permissionHandler(PermissionRequest req) {
-        Slicef.LOGGER.info("Web Permission request: {}", req.getAsSingularSentence());
+        Silcef.LOGGER.info("Web Permission request: {}", req.getAsSingularSentence());
         req.resolve(CefPermissionRequestResult.ACCEPT);
     }
 
     @Override
     public void onClose() {
         super.onClose();
-        Slicef.destroyBrowser(browser);
+        Silcef.destroyBrowser(browser);
     }
 }

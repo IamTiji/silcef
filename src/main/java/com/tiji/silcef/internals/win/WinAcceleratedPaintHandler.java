@@ -1,7 +1,7 @@
 package com.tiji.silcef.internals.win;
 
 import com.tiji.silcef.AbstractTexture;
-import com.tiji.silcef.Slicef;
+import com.tiji.silcef.Silcef;
 import com.tiji.silcef.internals.AcceleratedPaintHandler;
 import net.minecraft.client.Minecraft;
 import org.apache.commons.lang3.time.StopWatch;
@@ -41,7 +41,7 @@ public class WinAcceleratedPaintHandler implements AcceleratedPaintHandler {
 
         if (shouldLogTime) {
             timer.stop();
-            Slicef.LOGGER.info("Painting took {} μs", timer.getTime(TimeUnit.MICROSECONDS));
+            Silcef.LOGGER.info("Painting took {} μs", timer.getTime(TimeUnit.MICROSECONDS));
             timer.reset();
         }
     }
@@ -64,7 +64,7 @@ public class WinAcceleratedPaintHandler implements AcceleratedPaintHandler {
 
     public static void initialize() {
         if (!glfwExtensionSupported("GL_EXT_memory_object")) {
-            Slicef.LOGGER.warn("GL_EXT_memory_object extension is not supported on this system. " +
+            Silcef.LOGGER.warn("GL_EXT_memory_object extension is not supported on this system. " +
                     "If your GPU supports it, check if you have appropriate drivers installed");
             throw new RuntimeException("DirectX initialization failed");
         }

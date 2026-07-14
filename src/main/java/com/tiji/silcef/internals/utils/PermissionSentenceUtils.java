@@ -1,7 +1,7 @@
 package com.tiji.silcef.internals.utils;
 
 import com.google.gson.Gson;
-import com.tiji.silcef.Slicef;
+import com.tiji.silcef.Silcef;
 import org.cef.handler.CefPermissionRequestType;
 
 import java.io.FileNotFoundException;
@@ -13,13 +13,13 @@ public class PermissionSentenceUtils {
     private static SentenceStructure sentenceStructure;
 
     public static void load(String locale) {
-        try (InputStream inputStream = Slicef.class.getResourceAsStream("/sentences/%s.json".formatted(locale))) {
+        try (InputStream inputStream = Silcef.class.getResourceAsStream("/sentences/%s.json".formatted(locale))) {
             if (inputStream == null && !locale.equals("en_us")) {
                 load("en_us");
-                Slicef.LOGGER.warn("Using fallback English as requested locale ({}) is not found.", locale);
+                Silcef.LOGGER.warn("Using fallback English as requested locale ({}) is not found.", locale);
                 return;
             } else if (inputStream == null) {
-                Slicef.LOGGER.error("Fallback English is not found; " +
+                Silcef.LOGGER.error("Fallback English is not found; " +
                         "this mod is probably corrupted. Redownload this mod and try again.");
                 throw new FileNotFoundException("See above");
             }
@@ -28,7 +28,7 @@ public class PermissionSentenceUtils {
             sentenceStructure = new Gson().fromJson(json, SentenceStructure.class);
         } catch (IOException e) {
             sentenceStructure = null;
-            Slicef.LOGGER.error("Failed to load permission sentence structure for locale {}: {}", locale, e);
+            Silcef.LOGGER.error("Failed to load permission sentence structure for locale {}: {}", locale, e);
         }
     }
 

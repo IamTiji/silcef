@@ -1,7 +1,7 @@
 package com.tiji.silcef.internals.cefimpl;
 
 import com.tiji.silcef.ContextMenuItem;
-import com.tiji.silcef.SlicefBrowser;
+import com.tiji.silcef.SilcefBrowser;
 import org.cef.browser.CefBrowser;
 import org.cef.browser.CefFrame;
 import org.cef.callback.CefContextMenuParams;
@@ -39,8 +39,8 @@ public class ContextMenuHandlerImpl extends CefContextMenuHandlerAdapter {
     // TODO: Pass context of the context menu?
     @Override
     public boolean runContextMenu(CefBrowser browser, CefFrame frame, CefContextMenuParams params, CefMenuModel model, CefRunContextMenuCallback callback) {
-        if (browser instanceof SlicefBrowser slicefBrowser) {
-            slicefBrowser.onContextMenu(wrapModel(model), callback);
+        if (browser instanceof SilcefBrowser silcefBrowser) {
+            silcefBrowser.onContextMenu(wrapModel(model), callback);
             return true;
         }
 
@@ -49,8 +49,8 @@ public class ContextMenuHandlerImpl extends CefContextMenuHandlerAdapter {
 
     @Override
     public void onContextMenuDismissed(CefBrowser browser, CefFrame frame) {
-        if (browser instanceof SlicefBrowser slicefBrowser) {
-            slicefBrowser.onDismiss();
+        if (browser instanceof SilcefBrowser silcefBrowser) {
+            silcefBrowser.onDismiss();
         }
     }
 }

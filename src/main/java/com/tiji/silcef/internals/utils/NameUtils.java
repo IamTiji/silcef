@@ -6,6 +6,6 @@ import java.util.UUID;
 
 public class NameUtils {
     public static @NotNull String getUniqueName(String type) {
-        return "slicef_%s_%s".formatted(type, UUID.randomUUID());
+        return "silcef_%s_%s".formatted(type, UUID.randomUUID());
     }
 }

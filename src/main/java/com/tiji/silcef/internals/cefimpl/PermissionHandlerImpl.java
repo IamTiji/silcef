@@ -1,7 +1,7 @@
 package com.tiji.silcef.internals.cefimpl;
 
 import com.tiji.silcef.PermissionRequest;
-import com.tiji.silcef.SlicefBrowser;
+import com.tiji.silcef.SilcefBrowser;
 import org.cef.browser.CefBrowser;
 import org.cef.callback.CefPermissionPromptCallback;
 import org.cef.handler.CefPermissionHandlerAdapter;
@@ -11,8 +11,8 @@ import org.cef.handler.CefPermissionRequestType;
 import java.util.*;
 
 public class PermissionHandlerImpl extends CefPermissionHandlerAdapter {
-    private static final Map<SlicefBrowser, Queue<PermissionRequest>> pendingRequests = new HashMap<>();
-    private static final Map<SlicefBrowser, Boolean> isAvailable = new HashMap<>();
+    private static final Map<SilcefBrowser, Queue<PermissionRequest>> pendingRequests = new HashMap<>();
+    private static final Map<SilcefBrowser, Boolean> isAvailable = new HashMap<>();
 
     @Override
     public boolean onShowPermissionPrompt(CefBrowser browser,
@@ -20,12 +20,12 @@ public class PermissionHandlerImpl extends CefPermissionHandlerAdapter {
                                           String requestingOrigin,
                                           EnumSet<CefPermissionRequestType> requestedPermissions,
                                           CefPermissionPromptCallback callback) {
-        if (browser instanceof SlicefBrowser slicefBrowser) {
-            isAvailable.putIfAbsent(slicefBrowser, true);
+        if (browser instanceof SilcefBrowser silcefBrowser) {
+            isAvailable.putIfAbsent(silcefBrowser, true);
 
             CefPermissionPromptCallback wrappedCallback = cefPermissionRequestResult -> {
-                isAvailable.put(slicefBrowser, true);
-                pollRequests(slicefBrowser);
+                isAvailable.put(silcefBrowser, true);
+                pollRequests(silcefBrowser);
 
                 callback.Continue(cefPermissionRequestResult);
             };
@@ -33,15 +33,15 @@ public class PermissionHandlerImpl extends CefPermissionHandlerAdapter {
             PermissionRequest permissionRequest =
                 new PermissionRequest(promptId, requestingOrigin, requestedPermissions, wrappedCallback);
 
-            if (pendingRequests.containsKey(slicefBrowser)) {
-                pendingRequests.get(slicefBrowser)
+            if (pendingRequests.containsKey(silcefBrowser)) {
+                pendingRequests.get(silcefBrowser)
                     .add(permissionRequest);
             } else {
                 Queue<PermissionRequest> queue = new LinkedList<>();
                 queue.add(permissionRequest);
-                pendingRequests.put(slicefBrowser, queue);
+                pendingRequests.put(silcefBrowser, queue);
             }
-            pollRequests(slicefBrowser);
+            pollRequests(silcefBrowser);
 
             return true;
         }
@@ -49,16 +49,16 @@ public class PermissionHandlerImpl extends CefPermissionHandlerAdapter {
         return false;
     }
 
-    private static void pollRequests(SlicefBrowser slicefBrowser) {
-        if (!isAvailable.get(slicefBrowser)) return;
+    private static void pollRequests(SilcefBrowser silcefBrowser) {
+        if (!isAvailable.get(silcefBrowser)) return;
 
-        Queue<PermissionRequest> queue = pendingRequests.get(slicefBrowser);
+        Queue<PermissionRequest> queue = pendingRequests.get(silcefBrowser);
         PermissionRequest req = queue.poll();
         if (req != null) {
-            isAvailable.put(slicefBrowser, false);
-            slicefBrowser.onPermissionRequest(req);
+            isAvailable.put(silcefBrowser, false);
+            silcefBrowser.onPermissionRequest(req);
         } else {
-            isAvailable.put(slicefBrowser, true);
+            isAvailable.put(silcefBrowser, true);
         }
     }
 

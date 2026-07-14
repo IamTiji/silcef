@@ -1,7 +1,7 @@
 package com.tiji.silcef.internals;
 
 import com.tiji.silcef.AbstractTexture;
-import com.tiji.silcef.Slicef;
+import com.tiji.silcef.Silcef;
 import com.tiji.silcef.internals.win.WinAcceleratedPaintHandler;
 import org.cef.misc.CefAcceleratedPaintInfo;
 
@@ -22,7 +22,7 @@ public interface AcceleratedPaintHandler {
     }
 
     static AcceleratedPaintHandler getInstance() {
-        if (Slicef.isAcceleratedPaintAllowed) {
+        if (Silcef.isAcceleratedPaintAllowed) {
             String os = System.getProperty("os.name").toLowerCase();
             if (os.contains("win")) {
                 return new WinAcceleratedPaintHandler();

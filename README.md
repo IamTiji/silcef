@@ -1,4 +1,4 @@
-# Slicef
+# Silcef
 
 Allows you to easily put browser inside of Minecraft. 
 
@@ -16,7 +16,7 @@ Note that this is under development, and bugs and lack of features are expected.
    are typing.
  - **Easier API:** Just call `addRenderableWidget`. There is no need to touch vertex
    data.
- - **Reasonable MCEF capability:** Slicef will be somewhat capable of running mods based on MCEF.
+ - **Reasonable MCEF capability:** Silcef will be somewhat capable of running mods based on MCEF.
 
 ### Platform support
 

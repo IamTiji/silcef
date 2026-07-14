@@ -13,11 +13,11 @@
 
 ## Project structure
 
-Every lives in package `com.tiji.silcef`. Package name mentioned below must be prefixed with this base package to be valid.
+Every lives in package `com.tiji.slicef`. Package name mentioned below must be prefixed with this base package to be valid.
 
 - Root: Contains public APIs that are to be used by other Minecraft mods.
 - `internals`: Contains private APIs internally used.
 - `internals.cefimpl`: Contains implementation of CEF interfaces
-- `internals.utils`: Contains utility classes. Most of them are self-explainotory by its name
+- `internals.utils`: Contains utility classes. Most of them are self-explanatory by its name
 - `internals.win`: Contains classes used in Windows environment only. May contain dangerous workarounds
 - `mixins`: Contains mixin classes, to modify bytecode of other classes

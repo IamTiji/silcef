@@ -10,7 +10,7 @@ base {
 }
 
 loom {
-    accessWidenerPath.set(file("src/main/resources/slicef.accesswidener"))
+    accessWidenerPath.set(file("src/main/resources/silcef.accesswidener"))
 }
 
 repositories {
