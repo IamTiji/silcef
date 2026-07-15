@@ -52,8 +52,6 @@ public class SilcefInitializer implements ModInitializer {
     }
 
     public void start(Minecraft mc) {
-        System.setProperty("java.awt.headless", "false"); // Why java...
-
         Silcef.LOGGER.info("Loading natives from {}", JcefLoader.NATIVE_PATH);
         SystemBootstrap.setLoader(s -> {
             Path libPath = Path.of(JcefLoader.NATIVE_PATH, System.mapLibraryName(s));

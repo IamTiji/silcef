@@ -1,5 +1,6 @@
 package com.tiji.silcef;
 
+import com.tiji.silcef.internals.HeadlessComponent;
 import com.tiji.silcef.internals.utils.KeycodeUtils;
 import com.tiji.silcef.internals.utils.UnsafeFieldOverride;
 import net.minecraft.client.Minecraft;
@@ -10,8 +11,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseWheelEvent;
 
 import static org.lwjgl.glfw.GLFW.*;
-import static org.lwjgl.glfw.GLFW.glfwGetKey;
-import static org.lwjgl.glfw.GLFW.glfwGetMouseButton;
 
 /// Utility class to handle input events easily.
 /// Methods are self-explanatory with their name,
@@ -20,7 +19,7 @@ import static org.lwjgl.glfw.GLFW.glfwGetMouseButton;
 /// @since 1.0
 /// @author Tiji
 public class SilcefEventHandler {
-    private static final java.awt.Component fakeComponent = new Label();
+    private static final java.awt.Component fakeComponent = new HeadlessComponent();
     static {
         fakeComponent.setVisible(true); // awt is awful
     }
