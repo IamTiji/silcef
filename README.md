@@ -20,7 +20,7 @@ Note that this is under development, and bugs and lack of features are expected.
 
 ### Progress and plans
 
-Check out [here](https://github.com/IamTiji/silcef/TODO.md).
+Check out [here](https://github.com/IamTiji/silcef/blob/master/TODO.md).
 
 ### Platform support
 
