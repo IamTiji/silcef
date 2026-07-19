@@ -18,6 +18,10 @@ Note that this is under development, and bugs and lack of features are expected.
    data.
  - **Reasonable MCEF capability:** Silcef will be somewhat capable of running mods based on MCEF.
 
+### Progress and plans
+
+Check out [here](https://github.com/IamTiji/silcef/TODO.md).
+
 ### Platform support
 
 | Platform      | Support                       |
