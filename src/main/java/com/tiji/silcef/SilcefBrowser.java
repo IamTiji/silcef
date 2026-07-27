@@ -125,7 +125,10 @@ public class SilcefBrowser extends CefBrowser_N implements CefRenderHandler {
         AbstractTexture texture = renderHandler.getTexture();
         warnings.addConditionalWarning(
                 SilcefWarning.Warning.WARN_SOFTWARE_FALLBACK,
-                (texture instanceof SoftwareTexture) && Silcef.isAcceleratedPaintAllowed);
+
+                (texture instanceof SoftwareTexture)
+                        && Silcef.isAcceleratedPaintAllowed
+                        && renderHandler.textureReady());
         return texture;
     }
 

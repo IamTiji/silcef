@@ -23,7 +23,8 @@ public class RenderHandlerImpl implements CefRenderHandler {
     public int width, height;
     public int mcWidth, mcHeight;
 
-    private boolean wasPreviousPaintAccelerated = false;
+    private volatile boolean wasPreviousPaintAccelerated = false;
+    private volatile boolean isTextureReady = false;
 
     private SoftwareTexture softwareTexture;
     private final AcceleratedPaintHandler acceleratedPaintHandler = AcceleratedPaintHandler.getInstance();
@@ -48,6 +49,8 @@ public class RenderHandlerImpl implements CefRenderHandler {
         ByteBuffer safeBuffer = BufferUtils.createByteBuffer(pixels.remaining());
         safeBuffer.put(pixels);
         Minecraft.getInstance().execute(() -> softwareTexture.onPaint(dirtyRects, safeBuffer, w));
+
+        isTextureReady = true;
     }
 
     @Override
@@ -91,6 +94,8 @@ public class RenderHandlerImpl implements CefRenderHandler {
         if (ignorePaint) return;
 
         acceleratedPaintHandler.onPaint(info, width, height);
+
+        isTextureReady = true;
     }
 
     @Override
@@ -139,6 +144,10 @@ public class RenderHandlerImpl implements CefRenderHandler {
 
     public AbstractTexture getTexture() {
         return wasPreviousPaintAccelerated ? acceleratedPaintHandler.getTexture() : softwareTexture;
+    }
+
+    public boolean textureReady() {
+        return isTextureReady;
     }
 
     // Does nothing
