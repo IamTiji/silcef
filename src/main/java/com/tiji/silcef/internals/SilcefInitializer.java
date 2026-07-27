@@ -78,6 +78,9 @@ public class SilcefInitializer implements ModInitializer {
         });
         future.join();
 
+        // Force disable -- for debugging only
+        //Silcef.isAcceleratedPaintAllowed = false;
+
         CefSettings settings = new CefSettings();
         settings.windowless_rendering_enabled = true;
         settings.browser_subprocess_path = Path.of(JcefLoader.NATIVE_PATH, "/jcef_helper.exe").toAbsolutePath().toString();

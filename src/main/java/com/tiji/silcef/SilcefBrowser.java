@@ -123,7 +123,9 @@ public class SilcefBrowser extends CefBrowser_N implements CefRenderHandler {
     /// @author Tiji
     public AbstractTexture getTexture() {
         AbstractTexture texture = renderHandler.getTexture();
-        warnings.addConditionalWarning(SilcefWarning.Warning.WARN_SOFTWARE_FALLBACK, texture instanceof SoftwareTexture);
+        warnings.addConditionalWarning(
+                SilcefWarning.Warning.WARN_SOFTWARE_FALLBACK,
+                (texture instanceof SoftwareTexture) && Silcef.isAcceleratedPaintAllowed);
         return texture;
     }
 
@@ -202,6 +204,11 @@ public class SilcefBrowser extends CefBrowser_N implements CefRenderHandler {
         handler.onDismiss();
     }
 
+
+    @Override
+    public boolean isAcceleratedPaintEnabled() {
+        return Silcef.isAcceleratedPaintAllowed;
+    }
 
     // Just so that JCEF finds it
     @Override

@@ -26,7 +26,7 @@
  - [ ] Dynamic binary loader (Needs JCEF to be final)
  - [ ] Vulkan support for 26.1+
  - [ ] SDL3 support for 26.3+
- - [ ] Accelerated paint disables
+ - [X] Accelerated paint disables
 
 # Drop-able features
 *Might not be implemented*

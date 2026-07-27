@@ -23,7 +23,7 @@ public class RenderHandlerImpl implements CefRenderHandler {
     public int width, height;
     public int mcWidth, mcHeight;
 
-    private boolean wasPreviousPaintAccelerated = true;
+    private boolean wasPreviousPaintAccelerated = false;
 
     private SoftwareTexture softwareTexture;
     private final AcceleratedPaintHandler acceleratedPaintHandler = AcceleratedPaintHandler.getInstance();
