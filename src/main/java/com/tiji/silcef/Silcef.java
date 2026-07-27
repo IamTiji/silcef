@@ -85,4 +85,13 @@ public class Silcef {
             throw new IllegalCallerException("This may only be called in Silcef Message Thread");
         }
     }
+
+    /// Returns the fork name. If original, returns "Silcef",
+    /// something else than that if otherwise. Case-sensitive.
+    ///
+    /// @since 1.0
+    /// @author Tiji
+    public static String getForkName() {
+        return "Silcef";
+    }
 }
