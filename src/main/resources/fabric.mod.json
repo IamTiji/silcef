@@ -23,5 +23,8 @@
   "depends": {
     "fabric-api": "*",
     "minecraft": "${minecraft_version}"
-  }
+  },
+  "provides": [
+    "mcef"
+  ]
 }

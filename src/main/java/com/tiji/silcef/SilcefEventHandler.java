@@ -38,7 +38,12 @@ public class SilcefEventHandler {
         return key + 1;
     }
 
-    private static int getModifiers() {
+    /// Creates modifier value. Override this if
+    /// you are not doing this on non-screen environment.
+    ///
+    /// @since 1.0
+    /// @author Tiji
+    public static int getModifiers() {
         long window = Minecraft.getInstance().getWindow().handle();
         int mod = 0;
         if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT  ) == GLFW_PRESS) mod |= KeyEvent.BUTTON1_DOWN_MASK;

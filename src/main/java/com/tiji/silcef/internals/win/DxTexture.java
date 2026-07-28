@@ -35,7 +35,7 @@ public class DxTexture extends AbstractTexture {
         glBindTexture(GL_TEXTURE_2D, GLTextureId);
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, (ByteBuffer) null);
 
-        String name = NameUtils.getUniqueName("acceleratedTexture");
+        String name = NameUtils.getUniqueName("accelerated_texture");
         mcGlTexture = new GlTextureWrapper(GpuTexture.USAGE_RENDER_ATTACHMENT,
                 name,
                 TextureFormat.RGBA8,
@@ -69,6 +69,8 @@ public class DxTexture extends AbstractTexture {
                 1,
                 OptionalDouble.of(1)
         );
+
+        super.registerToManager(name);
     }
 
     public void onPaint(CefAcceleratedPaintInfo info, int width, int height) {
@@ -131,5 +133,7 @@ public class DxTexture extends AbstractTexture {
         if (destroyed) throw new IllegalStateException("Texture already destroyed");
         destroyed = true;
         glDeleteTextures(GLTextureId);
+
+        super.unregisterFromManager();
     }
 }

@@ -1,5 +1,6 @@
 package com.tiji.silcef.internals;
 
+import com.cinemamod.mcef.MCEF;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.tiji.silcef.Silcef;
 import com.tiji.silcef.internals.cefimpl.ContextMenuHandlerImpl;
@@ -10,6 +11,7 @@ import com.tiji.silcef.internals.utils.PermissionSentenceUtils;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.Minecraft;
 import net.minecraft.commands.Commands;
 import org.cef.CefApp;
@@ -52,6 +54,15 @@ public class SilcefInitializer implements ModInitializer {
     }
 
     public void start(Minecraft mc) {
+        @SuppressWarnings("OptionalGetWithoutIsPresent") // Safe because if MCEF is missing, Silcef will provide it
+        String mcef = FabricLoader.getInstance()
+                .getModContainer("mcef").get()
+                .getMetadata()
+                .getId();
+        if (mcef.equals("mcef")) {
+            throw new IllegalStateException("You may not have MCEF and Silcef together! Either remove Silcef or MCEF.");
+        }
+
         Silcef.LOGGER.info("Loading natives from {}", JcefLoader.NATIVE_PATH);
         SystemBootstrap.setLoader(s -> {
             Path libPath = Path.of(JcefLoader.NATIVE_PATH, System.mapLibraryName(s));
@@ -108,6 +119,9 @@ public class SilcefInitializer implements ModInitializer {
         if (!CefApp.startup(argsArray)) throw new RuntimeException("Failed to initialize CEF");
 
         app = CefApp.getInstance(argsArray, settings);
+
+        MCEF.initialize();
+
         client = app.createClient();
         client.addDisplayHandler(new DisplayHandlerImpl());
         client.addPermissionHandler(new PermissionHandlerImpl());
@@ -121,5 +135,8 @@ public class SilcefInitializer implements ModInitializer {
 
     public static CefClient getClient() {
         return client;
+    }
+    public static CefApp getApp() {
+        return app;
     }
 }
