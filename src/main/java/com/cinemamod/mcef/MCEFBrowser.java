@@ -3,7 +3,6 @@ package com.cinemamod.mcef;
 import com.tiji.silcef.SilcefBrowser;
 import com.tiji.silcef.SilcefEventHandler;
 import com.tiji.silcef.internals.cefimpl.RenderHandlerImpl;
-import net.minecraft.client.Minecraft;
 import net.minecraft.resources.Identifier;
 import org.cef.CefClient;
 import org.cef.browser.CefBrowser;
@@ -303,9 +302,7 @@ public class MCEFBrowser implements CefBrowser {
     }
 
     public void resize(int width, int height) {
-        int scaleFactor = Minecraft.getInstance().getWindow().getGuiScale();
-
-        parent.resize(width / scaleFactor, height / scaleFactor);
+        parent.resize(width, height);
     }
 
 

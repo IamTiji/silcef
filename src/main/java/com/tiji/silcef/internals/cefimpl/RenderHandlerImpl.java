@@ -122,8 +122,15 @@ public class RenderHandlerImpl implements CefRenderHandler {
         return currentCursor;
     }
 
-    public void resize(int width, int height) {
-        int scaleFactor = Minecraft.getInstance().getWindow().getGuiScale();
+    public void resize(int width, int height, boolean rawPixels) {
+        int scaleFactor;
+
+        if (rawPixels) {
+            scaleFactor = 1;
+        } else {
+            scaleFactor = Minecraft.getInstance().getWindow().getGuiScale();
+        }
+
         this.width = width * scaleFactor;
         this.height = height * scaleFactor;
 

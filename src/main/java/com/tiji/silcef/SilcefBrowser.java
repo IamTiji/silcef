@@ -144,11 +144,24 @@ public class SilcefBrowser extends CefBrowser_N implements CefRenderHandler {
     /// Resize the browser to new size. This is a heavy task; you
     /// should never call this frequently.
     ///
+    /// @param rawPixels whether if width and height scales with UI scale
+    /// @since 1.0
+    /// @author Tiji
+    public void resize(int width, int height, boolean rawPixels) {
+        renderHandler.resize(width, height, rawPixels);
+        wasResized(renderHandler.width, renderHandler.height);
+    }
+
+    /// Resize the browser to new size. This is a heavy task; you
+    /// should never call this frequently. Width and height scales
+    /// with Minecraft's UI scale. For example, if you pass `100x100`
+    /// as a new scale and UI scale is 3, it will automatically
+    /// scale to `300x300` to match physical pixels.
+    ///
     /// @since 1.0
     /// @author Tiji
     public void resize(int width, int height) {
-        renderHandler.resize(width, height);
-        wasResized(renderHandler.width, renderHandler.height);
+        resize(width, height, false);
     }
 
     /// Returns bounds in raw pixels; meaning that it does not scale
