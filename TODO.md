@@ -5,7 +5,7 @@
  - [ ] ~~Linux X11~~ *(Unplanned)*
 
 # IME Handler
-- [X] Windows
+- [ ] Windows
 - [ ] macOS
 - [ ] Linux Wayland
 - [ ] ~~Linux X11~~ *(Unplanned)*
@@ -22,7 +22,7 @@
 
  - [X] Permission Handler
  - [ ] ~~PiP implementation~~ *(Impossible as Alloy runtime doesn't support it)*
- - [ ] MCEF capability
+ - [X] MCEF capability
  - [ ] Ability to mute browsers
  - [ ] Dynamic binary loader (Needs JCEF to be final)
  - [ ] Vulkan support for 26.1+
