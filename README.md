@@ -4,19 +4,24 @@ Allows you to easily put browser inside of Minecraft.
 
 Note that this is under development, and bugs and lack of features are expected.
 
-### Planned features
+### Features
 
  - **Accelerated Paint:** Original implementation has CPU bottleneck, as pixel needs to
    travel through CPU from GPU then back to GPU. This is inefficient, and accelerated 
    paint is here for a fix. Pixel data will never leave GPU and be drawn straight to
    your screen.
  - **Permission handler:** Allows you to have explicit control over permissions.
- - **IME support:** MCEF doesn't allow users to use IME, making typing experience for
-   Koreans, Chinese, Japanese a pain. Allows for users to actually see what they
-   are typing.
- - **Easier API:** Just call `addRenderableWidget`. There is no need to touch vertex
-   data.
+ - **Easier API:** Just call `addRenderableWidget`. Nothing more.
  - **Reasonable MCEF capability:** Silcef will be somewhat capable of running mods based on MCEF.
+
+### Known issues and limitations
+
+ - Making any interaction with browser will print `Exception in thread "Silcef CEF Message Worker"`
+   message in console, on `stderr` that is not handled by JVM at all.
+ - MCEF capability layer only implements features exposed to MCEF, nothing more. (Excluding 
+   accelerated paint)
+ - MCEF capability layer is only tested against BrowserMod by McJunky33. File an issue if
+   other MCEF dependent mod is broken with Silcef.
 
 ### Progress and plans
 
@@ -34,18 +39,14 @@ Check out [here](https://github.com/IamTiji/silcef/blob/master/TODO.md).
 ### Building this project
 
 You need JCEF for this project to run. Get it from <https://github.com/IamTiji/java-cef>.
-As I haven't built anything, you need to build it yourself. I will build JCEF once I 
-implement automatic JCEF download in this project. Put everything from C++ build and 
-`jcef.jar` to `jcef` folder, and you are good to go!
-
-Run `gradle runClient` to run Minecraft, and `gradle build` to build the mod.
-Note that building as a standalone mod file won't work right now.
+Get the latest release binary, and extract everything to `jcef` folder relative to project 
+root. 
 
 ### Contributions & Filing an issue
 Contributions are welcomed! When making a pull request, make sure that your changes:
  - Fit overall vive of original code
  - Contains only necessary changes
- - Is not written by AI code
+ - Is not written by AI
 
 Since this project is under heavy development, make sure that most of the contribution will get
 rejected, unless you somehow read off my brain.
