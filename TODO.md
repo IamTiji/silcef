@@ -24,7 +24,7 @@
  - [ ] ~~PiP implementation~~ *(Impossible as Alloy runtime doesn't support it)*
  - [X] MCEF capability
  - [ ] Ability to mute browsers
- - [ ] Dynamic binary loader (Needs JCEF to be final)
+ - [X] Dynamic binary loader
  - [ ] Vulkan support for 26.1+
  - [ ] SDL3 support for 26.3+
  - [ ] Stonecutter setup for multi-version
