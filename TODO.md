@@ -28,6 +28,7 @@
  - [ ] Vulkan support for 26.1+
  - [ ] SDL3 support for 26.3+
  - [ ] Stonecutter setup for multi-version
+ - [ ] Website icon loading
  - [X] Accelerated paint disables
 
 # Drop-able features
