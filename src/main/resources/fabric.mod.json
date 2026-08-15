@@ -9,6 +9,7 @@
   "license": "LGPLv3.0",
   "accessWidener": "silcef.accesswidener",
   "environment": "client",
+  "icon": "assets/silcef/icon.png",
   "entrypoints": {
     "main": [
       "com.tiji.silcef.internals.SilcefInitializer"
