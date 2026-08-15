@@ -31,21 +31,24 @@ public class SilcefInitializer implements ModInitializer {
     public void onInitialize() {
         ClientLifecycleEvents.CLIENT_STARTED.register((mc) ->
                 new Thread(null, () -> this.start(mc), "Silcef CEF Message Worker").start());
-        CommandRegistrationCallback.EVENT.register((dispatcher, context, commandSelection) -> {
-            dispatcher.register(
-                    Commands.literal(
-                            "opentest"
-                    ).then(
-                            Commands.argument("url", StringArgumentType.string())
-                                    .executes((context_) -> {
-                                        Minecraft.getInstance().execute(
-                                                () -> Minecraft.getInstance().setScreen(
-                                                        new TestBrowserScreen(context_.getArgument("url", String.class)))
-                                        );
-                                        return 0;
-                                    })
-                    ));
-        });
+
+        if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
+            CommandRegistrationCallback.EVENT.register((dispatcher, context, commandSelection) -> {
+                dispatcher.register(
+                        Commands.literal(
+                                "opentest"
+                        ).then(
+                                Commands.argument("url", StringArgumentType.string())
+                                        .executes((context_) -> {
+                                            Minecraft.getInstance().execute(
+                                                    () -> Minecraft.getInstance().setScreen(
+                                                            new TestBrowserScreen(context_.getArgument("url", String.class)))
+                                            );
+                                            return 0;
+                                        })
+                        ));
+            });
+        }
 
         ClientLifecycleEvents.CLIENT_STOPPING.register((unused) -> {
             client.dispose();
