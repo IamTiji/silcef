@@ -302,7 +302,7 @@ public class MCEFBrowser implements CefBrowser {
     }
 
     public void resize(int width, int height) {
-        parent.resize(width, height);
+        parent.resize(width, height, true);
     }
 
 
