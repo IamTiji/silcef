@@ -3,8 +3,10 @@
   "id": "silcef",
   "version": "${version}",
   "name": "Silcef",
-  "description": "Better MCEF",
-  "authors": [],
+  "description": "Silcef is a JCEF wrapper mod, providing everything you need to build anything from full browser mod to simple widgets.",
+  "authors": [
+    "Tiji"
+  ],
   "contact": {},
   "license": "LGPLv3.0",
   "accessWidener": "silcef.accesswidener",
@@ -27,5 +29,13 @@
   },
   "provides": [
     "mcef"
-  ]
+  ],
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.modrinth": "https://modrinth.com/user/tiji"
+      },
+      "badges": []
+    }
+  }
 }
