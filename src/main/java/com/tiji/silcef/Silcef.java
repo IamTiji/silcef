@@ -17,6 +17,9 @@ public class Silcef {
     /// Whether if Silcef is running with accelerated paint enabled
     public static boolean isAcceleratedPaintAllowed = false;
 
+    /// List of all browser instance running
+    public static List<SilcefBrowser> browsers = new ArrayList<>(10);
+
     private static List<Runnable> scheduledTasks = Collections.synchronizedList(new ArrayList<>());
 
     /// Whether if this mod is release or not
@@ -46,6 +49,9 @@ public class Silcef {
             throw new IllegalStateException("Silcef is not loaded yet. Use scheduleStartup to run something immediately after Silcef is ready.");
         SilcefBrowser browser = new SilcefBrowser(SilcefInitializer.getClient(), url, loggingEnabled);
         browser.createImmediately();
+
+        browsers.add(browser);
+
         return browser;
     }
 
@@ -57,6 +63,8 @@ public class Silcef {
         browser.setCloseAllowed();
         browser.close(true);
         ((RenderHandlerImpl) browser.getRenderHandler()).destroy();
+
+        browsers.remove(browser);
     }
 
     /// Schedule a task to be run after Silcef is loaded. The task should

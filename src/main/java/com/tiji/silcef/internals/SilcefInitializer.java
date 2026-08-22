@@ -50,7 +50,9 @@ public class SilcefInitializer implements ModInitializer {
             });
         }
 
-        ClientLifecycleEvents.CLIENT_STOPPING.register((unused) -> {
+        ClientLifecycleEvents.CLIENT_STOPPING.register((mc) -> {
+            Silcef.browsers.forEach(Silcef::destroyBrowser);
+
             client.dispose();
             app.dispose();
         });
