@@ -2,7 +2,6 @@ package com.tiji.silcef.internals;
 
 import net.fabricmc.loader.api.entrypoint.PreLaunchEntrypoint;
 import net.fabricmc.loader.impl.launch.knot.Knot;
-import org.lwjgl.system.Platform;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -15,7 +14,6 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Map;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -27,9 +25,13 @@ public class JcefLoader implements PreLaunchEntrypoint {
                     .normalize()
                     .toString();
 
-    private static final Map<Platform, String> NATIVES = Map.of(
-            Platform.WINDOWS, "https://github.com/IamTiji/java-cef/releases/download/1.0-beta.1/windows-x64.zip"
-    );
+    private static String nativeURL() {
+        if (Platform.isWindows && Platform.is64bit) {
+            return "https://github.com/IamTiji/java-cef/releases/download/1.0-beta.1/windows-x64.zip";
+        } else {
+            throw new UnsupportedOperationException("Your system is not supported! You need to build natives yourself.");
+        }
+    }
 
     @Override
     public void onPreLaunch() {
@@ -37,14 +39,9 @@ public class JcefLoader implements PreLaunchEntrypoint {
         if (!javaLibrary.toFile().exists()) {
             System.out.println("Silcef Natives were not found! Attempting to download...");
 
-            if (Platform.getArchitecture() == Platform.Architecture.X86) {
-                throw new UnsupportedOperationException(
-                        "Your system is unsupported x86 device! You need to build natives yourself.");
-            }
-
             URI uri;
             try {
-                uri = new URI(NATIVES.get(Platform.get()));
+                uri = new URI(nativeURL());
             } catch (URISyntaxException e) {
                 throw new RuntimeException(e);
             } catch (NullPointerException e) {

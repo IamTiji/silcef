@@ -11,7 +11,7 @@ public interface CursorConverter {
      * Creates a new instance of the cursor converter.
      */
     static CursorConverter getInstance() {
-        if (System.getProperty("os.name").toLowerCase().contains("win")) {
+        if (Platform.isWindows) {
             return new WindowsCursorConverter();
         } else {
             return new GLFWCursorConverter();

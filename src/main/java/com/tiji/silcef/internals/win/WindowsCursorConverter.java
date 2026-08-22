@@ -6,6 +6,7 @@ import com.sun.jna.platform.win32.Kernel32;
 import com.tiji.silcef.Silcef;
 import com.tiji.silcef.internals.CursorConverter;
 import com.tiji.silcef.internals.JcefLoader;
+import com.tiji.silcef.internals.Platform;
 import org.jetbrains.annotations.Nullable;
 import org.lwjgl.glfw.GLFW;
 import sun.misc.Unsafe;
@@ -115,7 +116,7 @@ public class WindowsCursorConverter implements CursorConverter {
     private static final Map<Integer, CursorType> cursorMap;
 
     static {
-        if (!System.getProperty("os.name").toLowerCase().contains("win")) {
+        if (!Platform.isWindows) {
             cursorMap = Map.of();
         } else {
             cursorMap = new HashMap<>();

@@ -1,6 +1,7 @@
 package com.tiji.silcef;
 
 import com.tiji.silcef.internals.HeadlessComponent;
+import com.tiji.silcef.internals.Platform;
 import com.tiji.silcef.internals.utils.KeycodeUtils;
 import com.tiji.silcef.internals.utils.UnsafeFieldOverride;
 import net.minecraft.client.Minecraft;
@@ -65,8 +66,7 @@ public class SilcefEventHandler {
         return mod;
     }
 
-    private static final boolean shouldFixScancode
-            = System.getProperty("os.name").toLowerCase().contains("win");
+    private static final boolean shouldFixScancode = Platform.isWindows;
     private static int fixScancode(int scancode) {
         if (shouldFixScancode) return scancode & ~0x100;
         return scancode;

@@ -23,8 +23,7 @@ public interface AcceleratedPaintHandler {
 
     static AcceleratedPaintHandler getInstance() {
         if (Silcef.isAcceleratedPaintAllowed) {
-            String os = System.getProperty("os.name").toLowerCase();
-            if (os.contains("win")) {
+            if (Platform.isWindows) {
                 return new WinAcceleratedPaintHandler();
             }
         }
@@ -32,9 +31,7 @@ public interface AcceleratedPaintHandler {
     }
 
     static boolean initialize() {
-        String os = System.getProperty("os.name").toLowerCase();
-
-        if (os.contains("win")) {
+        if (Platform.isWindows) {
             WinAcceleratedPaintHandler.initialize();
             return true;
         }
