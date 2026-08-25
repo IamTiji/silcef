@@ -18,6 +18,8 @@ Note that this is under development, and bugs and lack of features are expected.
 
  - Making any interaction with browser will print `Exception in thread "Silcef CEF Message Worker"`
    message in console, on `stderr` that is not handled by JVM at all.
+ - On some JVMs, this mod will cause a JVM crash from unhandled hardware exception.
+ - Only Windows is supported; on other OS, it will either crash or not load at all.
  - MCEF capability layer only implements features exposed to MCEF, nothing more. (Excluding 
    accelerated paint)
  - MCEF capability layer is only tested against BrowserMod by McJunky33. File an issue if
