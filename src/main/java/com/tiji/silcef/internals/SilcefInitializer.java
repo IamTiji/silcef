@@ -33,11 +33,9 @@ public class SilcefInitializer implements ModInitializer {
                 new Thread(null, () -> this.start(mc), "Silcef CEF Message Worker").start());
 
         if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
-            CommandRegistrationCallback.EVENT.register((dispatcher, context, commandSelection) -> {
-                dispatcher.register(
-                        Commands.literal(
-                                "opentest"
-                        ).then(
+            CommandRegistrationCallback.EVENT.register((dispatcher, context, commandSelection) ->
+                    dispatcher.register(
+                        Commands.literal("opentest").then(
                                 Commands.argument("url", StringArgumentType.string())
                                         .executes((context_) -> {
                                             Minecraft.getInstance().execute(
@@ -46,12 +44,13 @@ public class SilcefInitializer implements ModInitializer {
                                             );
                                             return 0;
                                         })
-                        ));
-            });
+                        )));
         }
 
         ClientLifecycleEvents.CLIENT_STOPPING.register((mc) -> {
             Silcef.browsers.forEach(Silcef::destroyBrowser);
+
+            MCEF.shutdown();
 
             client.dispose();
             app.dispose();

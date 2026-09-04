@@ -3,7 +3,6 @@ package com.cinemamod.mcef;
 import com.tiji.silcef.Silcef;
 import com.tiji.silcef.SilcefBrowser;
 import com.tiji.silcef.internals.SilcefInitializer;
-import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import org.cef.CefClient;
 
 import java.util.ArrayList;
@@ -18,12 +17,12 @@ public class MCEF {
     public static void initialize() {
         rawClient = SilcefInitializer.getApp().createClient();
         client = new MCEFClient(rawClient);
+    }
 
-        ClientLifecycleEvents.CLIENT_STOPPING.register((mc) -> {
-            browsers.forEach(Silcef::destroyBrowser);
+    public static void shutdown() {
+        browsers.forEach(Silcef::destroyBrowser);
 
-            rawClient.dispose();
-        });
+        rawClient.dispose();
     }
 
     public static MCEFBrowser createBrowser(String url, boolean transparent) {
