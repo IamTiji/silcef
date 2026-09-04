@@ -1,5 +1,8 @@
 package com.tiji.silcef.internals;
 
+import static org.lwjgl.opengl.GL11C.GL_VENDOR;
+import static org.lwjgl.opengl.GL11C.glGetString;
+
 // This bit of code is written by AI because I am too lazy
 public class Platform {
     public static final boolean isWindows;
@@ -11,6 +14,10 @@ public class Platform {
     public static final boolean is64bit;
     public static final boolean is32bit;
     public static final boolean isArm64;
+
+    public static boolean isGPUIntel;
+    public static boolean isGPUAmd;
+    public static boolean isGPUNvidia;
 
     static {
         String osName = System.getProperty("os.name", "").toLowerCase();
@@ -34,5 +41,19 @@ public class Platform {
 
         is64bit = arch.contains("64");
         is32bit = !is64bit;
+    }
+
+    public static void checkGPU() {
+        String gpuVendor = glGetString(GL_VENDOR);
+        if (gpuVendor == null) return;
+        gpuVendor = gpuVendor.toLowerCase();
+
+        if (gpuVendor.contains("intel")) {
+            isGPUIntel = true;
+        } else if (gpuVendor.contains("amd")) {
+            isGPUAmd = true;
+        } else if (gpuVendor.contains("nvidia")) {
+            isGPUNvidia = true;
+        }
     }
 }

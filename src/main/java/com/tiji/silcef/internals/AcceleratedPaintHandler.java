@@ -31,6 +31,12 @@ public interface AcceleratedPaintHandler {
     }
 
     static boolean initialize() {
+        Platform.checkGPU();
+
+        if (Platform.isGPUIntel) {
+            return false; // Intel doesn't support necessary extensions
+        }
+
         if (Platform.isWindows) {
             WinAcceleratedPaintHandler.initialize();
             return true;
