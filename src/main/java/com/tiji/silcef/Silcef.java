@@ -84,7 +84,7 @@ public class Silcef {
     }
 
     /// Not to be used by other mods. This runs tasks scheduled in
-    /// [scheduleStartup] method.
+    /// [this::scheduleStartup] method.
     public static void executeScheduledTasks() {
         if (Thread.currentThread().getName().contains("Silcef")) {
             scheduledTasks.forEach(Runnable::run);
