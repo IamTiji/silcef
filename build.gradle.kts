@@ -6,7 +6,8 @@ plugins {
 version = project.property("mod_version")!!
 
 base {
-    archivesName.set(project.property("archives_base_name")!! as String)
+    archivesName.set((project.property("archives_base_name")!! as String)
+        .format(project.property("minecraft_version")))
 }
 
 loom {
