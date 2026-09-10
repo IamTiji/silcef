@@ -1,6 +1,7 @@
 plugins {
     id("net.fabricmc.fabric-loom-remap") version "1.15-SNAPSHOT"
     id("maven-publish")
+    id("com.gradleup.shadow") version "9.6.1"
 }
 
 version = project.property("mod_version")!!
@@ -30,6 +31,7 @@ tasks.register("downloadJcefJar") {
     }
 }
 
+val fatJarIncluded by configurations.creating
 dependencies {
     // To change the versions see the gradle.properties file
     minecraft("com.mojang:minecraft:${project.property("minecraft_version")!!}")
@@ -41,7 +43,12 @@ dependencies {
 
     modImplementation("net.fabricmc.fabric-api:fabric-api:${project.property("fabric_version")!!}")
 
+    fatJarIncluded(files("jcef/jcef.jar"))
     compileOnly(files("jcef/jcef.jar"))
+}
+
+tasks.shadowJar {
+    configurations.set(listOf(fatJarIncluded))
 }
 
 tasks.processResources {
@@ -52,7 +59,7 @@ tasks.processResources {
     duplicatesStrategy = DuplicatesStrategy.INCLUDE
 }
 
-val targetJavaVersion = 21
+val targetJavaVersion = 23
 tasks.withType<JavaCompile>().configureEach {
     // ensure that the encoding is set to UTF-8, no matter what the system default is
     // this fixes some edge cases with special characters not displaying correctly
@@ -65,15 +72,11 @@ tasks.withType<JavaCompile>().configureEach {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_21
-    targetCompatibility = JavaVersion.VERSION_21
+    sourceCompatibility = JavaVersion.VERSION_23
+    targetCompatibility = JavaVersion.VERSION_23
 
     withSourcesJar()
-
-    //toolchain {
-    //    vendor.set(JvmVendorSpec.JETBRAINS)
-    //    languageVersion.set(JavaLanguageVersion.of(25))
-    //}
+    withJavadocJar()
 }
 
 tasks.jar {
