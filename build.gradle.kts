@@ -90,3 +90,46 @@ tasks.withType<Javadoc> {
         "apiNote:a:API Note:"
     )
 }
+
+
+group = "com.tiji"
+version = project.property("mod_version")!!
+
+publishing {
+    publications {
+        create<MavenPublication> ("mavenJava") {
+            from(components["java"])
+            pom {
+                name = "Silcef"
+                description = "Slicef is a library mod that allows you to put web browser anywhere"
+                url = "https://github.com/IamTiji/silcef"
+
+                licenses {
+                    license {
+                        name = "GPU LGPL v3 or Later"
+                        url = "www.gnu.org/licenses/lgpl-3.0.html#license-text"
+                    }
+                }
+
+                developers {
+                    developer {
+                        id = "tiji"
+                        name = "IamTiji"
+                        email = "sjunesuh@gmail.com"
+                    }
+                }
+            }
+        }
+
+        repositories {
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/IamTiji/silcef")
+                credentials {
+                    username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
+                    password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
+                }
+            }
+        }
+    }
+}
