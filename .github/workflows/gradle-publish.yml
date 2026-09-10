@@ -34,6 +34,8 @@ jobs:
     - name: Make Gradle wrapper executable
       run: chmod +x ./gradlew
 
+    - name: Download JCEF JAR
+      run: ./gradlew downloadJcefJar
     - name: Build with Gradle
       run: ./gradlew build
 
