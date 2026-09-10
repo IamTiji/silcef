@@ -18,6 +18,18 @@ repositories {
     maven ("https://maven.parchmentmc.org")
 }
 
+tasks.register("downloadJcefJar") {
+    val dest = file("jcef/jcef.jar")
+    outputs.file(dest)
+    doLast {
+        dest.parentFile.mkdirs()
+        uri("https://github.com/IamTiji/java-cef/releases/download/1.0-beta.1/jcef.jar").toURL()
+            .openStream().use { input ->
+                dest.outputStream().use { output -> input.copyTo(output) }
+            }
+    }
+}
+
 dependencies {
     // To change the versions see the gradle.properties file
     minecraft("com.mojang:minecraft:${project.property("minecraft_version")!!}")
