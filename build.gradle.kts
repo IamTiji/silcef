@@ -1,6 +1,7 @@
 plugins {
     id("net.fabricmc.fabric-loom-remap") version "1.15-SNAPSHOT"
     id("maven-publish")
+    id("signing")
     id("com.gradleup.shadow") version "9.6.1"
 }
 
@@ -128,4 +129,12 @@ publishing {
             }
         }
     }
+}
+
+signing {
+    val key = System.getenv("PGP_KEY") as String
+    val passkey = System.getenv("PGP_PASSWORD") as String
+    useGpgCmd()
+
+    sign(publishing.publications["mavenJava"])
 }
