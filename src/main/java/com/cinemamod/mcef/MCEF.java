@@ -1,8 +1,8 @@
 package com.cinemamod.mcef;
 
-import com.tiji.silcef.Silcef;
-import com.tiji.silcef.SilcefBrowser;
-import com.tiji.silcef.internals.SilcefInitializer;
+import cc.tijiisreal.silcef.Silcef;
+import cc.tijiisreal.silcef.SilcefBrowser;
+import cc.tijiisreal.silcef.internals.SilcefInitializer;
 import org.cef.CefClient;
 
 import java.util.ArrayList;

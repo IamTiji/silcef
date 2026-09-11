@@ -14,10 +14,10 @@
   "icon": "assets/silcef/icon.png",
   "entrypoints": {
     "main": [
-      "com.tiji.silcef.internals.SilcefInitializer"
+      "cc.tijiisreal.silcef.internals.SilcefInitializer"
     ],
     "preLaunch": [
-      "com.tiji.silcef.internals.JcefLoader"
+      "cc.tijiisreal.silcef.internals.JcefLoader"
     ]
   },
   "mixins": [

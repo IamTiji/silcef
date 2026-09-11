@@ -1,8 +1,8 @@
 package com.cinemamod.mcef;
 
-import com.tiji.silcef.SilcefBrowser;
-import com.tiji.silcef.SilcefEventHandler;
-import com.tiji.silcef.internals.cefimpl.RenderHandlerImpl;
+import cc.tijiisreal.silcef.SilcefBrowser;
+import cc.tijiisreal.silcef.SilcefEventHandler;
+import cc.tijiisreal.silcef.internals.cefimpl.RenderHandlerImpl;
 import net.minecraft.resources.Identifier;
 import org.cef.CefClient;
 import org.cef.browser.CefBrowser;

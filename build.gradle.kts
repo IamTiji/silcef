@@ -92,7 +92,7 @@ tasks.withType<Javadoc> {
 }
 
 
-group = "com.tiji"
+group = "cc.tijiisreal"
 version = project.property("mod_version")!!
 
 publishing {
