@@ -123,12 +123,8 @@ publishing {
 
         repositories {
             maven {
-                name = "GitHubPackages"
-                url = uri("https://maven.pkg.github.com/IamTiji/silcef")
-                credentials {
-                    username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
-                    password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
-                }
+                name = "local"
+                url = uri(layout.buildDirectory.dir("build/maven"))
             }
         }
     }
