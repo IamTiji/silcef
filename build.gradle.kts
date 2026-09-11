@@ -119,6 +119,13 @@ publishing {
                         email = "sjunesuh@gmail.com"
                     }
                 }
+
+                scm {
+                    connection.set("scm:git:git://://github.com")
+                    developerConnection.set("scm:git:ssh://://github.com")
+                    url.set("https://github.com")
+                    tag.set("HEAD")
+                }
             }
         }
 
