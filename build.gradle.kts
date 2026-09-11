@@ -139,8 +139,6 @@ publishing {
 }
 
 signing {
-    val key = System.getenv("PGP_KEY") as String
-    val passkey = System.getenv("PGP_PASSWORD") as String
     useGpgCmd()
 
     sign(publishing.publications["mavenJava"])
