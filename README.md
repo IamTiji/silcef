@@ -45,18 +45,44 @@ You can build this project like normal afterwards.
 
 ### Contributions & Filing an issue
 Contributions are welcomed! When making a pull request, make sure that your changes:
-- Fit overall vive of original code
-- Contains only necessary changes
-- Is not written by AI
+ - Fit overall vive of original code
+ - Contains only necessary changes
+ - Is not written by AI
 
 Since this project is under heavy development, make sure that most of the contribution will get
-rejected, unless you somehow read off my brain.
+rejected.
 
 If you don't want to write code, but want to report a problem, you can also file an issue.
 When making writing an issue, make sure that:
-- You included logs
-- You explained the problem to your best
-- You were nice and respectful
+ - You included logs
+ - You explained the problem to your best
+ - You were nice and respectful
+
+### Adding this to your mod
+
+In Gradle:
+```
+dependencies {
+    implementation "cc.tijiisreal:silcef:1.0-beta.2:all"
+}
+```
+
+In Gradle Kotlin:
+```
+dependencies {
+    implementation("cc.tijiisreal:silcef:1.0-beta.2:all")
+}
+```
+
+In Maven:
+```
+<dependency>
+    <groupId>cc.tijiisreal</groupId>
+    <artifactId>silcef</artifactId>
+    <version>1.0-beta.2</version>
+    <classifier>all</classifier>
+</dependency>
+```
 
 ### License
 
