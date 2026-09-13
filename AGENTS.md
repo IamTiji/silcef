@@ -14,7 +14,7 @@
 
 ## Project structure
 
-Every lives in package `com.tiji.slicef`. Package name mentioned below must be prefixed with this base package to be valid.
+Every lives in package `cc.tijiisreal.slicef`. Package name mentioned below must be prefixed with this base package to be valid.
 
 - Root: Contains public APIs that are to be used by other Minecraft mods.
 - `internals`: Contains private APIs internally used.
