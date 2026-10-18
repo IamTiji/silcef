@@ -1,9 +1,11 @@
 package cc.tijiisreal.silcef.internals;
 
+import static org.lwjgl.glfw.GLFW.GLFW_PLATFORM_WAYLAND;
+import static org.lwjgl.glfw.GLFW.glfwGetPlatform;
 import static org.lwjgl.opengl.GL11C.GL_VENDOR;
 import static org.lwjgl.opengl.GL11C.glGetString;
 
-// This bit of code is written by AI because I am too lazy
+// Only code in first static block was AI generated, so I rewrote it
 public class Platform {
     public static final boolean isWindows;
     public static final boolean isLinux;
@@ -20,27 +22,19 @@ public class Platform {
     public static boolean isGPUNvidia;
 
     static {
-        String osName = System.getProperty("os.name", "").toLowerCase();
-        isWindows = osName.contains("win");
-        isLinux = osName.contains("linux");
-        isMacOs = osName.contains("mac") || osName.contains("darwin");
+        String os = System.getProperty("os.name").toLowerCase();
 
-        // Wayland detection only makes sense on Linux; env vars are the
-        // conventional signal a session is running under Wayland.
-        if (isLinux) {
-            String sessionType = System.getenv("XDG_SESSION_TYPE");
-            String waylandDisplay = System.getenv("WAYLAND_DISPLAY");
-            isWayland = (sessionType != null && sessionType.equalsIgnoreCase("wayland"))
-                || (waylandDisplay != null && !waylandDisplay.isEmpty());
-        } else {
-            isWayland = false;
-        }
+        isWindows = os.contains("win");
+        isLinux = os.contains("linux");
+        isMacOs = os.contains("mac") || os.contains("darwin");
 
-        String arch = System.getProperty("os.arch", "").toLowerCase();
-        isArm64 = arch.equals("aarch64") || arch.equals("arm64");
+        isWayland = glfwGetPlatform() == GLFW_PLATFORM_WAYLAND;
 
-        is64bit = arch.contains("64");
-        is32bit = !is64bit;
+        String arch = System.getProperty("os.arch").toLowerCase();
+
+        isArm64 = arch.equals("aarch64") || arch.equals("arm");
+        is32bit = arch.equals("x86") || arch.equals("i386");
+        is64bit = arch.equals("amd64") || arch.equals("x86_64");
     }
 
     public static void checkGPU() {
