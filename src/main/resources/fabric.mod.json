@@ -14,7 +14,7 @@
   "icon": "assets/silcef/icon.png",
   "entrypoints": {
     "main": [
-      "cc.tijiisreal.silcef.internals.SilcefInitializer"
+      "cc.tijiisreal.silcef.internals.ModInitEntrypoint"
     ],
     "preLaunch": [
       "cc.tijiisreal.silcef.internals.JcefLoader"

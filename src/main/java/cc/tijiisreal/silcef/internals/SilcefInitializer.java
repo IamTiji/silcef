@@ -23,28 +23,27 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.concurrent.CompletableFuture;
 
-public class SilcefInitializer implements ModInitializer {
+public class SilcefInitializer {
     private static CefApp app;
     private static CefClient client;
 
-    @Override
-    public void onInitialize() {
+    public void init() {
         ClientLifecycleEvents.CLIENT_STARTED.register((mc) ->
                 new Thread(null, () -> this.start(mc), "Silcef CEF Message Worker").start());
 
         if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
             CommandRegistrationCallback.EVENT.register((dispatcher, context, commandSelection) ->
-                    dispatcher.register(
-                        Commands.literal("opentest").then(
-                                Commands.argument("url", StringArgumentType.string())
-                                        .executes((context_) -> {
-                                            Minecraft.getInstance().execute(
-                                                    () -> Minecraft.getInstance().setScreen(
-                                                            new TestBrowserScreen(context_.getArgument("url", String.class)))
-                                            );
-                                            return 0;
-                                        })
-                        )));
+                dispatcher.register(
+                    Commands.literal("opentest").then(
+                        Commands.argument("url", StringArgumentType.string())
+                            .executes((context_) -> {
+                                Minecraft.getInstance().execute(
+                                    () -> Minecraft.getInstance().setScreen(
+                                        new TestBrowserScreen(context_.getArgument("url", String.class)))
+                                );
+                                return 0;
+                            })
+                    )));
         }
 
         ClientLifecycleEvents.CLIENT_STOPPING.register((mc) -> {

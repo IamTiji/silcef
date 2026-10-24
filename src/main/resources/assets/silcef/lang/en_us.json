@@ -45,5 +45,11 @@
   "silcef.permission.type.FILE_SYSTEM_ACCESS": "Access files on your device",
   "silcef.permission.type.LOCAL_NETWORK_ACCESS": "Access devices on your local network",
   "silcef.permission.type.LOCAL_NETWORK": "Access local service on your device",
-  "silcef.permission.type.LOOPBACK_NETWORK": "Access other software on your device"
+  "silcef.permission.type.LOOPBACK_NETWORK": "Access other software on your device",
+
+  "silcef.native_download.prompt.title": "Download native for Silcef?",
+  "silcef.native_download.prompt.desc": "Silcef needs external program in order to function. Silcef can automatically download these program, and it will do so next time Minecraft starts (as long as you consent). Do you want Silcef to download these? You can also provide your own by placing it at %s.",
+  "silcef.native_download.prompt.allow": "Yes, please download now",
+  "silcef.native_download.prompt.later": "Yes, but after I restart Minecraft myself",
+  "silcef.native_download.prompt.disallow": "No, don't download anything"
 }

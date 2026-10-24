@@ -19,6 +19,9 @@ import java.util.zip.ZipInputStream;
 
 @SuppressWarnings("ResultOfMethodCallIgnored")
 public class JcefLoader implements PreLaunchEntrypoint {
+    public static boolean isJcefLoaded = false;
+
+    public static final File DOWNLOAD_CHECK = new File("./silcef/DOWNLOAD_JCEF");
     public static final String NATIVE_PATH =
             Path.of("./silcef/natives")
                     .toAbsolutePath()
@@ -35,6 +38,8 @@ public class JcefLoader implements PreLaunchEntrypoint {
 
     @Override
     public void onPreLaunch() {
+        if (!DOWNLOAD_CHECK.exists()) return;
+
         Path javaLibrary = Path.of(NATIVE_PATH, "jcef.jar");
         if (!javaLibrary.toFile().exists()) {
             System.out.println("Silcef Natives were not found! Attempting to download...");
@@ -79,6 +84,7 @@ public class JcefLoader implements PreLaunchEntrypoint {
         }
 
         Knot.getLauncher().addToClassPath(javaLibrary);
+        isJcefLoaded = true;
     }
 
     private static void extractFile(URI uri) throws IOException {

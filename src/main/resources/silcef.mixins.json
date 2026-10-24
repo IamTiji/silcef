@@ -1,18 +1,19 @@
 {
-  "required": true,
-  "minVersion": "0.8",
-  "package": "cc.tijiisreal.silcef.mixins",
+  "required"          : true,
+  "minVersion"        : "0.8",
+  "package"           : "cc.tijiisreal.silcef.mixins",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [
+  "mixins"            : [
   ],
-  "client": [
+  "client"            : [
     "MouseMoveFixMixin",
-    "MouseReleaseFixMixin"
+    "MouseReleaseFixMixin",
+    "StartupMixin"
   ],
-  "injectors": {
+  "injectors"         : {
     "defaultRequire": 1
   },
-  "overwrites": {
+  "overwrites"        : {
     "requireAnnotations": true
   }
 }
