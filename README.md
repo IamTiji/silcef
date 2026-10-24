@@ -63,14 +63,14 @@ When making writing an issue, make sure that:
 In Gradle:
 ```
 dependencies {
-    implementation "cc.tijiisreal:silcef:1.0-beta.3:all"
+    implementation "cc.tijiisreal:silcef:1.0-beta.4:all"
 }
 ```
 
 In Gradle Kotlin:
 ```
 dependencies {
-    implementation("cc.tijiisreal:silcef:1.0-beta.3:all")
+    implementation("cc.tijiisreal:silcef:1.0-beta.4:all")
 }
 ```
 
@@ -79,7 +79,7 @@ In Maven:
 <dependency>
     <groupId>cc.tijiisreal</groupId>
     <artifactId>silcef</artifactId>
-    <version>1.0-beta.3</version>
+    <version>1.0-beta.4</version>
     <classifier>all</classifier>
 </dependency>
 ```
